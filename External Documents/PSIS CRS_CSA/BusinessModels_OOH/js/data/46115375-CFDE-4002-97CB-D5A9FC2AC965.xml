@@ -1,0 +1,11 @@
+tocTab[tocTab.length] = new Array("6.1.2.6:1", "", "cda_Authenticator", "EARoot/EA6/EA1/EA2/EA6/EA998.htm", "5.png", "5279", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.1.2.6:2", "", "cda_EncounterParticipant", "EARoot/EA6/EA1/EA2/EA6/EA999.htm", "5.png", "5278", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.1.2.6:3", "", "cda_ManufacturedProduct", "EARoot/EA6/EA1/EA2/EA6/EA1000.htm", "5.png", "5280", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.1.2.6:4", "", "cda_MedicationDiscontinuation", "EARoot/EA6/EA1/EA2/EA6/EA1001.htm", "5.png", "5283", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.1.2.6:5", "", "cda_ObservationRange", "EARoot/EA6/EA1/EA2/EA6/EA1002.htm", "5.png", "5286", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.1.2.6:6", "", "cda_Organization", "EARoot/EA6/EA1/EA2/EA6/EA1003.htm", "5.png", "5285", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.1.2.6:7", "", "cda_OrganizationNonCoded", "EARoot/EA6/EA1/EA2/EA6/EA1004.htm", "5.png", "5287", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.1.2.6:8", "", "cda_OrganizationWithID", "EARoot/EA6/EA1/EA2/EA6/EA1005.htm", "5.png", "5277", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.1.2.6:9", "", "cda_Place", "EARoot/EA6/EA1/EA2/EA6/EA1006.htm", "5.png", "5281", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.1.2.6:10", "", "cda_PlaceNonCoded", "EARoot/EA6/EA1/EA2/EA6/EA1007.htm", "5.png", "5282", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.1.2.6:11", "", "cda_SupplyMedicationDetails", "EARoot/EA6/EA1/EA2/EA6/EA1008.htm", "5.png", "5284", "0", "", "Class");

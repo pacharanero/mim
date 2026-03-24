@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CD - Specialist Assessment Outcome</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA995.png" usemap="#EA995" border="0" />
+
+<MAP NAME="EA995">
+<area shape="rect" coords="11,10,256,85" href="EA998.htm">
+<area shape="rect" coords="586,802,882,871" href="EA996.htm">
+<area shape="rect" coords="688,429,940,499" href="EA999.htm">
+<area shape="rect" coords="362,587,640,685" href="EA997.htm">
+<area shape="rect" coords="31,861,407,1401" href="EA1001.htm">
+<area shape="rect" coords="31,784,282,854" href="../EA3/EA991.htm">
+<area shape="rect" coords="366,427,644,525" href="EA1000.htm">
+<area shape="rect" coords="82,429,337,514" href="../EA3/EA990.htm">
+<area shape="rect" coords="10,81,368,244" href="EA1002.htm">
+<area shape="rect" coords="682,39,919,244" href="../../../EA5/EA1/EA3/EA1/EA2407.htm">
+<area shape="rect" coords="276,291,658,361" href="EA1004.htm">
+</MAP>
+
+	<div class="ObjectTitle">CD - Specialist Assessment Outcome : logical diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">04/07/2007 12:51:01</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">07/02/2008 13:44:07</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Christina Lovelock</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">0.5 DRAFT</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{58066D89-B00E-475e-A985-9AE0B6513B63}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Version 0.1 &lt;br /&gt;21/09/07 Used in walk though with C&M 01/10/07.&lt;br /&gt;&lt;br /&gt;Version 0.2 &lt;br /&gt;In assessmentOutcomeTemplateList corrected dataType error on administrativeProceedure (from cda_AdministrativeProcedureRef to cda_AdministrativeProceedure). Added attributes to new_cda_assessmentEvent template (Assessment TYPE, assessment SCALE, and VALUE). Added all CDA medication templates to assessmentOutcomeTemplateList. replace CREType lists for allergies and medications with assessmentOutcomeCRETypeList&lt;br /&gt;&lt;br /&gt;Version 0.3 &lt;br /&gt;added missing cardinality between specialistAssessmentOutcomeDocument and encompassingEncounter (1..1). Corrected cardinality between specialistAssessmentOutcomeDocument and adminDetails from(1..0..1) to (1..1). Added missing cardinalities to assessmentOutcomeTemplateList on attributes organizedFinding, service, plannedAssessment, housing, finances, administrativeProceedure.&lt;br /&gt;&lt;br /&gt;Version 0.4 &lt;br /&gt;Added securityAbusedDiscrimintation attribute to assessmentOutcomeTemplateList.&lt;br /&gt;&lt;br /&gt;Version 0.5&lt;br /&gt;Changed securityAbusedDiscrimintation attribute from (1..*) to (0..*) on assessmentOutcomeTemplateList.&lt;br /&gt;07-02-2008 New templates no longer shown on diagram - this was required during Message development phase only.&lt;br /&gt;</div>
+
+</div>
+ 
+</body>
+</html>

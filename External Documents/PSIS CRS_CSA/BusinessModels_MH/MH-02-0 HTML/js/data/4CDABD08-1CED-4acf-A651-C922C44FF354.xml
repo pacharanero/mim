@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("7.1", "1", "BIM", "EARoot/EA7/EA3076.htm", "4.png", "", "", "{F8856141-EFEE-49bb-859D-792CC76F616E}", "Package");
+tocTab[tocTab.length] = new Array("7.2", "1", "IAM", "EARoot/EA7/EA3077.htm", "4.png", "", "", "{6F0DE180-5AD2-4aba-9973-6B709E051EEE}", "Package");
+tocTab[tocTab.length] = new Array("7.3", "1", "Communication Descriptions", "EARoot/EA7/EA3078.htm", "4.png", "", "", "{F7DB1D19-3884-4e5c-8BCB-7E233ACE7921}", "Package");
+tocTab[tocTab.length] = new Array("7.4", "1", "Shared Classes", "EARoot/EA7/EA3079.htm", "4.png", "", "", "{53BA145E-607F-4c89-AB26-A071C44A6879}", "Package");

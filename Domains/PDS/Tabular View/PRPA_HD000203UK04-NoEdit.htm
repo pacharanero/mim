@@ -1,0 +1,3148 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>PdsAllocateNhsNumberRequest Tabular View</title><style type="text/css">
+	table {empty-cells: show}
+</style><script language="JavaScript1.2">
+				
+var isNew=0;
+var isNS4=0;
+var isIE4=0;
+
+var brow=((navigator.appName) + (parseInt(navigator.appVersion)));
+
+//alert(brow);
+if (parseInt(navigator.appVersion)>=5)
+{
+	isNew=1
+}
+else
+{
+	if(brow=="Netscape4")
+	{
+		isNS4=1;
+		document.captureEvents(Event.ONMOUSEOVER);
+	}
+	else
+	{
+		if(brow=="Microsoft Internet Explorer4")
+		{
+			isIE4=1;
+		}
+	}
+		
+}
+
+// thats ok
+
+
+if(isNS4||isIE4||isNew)
+{
+	docObj=(isNS4) ? 'document' : 'document.all';
+	
+	styleObj=(isNS4) ? ' ' : '.style';
+}
+
+function checkDOM(elementName)
+{
+	if(isNS4||isIE4||isNew)
+	{
+		dom=eval(docObj + '.' + elementName + styleObj);
+		//alert('This browser uses the ' + dom + 'Document Object Model.');
+		dom.left =0;
+		dom.top =0;
+	}
+}
+
+function popUp(evt,currElem)
+{
+
+	if((isNS4 && currElem !=0) || (isIE4 && currElem !=0))
+	{
+		dom =eval(docObj +'.' +currElem+styleObj);
+		state=dom.visibility;
+		if ((state == "visible") || (state=="show"))
+		{
+			dom.visibility="hidden";
+		}
+		else
+		{
+			if(isNS4)
+			{
+				topVal=eval(evt.pageY);
+				leftVal=eval(evt.pageX);
+				/*if(((document.body.scrollLeft+document.body.clientWidth)-leftVal)< 150)
+				{
+					leftVal=(document.body.clientWidth+document.body.scrollLeft-151);
+				}
+				if(((document.body.scrollTop+document.body.clientHeight)-topVal)< 30)
+				{
+					topVal=(document.body.clientHeight+document.body.scrollTop-80);
+				}*/
+
+			}
+			if(isIE4)
+			{
+				topVal=eval(event.clientY)  + document.body.scrollTop+20;
+				leftVal=eval(event.clientX) + document.body.scrollLeft;
+				
+				if(((document.body.scrollLeft+document.body.clientWidth)-leftVal)< 150)
+				{
+					leftVal=(document.body.clientWidth+document.body.scrollLeft-151);
+				}
+				if(((document.body.scrollTop+document.body.clientHeight)-topVal)< 30)
+				{
+					topVal=(document.body.clientHeight+document.body.scrollTop-80);
+				}
+			}
+			if(leftVal < 2)
+			{
+				leftVal=2;
+			}
+			dom.top=topVal;
+			dom.left=leftVal;
+			dom.visibility="visible";
+		}
+	}
+}
+
+</script><style>
+#ds
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+#cwe
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+
+#cne
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+
+#maindiv {
+	overflow: auto; 
+	width: 100%; 
+	height: 90%; 
+	}
+
+
+.hypertext
+{
+	position: absolute;
+	background-color: white;
+	layer-background-colour: cornflowerblue;
+	padding: 3px;
+	border: 3px solid blue;
+	width: 150px;
+	font:normal 10pt/13pt helvetica, sans-serif;
+	text-align: left;
+	color: blue;
+}
+
+.actclass
+{
+	background-color: red;
+}
+
+.entclass
+{
+	background-color: lightgreen;;
+}
+
+.roleclass
+{
+	background-color: yellow;;
+}
+.otherclass
+{
+	background-color: blue;
+}
+.choiceclass
+{
+	background-color: gray;
+}
+.actrelclass
+{
+	background-color: pink;
+}
+.partclass
+{
+	background-color: cyan;
+}
+.rolelinkclass
+{
+	background-color: lightyellow;
+}
+
+</style></head>
+   <body onload="checkDOM('ds')">
+      <h1>PdsAllocateNhsNumberRequest - tabular view</h1><span id="ds" class="hypertext">No Current Link To Vocabulary</span><span id="cwe" class="hypertext">Coded With Extensions</span><span id="cne" class="hypertext">Coded No Extensions</span><p><b>Mon Mar 17 22:10:57 GMT 2008</b></p>
+      <table border="1px" frame="vsides" rules="cols" cellpadding="2" cellspacing="0" bordercolor="black">
+         <tr bgcolor="black">
+            <td height="4" colspan="10"></td>
+         </tr>
+         <tr>
+            <td height="35" colspan="2"><a href="PRPA_RM000203UK04.htm"><b>PRPA_RM000203UK04</b></a></td>
+            <td height="35" nowrap="yes"></td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="actclass"><a name="PdsRegistrationRequest"><b>PdsRegistrationRequest</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for providing information about a request to allocate a NHS number for a patient.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#"><b></b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActClass</b></a> } )<br> {<b> Fixed="<font color="red">REG</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that this is a registration.</p>
+                  
+                  <ul>
+                     
+                     <li>Fixed value: "REG" (Registration)</li>
+                     
+                  </ul>
+                  
+                  <p>The classCode is carried as an attribute of the <i>PdsRegistrationRequest</i>element.
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>moodCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActMood</b></a> } )<br> {<b> Fixed="<font color="red">RQO</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that this is a registration which is being requested.</p>
+                  
+                  <ul>
+                     
+                     <li>Fixed value: "RQO" (Request or Order)</li>
+                     
+                  </ul>
+                  
+                  <p>The moodCode is carried as an attribute of the <i>PdsRegistrationRequest</i>element.
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2" class="partclass"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b><a id="PdsRegistrationRequest/author"></a>author</b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for providing a link to the party authoring the PDS registration request.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>typeCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ParticipationType</b></a> } )<br> {<b> Fixed="<font color="red">AUT</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Participation;PdsRegistrationRequest/author/$typeCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Defines the type of participation of the linked party to the PDS registration, i.e. that the linked party is the author (registration
+                        authority).
+                     </p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "AUT" (Author [originator])</li>
+                        
+                     </ul>
+                     
+                     <p>The typeCode is carried as an attribute of the <em>author</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>registeringAuthority</b> (<a href="#RegisteringAuthority"><b>RegisteringAuthority</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>A heading for providing details of the authority for the PDS registration.</div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2" class="partclass"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b><a id="PdsRegistrationRequest/subject"></a>subject</b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for providing a link to the subject of the PDS registration request, i.e. the patient.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>typeCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ParticipationType</b></a> } )<br> {<b> Fixed="<font color="red">SBJ</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that the patient's record is the subject.</p>
+                  
+                  <ul>
+                     
+                     <li>Fixed value: "SBJ" (Subject)</li>
+                     
+                  </ul>
+                  
+                  <p>The typeCode is carried as an attribute of the <em>subject</em>element.
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>patientRole</b> (<a href="#PatientRole"><b>PatientRole</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>A heading for providing details about the patient.</div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="roleclass"><a name="RegisteringAuthority"><b>RegisteringAuthority</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for providing details of the authority for the PDS registration.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#PdsRegistrationRequest"><b>PdsRegistrationRequest</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>RoleClass</b></a> } )<br> {<b> Fixed="<font color="red">ASSIGNED</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that the role is that of an assigning authority.</p>
+                  
+                  <ul>
+                     
+                     <li>Fixed value: "ASSIGNED" (Assigned entity)</li>
+                     
+                  </ul>
+                  
+                  <p>The classCode is carried as an attribute of the <em>registeringAuthority</em>element.
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>code</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/RegisteringAuthorityType.htm" target="_top"><b>RegisteringAuthorityType</b></a> } )
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#RoleHeir;RegisteringAuthority/$code" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>To indicate the type of registering authority in coded form.</p>
+                     
+                     <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                     
+                     <ul>
+                        
+                        <li>The <em>code</em>attribute will contain a value from the list of codes in the <u>RegisteringAuthorityType</u>vocabulary;
+                        </li>
+                        
+                        <li>The <em>codeSystem</em>attribute will contain the OID referenced in the <u>RegisteringAuthorityType</u>vocabulary.
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>id</b> (<a href="../../../Data Types/DataTypes.htm#II"><b>II</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>The identifier of the assigned organisation acting as registration authority. This will be an SDS Organisation ID.<br>
+                     
+                  </p>
+                  
+                  <p>The Identifier External datatype flavour is used to carry this information as follows:</p>
+                  
+                  <ul>
+                     
+                     <li>The <i>root</i> attribute will contain an OID with the value "1.2.826.0.1285.0.1.10"
+                     </li>
+                     
+                     <li>The <i>extension</i> attribute will contain the SDS Organisation ID.
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="roleclass"><a name="PatientRole"><b>PatientRole</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for providing details about the patient.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#PdsRegistrationRequest"><b>PdsRegistrationRequest</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>RoleClass</b></a> } )<br> {<b> Fixed="<font color="red">PAT</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that the role is that of a patient.</p>
+                  
+                  <ul>
+                     
+                     <li>Fixed value: "PAT" (Patient)</li>
+                     
+                  </ul>
+                  
+                  <p>The classCode is carried as an attribute of the <i>patientRole</i>element.
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..*] </b></font><font color="green"><b> [M] </b></font><b>addr</b> (<a href="../../../Data Types/DataTypes.htm#SET"><b>SET</b></a><b>&lt;<a href="../../../Data Types/DataTypes.htm#AD"><b>AD</b></a>&gt;</b>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>To provide one or more addresses of the patient.</p>
+                  
+                  <p>An address is composed of the following components:</p>
+                  
+                  <ul>
+                     
+                     <li>Between one and five unstructured address lines;</li>
+                     
+                     <li>Postcode;</li>
+                     
+                     <li>A PAF (postal address file) key;</li>
+                     
+                     <li>In the case of a temporary address, a textual description of nature of the address may also be provided;</li>
+                     
+                     <li>An effective from date may be provided for every address; an effective to date may also be provided for any address.</li>
+                     
+                  </ul>
+                  
+                  <p>The first and last of these components are required to be present with any address.</p>
+                  
+                  <p>The type of address is required to be identified by using one of the following codes in the <i>use</i>attribute:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>H - usual address;</li>
+                     
+                     <li>TMP - temporary address;</li>
+                     
+                     <li>PST - correspondence address.</li>
+                     
+                     
+                  </ul>NB At least one of home address or temporary address must be given here.<br type="_moz">
+                  
+                  <p>The following sub-elements are used to carry the components of an address:</p>
+                  
+                  <ul>
+                     
+                     <li>Between one and five <i>streetAddressLine</i> elements are used to carry unstructured address lines, with the order in which they are carried in the message being significant,
+                        i.e. the first occurrence of the <i>streetAddressLine</i> element is used to carry the first line of address, the second occurrence of the <i>streetAddressLine</i> element is used to carry the second line of address etc. <b>NB:</b>addresses updating the PDS <b>shall</b> conform to the NHAIS address format, where specific <i>streetAddressLine </i>elements contain specific address information, as follows: 
+                        <ul>
+                           
+                           <li>The first <i>streetAddressLine</i> element shall contain Premises ID (House Name) (or be present and have no value or a null flavor if there is no Premises
+                              ID);
+                           </li>
+                           
+                           <li>The second <i>streetAddressLine </i>element shall contain House Number and / or Thoroughfare (or be present and have no value or a null flavor if there is neither
+                              of these); at least one of the first <i>streetAddressLine</i> element and second <i>streetAddressLine</i>element shall have a non-null value;
+                           </li>
+                           
+                           <li>The third <i>streetAddressLine</i> element shall contain Locality (or be present and have no value or a null flavor if there is no locality);
+                           </li>
+                           
+                           <li>The fourth <i>streetAddressLine</i> element shall contain Post Town (this shall be a non-null value);
+                           </li>
+                           
+                           <li>The fifth <i>streetAddressLine </i>element shall contain County (or have no value or a null flavor or be absent if there is no county).
+                           </li>
+                           
+                        </ul>
+                        
+                     </li>
+                     
+                     <li>A <i>postalCode </i>element is used to carry a postcode;
+                     </li>
+                     
+                     <li>An <i>addressKey</i> element is used to carry a PAF key;
+                     </li>
+                     
+                     <li>For a temporary address only, a <i>desc</i> element is used to carry a textual description of nature of the address.
+                     </li>
+                     
+                  </ul>
+                  
+                  <p>For any address, the <i>useablePeriod</i> sub-element may optionally be present to indicate dates from and to which the address was/is to be effective. This mechanism
+                     allows previous addresses of any of the three types listed above to be carried in the message and distinguished from current
+                     addresses. These effective dates are indicated, in the following way:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>The <i>low</i> sub-element of the <i>useablePeriod</i> element may optionally be present with the date from which the address was effective provided in YYYYMMDD format in the value
+                        attribute;
+                     </li>
+                     
+                     <li>The <i>high</i> sub-element of the <i>useablePeriod</i> element may optionally be present with the date to which the address was/is to be effective provided in YYYYMMDD format in
+                        the value attribute.
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[0..*] </b></font><b>telecom</b> (<a href="../../../Data Types/DataTypes.htm#SET"><b>SET</b></a><b>&lt;<a href="../../../Data Types/DataTypes.htm#TEL"><b>TEL</b></a>&gt;</b>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>To provide zero or more telecommunication numbers of the patient, together with the contact method for each. These two items
+                     of information are carried in the <i>value</i>attribute, separated by a colon character. The contact method will be one of the following values:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>tel (for telephone numbers);</li>
+                     
+                     <li>fax (for fax numbers);</li>
+                     
+                     <li>mailto (for e-mail addresses);</li>
+                     
+                     <li>textphone (for minicom or textphone numbers).</li>
+                     
+                  </ul>
+                  
+                  <p>In addition, for each telecommunication number, one occurrence of the <i>use</i> attribute is required to indicate the context for the telecommunication number, using the following values:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>H - A communication address at a home;</li>
+                     
+                     <li>HP - The primary home, to reach a person after business hours;</li>
+                     
+                     <li>HV - A vacation home, to reach a person while on vacation;</li>
+                     
+                     <li>WP - An office address;</li>
+                     
+                     <li>AS - An automated answering machine;</li>
+                     
+                     <li>EC - A contact specifically designated to be used for emergencies;</li>
+                     
+                     <li>PG - A paging device suitable to solicit a callback or to leave a very short message;</li>
+                     
+                     <li>MC - A telecommunication device that moves and stays with its owner.</li>
+                     
+                  </ul>
+                  
+                  <p>For any telecommunication number, the useablePeriod sub-element may optionally be present to indicate dates from and to which
+                     the telecommunication number was/is to be effective. This mechanism allows previous telecommunication numbers of any of the
+                     types listed above to be carried in the message and distinguished from current telecommunication numbers. These effective
+                     dates are indicated, in the following way:
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>The <i>low</i> sub-element of the useablePeriod element may optionally be present with the date from which the telecommunication number
+                        was effective provided in YYYYMMDD format in the <i>value</i> attribute;
+                     </li>
+                     
+                     <li>The <i>high </i>sub-element of the useablePeriod element may optionally be present with the date to which the telecommunication number was/is
+                        to be effective provided in YYYYMMDD format in the <i>value </i>attribute.
+                     </li>
+                     
+                  </ul>
+                  
+                  <p>
+                     <b>NB:</b> Implementation note : <i>The "TEL" datatype has previously accepted non-compliant data which does not conform to the URL pattern. This appears to be
+                        a limitation of XML Schema toolkits which do not enforce the presence of a scheme component as noted in <a>http://www.ietf.org/rfc/rfc2396.txtRFC 2396</a>
+                        </i>
+                     
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b><a id="PatientRole/patientPerson"></a>patientPerson</b> (<a href="#Person"><b>Person</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>A heading for providing information about the person who is the identified patient.</div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2" class="partclass"><font color="green"><b>[0..1] </b></font><b><a id="PatientRole/subjectOf10"></a>subjectOf10</b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <strong>A heading for indicating a subject relationship.<br>
+                     </strong>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>typeCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ParticipationType</b></a> } )<br> {<b> Fixed="<font color="red">SBJ</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that this a subject participation.</p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><b>bloodDonorPrefs</b> (<a href="#BloodDonorPrefs"><b>BloodDonorPrefs</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">A link to BloodDonorPrefs<br>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2" class="partclass"><font color="green"><b>[0..1] </b></font><b><a id="PatientRole/subjectOf15"></a>subjectOf15</b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <strong>A heading for indicating a subject relationship.</strong>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>typeCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ParticipationType</b></a> } )<br> {<b> Fixed="<font color="red">SBJ</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that this a subject participation.</p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><b>organDonorPrefs</b> (<a href="#OrganDonorPrefs"><b>OrganDonorPrefs</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">A link to OrganDonorPrefs.<br>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2" class="partclass"><font color="green"><b>[0..1] </b></font><b><a id="PatientRole/subjectOf2"></a>subjectOf2</b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for indicating that the patient is the subject of the associated preferred contact method.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>typeCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ParticipationType</b></a> } )<br> {<b> Fixed="<font color="red">SBJ</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Participation;PatientRole/subjectOf2/$typeCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Indicates that the patient is the subject of the associated preferred contact method.</p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "SBJ" (Subject)</li>
+                        
+                     </ul>
+                     
+                     <p>The typeCode is carried as an attribute of the <em>subjectOf2</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><b>preferredContactMethod</b> (<a href="#PreferredContactMethod"><b>PreferredContactMethod</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>A heading for providing information about how a person would prefer to be contacted.</div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2" class="partclass"><font color="green"><b>[0..1] </b></font><b><a id="PatientRole/subjectOf3"></a>subjectOf3</b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for indicating that the patient is the subject of the associated preferred written communication format information.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>typeCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ParticipationType</b></a> } )<br> {<b> Fixed="<font color="red">SBJ</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Participation;PatientRole/subjectOf3/$typeCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Indicates that the patient is the subject of the associated preferred written communication format information.</p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "SBJ" (Subject)</li>
+                        
+                     </ul>
+                     
+                     <p>The typeCode is carried as an attribute of the <em>subjectOf3</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><b>preferredWrittenCommunicationFormat</b> (<a href="#PreferredWrittenCommunicationFormat"><b>PreferredWrittenCommunicationFormat</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>A heading for providing the preferred written communication format information.</div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2" class="partclass"><font color="green"><b>[0..1] </b></font><b><a id="PatientRole/subjectOf4"></a>subjectOf4</b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for indicating that the patient is the subject of the associated shared secret.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>typeCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ParticipationType</b></a> } )<br> {<b> Fixed="<font color="red">SBJ</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Participation;PatientRole/subjectOf4/$typeCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Indicates that the patient is the subject of the associated Shared secret.</p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "SBJ" (Subject)</li>
+                        
+                     </ul>
+                     
+                     <p>The typeCode is carried as an attribute of the <em>subjectOf4</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><b>sharedSecret</b> (<a href="#SharedSecret"><b>SharedSecret</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>A heading for providing information about the patient's Shared secret.</div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2" class="partclass"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b><a id="PatientRole/subjectOf5"></a>subjectOf5</b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for indicating that the patient is the subject of the associated previous NHS contact information.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>typeCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ParticipationType</b></a> } )<br> {<b> Fixed="<font color="red">SBJ</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Participation;PatientRole/subjectOf5/$typeCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Indicates that the patient is the subject of the associated previous NHS contact information.</p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "SBJ" (Subject)</li>
+                        
+                     </ul>
+                     
+                     <p>The typeCode is carried as an attribute of the <em>subjectOf5</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>previousNhsContact</b> (<a href="#PreviousNhsContact"><b>PreviousNhsContact</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>A heading for providing information about whether the patient has had previous NHS contact.</div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="entclass"><a name="Person"><b>Person</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for providing information about the person who is the identified patient.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#PatientRole"><b>PatientRole</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>EntityClass</b></a> } )<br> {<b> Fixed="<font color="red">PSN</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that the entity is a person.</p>
+                  
+                  <ul>
+                     
+                     <li>Fixed value: "PSN" (Person)</li>
+                     
+                  </ul>
+                  
+                  <p>The classCode is carried as an attribute of the <i>patientPerson</i>element.
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>determinerCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>EntityDeterminer</b></a> } )<br> {<b> Fixed="<font color="red">INSTANCE</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that the entity is a single identifiable person.</p>
+                  
+                  <ul>
+                     
+                     <li>Fixed value: "INSTANCE" (Specific)</li>
+                     
+                  </ul>
+                  
+                  <p>The determinerCode is carried as an attribute of the <i>patientPerson</i>element.
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..*] </b></font><font color="green"><b> [M] </b></font><b>name</b> (<a href="../../../Data Types/DataTypes.htm#SET"><b>SET</b></a><b>&lt;<a href="../../../Data Types/DataTypes.htm#PN"><b>PN</b></a>&gt;</b>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>
+                     <font face="times new roman,times" size="3">
+                        <font size="+0">Name(s) of the person.</font>
+                        </font>
+                     <font face="times new roman,times" size="3">
+                        
+                        <p>
+                           <font size="+0">The particular flavour of the person name datatype used here is Person name structured with use (number 6 in the datatypes
+                              description). This means that the name will contain the following components:</font>
+                           
+                        </p>
+                        
+                        <div>
+                           
+                           <ul>
+                              
+                              <li>
+                                 <font size="+0">A <em>family</em>element to carry the surname or family name of the person (mandatory)</font>
+                                 
+                              </li>
+                              
+                              <li>Up to 2 <em>given</em>elements to carry the given names of the person. If the person has more than 2 given names, these will be concatenated in
+                                 the second given name attribute with a space between each name. The order of the elements is also significant, so the first
+                                 occurrence of the <em>given</em>element will carry the first given name, and the second occurrence will carry the second, third, etc. given names (optional)
+                              </li>
+                              
+                              <li>A <em>prefix</em>element to carry a prefix for the name, such as Mr, Mrs, etc. (optional)
+                              </li>
+                              
+                              <li>A <em>suffix</em>element to carry a suffix for the name, such as Jnr, Snr, etc. (optional)
+                              </li>
+                              
+                              <li>A <em>use</em>attribute to denote the type of name (mandatory)
+                              </li>
+                              
+                              <li>A <em>validTime</em>element to contain the dates for which the name is / was current as a range, supplied in the <em>low</em>and <em>high</em>sub-elements. Both the <em>low</em>and <em>high</em>sub-elements are optional, allowing open-ended ranges to be specified. (optional)
+                              </li>
+                              
+                           </ul>
+                           
+                        </div>
+                        
+                        <p>One occurrence of current usual name (use type "L") shall be provided; up to one occurrence of a preferred name (use type
+                           "PREFERRED") may be provided; and any number of the other types (alias and previous) may also be provided.
+                        </p>
+                        </font>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[0..1] </b></font><b><a id="Person/languageCommunication"></a>languageCommunication</b> (<a href="#LanguageCommunication"><b>LanguageCommunication</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">A link to details of the person's language preferences.<br>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[0..*] </b></font><b><a id="Person/playedOtherProviderPatient"></a>playedOtherProviderPatient</b> (<a href="#OtherProviderPatient"><b>OtherProviderPatient</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>A heading for providing details about the patient when associated with other providers.</div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b><a href="../../CMETs/Tabular View/COCT_HD000209UK01-NoEdit.htm">scopedRole</a></b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../CMETs/Tabular View/COCT_RM000209UK01.htm"><small>[CMET:&nbsp;COCT_MT000209UK01]</small></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">A link to details of a person's gender, which includes notified date.</div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b><a href="../../CMETs/Tabular View/COCT_HD000210UK01-NoEdit.htm">scopedRole1</a></b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../CMETs/Tabular View/COCT_RM000210UK01.htm"><small>[CMET:&nbsp;COCT_MT000210UK01]</small></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">A link to details of a date of birth, which includes notified date.</div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="roleclass"><a name="OtherProviderPatient"><b>OtherProviderPatient</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>
+                     <b>A heading for providing details about the patient when associated with other providers, such as pharmacies nominated by the
+                        patient.The otherProviderPatient grouping may occur between zero and three times, once for each type of pharmacy details to
+                        be registered on the PDS.</b>
+                     
+                  </p>
+                  
+                  <p>
+                     <b>NB: Only NCRS compliant pharmacies may be selected.</b>
+                     
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#Person"><b>Person</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>RoleClass</b></a> } )<br> {<b> Fixed="<font color="red">PAT</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that the role is that of a patient.</p>
+                  
+                  <ul>
+                     
+                     <li>Fixed value: "PAT" (Patient)</li>
+                     
+                  </ul>
+                  
+                  <p>The classCode is carried as an attribute of the <em>playedOtherProviderPatient</em>element.
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2" class="partclass"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b><a id="OtherProviderPatient/subjectOf"></a>subjectOf</b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for indicating that the patient is the subject of the associated patient care provision.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>typeCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ParticipationType</b></a> } )<br> {<b> Fixed="<font color="red">SBJ</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Participation;OtherProviderPatient/subjectOf/$typeCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Indicates that the patient is the subject of the associated patient care provision.</p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "SBJ" (Subject)</li>
+                        
+                     </ul>
+                     
+                     <p>The typeCode is carried as an attribute of the <em>subjectOf</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>patientCareProvision</b> (<a href="#PatientCareProvision"><b>PatientCareProvision</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>A heading for defining a relationship between a patient and his/her pharmacy.</div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="actclass"><a name="PatientCareProvision"><b>PatientCareProvision</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for defining a relationship between a patient and his/her pharmacy.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#OtherProviderPatient"><b>OtherProviderPatient</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActClass</b></a> } )<br> {<b> Fixed="<font color="red">PCPR</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#ActHeir;PatientCareProvision/$classCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Indicates that this is a patient care provision.</p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "PCPR" (Patient Care Provision)</li>
+                        
+                     </ul>
+                     
+                     <p>The classCode is carried as an attribute of the <em>patientCareProvision</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>moodCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActMood</b></a> } )<br> {<b> Fixed="<font color="red">EVN</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#ActHeir;PatientCareProvision/$moodCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Indicates that this is a defined patient care provision which has occurred.</p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "EVN" (Event)</li>
+                        
+                     </ul>
+                     
+                     <p>The moodCode is carried as an attribute of the <em>patientCareProvision</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>code</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/PatientCareProvisionType.htm" target="_top"><b>PatientCareProvisionType</b></a> } )
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#ActHeir;PatientCareProvision/$code" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>To provide the type of defined patient care provision, such as a type of pharmacy, in coded form.</p>
+                     
+                     <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                     
+                     <ul>
+                        
+                        <li>The <i>code</i>attribute will contain a value from the list of codes in the <u>PatientCareProvisionType</u>vocabulary;
+                        </li>
+                        
+                        <li>The <i>codeSystem</i>attribute will contain the OID referenced in the <u>PatientCareProvisionType</u>vocabulary - Only values "P1", "P2" and "P3" are allowed. <br>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2" class="partclass"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b><a id="PatientCareProvision/performer"></a>performer</b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>
+                     <strong>
+                        <font face="times new roman,times" size="3">A link to the Performer of this PatientCareProvision.</font>
+                        </strong>
+                     
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>typeCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ParticipationType</b></a> } )<br> {<b> Fixed="<font color="red">PRF</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>
+                     <font face="times new roman,times" size="3">Indicates that this is a performer.</font>
+                     
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>assignedOrganisation</b> (<a href="#AssignedOrganisation"><b>AssignedOrganisation</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>A heading for providing details about a provider responsible for the patient care provision. In this context, this will be
+                     a type of pharmacy.
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="roleclass"><a name="AssignedOrganisation"><b>AssignedOrganisation</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>
+                     <strong>
+                        <font face="times new roman,times" size="3">The organisation acting as health care provider, i.e. performing the patient care provision.</font>
+                        </strong>
+                     
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#PatientCareProvision"><b>PatientCareProvision</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>RoleClass</b></a> } )<br> {<b> Fixed="<font color="red">ASSIGNED</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>
+                     <font face="times new roman,times" size="3">Indicates that this is an Assigned role.</font>
+                     
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>id</b> (<a href="../../../Data Types/DataTypes.htm#II"><b>II</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>
+                     <font face="times new roman,times" size="3">
+                        <font face="times new roman,times" size="3">The identifier of the assigned organisation acting as health care provider. This will be<font face="Times New Roman"> a pharmacy where </font>
+                           </font>
+                        </font>
+                     <font face="Times New Roman" size="3">the PatientCareProvisionType is "P1","P2" or "P3"</font>
+                     <font face="times new roman,times" size="3">.<br type="_moz">
+                        
+                        <p>
+                           <font face="Times New Roman" size="3">The Identifier External datatype flavour is used to carry this information as follows:</font>
+                           
+                        </p>
+                        
+                        <ul>
+                           
+                           <li>
+                              <font face="Times New Roman" size="3">The <i>root</i>attribute will contain an OID with the value "2.16.840.1.113883.2.1.4.3"</font>
+                              
+                           </li>
+                           
+                           <li>
+                              <font face="Times New Roman" size="3">The <i>extension</i>attribute will contain the National Pharmacy Code.</font>
+                              
+                           </li>
+                           
+                        </ul>
+                        </font>
+                     
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="otherclass"><a name="LanguageCommunication"><b>LanguageCommunication</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for providing information about the language preferred by the person where it is not English.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#Person"><b>Person</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>languageCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/HumanLanguage.htm" target="_top"><b>HumanLanguage</b></a> } )
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>To provide the language in coded form.</p>
+                  
+                  <p>The Coded Only datatype flavour is used to carry this information as follows:</p>
+                  
+                  <ul>
+                     
+                     <li>The <i>code</i>attribute will contain a value from the list of codes in the <u>HumanLanguage</u>vocabulary.
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>preferenceInd</b> (<a href="../../../Data Types/DataTypes.htm#BL"><b>BL</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>An indicator specifying whether or not the language is preferred by the person.</p>
+                  
+                  <p>As the requirement for PDS is to only provide the language preferred by the person where it is not English, the preferenceInd
+                     shall be set to "true".
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>proficiencyLevelCode</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/InterpreterRequiredIndicator.htm" target="_top"><b>InterpreterRequiredIndicator</b></a> } )
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>To provide the interpreter required indicator in coded form.</p>
+                  
+                  <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                  
+                  <ul>
+                     
+                     <li>The <i>code</i>attribute will contain a value from the list of codes in the <u>InterpreterRequiredIndicator</u>vocabulary;
+                     </li>
+                     
+                     <li>The <i>codeSystem</i>attribute will contain the OID referenced in the <u>InterpreterRequiredIndicator</u>vocabulary.
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="actclass"><a name="BloodDonorPrefs"><b>BloodDonorPrefs</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>Patient details about blood donor preferences.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#PatientRole"><b>PatientRole</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActClass</b></a> } )<br> {<b> Fixed="<font color="red">OBS</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">Indicates that this is an observation.</div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>moodCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActMood</b></a> } )<br> {<b> Fixed="<font color="red">EVN</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">Indicates that this is an event.<br>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>code</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/DemographicObservationType.htm" target="_top"><b>DemographicObservationType</b></a> } )<br> {<b> Fixed="<font color="red">25</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div contenteditable="false" style="height: 100%; width: 100%">
+                     
+                     <p>Indicates the type of observation. </p>
+                     
+                     <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                     
+                     <ul>
+                        
+                        <li>The <i>code</i> attribute will contain the fixed value shown. 
+                        </li>
+                        
+                        <li>The <i>codeSystem</i> attribute will contain the OID for the vocabulary. 
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2" class="actrelclass"><font color="green"><b>[0..1] </b></font><b><a id="BloodDonorPrefs/component"></a>component</b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <span id="XSLTPageNoTree123:XSLTOut">
+                     <b>States that one act is a component of the other.</b>
+                     </span>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>typeCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActRelationshipType</b></a> } )<br> {<b> Fixed="<font color="red">COMP</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <span id="XSLTPageNoTree123:XSLTOut">Indicates that this is a component.</span>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><b>donorPreferredAddress</b> (<a href="#DonorPreferredAddress"><b>DonorPreferredAddress</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">A link to details of the donor preferred address.<br>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2" class="actrelclass"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b><a id="BloodDonorPrefs/component1"></a>component1</b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>States that one act is a component of the other.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>typeCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActRelationshipType</b></a> } )<br> {<b> Fixed="<font color="red">COMP</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">Indicates that this is a component.<br>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>bloodDonorConsent</b> (<a href="#BloodDonorConsent"><b>BloodDonorConsent</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">A link to BloodDonorConsent.<br>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="actclass"><a name="BloodDonorConsent"><b>BloodDonorConsent</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>Details of the patients blood donor consent.</b>
+                  <br>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#BloodDonorPrefs"><b>BloodDonorPrefs</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActClass</b></a> } )<br> {<b> Fixed="<font color="red">OBS</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that this is an observation. </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>moodCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActMood</b></a> } )<br> {<b> Fixed="<font color="red">EVN</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that this is an event.</p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>code</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/DemographicObservationType.htm" target="_top"><b>DemographicObservationType</b></a> } )<br> {<b> Fixed="<font color="red">36</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates the type of observation. </p>
+                  
+                  <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                  
+                  <ul>
+                     
+                     <li>The <i>code</i> attribute will contain the fixed value shown. 
+                     </li>
+                     
+                     <li>The <i>codeSystem</i> attribute will contain the OID for the vocabulary.
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>effectiveTime</b> (<a href="../../../Data Types/DataTypes.htm#TS"><b>TS</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>The date when the patient consented or dissented to being a blood donor.</p>
+                  
+                  <p>In format YYYYMMDD. </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>value</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/Consent.htm" target="_top"><b>Consent</b></a> } )
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates the patients wishes for consenting (or not) to being a blood donor. </p>
+                  
+                  <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                  
+                  <ul>
+                     
+                     <li>The <i>code</i> attribute will contain the fixed value shown.<br>NB: Only Values "1" or "2" are allowed.<br>
+                        <br type="_moz">
+                        
+                     </li>
+                     
+                     <li>The <i>codeSystem</i> attribute will contain the OID for the vocabulary.
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="actclass"><a name="DonorPreferredAddress"><b>DonorPreferredAddress</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>
+                     <b>The patients preferred address for blood donation purposes. This is not persisted on PDS but passed on to the Blood Donation
+                        Register.</b>
+                     
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#BloodDonorPrefs"><b>BloodDonorPrefs</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActClass</b></a> } )<br> {<b> Fixed="<font color="red">OBS</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">Indicates that this is an observation.</div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>moodCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActMood</b></a> } )<br> {<b> Fixed="<font color="red">EVN</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">Indicates that this is an event.</div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>code</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/DemographicObservationType.htm" target="_top"><b>DemographicObservationType</b></a> } )<br> {<b> Fixed="<font color="red">40</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates the type of observation. </p>
+                  
+                  <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                  
+                  <ul>
+                     
+                     <li>The <i>code</i> attribute will contain the fixed value shown. 
+                     </li>
+                     
+                     <li>The <i>codeSystem</i> attribute will contain the OID for the vocabulary.
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>value</b> (<a href="../../../Data Types/DataTypes.htm#AD"><b>AD</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>
+                     <font face="Times New Roman" size="3">The preferred address of the patient for blood donation purposes.</font>
+                     
+                  </p>
+                  
+                  <p>
+                     <font face="Times New Roman" size="3">The particular flavour of the address datatype used here is Address streetAddressLine Typed (format 2 in the datatypes description),
+                        plus:</font>
+                     
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        <font face="Times New Roman" size="3">Optional Postcode</font>
+                        
+                     </li>
+                     
+                     <li>
+                        <font face="Times New Roman" size="3">Optional Address Key</font>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+                  <p>
+                     <font face="Times New Roman" size="3">This means that the address will contain the following components:</font>
+                     
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        <font face="Times New Roman" size="3">Between one and four <i>streetAddressLine</i> elements. <br>
+                           </font>
+                        
+                        <ul>
+                           
+                           <li>
+                              <font face="Times New Roman" size="3">Line 1 is mandatory</font>
+                              
+                           </li>
+                           
+                           <li>
+                              <font face="Times New Roman" size="3">A maximum of 4 address lines will be present.<br>
+                                 <br>
+                                 </font>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                     </li>
+                     
+                     <li>
+                        <font face="Times New Roman" size="3">A <i>postalCode</i> element to carry a postcode (optional)</font>
+                        
+                     </li>
+                     
+                     <li>
+                        <font face="Times New Roman" size="3">An <i>addressKey</i> element to carry a PAF key (optional)</font>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="actclass"><a name="OrganDonorPrefs"><b>OrganDonorPrefs</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>Patient Organ Donor Preferences.<br>
+                     </b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#PatientRole"><b>PatientRole</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActClass</b></a> } )<br> {<b> Fixed="<font color="red">OBS</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">Indicates that this is an observation.<br>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>moodCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActMood</b></a> } )<br> {<b> Fixed="<font color="red">EVN</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">Indicates that this is an event.</div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>code</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/DemographicObservationType.htm" target="_top"><b>DemographicObservationType</b></a> } )<br> {<b> Fixed="<font color="red">26</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates the type of observation. </p>
+                  
+                  <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                  
+                  <ul>
+                     
+                     <li>The <i>code</i> attribute will contain the fixed value shown. 
+                     </li>
+                     
+                     <li>The <i>codeSystem</i> attribute will contain the OID for the vocabulary. 
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2" class="actrelclass"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b><a id="OrganDonorPrefs/component"></a>component</b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>
+                     <b>A heading to indicate that this is a component of the Organ Donor Preferences.</b>
+                     
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>typeCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActRelationshipType</b></a> } )<br> {<b> Fixed="<font color="red">COMP</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that this a component relationship.</p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>organDonorConsent</b> (<a href="#OrganDonorConsent"><b>OrganDonorConsent</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">A link to OrganDonorConsent.<br>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="actclass"><a name="OrganDonorConsent"><b>OrganDonorConsent</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>Details of the patients organ donor consent preferences.<br>
+                     </b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#OrganDonorPrefs"><b>OrganDonorPrefs</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActClass</b></a> } )<br> {<b> Fixed="<font color="red">OBS</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that this is an observation. </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>moodCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActMood</b></a> } )<br> {<b> Fixed="<font color="red">EVN</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that this is an event.</p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>code</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/DemographicObservationType.htm" target="_top"><b>DemographicObservationType</b></a> } )<br> {<b> Fixed="<font color="red">37</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates the type of observation. </p>
+                  
+                  <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                  
+                  <ul>
+                     
+                     <li>The <em>code</em> attribute will contain the fixed value shown. 
+                     </li>
+                     
+                     <li>The <em>codeSystem</em> attribute will contain the OID for the vocabulary.
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>effectiveTime</b> (<a href="../../../Data Types/DataTypes.htm#TS"><b>TS</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>The date when then consent was last update by the patient.</p>
+                  
+                  <p>In format YYYYMMDD. </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>value</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/Consent.htm" target="_top"><b>Consent</b></a> } )
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates the patients wishes for consenting (or not) to being an organ donor. </p>
+                  
+                  <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                  
+                  <ul>
+                     
+                     <li>The <i>code</i> attribute will contain the fixed value shown.<br> NB: Only Values "1" or "2" are allowed.<br>
+                        <br>
+                        
+                     </li>
+                     
+                     <li>The <i>codeSystem</i> attribute will contain the OID for the vocabulary.
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2" class="actrelclass"><font color="green"><b>[0..6] </b></font><b><a id="OrganDonorConsent/component"></a>component</b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A link to details of the organ(s) the patient wishes to donate.</b>
+                  
+                  <p></p>
+                  
+                  <p>
+                     <span id="XSLTPageNoTree123:XSLTOut">
+                        <b>This will not be populated when the  patient is expressing dissent. If the patient is expressing consent, then this  attribute
+                           will contain a list of the organs they wish to donate. If a value of  "anyOrganTissue" is supplied, then no other values should
+                           be present in this  attribute.</b>
+                        </span>
+                     
+                  </p>
+                  
+                  <p></p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>typeCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActRelationshipType</b></a> } )<br> {<b> Fixed="<font color="red">COMP</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">Indicates this is a component relationship.<br>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><b>organDonationItem</b> (<a href="#OrganDonationItem"><b>OrganDonationItem</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">A link to the organ donation item.<br>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="actclass"><a name="OrganDonationItem"><b>OrganDonationItem</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>
+                     <b>Information about the organs a patient wishes to donate. </b>
+                     
+                  </p>
+                  
+                  <p>
+                     <b>This will not be populated when the patient is expressing dissent. If the  patient is expressing consent, then this attribute
+                        will contain a list of the  organs they wish to donate. If a value of "anyOrganTissue" is supplied, then no  other values
+                        should be present in this attribute.</b>
+                     
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#OrganDonorConsent"><b>OrganDonorConsent</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActClass</b></a> } )<br> {<b> Fixed="<font color="red">OBS</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">Indicates that this is an observation.</div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>moodCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActMood</b></a> } )<br> {<b> Fixed="<font color="red">EVN</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">Indicates that this is an event.<br>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>code</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/DemographicObservationType.htm" target="_top"><b>DemographicObservationType</b></a> } )<br> {<b> Fixed="<font color="red">39</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div contenteditable="false" style="height: 100%; width: 100%">
+                     
+                     <p>Indicates the type of observation. </p>
+                     
+                     <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                     
+                     <ul>
+                        
+                        <li>The <i>code</i> attribute will contain the fixed value shown. 
+                        </li>
+                        
+                        <li>The <i>codeSystem</i> attribute will contain the OID for the vocabulary. 
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>value</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/OrganDonationType.htm" target="_top"><b>OrganDonationType</b></a> } )
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>A code indicating the type of organ the patient wishes to donate.</p>
+                  
+                  <p>The Coded with Code System datatype flavour is used to carry this information  as follows:</p>
+                  
+                  <ul>
+                     
+                     <li>The <i>code</i> attribute will contain a value from the vocabulary.  
+                     </li>
+                     
+                     <li>The <i>codeSystem</i> attribute will contain the OID for the vocabulary. 
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="actclass"><a name="PreviousNhsContact"><b>PreviousNhsContact</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for providing information about whether the patient has had previous NHS contact.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#PatientRole"><b>PatientRole</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActClass</b></a> } )<br> {<b> Fixed="<font color="red">OBS</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Observation;PreviousNhsContact/$classCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Indicates that this is an observation.</p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "OBS" (Observation)</li>
+                        
+                     </ul>
+                     
+                     <p>The classCode is carried as an attribute of the <em>previousNhsContact</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>moodCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActMood</b></a> } )<br> {<b> Fixed="<font color="red">EVN</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Observation;PreviousNhsContact/$moodCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Indicates that this is an observation which has occurred.</p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "EVN" (Event)</li>
+                        
+                     </ul>
+                     
+                     <p>The moodCode is carried as an attribute of the <em>previousNhsContact</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>code</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/DemographicObservationType.htm" target="_top"><b>DemographicObservationType</b></a> } )<br> {<b> Fixed="<font color="red">17</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>
+                     
+                     <p>To provide the type of observation in coded form.</p>
+                     
+                     <p>In this context, the type of observation is an observation of previous NHS contact information.</p>
+                     
+                     <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                     
+                     <ul>
+                        
+                        <li>The <em>code</em>attribute will contain value "17" (Previous NHS contact) from the list of codes in the <u>DemographicObservationType</u>vocabulary;
+                        </li>
+                        
+                        <li>The <em>codeSystem</em>attribute will contain the OID referenced in the <u>DemographicObservationType</u>vocabulary.
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>value</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/PreviousNhsContact.htm" target="_top"><b>PreviousNhsContact</b></a> } )
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>
+                     
+                     <p>To provide the previous NHS contact information in coded form.</p>
+                     
+                     <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                     
+                     <ul>
+                        
+                        <li>The <em>code</em>attribute will contain a value from the list of codes in the <u>PreviousNhsContact</u>vocabulary;
+                        </li>
+                        
+                        <li>The <em>codeSystem</em>attribute will contain the OID referenced in the <u>PreviousNhsContact</u>vocabulary.
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="actclass"><a name="SharedSecret"><b>SharedSecret</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for providing information about the patient's Shared secret.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#PatientRole"><b>PatientRole</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActClass</b></a> } )<br> {<b> Fixed="<font color="red">OBS</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Observation;SharedSecret/$classCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Indicates that this is an observation.</p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "OBS" (Observation)</li>
+                        
+                     </ul>
+                     
+                     <p>The classCode is carried as an attribute of the <em>sharedSecret</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>moodCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActMood</b></a> } )<br> {<b> Fixed="<font color="red">EVN</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Observation;SharedSecret/$moodCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Indicates that this is an observation which has occurred.</p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "EVN" (Event)</li>
+                        
+                     </ul>
+                     
+                     <p>The moodCode is carried as an attribute of the <em>sharedSecret</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>code</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/DemographicObservationType.htm" target="_top"><b>DemographicObservationType</b></a> } )<br> {<b> Fixed="<font color="red">15</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>
+                     
+                     <div id="PRPA_HD100100UK13#Observation;SharedSecret/$code" style="width: 100%; height: 100%; background-color: white">
+                        
+                        <p>To provide the type of observation in coded form.</p>
+                        
+                        <p>In this context, the type of observation is an observation of a shared secret.</p>
+                        
+                        <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                        
+                        <ul>
+                           
+                           <li>The <em>code</em>attribute will contain value "15" (Shared secret) from the list of codes in the <u> DemographicObservationType</u>vocabulary;
+                           </li>
+                           
+                           <li>The <em>codeSystem</em>attribute will contain the OID referenced in the <u> DemographicObservationType</u>vocabulary.
+                           </li>
+                           
+                        </ul>
+                        
+                     </div>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>value</b> (<a href="../../../Data Types/DataTypes.htm#ST"><b>ST</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>To provide the patient's shared secret (defined as personal information provided by the patient to be used by a call centre
+                     in verifying that the caller is this patient) as a text string of encrypted characters.
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="actclass"><a name="PreferredWrittenCommunicationFormat"><b>PreferredWrittenCommunicationFormat</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">A heading for providing the preferred written communication format information.</div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#PatientRole"><b>PatientRole</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActClass</b></a> } )<br> {<b> Fixed="<font color="red">OBS</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Observation;PreferredWrittenCommunicationFormat/$classCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Indicates that this is an observation.</p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "OBS" (Observation)</li>
+                        
+                     </ul>
+                     
+                     <p>The classCode is carried as an attribute of the <em> preferredWrittenCommunicationFormat</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>moodCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActMood</b></a> } )<br> {<b> Fixed="<font color="red">EVN</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Observation;PreferredWrittenCommunicationFormat/$moodCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Indicates that this is an observation which has occurred.</p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "EVN" (Event)</li>
+                        
+                     </ul>
+                     
+                     <p>The moodCode is carried as an attribute of the <em> preferredWrittenCommunicationFormat</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>code</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/DemographicObservationType.htm" target="_top"><b>DemographicObservationType</b></a> } )<br> {<b> Fixed="<font color="red">13</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Observation;PreferredWrittenCommunicationFormat/$code" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>To provide the type of observation in coded form.</p>
+                     
+                     <p>In this context, the type of observation is an observation of the preferred written communication format.</p>
+                     
+                     <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                     
+                     <ul>
+                        
+                        <li>The <em>code</em>attribute will contain value "13" (Preferred written communication format) from the list of codes in the <u>DemographicObservationType</u>vocabulary;
+                        </li>
+                        
+                        <li>The <em>codeSystem</em>attribute will contain the OID referenced in the <u>DemographicObservationType</u>vocabulary.
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>value</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/PreferredWrittenCommunicationFormat.htm" target="_top"><b>PreferredWrittenCommunicationFormat</b></a> } )
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Observation;PreferredWrittenCommunicationFormat/$value" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>To provide the preferred written communication format in coded form.</p>
+                     
+                     <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                     
+                     <ul>
+                        
+                        <li>the <em>code</em>attribute will contain a value from the list of codes in the <u> PreferredWrittenCommunicationFormat</u>vocabulary;
+                        </li>
+                        
+                        <li>The <em>codeSystem</em>attribute will contain the OID referenced in the <u> PreferredWrittenCommunicationFormat</u>vocabulary.
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="actclass"><a name="PreferredContactMethod"><b>PreferredContactMethod</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for providing information about how a person would prefer to be contacted.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#PatientRole"><b>PatientRole</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActClass</b></a> } )<br> {<b> Fixed="<font color="red">OBS</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Observation;PreferredContactMethod/$classCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Indicates that this is an observation.</p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "OBS" (Observation)</li>
+                        
+                     </ul>
+                     
+                     <p>The classCode is carried as an attribute of the <em>preferredContactMethod</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>moodCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActMood</b></a> } )<br> {<b> Fixed="<font color="red">EVN</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Observation;PreferredContactMethod/$moodCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Indicates that this is an observation which has occurred.</p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "EVN" (Event)</li>
+                        
+                     </ul>
+                     
+                     <p>The moodCode is carried as an attribute of the <em>preferredContactMethod</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>code</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/DemographicObservationType.htm" target="_top"><b>DemographicObservationType</b></a> } )<br> {<b> Fixed="<font color="red">9</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Observation;PreferredContactMethod/$code" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>To provide the type of observation in coded form.</p>
+                     
+                     <p>In this context, the type of observation is an observation of patient preferred contact method.</p>
+                     
+                     <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                     
+                     <ul>
+                        
+                        <li>The <em>code</em>attribute will contain value "9" (Preferred contact method) from the list of codes in the <u>DemographicObservationType</u>vocabulary;
+                        </li>
+                        
+                        <li>The <em>codeSystem</em>attribute will contain the OID referenced in the <u>DemographicObservationType</u>vocabulary.
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[0..1] </b></font><b>value</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/PreferredContactMethod.htm" target="_top"><b>PreferredContactMethod</b></a> } )
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Observation;PreferredContactMethod/$value" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>To provide the type of preferred patient contact in coded form.</p>
+                     
+                     <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                     
+                     <ul>
+                        
+                        <li>The <em>code</em>attribute will contain a value from the list of codes in the <u>PreferredContactMethod</u>vocabulary;
+                        </li>
+                        
+                        <li>The <em>codeSystem</em>attribute will contain the OID referenced in the <u>PreferredContactMethod</u>vocabulary.
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2" class="actrelclass"><font color="green"><b>[0..1] </b></font><b><a id="PreferredContactMethod/pertinentInformation"></a>pertinentInformation</b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for providing a link to information pertinent to the preferred contact method.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>typeCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActRelationshipType</b></a> } )<br> {<b> Fixed="<font color="red">PERT</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#ActRelationship;PreferredContactMethod/pertinentInformation/$typeCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Defines the type of relationship of the preferred contact times to the preferred contact method, i.e. that the preferred contact
+                        times are pertinent to the preferred contact method.
+                     </p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "PERT" (Has pertinent information)</li>
+                        
+                     </ul>
+                     
+                     <p>The typeCode is carried as an attribute of the <em>pertinentInformation</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><b>pertinentPreferredContactTimes</b> (<a href="#PreferredContactTimes"><b>PreferredContactTimes</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>A heading for providing information about times when a patient would prefer to be contacted.</div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="actclass"><a name="PreferredContactTimes"><b>PreferredContactTimes</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for providing information about times when a patient would prefer to be contacted.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#PreferredContactMethod"><b>PreferredContactMethod</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActClass</b></a> } )<br> {<b> Fixed="<font color="red">OBS</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Observation;PreferredContactTimes/$classCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Indicates that this is an observation.</p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "OBS" (Observation)</li>
+                        
+                     </ul>
+                     
+                     <p>The classCode is carried as an attribute of the <em>pertinentPreferredContactTimes</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>moodCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActMood</b></a> } )<br> {<b> Fixed="<font color="red">EVN</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div id="PRPA_HD100100UK13#Observation;PreferredContactTimes/$moodCode" style="width: 100%; height: 100%; background-color: white">
+                     
+                     <p>Indicates that this is an observation which has occurred.</p>
+                     
+                     <ul>
+                        
+                        <li>Fixed value: "EVN" (Event)</li>
+                        
+                     </ul>
+                     
+                     <p>The moodCode is carried as an attribute of the <em>pertinentPreferredContactTimes</em>element.
+                     </p>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>code</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/DemographicObservationType.htm" target="_top"><b>DemographicObservationType</b></a> } )<br> {<b> Fixed="<font color="red">10</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>
+                     
+                     <div id="PRPA_HD100100UK13#Observation;PreferredContactTimes/$code" style="width: 100%; height: 100%; background-color: white">
+                        
+                        <p>To provide the type of observation in coded form.</p>
+                        
+                        <p>In this context, the type of observation is an observation of patient preferred contact times.</p>
+                        
+                        <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                        
+                        <ul>
+                           
+                           <li>The <em>code</em>attribute will contain value "10" (Preferred contact times) from the list of codes in the <u> DemographicObservationType</u>vocabulary;
+                           </li>
+                           
+                           <li>The <em>codeSystem</em>attribute will contain the OID referenced in the <u> DemographicObservationType</u>vocabulary.
+                           </li>
+                           
+                        </ul>
+                        
+                     </div>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>value</b> (<a href="../../../Data Types/DataTypes.htm#ST"><b>ST</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>To provide preferred contact times as a text string, e.g. Evenings only; Monday mornings between 09:00 and 12:00; etc.</div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="4" colspan="10"></td>
+         </tr>
+      </table>
+   </body>
+</html>

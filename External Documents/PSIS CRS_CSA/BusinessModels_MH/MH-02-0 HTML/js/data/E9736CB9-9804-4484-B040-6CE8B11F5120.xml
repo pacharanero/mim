@@ -1,0 +1,11 @@
+tocTab[tocTab.length] = new Array("4.2.4.5:1", "", "Legal Activities", "EARoot/EA4/EA2/EA4/EA5/EA1317.htm", "177.png", "399", "0", "", "Object diagram");
+tocTab[tocTab.length] = new Array("4.2.4.5:2", "", "«NEW TEMPLATE» careSetting: assessmentEvent", "EARoot/EA4/EA2/EA4/EA5/EA1319.htm", "25.png", "6585", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.5:3", "", "«NEW TEMPLATE» MHAAssesment: assessmentEvent", "EARoot/EA4/EA2/EA4/EA5/EA1320.htm", "25.png", "6584", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.5:4", "", ": relevantActLegislationOrRegulation", "EARoot/EA4/EA2/EA4/EA5/EA1321.htm", "25.png", "6266", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.5:5", "", ": reasonForMHA Assessment ", "EARoot/EA4/EA2/EA4/EA5/EA1322.htm", "25.png", "6265", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.5:6", "", ": otherlegalCourtConditions", "EARoot/EA4/EA2/EA4/EA5/EA1323.htm", "25.png", "6264", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.5:7", "", ": mhaAssessmentTemplateList", "EARoot/EA4/EA2/EA4/EA5/EA1324.htm", "25.png", "6263", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.5:8", "", ": mhaAssessmentDetails", "EARoot/EA4/EA2/EA4/EA5/EA1325.htm", "25.png", "6262", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.5:9", "", ": mhaAssessment", "EARoot/EA4/EA2/EA4/EA5/EA1326.htm", "25.png", "6261", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.5:10", "", ": legalActivities", "EARoot/EA4/EA2/EA4/EA5/EA1327.htm", "25.png", "6260", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.5:11", "", ": assessmentOutcome", "EARoot/EA4/EA2/EA4/EA5/EA1328.htm", "25.png", "6257", "0", "", "Object");

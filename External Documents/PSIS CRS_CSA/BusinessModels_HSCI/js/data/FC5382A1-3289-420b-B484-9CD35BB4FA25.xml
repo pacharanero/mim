@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("4.1.3:1", "", "additionalInfomationTemplateList", "EARoot/EA4/EA1/EA3/EA986.htm", "5.png", "7168", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.3:2", "", "allergyCRETypes", "EARoot/EA4/EA1/EA3/EA987.htm", "5.png", "7244", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.3:3", "", "preferencesTemplateList", "EARoot/EA4/EA1/EA3/EA988.htm", "5.png", "7176", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.3:4", "", "actionTemplateList", "EARoot/EA4/EA1/EA3/EA989.htm", "5.png", "6340", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.3:5", "", "adminDetails", "EARoot/EA4/EA1/EA3/EA990.htm", "5.png", "6349", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.3:6", "", "adminDetailsTemplateList", "EARoot/EA4/EA1/EA3/EA991.htm", "5.png", "6353", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.3:7", "", "furtherAction", "EARoot/EA4/EA1/EA3/EA992.htm", "5.png", "6350", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.3:8", "", "reasonTemplateList", "EARoot/EA4/EA1/EA3/EA993.htm", "5.png", "6347", "0", "", "Class");

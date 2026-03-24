@@ -1,0 +1,789 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Patient Personal Details</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Patient Personal Details  (2.0) : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">14/12/2005 14:54:13</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">10/01/2008 10:06:32</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Bob Cox</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">2.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Approved</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{5DE118D6-7D53-4bd6-8D3A-BC4F4DBFC6CE}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA2/EA3099.htm">IAM : 1. Patient Personal Details</a>, <a href="../EA3/EA1/EA3167.htm">CIM: MHA Assessment outside SS</a>, <a href="../EA3/EA2/EA3204.htm">CIM: MHA Assessment Update Non-SS</a>, <a href="../EA3/EA3/EA3225.htm">CIM: MH&SM-SS Entry</a>, <a href="../EA3/EA4/EA3272.htm">CIM: MH&SM-SS Update</a>, <a href="../EA3/EA5/EA3282.htm">CIM: MH&SM-SS Care Review Summary / CPA</a>, <a href="../EA3/EA6/EA3389.htm">CIM: MH&SM-SS Care Review Summary / MOC</a>, <a href="../EA3/EA7/EA3443.htm">CIM: MH&SM-SS Care Review / Unspecified</a>, <a href="../EA3/EA8/EA3520.htm">CIM: MH&SM-SS Exit</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">It&nbsp;<WBR>is&nbsp;<WBR>important&nbsp;<WBR>to&nbsp;<WBR>note&nbsp;<WBR>that&nbsp;<WBR>the&nbsp;<WBR>information&nbsp;<WBR>in&nbsp;<WBR>this&nbsp;<WBR>section&nbsp;<WBR>has&nbsp;<WBR>a&nbsp;<WBR>direct&nbsp;<WBR>impact&nbsp;<WBR>upon&nbsp;<WBR>clinical decision&nbsp;<WBR>making&nbsp;<WBR>related&nbsp;<WBR>to&nbsp;<WBR>care&nbsp;<WBR>and&nbsp;<WBR>risk&nbsp;<WBR>management&nbsp;<WBR>beyond&nbsp;<WBR>its&nbsp;<WBR>purely&nbsp;<WBR>administrative&nbsp;<WBR>usage&nbsp;<WBR>&nbsp;<WBR>(hence&nbsp;<WBR>the&nbsp;<WBR>need&nbsp;<WBR>to&nbsp;<WBR>define&nbsp;<WBR>further&nbsp;<WBR>personal&nbsp;<WBR>information&nbsp;<WBR>requirements&nbsp;<WBR>to&nbsp;<WBR>those&nbsp;<WBR>within&nbsp;<WBR>PDS&nbsp;<WBR>-&nbsp;<WBR>NB&nbsp;<WBR>Items&nbsp;<WBR>delivered&nbsp;<WBR>by&nbsp;<WBR>PDS&nbsp;<WBR>specifications&nbsp;<WBR>are&nbsp;<WBR>NOT&nbsp;<WBR>included&nbsp;<WBR>in&nbsp;<WBR>this&nbsp;<WBR>specification)</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private </i><br /><strong>&nbsp;&nbsp;Supporting information for use of Aliases or Other Names</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 2.1<br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Provides&nbsp;<WBR>supporting&nbsp;<WBR>reasons&nbsp;<WBR>to&nbsp;<WBR>indicate&nbsp;<WBR>why&nbsp;<WBR>and&nbsp;<WBR>in&nbsp;<WBR>what&nbsp;<WBR>situations&nbsp;<WBR>additional&nbsp;<WBR>names&nbsp;<WBR>or&nbsp;<WBR>Aliases&nbsp;<WBR>are&nbsp;<WBR>to&nbsp;<WBR>be&nbsp;<WBR>/&nbsp;<WBR>have&nbsp;<WBR>been&nbsp;<WBR>used&nbsp;<WBR>e.g.&nbsp;<WBR>a&nbsp;<WBR>child&nbsp;<WBR>who&nbsp;<WBR>uses&nbsp;<WBR>the&nbsp;<WBR>surname&nbsp;<WBR>of&nbsp;<WBR>each&nbsp;<WBR>parent&nbsp;<WBR>depending&nbsp;<WBR>on&nbsp;<WBR>which&nbsp;<WBR>one&nbsp;<WBR>they&nbsp;<WBR>are&nbsp;<WBR>staying&nbsp;<WBR>with&nbsp;<WBR>at&nbsp;<WBR>the&nbsp;<WBR>time
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Representation Representation </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Marked&nbsp;<WBR>up&nbsp;<WBR>Text
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example Tony's sometimes uses the nickname 'Maca' but may be affronted if you use it without his permission  </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Tony&#39;s&nbsp;<WBR>sometimes&nbsp;<WBR>uses&nbsp;<WBR>the&nbsp;<WBR>nickname&nbsp;<WBR>&#39;Maca&#39;&nbsp;<WBR>but&nbsp;<WBR>may&nbsp;<WBR>be&nbsp;<WBR>affronted&nbsp;<WBR>if&nbsp;<WBR>you&nbsp;<WBR>use&nbsp;<WBR>it&nbsp;<WBR>without&nbsp;<WBR>his&nbsp;<WBR>permission
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private </i><br /><strong>&nbsp;&nbsp;Refugee Status</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 2.2<br><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			If&nbsp;<WBR>applicable&nbsp;<WBR>enables&nbsp;<WBR>the&nbsp;<WBR>capture&nbsp;<WBR>of&nbsp;<WBR>relevant&nbsp;<WBR>information&nbsp;<WBR>around&nbsp;<WBR>current&nbsp;<WBR>status&nbsp;<WBR>if&nbsp;<WBR>the&nbsp;<WBR>patient&nbsp;<WBR>is&nbsp;<WBR>a&nbsp;<WBR>refugee&lt;br&nbsp;<WBR>/&gt;&lt;br&nbsp;<WBR>/&gt;This&nbsp;<WBR>is&nbsp;<WBR>of&nbsp;<WBR>particular&nbsp;<WBR>importance&nbsp;<WBR>in&nbsp;<WBR>some&nbsp;<WBR>specialist&nbsp;<WBR>areas&nbsp;<WBR>of&nbsp;<WBR>care&nbsp;<WBR>e.g.&nbsp;<WBR>CAMHS&nbsp;<WBR>care&nbsp;<WBR>for&nbsp;<WBR>children&nbsp;<WBR>who&nbsp;<WBR>are&nbsp;<WBR>refugees&lt;br&nbsp;<WBR>/&gt;
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Example Tony has refugee status with permission to remain in the UK for 4 years - concluding on 15/6/07 - he has a full UK work permit </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Tony&nbsp;<WBR>has&nbsp;<WBR>refugee&nbsp;<WBR>status&nbsp;<WBR>with&nbsp;<WBR>permission&nbsp;<WBR>to&nbsp;<WBR>remain&nbsp;<WBR>in&nbsp;<WBR>the&nbsp;<WBR>UK&nbsp;<WBR>for&nbsp;<WBR>4&nbsp;<WBR>years&nbsp;<WBR>-concluding&nbsp;<WBR>on&nbsp;<WBR>15/6/07&nbsp;<WBR>-&nbsp;<WBR>he&nbsp;<WBR>has&nbsp;<WBR>a&nbsp;<WBR>full&nbsp;<WBR>UK&nbsp;<WBR>work&nbsp;<WBR>permit
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Representation Marked up Text  </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Marked&nbsp;<WBR>up&nbsp;<WBR>Text
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private </i><br /><strong>&nbsp;&nbsp;Supporting information relating to the death of the patient</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 2.3<br><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Text&nbsp;<WBR>for&nbsp;<WBR>HSCP&nbsp;<WBR>to&nbsp;<WBR>make&nbsp;<WBR>any&nbsp;<WBR>necessary&nbsp;<WBR>further&nbsp;<WBR>comments&nbsp;<WBR>related&nbsp;<WBR>to&nbsp;<WBR>the&nbsp;<WBR>death&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>patient
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Constraint Item available for MH&SS Update, Exit and Assessment Update Non-SS Messages. Item NOT available in all other circumstances. </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Item&nbsp;<WBR>available&nbsp;<WBR>for&nbsp;<WBR><br />MH&SS&nbsp;<WBR>Update,&nbsp;<WBR><br />MH&SS&nbsp;<WBR>Exit&nbsp;<WBR>and&nbsp;<WBR><br />MH&SS&nbsp;<WBR>Assessment&nbsp;<WBR>Update&nbsp;<WBR>Non-SS&nbsp;<WBR>Messages.&nbsp;<WBR><br />Item&nbsp;<WBR>NOT&nbsp;<WBR>available&nbsp;<WBR>in&nbsp;<WBR>all&nbsp;<WBR>other&nbsp;<WBR>circumstances.
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Representation Marked up Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Marked&nbsp;<WBR>up&nbsp;<WBR>Text<br />
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Constraint Cardinality  </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Cardinality&nbsp;<WBR>changes&nbsp;<WBR>to&nbsp;<WBR>[0..*]&nbsp;<WBR>for&nbsp;<WBR>MH&SM-SS&nbsp;<WBR>Exit,&nbsp;<WBR>MH&SM-SS&nbsp;<WBR>Update&nbsp;<WBR>and&nbsp;<WBR>MHA&nbsp;<WBR>Assessment&nbsp;<WBR>Update&nbsp;<WBR>only.&nbsp;<WBR>This&nbsp;<WBR>item&nbsp;<WBR>will&nbsp;<WBR>not&nbsp;<WBR>be&nbsp;<WBR>included&nbsp;<WBR>in&nbsp;<WBR>any&nbsp;<WBR>other&nbsp;<WBR>circumstances
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example Example </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::The&nbsp;<WBR>patient&nbsp;<WBR>committed&nbsp;<WBR>suicide&nbsp;<WBR>during&nbsp;<WBR>the&nbsp;<WBR>evening&nbsp;<WBR>by&nbsp;<WBR>jumping&nbsp;<WBR>from&nbsp;<WBR>a&nbsp;<WBR>fourth&nbsp;<WBR>floor&nbsp;<WBR>balcony<br /><br />The&nbsp;<WBR>case&nbsp;<WBR>is&nbsp;<WBR>currently&nbsp;<WBR>under&nbsp;<WBR>review&nbsp;<WBR>by&nbsp;<WBR>the&nbsp;<WBR>Coroner<br />
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private </i><br /><strong>&nbsp;&nbsp;Marital or Partnership Status</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 2.4<br><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Information&nbsp;<WBR>in&nbsp;<WBR>this&nbsp;<WBR>section&nbsp;<WBR>has&nbsp;<WBR>potentially&nbsp;<WBR>important&nbsp;<WBR>clinical&nbsp;<WBR>implications.&nbsp;<WBR>The&nbsp;<WBR>current&nbsp;<WBR>marital&nbsp;<WBR>/&nbsp;<WBR>partnership&nbsp;<WBR>status&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>patient&lt;br&nbsp;<WBR>/&gt;&lt;br&nbsp;<WBR>/&gt;&#39;Unknown&#39;&nbsp;<WBR>at&nbsp;<WBR>this&nbsp;<WBR>time&nbsp;<WBR>is&nbsp;<WBR>an&nbsp;<WBR>acceptable&nbsp;<WBR>answer&nbsp;<WBR>here&lt;br&nbsp;<WBR>/&gt;
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Example Informal Same-Sex Partnership </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Informal&nbsp;<WBR>Same-Sex&nbsp;<WBR>Partnership
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Representation Coded Values:  </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Coded&nbsp;<WBR>Values:<br />&nbsp;<WBR>Married<br />&nbsp;<WBR>Divorced<br />&nbsp;<WBR>Widowed<br />&nbsp;<WBR>Formally&nbsp;<WBR>Separated<br />&nbsp;<WBR>Informally&nbsp;<WBR>Separated<br />&nbsp;<WBR>Engaged<br />&nbsp;<WBR>Single<br />&nbsp;<WBR>Formal&nbsp;<WBR>Civil&nbsp;<WBR>Partnership<br />&nbsp;<WBR>Informal&nbsp;<WBR>Same-Sex&nbsp;<WBR>Partnership<br />&nbsp;<WBR>Informal&nbsp;<WBR>Opposite-Sex&nbsp;<WBR>Partnership<br />&nbsp;<WBR>Not&nbsp;<WBR>Known<br />&nbsp;<WBR>Not&nbsp;<WBR>Expressed
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private </i><br /><strong>&nbsp;&nbsp;Personal gender expressions</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 2.7<br><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Covers&nbsp;<WBR>any&nbsp;<WBR>personal&nbsp;<WBR>expression&nbsp;<WBR>of&nbsp;<WBR>gender&nbsp;<WBR>identity&nbsp;<WBR>and&nbsp;<WBR>related&nbsp;<WBR>sexual&nbsp;<WBR>identity&nbsp;<WBR>issues&nbsp;<WBR>beyond&nbsp;<WBR>that&nbsp;<WBR>collected&nbsp;<WBR>by&nbsp;<WBR>PDS
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Representation Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Text
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example Pre-operative transsexual   </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Pre-operative&nbsp;<WBR>transsexual&nbsp;<WBR> 
+		</td>
+	</td>
+</table> </td>
+			</tr>
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="../EA3/EA8/EA3573.htm">MH&SM-SS Exit</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MH&SM-SS&nbsp;<WBR>Exit</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="../EA3/EA7/EA3517.htm">MH&SM-SS Care Review / Unspecified</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MH&SM-SS&nbsp;<WBR>Care&nbsp;<WBR>Review&nbsp;<WBR>/&nbsp;<WBR>Unspecified</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="../EA3/EA6/EA3440.htm">MH&SM-SS Care Review Summary / MOC</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MH&SM-SS&nbsp;<WBR>Care&nbsp;<WBR>Review&nbsp;<WBR>Summary&nbsp;<WBR>/&nbsp;<WBR>MOC</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="../EA3/EA5/EA3386.htm">MH&SM-SS Care Review Summary / CPA</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="../EA3/EA4/EA3279.htm">MH&SM-SS Update</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MH&SM-SS&nbsp;<WBR>Update</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="../EA3/EA3/EA3269.htm">MH&SM-SS Entry</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MH&SM-SS&nbsp;<WBR>Entry</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="../EA3/EA2/EA3222.htm">MHA Assessment Update Non-SS</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MHA&nbsp;<WBR>Assessment&nbsp;<WBR>Update&nbsp;<WBR>Non-SS</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="../EA3/EA1/EA3203.htm">MHA Assessment outside SS</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MH&nbsp;<WBR>Assessment&nbsp;<WBR>outside&nbsp;<WBR>SS&nbsp;<WBR></div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA3584.htm">Housing Status Details</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MH&SM-SS&nbsp;<WBR>Care&nbsp;<WBR>Review&nbsp;<WBR>/&nbsp;<WBR>Unspecified</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA3586.htm">Ethnicity / Religion/Philosophy/Culture</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA3587.htm">Education / Training / Employment and Financial status</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MH&SM-SS&nbsp;<WBR>Care&nbsp;<WBR>Review&nbsp;<WBR>/&nbsp;<WBR>Unspecified<br />MHA&nbsp;<WBR>Assessment&nbsp;<WBR>Update&nbsp;<WBR>Non-SS</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA3586.htm">Ethnicity / Religion/Philosophy/Culture</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MHA&nbsp;<WBR>Assessment&nbsp;<WBR>outside&nbsp;<WBR>SS<br />MHA&nbsp;<WBR>Assessment&nbsp;<WBR>Update&nbsp;<WBR>Non-SS<br />MH&SM-SS&nbsp;<WBR>Entry<br />MH&SM-SS&nbsp;<WBR>Update<br />MH&SM-SS&nbsp;<WBR>Exit</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA3591.htm">Patient Communications</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">All&nbsp;<WBR>Messages</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA3587.htm">Education / Training / Employment and Financial status</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MHA&nbsp;<WBR>Assessment&nbsp;<WBR>outside&nbsp;<WBR>SS<br /></div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA3586.htm">Ethnicity / Religion/Philosophy/Culture</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MH&SM-SS&nbsp;<WBR>Care&nbsp;<WBR>Review&nbsp;<WBR>/&nbsp;<WBR>Unspecified</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA3586.htm">Ethnicity / Religion/Philosophy/Culture</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MH&SM-SS&nbsp;<WBR>Care&nbsp;<WBR>Review&nbsp;<WBR>Summary&nbsp;<WBR>/&nbsp;<WBR>CPA<br />MH&SM-SS&nbsp;<WBR>Care&nbsp;<WBR>Review&nbsp;<WBR>Summary&nbsp;<WBR>/&nbsp;<WBR>MOC</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA3587.htm">Education / Training / Employment and Financial status</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA3587.htm">Education / Training / Employment and Financial status</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MH&SM-SS&nbsp;<WBR>Care&nbsp;<WBR>Review&nbsp;<WBR>Summary&nbsp;<WBR>/&nbsp;<WBR>CPA<br />MH&SM-SS&nbsp;<WBR>Care&nbsp;<WBR>Review&nbsp;<WBR>Summary&nbsp;<WBR>/&nbsp;<WBR>MOC</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA3584.htm">Housing Status Details</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MH&SM-SS&nbsp;<WBR>Care&nbsp;<WBR>Review&nbsp;<WBR>Summary&nbsp;<WBR>/&nbsp;<WBR>CPA<br />MH&SM-SS&nbsp;<WBR>Care&nbsp;<WBR>Review&nbsp;<WBR>Summary&nbsp;<WBR>/&nbsp;<WBR>MOC</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA3584.htm">Housing Status Details</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MH&nbsp;<WBR>Assessment&nbsp;<WBR>outside&nbsp;<WBR>SS<br />MHA&nbsp;<WBR>Assessment&nbsp;<WBR>Update&nbsp;<WBR>Non-SS<br />MH&SM-SS&nbsp;<WBR>Entry<br />MH&SM-SS&nbsp;<WBR>Update<br />MH&SM-SS&nbsp;<WBR>Exit</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA3587.htm">Education / Training / Employment and Financial status</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MH&SM-SS&nbsp;<WBR>Entry<br />MH&SM-SS&nbsp;<WBR>Update<br />MH&SM-SS&nbsp;<WBR>Exit</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA3584.htm">Housing Status Details</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="15%" class="TableHeading">Type</td>
+					<td width="15%" class="TableHeading">Connection</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3584.htm">Housing Status Details</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MH&SM-SS Care Review / Unspecified</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3587.htm">Education / Training / Employment and Financial status</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MH&SM-SS Care Review / Unspecified
+MHA Assessment Update Non-SS</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3586.htm">Ethnicity / Religion/Philosophy/Culture</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MHA Assessment outside SS
+MHA Assessment Update Non-SS
+MH&SM-SS Entry
+MH&SM-SS Update
+MH&SM-SS Exit</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3591.htm">Patient Communications</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">All Messages</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3587.htm">Education / Training / Employment and Financial status</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MHA Assessment outside SS
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3586.htm">Ethnicity / Religion/Philosophy/Culture</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MH&SM-SS Care Review / Unspecified</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3586.htm">Ethnicity / Religion/Philosophy/Culture</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MH&SM-SS Care Review Summary / CPA
+MH&SM-SS Care Review Summary / MOC</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3587.htm">Education / Training / Employment and Financial status</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MH&SM-SS Care Review Summary / CPA
+MH&SM-SS Care Review Summary / MOC</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3584.htm">Housing Status Details</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MH&SM-SS Care Review Summary / CPA
+MH&SM-SS Care Review Summary / MOC</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3584.htm">Housing Status Details</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MH Assessment outside SS
+MHA Assessment Update Non-SS
+MH&SM-SS Entry
+MH&SM-SS Update
+MH&SM-SS Exit</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3587.htm">Education / Training / Employment and Financial status</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MH&SM-SS Entry
+MH&SM-SS Update
+MH&SM-SS Exit</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA3083.htm">Patient Personal Details</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Tree</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA8/EA3573.htm">MH&SM-SS Exit</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MH&SM-SS Exit</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA7/EA3517.htm">MH&SM-SS Care Review / Unspecified</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MH&SM-SS Care Review / Unspecified</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA6/EA3440.htm">MH&SM-SS Care Review Summary / MOC</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MH&SM-SS Care Review Summary / MOC</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA5/EA3386.htm">MH&SM-SS Care Review Summary / CPA</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA4/EA3279.htm">MH&SM-SS Update</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MH&SM-SS Update</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA3/EA3269.htm">MH&SM-SS Entry</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MH&SM-SS Entry</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA2/EA3222.htm">MHA Assessment Update Non-SS</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MHA Assessment Update Non-SS</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA1/EA3203.htm">MHA Assessment outside SS</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MH Assessment outside SS </td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

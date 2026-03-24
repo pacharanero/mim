@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("3.1.2:1", "", "Manage DI Report", "EARoot/EA3/EA1/EA2/EA78.htm", "180.png", "152", "0", "", "Use Case diagram");
+tocTab[tocTab.length] = new Array("3.1.2:2", "", "Receive DI Report", "EARoot/EA3/EA1/EA2/EA82.htm", "7.png", "5129", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("3.1.2:3", "", "Retrieve DI Report from PSIS", "EARoot/EA3/EA1/EA2/EA83.htm", "7.png", "3781", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("3.1.2:4", "", "Send Addendum", "EARoot/EA3/EA1/EA2/EA84.htm", "7.png", "3779", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("3.1.2:5", "", "Send DI Report", "EARoot/EA3/EA1/EA2/EA85.htm", "7.png", "3780", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("3.1.2:6", "", "Update DI Report", "EARoot/EA3/EA1/EA2/EA86.htm", "7.png", "3782", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("3.1.2:7", "", "View DI Report", "EARoot/EA3/EA1/EA2/EA87.htm", "7.png", "3796", "0", "", "UseCase");

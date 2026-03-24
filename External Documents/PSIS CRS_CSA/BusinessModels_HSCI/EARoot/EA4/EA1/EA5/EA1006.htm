@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CD - Contact Assessment</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA1007.png" usemap="#EA1007" border="0" />
+
+<MAP NAME="EA1007">
+<area shape="rect" coords="814,764,1034,849" href="../EA3/EA987.htm">
+<area shape="rect" coords="399,879,775,1227" href="EA1008.htm">
+<area shape="rect" coords="447,735,715,852" href="../EA3/EA986.htm">
+<area shape="rect" coords="479,567,745,647" href="EA1014.htm">
+<area shape="rect" coords="34,831,358,981" href="../EA3/EA989.htm">
+<area shape="rect" coords="18,1013,392,1228" href="../EA3/EA993.htm">
+<area shape="rect" coords="60,736,311,816" href="../EA3/EA991.htm">
+<area shape="rect" coords="1027,324,1400,422" href="EA1011.htm">
+<area shape="rect" coords="791,439,1057,519" href="../EA3/EA992.htm">
+<area shape="rect" coords="482,439,748,519" href="EA1015.htm">
+<area shape="rect" coords="10,10,202,85" href="EA1010.htm">
+<area shape="rect" coords="266,340,541,420" href="../EA3/EA990.htm">
+<area shape="rect" coords="31,99,390,262" href="EA1013.htm">
+<area shape="rect" coords="594,69,928,336" href="EA1012.htm">
+</MAP>
+
+	<div class="ObjectTitle">CD - Contact Assessment : logical diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">02/07/2007 11:37:09</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">13/03/2008 10:02:51</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Christina Lovelock</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">0.7 Draft</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{11CB850F-663E-43de-97C0-6DE2EC6557EB}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Version 0.1 &lt;br /&gt;Initial attempt inc Encompassing Encounter (assumes CCN 404 acceptance). For use at C&M initial walk though 13/09/07&lt;br /&gt;&lt;br /&gt;Version 0.2 &lt;br /&gt;Post walk-though with C&M. Remove ContactAssessmentText (document section). Corporate Package also amended to remove the concept of Document Section (as C&M now have alternate approach to introduce new authors at text section level). Addition to actionTemplateList: plannedAssessment using new_cda_assessmentEvent. additions to contactAssessmentAdditionalInformationTemplate List: finances, housing, patient movement&lt;br /&gt;&lt;br /&gt;Version 0.3 &lt;br /&gt;corrected all cardinalities on resonTemplateList from (1..1) to (0..*). added organisedFinding template to reasonTemplateList and contactAssessmentAdditionalInformationTemplateList&lt;br /&gt;&lt;br /&gt;Version 0.4 &lt;br /&gt;added PersonPresent To assessmentEvent template.&lt;br /&gt;&lt;br /&gt;Version 0.5  &lt;br /&gt;on actionTemplateList corrected cardinality on plannedAssessment attribute from (1..1) to (0..*). On allergiesCREType list corrected cardinality of allergies attribute from (1..0) to (1..1). Added templates for Weight, Height. BloodPresure, Temperature to contactAssessmentAdditional InformationTemplateList as per outcome of practitioner validation workshops. Removed new_cda_assessmentTool template. Changed dataType on assessmentTool attribute on assessmentEvent template from new_cda_assessmentTool to cda_DeviceNonSDSwithOrgSDS. Change cardinality on adminDetailsTemplateList on adminDetails class from (1..1) to (0..1).&lt;br /&gt;&lt;br /&gt;Version 0.6 &lt;br /&gt;added securityAbuseDiscrimination attribute to contactAssessementAdditionalInformtionTemplateList. added lifestyle attribute and securityAbuseDiscrimination attribute to reasonTemplate&lt;br /&gt;&lt;br /&gt;Version 0.7 &lt;br /&gt;Changed cardinality of securityAbuseDiscrimination attribute to reasonTemplate and contactAssessmentAdditionalInformationTemplateList from (1..*) to (0..*)&lt;br /&gt;&lt;br /&gt;Added existingServiceOrCarer attribute to reasonTemplateList&lt;br /&gt;Changed cardinality on recursive association on reason class from 0...(0..1), to 0..(0..*)&lt;br /&gt;07-02-2008 New templates no longer shown on diagram - this was required during Message development phase only.&lt;br /&gt;&lt;br /&gt;Version 1.1&lt;br /&gt;Change cadinality on attribute adminDetailsTemplateList in adminDetails class from [0..1] to [1..1]</div>
+
+</div>
+ 
+</body>
+</html>

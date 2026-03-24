@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Patient / Service User involvement in review</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Patient / Service User involvement in review  (8.2.8) : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">08/06/2006 13:09:56</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">10/01/2008 10:06:32</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Bob Cox</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Approved</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{E18C9211-BE1F-402a-B090-FFC3A2ACAFB6}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA2/EA3111.htm">IAM : 7. Care Review (CPA / MOC / Unspecified reviews) Administrative items</a>, <a href="../EA3/EA5/EA3282.htm">CIM: MH&SM-SS Care Review Summary / CPA</a>, <a href="../EA3/EA6/EA3389.htm">CIM: MH&SM-SS Care Review Summary / MOC</a>, <a href="../EA3/EA7/EA3443.htm">CIM: MH&SM-SS Care Review / Unspecified</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">CPA&nbsp;<WBR>requires&nbsp;<WBR>that&nbsp;<WBR>the&nbsp;<WBR>agreement&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>Patient&nbsp;<WBR>/&nbsp;<WBR>Service&nbsp;<WBR>User&nbsp;<WBR>to&nbsp;<WBR>the&nbsp;<WBR>review&nbsp;<WBR>be&nbsp;<WBR>recorded&nbsp;<WBR>and&nbsp;<WBR>that&nbsp;<WBR>they&nbsp;<WBR>be&nbsp;<WBR>given&nbsp;<WBR>a&nbsp;<WBR>copy&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>Review&nbsp;<WBR>summary<br /><br />Should&nbsp;<WBR>normally&nbsp;<WBR>be&nbsp;<WBR>recorded&nbsp;<WBR>at&nbsp;<WBR>the&nbsp;<WBR>point&nbsp;<WBR>of&nbsp;<WBR>producing&nbsp;<WBR>a&nbsp;<WBR>Care&nbsp;<WBR>Review&nbsp;<WBR>Summary&nbsp;<WBR>communication</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private </i><br /><strong>&nbsp;&nbsp;Patients involvement in the review</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 8.2.8.1<br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Enables&nbsp;<WBR>the&nbsp;<WBR>recording&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>involvement&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>Patient&nbsp;<WBR>in&nbsp;<WBR>the&nbsp;<WBR>review
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Null Required NAV </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::NAV
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Representation Marked Up Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Marked&nbsp;<WBR>Up&nbsp;<WBR>Text
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example Tony was able to fully participate in the review and to express his views regarding the decisions around his care plan </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Tony&nbsp;<WBR>was&nbsp;<WBR>able&nbsp;<WBR>to&nbsp;<WBR>fully&nbsp;<WBR>participate&nbsp;<WBR>in&nbsp;<WBR>the&nbsp;<WBR>review&nbsp;<WBR>and&nbsp;<WBR>to&nbsp;<WBR>express&nbsp;<WBR>his&nbsp;<WBR>views&nbsp;<WBR>regarding&nbsp;<WBR>the&nbsp;<WBR>decisions&nbsp;<WBR>around&nbsp;<WBR>his&nbsp;<WBR>care&nbsp;<WBR>plan
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private </i><br /><strong>&nbsp;&nbsp;Patient / Service User Agreement to  Review</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 8.2.8.2<br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The&nbsp;<WBR>Patient&nbsp;<WBR>may&nbsp;<WBR>Agree&nbsp;<WBR>fully,&nbsp;<WBR>only&nbsp;<WBR>in&nbsp;<WBR>part,&nbsp;<WBR>Disagree&nbsp;<WBR>or&nbsp;<WBR>be&nbsp;<WBR>unable&nbsp;<WBR>to&nbsp;<WBR>express&nbsp;<WBR>an&nbsp;<WBR>agreement&lt;br&nbsp;<WBR>/&gt;&lt;br&nbsp;<WBR>/&gt;The&nbsp;<WBR>level&nbsp;<WBR>of&nbsp;<WBR>agreement&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>Patient&nbsp;<WBR>/&nbsp;<WBR>Service&nbsp;<WBR>User&nbsp;<WBR>to&nbsp;<WBR>the&nbsp;<WBR>Care&nbsp;<WBR>Review&nbsp;<WBR>should&nbsp;<WBR>be&nbsp;<WBR>captured&nbsp;<WBR>here
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Null Required NAV </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::NAV
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Representation Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Text
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example Agreed in part as Tony was not happy about attending OT sessions. </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Agreed&nbsp;<WBR>in&nbsp;<WBR>part&nbsp;<WBR>as&nbsp;<WBR>Tony&nbsp;<WBR>was&nbsp;<WBR>not&nbsp;<WBR>happy&nbsp;<WBR>about&nbsp;<WBR>attending&nbsp;<WBR>OT&nbsp;<WBR>sessions.
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private </i><br /><strong>&nbsp;&nbsp;Date Agreement Sought</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 8.2.8.3<br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Actual&nbsp;<WBR>date&nbsp;<WBR>when&nbsp;<WBR>Patients&nbsp;<WBR>agreement&nbsp;<WBR>was&nbsp;<WBR>sought
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Representation Date </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Date
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example 01/01/04 </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::01/01/04
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Null Required NAV </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::NAV
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private </i><br /><strong>&nbsp;&nbsp;Location of Signed Paper Copy of Agreement?</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 8.2.8.4<br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Details&nbsp;<WBR>of&nbsp;<WBR>where&nbsp;<WBR>paper&nbsp;<WBR>copy&nbsp;<WBR>of&nbsp;<WBR>signature&nbsp;<WBR>on&nbsp;<WBR>agreement&nbsp;<WBR>held.
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Null Required NAV </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::NAV
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Representation Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Text
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example CPA paper file - Ward office - Coniston Unit. </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::CPA&nbsp;<WBR>paper&nbsp;<WBR>file&nbsp;<WBR>-&nbsp;<WBR>Ward&nbsp;<WBR>office&nbsp;<WBR>-&nbsp;<WBR>Coniston&nbsp;<WBR>Unit.
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private </i><br /><strong>&nbsp;&nbsp;Means used to provide a Summary Copy of the review for the Patient  / Service User</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 8.2.8.5<br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			CPA&nbsp;<WBR>requires&nbsp;<WBR>that&nbsp;<WBR>the&nbsp;<WBR>Patient&nbsp;<WBR>has&nbsp;<WBR>the&nbsp;<WBR>offer&nbsp;<WBR>of&nbsp;<WBR>their&nbsp;<WBR>own&nbsp;<WBR>copy&nbsp;<WBR>(i.e.&nbsp;<WBR>disk&nbsp;<WBR>copy,&nbsp;<WBR>by&nbsp;<WBR>access&nbsp;<WBR>to&nbsp;<WBR>electronic&nbsp;<WBR>health&nbsp;<WBR>record,&nbsp;<WBR>paper&nbsp;<WBR>copy&nbsp;<WBR>etc.)&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>CPA&nbsp;<WBR>Summary&nbsp;<WBR>-&nbsp;<WBR>Needs&nbsp;<WBR>to&nbsp;<WBR>handle:&nbsp;<WBR>NAV&nbsp;<WBR>because&nbsp;<WBR>may&nbsp;<WBR>not&nbsp;<WBR>be&nbsp;<WBR>required&nbsp;<WBR>or&nbsp;<WBR>patient&nbsp;<WBR>unable&nbsp;<WBR>to&nbsp;<WBR>receive&nbsp;<WBR>copy&nbsp;<WBR>due&nbsp;<WBR>to&nbsp;<WBR>illness&nbsp;<WBR>
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Null Required NAV </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::NAV
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example Paper Copy provided  </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Paper&nbsp;<WBR>Copy&nbsp;<WBR>provided&nbsp;<WBR>
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Representation Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Text
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private </i><br /><strong>&nbsp;&nbsp;Date Summary Provided for Patient  / Service User</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 8.2.8.6<br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Date&nbsp;<WBR>that&nbsp;<WBR>the&nbsp;<WBR>summary&nbsp;<WBR>from&nbsp;<WBR>the&nbsp;<WBR>review&nbsp;<WBR>was&nbsp;<WBR>provided&nbsp;<WBR>for&nbsp;<WBR>the&nbsp;<WBR>Patient&nbsp;<WBR>/&nbsp;<WBR>SU
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Representation Date </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Date
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example 02/01/2004 </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::02/01/2004
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Null Required NAV </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::NAV
+		</td>
+	</td>
+</table> </td>
+			</tr>
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA3615.htm">Care Review Administration</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">MH&SM-SS&nbsp;<WBR>Care&nbsp;<WBR>Review&nbsp;<WBR>Summary&nbsp;<WBR>/&nbsp;<WBR>CPA<br />MH&SM-SS&nbsp;<WBR>Care&nbsp;<WBR>Review&nbsp;<WBR>Summary&nbsp;<WBR>/&nbsp;<WBR>MOC<br />MH&SM-SS&nbsp;<WBR>Care&nbsp;<WBR>Review&nbsp;<WBR>/&nbsp;<WBR>Unspecified</div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="15%" class="TableHeading">Type</td>
+					<td width="15%" class="TableHeading">Connection</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3615.htm">Care Review Administration</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">MH&SM-SS Care Review Summary / CPA
+MH&SM-SS Care Review Summary / MOC
+MH&SM-SS Care Review / Unspecified</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

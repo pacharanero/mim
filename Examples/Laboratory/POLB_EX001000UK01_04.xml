@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This example message is provided for illustrative purposes only. It has had no clinical validation. Whilst every effort has been taken to ensure that the examples are consistent with the
+ message specification contained within the MiM, where there are conflicts with the written message specification or schema, the specification or schema shall be considered to take
+precedence
+-->
+<LaboratoryRequestGroup classCode="ACT" moodCode="RQO" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ..\..\schemas\POLB_MT001000UK01.xsd">
+	<id root="9.99.999.99.9.6" extension="MSRQ1458100"/>
+	<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="113076002" displayName="glucose tolerance test"/>
+	<statusCode code="active"/>
+	<effectiveTime value="20050810131530"/>
+	<priorityCode codeSystem="2.16.840.1.113883.2.1.3.2.4.17.95" code="1" displayName="Routine"/>
+	<confidentialityCode codeSystem="2.16.840.1.113883.2.1.3.2.4.17.249" code="N"/>
+	<recordTarget typeCode="RCT" contextControlCode="OP">
+		<patient classCode="PAT">
+			<id root="2.16.840.1.113883.2.1.4.1" extension="9900002822"/>
+			<statusCode code="active"/>
+			
+			<patientPerson determinerCode="INSTANCE" classCode="PSN">
+				<name>
+					<given>Brian</given>
+					<family>Appleton</family>
+				</name>
+				<administrativeGenderCode codeSystem="2.16.840.1.113883.2.1.3.2.4.16.25" code="1"/>
+				<birthTime value="19520319"/>
+				<addr use="H">
+					<streetAddressLine>24</streetAddressLine>
+					<streetAddressLine>Muirfield Crescent</streetAddressLine>
+					<streetAddressLine>Sampletown</streetAddressLine>
+					<postalCode>BB1 2BB</postalCode>
+				</addr>
+				<asPatient classCode="PAT">
+					<subjectOf  typeCode="SBJ">
+						<patientCareProvision moodCode="EVN" classCode="PCPR">
+							<code codeSystem="2.16.840.1.113883.2.1.3.2.4.16.43" code="01"/>
+							<performer typeCode="PRF">
+								<functionCode codeSystem="2.16.840.1.113883.5.88" code="PCP"/>
+								<assignedProvider classCode="ASSIGNED">
+									<id root="1.2.826.0.1285.0.2.0.67" extension="151854257025"/>
+									<id root="1.2.826.0.1285.0.2.0.65" extension="910493857097"/>
+									<code nullFlavor="NA"/>
+									<assignedPersonProvider determinerCode="INSTANCE" classCode="PSN">
+										<name>Mr Responsible</name>
+										<asHealthCareProvider classCode="PROV"/>
+									</assignedPersonProvider>
+								</assignedProvider>
+							</performer>
+						</patientCareProvision>
+						
+					</subjectOf>
+				</asPatient>
+				
+			</patientPerson>
+			
+		</patient>
+	</recordTarget>
+	<performer contextControlCode="ON" typeCode="PRF">
+		<assignedOrgSDS classCode="ASSIGNED">
+			<id root="1.2.826.0.1285.0.1.10" extension="RBL07"/>
+			
+			<assignedOrganizationSDS classCode="ORG" determinerCode="INSTANCE">
+				<name>The Performing Organisation</name>
+			</assignedOrganizationSDS>
+		</assignedOrgSDS>
+	</performer>
+	<author contextControlCode="OP" typeCode="AUT">
+		<time value="20050822105532"/>
+		<assignedOrgSDS classCode="ASSIGNED">
+			<id root="1.2.826.0.1285.0.1.10" extension="M85008"/>
+			<assignedOrganizationSDS classCode="ORG" determinerCode="INSTANCE">
+				<name>The Requesting Organisation</name>
+			</assignedOrganizationSDS>
+		</assignedOrgSDS>
+	</author>
+	<primaryInformationRecipient typeCode="PRCP">
+		<assignedOrgSDS classCode="ASSIGNED">
+			<id root="1.2.826.0.1285.0.1.10" extension="M85008"/>
+			<assignedOrganizationSDS classCode="ORG" determinerCode="INSTANCE">
+				<name>The Requesting Organisation</name>
+			</assignedOrganizationSDS>
+		</assignedOrgSDS>	
+	</primaryInformationRecipient>
+	<reason typeCode="RSON" contextConductionInd="true" contextControlCode="AN">
+		<observation classCode="OBS" moodCode="EVN">
+			<id root="4A91D816-F7E9-4F8F-9628-A24B37AAF306"/>
+			<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="37331000000100" displayName="comment note"/>
+			<statusCode code="completed"/>
+			<effectiveTime xsi:type="IVL_TS">
+				<center value="20050822105032"/>
+			</effectiveTime>
+			<value xsi:type="ST">?Late onset Diabetes</value>
+		</observation>
+	</reason>
+	<component typeCode="COMP" contextConductionInd="true" contextControlCode="AN">
+		<seperatableInd value="true"/>
+		<observationRequest classCode="OBS" moodCode="RQO">
+			<id root="9.99.999.99.9.8" extension="MSINV2649401"/>
+			<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="36048009" displayName="glucose measurement"/>
+			<statusCode code="active"/>
+			<effectiveTime nullFlavor="NI"/>
+			<priorityCode codeSystem="2.16.840.1.113883.2.1.3.2.4.17.95" code="1"/>
+			<specimen contextControlCode="OP" typeCode="SPC">
+				<specimen classCode="SPEC">
+					<id root="9.99.999.99.9.7" extension="MS654601"/>
+					<code codeSystem="2.16.840.1.113883.5.111" code="P"/>
+					<specimenNatural determinerCode="INSTANCE" classCode="ENT">
+						<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="119297000" displayName="blood specimen"/>
+					</specimenNatural>
+					<productOf typeCode="PRD" contextControlCode="AN">
+						<process classCode="PROC" moodCode="EVN">
+							<id root="69F6F8CA-BAC8-44D4-A169-588D000C3099"/>
+							<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="17636008" displayName="specimen collection"/>
+							<statusCode code="completed"/>
+							<effectiveTime  xsi:type="IVL_TS">
+								<center value="20050810103030"/>
+							</effectiveTime>
+							<precondition typeCode="PRCN" contextConductionInd="true" contextControlCode="AN">
+								<criterion moodCode="EVN.CRT" classCode="OBS">
+									<id root="6B54E56C-E736-4E7B-859A-A83D2259B07B"/>
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="182923009" displayName="fasting patient"/>
+								</criterion>
+							</precondition>
+						</process>
+					</productOf>
+				</specimen>
+			</specimen>
+		</observationRequest>
+	</component>
+	<component typeCode="COMP" contextConductionInd="true" contextControlCode="AN">
+		<seperatableInd value="true"/>
+		<observationRequest classCode="OBS" moodCode="RQO">
+			<id root="9.99.999.99.9.8" extension="MSINV2649370"/>
+			<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="36048009" displayName="glucose measurement"/>
+			<statusCode code="active"/>
+			<effectiveTime nullFlavor="NI"/>
+			<priorityCode codeSystem="2.16.840.1.113883.2.1.3.2.4.17.95" code="1" displayName="Routine"/>
+			<specimen contextControlCode="OP" typeCode="SPC">
+				<specimen classCode="SPEC">
+					<id root="9.99.999.99.9.7" extension="MS654700"/>
+					<code codeSystem="2.16.840.1.113883.5.111" code="P"/>
+					<specimenNatural determinerCode="INSTANCE" classCode="ENT">
+						<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="119297000" displayName="blood specimen"/>
+					</specimenNatural>
+					<productOf typeCode="PRD" contextControlCode="AN">
+						<process classCode="PROC" moodCode="EVN">
+							<id root="528636C8-A74C-473C-A153-6E86FC651374"/>
+							<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="17636008" displayName="specimen collection"/>
+							<statusCode code="completed"/>
+							<effectiveTime xsi:type="IVL_TS">
+								<center value="20050810110045"/>
+							</effectiveTime>
+							<precondition typeCode="PRCN" contextConductionInd="true" contextControlCode="AN">
+								<criterion moodCode="EVN.CRT" classCode="OBS">
+									<id root="27208E0F-1345-49C5-A317-2F8EDBF66E6E"/>
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="255566006" displayName="post-dose"/>
+									<value xsi:type="PQ" value="30" unit="min"/>
+								</criterion>
+							</precondition>
+						</process>
+					</productOf>
+				</specimen>
+			</specimen>
+		</observationRequest>
+	</component>
+	<component typeCode="COMP" contextConductionInd="true" contextControlCode="AN">
+		<seperatableInd value="true"/>
+		<observationRequest classCode="OBS" moodCode="RQO">
+			<id root="9.99.999.99.9.8" extension="MSINV2649360"/>
+			<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="36048009" displayName="glucose measurement"/>
+			<statusCode code="active"/>
+			<effectiveTime nullFlavor="NI"/>
+			<priorityCode codeSystem="2.16.840.1.113883.2.1.3.2.4.17.95" code="1" displayName="Routine"/>
+			<specimen contextControlCode="OP" typeCode="SPC">
+				<specimen classCode="SPEC">
+					<id root="9.99.999.99.9.7" extension="MS654888"/>
+					<code codeSystem="2.16.840.1.113883.5.111" code="P"/>
+					<specimenNatural determinerCode="INSTANCE" classCode="ENT">
+						<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="119297000" displayName="blood specimen"/>
+					</specimenNatural>
+					<productOf typeCode="PRD" contextControlCode="AN">
+						<process classCode="PROC" moodCode="EVN">
+							<id root="7E8E7BE9-6812-4615-A958-FF80E3E35FEE"/>
+							<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="17636008" displayName="specimen collection"/>
+							<statusCode code="completed"/>
+							<effectiveTime xsi:type="IVL_TS">
+								<center value="20050810113101"/>
+							</effectiveTime>
+							<precondition typeCode="PRCN" contextConductionInd="true" contextControlCode="AN">
+								<criterion moodCode="EVN.CRT" classCode="OBS">
+									<id root="400FDDE0-DA7B-476A-8F8E-4A4CCC1C46B5"/>
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="255566006" displayName="post-dose"/>
+									<value xsi:type="PQ" value="60" unit="min"/>
+								</criterion>
+							</precondition>
+						</process>
+					</productOf>
+				</specimen>
+			</specimen>
+		</observationRequest>
+	</component>
+	<component typeCode="COMP" contextConductionInd="true" contextControlCode="AN">
+		<seperatableInd value="false"/>
+		<observationRequest classCode="OBS" moodCode="RQO">
+			<id root="9.99.999.99.9.8" extension="MSINV2649321"/>
+			<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="36048009" displayName="glucose measurement"/>
+			<statusCode code="active"/>
+			<effectiveTime nullFlavor="NI"/>
+			<priorityCode codeSystem="2.16.840.1.113883.2.1.3.2.4.17.95" code="1" displayName="Routine"/>
+			<specimen contextControlCode="OP" typeCode="SPC">
+				<specimen classCode="SPEC">
+					<id root="9.99.999.99.9.7" extension="MS654989"/>
+					<code codeSystem="2.16.840.1.113883.5.111" code="P"/>
+					<specimenNatural determinerCode="INSTANCE" classCode="ENT">
+						<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="119297000" displayName="blood specimen"/>
+					</specimenNatural>
+					<productOf typeCode="PRD" contextControlCode="AN">
+						<process classCode="PROC" moodCode="EVN">
+							<id root="F90A1823-2C4A-4C71-9BC9-BE52E5CEA9B5"/>
+							<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="17636008" displayName="specimen collection"/>
+							<statusCode code="completed"/>
+							<effectiveTime xsi:type="IVL_TS">
+								<center value="20050810123300"/>
+							</effectiveTime>
+							<precondition typeCode="PRCN" contextConductionInd="true" contextControlCode="AN">
+								<criterion moodCode="EVN.CRT" classCode="OBS">
+									<id root="52066E12-7B45-4E6B-96C8-613BE37E5648"/>
+									<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="255566006" displayName="post-dose"/>
+									<value xsi:type="PQ" value="120" unit="min"/>
+								</criterion>
+							</precondition>
+						</process>
+					</productOf>
+				</specimen>
+			</specimen>
+		</observationRequest>
+	</component>
+	
+</LaboratoryRequestGroup>

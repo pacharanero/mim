@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifactPackage>
+	<dynamicModel>
+		<interaction id="RCMR_IN010000UK06">
+			<Models>
+				<sendingRole modelId="RCMR_AR010000UK01"/>
+				<receivingRole modelId="RCMR_AR020000UK01"/>
+				<triggerEvent modelId="RCMR_TE010000UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK0"/>
+				<payload modelId="RCMR_MT010101UK03"/>
+			</Models>
+		</interaction>
+		<interaction id="RCMR_IN030000UK08">
+			<Models>
+				<sendingRole modelId="RCMR_AR020000UK01"/>
+				<receivingRole modelId="RCMR_AR010000UK01"/>
+				<triggerEvent modelId="RCMR_TE030000UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="RCMR_MT030101UK06"/>
+			</Models>
+		</interaction>
+	</dynamicModel>
+</artifactPackage>

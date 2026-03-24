@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument  classCode="DOCCLIN" moodCode="EVN" xmlns="urn:hl7-org:v3" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ../../Schemas/POCD_MT050001UK01.xsd">
+	<code code="163581000000104" codeSystem="2.16.840.1.113883.2.1.3.2.4.15"/>
+	<confidentialityCode code="V" codeSystem="2.16.840.1.113883.5.25"  displayName="very restricted"/>
+	<effectiveTime value="20080206102904"/>
+	<id root="71EA786A-BC15-4A34-A107-8EC95DE41D50"/>
+	<npfitlc:messageType extension="POCD_MT050001UK01" root="2.16.840.1.113883.2.1.3.2.4.18.17"/>
+	<setId root="510ABA54-91D3-4181-A96E-D63655E72849"/>
+	<title>Diagnostic Imaging Report</title>
+	<typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+	<versionNumber value="1"/>
+	<authenticator typeCode="AUTHEN">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+		<signatureCode nullFlavor="NA"/>
+		<time value="20041122154532"/>
+		<COCD_TP145022UK02.AssignedEntitySDS classCode="ASSIGNED">
+			<code code="R849" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" displayName="Radiologist"/>
+			<id extension="102022409986" root="1.2.826.0.1285.0.2.0.65"/>
+			<id root="1.2.826.0.1285.0.2.0.67" extension="102022412986"/>
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<family>Carr</family>
+					<given>Mellissa</given>
+				</name>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#assignedPerson"/>
+			</assignedPerson>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id extension="RFM" root="2.16.840.1.113883.2.1.3.2.4.19.2"/>
+				<name use="L">Hebburn NHS Trust</name>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#representedOrganization"/>
+			</representedOrganization>
+		</COCD_TP145022UK02.AssignedEntitySDS>
+	</authenticator>
+	<author contextControlCode="OP" typeCode="AUT">
+		<npfitlc:contentId extension="COCD_TP145001UK03#AssignedAuthorSDS" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<functionCode code="OA" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.178"  displayName="Originating Author"/>
+		<time value="20041122154532"/>
+		<COCD_TP145001UK03.AssignedAuthorSDS classCode="ASSIGNED">
+			<code code="R849" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" displayName="Radiologist"/>
+			<id extension="102022409986" root="1.2.826.0.1285.0.2.0.65"/>
+			<id root="1.2.826.0.1285.0.2.0.67" extension="102022412986"/>
+			<templateId extension="COCD_TP145001UK03#AssignedAuthorSDS" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<family>Carr</family>
+					<given>Mellissa</given>
+				</name>
+				<templateId extension="COCD_TP145001UK03#assignedPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</assignedPerson>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id extension="RFM" root="2.16.840.1.113883.2.1.3.2.4.19.2"/>
+				<name use="L">Hebburn NHS Trust</name>
+				<templateId extension="COCD_TP145001UK03#representedOrganization" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</representedOrganization>
+		</COCD_TP145001UK03.AssignedAuthorSDS>
+	</author>
+	<component contextConductionInd="true" typeCode="COMP">
+		<structuredBody classCode="DOCBODY" moodCode="EVN">
+			<component contextConductionInd="true" typeCode="COMP">
+				<classificationSection classCode="DOCSECT" moodCode="EVN">
+					<id root="A52FF190-121F-48EE-B2E3-51D051EAEEA8"/>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146061UK02#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<COCD_TP146061UK02.Section1 classCode="DOCSECT" moodCode="EVN">
+							<id root="744A4969-0403-452F-993E-EB08429CC641"/>
+							<templateId extension="COCD_TP146061UK02#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<text>
+								<paragraph styleCode="Bold">
+									Accession Number:E-4534454
+								</paragraph>
+								<br/>
+								<table>
+									<tbody>
+										<tr>
+											<th>Procedure</th>
+											<th>Date Performed</th>
+										</tr>
+										<tr>
+											<td>
+												<content ID="A1">
+													X-ray of Left Shoulder
+												</content>
+											</td>
+											<td>2004-11-22 15:12:19</td>
+										</tr>
+										<tr>
+											<td>
+												<content ID="A2">
+													X-Ray of Left Elbow
+												</content>
+											</td>
+											<td>
+												2004-11-22 15:13:36
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<paragraph styleCode="Bold">
+									Priority:Routine
+								</paragraph>
+							</text>
+							<title>Procedure(s)</title>
+						</COCD_TP146061UK02.Section1>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146061UK02#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<COCD_TP146061UK02.Section1 classCode="DOCSECT" moodCode="EVN">
+							<code code="DI17" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.243"/>
+							<id root="2BA25A73-9E0F-474B-92CF-F01F3087B88B"/>
+							<templateId extension="COCD_TP146061UK02#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<text>
+							Unable to move left elbow. Pain left wrist. Fall?
+							</text>
+							<title>Indication</title>
+						</COCD_TP146061UK02.Section1>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<COCD_TP146061UK02.Section1 classCode="DOCSECT" moodCode="EVN">
+							<code code="DI12" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.243"/>
+							<id root="247AF3C3-1B6A-47C5-8E33-07A430AF47C7"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<text>
+								<content ID="A3">There is an impacted fracture of the left head with surrounding callous.</content>
+							</text>
+							<title>X-ray of Left Shoulder Report</title>
+						</COCD_TP146061UK02.Section1>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<COCD_TP146061UK02.Section1 classCode="DOCSECT" moodCode="EVN">
+							<code code="DI12" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.243"/>
+							<id root="247AF3C3-1B6A-47C5-8E33-07A430AF47C8"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<text>
+								<content ID="A4">There is a fracture of the left radial head which appears more recent.</content>
+							</text>
+							<title>X-ray of Left Elbow Report </title>
+						</COCD_TP146061UK02.Section1>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<COCD_TP146061UK02.Section1 classCode="DOCSECT" moodCode="EVN">
+							<code code="DI20" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.243"/>
+							<id root="247AF3C3-1B6A-47C5-8E33-07A430AF47C9"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<text>								
+There are fractures of the left radial head and an impacted fracture of the humerous. 
+These are different ages which would suggest that Mr. Smith has had two or more falls recently. 
+As he appears to have no knowledge of this I would suggest further investigation for possible Transient Ischaemic attacks (TIAs) possibly post referral to the Care of the Elderly team if this hasn’t already been done in A&amp;E.
+							</text>
+							<title>Summary Report</title>
+						</COCD_TP146061UK02.Section1>
+					</component>
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146078UK01#DIReportStatus"/>
+						<COCD_TP146078UK01.DIReportStatus classCode="OBS" moodCode="EVN">
+							<code code="DIRS" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="DI Report Status"/>
+							<id root="66667C75-CBB7-4A5C-9EA9-567F8A7867DC"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146078UK01#DIReportStatus"/>
+							<value code="DI23" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.229"/>
+						</COCD_TP146078UK01.DIReportStatus>
+					</entry>
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146082UK01#DIUrgencyIndicator"/>
+						<COCD_TP146082UK01.DIUrgencyIndicator classCode="OBS" moodCode="EVN">
+							<code code="DIUI" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Diagnostic Imaging Urgency Indicator"/>
+							<id root="8D8598A8-0AF9-4C16-9347-138F31DBA058"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146082UK01#DIUrgencyIndicator"/>
+							<value code="DI25" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.242"/>
+						</COCD_TP146082UK01.DIUrgencyIndicator>
+					</entry>
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146080UK01#DIOrder"/>
+						<COCD_TP146080UK01.DIOrder classCode="ACT" moodCode="RQO">
+							<code code="DI01" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.231" displayName="Accession Number"/>
+							<id root="2.16.840.1.113883.2.1.3.2.4.18.13" extension="E-4534454"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146080UK01#DIOrder"/>
+						</COCD_TP146080UK01.DIOrder>
+					</entry>
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146077UK02#DIProcedure"/>
+						<COCD_TP146077UK02.DIProcedure classCode="OBS" moodCode="EVN">
+							<code code="29592009" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="radiography of shoulder">
+								<originalText>
+									<reference value="#A1"/>
+								</originalText>
+								<qualifier>
+									<name code="272741003" displayName="laterality">
+									</name>
+									<value code="7771000" displayName="left">
+									</value>
+								</qualifier>
+							</code>
+							<effectiveTime>
+								<center value="20041122154409"/>
+							</effectiveTime>
+							<id root="2FE37787-152C-44FE-8BB7-C2040CD11883"/>
+							<statusCode code="completed"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146077UK02#DIProcedure"/>
+						</COCD_TP146077UK02.DIProcedure>
+					</entry>
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146077UK02#DIProcedure"/>
+						<COCD_TP146077UK02.DIProcedure classCode="OBS" moodCode="EVN">
+							<code code="18747005" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="radiologic examination of elbow, anteroposterior and lateral views">
+								<originalText>
+									<reference value="#A2"/>
+								</originalText>
+								<qualifier>
+									<name code="272741003" displayName="laterality">
+									</name>
+									<value code="7771000" displayName="left">
+									</value>
+								</qualifier>
+							</code>
+							<effectiveTime>
+								<center value="20041122154409"/>
+							</effectiveTime>
+							<id root="F5150D52-5682-4871-9E2E-8DB5FFA70462"/>
+							<statusCode code="completed"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146077UK02#DIProcedure"/>
+						</COCD_TP146077UK02.DIProcedure>
+					</entry>
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146012UK04#Finding"/>
+						<COCD_TP146012UK04.Finding classCode="OBS" moodCode="GOL">
+							<code code="263191003" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="fracture of neck of humerus">
+								<originalText>
+									<reference value="#A3"/>
+								</originalText>
+								<qualifier>
+									<name code="272741003" displayName="laterality"/>
+									<value code="7771000" displayName="left"/>
+								</qualifier>
+							</code>
+							<effectiveTime>
+								<center value="20041122154409"/>
+							</effectiveTime>
+							<id root="1E004D9C-3865-43D8-ACEC-72858DB6CC16"/>
+							<statusCode code="completed"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146012UK04#Finding"/>
+						</COCD_TP146012UK04.Finding>
+					</entry>
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146012UK04#Finding"/>
+						<COCD_TP146012UK04.Finding classCode="OBS" moodCode="GOL">
+							<code code="263196008" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="fracure of radial head">
+								<originalText>
+									<reference value="#A4"/>
+								</originalText>
+								<qualifier>
+									<name code="272741003" displayName="laterality"/>
+									<value code="7771000" displayName="left"/>
+								</qualifier>
+							</code>
+							<effectiveTime>
+								<center value="20041122154409"/>
+							</effectiveTime>
+							<id root="23967B01-91F3-46B0-A204-CBEEBE6DAD9A"/>
+							<statusCode code="completed"/>
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146012UK04#Finding"/>
+						</COCD_TP146012UK04.Finding>
+					</entry>
+				</classificationSection>
+			</component>
+		</structuredBody>
+	</component>
+	<componentOf typeCode="COMP">
+		<npfitlc:contentId extension="COCD_TP146060UK01#EncompassingEncounter" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<COCD_TP146060UK01.EncompassingEncounter classCode="ENC" moodCode="EVN">
+			<code code="TBC" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Face to Face Consultation"/>
+			<dischargeDispositionCode nullFlavor="NA"/>
+			<effectiveTime>
+				<center value="20041122"/>
+			</effectiveTime>
+			<id root="B018E018-AA17-4057-A73A-35A901E07F45"/>
+			<templateId extension="COCD_TP146060UK01#EncompassingEncounter" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<encounterParticipant typeCode="ATND">
+				<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146060UK01#encounterParticipant"/>
+				<COCD_TP145022UK02.AssignedEntitySDS classCode="ASSIGNED">
+					<code code="R845" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" displayName="Radiographer"/>
+					<id extension="102021687985" root="1.2.826.0.1285.0.2.0.65"/>
+					<id root="1.2.826.0.1285.0.2.0.67" extension="102021689981"/>
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+					<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+						<name>
+							<family>Dunstan</family>
+							<given>Yorick</given>
+						</name>
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#assignedPerson"/>
+					</assignedPerson>
+				</COCD_TP145022UK02.AssignedEntitySDS>
+			</encounterParticipant>
+			<location typeCode="LOC">
+				<npfitlc:contentId extension="COCD_TP145024UK01#HealthCareFacility" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+				<templateId extension="COCD_TP146060UK01#location" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				<COCD_TP145024UK01.HealthCareFacility classCode="SDLOC">
+					<code code="453491013" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Radiology department"/>
+					<id nullFlavor="NA"/>
+					<templateId extension="COCD_TP145024UK01#HealthCareFacility" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				</COCD_TP145024UK01.HealthCareFacility>
+			</location>
+			<responsibleParty typeCode="RESP">
+				<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146060UK01#responsibleParty"/>
+				<COCD_TP145022UK02.AssignedEntitySDS classCode="ASSIGNED">
+				<code code="R849" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" displayName="Radiologist"/>
+					<id extension="102022409986" root="1.2.826.0.1285.0.2.0.65"/>
+					<id root="1.2.826.0.1285.0.2.0.67" extension="102022412986"/>
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+					<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+						<name>
+							<family>Carr</family>
+							<given>Mellissa</given>
+						</name>
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#assignedPerson"/>
+					</assignedPerson>
+					<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+						<id extension="RFM" root="2.16.840.1.113883.2.1.3.2.4.19.2"/>
+						<name use="L">Hebburn NHS Trust</name>
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#representedOrganization"/>
+					</representedOrganization>
+				</COCD_TP145022UK02.AssignedEntitySDS>
+			</responsibleParty>
+		</COCD_TP146060UK01.EncompassingEncounter>
+	</componentOf>
+	<custodian typeCode="CST">
+		<npfitlc:contentId extension="COCD_TP145018UK03#AssignedCustodian" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<COCD_TP145018UK03.AssignedCustodian classCode="ASSIGNED">
+			<templateId extension="COCD_TP145018UK03#AssignedCustodian" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id extension="RFM" root="2.16.840.1.113883.2.1.3.2.4.19.1"/>
+				<name use="L">Hebburn NHS Trust</name>
+				<templateId extension="COCD_TP145018UK03#representedCustodianOrganization" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			</representedCustodianOrganization>
+		</COCD_TP145018UK03.AssignedCustodian>
+	</custodian>
+	<documentationOf typeCode="DOC">
+		<npfitlc:contentId extension="COCD_TP146081UK01#DIProcedureEvent" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<COCD_TP146081UK01.DIProcedureEvent classCode="PROC" moodCode="EVN">
+			<code code="DI05" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.230"/>
+			<id root="F5150D52-5682-4871-9E2E-8DB5FFA70462"/>
+			<id root="2FE37787-152C-44FE-8BB7-C2040CD11883"/>
+			<templateId extension="COCD_TP146081UK01#DIProcedureEvent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+		</COCD_TP146081UK01.DIProcedureEvent>
+	</documentationOf>
+	<informationRecipient typeCode="PRCP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145017UK03#IntendedRecipient"/>
+		<COCD_TP145017UK03.IntendedRecipient classCode="ASSIGNED">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145017UK03#IntendedRecipient"/>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.2" extension="YEA"/>
+				<name use="L">NATIONAL CARE RECORDS SERVICE SPINE</name>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145017UK03#representedOrganization"/>
+			</representedOrganization>
+		</COCD_TP145017UK03.IntendedRecipient>
+	</informationRecipient>
+	<informationRecipient typeCode="PRCP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145021UK04#AssignedEntitySDS"/>
+		<COCD_TP145021UK04.AssignedEntitySDS classCode="ASSIGNED">
+			<id extension="102018560980" root="1.2.826.0.1285.0.2.0.65"/>
+			<id root="1.2.826.0.1285.0.2.0.67" extension="102018562987"/>
+			<npfitlc:recipientRoleCode code="R849" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" displayName="GP"/>
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145021UK04#AssignedEntitySDS"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<family>Atkinson</family>
+					<given>Natalie</given>
+					<given>Susan</given>
+				</name>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145021UK04#assignedPerson"/>
+			</assignedPerson>
+		</COCD_TP145021UK04.AssignedEntitySDS>
+	</informationRecipient>
+	<inFulfillmentOf typeCode="FLFS">
+	<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP147080UK01#DIOrderRef"/>
+		<COCD_TP147080UK01.DIOrderRef classCode="ACT" moodCode="RQO">
+			<code nullFlavor="NA"/>
+			<id root="E-4534454"/>
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP147080UK01#DIOrderRef"/>
+		</COCD_TP147080UK01.DIOrderRef>
+	</inFulfillmentOf>
+	<participant contextControlCode="OP" typeCode="REFB">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+		<COCD_TP145022UK02.AssignedEntitySDS classCode="ASSIGNED">
+			<code code="R8000" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196"/>
+			<id extension="102018560980" root="1.2.826.0.1285.0.2.0.65"/>
+			<id root="1.2.826.0.1285.0.2.0.67" extension="102018562987"/>
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<family>Atkinson</family>
+					<given>Natalie</given>
+					<given>Susan</given>
+				</name>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#assignedPerson"/>
+			</assignedPerson>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.2" extension="A28002"/>
+				<name>The Old Vicarage Surgery</name>
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#representedOrganization"/>
+			</representedOrganization>
+		</COCD_TP145022UK02.AssignedEntitySDS>
+	</participant>
+	<recordTarget contextControlCode="OP" typeCode="RCT">
+		<npfitlc:contentId extension="COCD_TP145020UK03#PatientRole" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<COCD_TP145020UK03.PatientRole classCode="PAT">
+			<id extension="9413946434" root="2.16.840.1.113883.2.1.4.1"/>
+			<templateId extension="COCD_TP145020UK03#PatientRole" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+		</COCD_TP145020UK03.PatientRole>
+	</recordTarget>
+</ClinicalDocument>

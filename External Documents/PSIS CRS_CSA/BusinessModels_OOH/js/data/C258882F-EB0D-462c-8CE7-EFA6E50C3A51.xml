@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("5.2.1", "1", "Inability to contact patient", "EARoot/EA5/EA2/EA447.htm", "4.png", "", "", "{3BD3065A-0665-48be-95B4-72D669BF7195}", "Package");
+tocTab[tocTab.length] = new Array("5.2.2", "1", "Telephone advice and clinic visit", "EARoot/EA5/EA2/EA448.htm", "4.png", "", "", "{CC84FEDD-69FE-424f-B36C-8263B1B98B5B}", "Package");
+tocTab[tocTab.length] = new Array("5.2.3", "1", "Complex telephone advice", "EARoot/EA5/EA2/EA449.htm", "4.png", "", "", "{408B5338-C837-4a12-8BED-7E2278092F5B}", "Package");
+tocTab[tocTab.length] = new Array("5.2.4", "1", "OOH initiated consultation", "EARoot/EA5/EA2/EA450.htm", "4.png", "", "", "{2D9A3978-7C7A-4c80-9FF4-0787E244F0E4}", "Package");
+tocTab[tocTab.length] = new Array("5.2.5", "1", "OOH referral to emergency ambulance", "EARoot/EA5/EA2/EA451.htm", "4.png", "", "", "{141AC8FC-0118-4575-8930-640F48A5891A}", "Package");
+tocTab[tocTab.length] = new Array("5.2.6", "1", "Death OOH", "EARoot/EA5/EA2/EA452.htm", "4.png", "", "", "{63E3454E-47C7-4f05-A700-617263A08B28}", "Package");

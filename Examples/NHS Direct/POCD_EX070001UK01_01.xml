@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?><!--This example message is provided for illustrative purposes only. It has had no clinical validation. Whilst every effort has been taken to ensure that the examples are consistent with the message specification contained within the MiM, where there are conflicts with the written message specification or schema, the specification or schema shall be considered to take precedence-->
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:npfitlc="NPFIT:HL7:Localisation" xsi:schemaLocation="urn:hl7-org:v3 ../../schemas/POCD_MT000001UK04.xsd" classCode="DOCCLIN" moodCode="EVN">
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+	<npfitlc:messageType root="2.16.840.1.113883.2.1.3.2.4.18.17" extension="POCD_MT070001UK01"/>
+	<id root="D9303D40-EF24-11DB-A1C0-F5CA408FF127"/>
+	<code code="312421000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15"/>
+	<title>NHS Direct Summary Report</title>
+	<effectiveTime value="200708011312"/>
+	<confidentialityCode code="V" displayName="very restricted" codeSystem="2.16.840.1.113883.5.25"/>
+	<setId root="D9303D40-EF24-11DB-A1C1-F5CA408FF127"/>
+	<versionNumber value="1"/>
+	<recordTarget typeCode="RCT" contextControlCode="OP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145020UK03#PatientRole"/>
+		<patientRole classCode="PAT">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145020UK03#PatientRole"/>
+			<id root="2.16.840.1.113883.2.1.4.1" extension="9900083643"/>
+		</patientRole>
+	</recordTarget>
+	<author typeCode="AUT" contextControlCode="OP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145001UK03#AssignedAuthorSDS"/>
+		<functionCode code="OA" displayName="Originating Author" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.178"/>
+		<time value="200708011312"/>
+		<assignedAuthor classCode="ASSIGNED">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145001UK03#AssignedAuthorSDS"/>
+			<id root="1.2.826.0.1285.0.2.0.65" extension="100077630009"/>
+			<id root="1.2.826.0.1285.0.2.0.67" extension="200088765384"/>
+			<code code="25" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" displayName="Nurse"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145001UK03#assignedPerson"/>
+				<name>
+					<given>Mary</given>
+					<family>Jones</family>
+				</name>
+			</assignedPerson>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145001UK03#representedOrganization"/>
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="RYH29"/>
+				<name>NHS Direct (Wakefield Data Centre)</name>
+			</representedOrganization>
+		</assignedAuthor>
+	</author>
+	<custodian typeCode="CST">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145018UK03#AssignedCustodian"/>
+		<assignedCustodian classCode="ASSIGNED">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145018UK03#AssignedCustodian"/>
+			<representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145018UK03#representedCustodianOrganization"/>
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="RYH"/>
+				<name>NHS Direct NHS Trust</name>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<informationRecipient typeCode="PRCP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145017UK03#IntendedRecipient"/>
+		<intendedRecipient classCode="ASSIGNED">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145017UK03#IntendedRecipient"/>
+			<receivedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145017UK03#representedOrganization"/>
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="YEA"/>
+				<name>NATIONAL CARE RECORDS SERVICE SPINE</name>
+			</receivedOrganization>
+		</intendedRecipient>
+	</informationRecipient>
+	<informationRecipient typeCode="PRCP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145017UK03#IntendedRecipient"/>
+		<intendedRecipient classCode="ASSIGNED">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145017UK03#IntendedRecipient"/>
+			<receivedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145017UK03#representedOrganization"/>
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.2" extension="ZZ99010"/>
+				<name>West Street Surgery, Wakefield</name>
+			</receivedOrganization>
+		</intendedRecipient>
+	</informationRecipient>
+	<componentOf typeCode="COMP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146060UK01#EncompassingEncounter"/>
+		<encompassingEncounter classCode="ENC" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146060UK01#EncompassingEncounter"/>
+			<id root="D940DF10-EF24-11DB-A3A6-F5CA408FF127"/>
+			<code code="386472008" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Telephone Consultation"/>
+			<effectiveTime>
+				<low value="200708011302"/>
+				<high value="200708011312"/>
+			</effectiveTime>
+			<dischargeDispositionCode code="315311000000108" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Urgent referral to primary care service"/>
+			<location typeCode="LOC">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146060UK01#location"/>
+				<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145024UK01#HealthCareFacility"/>
+				<healthCareFacility classCode="SDLOC">
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145024UK01#HealthCareFacility"/>
+					<id root="2.16.840.1.113883.2.1.3.2.4.19.2" extension="RYH29"/>
+					<code code="312391000000109" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="NHS Direct Contact Centre"/>
+				</healthCareFacility>
+			</location>
+		</encompassingEncounter>
+	</componentOf>
+	<component typeCode="COMP" contextConductionInd="true">
+		<structuredBody classCode="DOCBODY" moodCode="EVN">
+			<component typeCode="COMP" contextConductionInd="true">
+				<section classCode="DOCSECT" moodCode="EVN">
+					<id root="D9303D40-EF24-11DB-A1C0-F5CA408FF127"/><!--Here are the coded entries-->
+					<entry typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146012UK04#Finding"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146012UK04#Finding"/>
+							<id root="D940DF10-EF24-11DB-A3A9-F5CA408FF127"/>
+							<code code="287045000" codeSystemName="2.16.840.1.113883.2.1.3.2.4.15" displayName="Pain in left arm">
+								<originalText>
+									<reference value="#a1"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime value="200708011312"/>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146023UK04#ProvisionOfAdviceAndInformation"/>
+						<act classCode="INFRM" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146023UK04#ProvisionOfAdviceAndInformation"/>
+							<id root="D940DF10-EF24-11DB-A3AB-F5CA408FF127"/>
+							<code code="304891009" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Advice regarding contacting someone">
+								<originalText>
+									<reference value="#a2"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime value="200708011312"/>
+						</act>
+					</entry><!--Here are the coded entries-->
+					<entry typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146023UK04#ProvisionOfAdviceAndInformation"/>
+						<act classCode="INFRM" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146023UK04#ProvisionOfAdviceAndInformation"/>
+							<id root="D940DF10-EF24-11DB-A3AE-F5CA408FF127"/>
+							<code code="223435002" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Recommendation to avoid behaviour"/>
+							<statusCode code="completed"/>
+							<effectiveTime value="200708011312"/>
+						</act>
+					</entry>
+					<component typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK01#Section1"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK01#Section1"/>
+							<id root="D9303D40-EF24-11DB-A1C1-F5CA408FF127"/>
+							<title>Call Details</title>
+							<text>
+								<paragraph>Case ID: 99992312</paragraph>
+								<br/>Health Advisor: Pippa Forrester
+								<br/>
+								<br/>Current location:
+								<br/>City Bank
+								<br/>Westgate road
+								<br/>Wakefield
+								<br/>WF1 0JH
+								<br/>
+								<br/>Contact telephone number:
+								<br/>01924 3882000 Ext 3456
+								<br/>
+							</text>
+							<author typeCode="AUT" contextControlCode="OP">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK01#author"/>
+								<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145001UK03#AssignedAuthorSDS"/>
+								<functionCode code="OA" displayName="Originating Author" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.178"/>
+								<time value="200708011312"/>
+								<assignedAuthor classCode="ASSIGNED">
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145001UK03#AssignedAuthorSDS"/>
+									<id root="1.2.826.0.1285.0.2.0.65" extension="100033256698"/>
+									<id root="1.2.826.0.1285.0.2.0.67" extension="200011124132"/>
+									<code code="24" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" displayName="Health Advisor"/>
+									<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+										<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145001UK03#assignedPerson"/>
+										<name>
+											<given>Pippa</given>
+											<family>Forrester</family>
+										</name>
+									</assignedPerson>
+									<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+										<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145001UK03#representedOrganization"/>
+										<id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="RYH29"/>
+										<name>NHS Direct (Wakefield Data Centre)</name>
+									</representedOrganization>
+								</assignedAuthor>
+							</author>
+							<component typeCode="COMP" contextConductionInd="true">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK01#component1"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK01#section2"/>
+									<id root="D9303D40-EF24-11DB-A1C2-F5CA408FF127"/>
+									<title>Reason for Call</title>
+									<text>
+										<paragraph>Painful arm</paragraph>
+									</text>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK01#Section1"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK01#Section1"/>
+							<id root="D9303D40-EF24-11DB-A1BF-F5CA408FF127"/>
+							<title>Clinical Consultation</title>
+							<text>
+								<paragraph>Nurse Advisor: Mary Jones</paragraph>
+							</text>
+							<component typeCode="COMP" contextConductionInd="true">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK01#component1"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK01#section2"/>
+									<id root="D9303D40-EF24-11DB-A1C2-F5CA408FF127"/>
+									<title>Symptom Assessed</title>
+									<text>
+										<paragraph>
+											<content ID="a1">Arm pain, left side</content>
+										</paragraph>
+									</text>
+								</section>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK01#component1"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK01#section2"/>
+									<id root="D9303D40-EF24-11DB-A1C3-F5CA408FF127"/>
+									<title>History</title>
+									<text>
+										<paragraph/>
+									</text>
+									<component typeCode="COMP" contextConductionInd="true">
+										<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK01#component2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK01#section3"/>
+											<id root="D940DF10-EF24-11DB-A39E-F5CA408FF127"/>
+											<title>Allergies</title>
+											<text>
+												<paragraph>None known</paragraph>
+											</text>
+										</section>
+									</component>
+									<component typeCode="COMP" contextConductionInd="true">
+										<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK01#component2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK01#section3"/>
+											<id root="D940DF10-EF24-11DB-A3A1-F5CA408FF127"/>
+											<title>Medication</title>
+											<text>
+												<paragraph>Pantoprazole
+													<br/>Simvastatin
+												</paragraph>
+											</text>
+										</section>
+									</component>
+								</section>
+							</component>
+							<component typeCode="COMP" contextConductionInd="true">
+								<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK01#component1"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK01#section2"/>
+									<id root="D9303D40-EF24-11DB-A1C3-F5CA408FF127"/>
+									<title>Advice Given</title>
+									<text>
+										<br/>
+										<paragraph>
+											<content ID="a2">The symptoms described during this call suggest that you should contact the GP practice today</content>
+										</paragraph>
+										<paragraph>If you are unable to contact the practice, please call back</paragraph>
+										<paragraph>Avoid strenuous activity</paragraph>
+										<paragraph>WORSENING: If symptoms persist, worsen or any new symptoms develop, call us back</paragraph>
+									</text>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component typeCode="COMP" contextConductionInd="true">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK01#Section1"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK01#Section1"/>
+							<id root="D940DF10-EF24-11DB-A3A4-F5CA408FF127"/>
+							<title>Final Disposition</title>
+							<text>
+								<paragraph>Refer to Primary Care Service Urgent</paragraph>
+							</text>
+						</section>
+					</component>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>

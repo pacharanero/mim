@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Information Analysis Model - DI Report::DIReportHeader</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">DIReportHeader  (DI0001Class) : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">05/02/07 20:04:14</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">06/22/07 11:25:17</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Sarah Kennedy</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{80F3FE47-CD87-48bf-AC52-F325E2CB110D}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA88.htm">Information Analysis Model - DI Report</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Group of administrative details about the DI Report  communication (Level 1)</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Identifier</i><br /><strong>&nbsp;&nbsp;documentID</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 Name:&lt;br /&gt;DI Report communication ID (level 1.1)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;The unique identifier for this instance of the DI Report  communication&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;DCE UUID&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;Message Wrapper&lt;br /&gt;&lt;br /&gt;CDA Mapping Notes:&lt;br /&gt;This should be a UUID
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Timestamp</i><br /><strong>&nbsp;&nbsp;documentDateTime</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 Name:&lt;br /&gt;Date & Time of the communication (level 1.2)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;The Date & Time that this DI Request communication content  was committed to be sent&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;yyyymmddhhmmss&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;Message Wrapper&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Coded</i><br /><strong>&nbsp;&nbsp;documentType</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 Name:&lt;br /&gt;Communication Type (level 1.3)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;A coded value to identify that this is a DI report communication&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;SNOMED  CT&lt;br /&gt;Fixed @ ‘163581000000104’&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;cda_ClinicalDocument - code&lt;br /&gt;&lt;br /&gt;CDA Mapping Notes:&lt;br /&gt;‘163581000000104’ is the document type identifier for Diagnostic Imaging Report.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Identifier</i><br /><strong>&nbsp;&nbsp;documentAuthor</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 Name:&lt;br /&gt;Author of the DI Report communication (level 1.4)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;SDS Code(s) of the HCP who has ‘authored’ this communication by activating the trigger event&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;SDS User ID + &lt;br /&gt;SDS Role Profile Code&lt;br /&gt;Or&lt;br /&gt;SDS System OID & ID&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;Message Wrapper&lt;br /&gt;&lt;br /&gt;CDA Mapping Notes:&lt;br /&gt;Cannot be superseded by the author in the DI Procedure report, if the author is the same in both the header and the DI Procedure report then the author propagates down. If the author in the DI procedure report is different then it must be present but does not have any effect on the author in the header.&lt;br /&gt;&lt;br /&gt;*Sealing implications require further investigation*&lt;br /&gt;&lt;br /&gt;May usually just be a device.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Identifier</i><br /><strong>&nbsp;&nbsp;serviceProviderID</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 Name:&lt;br /&gt;Service Provider ID (level 5.1.1)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;Unique identifier for the Diagnostic Imaging Service Provider  responsible for the DI report&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;SDS Org ID&lt;br /&gt;(OID + Code)&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;cda_ClinicalDocument - custodianOrg&lt;br /&gt;&lt;br /&gt;CDA Mapping Notes:&lt;br /&gt;Is this at a lower level than organisation?&lt;br /&gt;In examples this looks like it could be organisation *and* department.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public <a href="../../EA5/EA2/EA1/EA1/EA614.htm">dt_Identifier</a></i><br /><strong>&nbsp;&nbsp;fulfillerSystemReportID</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			*Combination of two W5 attributes*:&lt;br /&gt;&lt;br /&gt;1.&lt;br /&gt;W5 Name:&lt;br /&gt;The Fulfiller System ID (level 5.1.2.1)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;The OID identifying the Fulfiller System at that level which, when combined with the generated Fulfiller Report ID, makes it unique.&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;SDS OID &lt;br /&gt;(format TBA)&lt;br /&gt;&lt;br /&gt;2.&lt;br /&gt;W5 Name:&lt;br /&gt;The Fulfiller Report ID (level 5.1.2.2)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;The identifier for the Fulfiller Report.&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;Fulfiller Report ID&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;Clinical Document ID&lt;br /&gt;&lt;br /&gt;CDA Mapping Notes:&lt;br /&gt;Clinical Document ID&lt;br /&gt;Should it also be combined with organisation?&lt;br /&gt;This is a system identifier and a report identifier.&lt;br /&gt;&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Timestamp</i><br /><strong>&nbsp;&nbsp;DIReportDateTime</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 Name:&lt;br /&gt;Report date & time of Issue (level 5.1.3)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;Date & time that the DI Report was made available for clinical review  (‘authorised for release’ or ‘issued’)&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;yyyymmddhhmmss&lt;br /&gt;&lt;br /&gt;W5 Notes:&lt;br /&gt;Note:  The trigger for this could be either at the transcription point (unverified release) or the verification point (verified release)&lt;br /&gt;&lt;br /&gt;There is a requirement to capture date reported.&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;cda_ClinicalDocument - documentTimeStamp&lt;br /&gt;&lt;br /&gt;CDA Template Mapping Notes:&lt;br /&gt;Timestamp on authenticator?&lt;br /&gt;Could it also be a timestamp on the author? What if this it the timestamp associated with the author on the CDA_DocumentText?&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public <a href="../../EA5/EA2/EA1/EA2/EA1/EA627.htm">dt_Coded</a></i><br /><strong>&nbsp;&nbsp;DIReportStatus</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 Name:&lt;br /&gt;Report Status (level 5.1.4)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;Status for this report instance&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;HL7 Code&lt;br /&gt;(Active, Completed)&lt;br /&gt;Default - Completed&lt;br /&gt;&lt;br /&gt;W5 Notes:&lt;br /&gt;Any local codes must be mapped to the HL7 code&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;reportStatus on *NEW* Template - cda_ReportDetails&lt;br /&gt;&lt;br /&gt;CDA Template Mapping Notes:&lt;br /&gt;Clinical Document does not have a report status. &lt;br /&gt;&lt;br /&gt; It was felt that this might be irrelevant but it does appear that the intention was that where a final Procedure Report is issued, when all procedures have been completed, the status of the report, procedures and all procedure report segments will be Complete. &lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public <a href="../../EA5/EA2/EA1/EA2/EA1/EA627.htm">dt_Coded</a></i><br /><strong>&nbsp;&nbsp;urgencyFlag</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 Name:&lt;br /&gt;Urgency Flag (level 5.1.5)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;This is the code to identify how urgently this report needs to be read&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;NPfIT Code&lt;br /&gt;(Routine, Urgent)&lt;br /&gt;Default - Routine&lt;br /&gt;&lt;br /&gt;W5 Notes:&lt;br /&gt;Any local codes must be mapped to the NPfIT code&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;urgencyFlag on *NEW* Template - cda_ReportDetails&lt;br /&gt;&lt;br /&gt;CDA Template Mapping Notes:&lt;br /&gt;This is a urgency value on the report rather than the request/order.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Identifier</i><br /><strong>&nbsp;&nbsp;DIReportAuthor</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 Name:&lt;br /&gt;Author of the DI Report (level 5.1.6)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;SDS Code(s) of the HCP who has performed the clinical interpretation provided in  this DI Report&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;SDS User ID + &lt;br /&gt;SDS Role Profile Code&lt;br /&gt;&lt;br /&gt;W5 Notes:&lt;br /&gt;Any local codes must be mapped to the NPfIT code&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;cda_ClinicalDocument - author
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Identifier</i><br /><strong>&nbsp;&nbsp;DIReportVerifier</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 Name:&lt;br /&gt;Verifier of the DI Report   (level 5.1.7)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;SDS Code(s) of the HCP who has verified/authorized report for release&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;SDS User ID + &lt;br /&gt;SDS Role Profile Code&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;cda_ClinicalDocument - authenticator&lt;br /&gt;&lt;br /&gt;CDA Template Mapping Notes:&lt;br /&gt;Authenticator/Legal Authenticator&lt;br /&gt;This requires validation, does the verifier determine if the report is accurate or are they also legally accountable.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA93.htm">patient</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA95.htm">copyRecipient</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA98.htm">DISummaryReport</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA96.htm">request</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA100.htm">DIProcedureReport</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA94.htm">primaryRecipient</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

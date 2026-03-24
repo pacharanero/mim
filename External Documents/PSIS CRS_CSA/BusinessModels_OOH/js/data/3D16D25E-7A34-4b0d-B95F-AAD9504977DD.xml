@@ -1,0 +1,17 @@
+tocTab[tocTab.length] = new Array("5.3:1", "", "Create Case", "EARoot/EA5/EA3/EA704.htm", "185.png", "158", "0", "", "Sequence diagram");
+tocTab[tocTab.length] = new Array("5.3:2", "", "Create Replacement Document", "EARoot/EA5/EA3/EA706.htm", "185.png", "159", "0", "", "Sequence diagram");
+tocTab[tocTab.length] = new Array("5.3:3", "", "Perform Consultation", "EARoot/EA5/EA3/EA708.htm", "185.png", "157", "0", "", "Sequence diagram");
+tocTab[tocTab.length] = new Array("5.3:4", "", "Send Document", "EARoot/EA5/EA3/EA710.htm", "185.png", "42", "0", "", "Sequence diagram");
+tocTab[tocTab.length] = new Array("5.3:5", "", "Spine Authentication", "EARoot/EA5/EA3/EA712.htm", "185.png", "156", "0", "", "Sequence diagram");
+tocTab[tocTab.length] = new Array("5.3:6", "", "«Application Role» Access Control", "EARoot/EA5/EA3/EA714.htm", "57.png", "4984", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("5.3:7", "", "«Application Role» Clinical Document Store", "EARoot/EA5/EA3/EA716.htm", "57.png", "4986", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("5.3:8", "", "Create LR", "EARoot/EA5/EA3/EA719.htm", "101.png", "4993", "0", "", "InteractionFragment");
+tocTab[tocTab.length] = new Array("5.3:9", "", "Create LR", "EARoot/EA5/EA3/EA720.htm", "101.png", "4987", "0", "", "InteractionFragment");
+tocTab[tocTab.length] = new Array("5.3:10", "", "Create LR", "EARoot/EA5/EA3/EA721.htm", "101.png", "4991", "0", "", "InteractionFragment");
+tocTab[tocTab.length] = new Array("5.3:11", "", "«Application Role» Message Distributor", "EARoot/EA5/EA3/EA728.htm", "57.png", "4981", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("5.3:12", "", "«Application Role» MHS", "EARoot/EA5/EA3/EA729.htm", "57.png", "4979", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("5.3:13", "", "«Application Role» Patient Demographic Database", "EARoot/EA5/EA3/EA732.htm", "57.png", "4989", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("5.3:14", "", "«Application Role» Security Handler", "EARoot/EA5/EA3/EA733.htm", "57.png", "5000", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("5.3:15", "", "«Application Role» System Directory", "EARoot/EA5/EA3/EA734.htm", "57.png", "4982", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("5.3:16", "", "Update PDS", "EARoot/EA5/EA3/EA736.htm", "101.png", "4990", "0", "", "InteractionFragment");
+tocTab[tocTab.length] = new Array("5.3:17", "", "«Application Role» User Directory", "EARoot/EA5/EA3/EA737.htm", "57.png", "5008", "0", "", "Sequence");

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CD - Integrated Care and Support Plan</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA1018.png" usemap="#EA1018" border="0" />
+
+<MAP NAME="EA1018">
+<area shape="rect" coords="1927,1015,2123,1145" href="EA1028.htm">
+<area shape="rect" coords="1441,1014,1637,1144" href="EA1033.htm">
+<area shape="rect" coords="43,790,185,901" href="EA1021.htm">
+<area shape="rect" coords="18,10,268,85" href="EA1019.htm">
+<area shape="rect" coords="365,1466,739,1681" href="../EA3/EA993.htm">
+<area shape="rect" coords="362,1311,685,1448" href="../EA3/EA989.htm">
+<area shape="rect" coords="360,1225,695,1283" href="EA1039.htm">
+<area shape="rect" coords="37,1344,204,1414" href="EA1027.htm">
+<area shape="rect" coords="23,1501,328,1597" href="EA1022.htm">
+<area shape="rect" coords="289,72,519,291" href="EA1023.htm">
+<area shape="rect" coords="621,767,817,895" href="EA1026.htm">
+<area shape="rect" coords="90,918,317,1055" href="EA1038.htm">
+<area shape="rect" coords="310,917,537,1054" href="EA1045.htm">
+<area shape="rect" coords="40,1250,295,1313" href="../EA3/EA988.htm">
+<area shape="rect" coords="530,918,692,1059" href="EA1025.htm">
+<area shape="rect" coords="1671,1015,1868,1100" href="EA1032.htm">
+<area shape="rect" coords="1886,843,2116,928" href="EA1030.htm">
+<area shape="rect" coords="1686,843,1854,927" href="EA1031.htm">
+<area shape="rect" coords="1211,1014,1402,1099" href="EA1037.htm">
+<area shape="rect" coords="1232,844,1383,930" href="EA1036.htm">
+<area shape="rect" coords="1414,842,1616,927" href="EA1035.htm">
+<area shape="rect" coords="1039,640,1236,738" href="EA1044.htm">
+<area shape="rect" coords="39,1173,239,1230" href="EA1024.htm">
+<area shape="rect" coords="761,640,990,726" href="EA1043.htm">
+<area shape="rect" coords="1747,640,1981,725" href="EA1029.htm">
+<area shape="rect" coords="1296,638,1518,723" href="EA1034.htm">
+<area shape="rect" coords="2089,640,2366,725" href="EA1020.htm">
+<area shape="rect" coords="268,640,536,777" href="EA1042.htm">
+<area shape="rect" coords="739,211,1257,462" href="EA1040.htm">
+</MAP>
+
+	<div class="ObjectTitle">CD - Integrated Care and Support Plan : logical diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">04/07/2007 12:50:50</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">13/03/2008 10:28:21</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Christina Lovelock</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">0.9 DRAFT</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{4466D948-8395-4586-A375-F0A5BCC7F624}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Version 0.1&lt;br /&gt;Used for C&M walk through 01/10/07&lt;br /&gt;&lt;br /&gt;Version 0.2&lt;br /&gt;cardinality on carePlanComponent template and carePlan template - responsibleParty changed from (1..1) to (1..*). Changed componentTypeCode cardinality from (0..1) to (0..*) and amended definition of this  attribute. New classes created: structuredTextSection, carePreferences, summary, goals, component details&lt;br /&gt;&lt;br /&gt;Version 0.3&lt;br /&gt;on carePlan template changed agreementToCarePlan from boolean to coded list (new Subset argreementToCarePlanSNCT). Added to carePlan template attribute &quot;peoplePresent&quot;. On carePlanComponentAction template changed cardinality from (1..1) to (0..1). on carePlan template and carePlanComponentTemplate changed cda_RoleChoice from #3 to new role choice #TBC on attribute responsibleParty. Changed section level on mainDetailsClass to level (0) i.e. does not appear, and made class abstract. Change section level on goals, summary, and carePreferences to be level (1). added constraint to mainDetails class. on carePlanComponent changed name of attribute &quot;value&quot; to &quot;issue&quot;. Added attribute &quot;provider&quot; to carePlan template.&lt;br /&gt;&lt;br /&gt;Version 0.4&lt;br /&gt;Added missing cardinality between integratedCareAndSupportPlanDocument and carePlanEncounter (1..1). &lt;br /&gt;Corrected cardinality on text attribute on componentDetails class from (0..1) to (1..1). &lt;br /&gt;Corrected cardinality on text attribute on crisisPlanStructured and contingencyPlanStructured classes from (0..1) to (1..1). &lt;br /&gt;Added missing cardinality between integratedCareAndSupportPlanDocument and  contingencyPlan (0..0..1). &lt;br /&gt;Corrected dataType on additionalInformation class, template list from (cda_templateList) to (carePlanAdditionalInformationTemplateList). &lt;br /&gt;Changed association type from association to composition on relationships between &lt;mainDetails&gt; and &lt;goals, summary, carePreferences, componentDetails&gt;. &lt;br /&gt;Added notes to mainDetails, goals, summary, carePreferences, componentDetails. on carePlanComponent Template changed issue attribute from dt_Text to ref choice tbc. added optional provider attribute to carePlanComponent Template. &lt;br /&gt;Expanded refChoice in notes for attribute issue on carePlanComponent template.&lt;br /&gt;&lt;br /&gt;Version 0.5&lt;br /&gt;Added componentDetailsTemplateList, reasonTemplateList, actionTemplateList, informationSupportTemplateList. &lt;br /&gt;Added attribute templateList to componentDetails class. removed all attributes from carePlanTemplateList except carePlan (all other attributes moved to appropriate new template List) changed cardinality on carePlan attribute on carePlanTemplateList from (0..*) to (1..*). &lt;br /&gt;Added constraints to attributes on structuredTextSectionHeadings (individualIssue, actionIntervention, informationSupport). &lt;br /&gt;Removed model specific dataType: structuredTextSectionHeadings, replaced with notes on componentDetails class. added adminDetails class. &lt;br /&gt;Modified template carePlanActionDetails to more generic carePlanComponentDetails. &lt;br /&gt;Added missing generalisation relationship between comonentDetailsTemplateList and reasonTemplateList.&lt;br /&gt;&lt;br /&gt;Version 0.6&lt;br /&gt;Heading attribute on adminDetails class changed from 0..1 to 0. &lt;br /&gt;Text attribute on adminDetails class changed from (0..1) to (1..1)&lt;br /&gt;&lt;br /&gt;Version 0.7&lt;br /&gt;Component details added to Crisis Plan (structured) and Contingency Plan (structured)&lt;br /&gt;Made Crisis Plan and Contingency Plan abstract&lt;br /&gt;Updated SectionLevels on all 3 componentDetails classes.&lt;br /&gt;Renamed issue to issueRef in new_cda_carePlanComponent&lt;br /&gt;Made value [0..1] in new_cda_carePlanComponentDetails&lt;br /&gt;Updated componentTypeDisplayName to be [0..1] in new_cda_carePlanComponent&lt;br /&gt;Set parent of strengths and additionalInformation&lt;br /&gt;&lt;br /&gt;Version 0.8&lt;br /&gt;03-12-2007 Added communication which uses physicalWellbeing template, to carePlanAdditionalInformationTempalteList&lt;br /&gt;&lt;br /&gt;Version 0.9 &lt;br /&gt;11-12-2007 Changed heading attribute from (0..0) to (0.1) on componentDetails class.&lt;br /&gt;Added optional CRT to carePlanComponentTemplate. Removed summary and goal attributes from carePlan template - replaced with textHeading attribute.&lt;br /&gt;07-02-2008 New templates no longer shown on diagram - this was required during Message development phase only.&lt;br /&gt;&lt;br /&gt;version 1.1&lt;br /&gt;13-03-2008 change cardinality on carePlanTemplateList from [0..1] to [1..1] in the mainDetails class</div>
+
+</div>
+ 
+</body>
+</html>

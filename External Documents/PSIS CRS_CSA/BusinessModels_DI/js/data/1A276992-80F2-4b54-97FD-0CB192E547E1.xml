@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("1", "1", "Navigation", "", "34.png", "", "", "{78D2D810-BADA-4516-AB1E-79F3476DC052}", "Package");
+tocTab[tocTab.length] = new Array("2", "1", "Domain Analysis & Scoping", "", "29.png", "", "", "{497C2960-B1A7-410a-A3C4-C409E0375751}", "Package");
+tocTab[tocTab.length] = new Array("3", "1", "Area of Interest", "", "31.png", "", "", "{0B8BDF54-2B0B-46e8-B583-45E2B00D1305}", "Package");
+tocTab[tocTab.length] = new Array("4", "1", "Communication", "", "32.png", "", "", "{74120B2A-18BC-4554-AD72-36913688C53B}", "Package");
+tocTab[tocTab.length] = new Array("5", "1", "Corporate Package v1.7.0", "EARoot/EA5.htm", "32.png", "", "", "{0BA835D6-1037-4d14-95CC-48392351D371}", "Package");

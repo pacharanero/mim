@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("2.2:1", "", "PDS", "EARoot/EA2/EA2/EA58.htm", "188.png", "100", "0", "", "Custom diagram");
+tocTab[tocTab.length] = new Array("2.2:2", "", "«Functional» Allow user to identifty patient using PDS", "EARoot/EA2/EA2/EA60.htm", "19.png", "1917", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.2:3", "", "«Functional» Allow user to read patient information on PDS", "EARoot/EA2/EA2/EA61.htm", "19.png", "1919", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.2:4", "", "«Functional» Allow user to update patient information on PDS", "EARoot/EA2/EA2/EA62.htm", "19.png", "1918", "0", "", "Requirement");

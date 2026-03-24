@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("3.1.6.11:1", "", "Specialist Assessment Outcome", "EARoot/EA3/EA1/EA6/EA11/EA393.htm", "188.png", "271", "0", "", "Custom diagram");
+tocTab[tocTab.length] = new Array("3.1.6.11:2", "", "«Compliance» HSCI023REQ: Specialist Assessment Outcome", "EARoot/EA3/EA1/EA6/EA11/EA396.htm", "19.png", "10299", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("3.1.6.11:3", "", "«Functional» HSCI062REQ: Appropriate level of detail", "EARoot/EA3/EA1/EA6/EA11/EA397.htm", "19.png", "10707", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("3.1.6.11:4", "", "«Functional» HSCI063REQ: Relationship with Integrated Care and Support Plan", "EARoot/EA3/EA1/EA6/EA11/EA398.htm", "19.png", "10708", "0", "", "Requirement");

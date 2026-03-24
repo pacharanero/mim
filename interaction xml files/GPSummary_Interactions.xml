@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifactPackage>
+	<dynamicModel>
+		<interaction id="REPC_IN150015UK05">
+			<Models>
+				<sendingRole modelId="REPC_AR150004UK01"/>
+				<receivingRole modelId="REPC_AR150005UK01"/>
+				<triggerEvent modelId="REPC_TE150004UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="REPC_MT150002UK05"/>
+			</Models>
+		</interaction>
+		<interaction id="REPC_IN150016UK05">
+			<Models>
+				<sendingRole modelId="REPC_AR150004UK01"/>
+				<receivingRole modelId="REPC_AR150005UK01"/>
+				<triggerEvent modelId="REPC_TE150005UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="REPC_MT150007UK05"/>
+			</Models>
+		</interaction>
+		<interaction id="REPC_IN150017UK02">
+			<Models>
+				<sendingRole modelId="REPC_AR150004UK01"/>
+				<receivingRole modelId="REPC_AR150005UK01"/>
+				<triggerEvent modelId="REPC_TE150006UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="UKCI_MT000001UK02"/>
+			</Models>
+		</interaction>
+		<interaction id="REPC_IN150018UK02">
+			<Models>
+				<sendingRole modelId="REPC_AR150004UK01"/>
+				<receivingRole modelId="REPC_AR150005UK01"/>
+				<triggerEvent modelId="REPC_TE150006UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="UKCI_MT000001UK02"/>
+			</Models>
+		</interaction>
+	</dynamicModel>
+</artifactPackage>

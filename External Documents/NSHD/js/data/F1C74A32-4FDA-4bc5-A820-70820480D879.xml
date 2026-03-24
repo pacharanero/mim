@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("4.1.1", "1", "Detailed Use Case - Replace Document", "EARoot/EA4/EA1/EA166.htm", "4.png", "", "", "{56C35A29-923A-4128-B574-F1CF7BFF5356}", "Package");
+tocTab[tocTab.length] = new Array("4.1.2", "1", "Actors", "EARoot/EA4/EA1/EA167.htm", "4.png", "", "", "{22ECA5A4-ABDB-4aff-A886-F0DA17A3E136}", "Package");
+tocTab[tocTab.length] = new Array("4.1.3", "1", "Detailed Use Case - Process Call", "EARoot/EA4/EA1/EA168.htm", "4.png", "", "", "{04CA6970-8307-48c8-906F-2AA6D2953B6D}", "Package");
+tocTab[tocTab.length] = new Array("4.1.4", "1", "Spine Interactions", "EARoot/EA4/EA1/EA169.htm", "4.png", "", "", "{3C941F08-945A-47b7-9726-7BFDCD8741CC}", "Package");

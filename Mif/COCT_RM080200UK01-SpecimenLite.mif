@@ -1,0 +1,1916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<staticModel isAbstract="false" isSerializable="true"
+    name="COCT_RM080200UK01" packageKind="root"
+    representationKind="flat" xmlns="urn:hl7-org:v3/mif" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:hl7-org:v3/mif ../MifSchemas/mifStaticModelFlat.xsd">
+    <packageLocation artifact="RM-deprecated" domain="CT" id="080200"
+        name="COCT_RM080200UK01" realm="UK" root="DEFN" section="HM"
+        subSection="CO" version="01"/>
+    <header>
+        <renderingInformation
+            application="NHS R-MIM Designer 2.99.KL.08"
+            renderingTime="2008-02-24T16:57:03" schemaVersion="1"/>
+        <legalese copyrightOwner="NHS Connecting for Health"/>
+    </header>
+    <graphicRepresentation presentation="HL7">
+        <graphElement name="Main">
+            <position x="0.0" y="0.0"/>
+            <size height="9.09845" width="18.37126"/>
+        </graphElement>
+    </graphicRepresentation>
+    <derivationSupplier staticModelDerivationId="1">
+        <targetStaticModel artifact="RIM" realm="UV" root="DEFN" version="1"/>
+    </derivationSupplier>
+    <importedCommonModelElementPackage id="1" name="CMETInfo" realm="UV" root="DEFN"/>
+    <ownedEntryPoint className="Specimen" id="COCT_RM080200UK01"
+        isAbstract="false" name="R_SpecimenLite">
+        <annotations>
+            <description>
+                <text>
+                    <p/>
+                </text>
+            </description>
+            <otherAnnotation type="html">
+                <text/>
+            </otherAnnotation>
+        </annotations>
+        <graphicRepresentation>
+            <graphElement containerDiagramName="Main"
+                isHeightAutoSize="false" isWidthAutoSize="false"
+                nodeOrientation="Down" shapeId="COCT_RM080200UK01">
+                <position x="5.74961" y="0.02778"/>
+                <size height="0.45278" width="1.19185"/>
+                <anchorage connectToShapeId="Sheet.1">
+                    <position x="6.34553" y="0.48056"/>
+                    <graphEdge>
+                        <anchor>
+                            <position x="6.34553" y="1.6775"/>
+                        </anchor>
+                    </graphEdge>
+                </anchorage>
+            </graphElement>
+        </graphicRepresentation>
+    </ownedEntryPoint>
+    <ownedClass>
+        <class isAbstract="false" name="Specimen">
+            <derivationSupplier className="Role" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="false" isWidthAutoSize="false"
+                    shapeId="Sheet.1" shapeTemplate="Role">
+                    <position x="4.91" y="1.6775"/>
+                    <size height="3.44612" width="2.50184"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <constraint name="Specimen">
+                    <text>
+                        <p>classCode is SPEC or ISLT</p>
+                    </text>
+                    <graphicRepresentation>
+                        <graphElement containerDiagramName="Main"
+                            isHeightAutoSize="true"
+                            isWidthAutoSize="true" shapeId="Sheet.134">
+                            <position x="3.74294" y="0.93456"/>
+                            <size height="0.32778" width="1.51413"/>
+                            <anchorage connectToShapeId="Sheet.1">
+                                <position x="4.5" y="1.09845"/>
+                                <graphEdge>
+                                    <anchor>
+                                    <position x="5.16018" y="1.6775"/>
+                                    </anchor>
+                                </graphEdge>
+                            </anchorage>
+                        </graphElement>
+                    </graphicRepresentation>
+                </constraint>
+                <otherAnnotation type="html">
+                    <text>
+                        <P>
+                            <B>This Specimen CMET is derived from the R_Specimen [Universal] in the HL7 v3 ballot. It is designed to be used for general Laboratory requests and reports without the overhead of the requirements of Automation or Specimen Tracking. It is constrained for use with Human subjects and excludes environmental, non-human and manufactured specimens. The 'Specimen' may play the role of a Specimen or an Isolate.</B>
+                        </P>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" isMandatory="true"
+                isStructural="true" maximumMultiplicity="1"
+                minimumMultiplicity="1" name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Indicates the role being played by the entity.</p>
+                            <p>Entities in the Specimen CMET may play the role of either a 'Specimen' or an 'Isolate'. The Role Class identifies the type of role being played by the entity in a particular message. </p>
+                            <p>Valid role types are 'SPEC' or 'ISLT' according to the entity playing the role.</p>
+                            <p>Where 'SPEC' is used, the code shall be taken from the Snomed National Specimen Type subset.</p>
+                            <p>Where 'ISLT' is used, the code shall be taken from the Snomed National_Lab Isolate subset_UK20060401.</p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Role" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SPEC"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="id" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>The ID is the unique identifier for the <i>Specimen/Isolate</i>.<br/>
+                            <br/>According to the use of the CMET, the ID may be a Placer or a Fulfiller identifier for the Specimen/Isolate. In Request interactions, it shall be the Placer identifier, in Event interactions, it shall be the Fulfiller identifier. In Event interactions, provision is made to carry the Placer Identifier in an associated role (SpecimenAlternateIdentifier) in addition to the Fulfiller identifier where one is available. The ID is made up of two parts, a root and extension. The Root will be an OID allocated to the system that generates the extension and will be at such a level that the combination of the Root and Extension is universally unique. The extension will be a human readable string generated by the system and may not be unique across the whole system.<br/>
+                            <br/>E.g. There are many systems that are configured on a departmental basis and the same range of human readable strings are used in multiple departments. In such cases, the Root OID shall be allocated at such a level that the human readable portion is unique within that Root OID.<br/>
+                            <br/>&lt; id root =" 9.99.999.99.10.2 " extension ="B05.00504885C "/&gt;<br/>
+                            <br/>Where 9.99.999.99. identifies the Hospital organization and 9.99.999.99.10.2 identifies the ID scheme within the Laboratory system that generated the extension B05.00504885C <br/>
+                            <br type="_moz"/>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="id" className="Role" staticModelDerivationId="1"/>
+                <type name="II" typeSpecialisation=""/>
+            </attribute>
+            <attribute conformance="R" fixedValue="P" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="code" sortKey="3">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Fixed value of 'P' Indicates that the role is a Patient related or derived specimen rather than a Q.A. or Pooled specimen</p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Role" staticModelDerivationId="1"/>
+                <type name="CE"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SpecimenRoleType"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Process">
+            <derivationSupplier className="Procedure" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.11" shapeTemplate="Act">
+                    <position x="9.65735" y="4.61672"/>
+                    <size height="1.18112" width="3.36768"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <designComments>
+                    <text>
+                        <p>Principally for the Collection Process.</p>
+                        <p>Could also be used to identify source</p>
+                        <p>of an isolate such as Anaerobic culture.</p>
+                        <p>May be an Act Ref within message.</p>
+                    </text>
+                    <graphicRepresentation>
+                        <graphElement containerDiagramName="Main"
+                            isHeightAutoSize="true"
+                            isWidthAutoSize="true" shapeId="Sheet.104">
+                            <position x="13.7" y="2.47623"/>
+                            <size height="0.72222" width="1.99495"/>
+                            <anchorage connectToShapeId="Sheet.11">
+                                <position x="14.69748" y="2.83734"/>
+                                <graphEdge>
+                                    <anchor>
+                                    <position x="12.68826" y="4.61672"/>
+                                    </anchor>
+                                </graphEdge>
+                            </anchorage>
+                        </graphElement>
+                    </graphicRepresentation>
+                </designComments>
+                <otherAnnotation type="html">
+                    <text>
+                        <P>
+                            <B>This is the process by which the 'specimen' was obtained</B>
+                        </P>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="PROC"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="5">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Indicates that this is a procedure.</p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Procedure" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PROC"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                isStructural="true" maximumMultiplicity="1"
+                minimumMultiplicity="1" name="moodCode" sortKey="6">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>May be Intent or Event. It is not used in Request mood in order to request that the Lab collect. Here it would be in Event mood as the decision that the lab shall collect has been made.</P>
+                            <P>It may be in Intent mood where it has yet to be collected by the sender and they wish to indicate the time at which they intend to collect the specimen.</P>
+                            <P>It is not intended that this is ever used to place an 'Order' for collection, merely to identify the collection process.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Procedure" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="x_ActMoodIntentEvent"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="id" sortKey="7">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>A globally unique UUID by which this act could be referenced in future.</p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="id"
+                    className="Procedure" staticModelDerivationId="1"/>
+                <type name="II" typeSpecialisation="II.NPfIT.uuid.mandatory"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="code" sortKey="8">
+                <annotations>
+                    <designComments>
+                        <text>&lt;p&gt;Subset: "SNOMED lab collection method subset_UK_20060401"&lt;/p&gt;</text>
+                    </designComments>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                                <span lang="EN-US">A value taken from SNOMED lab collection method subset_UK_20060401</span>
+                            </p>
+                            <p>For most specimens, this will be a generic concept of "17636008 specimen collection (procedure)". Where the collection method is specialised such as a 'Timed collection' or a method such as 'Clean Catch', 'Bag', 'Mid-stream' (applied to Urine collection), Biopsy etc, appropriate SnCT codes from the SNOMED lab collection method subset_UK_20060401 shall be used.</p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Procedure" staticModelDerivationId="1"/>
+                <type name="CE"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SnomedCT"/>
+            </attribute>
+            <attribute conformance="R" defaultValue="completed"
+                isMandatory="true" maximumMultiplicity="1"
+                minimumMultiplicity="1" name="statusCode" sortKey="13">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Set to 'completed' as the process has been defined.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="statusCode"
+                    className="Procedure" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="ActStatus"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="effectiveTime" sortKey="14">
+                <annotations>
+                    <designComments>
+                        <text>&lt;p&gt;DT of collection&lt;/p&gt;</text>
+                    </designComments>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>The actual or intended time of collection of the specimen. This may be an interval in the case of timed collections such as 24 hour collection (Start time - End time). In some circumstances, the Snomed concept for the collection process and the actual interval in the effective time may differ. The effective time or time interval shall be the time used for any calculation.</p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="effectiveTime"
+                    className="Procedure" staticModelDerivationId="1"/>
+                <type name="IVL">
+                    <supplierBindingArgumentDatatype name="TS"/>
+                </type>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Product">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Left" shapeId="Sheet.15"
+                    shapeTemplate="Participation" textWrappingWidth="45.0">
+                    <position x="7.41183" y="4.44161"/>
+                    <size height="0.56944" width="2.12052"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <P>
+                            <B>Identifies the 'Source' of the 'Specimen/Isolate'</B>
+                        </P>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="PRD"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="5">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Indicates that this is a product.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PRD"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                isStructural="true" maximumMultiplicity="1"
+                minimumMultiplicity="1" name="contextControlCode" sortKey="7">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="contextControlCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="ContextControl"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Natural">
+            <derivationSupplier className="Entity" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.21" shapeTemplate="Entity">
+                    <position x="4.8119" y="5.60978"/>
+                    <size height="1.18112" width="3.75049"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <P>
+                            <B>This is the 'Specimen' Entity itself. This identifies the actual physical specimen.</B>
+                        </P>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="ENT"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="5">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Indicates that this is an entity.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Entity" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="ENT"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="INSTANCE"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="determinerCode" sortKey="6">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Indicates that this is an Instance.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="determinerCode"
+                    className="Entity" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="INSTANCE"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="code" sortKey="8">
+                <annotations>
+                    <designComments>
+                        <text>&lt;p&gt;Subset: "SNOMED lab specimen subset_UK_20060401" or an organism&lt;/p&gt;</text>
+                    </designComments>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>The type of specimen is identified. It may be EITHER:-</p>
+                            <p>A Specimen concept ID taken from the </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                                <span lang="EN-US">SNOMED lab specimen subset_UK_20060401</span>
+                            </p>
+                            <p>and optionally post-coordinated with</p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                                <span lang="EN-US">SNOMED lab topography subset_UK_20060401</span>
+                            </p>
+                            <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                                <span lang="EN-US">SNOMED lab morphology subset_UK_20060401</span>
+                            </p>
+                            <span lang="EN-US">
+                                <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                                    <span lang="EN-US">SNOMED lab laterality subset_UK_20060401</span>
+                                </p>
+                            </span>
+
+                            <p>according to the Principals laid down in "<span style="font-size: 10pt; font-family: Arial">
+                                    <font size="2">Principles for carrying Pathology Request and Result data as SnCT concepts</font>" </span>
+                                <span style="font-size: 10pt; font-family: Arial">(</span>
+                                <span
+                                    style="font-size: 8pt; font-family: Arial">NPFIT-<span
+                                    style="font-size: 8pt; font-family: Arial">FNT-<span
+                                    style="font-size: 8pt; font-family: Arial">TO-<span
+                                    style="font-size: 8pt; font-family: Arial">DPM-<span style="font-size: 8pt; font-family: Arial">0378.01)</span>
+                                    </span>
+                                    </span>
+                                    </span>
+                                </span>
+                            </p>
+                            <p>OR:-</p>
+                            <p>An identified isolate taken from the SNOMED CT Concept organism%<br/> Exc domestic mammal -%<br/> Exc Kingdom Animalia -%<br/>Exc plant -%<br/> Exc resistant organism -%<br/>Exc trophic life form -%</p>
+                            <p>(% = concept and all descendents; Exc = Excluding) </p>
+                            <p>Resistant Organisms (ESBL E.coli etc) will be carried as the Species with appropriate observations indicating the susceptibility pattern. </p>
+                            <p>Isolates may be identified by Genus or to a Species level only. No post-coordination is allowed. All observations about the organism shall be carried as Observations off the SpecimenObservationCluster to which the Isolate is linked.</p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Entity" staticModelDerivationId="1"/>
+                <type name="CD"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SnomedCT"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="0"
+                name="desc" sortKey="11">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>A textual additional description of the specimen to supplement the coded value. This shall only be used where codes are not available to describe the specimen. It shall not be used in place of appropriate codes.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="desc"
+                    className="Entity" staticModelDerivationId="1"/>
+                <type name="ED"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="0"
+                name="riskCode" sortKey="15">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Carries any risk associated with the specimen such as Biohazard.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="riskCode"
+                    className="Entity" staticModelDerivationId="1"/>
+                <type name="CE"/>
+                <supplierDomainSpecification codingStrength="CWE" domainName="EntityRisk"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="0"
+                name="handlingCode" sortKey="16">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Identifies any specific handling instructions for the specimen. (Keep refrigerated etc)</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="handlingCode"
+                    className="Entity" staticModelDerivationId="1"/>
+                <type name="CE"/>
+                <supplierDomainSpecification codingStrength="CWE" domainName="EntityHandling"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="SpecimenStub">
+            <derivationSupplier className="Role" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.25" shapeTemplate="Role">
+                    <position x="1.76899" y="5.367"/>
+                    <size height="0.51445" width="1.54693"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <designComments>
+                    <text>
+                        <p>Used to carry the ID of a Parent Sample</p>
+                        <p>if there is one (that needs to be identified).</p>
+                    </text>
+                    <graphicRepresentation>
+                        <graphElement containerDiagramName="Main"
+                            isHeightAutoSize="true"
+                            isWidthAutoSize="true" shapeId="Sheet.109">
+                            <position x="1.70048" y="6.24844"/>
+                            <size height="0.5" width="2.13091"/>
+                            <anchorage connectToShapeId="Sheet.25">
+                                <position x="2.76594" y="6.49844"/>
+                                <graphEdge>
+                                    <anchor>
+                                    <position x="2.54245" y="5.88145"/>
+                                    </anchor>
+                                </graphEdge>
+                            </anchorage>
+                        </graphElement>
+                    </graphicRepresentation>
+                </designComments>
+                <constraint name="Specimen">
+                    <text>
+                        <p>classCode is SPEC or ISLT</p>
+                    </text>
+                    <graphicRepresentation>
+                        <graphElement containerDiagramName="Main"
+                            isHeightAutoSize="true"
+                            isWidthAutoSize="true" shapeId="Sheet.138">
+                            <position x="1.0" y="4.67067"/>
+                            <size height="0.32778" width="1.51413"/>
+                            <anchorage connectToShapeId="Sheet.25">
+                                <position x="1.75706" y="4.83456"/>
+                                <graphEdge>
+                                    <anchor>
+                                    <position x="2.38776" y="5.367"/>
+                                    </anchor>
+                                </graphEdge>
+                            </anchorage>
+                        </graphElement>
+                    </graphicRepresentation>
+                </constraint>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <b>Identifies the Parent specimen for the current specimen. For an Isolate, this may be used to identify the specimen from which the isolate was cultured. It may not be used to link one isolate to another. For this reason, the classCode is fixed as 'SPEC'.</b>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" isMandatory="true"
+                isStructural="true" maximumMultiplicity="1"
+                minimumMultiplicity="1" name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Code to be SPEC or ISLT as appropriate<br/>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Role" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SPEC"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="id" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <br/>The Specimen ID of the Parent specimen.<br/>
+                                <br/>It is made up of two parts, a root and extension. The Root will be an OID allocated to the system that generates the extension and will be at such a level that the combination of the Root and Extension is universally unique. The extension will be a human readable string generated by the system and may not be unique across the whole system.<br/>
+                                <br/>
+                                <id extension="B05.00504875C" root="9.99.999.99.10.2"/>
+                                <br/>Where 9.99.999.99. identifies the Hospital organization and 9.99.999.99.10.2 identifies the ID scheme within the Laboratory system that generated the extension B05.00504875C</p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="id" className="Role" staticModelDerivationId="1"/>
+                <type name="II"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Subject1">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Right" shapeId="Sheet.35"
+                    shapeTemplate="Participation" textWrappingWidth="45.0">
+                    <position x="2.17404" y="2.4945"/>
+                    <size height="0.56944" width="2.73596"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>Allows for observations to be made about the specimen.</b>
+                        <br/>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="SBJ"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="5">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Indicates that this is the subject of the Process step.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SBJ"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                isStructural="true" maximumMultiplicity="1"
+                minimumMultiplicity="1" name="contextControlCode" sortKey="7">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>A code that specifies how this Participation contributes to the context of the current Act and whether it may be propagated to descendant Acts whose association allows such propagation.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="contextControlCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="ContextControl"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="ProcessStep">
+            <derivationSupplier className="Act" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.41" shapeTemplate="Act">
+                    <position x="9.5496" y="1.57389"/>
+                    <size height="0.91445" width="2.73264"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <designComments>
+                    <text>
+                        <p>Holds sample</p>
+                        <p>arrival detail</p>
+                    </text>
+                    <graphicRepresentation>
+                        <graphElement containerDiagramName="Main"
+                            isHeightAutoSize="true"
+                            isWidthAutoSize="true" shapeId="Sheet.114">
+                            <position x="12.71592" y="1.49323"/>
+                            <size height="0.5" width="1.0"/>
+                            <anchorage connectToShapeId="Sheet.41">
+                                <position x="13.21592" y="1.74323"/>
+                                <graphEdge>
+                                    <anchor>
+                                    <position x="12.28224" y="2.12256"/>
+                                    </anchor>
+                                </graphEdge>
+                            </anchorage>
+                        </graphElement>
+                    </graphicRepresentation>
+                </designComments>
+                <otherAnnotation type="html">
+                    <text>
+                        <P>
+                            <B>An activity applied to the specimen.</B>
+                        </P>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="TRNS"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="5">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Indicates that this is a Transport Process Step. This carries information about the transport of the specimen, often the specimen arrival details.<br/>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Act" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="TRNS"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="EVN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="moodCode" sortKey="6">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Indicates that this is an event.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Act" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="EVN"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="id" sortKey="7">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A globally unique UUID by which this act could be referenced in future.</text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="id" className="Act" staticModelDerivationId="1"/>
+                <type name="II" typeSpecialisation="II.NPfIT.uuid.mandatory"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="code" sortKey="8">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Code values are taken from HL7 A: x_LabProcessCodes <b>A: ActSpecimenTransportCode</b>. These are process steps concerned with transport of specimens. This act is primarily used to carry the Date/Time of the receipt of the specimen in the laboratory.</p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code" className="Act" staticModelDerivationId="1"/>
+                <type name="CV"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="ActSpecimenTransportCode"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="effectiveTime" sortKey="14">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>This is the time at which the Process step took place. In the current scope, this is the time at which the specimen was received in the laboratory and will be a TS. Where the time is not accurate, the TS may be truncated from the right to an appropriate level of accuracy.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="effectiveTime"
+                    className="Act" staticModelDerivationId="1"/>
+                <type name="TS"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Subject2">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Left" shapeId="Sheet.45"
+                    shapeTemplate="Participation" textWrappingWidth="45.0">
+                    <position x="7.41183" y="1.74189"/>
+                    <size height="0.56944" width="2.13777"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <b>This provides a mechanism for carrying one or more process steps that are performed on the specimen.</b>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="SBJ"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="5">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Indicates that this is the subject of an observation event.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SBJ"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                isStructural="true" maximumMultiplicity="1"
+                minimumMultiplicity="1" name="contextControlCode" sortKey="7">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>A code that specifies how this Participation contributes to the context of the current Act and whether it may be propagated to descendant Acts whose association allows such propagation. </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="contextControlCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="ContextControl"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Performer">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Up" shapeId="Sheet.51"
+                    shapeTemplate="Participation" textWrappingWidth="50.0">
+                    <position x="10.5695" y="3.42623"/>
+                    <size height="1.19049" width="1.95394"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <designComments>
+                    <text>
+                        <p>Identifies How, When and Who</p>
+                        <p>collected (or should collect) the</p>
+                        <p>sample. Performer required for Cytology</p>
+                    </text>
+                    <graphicRepresentation>
+                        <graphElement containerDiagramName="Main"
+                            isHeightAutoSize="true"
+                            isWidthAutoSize="true" shapeId="Sheet.119">
+                            <position x="8.36837" y="3.00956"/>
+                            <size height="0.58889" width="2.03163"/>
+                            <anchorage connectToShapeId="Sheet.51">
+                                <position x="9.38418" y="3.304"/>
+                                <graphEdge>
+                                    <anchor>
+                                    <position x="10.94177" y="4.08397"/>
+                                    </anchor>
+                                </graphEdge>
+                            </anchorage>
+                        </graphElement>
+                    </graphicRepresentation>
+                </designComments>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <b>Used to identify the individual who collects the specimen. This is only used for Cytology Smear specimens.</b>
+                        </p>
+                        <p>Carries the Role Profile ID of the person who collected the smear</p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="PRF"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="5">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Indicates that this is a performer.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PRF"/>
+            </attribute>
+            <attribute conformance="R" defaultValue="OP"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="contextControlCode" sortKey="7">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>A code that specifies how this Participation contributes to the context of the current Act and whether it may be propagated to descendant Acts whose association allows such propagation.</p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="contextControlCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="ContextControl"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="0"
+                name="time" sortKey="11">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Time that the performer carried out the act.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="time"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="IVL">
+                    <supplierBindingArgumentDatatype name="TS"/>
+                </type>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Criterion">
+            <derivationSupplier className="Observation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.57" shapeTemplate="Act">
+                    <position x="15.22732" y="4.67456"/>
+                    <size height="1.04778" width="3.14535"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <designComments>
+                    <text>
+                        <p>Identifies any pre-conditions for</p>
+                        <p>the collection process such as</p>
+                        <p>Pre-dose, Fasting etc.</p>
+                    </text>
+                    <graphicRepresentation>
+                        <graphElement containerDiagramName="Main"
+                            isHeightAutoSize="true"
+                            isWidthAutoSize="true" shapeId="Sheet.124">
+                            <position x="15.00039" y="6.20401"/>
+                            <size height="0.58889" width="1.59961"/>
+                            <anchorage connectToShapeId="Sheet.57">
+                                <position x="15.80019" y="6.49846"/>
+                                <graphEdge>
+                                    <anchor>
+                                    <position x="16.80001" y="5.72233"/>
+                                    </anchor>
+                                </graphEdge>
+                            </anchorage>
+                        </graphElement>
+                    </graphicRepresentation>
+                </designComments>
+                <otherAnnotation type="html">
+                    <text>
+                        <P>
+                            <B>These criteria apply to the collection process. They shall be fulfilled prior to the collection process.</B>
+                        </P>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="OBS"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="5">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Indicates that this is an observation.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="OBS"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="EVN.CRT"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="moodCode" sortKey="6">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Indicates that this is a event criterion.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="EVN.CRT"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="id" sortKey="7">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A globally unique UUID by which this act could be referenced in future.</text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="id"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="II" typeSpecialisation="II.NPfIT.uuid.required"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="code" sortKey="8">
+                <annotations>
+                    <designComments>
+                        <text>&lt;p&gt;Subset: "SNOMED lab pre-condition subset_UK_20060401"&lt;/p&gt;</text>
+                    </designComments>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Values from <SPAN lang="EN-US">SNOMED lab pre-condition subset_UK_20060401 </SPAN>for appropriate criteria for collection e.g. fasting patient (182923009), acute phase(255251009), post-dose (255566006)</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CD"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SnomedCT"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="0"
+                name="value" sortKey="26">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>May be used where there is a need to carry a value for a criterion. E.g 20 mins (post dose)</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="value"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="ANY"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Precondition">
+            <derivationSupplier className="ActRelationship" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Right" shapeId="Sheet.61"
+                    shapeTemplate="ActRelationship" textWrappingWidth="45.0">
+                    <position x="13.02503" y="4.78481"/>
+                    <size height="0.83611" width="2.20725"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <P>
+                            <B>A precondition is a relationship to a Criterion which must be fulfilled before the source act may take place.</B>
+                        </P>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="PRCN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="5">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Indicates that this is a precondition.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="ActRelationship" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PRCN"/>
+            </attribute>
+            <attribute conformance="R" defaultValue="AN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="contextControlCode" sortKey="7">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Specifies how the informant contributes to the context of the medication administration and whether they may be propagated to descendant acts whose association allows such propagation.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="contextControlCode"
+                    className="ActRelationship" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="ContextControl"/>
+            </attribute>
+            <attribute conformance="R" defaultValue="true"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="contextConductionInd" sortKey="8">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>If true, associations in the parent act are conducted across the ActRelationship to the child act.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="contextConductionInd"
+                    className="ActRelationship" staticModelDerivationId="1"/>
+                <type name="BL"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="0"
+                name="sequenceNumber" sortKey="9">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>An optional integer to allow relative ordering of this relationship among other like-type relationships having the same source Act.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="sequenceNumber"
+                    className="ActRelationship" staticModelDerivationId="1"/>
+                <type name="INT"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="SpecimenAlternateIdentifier">
+            <derivationSupplier className="Role" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.67" shapeTemplate="Role">
+                    <position x="4.03626" y="7.29067"/>
+                    <size height="0.64778" width="2.42551"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <B>This is used to carry the Placer Specimen number in reports. It is not used in Requesting as there is only one (Placer) identifier which is carried in the Specimen Role</B>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="IDENT"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Indicates that this is an entity.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Role" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="IDENT"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="id" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>The Placer ID for the specimen.<br/>
+                            <br/>The ID is the unique identifier for the Specimen.<br/>
+                            <br/>It is made up of two parts, a root and extension. The Root will be an OID allocated to the system that generates the extension and will be at such a level that the combination of the Root and Extension is universally unique. The extension will be a human readable string generated by the system and may not be unique across the whole system.<br/>
+                            <br/>E.g. There are many systems that are configured on a departmental basis and the same range of human readable strings are used in multiple departments. In such cases, the Root OID shall be allocated at such a level that the human readable portion is unique within that Root OID.<br/>
+                            <br/>&lt;id root="9.99.999.99.10.2" extension="GP00115085"/&gt;<br/>
+                            <br/>Where 9.99.999.99. identifies the organization and 9.99.999.99.10.2 identifies the ID scheme within the Placer system that generated the extension.</text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="id" className="Role" staticModelDerivationId="1"/>
+                <type name="II"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="P" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="code" sortKey="3">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Fixed value of 'P' indicates that the role is a Patient related or derived specimen rather than a Q.A. or Pooled specimen</p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Role" staticModelDerivationId="1"/>
+                <type name="CE"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SpecimenRoleType"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Organization">
+            <derivationSupplier className="Organization" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.77" shapeTemplate="Entity">
+                    <position x="3.14526" y="8.33845"/>
+                    <size height="0.75" width="2.03749"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text/>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="ORG"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="5">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Indicates that this is an entity.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Organization" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="ORG"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="INSTANCE"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="determinerCode" sortKey="6">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Indicates that this is an Instance.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="determinerCode"
+                    className="Organization" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="INSTANCE"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="id" sortKey="7">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>This is the globally unique identifier (SDS value) for this Organization. </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="id"
+                    className="Organization" staticModelDerivationId="1"/>
+                <type name="II"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="true" name="ProcessChoice">
+            <derivationSupplier className="Act" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="false" isWidthAutoSize="true"
+                    nodeOrientation="Portrait" shapeId="Sheet.81" shapeTemplate="Choice">
+                    <position x="9.53235" y="4.36672"/>
+                    <size height="2.46345" width="3.61768"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <B>Identifies the process by which the Specimen/Isolate was obtained</B>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <specializationChild childClassName="Process">
+                <graphicRepresentation>
+                    <graphElement containerDiagramName="Main" shapeId="Sheet.11">
+                        <position x="9.65735" y="4.61672"/>
+                        <size height="1.18112" width="3.36768"/>
+                    </graphElement>
+                </graphicRepresentation>
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <B>Identifies the process by which the Specimen/Isolate was obtained</B>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+            </specializationChild>
+            <specializationChild childClassName="ProcedureProcessRef">
+                <graphicRepresentation>
+                    <graphElement containerDiagramName="Main" shapeId="Sheet.87">
+                        <position x="9.65735" y="5.92283"/>
+                        <size height="0.75" width="3.35265"/>
+                    </graphElement>
+                </graphicRepresentation>
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+            </specializationChild>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="SpecimenObservationEvent">
+            <derivationSupplier className="Observation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="false"
+                    shapeId="Sheet.83" shapeTemplate="Act">
+                    <position x="0.01" y="2.29845"/>
+                    <size height="0.91445" width="2.16405"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <designComments>
+                    <text>
+                        <p>Sample Volume, Dilution etc</p>
+                    </text>
+                    <graphicRepresentation>
+                        <graphElement containerDiagramName="Main"
+                            isHeightAutoSize="true"
+                            isWidthAutoSize="true" shapeId="Sheet.129">
+                            <position x="0.71592" y="1.44845"/>
+                            <size height="0.5" width="1.45128"/>
+                            <anchorage connectToShapeId="Sheet.83">
+                                <position x="1.44156" y="1.69845"/>
+                                <graphEdge>
+                                    <anchor>
+                                    <position x="0.65921" y="2.29845"/>
+                                    </anchor>
+                                </graphEdge>
+                            </anchorage>
+                        </graphElement>
+                    </graphicRepresentation>
+                </designComments>
+                <otherAnnotation type="html">
+                    <text>
+                        <P>
+                            <B>An observation made on the specimen.</B>
+                        </P>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="SPCOBS"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="5">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Indicates that this is a specimen observation.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SPCOBS"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="EVN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="moodCode" sortKey="6">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Indicates that this is an event.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="EVN"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="id" sortKey="7">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A globally unique UUID by which this act could be referenced in future.</text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="id"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="II" typeSpecialisation="II.NPfIT.uuid.required"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="code" sortKey="8">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Values from SnCT Specimen Processing hierarchy relating to measurement e.g.</p>
+                            <ul>
+                                <li>specimen weight (observable entity)</li>
+                                <li>specimen volume (observable entity)</li>
+                                <li>length of specimen (observable entity)</li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CD"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SnomedCT"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="value" sortKey="26">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <P>Value according to the act.code. Units (UCUM) shall be specified where a numerical measurement is made.</P>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="value"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="ANY"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="ProcedureProcessRef">
+            <derivationSupplier className="Procedure" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="false"
+                    shapeId="Sheet.87" shapeTemplate="Act">
+                    <position x="9.65735" y="5.92283"/>
+                    <size height="0.75" width="3.35265"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text/>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="PROC"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="5">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Indicates that this is a Procedure</text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Procedure" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PROC"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                isStructural="true" maximumMultiplicity="1"
+                minimumMultiplicity="1" name="moodCode" sortKey="6">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Set to match the moodCode of the Procedure being referenced.</text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Procedure" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="x_ActMoodIntentEvent"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="id" sortKey="7">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A globally unique UUID by which this act could be referenced in future.</text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="id"
+                    className="Procedure" staticModelDerivationId="1"/>
+                <type name="II" typeSpecialisation="II.NPfIT.uuid.mandatory"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <commonModelElementRef name="UKCT_MT121100UK01">
+            <derivationSupplier className="Role" staticModelDerivationId="1"/>
+            <supplierStructuralDomain
+                domainName="Role(Scoped or Performed)" mnemonic="ASSIGNED"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.91" shapeTemplate="CMET">
+                    <position x="10.84128" y="2.79845"/>
+                    <size height="0.62778" width="1.51745"/>
+                </graphElement>
+            </graphicRepresentation>
+            <generalizationParent name="R_AssignedPersonSDSUniversal"/>
+        </commonModelElementRef>
+    </ownedClass>
+    <ownedAssociation sortKey="ADABA______Specimen">
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.21"
+                containerDiagramName="Main" shapeId="Sheet.1">
+                <position x="7.41184" y="5.12362"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.21">
+                        <position x="6.68715" y="5.60978"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="specimenNatural" participantClassName="Natural">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="player"
+                    className="Specimen" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Specimen">
+                <derivationSupplier associationEndName="playedRole"
+                    className="Natural" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation sortKey="AHAF_______Product">
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.1"
+                containerDiagramName="Main" shapeId="Sheet.15">
+                <position x="7.41183" y="4.72633"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.1">
+                        <position x="7.41183" y="4.72633"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="0"
+                name="productOf" participantClassName="Product">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="Specimen" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Specimen">
+                <derivationSupplier associationEndName="role"
+                    className="Product" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation sortKey="AHAA_______Subject2">
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.1"
+                containerDiagramName="Main" shapeId="Sheet.45">
+                <position x="7.41183" y="2.02661"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.1">
+                        <position x="7.41183" y="2.02661"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="false"
+                maximumMultiplicity="*" minimumMultiplicity="0"
+                name="subjectOf2" participantClassName="Subject2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="Specimen" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Specimen">
+                <derivationSupplier associationEndName="role"
+                    className="Subject2" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation sortKey="AHAA_______Subject1">
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.1"
+                containerDiagramName="Main" shapeId="Sheet.35">
+                <position x="4.91" y="2.77922"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.1">
+                        <position x="4.91" y="2.77922"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="false"
+                maximumMultiplicity="*" minimumMultiplicity="0"
+                name="subjectOf1" participantClassName="Subject1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="Specimen" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Specimen">
+                <derivationSupplier associationEndName="role"
+                    className="Subject1" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation sortKey="ABCD_______Precondition">
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.11"
+                containerDiagramName="Main" shapeId="Sheet.61">
+                <position x="13.02503" y="5.20287"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.11">
+                        <position x="13.02503" y="5.20287"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="false"
+                maximumMultiplicity="*" minimumMultiplicity="0"
+                name="precondition" participantClassName="Precondition">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundRelationship"
+                    className="Process" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Process">
+                <derivationSupplier associationEndName="source"
+                    className="Precondition" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation sortKey="AAD________Performer">
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.11"
+                containerDiagramName="Main" shapeId="Sheet.51">
+                <position x="11.54647" y="4.61672"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.11">
+                        <position x="11.54647" y="4.61672"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="0"
+                name="performer" participantClassName="Performer">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="Process" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Process">
+                <derivationSupplier associationEndName="act"
+                    className="Performer" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation sortKey="AAAF_______Product">
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.81"
+                containerDiagramName="Main" shapeId="Sheet.15">
+                <position x="9.53235" y="4.72633"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.81">
+                        <position x="9.53235" y="4.72633"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="processChoice" participantClassName="ProcessChoice">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="act"
+                    className="Product" staticModelDerivationId="1"/>
+                <participantClassSpecialization className="Process" traversalName="processChoiceProcess"/>
+                <participantClassSpecialization
+                    className="ProcedureProcessRef" traversalName="processChoiceProcedureProcessRef"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Product">
+                <derivationSupplier associationEndName="act"
+                    className="ProcessChoice" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation sortKey="ADABA______SpecimenStub">
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.21"
+                containerDiagramName="Main" shapeId="Sheet.25">
+                <position x="3.31592" y="5.88145"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.21">
+                        <position x="4.8119" y="6.20034"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection isMandatory="false"
+                maximumMultiplicity="*" minimumMultiplicity="0"
+                name="asSpecimenStub" participantClassName="SpecimenStub">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="playedRole"
+                    className="Natural" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Natural">
+                <derivationSupplier associationEndName="player"
+                    className="SpecimenStub" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation sortKey="ADAABA_____SpecimenAlternateIdentifier">
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.21"
+                containerDiagramName="Main" shapeId="Sheet.67">
+                <position x="6.46177" y="7.93845"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.21">
+                        <position x="6.68715" y="6.79089"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection isMandatory="false"
+                maximumMultiplicity="*" minimumMultiplicity="0"
+                name="asSpecimenAlternateIdentifier" participantClassName="SpecimenAlternateIdentifier">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="playedRole"
+                    className="Natural" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Natural">
+                <derivationSupplier associationEndName="player"
+                    className="SpecimenAlternateIdentifier" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation sortKey="AAAA_______Subject1">
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.83"
+                containerDiagramName="Main" shapeId="Sheet.35">
+                <position x="2.17404" y="2.77922"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.83">
+                        <position x="2.17404" y="2.77922"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="specimenObservationEvent" participantClassName="SpecimenObservationEvent">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="act"
+                    className="Subject1" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Subject1">
+                <derivationSupplier associationEndName="participation"
+                    className="SpecimenObservationEvent" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation sortKey="AAAA_______Subject2">
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.41"
+                containerDiagramName="Main" shapeId="Sheet.45">
+                <position x="9.5496" y="2.02661"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.41">
+                        <position x="9.5496" y="2.02661"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="processStep" participantClassName="ProcessStep">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="act"
+                    className="Subject2" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Subject2">
+                <derivationSupplier associationEndName="participation"
+                    className="ProcessStep" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation sortKey="AHD________Performer">
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.91"
+                containerDiagramName="Main" shapeId="Sheet.51">
+                <position x="11.54647" y="3.42623"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.91">
+                        <position x="11.54647" y="3.42623"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="assignedPersonSDS" participantClassName="UKCT_MT121100UK01">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="role"
+                    className="Performer" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Performer">
+                <derivationSupplier associationEndName="participation"
+                    className="UKCT_MT121100UK01" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation sortKey="ACCD_______Precondition">
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.57"
+                containerDiagramName="Main" shapeId="Sheet.61">
+                <position x="15.22732" y="5.20287"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.57">
+                        <position x="15.22732" y="5.20287"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="criterion" participantClassName="Criterion">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="target"
+                    className="Precondition" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Precondition">
+                <derivationSupplier
+                    associationEndName="inboundRelationship"
+                    className="Criterion" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation sortKey="AEAABA_____SpecimenAlternateIdentifier">
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.77"
+                containerDiagramName="Main" shapeId="Sheet.67">
+                <position x="6.46177" y="7.29067"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.77">
+                        <position x="4.164" y="8.33845"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="assigningOrganization" participantClassName="Organization">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="scoper"
+                    className="SpecimenAlternateIdentifier" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="SpecimenAlternateIdentifier">
+                <derivationSupplier associationEndName="scopedRole"
+                    className="Organization" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+</staticModel>

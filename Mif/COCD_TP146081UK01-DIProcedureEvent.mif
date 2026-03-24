@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<staticModel isAbstract="false" isSerializable="true"
+    name="COCD_TP146081UK01" packageKind="root"
+    representationKind="flat" xmlns="urn:hl7-org:v3/mif"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3/mif ../MifSchemas/mifStaticModelFlat.xsd">
+    <packageLocation artifact="TP" domain="CD" id="146081"
+        name="COCD_TP146081UK01" realm="UK" root="DEFN" section="HM"
+        subSection="CO" version="01"/>
+    <header>
+        <renderingInformation
+            application="NHS R-MIM Designer 2.99.KJ.05"
+            renderingTime="2007-11-21T14:21:57" schemaVersion="1"/>
+        <legalese copyrightOwner="NHS Connecting for Health"/>
+    </header>
+    <graphicRepresentation presentation="HL7">
+        <graphElement name="Main">
+            <position x="0.0" y="0.0"/>
+            <size height="1.91389" width="3.55"/>
+        </graphElement>
+    </graphicRepresentation>
+    <derivationSupplier staticModelDerivationId="1">
+        <targetStaticModel artifact="RIM" realm="UV" root="DEFN" version="1"/>
+    </derivationSupplier>
+    <ownedEntryPoint className="DIProcedureEvent" id="COCD_TP146081UK01"
+        isAbstract="false" name="DIProcedureEvent">
+        <annotations>
+            <description>
+                <text>
+                    <p>DI Procedure Event</p>
+                </text>
+            </description>
+            <otherAnnotation type="html">
+                <text/>
+            </otherAnnotation>
+        </annotations>
+        <graphicRepresentation>
+            <graphElement containerDiagramName="Main"
+                isHeightAutoSize="false" isWidthAutoSize="false"
+                nodeOrientation="Down" shapeId="COCD_TP146081UK01">
+                <position x="1.01879" y="0.02778"/>
+                <size height="0.45278" width="1.28742"/>
+                <anchorage connectToShapeId="Sheet.1">
+                    <position x="1.6625" y="0.48056"/>
+                    <graphEdge>
+                        <anchor>
+                            <position x="1.6625" y="0.98944"/>
+                        </anchor>
+                    </graphEdge>
+                </anchorage>
+            </graphElement>
+        </graphicRepresentation>
+    </ownedEntryPoint>
+    <ownedClass>
+        <class isAbstract="false" name="DIProcedureEvent">
+            <derivationSupplier className="Procedure" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="false"
+                    shapeId="Sheet.1" shapeTemplate="Act">
+                    <position x="0.01" y="0.98944"/>
+                    <size height="0.91445" width="3.53"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>A template that identifies one or more performed Diagnostic Imaging procedure(s), by using the a reference to the actual procedure elsewhere in the CDA document.<br/>
+                        </b>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R"
+                defaultValue="COCD_TP146081UK01#DIProcedureEvent"
+                fixedValue="COCD_TP146081UK01#DIProcedureEvent"
+                isMandatory="true" maximumMultiplicity="1"
+                minimumMultiplicity="1" name="templateId" sortKey="0">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>The fixed value of this attribute provides a unique identifier for the template and the classname within that template.</p>
+                            <p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+                            <ul>
+                                <li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.2"</li>
+                                <li>The extension attribute shall contain the fixed value</li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="templateId"
+                    className="Procedure" staticModelDerivationId="1"/>
+                <type name="II"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="PROC"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Indicates that this is a procedure.</text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Procedure" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PROC"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="EVN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="moodCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Indicates that this is an event.</text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Procedure" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="EVN"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="*" minimumMultiplicity="1"
+                name="id" sortKey="3">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+
+                            <p> A list on one or more ids. Each is a unique identifier for an instance of a performed Diagnostic Imaging procedure.<span id="XSLTPageNoTree123:XSLTOut">
+                                    <br/>
+                                </span>
+                            </p>
+                            <div>The IdentifierExternal datatype flavour is used to carry this information as follows: </div>
+                            <div>
+                                <ul>
+                                    <li>The <i>root</i> attribute shall contain a DCE UUID. <br/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="id"
+                    className="Procedure" staticModelDerivationId="1"/>
+                <type name="LIST">
+                    <supplierBindingArgumentDatatype name="II"/>
+                </type>
+            </attribute>
+            <attribute conformance="R" defaultValue="DI05"
+                fixedValue="DI05" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="code" sortKey="4">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>A code from the vocabulary shown indicating the type of Diagnostic Imaging Service Event Procedure.<br/>
+                            </p>
+                            <p>The Coded Plain flavour of Coded Value (CV) datatype shall be used to carry this information as follows:</p>
+                            <ul>
+                                <li>The <i>code</i> attribute shall contain the value. </li>
+                                <li>The <i>codeSystem</i> attribute shall contain the OID for the vocabulary concerned.</li>
+                                <li>The<i> displayName</i> attribute shall contain the text associated with the code</li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Procedure" staticModelDerivationId="1"/>
+                <type name="CV"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="DIServiceEventType"/>
+            </attribute>
+        </class>
+    </ownedClass>
+</staticModel>

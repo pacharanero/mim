@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("5.2.1.2.1:1", "", "Technical", "EARoot/EA5/EA2/EA1/EA2/EA1/EA617.htm", "175.png", "143", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("5.2.1.2.1:2", "", "dt_Coded", "EARoot/EA5/EA2/EA1/EA2/EA1/EA619.htm", "5.png", "4197", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.2.1.2.1:3", "", "dt_IntegerInterval", "EARoot/EA5/EA2/EA1/EA2/EA1/EA620.htm", "5.png", "4194", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.2.1.2.1:4", "", "dt_Interval", "EARoot/EA5/EA2/EA1/EA2/EA1/EA621.htm", "5.png", "4192", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.2.1.2.1:5", "", "dt_PhysicalQuantity", "EARoot/EA5/EA2/EA1/EA2/EA1/EA622.htm", "5.png", "4196", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.2.1.2.1:6", "", "dt_PhysicalQuantityInterval", "EARoot/EA5/EA2/EA1/EA2/EA1/EA623.htm", "5.png", "4199", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.2.1.2.1:7", "", "dt_Text", "EARoot/EA5/EA2/EA1/EA2/EA1/EA624.htm", "5.png", "4193", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.2.1.2.1:8", "", "dt_TimeInterval", "EARoot/EA5/EA2/EA1/EA2/EA1/EA625.htm", "5.png", "4198", "0", "", "Class");

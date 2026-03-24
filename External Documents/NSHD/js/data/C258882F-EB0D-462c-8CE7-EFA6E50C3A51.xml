@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("5.2.1", "1", "Information Example - Ian", "EARoot/EA5/EA2/EA389.htm", "4.png", "", "", "{0581C4B8-E8EE-4849-86B0-B255C281DFAF}", "Package");
+tocTab[tocTab.length] = new Array("5.2.2", "1", "Information Example - June", "EARoot/EA5/EA2/EA390.htm", "4.png", "", "", "{D4BA8AA6-7C4E-4481-95DE-B017BBB8E81C}", "Package");
+tocTab[tocTab.length] = new Array("5.2.3", "1", "Information Example - Michael", "EARoot/EA5/EA2/EA391.htm", "4.png", "", "", "{4BF9F62F-79D5-4170-A738-927C7FE605F0}", "Package");
+tocTab[tocTab.length] = new Array("5.2.4", "1", "Information Example - Sally", "EARoot/EA5/EA2/EA392.htm", "4.png", "", "", "{31972EC0-3D2B-4e7d-9AA2-C0672EB8128C}", "Package");
+tocTab[tocTab.length] = new Array("5.2.5", "1", "Information Example - Stephen", "EARoot/EA5/EA2/EA393.htm", "4.png", "", "", "{CAF1BF9F-BF03-4d17-859D-7C42CC68BA39}", "Package");

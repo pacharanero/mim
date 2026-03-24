@@ -1,0 +1,11 @@
+tocTab[tocTab.length] = new Array("4.2.4.6:1", "", "Risk Assessment", "EARoot/EA4/EA2/EA4/EA6/EA1329.htm", "177.png", "400", "0", "", "Object diagram");
+tocTab[tocTab.length] = new Array("4.2.4.6:2", "", "«NEW TEMPLATE» riskAssesment: assessmentEvent", "EARoot/EA4/EA2/EA4/EA6/EA1331.htm", "25.png", "6476", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.6:3", "", "riskAssessment: riskAssessmentDetailsTemplateList", "EARoot/EA4/EA2/EA4/EA6/EA1332.htm", "25.png", "6475", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.6:4", "", "selfNeglect: riskAssessmentCategoryAndScaleTemplateList", "EARoot/EA4/EA2/EA4/EA6/EA1333.htm", "25.png", "6471", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.6:5", "", "«NEW TEMPLATE» careSetting: assessmentEvent", "EARoot/EA4/EA2/EA4/EA6/EA1334.htm", "25.png", "6478", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.6:6", "", "«NEW TEMPLATE» selfNeglect: assessmentEvent", "EARoot/EA4/EA2/EA4/EA6/EA1335.htm", "25.png", "6473", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.6:7", "", "«NEW TEMPLATE» selfNeglectcategory: assessmentEvent", "EARoot/EA4/EA2/EA4/EA6/EA1336.htm", "25.png", "6474", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.6:8", "", ": riskAssessmentCategoriesAndScaleScores", "EARoot/EA4/EA2/EA4/EA6/EA1337.htm", "25.png", "6273", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.6:9", "", ": riskAssessment", "EARoot/EA4/EA2/EA4/EA6/EA1338.htm", "25.png", "6272", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.6:10", "", ": MHriskAssessment", "EARoot/EA4/EA2/EA4/EA6/EA1339.htm", "25.png", "6268", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.4.6:11", "", "«NEW TEMPLATE» selfNeglect: assessmentEvent", "EARoot/EA4/EA2/EA4/EA6/EA1340.htm", "25.png", "6472", "0", "", "Object");

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">  : public   note</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">11/25/05 08:56:36</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">12/14/05 15:43:25</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{2D00C9DE-EDDA-4f50-81A1-72CA5A609CC1}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA67.htm">NHSD Overview</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Notes to Assist in the Understanding of the NHSD Direct Model <br /><br />A NHS Direct call will be first &#39;streamed&#39; by a Health Advisor, who will identify its priority and destination. For the purposes of messaging there are 6 destinations, which are:<br /><br />999 Calls - These are &quot;emergency&quot; calls that will be forwarded to an appropriate ambulance trust.  For example, a patient with chest pains may be transferred immediately onto a 999 control.<br /><br />Third Party Health Care Provider – In these circumstances callers will be referred onto another health care provider by the Health Advisor, such as a GP. Note that in some circumstances, the call may be directly transferred.<br /><br />Nurse Advisor Calls – Such calls relate to a current medical complaint / condition which require a nurse advisor assessment in order to identify the disposition (next stage of treatment) of the subject of care. Depending of the potential seriousness of the medical complaint, the call may be transferred immediately on a nurse or placed an appropriate nurse advisor queue, for later ‘call back’.<br /><br />Health Information Quick Calls – Such queries will generally be answered immediately be Health Advisor. An example could be,” where is the nearest dentist?”<br /><br />Health Information Calls – Such calls generally require research by a Health Information Advisor and as consequence, the Health Advisor who initially ‘streamed’ the call, advise the caller of the approximate waiting time for a ‘call back’ and then place the call onto the appropriate health information queue and end the call A Health Information Advisor, will later retrieve the call from the queue and phone back the caller once he/she has retrieved the information.<br /><br />Inappropriate Calls – Such calls are simply inappropriate to NHS Direct and will be closed as soon as possible by the Health Advisor.<br /><br />Note that at any point in the process there can be a worsening in the condition of the Subject of Care. This can result in a process interrupt to a 999 call There is an on-screen facility in CAS for the user to break out of the process at any point and terminate the call.</div>
+
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

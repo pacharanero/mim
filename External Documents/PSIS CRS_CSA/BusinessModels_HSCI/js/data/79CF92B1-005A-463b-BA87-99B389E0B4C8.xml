@@ -1,0 +1,11 @@
+tocTab[tocTab.length] = new Array("4.3.4.4:1", "", "Tower Hamlets", "EARoot/EA4/EA3/EA4/EA4/EA2191.htm", "185.png", "119", "0", "", "Sequence diagram");
+tocTab[tocTab.length] = new Array("4.3.4.4:2", "", "Communication Details", "EARoot/EA4/EA3/EA4/EA4/EA2193.htm", "101.png", "1969", "0", "", "InteractionFragment");
+tocTab[tocTab.length] = new Array("4.3.4.4:3", "", "Details of Carer/ caring responsibilities", "EARoot/EA4/EA3/EA4/EA4/EA2194.htm", "101.png", "1968", "0", "", "InteractionFragment");
+tocTab[tocTab.length] = new Array("4.3.4.4:4", "", "GP", "EARoot/EA4/EA3/EA4/EA4/EA2195.htm", "6.png", "1960", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("4.3.4.4:5", "", "HCP", "EARoot/EA4/EA3/EA4/EA4/EA2196.htm", "6.png", "1961", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("4.3.4.4:6", "", "List of all agencies/ workers involved with service user", "EARoot/EA4/EA3/EA4/EA4/EA2198.htm", "101.png", "1963", "0", "", "InteractionFragment");
+tocTab[tocTab.length] = new Array("4.3.4.4:7", "", "Mental Health", "EARoot/EA4/EA3/EA4/EA4/EA2199.htm", "6.png", "1958", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("4.3.4.4:8", "", "Risk Information", "EARoot/EA4/EA3/EA4/EA4/EA2200.htm", "101.png", "1965", "0", "", "InteractionFragment");
+tocTab[tocTab.length] = new Array("4.3.4.4:9", "", "Service User", "EARoot/EA4/EA3/EA4/EA4/EA2201.htm", "6.png", "1962", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("4.3.4.4:10", "", "Share Demographics", "EARoot/EA4/EA3/EA4/EA4/EA2202.htm", "101.png", "1967", "0", "", "InteractionFragment");
+tocTab[tocTab.length] = new Array("4.3.4.4:11", "", "Social Care", "EARoot/EA4/EA3/EA4/EA4/EA2203.htm", "6.png", "1959", "0", "", "Actor");

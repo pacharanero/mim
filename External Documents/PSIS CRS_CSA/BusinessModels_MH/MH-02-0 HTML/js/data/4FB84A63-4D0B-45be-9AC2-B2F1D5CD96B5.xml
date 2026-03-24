@@ -1,0 +1,13 @@
+tocTab[tocTab.length] = new Array("4.2.5.2:1", "", "ReferralFirstContactTriageEntry", "EARoot/EA4/EA2/EA5/EA2/EA1410.htm", "177.png", "377", "0", "", "Object diagram");
+tocTab[tocTab.length] = new Array("4.2.5.2:2", "", ": referrersRecommendationsExpectedOutcomes", "EARoot/EA4/EA2/EA5/EA2/EA1412.htm", "25.png", "5818", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.2:3", "", "nonSelfReferral: nonSelfReferral", "EARoot/EA4/EA2/EA5/EA2/EA1413.htm", "25.png", "5821", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.2:4", "", "nonSelfReferral: reasonForReferralFirstContact", "EARoot/EA4/EA2/EA5/EA2/EA1414.htm", "25.png", "5820", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.2:5", "", "Referral, First Contact, Triage and Entry: referralFirstContactTriageEntry", "EARoot/EA4/EA2/EA5/EA2/EA1415.htm", "25.png", "5819", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.2:6", "", "specialistServiceAssessment: specialistServiceAssessmentOutcome", "EARoot/EA4/EA2/EA5/EA2/EA1416.htm", "25.png", "5824", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.2:7", "", "specialistServiceAssessment: specialistServiceAssessment", "EARoot/EA4/EA2/EA5/EA2/EA1417.htm", "25.png", "5823", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.2:8", "", "specialistServiceAssessment: presentingProblems", "EARoot/EA4/EA2/EA5/EA2/EA1418.htm", "25.png", "5822", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.2:9", "", "specialistServices: specialistServicesEntry", "EARoot/EA4/EA2/EA5/EA2/EA1419.htm", "25.png", "5826", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.2:10", "", "specialistServices: entryDecisionSummary", "EARoot/EA4/EA2/EA5/EA2/EA1420.htm", "25.png", "5825", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.2:11", "", "triageDecision: cda_Finding", "EARoot/EA4/EA2/EA5/EA2/EA1421.htm", "25.png", "5827", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.2:12", "", "urgent: triageDecisionTemplateList", "EARoot/EA4/EA2/EA5/EA2/EA1422.htm", "25.png", "5829", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.2:13", "", "urgent: triageDecision", "EARoot/EA4/EA2/EA5/EA2/EA1423.htm", "25.png", "5828", "0", "", "Object");

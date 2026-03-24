@@ -1,0 +1,897 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>R_PartPersonInformation Tabular View</title><style type="text/css">
+	table {empty-cells: show}
+</style><script language="JavaScript1.2">
+				
+var isNew=0;
+var isNS4=0;
+var isIE4=0;
+
+var brow=((navigator.appName) + (parseInt(navigator.appVersion)));
+
+//alert(brow);
+if (parseInt(navigator.appVersion)>=5)
+{
+	isNew=1
+}
+else
+{
+	if(brow=="Netscape4")
+	{
+		isNS4=1;
+		document.captureEvents(Event.ONMOUSEOVER);
+	}
+	else
+	{
+		if(brow=="Microsoft Internet Explorer4")
+		{
+			isIE4=1;
+		}
+	}
+		
+}
+
+// thats ok
+
+
+if(isNS4||isIE4||isNew)
+{
+	docObj=(isNS4) ? 'document' : 'document.all';
+	
+	styleObj=(isNS4) ? ' ' : '.style';
+}
+
+function checkDOM(elementName)
+{
+	if(isNS4||isIE4||isNew)
+	{
+		dom=eval(docObj + '.' + elementName + styleObj);
+		//alert('This browser uses the ' + dom + 'Document Object Model.');
+		dom.left =0;
+		dom.top =0;
+	}
+}
+
+function popUp(evt,currElem)
+{
+
+	if((isNS4 && currElem !=0) || (isIE4 && currElem !=0))
+	{
+		dom =eval(docObj +'.' +currElem+styleObj);
+		state=dom.visibility;
+		if ((state == "visible") || (state=="show"))
+		{
+			dom.visibility="hidden";
+		}
+		else
+		{
+			if(isNS4)
+			{
+				topVal=eval(evt.pageY);
+				leftVal=eval(evt.pageX);
+				/*if(((document.body.scrollLeft+document.body.clientWidth)-leftVal)< 150)
+				{
+					leftVal=(document.body.clientWidth+document.body.scrollLeft-151);
+				}
+				if(((document.body.scrollTop+document.body.clientHeight)-topVal)< 30)
+				{
+					topVal=(document.body.clientHeight+document.body.scrollTop-80);
+				}*/
+
+			}
+			if(isIE4)
+			{
+				topVal=eval(event.clientY)  + document.body.scrollTop+20;
+				leftVal=eval(event.clientX) + document.body.scrollLeft;
+				
+				if(((document.body.scrollLeft+document.body.clientWidth)-leftVal)< 150)
+				{
+					leftVal=(document.body.clientWidth+document.body.scrollLeft-151);
+				}
+				if(((document.body.scrollTop+document.body.clientHeight)-topVal)< 30)
+				{
+					topVal=(document.body.clientHeight+document.body.scrollTop-80);
+				}
+			}
+			if(leftVal < 2)
+			{
+				leftVal=2;
+			}
+			dom.top=topVal;
+			dom.left=leftVal;
+			dom.visibility="visible";
+		}
+	}
+}
+
+</script><style>
+#ds
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+#cwe
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+
+#cne
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+
+#maindiv {
+	overflow: auto; 
+	width: 100%; 
+	height: 90%; 
+	}
+
+
+.hypertext
+{
+	position: absolute;
+	background-color: white;
+	layer-background-colour: cornflowerblue;
+	padding: 3px;
+	border: 3px solid blue;
+	width: 150px;
+	font:normal 10pt/13pt helvetica, sans-serif;
+	text-align: left;
+	color: blue;
+}
+
+.actclass
+{
+	background-color: red;
+}
+
+.entclass
+{
+	background-color: lightgreen;;
+}
+
+.roleclass
+{
+	background-color: yellow;;
+}
+.otherclass
+{
+	background-color: blue;
+}
+.choiceclass
+{
+	background-color: gray;
+}
+.actrelclass
+{
+	background-color: pink;
+}
+.partclass
+{
+	background-color: cyan;
+}
+.rolelinkclass
+{
+	background-color: lightyellow;
+}
+
+</style></head>
+   <body onload="checkDOM('ds')">
+      <h1>R_PartPersonInformation - tabular view</h1><span id="ds" class="hypertext">No Current Link To Vocabulary</span><span id="cwe" class="hypertext">Coded With Extensions</span><span id="cne" class="hypertext">Coded No Extensions</span><p><b>Wed Sep 12 15:35:50 BST 2007</b></p>
+      <table border="1px" frame="vsides" rules="cols" cellpadding="2" cellspacing="0" bordercolor="black">
+         <tr bgcolor="black">
+            <td height="4" colspan="10"></td>
+         </tr>
+         <tr>
+            <td height="35" colspan="2"><a href="COCT_RM000206UK01.htm"><b>COCT_RM000206UK01</b></a></td>
+            <td height="35" nowrap="yes"></td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="choiceclass"><a name="roleChoice"><b>roleChoice</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>
+                     <b>The choice of roles that can be selected when using this CMET.</b>
+                     <br>
+                     
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#"><b></b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td colspan="10" height="1"></td>
+         </tr>
+         <tr>
+            <td colspan="2" width="50%"><font color="green"><b>[1..1] </b><i>either </i></font>: <b><a href="COCT_HD000206UK01-NoEdit.htm#PartAddress">PartAddress</a></b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">A link to to the PartAddress role choice.<br>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td colspan="10" height="1"></td>
+         </tr>
+         <tr>
+            <td colspan="2" width="50%"><font color="white">&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</font><font color="green"><i> ... or ...   </i></font>: <b><a href="COCT_HD000206UK01-NoEdit.htm#PartTelecom">PartTelecom</a></b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">A link to to the PartTelecom role choice. </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td colspan="10" height="1"></td>
+         </tr>
+         <tr>
+            <td colspan="2" width="50%"><font color="white">&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</font><font color="green"><i> ... or ...   </i></font>: <b><a href="COCT_HD000206UK01-NoEdit.htm#PartName">PartName</a></b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">A link to to the PartName role choice. </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2" class="partclass"><font color="green"><b>[0..1] </b></font><b><a id="roleChoice/subjectOf"></a>subjectOf</b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>
+                     <b>A heading for the subject relationship.</b>
+                     
+                  </p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>typeCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ParticipationType</b></a> } ) {<b> Fixed="<font color="red">SBJ</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div class="D39E54A0-6821-11DB-8293-F2D7A3FC57D0">Indicates that this a Subject participation.</div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><b>systemEffectiveDate</b> (<a href="#SystemEffectiveDate"><b>SystemEffectiveDate</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">A link to the system effective date.<br>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2" class="partclass"><font color="green"><b>[0..1] </b></font><b><a id="roleChoice/subjectOf3"></a>subjectOf3</b></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <b>A heading for the subject relationship.</b>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>typeCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ParticipationType</b></a> } ) {<b> Fixed="<font color="red">SBJ</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">Indicates that this a Subject participation.</div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><b><a href="COCT_HD000205UK01-NoEdit.htm">pDSSourceData</a></b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="COCT_RM000205UK01.htm"><small>[CMET:&nbsp;COCT_MT000205UK01]</small></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">A link to the source CMET.<br>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="roleclass"><a name="PartAddress"><b>PartAddress</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <strong>
+                     <font face="times new roman,times" size="3">Parent class containing and linking to information about an entity which is a part of another entity. In this case, it is
+                        the address part of a person entity.</font>
+                     </strong>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#roleChoice"><b>roleChoice</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>RoleClass</b></a> } ) {<b> Fixed="<font color="red">PART</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that this a Part role.</p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>addr</b> (<a href="../../../Data Types/DataTypes.htm#AD"><b>AD</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div contenteditable="false" style="height: 100%; width: 100%">
+                     <font face="times new roman,times" size="3">
+                        
+                        <p>
+                           <font face="Times New Roman" size="3">The particular flavour of the address datatype used here is Address streetAddressLine Typed (format 2 in the datatypes description),
+                              plus:</font>
+                           
+                        </p>
+                        
+                        <div>
+                           
+                           <ul>
+                              
+                              <li>
+                                 <font face="Times New Roman" size="3">Optional Postcode</font>
+                                 
+                              </li>
+                              
+                              <li>
+                                 <font face="Times New Roman" size="3">Optional Address Key</font>
+                                 
+                              </li>
+                              
+                              <li>
+                                 <font face="Times New Roman" size="3">Optional Description</font>
+                                 
+                              </li>
+                              
+                              <li>
+                                 <font face="Times New Roman" size="3">Mandatory Use</font>
+                                 
+                              </li>
+                              
+                              <li>
+                                 <font face="Times New Roman" size="3">Optional Useable period</font>
+                                 
+                              </li>
+                              
+                           </ul>
+                           
+                        </div>
+                        
+                        <p>
+                           <font face="Times New Roman" size="3">This means that the address will contain the following components:</font>
+                           
+                        </p>
+                        
+                        <ul>
+                           
+                           <li>
+                              <font face="Times New Roman" size="3">Between one and five <em>streetAddressLine</em> elements. Excludes postcode, may be vernacular or PAF-derived. For vernacular addresses, the following formatting convention
+                                 should normally apply although there may be some exceptions:</font>
+                              
+                              <ul>
+                                 
+                                 <li>
+                                    <font face="Times New Roman" size="3">Line 1: premises ID</font>
+                                    
+                                 </li>
+                                 
+                                 <li>
+                                    <font face="Times New Roman" size="3">Line 2: no. / thoroughfare</font>
+                                    
+                                 </li>
+                                 
+                                 <li>
+                                    <font face="Times New Roman" size="3">Line 3: locality</font>
+                                    
+                                 </li>
+                                 
+                                 <li>
+                                    <font face="Times New Roman" size="3">Line 4: post town</font>
+                                    
+                                 </li>
+                                 
+                                 <li>
+                                    <font face="Times New Roman" size="3">Line 5: county</font>
+                                    
+                                 </li>
+                                 
+                                 <li>
+                                    <font face="Times New Roman" size="3">Lines 1 or 2 and line 4 should normally be mandatory although there may be some exceptions</font>
+                                    
+                                 </li>
+                                 
+                              </ul>
+                              
+                           </li>
+                           
+                           <li>
+                              <font face="Times New Roman" size="3">A <em>postalCode</em> element to carry a postcode (optional)</font>
+                              
+                           </li>
+                           
+                           <li>
+                              <font face="Times New Roman" size="3">An <em>addressKey</em> element to carry a PAF key (optional)</font>
+                              
+                           </li>
+                           
+                           <li>
+                              <font face="Times New Roman" size="3">A <em>desc</em> element to carry a free-text description of the nature of the address (e.g. "On holiday") (optional, may only be present
+                                 for a temporary address, i.e. if the <em>use</em> attribute is "TMP")</font>
+                              
+                           </li>
+                           
+                           <li>
+                              <font face="Times New Roman" size="3">The <em>use</em> attribute to denote the type of address. This is restricted to "H" (Home address) within: Advanced Trace Response, Create
+                                 Initial Record Rejected (Duplicate Found) and RetrievePatientResponse messages. Otherwise the permitted values are "H" (Home
+                                 address), "TMP" (Temporary address) and "PST" (Postal address) (mandatory)</font>
+                              
+                           </li>
+                           
+                           <li>
+                              <font face="Times New Roman" size="3">A <em>useablePeriod</em> element to contain the dates for which the address is / was current as a range, supplied in the <em>low</em> and <em>high</em> sub-elements. Both the <em>low</em> and <em>high</em> sub-elements are optional, allowing open-ended ranges to be specified. (optional)</font>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                        
+                        <p>NB If this is used within a Retrieval Response, then <font face="Times New Roman" size="3">the following will also be present:</font>
+                           
+                        </p>
+                        
+                        <ul>
+                           
+                           <li>
+                              <font face="Times New Roman" size="3">An <em>id</em> attribute to carry the PDS allocated object identifier for the data item (mandatory)</font>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                        <p>This will be used to control the update semantics when performing updates. </p>
+                        </font>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="roleclass"><a name="PartTelecom"><b>PartTelecom</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <strong>
+                     <font face="times new roman,times" size="3">Parent class containing and linking to information about an entity which is a part of another entity. In this case, it is
+                        the telecommunication address part of a person entity.</font>
+                     </strong>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#roleChoice"><b>roleChoice</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>RoleClass</b></a> } ) {<b> Fixed="<font color="red">PART</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that this a Part role.</p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>telecom</b> (<a href="../../../Data Types/DataTypes.htm#TEL"><b>TEL</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div contenteditable="false" style="height: 100%; width: 100%">
+                     
+                     <div>
+                        <font face="times new roman,times" size="3">
+                           <font face="Times New Roman" size="3">The particular flavour of the telecommunication address datatype used here is Telecommunication address plus use.</font>
+                           </font>
+                        <font face="times new roman,times" size="3">
+                           
+                           <p>
+                              <font face="Times New Roman" size="3">This means that the telecommunication address will contain the following components:</font>
+                              
+                           </p>
+                           
+                           <ul>
+                              
+                              <li>
+                                 <font face="Times New Roman" size="3">The <em>value</em> attribute to carry the telecommunication number or address, expressed as a URL (mandatory)</font>
+                                 
+                              </li>
+                              
+                              <li>
+                                 <font face="Times New Roman" size="3">The <em>use</em> attribute to denote the type of telecommunication address (mandatory)</font>
+                                 
+                              </li>
+                              
+                              <li>
+                                 <font face="Times New Roman" size="3">A <em>useablePeriod</em> element to contain the dates for which the telecommunication address is / was current as a range, supplied in the <em>low</em> and <em>high</em> sub-elements. Both the <em>low</em> and <em>high</em> sub-elements are optional, allowing open-ended ranges to be specified (optional)</font>
+                                 
+                              </li>
+                              
+                           </ul>
+                           
+                           
+                           <p>NB If this is used within a Retrieval Response, then <font face="Times New Roman" size="3">the following will also be present:</font>
+                              
+                           </p>
+                           
+                           <ul>
+                              
+                              <li>
+                                 <font face="Times New Roman" size="3">An <em>id</em> attribute to carry the PDS allocated object identifier for the data item (mandatory)</font>
+                                 
+                              </li>
+                              
+                           </ul>
+                           
+                           <p>This will be used to control the update semantics when performing updates.</p>
+                           </font>
+                        
+                     </div>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="roleclass"><a name="PartName"><b>PartName</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <strong>
+                     <font face="times new roman,times" size="3">Parent class containing and linking to information about an entity which is a part of another entity. In this case, it is
+                        the name part of a person entity.</font>
+                     </strong>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#roleChoice"><b>roleChoice</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>RoleClass</b></a> } ) {<b> Fixed="<font color="red">PART</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <p>Indicates that this a Part role.</p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b><a id="PartName/partPerson"></a>partPerson</b> (<a href="#Person"><b>Person</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">A link to the part-person entity containing this information. </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="entclass"><a name="Person"><b>Person</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div class="A1D42350-6056-11DB-AA6A-C57217F5635D">
+                     <strong>Parent class linking to and  containing information about a patient which is specific to the person.</strong>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#PartName"><b>PartName</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>EntityClass</b></a> } ) {<b> Fixed="<font color="red">PSN</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>Indicates that this is a Person entity.</div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>determinerCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>EntityDeterminer</b></a> } ) {<b> Fixed="<font color="red">INSTANCE</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div class="B4514EB0-6135-11DB-9240-9A15D4C2FF5C">                      Indicates that this is an Instance of  a person.                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>name</b> (<a href="../../../Data Types/DataTypes.htm#PN"><b>PN</b></a>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  <font face="times new roman,times" size="3">The particular flavour of the person name datatype used here is Person name structured with use (number 6 in the datatypes
+                     description). This means that the name will contain the following components: </font>
+                  
+                  <ul>
+                     
+                     <li>
+                        <font face="times new roman,times" size="3">A <em>family</em> element to carry the surname or family name of the person (optional) </font>
+                        
+                     </li>
+                     
+                     <li>
+                        <font face="times new roman,times" size="3">Up to 2 <em>given</em> elements to carry the given names of the person. If the person has more than 2 given names, these will be concatenated in
+                           the second given name attribute with a space between each name. The order of the elements is also significant, so the first
+                           occurrence of the <em>given</em> element will carry the first given name, and the second occurrence will carry the second, third, etc. given names (optional)
+                           </font>
+                        
+                     </li>
+                     
+                     <li>
+                        <font face="times new roman,times" size="3">A <em>prefix</em> element to carry a prefix for the name, such as Mr, Mrs, etc. (optional) </font>
+                        
+                     </li>
+                     
+                     <li>
+                        <font face="times new roman,times" size="3">A <em>suffix</em> element to carry a suffix for the name, such as Jnr, Snr, etc. (optional) </font>
+                        
+                     </li>
+                     
+                     <li>
+                        <font face="times new roman,times" size="3">A<em> use</em> attribute to denote the type of name. This is restricted to "L" (Usual) within a Create Initial Record Rejected (Duplicate
+                           Found) and RetrievePatientResponse messages. There are also restrictions to "L" (Usual), "A" (Alias) and "PREFERRED" (Preferred)
+                           within an Advanced Trace Response message. (mandatory) </font>
+                        
+                     </li>
+                     
+                     <li>
+                        <font face="times new roman,times" size="3">A <em>validTime</em> element to contain the dates for which the name is / was current as a range, supplied in the <em>low</em> and <em>high</em> sub-elements. Both the <em>low</em> and <em>high</em> sub-elements are optional, allowing open-ended ranges to be specified. (optional)</font>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+                  
+                  <p>NB If this is used within a Retrieval Response, then <font face="Times New Roman" size="3">the following will also be present:</font>
+                     
+                  </p>
+                  
+                  <ul>
+                     
+                     <li>
+                        <font face="Times New Roman" size="3">An <em>id</em> attribute to carry the PDS allocated object identifier for the data item (mandatory)</font>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+                  <p>This will be used to control the update semantics when performing updat</p>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td colspan="2" class="actclass"><a name="SystemEffectiveDate"><b>SystemEffectiveDate</b></a></td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div class="E9749760-62B0-11DB-AA0C-99824798ACD5">
+                     <b>A heading for system generated effective dates for this data item.<br>
+                        </b>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="3" colspan="10"></td>
+         </tr>
+         <tr class="mif">
+            <td align="right" width="5%"></td>
+            <td colspan="10"><font color="gray">Used by: </font><a href="#roleChoice"><b>roleChoice</b></a></td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>classCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActClass</b></a> } ) {<b> Fixed="<font color="red">OBS</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div class="E9040A20-5EB1-11DB-90AF-E2ABFD555DCD">Indicates that this is an Observation act.<br>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>moodCode</b> (<a href="../../../Data Types/DataTypes.htm#CS"><b>CS</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a target="_top"><b>ActMood</b></a> } ) {<b> Fixed="<font color="red">EVN</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div class="719BC1D0-5EBB-11DB-94A5-E2ABFD555DCD">Indicates that this is an Event</div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>code</b> (<a href="../../../Data Types/DataTypes.htm#CV"><b>CV</b></a> {<a onmouseout="popUp(event,'cne')" onmouseover="popUp(event,'cne')"><b>CNE</b></a>:<a href="../../../Vocabulary/AdministrativeObservationType.htm" target="_top"><b>AdministrativeObservationType</b></a> } ) {<b> Fixed="<font color="red">02</font>"</b> }
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div class="BD72B6B0-62A1-11DB-A71E-99824798ACD5">
+                     
+                     <p>Indicates the type of observation about system generated effective dates, for the data item over a period of time.</p>
+                     
+                     <div contenteditable="false" style="height: 100%; width: 100%">The Coded with Code System datatype flavour is used to carry this information as follows:                   							      
+                        
+                        <ul>
+                           
+                           <li>The <em>code</em> attribute will contain the fixed value shown.                       
+                           </li>
+                           
+                           <li>The <em>codeSystem</em> attribute will contain the OID for the vocabulary.                      
+                           </li>
+                           
+                        </ul>
+                        
+                     </div>
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="gray">
+            <td height="1" colspan="10"></td>
+         </tr>
+         <tr valign="top">
+            <td width="50%" colspan="2"><font color="green"><b>[1..1] </b></font><font color="green"><b> [M] </b></font><b>value</b> (<a href="../../../Data Types/DataTypes.htm#IVL"><b>IVL</b></a><b>&lt;<a href="../../../Data Types/DataTypes.htm#TS"><b>TS</b></a>&gt;</b>)
+            </td>
+            <td width="50%">
+               <div style="height: 100%; width: 100%;" contenteditable="false">
+                  
+                  <div>System generated effective dates for this data item as a range, supplied in the Low and High attributes of the IVL_TS.  For
+                     current data, only the Low attribute will be set. Only returned when history or future data is returned.                 
+                     
+                  </div>
+                  
+               </div>
+            </td>
+         </tr>
+         <tr bgcolor="black">
+            <td height="4" colspan="10"></td>
+         </tr>
+      </table>
+   </body>
+</html>

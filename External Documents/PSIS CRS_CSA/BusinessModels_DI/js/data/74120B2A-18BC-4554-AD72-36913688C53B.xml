@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("4.1", "1", "Communication Description", "EARoot/EA4/EA106.htm", "4.png", "", "", "{BED7E4CE-01F4-42f1-99B0-D3EED309A8B5}", "Package");
+tocTab[tocTab.length] = new Array("4.2", "1", "Information Example", "", "4.png", "", "", "{2DA0BE70-228B-43cf-A08B-C8138D503AAA}", "Package");
+tocTab[tocTab.length] = new Array("4.3", "1", "Interaction Units", "", "4.png", "", "", "{5E784B23-AE80-42f8-860B-1C0028C94A03}", "Package");

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifactPackage>
+	<dynamicModel>
+		<interaction id="COMT_IN000001UK01">
+			<Models>
+				<sendingRole modelId="COMT_AR000001UK01"/>
+				<receivingRole modelId="COMT_AR000002UK01"/>
+				<triggerEvent modelId="COMT_TE000001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="COMT_MT000001UK01"/>
+			</Models>
+		</interaction>
+	</dynamicModel>
+</artifactPackage>

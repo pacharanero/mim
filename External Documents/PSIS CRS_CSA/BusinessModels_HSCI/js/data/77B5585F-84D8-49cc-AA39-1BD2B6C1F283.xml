@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("4.4.2:1", "", "Scenario Interactions - 2", "EARoot/EA4/EA4/EA2/EA2220.htm", "185.png", "166", "0", "", "Sequence diagram");
+tocTab[tocTab.length] = new Array("4.4.2:2", "", "Hospital Ward Sister", "EARoot/EA4/EA4/EA2/EA2226.htm", "6.png", "4845", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("4.4.2:3", "", "OT", "EARoot/EA4/EA4/EA2/EA2230.htm", "6.png", "4847", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("4.4.2:4", "", "Physio", "EARoot/EA4/EA4/EA2/EA2231.htm", "6.png", "4848", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("4.4.2:5", "", "Social Worker", "EARoot/EA4/EA4/EA2/EA2237.htm", "6.png", "4846", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("4.4.2:6", "", "Transaction Messaging Service", "EARoot/EA4/EA4/EA2/EA2239.htm", "57.png", "4849", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("4.4.2.1", "1", "Sceanrio 2 - PDS Interactions", "EARoot/EA4/EA4/EA2/EA2240.htm", "4.png", "", "", "{DEB6D45F-5662-431a-B5BC-7C0A950370E5}", "Package");

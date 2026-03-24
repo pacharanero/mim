@@ -1,0 +1,16 @@
+tocTab[tocTab.length] = new Array("4.1.8:1", "", "CareProcessAndReview", "EARoot/EA4/EA1/EA8/EA758.htm", "175.png", "170", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("4.1.8:2", "", "agreementOfHSCPsAndCarersToReview", "EARoot/EA4/EA1/EA8/EA760.htm", "5.png", "4261", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.8:3", "", "careAndProcessReview", "EARoot/EA4/EA1/EA8/EA761.htm", "5.png", "4253", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.8:4", "", "careProcessAdministration", "EARoot/EA4/EA1/EA8/EA762.htm", "5.png", "4254", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.8:5", "", "careProcessAdminTemplateList", "EARoot/EA4/EA1/EA8/EA763.htm", "5.png", "4255", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.8:6", "", "careReviewAdministration", "EARoot/EA4/EA1/EA8/EA764.htm", "5.png", "4259", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.8:7", "", "careReviewAdminTemplateList", "EARoot/EA4/EA1/EA8/EA765.htm", "5.png", "4258", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.8:8", "", "careReviewSummary", "EARoot/EA4/EA1/EA8/EA766.htm", "5.png", "4262", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.8:9", "", "locationOfSigned PaperCopyOfAgreement?", "EARoot/EA4/EA1/EA8/EA767.htm", "5.png", "4267", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.8:10", "", "MeansUsedToProvideASummaryCopyOfTheReviewForThePatientOrServiceUser", "EARoot/EA4/EA1/EA8/EA768.htm", "5.png", "4268", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.8:11", "", "«NEW TEMPLATE» newCPAdministration", "EARoot/EA4/EA1/EA8/EA769.htm", "5.png", "4256", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.8:12", "", "«NEW TEMPLATE» newCRAdministration", "EARoot/EA4/EA1/EA8/EA770.htm", "5.png", "4263", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.8:13", "", "patientOrServiceUserInvolvementInReview", "EARoot/EA4/EA1/EA8/EA771.htm", "5.png", "4264", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.8:14", "", "patientServiceUserAgreementToReview", "EARoot/EA4/EA1/EA8/EA772.htm", "5.png", "4266", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.8:15", "", "patientsInvolvementInTheReview", "EARoot/EA4/EA1/EA8/EA773.htm", "5.png", "4265", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.8:16", "", "reasonForReview", "EARoot/EA4/EA1/EA8/EA774.htm", "5.png", "4260", "0", "", "Class");

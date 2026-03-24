@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Information Analysis Model::consultation</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">consultation  (OOH0015Class) : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">06/27/07 14:49:48</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">07/16/07 14:22:56</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{3C47589E-3354-4ff2-97F6-6869CC0A1760}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA375.htm">IAM</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Details recorded during the consultation with the patient.</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private text</i><br /><strong>&nbsp;&nbsp;consultationType</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Description: Telephone Advice, Face to Face at Treatment Centre, Home Visit&lt;br /&gt;&lt;br /&gt;Realised by: CDA Care Event&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private text</i><br /><strong>&nbsp;&nbsp;location</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Description: Treatment Centre Location&lt;br /&gt;&lt;br /&gt;Realised by: CDA Care Event&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private datetime (range)</i><br /><strong>&nbsp;&nbsp;consulationTime</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Description: Start and end time of consulation&lt;br /&gt;&lt;br /&gt;Realised by: CDA Care Event&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private text</i><br /><strong>&nbsp;&nbsp;history</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Description: Details of medical history taken&lt;br /&gt;&lt;br /&gt;This should include:&lt;br /&gt; - findings&lt;br /&gt; - diagnoses (previous)&lt;br /&gt; - problems and issues&lt;br /&gt; - social context&lt;br /&gt; - family history&lt;br /&gt; - medication history&lt;br /&gt; - risks and warnings (including allergies and adverse reactions)&lt;br /&gt; - procedures previous investigations or treatments)&lt;br /&gt; - personal preferences&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Realised by:&lt;br /&gt;CDA Finding&lt;br /&gt;CDA Diagnosis&lt;br /&gt;CDA Problem&lt;br /&gt;CDA SocialOrPersonalCircumstance&lt;br /&gt;CDA AlcoholIntake&lt;br /&gt;CDA Smoking&lt;br /&gt;CDA Lifestyle&lt;br /&gt;CDA FamilyHistory&lt;br /&gt;(Medical History is recorded as text only)&lt;br /&gt;CDA RiskToPatient&lt;br /&gt;CDA RiskToPerson&lt;br /&gt;CDA AllergicOrAdverseReactionEvent&lt;br /&gt;CDA AllergyPropensity&lt;br /&gt;CDA Investigations&lt;br /&gt;CDA InvestigationResults&lt;br /&gt;CDA Treatments&lt;br /&gt;CDA PersonalPreferences&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private text</i><br /><strong>&nbsp;&nbsp;examination</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Description: Details of examination performed.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;This should include:&lt;br /&gt; - findings&lt;br /&gt; - problems and issues&lt;br /&gt; - risks and warnings (including allergies and adverse reactions)&lt;br /&gt; &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Items currently coded:&lt;br /&gt;Systolic BP&lt;br /&gt;Diastolic BP&lt;br /&gt;Temperature&lt;br /&gt;Respiration rate&lt;br /&gt;Peak exp. Flow&lt;br /&gt;&lt;br /&gt;Pain on palpation&lt;br /&gt;Guarding&lt;br /&gt;Rebound tenderness&lt;br /&gt;Rigidity&lt;br /&gt;Bowel sounds&lt;br /&gt;Breathing type&lt;br /&gt;Chest expansion&lt;br /&gt;Breath sounds&lt;br /&gt;Bladder&lt;br /&gt;Meningitis&lt;br /&gt;Pupil size&lt;br /&gt;Heart Sound&lt;br /&gt;Pulse&lt;br /&gt;Pulse character&lt;br /&gt;Muscle tone&lt;br /&gt;Muscle power&lt;br /&gt;Reflexes&lt;br /&gt;Examination of skin&lt;br /&gt;Blood glucose level&lt;br /&gt;Urine specific gravity&lt;br /&gt;Urine pregnancy test&lt;br /&gt;Urine glucose test&lt;br /&gt;Urine protein test&lt;br /&gt;Urine ketone test&lt;br /&gt;Urine blood test&lt;br /&gt;Urine pH&lt;br /&gt;Urine microalbumin&lt;br /&gt;Urine nitrite&lt;br /&gt;Urine urobilinogen&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Realised by:&lt;br /&gt;CDA Finding&lt;br /&gt;CDA OrganizedFinding&lt;br /&gt;CDA Height&lt;br /&gt;CDA Weight&lt;br /&gt;CDA Temperature&lt;br /&gt;CDA BloodPressure&lt;br /&gt;CDA Problem&lt;br /&gt;CDA RiskToPatient&lt;br /&gt;CDA RiskToPerson&lt;br /&gt;CDA AllergicOrAdverseReactionEvent&lt;br /&gt;CDA AllergyPropensity&lt;br /&gt;CDA Investigations&lt;br /&gt;CDA InvestigationResults&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private text</i><br /><strong>&nbsp;&nbsp;diagnoses</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Description: Details of diagnoses made&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Realised by: CDA Diagnosis&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private text</i><br /><strong>&nbsp;&nbsp;treatments</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Description: Details of treatments given&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Realised by: CDA Treatments&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private text</i><br /><strong>&nbsp;&nbsp;medicationAdministered</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Description: Medication administered during the consultation&lt;br /&gt;&lt;br /&gt;Realised by: CDA AdministerMedicationCourse, AdministerMedicationDose&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private text</i><br /><strong>&nbsp;&nbsp;medicationPrescribed</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Description: Details of any medication prescribed&lt;br /&gt;&lt;br /&gt;Realised by: CDA RequestMedicationSupply&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private text</i><br /><strong>&nbsp;&nbsp;medicationSupplied</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Description: Details of any medication supplied (TTOs)&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Realised by: CDA SupplyMedication&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA380.htm">clinician</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA391.htm">triage</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="15%" class="TableHeading">Type</td>
+					<td width="15%" class="TableHeading">Connection</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA383.htm">faceToFaceConsultation</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA390.htm">telephoneConsultation</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

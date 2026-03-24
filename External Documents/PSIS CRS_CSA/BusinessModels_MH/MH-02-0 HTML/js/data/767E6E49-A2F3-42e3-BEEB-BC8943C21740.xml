@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("4.2.5.7:1", "", "Diagnosis", "EARoot/EA4/EA2/EA5/EA7/EA1511.htm", "177.png", "382", "0", "", "Object diagram");
+tocTab[tocTab.length] = new Array("4.2.5.7:2", "", "Coding: cda_Diagnosis", "EARoot/EA4/EA2/EA5/EA7/EA1513.htm", "25.png", "6586", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.7:3", "", "CPA: diagnosis", "EARoot/EA4/EA2/EA5/EA7/EA1514.htm", "25.png", "5932", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.7:4", "", "Description: registeredDisabilityOtherCondition", "EARoot/EA4/EA2/EA5/EA7/EA1515.htm", "25.png", "5935", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.7:5", "", "Diagnosis: diagnosisTemplateList", "EARoot/EA4/EA2/EA5/EA7/EA1516.htm", "25.png", "5936", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.7:6", "", "Support: careTreatmentSupportRequired", "EARoot/EA4/EA2/EA5/EA7/EA1517.htm", "25.png", "5938", "0", "", "Object");

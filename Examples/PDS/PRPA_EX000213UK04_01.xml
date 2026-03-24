@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PDSResponse xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" classCode="OBS" moodCode="EVN" xsi:schemaLocation="urn:hl7-org:v3 ../../Schemas/PRPA_MT000213UK04.xsd">
+	<subject typeCode="SBJ">
+		<patientRole classCode="PAT">
+			<confidentialityCode code="S" codeSystem="2.16.840.1.113883.2.1.3.2.4.16.1"/>
+			<!-- New Style NHS Number -->
+			<id extension="1234567" root="2.16.840.1.113883.2.1.4.1"/>
+			<patientPerson classCode="PSN" determinerCode="INSTANCE">
+				<!-- Full date of birth -->
+				<birthTime value="19780719"/>
+				<name use="L">
+					<prefix>Ms</prefix>
+					<given>Three</given>
+					<given>Zoe</given>
+					<family>Editestpatient</family>
+					<validTime>
+						<low value="20030930"/>
+					</validTime>
+				</name>
+			</patientPerson>
+			<subjectOf4 typeCode="SBJ">
+				<alternativeIdentifier classCode="OBS" moodCode="EVN">
+					<code code="27" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.35"/>
+					<value root="2.16.840.1.113883.2.1.3.2.4.16.52" extension="H2345678D"/>
+				</alternativeIdentifier>
+			</subjectOf4>
+		</patientRole>
+	</subject>
+</PDSResponse>

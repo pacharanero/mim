@@ -1,0 +1,1264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<staticModel isAbstract="false" isSerializable="true"
+    name="PRPA_RM000214UK01" packageKind="root"
+    representationKind="flat" xmlns="urn:hl7-org:v3/mif"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3/mif ../MifSchemas/mifStaticModelFlat.xsd">
+    <packageLocation artifact="RM-deprecated" domain="PA" id="000214"
+        name="PRPA_RM000214UK01" realm="UK" root="DEFN" section="HM"
+        subSection="PR" version="01"/>
+    <header>
+        <renderingInformation
+            application="NHS R-MIM Designer 2.99.KJ.03"
+            renderingTime="2007-11-01T11:01:27" schemaVersion="1"/>
+        <legalese copyrightOwner="NHS Connecting for Health"/>
+    </header>
+    <graphicRepresentation presentation="HL7">
+        <graphElement name="Main">
+            <position x="0.0" y="0.0"/>
+            <size height="7.97165" width="14.61"/>
+        </graphElement>
+    </graphicRepresentation>
+    <derivationSupplier staticModelDerivationId="1">
+        <targetStaticModel artifact="RIM" realm="UV" root="DEFN" version="1"/>
+    </derivationSupplier>
+    <ownedEntryPoint className="PdsRequest" id="PRPA_RM000214UK01"
+        isAbstract="false" name="LogGP2GPRecordTransferRequest">
+        <annotations>
+            <description>
+                <text>
+                    <p>To record the transfer of the  Electronic Health Record on the Spine,</p>
+                    <p>invoked when a GP2GP EHR Extract is received at the GP practice.</p>
+                </text>
+            </description>
+            <otherAnnotation type="html">
+                <text/>
+            </otherAnnotation>
+        </annotations>
+        <graphicRepresentation>
+            <graphElement containerDiagramName="Main"
+                isHeightAutoSize="false" isWidthAutoSize="false"
+                nodeOrientation="Down" shapeId="PRPA_RM000214UK01">
+                <position x="4.44095" y="0.02778"/>
+                <size height="0.58611" width="3.46474"/>
+                <anchorage connectToShapeId="Sheet.1">
+                    <position x="6.17332" y="0.61389"/>
+                    <graphEdge>
+                        <anchor>
+                            <position x="6.17332" y="1.15021"/>
+                        </anchor>
+                    </graphEdge>
+                </anchorage>
+            </graphElement>
+        </graphicRepresentation>
+    </ownedEntryPoint>
+    <ownedClass>
+        <class isAbstract="false" name="PdsRequest">
+            <derivationSupplier className="Act" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="false" isWidthAutoSize="true"
+                    shapeId="Sheet.1" shapeTemplate="Act">
+                    <position x="5.23115" y="1.15021"/>
+                    <size height="1.451" width="1.943"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b> 	 Requests that a record of the transfer of the Electronic Health Record be recorded on the Spine.</b>
+                        <br/>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="REG"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Indicates that this is a Registration act. </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Act" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="REG"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="RQO"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="moodCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>  	  Indicates that this is a Request.  </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Act" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="RQO"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="PatientRole">
+            <derivationSupplier className="Patient" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="false" isWidthAutoSize="false"
+                    shapeId="Sheet.5" shapeTemplate="Role">
+                    <position x="5.5" y="3.2452"/>
+                    <size height="0.56869" width="1.3"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>Parent class linking to and containing information about a patient.</b>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="PAT"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Indicates that this is a Patient role. </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Patient" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PAT"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="id" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p> The current NHS number of the patient. </p>
+                            <p>This will be one of:      </p>
+                            <ul>
+                                <li>NHS Number</li>
+                                <li>Old Format NHS Number</li>
+                                <li>Temporary NHS Number (issued by an NHAIS registration authority)  </li>
+                            </ul>
+                            <p>The Identifier External datatype flavour is used to carry this information as follows:  </p>
+                            <p>If it is an NHS Number:      </p>
+                            <ul>
+                                <li>The root attribute will contain an OID with the value "2.16.840.1.113883.2.1.4.1"</li>
+                                <li>The extension attribute will contain the NHS Number  </li>
+                            </ul>
+                            <p>If it is an Old Format or Temporary NHS Number:<br/>
+                                <br/>
+                            </p>
+                            <ul>
+                                <li>The root attribute will contain an OID with the value "2.16.840.1.113883.2.1.3.2.4.3"</li>
+                                <li>The extension attribute will contain the Old Format or Temporary NHS Number  NB This attribute is used for matching only and cannot be updated.  </li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="id"
+                    className="Patient" staticModelDerivationId="1"/>
+                <type name="II" typeSpecialisation="II.NPfIT.oid.mandatory"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Subject">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Down" shapeId="Sheet.15"
+                    shapeTemplate="Participation" textWrappingWidth="66.0">
+                    <position x="5.65653" y="2.60121"/>
+                    <size height="0.644" width="0.99409"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>A link to the Subject of the request.</b>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="SBJ"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Indicates that this is a subject.  </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SBJ"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="SendingSystem">
+            <derivationSupplier className="Role" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="false"
+                    shapeId="Sheet.21" shapeTemplate="Role">
+                    <position x="9.0" y="5.76165"/>
+                    <size height="0.51445" width="2.60296"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>The role of the sending device, where the device is a NCRS compliant GP system.</b>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="ROL"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Indicates that this is a role. </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Role" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="ROL"/>
+            </attribute>
+            <attribute conformance="R" defaultValue="SND"
+                fixedValue="SND" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="code" sortKey="3">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>  	  Indicates this is the sending NCRS compliant GP system .  </p>
+                            <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                            <ul>
+                                <li>The <i>code</i> attribute will contain the value "SND" from the list of codes in the <u>SystemRoleType</u> vocabulary <br/>
+                                </li>
+                                <li>The <i>codeSystem</i> attribute will contain the OID for <u>SystemRoleType</u> vocabulary  </li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Role" staticModelDerivationId="1"/>
+                <type name="CV"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SystemRoleType"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Subject2">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Up" shapeId="Sheet.31"
+                    shapeTemplate="Participation" textWrappingWidth="66.0">
+                    <position x="5.68765" y="3.81389"/>
+                    <size height="1.82331" width="0.99409"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>Refers to the record transfer that this role is the subject of.</b>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="SBJ"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Indicates that this is a Subject participation.  </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SBJ"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Device2">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Right" shapeId="Sheet.37"
+                    shapeTemplate="Participation" textWrappingWidth="66.0">
+                    <position x="7.4" y="5.87584"/>
+                    <size height="0.30278" width="1.6"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>A relationship to the Sending NCRS compliant GP System that acts as a device.</b>
+                        <br/>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="DEV"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Indicates that this is a device.<br/>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="DEV"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="SerialChangeNumber">
+            <derivationSupplier className="Observation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.43" shapeTemplate="Act">
+                    <position x="0.01" y="1.43277"/>
+                    <size height="0.78112" width="2.951"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>The Serial Change Number of the record on the PDS.</b>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="OBS"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>  	  Indicates that this is an Observation act.  </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="OBS"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="EVN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="moodCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Indicates that this is an Event.  </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="EVN"/>
+            </attribute>
+            <attribute conformance="R" defaultValue="2" fixedValue="2"
+                isMandatory="true" maximumMultiplicity="1"
+                minimumMultiplicity="1" name="code" sortKey="4">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Indicates the type of observation. </p>
+                            <p>In this case, the observation is that of the serial change number of the record.  </p>
+                            <p>The Coded with Code System datatype flavour is used to carry this information as follows:<br/>
+                            </p>
+                            <ul>
+                                <li>The <i>code </i>attribute will contain the value "2" (Serial change number) from the list of codes in the <u>DemographicObservationType</u> vocabulary</li>
+                                <li>The <i>codeSystem </i>attribute will contain the OID "2.16.840.1.113883.2.1.3.2.4.17.35"  </li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CV"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="DemographicObservationType"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="value" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>The value of the serial change number. </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="value"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="INT"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="PertinentInformation2">
+            <derivationSupplier className="ActRelationship" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Left" shapeId="Sheet.47"
+                    shapeTemplate="ActRelationship" textWrappingWidth="66.0">
+                    <position x="2.961" y="1.65908"/>
+                    <size height="0.30278" width="2.27015"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>A link which is pertinent to the Serial Change Number of the record on the PDS.</b>
+                        <br/>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="PERT"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Indicates Pertinent Information.  </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="ActRelationship" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PERT"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Device">
+            <derivationSupplier className="Device" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.53" shapeTemplate="Entity">
+                    <position x="11.30337" y="2.92165"/>
+                    <size height="0.75" width="2.59663"/>
+                </graphElement>
+            </graphicRepresentation>
+            <graphicRepresentation presentation="HL7Shadow">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.57" shapeTemplate="Entity">
+                    <position x="13.2" y="7.12165"/>
+                    <size height="0.75" width="1.25"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <div align="left">
+                            <b>The NCRS compliant GP clinical system type.  For example  EMIS LV 5.2</b>
+                            <br/>
+                        </div>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="DEV"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Indicates that this is a device. In this context the device is the GP clinical system software.<br/>
+                            </p>
+                            <ul>
+                                <li>Fixed value: "DEV"</li>
+                            </ul>
+                            <p/>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Device" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="DEV"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="INSTANCE"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="determinerCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Indicates that the entity is a single identifiable device.</p>
+                            <ul>
+                                <li>Fixed value: "INSTANCE"</li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="determinerCode"
+                    className="Device" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="INSTANCE"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="softwareName" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <div contenteditable="false" style="height: 100%; width: 100%">
+                                <div>
+                                    <p>A character string that optionally may have a code attached which describes the software for the device. </p>
+                                    <p>The text carries the name of the Care Provider's system type, which must include any relevant version information.  For example EMIS LV 5.2.</p>
+                                </div>
+                            </div>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="softwareName"
+                    className="Device" staticModelDerivationId="1"/>
+                <type name="SC"/>
+                <supplierDomainSpecification codingStrength="CWE" domainName="SoftwareName"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Organization">
+            <derivationSupplier className="Organization" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.61" shapeTemplate="Entity">
+                    <position x="8.2" y="2.92165"/>
+                    <size height="0.75" width="1.69792"/>
+                </graphElement>
+            </graphicRepresentation>
+            <graphicRepresentation presentation="HL7Shadow">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.65" shapeTemplate="Entity">
+                    <position x="13.275" y="5.02165"/>
+                    <size height="0.75" width="1.25"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>The NCRS compliant GP organisation.</b>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="ORG"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Indicates this is an organisation. </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Organization" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="ORG"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="INSTANCE"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="determinerCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>  	 Indicates that the entity is a single identifiable organisation.  </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="determinerCode"
+                    className="Organization" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="INSTANCE"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="id" sortKey="3">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>  The identifier of the organisation acting as health care provider. This will be the GP Practice Code.<br/>
+                                <br/>The Identifier External datatype flavour is used to carry this information for a GP Practice Code:<br/>
+                            </p>
+                            <ul>
+                                <li>The root attribute will contain an OID with the value "2.16.840.1.113883.2.1.4.3"<br/>
+                                </li>
+                                <li>The extension attribute will contain the GP Practice Code   </li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="id"
+                    className="Organization" staticModelDerivationId="1"/>
+                <type name="II" typeSpecialisation="II.NPfIT.oid.mandatory"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Device3">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Right" shapeId="Sheet.69"
+                    shapeTemplate="Participation" textWrappingWidth="66.0">
+                    <position x="7.4" y="6.73628"/>
+                    <size height="0.30278" width="1.6"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>A relationship to the requesting NCRS compliant GP system that acts as a device.</b>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="DEV"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Indicates that this is a device. </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="DEV"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="RequestingSystem">
+            <derivationSupplier className="Role" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="false"
+                    shapeId="Sheet.75" shapeTemplate="Role">
+                    <position x="9.0" y="6.57165"/>
+                    <size height="0.51445" width="2.66147"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <designComments>
+                    <text>
+                        <p>New Vocab, where SystemRole with a  value of Snd is a sending system,</p>
+                        <p>and that of Rcv is a receiving system.</p>
+                    </text>
+                    <graphicRepresentation>
+                        <graphElement containerDiagramName="Main"
+                            isHeightAutoSize="true"
+                            isWidthAutoSize="true" shapeId="Sheet.96">
+                            <position x="5.037" y="7.37165"/>
+                            <size height="0.5" width="3.65603"/>
+                            <anchorage connectToShapeId="Sheet.75">
+                                <position x="6.86502" y="7.62165"/>
+                                <graphEdge>
+                                    <anchor>
+                                    <position x="9.79844" y="7.0861"/>
+                                    </anchor>
+                                </graphEdge>
+                            </anchorage>
+                        </graphElement>
+                    </graphicRepresentation>
+                </designComments>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>The role of the requesting device, where the device is a NCRS compliant GP system.<br/>
+                        </b>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="ROL"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>  	  Indicates that this is a role. </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Role" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="ROL"/>
+            </attribute>
+            <attribute conformance="R" defaultValue="REQ"
+                fixedValue="REQ" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="code" sortKey="3">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>  	  Indicates this is the requesting NCRS compliant GP system .  </p>
+                            <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                            <ul>
+                                <li>The <i>code </i>attribute will contain the value "REQ" from the list of codes in the <u>SystemRoleType</u> vocabulary <br/>
+                                </li>
+                                <li>The <i>codeSystem </i>attribute will contain the OID for <u>SystemRoleType</u> vocabulary  </li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Role" staticModelDerivationId="1"/>
+                <type name="CV"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SystemRoleType"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="RecordTransfer">
+            <derivationSupplier className="Observation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="false" isWidthAutoSize="false"
+                    shapeId="Sheet.85" shapeTemplate="Act">
+                    <position x="4.6" y="5.6372"/>
+                    <size height="1.41445" width="2.8"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <designComments>
+                    <text>
+                        <p>New vocab, RecordTransferType</p>
+                        <p>EffectiveTime= date of transfer.</p>
+                    </text>
+                    <graphicRepresentation>
+                        <graphElement containerDiagramName="Main"
+                            isHeightAutoSize="true"
+                            isWidthAutoSize="true" shapeId="Sheet.101">
+                            <position x="1.73585" y="5.81165"/>
+                            <size height="0.5" width="1.68582"/>
+                            <anchorage connectToShapeId="Sheet.85">
+                                <position x="2.57876" y="6.06165"/>
+                                <graphEdge>
+                                    <anchor>
+                                    <position x="4.6" y="6.06154"/>
+                                    </anchor>
+                                </graphEdge>
+                            </anchorage>
+                        </graphElement>
+                    </graphicRepresentation>
+                </designComments>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>The record of the summary details of the Electronic Record Transfer for the Patient to be stored on the Spine.</b>
+                        <br/>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="OBS"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>  	  Indicates that this is an Observation act.  </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="OBS"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="EVN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="moodCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>  	  Indicates that this is an Event.  </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="EVN"/>
+            </attribute>
+            <attribute conformance="R" defaultValue="EHR"
+                fixedValue="EHR" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="code" sortKey="4">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>  Indicates the type of observation.<br/>
+                                <br/> In this case, the observation is that of the type of record transfer for the patient.  </p>
+                            <p>The Coded with Code System datatype flavour is used to carry this information as follows:      </p>
+                            <ul>
+                                <li>The <i>code</i> attribute will contain the value "EHR" from the <u>RecordTransferType</u> vocabulary</li>
+                                <li>The <i>codeSystem</i> attribute will contain the OID for <u>RecordTransferType</u>
+                                </li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CV"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="RecordTransferType"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="effectiveTime" sortKey="10">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>The date of the electronic record transfer.</p>
+                            <p>The format of this attribute is Date and Time, in the format YYYYMMDDHHMM. </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="effectiveTime"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="TS"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.1"
+                containerDiagramName="Main" shapeId="Sheet.47">
+                <position x="5.23115" y="1.81047"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.1">
+                        <position x="5.23115" y="1.81047"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="pertinentInformation" participantClassName="PertinentInformation2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundRelationship"
+                    className="PdsRequest" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="PdsRequest">
+                <derivationSupplier associationEndName="source"
+                    className="PertinentInformation2" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.1"
+                containerDiagramName="Main" shapeId="Sheet.15">
+                <position x="6.15357" y="2.60121"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.1">
+                        <position x="6.15357" y="2.60121"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="subject" participantClassName="Subject">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="PdsRequest" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="PdsRequest">
+                <derivationSupplier associationEndName="act"
+                    className="Subject" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.5"
+                containerDiagramName="Main" shapeId="Sheet.15">
+                <position x="6.15357" y="3.24521"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.5">
+                        <position x="6.15357" y="3.24521"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="patientRole" participantClassName="PatientRole">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A link to information within the patient record associated with the GP2GP record transfer.  </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="role"
+                    className="Subject" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Subject">
+                <derivationSupplier associationEndName="participation"
+                    className="PatientRole" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.53"
+                containerDiagramName="Main" shapeId="Sheet.21">
+                <position x="11.60296" y="6.2761"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.53">
+                        <position x="12.60169" y="3.67165"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="playingDevice" participantClassName="Device">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A link to the device entity which is playing this role. </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="player"
+                    className="SendingSystem" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="SendingSystem">
+                <derivationSupplier associationEndName="playedRole"
+                    className="Device" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.61"
+                containerDiagramName="Main" shapeId="Sheet.21">
+                <position x="11.60296" y="5.76165"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.61">
+                        <position x="8.2" y="3.67165"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="scopingOrganization" participantClassName="Organization">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A link to the organisation entity which is scoping this role.  </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="scoper"
+                    className="SendingSystem" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="SendingSystem">
+                <derivationSupplier associationEndName="scopedRole"
+                    className="Organization" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.21"
+                containerDiagramName="Main" shapeId="Sheet.37">
+                <position x="9.0" y="6.02723"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.21">
+                        <position x="9.0" y="6.02723"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="sendingSystem" participantClassName="SendingSystem">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A link to the sending NCRS compliant GP system.   </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="role"
+                    className="Device2" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Device2">
+                <derivationSupplier associationEndName="participation"
+                    className="SendingSystem" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.85"
+                containerDiagramName="Main" shapeId="Sheet.31">
+                <position x="6.18469" y="5.6372"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.85">
+                        <position x="6.18469" y="5.6372"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="recordTransfer" participantClassName="RecordTransfer">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A link to the record transfer of the patient's electronic health record.<br/>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="act"
+                    className="Subject2" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Subject2">
+                <derivationSupplier associationEndName="participation"
+                    className="RecordTransfer" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.85"
+                containerDiagramName="Main" shapeId="Sheet.37">
+                <position x="7.4" y="6.02723"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.85">
+                        <position x="7.4" y="6.02723"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="device" participantClassName="Device2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="RecordTransfer" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="RecordTransfer">
+                <derivationSupplier associationEndName="act"
+                    className="Device2" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.43"
+                containerDiagramName="Main" shapeId="Sheet.47">
+                <position x="2.961" y="1.81047"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.43">
+                        <position x="2.961" y="1.81047"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="pertinentSerialChangeNumber" participantClassName="SerialChangeNumber">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>  	  A link to the Serial Change Number of the record.   </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="target"
+                    className="PertinentInformation2" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="PertinentInformation2">
+                <derivationSupplier
+                    associationEndName="inboundRelationship"
+                    className="SerialChangeNumber" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.57"
+                containerDiagramName="Main" shapeId="Sheet.75">
+                <position x="11.66147" y="7.0861"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.57">
+                        <position x="13.2" y="7.12165"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="playingDevice" participantClassName="Device">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A link to the device entity which is playing this role. </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="player"
+                    className="RequestingSystem" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="RequestingSystem">
+                <derivationSupplier associationEndName="playedRole"
+                    className="Device" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.65"
+                containerDiagramName="Main" shapeId="Sheet.75">
+                <position x="11.66147" y="6.57165"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.65">
+                        <position x="13.275" y="5.58415"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="scopingOrganization" participantClassName="Organization">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A link to the organisation entity which is scoping this role. </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="scoper"
+                    className="RequestingSystem" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="RequestingSystem">
+                <derivationSupplier associationEndName="scopedRole"
+                    className="Organization" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.85"
+                containerDiagramName="Main" shapeId="Sheet.69">
+                <position x="7.4" y="6.88767"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.85">
+                        <position x="7.4" y="6.88767"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="device1" participantClassName="Device3">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="RecordTransfer" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="RecordTransfer">
+                <derivationSupplier associationEndName="act"
+                    className="Device3" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.75"
+                containerDiagramName="Main" shapeId="Sheet.69">
+                <position x="9.0" y="6.88767"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.75">
+                        <position x="9.0" y="6.88767"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="requestingSystem" participantClassName="RequestingSystem">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A link to the requesting NCRS compliant GP system.   </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="role"
+                    className="Device3" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Device3">
+                <derivationSupplier associationEndName="participation"
+                    className="RequestingSystem" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.5"
+                containerDiagramName="Main" shapeId="Sheet.31">
+                <position x="6.18469" y="3.81389"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.5">
+                        <position x="6.18469" y="3.81389"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="subjectOf" participantClassName="Subject2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="PatientRole" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="PatientRole">
+                <derivationSupplier associationEndName="role"
+                    className="Subject2" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+</staticModel>

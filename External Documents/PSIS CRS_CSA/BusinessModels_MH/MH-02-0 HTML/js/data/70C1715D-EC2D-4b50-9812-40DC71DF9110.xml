@@ -1,0 +1,12 @@
+tocTab[tocTab.length] = new Array("4.1.1:1", "", "communicationAndComprehension", "EARoot/EA4/EA1/EA1/EA212.htm", "5.png", "6334", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1:2", "", "«NEW TEMPLATE» new_cda_Non_Lingual_Communication", "EARoot/EA4/EA1/EA1/EA213.htm", "5.png", "6338", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1:3", "", "«NEW TEMPLATE» new_Patient_Language", "EARoot/EA4/EA1/EA1/EA214.htm", "5.png", "6337", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1:4", "", "patientTemplateList", "EARoot/EA4/EA1/EA1/EA215.htm", "5.png", "6336", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1.1", "1", "MH&SM-SS Exit", "EARoot/EA4/EA1/EA1/EA216.htm", "4.png", "", "", "{FAB06E1D-E9F1-41fa-AA4A-1D344CAA7510}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.2", "1", "MH&SM-SS Update", "EARoot/EA4/EA1/EA1/EA218.htm", "4.png", "", "", "{D1F67DD8-8166-4e6c-8031-D2400119C943}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.3", "1", "MHA Assessment Outside SS Communication Description", "EARoot/EA4/EA1/EA1/EA219.htm", "4.png", "", "", "{CBB3DC26-5446-4997-A8F2-E9B1DA5D9AF7}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.4", "1", "MH&SM-SS Entry", "EARoot/EA4/EA1/EA1/EA220.htm", "4.png", "", "", "{79ED1725-5CF2-4337-AA42-95E6D7956B68}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.5", "1", "MHA Assessment Update Non-SS", "EARoot/EA4/EA1/EA1/EA221.htm", "4.png", "", "", "{66A5B769-3980-491d-AE82-6256E5E6DEED}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.6", "1", "MH&SM-SS Care Review Summary / CPA", "EARoot/EA4/EA1/EA1/EA222.htm", "4.png", "", "", "{9A97A033-0510-41ea-AA15-C4703E374828}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.7", "1", "MH&SM-SS Care Review Summary / MOC", "EARoot/EA4/EA1/EA1/EA223.htm", "4.png", "", "", "{23BC198C-71C3-4a42-83FB-CADCBC2E0175}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.8", "1", "MH&SM-SS Care Review / Unspecified", "EARoot/EA4/EA1/EA1/EA226.htm", "4.png", "", "", "{AFE7C9DD-682C-41cf-9A0E-9A95B7FCCF58}", "Package");

@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("4.1.2:1", "", "Health Advisor", "EARoot/EA4/EA1/EA2/EA195.htm", "6.png", "2666", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("4.1.2:2", "", "Health Information Advisor", "EARoot/EA4/EA1/EA2/EA196.htm", "6.png", "2665", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("4.1.2:3", "", "Local System", "EARoot/EA4/EA1/EA2/EA197.htm", "6.png", "2664", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("4.1.2:4", "", "Nurse Advisor", "EARoot/EA4/EA1/EA2/EA198.htm", "6.png", "2663", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("4.1.2:5", "", "Spine", "EARoot/EA4/EA1/EA2/EA199.htm", "6.png", "2662", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("4.1.2:6", "", "User", "EARoot/EA4/EA1/EA2/EA200.htm", "6.png", "2661", "0", "", "Actor");

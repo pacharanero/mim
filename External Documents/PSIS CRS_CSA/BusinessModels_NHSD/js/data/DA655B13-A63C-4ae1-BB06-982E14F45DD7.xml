@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("1", "1", "Dynamic View", "", "30.png", "", "", "{FE523253-8EA2-4de2-867E-C96AF9887D7C}", "Package");
+tocTab[tocTab.length] = new Array("2", "1", "Logical View", "", "31.png", "", "", "{40B9555A-8C2C-4f72-ACFF-115AEB447E8F}", "Package");

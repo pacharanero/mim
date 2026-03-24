@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<staticModel isAbstract="false" isSerializable="true"
+    name="COCD_TP146078UK01" packageKind="root"
+    representationKind="flat" xmlns="urn:hl7-org:v3/mif"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3/mif ../MifSchemas/mifStaticModelFlat.xsd">
+    <packageLocation artifact="TP" domain="CD" id="146078"
+        name="COCD_TP146078UK01" realm="UK" root="DEFN" section="HM"
+        subSection="CO" version="01"/>
+    <header>
+        <renderingInformation
+            application="NHS R-MIM Designer 2.99.KJ.05"
+            renderingTime="2007-11-15T15:21:18" schemaVersion="1"/>
+        <legalese copyrightOwner="NHS Connecting for Health"/>
+    </header>
+    <graphicRepresentation presentation="HL7">
+        <graphElement name="Main">
+            <position x="0.0" y="0.0"/>
+            <size height="2.95556" width="4.17658"/>
+        </graphElement>
+    </graphicRepresentation>
+    <derivationSupplier staticModelDerivationId="1">
+        <targetStaticModel artifact="RIM" realm="UV" root="DEFN" version="1"/>
+    </derivationSupplier>
+    <ownedEntryPoint className="DIReportStatus" id="COCD_TP146078UK01"
+        isAbstract="false" name="DIReportStatus">
+        <annotations>
+            <description>
+                <text>
+                    <p>The status of the DI Report Details</p>
+                </text>
+            </description>
+            <otherAnnotation type="html">
+                <text/>
+            </otherAnnotation>
+        </annotations>
+        <graphicRepresentation>
+            <graphElement containerDiagramName="Main"
+                isHeightAutoSize="false" isWidthAutoSize="false"
+                nodeOrientation="Down" shapeId="COCD_TP146078UK01">
+                <position x="1.21625" y="0.02778"/>
+                <size height="0.45278" width="1.81559"/>
+                <anchorage connectToShapeId="Sheet.1">
+                    <position x="2.12404" y="0.48056"/>
+                    <graphEdge>
+                        <anchor>
+                            <position x="2.12404" y="1.62556"/>
+                        </anchor>
+                    </graphEdge>
+                </anchorage>
+            </graphElement>
+        </graphicRepresentation>
+    </ownedEntryPoint>
+    <ownedClass>
+        <class isAbstract="false" name="DIReportStatus">
+            <derivationSupplier className="Observation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="false" isWidthAutoSize="false"
+                    shapeId="Sheet.1" shapeTemplate="Act">
+                    <position x="0.24619" y="1.62556"/>
+                    <size height="1.32" width="3.50381"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <constraint name="code">
+                    <text>
+                        <p>typeSpec:CV.NPfIT.CDA.Url</p>
+                    </text>
+                    <graphicRepresentation>
+                        <graphElement containerDiagramName="Main"
+                            isHeightAutoSize="true"
+                            isWidthAutoSize="true" shapeId="Sheet.16">
+                            <position x="2.28587" y="0.98056"/>
+                            <size height="0.32778" width="1.51413"/>
+                            <anchorage connectToShapeId="Sheet.1">
+                                <position x="3.04294" y="1.14445"/>
+                                <graphEdge>
+                                    <anchor>
+                                    <position x="3.04924" y="1.62556"/>
+                                    </anchor>
+                                </graphEdge>
+                            </anchorage>
+                        </graphElement>
+                    </graphicRepresentation>
+                </constraint>
+                <otherAnnotation type="html">
+                    <text>Represents the status of the Diagnostic Imaging Report.<br/>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R"
+                defaultValue="COCD_TP146078UK01#DIReportStatus"
+                fixedValue="COCD_TP146078UK01#DIReportStatus"
+                isMandatory="true" maximumMultiplicity="1"
+                minimumMultiplicity="1" name="templateId" sortKey="0">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>The fixed value of this attribute provides a unique identifier for the template and the classname within that template.</p>
+                            <p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+                            <ul>
+                                <li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.2"</li>
+                                <li>The extension attribute shall contain the fixed value</li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="templateId"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="II"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="OBS"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Indicates that this is an observation.</text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="OBS"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="EVN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="moodCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Indicates that this is an event.</text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="EVN"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="id" sortKey="3">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>This is a unique identifier for this instance of a Diagnostic Imaging Report Status. </p>
+                            <p>The Identifier Global datatype flavour is used to carry the first identifiers follows:</p>
+                            <ul>
+                                <li>The root attribute shall contain a DCE UUID. </li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="id"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="II" typeSpecialisation="II.NPfIT.uuid.mandatory"/>
+            </attribute>
+            <attribute conformance="R" defaultValue="DIRS"
+                fixedValue="DIRS" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="code" sortKey="4">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>A code from the vocabulary shown indicating the type of observation<br/>
+                            </p>
+                            <p>The Coded Plain flavour of Coded Value (CV) datatype shall be used to carry this information as follows:</p>
+                            <ul>
+                                <li>The <i>code</i> attribute shall contain the value. </li>
+                                <li>The <i>codeSystem</i> attribute shall contain the OID for the vocabulary concerned.</li>
+                                <li>The<i> displayName</i> attribute shall contain the text associated with the code</li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CV"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="CDAObservationType"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="value" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>The code from the vocabulary shown indicating the status of the Diagnostic Imaging Report.<br/>
+                            </p>
+                            <p>The Coded Plain flavour of Coded Value (CV) datatype shall be used to carry this information as follows:</p>
+                            <ul>
+                                <li>The <i>code</i> attribute shall contain the value. </li>
+                                <li>The <i>codeSystem</i> attribute shall contain the OID for the vocabulary concerned.</li>
+                                <li>The<i> displayName</i> attribute shall contain the text associated with the code</li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="value"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CV"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="DIReportStatus"/>
+            </attribute>
+        </class>
+    </ownedClass>
+</staticModel>

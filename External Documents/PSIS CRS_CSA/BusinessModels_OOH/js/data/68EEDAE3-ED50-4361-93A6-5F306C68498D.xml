@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("4.1.1", "1", "Access Information on Spine", "EARoot/EA4/EA1/EA170.htm", "4.png", "", "", "{AD130B03-18D3-4fcc-8A40-5A55551A28A3}", "Package");
+tocTab[tocTab.length] = new Array("4.1.2", "1", "Detailed Use Case - Replace Document", "EARoot/EA4/EA1/EA171.htm", "4.png", "", "", "{04C18E95-C5AA-436a-828D-21131F459ACA}", "Package");
+tocTab[tocTab.length] = new Array("4.1.3", "1", "LR Controls", "EARoot/EA4/EA1/EA172.htm", "4.png", "", "", "{F7DDAD55-CD24-4f67-982E-E762A748F21D}", "Package");
+tocTab[tocTab.length] = new Array("4.1.4", "1", "RBAC Checks", "EARoot/EA4/EA1/EA173.htm", "4.png", "", "", "{9DF0C559-0EE0-436a-93EA-DC2F56770F86}", "Package");
+tocTab[tocTab.length] = new Array("4.1.5", "1", "Detailed Use Case - Process Case", "EARoot/EA4/EA1/EA174.htm", "4.png", "", "", "{10995354-6194-4dd2-B6C6-F3242BB8CE1C}", "Package");
+tocTab[tocTab.length] = new Array("4.1.6", "1", "Actors", "EARoot/EA4/EA1/EA175.htm", "4.png", "", "", "{3A1E93B8-1DC9-4615-8906-A1F8A89A7123}", "Package");

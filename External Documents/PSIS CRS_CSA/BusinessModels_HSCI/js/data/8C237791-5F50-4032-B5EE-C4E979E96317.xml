@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("4.3.4:1", "", "Workshop Interactions", "EARoot/EA4/EA3/EA4/EA2123.htm", "185.png", "111", "0", "", "Sequence diagram");
+tocTab[tocTab.length] = new Array("4.3.4.1", "1", "Cheshire", "EARoot/EA4/EA3/EA4/EA2125.htm", "4.png", "", "", "{17E8654B-798C-4b79-ACF4-DBA23EF9EBC7}", "Package");
+tocTab[tocTab.length] = new Array("4.3.4.2", "1", "Greenwich", "EARoot/EA4/EA3/EA4/EA2126.htm", "4.png", "", "", "{DADD25A1-0D78-4f8d-8574-10D4390A3D45}", "Package");
+tocTab[tocTab.length] = new Array("4.3.4.3", "1", "Solihull", "EARoot/EA4/EA3/EA4/EA2127.htm", "4.png", "", "", "{32A210AE-C1C6-4b21-833C-B8C0E262B82B}", "Package");
+tocTab[tocTab.length] = new Array("4.3.4.4", "1", "Tower Hamlets", "EARoot/EA4/EA3/EA4/EA2129.htm", "4.png", "", "", "{79CF92B1-005A-463b-BA87-99B389E0B4C8}", "Package");

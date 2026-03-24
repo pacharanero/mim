@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("5.2.1", "1", "DataType Choices", "EARoot/EA5/EA2/EA2632.htm", "4.png", "", "", "{004B05C0-7375-498f-8EB9-4EE769620E31}", "Package");
+tocTab[tocTab.length] = new Array("5.2.2", "1", "Generic Datatypes", "EARoot/EA5/EA2/EA2633.htm", "4.png", "", "", "{1759026E-C28C-4914-8DA9-36D2DE0B9CAC}", "Package");
+tocTab[tocTab.length] = new Array("5.2.3", "1", "Vocabulary", "EARoot/EA5/EA2/EA2636.htm", "4.png", "", "", "{4A5B1CEA-F45C-4c8a-9A72-5D896A46F9BA}", "Package");
+tocTab[tocTab.length] = new Array("5.2.4", "1", "SDS", "EARoot/EA5/EA2/EA2634.htm", "4.png", "", "", "{934DF8E5-DF70-4184-9F2A-2EE091B61A3E}", "Package");

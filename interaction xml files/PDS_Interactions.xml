@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifactPackage>
+	<dynamicModel>
+		<interaction id="QUPA_IN000005UK03">
+			<Models>
+				<sendingRole modelId="QUPA_AR000001UK01"/>
+				<receivingRole modelId="QUPA_AR000002UK01"/>
+				<triggerEvent modelId="QUPA_TE000004UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="QUQI_MT050000UK01"/>
+				<payload modelId="QUPA_MT000001UK01"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPA_IN000006UK05">
+			<Models>
+				<sendingRole modelId="QUPA_AR000001UK01"/>
+				<receivingRole modelId="QUPA_AR000002UK01"/>
+				<triggerEvent modelId="QUPA_TE000005UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="QUQI_MT050000UK01"/>
+				<payload modelId="QUPA_MT000002UK02"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPA_IN000007UK03">
+			<Models>
+				<sendingRole modelId="QUPA_AR000002UK01"/>
+				<receivingRole modelId="QUPA_AR000001UK01"/>
+				<triggerEvent modelId="QUPA_TE000006UK01"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="QUQI_MT030101UK03"/>
+				<payload modelId="PRPA_MT000200UK03"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPA_IN000011UK05">
+			<Models>
+				<sendingRole modelId="QUPA_AR000002UK01"/>
+				<receivingRole modelId="QUPA_AR000001UK01"/>
+				<triggerEvent modelId="QUPA_TE000011UK01"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="QUQI_MT030101UK03"/>
+				<payload modelId="PRPA_MT000207UK05"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPA_IN000017UK03">
+			<Models>
+				<sendingRole modelId="QUPA_AR000001UK01"/>
+				<receivingRole modelId="QUPA_AR000002UK01"/>
+				<triggerEvent modelId="QUPA_TE000007UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="QUQI_MT050000UK01"/>
+				<payload modelId="QUPA_MT000003UK03"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPA_IN000008UK05">
+			<Models>
+				<sendingRole modelId="QUPA_AR000001UK01"/>
+				<receivingRole modelId="QUPA_AR000002UK01"/>
+				<triggerEvent modelId="QUPA_TE000007UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="QUQI_MT050000UK01"/>
+				<payload modelId="QUPA_MT000003UK03"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPA_IN000009UK06">
+			<Models>
+				<sendingRole modelId="QUPA_AR000002UK01"/>
+				<receivingRole modelId="QUPA_AR000001UK01"/>
+				<triggerEvent modelId="QUPA_TE000008UK01"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="QUQI_MT030101UK03"/>
+				<payload modelId="PRPA_MT000201UK06"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPA_IN000016UK04">
+			<Models>
+				<sendingRole modelId="QUPA_AR000001UK01"/>
+				<receivingRole modelId="QUPA_AR000002UK01"/>
+				<triggerEvent modelId="QUPA_TE000009UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="QUQI_MT050000UK01"/>
+				<payload modelId="QUPA_MT000004UK01"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPA_IN000010UK04">
+			<Models>
+				<sendingRole modelId="QUPA_AR000002UK01"/>
+				<receivingRole modelId="QUPA_AR000001UK01"/>
+				<triggerEvent modelId="QUPA_TE000010UK01"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="QUQI_MT030101UK03"/>
+				<payload modelId="PRPA_MT000202UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="PRPA_IN000200UK04">
+			<Models>
+				<sendingRole modelId="PRPA_AR000200UK01"/>
+				<receivingRole modelId="PRPA_AR000202UK01"/>
+				<triggerEvent modelId="PRPA_TE000200UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000203UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="PRPA_IN000201UK01">
+			<Models>
+				<sendingRole modelId="PRPA_AR000202UK01"/>
+				<receivingRole modelId="PRPA_AR000200UK01"/>
+				<triggerEvent modelId="PRPA_TE000201UK01"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000204UK01"/>
+			</Models>
+		</interaction>
+		<interaction id="PRPA_IN000212UK02">
+			<Models>
+				<sendingRole modelId="PRPA_AR000207UK01"/>
+				<receivingRole modelId="PRPA_AR000202UK01"/>
+				<triggerEvent modelId="PRPA_TE000212UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000219UK02"/>
+			</Models>
+		</interaction>
+		<interaction id="PRPA_IN000213UK01">
+			<Models>
+				<sendingRole modelId="PRPA_AR000202UK01"/>
+				<receivingRole modelId="PRPA_AR000207UK01"/>
+				<triggerEvent modelId="PRPA_TE000213UK01"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000204UK01"/>
+			</Models>
+		</interaction>
+		<interaction id="PRPA_IN000203UK06">
+			<Models>
+				<sendingRole modelId="PRPA_AR000201UK01"/>
+				<receivingRole modelId="PRPA_AR000203UK01"/>
+				<triggerEvent modelId="PRPA_TE000203UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000206UK06"/>
+			</Models>
+		</interaction>
+		<interaction id="PRPA_IN000202UK01">
+			<Models>
+				<sendingRole modelId="PRPA_AR000203UK01"/>
+				<receivingRole modelId="PRPA_AR000201UK01"/>
+				<triggerEvent modelId="PRPA_TE000202UK01"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000205UK01"/>
+			</Models>
+		</interaction>
+		<interaction id="PRPA_IN000204UK06">
+			<Models>
+				<sendingRole modelId="PRPA_AR000204UK02"/>
+				<receivingRole modelId="PRPA_AR000203UK01"/>
+				<triggerEvent modelId="PRPA_TE000204UK02"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000208UK06"/>
+			</Models>
+		</interaction>
+		<interaction id="PRPA_IN000209UK02">
+			<Models>
+				<sendingRole modelId="PRPA_AR000203UK01"/>
+				<receivingRole modelId="PRPA_AR000204UK02"/>
+				<triggerEvent modelId="PRPA_TE000209UK02"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000205UK01"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPA_IN000012UK04">
+			<Models>
+				<sendingRole modelId="PRPA_AR000001UK01"/>
+				<receivingRole modelId="PRPA_AR000002UK01"/>
+				<triggerEvent modelId="PRPA_TE000012UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="QUQI_MT050000UK01"/>
+				<payload modelId="QUPA_MT000005UK02"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPA_IN000013UK03">
+			<Models>
+				<sendingRole modelId="PRPA_AR000002UK01"/>
+				<receivingRole modelId="PRPA_AR000001UK01"/>
+				<triggerEvent modelId="PRPA_TE000013UK01"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="QUQI_MT030101UK03"/>
+				<payload modelId="PRPA_MT000209UK03"/>
+			</Models>
+		</interaction>
+		<interaction id="PRPA_IN000205UK05">
+			<Models>
+				<sendingRole modelId="PRPA_AR000200UK01"/>
+				<receivingRole modelId="PRPA_AR000202UK01"/>
+				<triggerEvent modelId="PRPA_TE000205UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000211UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="PRPA_IN000206UK01">
+			<Models>
+				<sendingRole modelId="PRPA_AR000202UK01"/>
+				<receivingRole modelId="PRPA_AR000200UK01"/>
+				<triggerEvent modelId="PRPA_TE000206UK01"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000204UK01"/>
+			</Models>
+		</interaction>
+		<interaction id="PRPA_IN000207UK05">
+			<Models>
+				<sendingRole modelId="PRPA_AR000202UK01"/>
+				<receivingRole modelId="PRPA_AR000200UK01"/>
+				<triggerEvent modelId="PRPA_TE000207UK01"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000210UK05"/>
+			</Models>
+		</interaction>
+		<interaction id="PRPA_IN000208UK03">
+			<Models>
+				<sendingRole modelId="PRPA_AR000205UK01"/>
+				<receivingRole modelId="PRPA_AR000206UK01"/>
+				<triggerEvent modelId="PRPA_TE000208UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000212UK03"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPA_IN000014UK03">
+			<Models>
+				<sendingRole modelId="QUPA_AR000001UK01"/>
+				<receivingRole modelId="QUPA_AR000002UK01"/>
+				<triggerEvent modelId="QUPA_TE000014UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="QUQI_MT050000UK01"/>
+				<payload modelId="QUPA_MT000006UK01"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPA_IN000015UK04">
+			<Models>
+				<sendingRole modelId="QUPA_AR000002UK01"/>
+				<receivingRole modelId="QUPA_AR000001UK01"/>
+				<triggerEvent modelId="QUPA_TE000015UK01"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="QUQI_MT030101UK03"/>
+				<payload modelId="PRPA_MT000213UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="PRPA_IN000210UK01">
+			<Models>
+				<sendingRole modelId="PRPA_AR000200UK01"/>
+				<receivingRole modelId="PRPA_AR000202UK01"/>
+				<triggerEvent modelId="PRPA_TE000210UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000214UK01"/>
+			</Models>
+		</interaction>
+		<interaction id="PRPA_IN000211UK01">
+			<Models>
+				<sendingRole modelId="PRPA_AR000202UK01"/>
+				<receivingRole modelId="PRPA_AR000200UK01"/>
+				<triggerEvent modelId="PRPA_TE000211UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000214UK01"/>
+			</Models>
+		</interaction>
+		<interaction id="PRPA_IN000214UK03">
+			<Models>
+				<sendingRole modelId="PRPA_AR000205UK01"/>
+				<receivingRole modelId="PRPA_AR000206UK01"/>
+				<triggerEvent modelId="PRPA_TE000214UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000216UK03"/>
+			</Models>
+		</interaction>
+		<interaction id="PRPA_IN000215UK02">
+			<Models>
+				<sendingRole modelId="PRPA_AR000200UK01"/>
+				<receivingRole modelId="PRPA_AR000202UK01"/>
+				<triggerEvent modelId="PRPA_TE000215UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000217UK02"/>
+			</Models>
+		</interaction>
+		<interaction id="PRPA_IN000216UK01">
+			<Models>
+				<sendingRole modelId="PRPA_AR000202UK01"/>
+				<receivingRole modelId="PRPA_AR000200UK01"/>
+				<triggerEvent modelId="PRPA_TE000211UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000218UK01"/>
+			</Models>
+		</interaction>
+	</dynamicModel>
+</artifactPackage>

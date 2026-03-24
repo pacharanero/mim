@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("3.4:1", "", "Overview Use Case Model", "EARoot/EA3/EA4/EA150.htm", "180.png", "1", "0", "", "Use Case diagram");
+tocTab[tocTab.length] = new Array("3.4:2", "", "Access information on Spine", "EARoot/EA3/EA4/EA152.htm", "7.png", "1139", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("3.4:3", "", "Health Advisor", "EARoot/EA3/EA4/EA153.htm", "6.png", "1125", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("3.4:4", "", "Health Information Advisor", "EARoot/EA3/EA4/EA154.htm", "6.png", "1142", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("3.4:5", "", "Local System", "EARoot/EA3/EA4/EA155.htm", "6.png", "1131", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("3.4:6", "", "Nurse Advisor", "EARoot/EA3/EA4/EA156.htm", "6.png", "1126", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("3.4:7", "", "Record Encounter Details", "EARoot/EA3/EA4/EA158.htm", "7.png", "1133", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("3.4:8", "", "Send Document", "EARoot/EA3/EA4/EA159.htm", "7.png", "1137", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("3.4:9", "", "Spine", "EARoot/EA3/EA4/EA160.htm", "6.png", "1127", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("3.4:10", "", "System User", "EARoot/EA3/EA4/EA161.htm", "6.png", "1169", "0", "", "Actor");

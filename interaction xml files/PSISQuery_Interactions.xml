@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifactPackage>
+	<dynamicModel>
+		<interaction id="QUPC_IN160101UK05">
+			<Models>
+				<sendingRole modelId="QUPC_AR160001UK01"/>
+				<receivingRole modelId="QUPC_AR160002UK01"/>
+				<triggerEvent modelId="QUPC_TE160001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="QUQI_MT050000UK01"/>
+				<payload modelId="QUPC_MT160001UK02"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPC_IN160102UK05">
+			<Models>
+				<sendingRole modelId="QUPC_AR160002UK01"/>
+				<receivingRole modelId="QUPC_AR160001UK01"/>
+				<triggerEvent modelId="QUPC_TE160002UK01"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="QUQI_MT030101UK03"/>
+				<payload modelId="QUPC_MT160002UK05"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPC_IN160103UK05">
+			<Models>
+				<sendingRole modelId="QUPC_AR160001UK01"/>
+				<receivingRole modelId="QUPC_AR160002UK01"/>
+				<triggerEvent modelId="QUPC_TE160003UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="QUQI_MT050000UK01"/>
+				<payload modelId="QUPC_MT160003UK02"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPC_IN160104UK05">
+			<Models>
+				<sendingRole modelId="QUPC_AR160002UK01"/>
+				<receivingRole modelId="QUPC_AR160001UK01"/>
+				<triggerEvent modelId="QUPC_TE160004UK01"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="QUQI_MT030101UK03"/>
+				<payload modelId="QUPC_MT160004UK05"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPC_IN160107UK05">
+			<Models>
+				<sendingRole modelId="QUPC_AR160001UK01"/>
+				<receivingRole modelId="QUPC_AR160002UK01"/>
+				<triggerEvent modelId="QUPC_TE160007UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="QUQI_MT050000UK01"/>
+				<payload modelId="QUPC_MT160007UK02"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPC_IN160108UK05">
+			<Models>
+				<sendingRole modelId="QUPC_AR160002UK01"/>
+				<receivingRole modelId="QUPC_AR160001UK01"/>
+				<triggerEvent modelId="QUPC_TE160008UK01"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="QUQI_MT030101UK03"/>
+				<payload modelId="QUPC_MT160008UK05"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPC_IN160109UK05">
+			<Models>
+				<sendingRole modelId="QUPC_AR160001UK01"/>
+				<receivingRole modelId="QUPC_AR160002UK01"/>
+				<triggerEvent modelId="QUPC_TE160009UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="QUQI_MT050000UK01"/>
+				<payload modelId="QUPC_MT160009UK03"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPC_IN160110UK05">
+			<Models>
+				<sendingRole modelId="QUPC_AR160001UK01"/>
+				<receivingRole modelId="QUPC_AR160002UK01"/>
+				<triggerEvent modelId="QUPC_TE160010UK01"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="QUQI_MT030101UK03"/>
+				<payload modelId="QUPC_MT160010UK05"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPC_IN160201UK04">
+			<Models>
+				<sendingRole modelId="QUPC_AR160001UK01"/>
+				<receivingRole modelId="QUPC_AR160002UK01"/>
+				<triggerEvent modelId="QUPC_TE160201UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="QUQI_MT050000UK01"/>
+				<payload modelId="QUPC_MT160001UK02"/>
+			</Models>
+		</interaction>
+		<interaction id="QUPC_IN160202UK04">
+			<Models>
+				<sendingRole modelId="QUPC_AR160001UK01"/>
+				<receivingRole modelId="QUPC_AR160002UK01"/>
+				<triggerEvent modelId="QUPC_TE160202UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="QUQI_MT050000UK01"/>
+				<payload modelId="QUPC_MT160003UK02"/>
+			</Models>
+		</interaction>
+	</dynamicModel>
+</artifactPackage>

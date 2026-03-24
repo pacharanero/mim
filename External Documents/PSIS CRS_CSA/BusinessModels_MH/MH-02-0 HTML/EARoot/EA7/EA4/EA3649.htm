@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>HoNOS Score</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">HoNOS Score  (14.4.1) : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">13/06/2006 13:38:09</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">10/01/2008 10:06:32</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Bob Cox</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Approved</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{A6847AD4-FA60-4848-9C2E-B3D80118C841}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA2/EA3125.htm">IAM : 14. Outcome / Assessment Scores</a>, <a href="../EA3/EA1/EA3167.htm">CIM: MHA Assessment outside SS</a>, <a href="../EA3/EA2/EA3204.htm">CIM: MHA Assessment Update Non-SS</a>, <a href="../EA3/EA3/EA3225.htm">CIM: MH&SM-SS Entry</a>, <a href="../EA3/EA4/EA3272.htm">CIM: MH&SM-SS Update</a>, <a href="../EA3/EA5/EA3282.htm">CIM: MH&SM-SS Care Review Summary / CPA</a>, <a href="../EA3/EA6/EA3389.htm">CIM: MH&SM-SS Care Review Summary / MOC</a>, <a href="../EA3/EA7/EA3443.htm">CIM: MH&SM-SS Care Review / Unspecified</a>, <a href="../EA3/EA8/EA3520.htm">CIM: MH&SM-SS Exit</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Standard&nbsp;<WBR>MH&nbsp;<WBR>services&nbsp;<WBR>assessment&nbsp;<WBR>across&nbsp;<WBR>a&nbsp;<WBR>range&nbsp;<WBR>of&nbsp;<WBR>aspects&nbsp;<WBR>of&nbsp;<WBR>a&nbsp;<WBR>patients’&nbsp;<WBR>condition&nbsp;<WBR>used&nbsp;<WBR>within&nbsp;<WBR>CPA.&nbsp;<WBR>There&nbsp;<WBR>are&nbsp;<WBR>12&nbsp;<WBR>HONOS&nbsp;<WBR>scores&nbsp;<WBR>(numeric&nbsp;<WBR>0,&nbsp;<WBR>1,&nbsp;<WBR>2,&nbsp;<WBR>3,&nbsp;<WBR>4)&nbsp;<WBR>for&nbsp;<WBR>Adults,&nbsp;<WBR>HONOS65+,&nbsp;<WBR>HONOS-LD&nbsp;<WBR>and&nbsp;<WBR>HONOS-ABI;&nbsp;<WBR>13&nbsp;<WBR>for&nbsp;<WBR>HONOS&nbsp;<WBR>CA&nbsp;<WBR>and&nbsp;<WBR>7(letters&nbsp;<WBR>A&nbsp;<WBR>to&nbsp;<WBR>G)&nbsp;<WBR>for&nbsp;<WBR>HONOS-Secure</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private </i><br /><strong>&nbsp;&nbsp;HoNOS item</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 14.4.1.1<br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Gives&nbsp;<WBR>details&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>specific&nbsp;<WBR>HoNOS&nbsp;<WBR>item&nbsp;<WBR>being&nbsp;<WBR>scored&nbsp;<WBR>against&nbsp;<WBR>-&nbsp;<WBR>&nbsp;<WBR>there&nbsp;<WBR>are&nbsp;<WBR>12&nbsp;<WBR>specific&nbsp;<WBR>codes&nbsp;<WBR>for&nbsp;<WBR>collecting&nbsp;<WBR>HONOS&nbsp;<WBR>Scores
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Representation Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Text
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example Aggressive/disruptive behaviour </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Aggressive/disruptive&nbsp;<WBR>behaviour
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private </i><br /><strong>&nbsp;&nbsp;HoNOS Score</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 14.4.1.2<br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Detailing&nbsp;<WBR>the&nbsp;<WBR>outcome&nbsp;<WBR>of&nbsp;<WBR>this&nbsp;<WBR>assessment&nbsp;<WBR>aspect&nbsp;<WBR>-scale&nbsp;<WBR>1&nbsp;<WBR>to&nbsp;<WBR>4&nbsp;<WBR>with&nbsp;<WBR>a&nbsp;<WBR>9&nbsp;<WBR>=&nbsp;<WBR>not&nbsp;<WBR>assessed&nbsp;<WBR>score&nbsp;<WBR>&lt;br&nbsp;<WBR>/&gt;For&nbsp;<WBR>HoNOS-Secure&nbsp;<WBR>the&nbsp;<WBR>7&nbsp;<WBR>scales&nbsp;<WBR>are&nbsp;<WBR>coded&nbsp;<WBR>A&nbsp;<WBR>to&nbsp;<WBR>G
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Example 3 </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::3
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Representation Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Text
+		</td>
+	</td>
+</table> </td>
+			</tr>
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA3648.htm">HoNOS tool outcome scores</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">All&nbsp;<WBR>Messages</div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="24%" class="TableHeading">Constraint</td>
+					<td width="8%" class="TableHeading">Type</td>
+					<td width="8%" class="TableHeading">Status</td>
+					<td width="60%" class="TableHeading">Detail</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">Only one inclusion for each HoNOS item at 14.4.1.1 'HoNOS item' should be represented in a completed assessment
+
+e.g. only one entry should be recorded against 'non-accidental self injury'</td>
+					<td width="8%" class="TableRow">Constraint</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">Only&nbsp;<WBR>one&nbsp;<WBR>inclusion&nbsp;<WBR>for&nbsp;<WBR>each&nbsp;<WBR>HoNOS&nbsp;<WBR>item&nbsp;<WBR>at&nbsp;<WBR>14.4.1.1&nbsp;<WBR>&#39;HoNOS&nbsp;<WBR>item&#39;&nbsp;<WBR>should&nbsp;<WBR>be&nbsp;<WBR>represented&nbsp;<WBR>in&nbsp;<WBR>a&nbsp;<WBR>completed&nbsp;<WBR>assessment<br /><br />e.g.&nbsp;<WBR>only&nbsp;<WBR>one&nbsp;<WBR>entry&nbsp;<WBR>should&nbsp;<WBR>be&nbsp;<WBR>recorded&nbsp;<WBR>against&nbsp;<WBR>&#39;non-accidental&nbsp;<WBR>self&nbsp;<WBR>injury&#39;</div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="15%" class="TableHeading">Type</td>
+					<td width="15%" class="TableHeading">Connection</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3648.htm">HoNOS tool outcome scores</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">All Messages</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

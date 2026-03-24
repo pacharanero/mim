@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("3.2.1", "1", "Actors", "", "4.png", "", "", "{B815EE96-9DD5-4384-A80F-3A28729A13E4}", "Package");
+tocTab[tocTab.length] = new Array("3.2.2", "1", "Detailed Use Case Model - CAF", "", "4.png", "", "", "{F0D3FA9F-20EA-48a2-B802-F5E2F47B0955}", "Package");
+tocTab[tocTab.length] = new Array("3.2.3", "1", "Detailed Use Case Model - Replace Document", "EARoot/EA3/EA2/EA455.htm", "4.png", "", "", "{04C18E95-C5AA-436a-828D-21131F459ACA}", "Package");
+tocTab[tocTab.length] = new Array("3.2.4", "1", "Simplified Process", "EARoot/EA3/EA2/EA454.htm", "4.png", "", "", "{E5CDD9E7-D438-4787-B8EC-1AE238175C59}", "Package");

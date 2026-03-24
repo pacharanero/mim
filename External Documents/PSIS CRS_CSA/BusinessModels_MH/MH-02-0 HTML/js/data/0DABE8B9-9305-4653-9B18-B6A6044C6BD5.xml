@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("4.2.2.9:1", "", "Legal Activities", "EARoot/EA4/EA2/EA2/EA9/EA1103.htm", "177.png", "370", "0", "", "Object diagram");
+tocTab[tocTab.length] = new Array("4.2.2.9:2", "", ": mhaHistory", "EARoot/EA4/EA2/EA2/EA9/EA1105.htm", "25.png", "5716", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.9:3", "", ": legalStatusAndMHADetails", "EARoot/EA4/EA2/EA2/EA9/EA1106.htm", "25.png", "5715", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.9:4", "", "Exit: legalActivities", "EARoot/EA4/EA2/EA2/EA9/EA1107.htm", "25.png", "5717", "0", "", "Object");

@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("4.3.1:1", "", "«Application Role» Ambulance Service Patient Report Originator", "EARoot/EA4/EA3/EA1/EA271.htm", "57.png", "850", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("4.3.1:2", "", "«Application Role» Ambulance Service Patient Report Recipient", "EARoot/EA4/EA3/EA1/EA272.htm", "57.png", "4050", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("4.3.1:3", "", "«Application Role» Ambulance Service Patient Report Recipient (PSIS)", "EARoot/EA4/EA3/EA1/EA273.htm", "57.png", "4052", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("4.3.1:4", "", "«Application Role» TMS Receiver", "EARoot/EA4/EA3/EA1/EA274.htm", "57.png", "887", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("4.3.1:5", "", "«Application Role» TMS Sender", "EARoot/EA4/EA3/EA1/EA275.htm", "57.png", "4049", "0", "", "Sequence");

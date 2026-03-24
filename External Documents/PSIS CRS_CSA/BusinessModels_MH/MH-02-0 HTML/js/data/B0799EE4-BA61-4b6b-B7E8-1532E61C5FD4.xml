@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("4.1.5:1", "", "Dependants", "EARoot/EA4/EA1/EA5/EA707.htm", "175.png", "171", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("4.1.5:2", "", "Dependant", "EARoot/EA4/EA1/EA5/EA709.htm", "5.png", "4271", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.5:3", "", "dependantTemplateList", "EARoot/EA4/EA1/EA5/EA710.htm", "5.png", "4272", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.5:4", "", "otherCarers", "EARoot/EA4/EA1/EA5/EA711.htm", "5.png", "4314", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.5:5", "", "supportingInformation", "EARoot/EA4/EA1/EA5/EA712.htm", "5.png", "4273", "0", "", "Class");

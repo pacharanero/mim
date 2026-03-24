@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifactPackage>
+	<dynamicModel>
+		<interaction id="COPC_IN000001UK01">
+			<Models>
+				<sendingRole modelId="COPC_AR000001UK01"/>
+				<receivingRole modelId="COPC_AR000002UK01"/>
+				<triggerEvent modelId="COPC_TE000001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="COPC_MT000001UK01"/>
+			</Models>
+		</interaction>
+	</dynamicModel>
+</artifactPackage>

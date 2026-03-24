@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("2.3:1", "", "PSIS", "EARoot/EA2/EA3/EA64.htm", "188.png", "103", "0", "", "Custom diagram");
+tocTab[tocTab.length] = new Array("2.3:2", "", "«Functional» Allow user to create and send documents to PSIS", "EARoot/EA2/EA3/EA66.htm", "19.png", "1224", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.3:3", "", "«Functional» Allow user to query PSIS", "EARoot/EA2/EA3/EA67.htm", "19.png", "1222", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.3:4", "", "«Functional» Allow user to replace or nullify documents on PSIS", "EARoot/EA2/EA3/EA68.htm", "19.png", "1225", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.3:5", "", "«Functional» Allow user to send sealed documents to PSIS", "EARoot/EA2/EA3/EA69.htm", "19.png", "1226", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.3:6", "", "«Functional» Allow user to view documents in PSIS", "EARoot/EA2/EA3/EA70.htm", "19.png", "1223", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.3:7", "", "«Functional» Give user option to send or not send documents to PSIS", "EARoot/EA2/EA3/EA71.htm", "19.png", "1227", "0", "", "Requirement");

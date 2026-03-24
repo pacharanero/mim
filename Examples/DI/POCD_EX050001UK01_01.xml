@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?><!--This example message is provided for illustrative purposes only. It has had no clinical validation. Whilst every effort has been taken to ensure that the examples are consistent with the message specification contained within the MiM, where there are conflicts with the written message specification or schema, the specification or schema shall be considered to take precedence-->
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:npfitlc="NPFIT:HL7:Localisation" xsi:schemaLocation="urn:hl7-org:v3 ../../schemas/POCD_MT000001UK04.xsd" classCode="DOCCLIN" moodCode="EVN">
+	<typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+	<npfitlc:messageType extension="POCD_MT050001UK01" root="2.16.840.1.113883.2.1.3.2.4.18.17"/>
+	<id root="FE6A3155-72B2-4130-814C-FE516DCD3E19"/>
+	<code code="163581000000104" codeSystem="2.16.840.1.113883.2.1.3.2.4.15"/>
+	<title>Diagnostic Imaging Report</title>
+	<effectiveTime value="20050227131724"/>
+	<confidentialityCode code="V" codeSystem="2.16.840.1.113883.5.25" displayName="very restricted"/>
+	<setId root="A45BEDB5-ED7E-456C-BA64-91BD7CDB3842"/>
+	<versionNumber value="1"/>
+	<recordTarget contextControlCode="OP" typeCode="RCT">
+		<npfitlc:contentId extension="COCD_TP145020UK03#PatientRole" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<patientRole classCode="PAT">
+			<templateId extension="COCD_TP145020UK03#PatientRole" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<id extension="9413946426" root="2.16.840.1.113883.2.1.4.1"/>
+		</patientRole>
+	</recordTarget>
+	<author contextControlCode="OP" typeCode="AUT">
+		<npfitlc:contentId extension="COCD_TP145001UK03#AssignedAuthorSDS" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<functionCode code="OA" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.178" displayName="Originating Author"/>
+		<time value="20050227131724"/>
+		<assignedAuthor classCode="ASSIGNED">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145001UK03#AssignedAuthorSDS"/>
+			<id root="1.2.826.0.1285.0.2.0.67" extension="102021696987"/>
+			<id root="1.2.826.0.1285.0.2.0.65" extension="102021684980"/>
+			<code code="R849" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" displayName="Radiologist"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145001UK03#assignedPerson"/>
+				<name>
+					<family>Purves</family>
+					<given>Carlene</given>
+				</name>
+			</assignedPerson>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145001UK03#representedOrganization"/>
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.2" extension="RFM"/>
+				<name use="L">Hebburn NHS Trust</name>
+			</representedOrganization>
+		</assignedAuthor>
+	</author>
+	<dataEnterer contextControlCode="OP" typeCode="ENT">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145004UK03#AssignedEntitySDS"/>
+		<assignedEntity classCode="ASSIGNED">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145004UK03#AssignedEntitySDS"/>
+			<id root="1.2.826.0.1285.0.2.0.65" extension="1234567"/>
+			<id root="1.2.826.0.1285.0.2.0.65" extension="1234567"/>
+			<code code="R32423" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" displayName="Registrar"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145004UK03#assignedPerson"/>
+				<name use="L">
+					<family>Smith</family>
+					<given>John</given>
+				</name>
+			</assignedPerson>
+		</assignedEntity>
+	</dataEnterer>
+	<custodian typeCode="CST">
+		<npfitlc:contentId extension="COCD_TP145018UK03#AssignedCustodian" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<assignedCustodian classCode="ASSIGNED">
+			<templateId extension="COCD_TP145018UK03#AssignedCustodian" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+				<templateId extension="COCD_TP145018UK03#representedCustodianOrganization" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				<id extension="RFM" root="2.16.840.1.113883.2.1.3.2.4.19.1"/>
+				<name use="L">Hebburn NHS Trust</name>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<informationRecipient typeCode="PRCP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145017UK03#IntendedRecipient"/>
+		<intendedRecipient classCode="ASSIGNED">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145017UK03#IntendedRecipient"/>
+			<receivedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145017UK03#representedOrganization"/>
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.2" extension="YEA"/>
+				<name use="L">NATIONAL CARE RECORDS SERVICE SPINE</name>
+			</receivedOrganization>
+		</intendedRecipient>
+	</informationRecipient>
+	<informationRecipient typeCode="PRCP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145021UK04#AssignedEntitySDS"/>
+		<intendedRecipient classCode="ASSIGNED">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145021UK04#AssignedEntitySDS"/>
+			<npfitlc:recipientRoleCode code="R849" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" displayName="GP"/>
+			<id extension="102018560980" root="1.2.826.0.1285.0.2.0.65"/>
+			<id root="1.2.826.0.1285.0.2.0.67" extension="102018562987"/>
+			<informationRecipient classCode="PSN" determinerCode="INSTANCE">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145021UK04#assignedPerson"/>
+				<name>
+					<family>Atkinson</family>
+					<given>Natalie</given>
+					<given>Susan</given>
+				</name>
+			</informationRecipient>
+		</intendedRecipient>
+	</informationRecipient>
+	<authenticator typeCode="AUTHEN">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+		<time value="20050227145524"/>
+		<signatureCode nullFlavor="NA"/>
+		<assignedEntity classCode="ASSIGNED">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+			<id root="1.2.826.0.1285.0.2.0.67" extension="102021696987"/>
+			<id root="1.2.826.0.1285.0.2.0.65" extension="102021684980"/>
+			<code code="R849" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" displayName="Radiologist"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#assignedPerson"/>
+				<name>
+					<family>Purves</family>
+					<given>Carlene</given>
+				</name>
+			</assignedPerson>
+		</assignedEntity>
+	</authenticator>
+	<participant contextControlCode="OP" typeCode="REFB">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+		<associatedEntity classCode="ASSIGNED">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+			<id extension="102018560980" root="1.2.826.0.1285.0.2.0.65"/>
+			<id root="1.2.826.0.1285.0.2.0.67" extension="102018562987"/>
+			<code code="R8000" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196"/>
+			<associatedPerson classCode="PSN" determinerCode="INSTANCE">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#assignedPerson"/>
+				<name>
+					<family>Atkinson</family>
+					<given>Natalie</given>
+					<given>Susan</given>
+				</name>
+			</associatedPerson>
+			<scopingOrganization classCode="ORG" determinerCode="INSTANCE">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#representedOrganization"/>
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.2" extension="A28002"/>
+				<name>The Old Vicarage Surgery</name>
+			</scopingOrganization>
+		</associatedEntity>
+	</participant>
+	<inFulfillmentOf typeCode="FLFS">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP147080UK01#DIOrderRef"/>
+		<order classCode="ACT" moodCode="RQO">
+			<templateId extension="COCD_TP147080UK01#DIOrderRef" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<id root="E-87642"/>
+			<code nullFlavor="NA"/>
+		</order>
+	</inFulfillmentOf>
+	<documentationOf typeCode="DOC">
+		<npfitlc:contentId extension="COCD_TP146081UK01#DIProcedureEvent" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<serviceEvent classCode="PROC" moodCode="EVN">
+			<templateId extension="COCD_TP146081UK01#DIProcedureEvent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<id root="93E1EBB3-078F-472D-9FA4-D333F6E17D38"/>
+			<id root="B9CB39FB-32FA-41B8-8B70-7FE0D115DFDC"/>
+			<code code="DI05" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.230"/>
+		</serviceEvent>
+	</documentationOf>
+	<componentOf typeCode="COMP">
+		<npfitlc:contentId extension="COCD_TP146060UK01#EncompassingEncounter" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<encompassingEncounter classCode="ENC" moodCode="EVN">
+			<templateId extension="COCD_TP146060UK01#EncompassingEncounter" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<id root="1FDD2718-7633-4572-80DB-F0B89CEF0592"/>
+			<code code="TBC" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Face to Face Consultation"/>
+			<effectiveTime>
+				<center value="20071218114846"/>
+			</effectiveTime>
+			<dischargeDispositionCode nullFlavor="NA"/>
+			<responsibleParty typeCode="RESP">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146060UK01#responsibleParty"/>
+				<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+				<assignedEntity classCode="ASSIGNED">
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+					<id root="1.2.826.0.1285.0.2.0.67" extension="102021696987"/>
+					<id root="1.2.826.0.1285.0.2.0.65" extension="102021684980"/>
+					<code code="R845" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" displayName="Radiologist"/>
+					<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#assignedPerson"/>
+						<name use="L">Carlene Purves</name>
+					</assignedPerson>
+					<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#representedOrganization"/>
+						<id root="2.16.840.1.113883.2.1.3.2.4.19.2" extension="RFM"/>
+						<name use="L">Hebburn NHS Trust</name>
+					</representedOrganization>
+				</assignedEntity>
+			</responsibleParty>
+			<encounterParticipant typeCode="ATND">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146060UK01#encounterParticipant"/>
+				<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+				<assignedEntity classCode="ASSIGNED">
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+					<id root="1.2.826.0.1285.0.2.0.65" extension="102022413984"/>
+					<id extension="102022415980" root="1.2.826.0.1285.0.2.0.67"/>
+					<code code="R829" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" displayName="Trainee Radiologist"/>
+					<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#assignedPerson"/>
+						<name use="L">
+							<family>Burke</family>
+							<given>Ranulph</given>
+						</name>
+					</assignedPerson>
+				</assignedEntity>
+			</encounterParticipant>
+			<encounterParticipant typeCode="ATND">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146060UK01#encounterParticipant"/>
+				<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+				<assignedEntity classCode="ASSIGNED">
+					<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#AssignedEntitySDS"/>
+					<id root="1.2.826.0.1285.0.2.0.65" extension="102021690985"/>
+					<id root="1.2.826.0.1285.0.2.0.67" extension="102021692981"/>
+					<code code="R8000" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" displayName="Radiographer"/>
+					<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+						<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145022UK02#assignedPerson"/>
+						<name>
+							<family>Dillon</family>
+							<given>Lisa</given>
+						</name>
+					</assignedPerson>
+				</assignedEntity>
+			</encounterParticipant>
+			<location typeCode="LOC">
+				<templateId extension="COCD_TP146060UK01#location" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				<npfitlc:contentId extension="COCD_TP145024UK01#HealthCareFacility" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+				<healthCareFacility classCode="SDLOC">
+					<templateId extension="COCD_TP145024UK01#HealthCareFacility" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+					<id nullFlavor="NA"/>
+					<code code="453491013" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Radiology department"/>
+				</healthCareFacility>
+			</location>
+		</encompassingEncounter>
+	</componentOf>
+	<component contextConductionInd="true" typeCode="COMP">
+		<structuredBody classCode="DOCBODY" moodCode="EVN">
+			<component contextConductionInd="true" typeCode="COMP">
+				<section classCode="DOCSECT" moodCode="EVN">
+					<id root="ED2C7476-DD8D-4589-A207-1CA54A95EDEB"/><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146078UK01#DIReportStatus"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146078UK01#DIReportStatus"/>
+							<id root="66667C75-CBB7-4A5C-9EA9-567F8A7867DC"/>
+							<code code="DIRS" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="DI Report Status"/>
+							<value xsi:type="CV" code="DI23" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.229"/>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146082UK01#DIUrgencyIndicator"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146082UK01#DIUrgencyIndicator"/>
+							<id root="8D8598A8-0AF9-4C16-9347-138F31DBA058"/>
+							<code code="DIUI" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Diagnostic Imaging Urgency Indicator"/>
+							<value xsi:type="CV" code="DI24" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.242"/>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146077UK02#DIProcedure"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146077UK02#DIProcedure"/>
+							<id root="93E1EBB3-078F-472D-9FA4-D333F6E17D38"/>
+							<code code="32265006" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="IVU - Intravenous urogram">
+								<originalText>
+									<reference value="#a1"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<low value="20071221122540"/>
+								<high value="20071221122540"/>
+							</effectiveTime>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146077UK02#DIProcedure"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146077UK02#DIProcedure"/>
+							<id root="B9CB39FB-32FA-41B8-8B70-7FE0D115DFDC"/>
+							<code code="418231008" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Ultrasound angiography of renal artery">
+								<originalText>
+									<reference value="#a2"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<center value="20071221114658"/>
+							</effectiveTime>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146080UK01#DIOrder"/>
+						<act classCode="ACT" moodCode="RQO">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146080UK01#DIOrder"/>
+							<id root="2.16.840.1.113883.2.1.3.2.4.18.13" extension="E-87642"/>
+							<code code="DI01" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.231" displayName="Accession Number"/>
+						</act>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146079UK01#DICOMObject"/>
+						<observation classCode="DGIMG" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146079UK01#DICOMObject"/>
+							<id root="47D07AF0-BE30-4D95-9795-CA86DD41766A"/>
+							<code code="STI" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.228"/>
+							<text>http://www.example.org/wado?requestType=WADO&amp;studyUID=1.2.840.113619.2.62.994044785528.114289542805&amp;seriesUID=1.2.840.113619.2.62.994044785528.20060823223142485051&amp;objectUID=1.2.840.113619.2.62.994044785528.20060823.200608232232322.3&amp;contentType=application/DICOM</text>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146079UK01#DICOMObject"/>
+						<observation classCode="DGIMG" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146079UK01#DICOMObject"/>
+							<id root="FB37C8A0-7341-40A0-82EB-36E5FBC2BAB8"/>
+							<code code="STI" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.228"/>
+							<text>http://www.example.org/wado?requestType=WADO&amp;studyUID=1.2.840.113619.2.62.994044785528.114289542805&amp;seriesUID=1.2.840.113619.2.62.994044785528.20060823223142485051&amp;objectUID=1.2.840.113619.2.62.994044785528.20060823.200608232232322.3&amp;contentType=application/DICOM</text>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146079UK01#DICOMObject"/>
+						<observation classCode="DGIMG" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146079UK01#DICOMObject"/>
+							<id root="59453957-89A4-47E2-B1DB-647B9F4B216E"/>
+							<code code="STI" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.228"/>
+							<text>http://www.example.org/wado?requestType=WADO&amp;studyUID=1.2.840.113619.2.62.994044785528.114289542805&amp;seriesUID=1.2.840.113619.2.62.994044785528.20060823223142485051&amp;objectUID=1.2.840.113619.2.62.994044785528.20060823.200608232232322.3&amp;contentType=application/DICOM</text>
+						</observation>
+					</entry>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<id root="9F76EAC4-9CB6-4095-BCFC-22F76449C69E"/>
+							<title>Procedure(s)</title>
+							<text>
+								<paragraph styleCode="Bold">Accession Number:E-87642</paragraph>
+								<br/>
+								<table>
+									<tbody>
+										<tr>
+											<th>Procedure</th>
+											<th>Date Performed</th>
+										</tr>
+										<tr>
+											<td>
+												<content ID="a1">IVU</content>
+											</td>
+											<td>2005-02-27 12:27:55</td>
+										</tr>
+										<tr>
+											<td>
+												<content ID="a2">Ultra Sound Renal</content>
+											</td>
+											<td>2005-02-27 12:40:27</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<paragraph styleCode="Bold">Priority:Urgent</paragraph>
+							</text>
+						</section>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146061UK02#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId extension="COCD_TP146061UK02#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="2BA25A73-9E0F-474B-92CF-F01F3087B88B"/>
+							<code code="DI17" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.243"/>
+							<title>Indication</title>
+							<text>Severe left-side loin pain and haematuria. Renal colic?</text>
+						</section>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<id root="247AF3C3-1B6A-47C5-8E33-07A430AF47E7"/>
+							<code code="DI12" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.243"/>
+							<title>IVU Report</title>
+							<text>The control film shows a 5mm calcified opacity to the left of the transverse process of L2 in the line of the left ureter. Following injection of contrast there was prompt excretion on the right. On the left there is a persistant dense nephrogram. There is no excretion on the left at 45 mins. The patient was transferred to ultrasound. See ultrasound report.</text>
+						</section>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<id root="247AF3C3-1B6A-47C5-8E33-07A430AF47E8"/>
+							<code code="DI12" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.243"/>
+							<title>Ultrasound Renal Report</title>
+							<text>The right kidney is normal. The left kidney is enlarged and shows moderate hydronephrosis. There debris within the pelvi-calyceal system. The upper ureter is dilated. The appearances are consistant with obstruction by stone with possible pyonephrosis (see here).</text>
+						</section>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146061UK02#Section1"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146061UK02#Section1"/>
+							<id root="247AF3C3-1B6A-47C5-8E33-07A430AF47E9"/>
+							<code code="DI21" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.243"/>
+							<title>Images</title>
+							<text>
+								<table>
+									<tbody>
+										<tr>
+											<th>Procedure</th>
+											<th>Image</th>
+										</tr>
+										<tr>
+											<td>IVU</td>
+											<td>
+												<linkHtml href="http://www.example.org/wado?requestType=WADO&amp;studyUID=1.2.840.113619.2.62.994044785528.114289542805&amp;seriesUID=1.2.840.113619.2.62.994044785528.20060823223142485051&amp;objectUID=1">DICOM WADO Reference</linkHtml>
+											</td>
+										</tr>
+										<tr>
+											<td>Ultra Sound Renal</td>
+											<td>
+												<linkHtml href="http://www.example.org/wado?requestType=WADO&amp;studyUID=1.2.840.113619.2.62.994044785528.114289542805&amp;seriesUID=1.2.840.113619.2.62.994044785528.20060823223142485051&amp;objectUID=1.2.840.113619.2.62.994044785528.20060823.200608232232322.3&amp;contentType=application/DICOM">DICOM WADO Reference</linkHtml>
+												<br/>
+												<linkHtml href="http://www.example.org/wado?requestType=WADO&amp;studyUID=1.2.840.113619.2.62.994044785528.114289542805&amp;seriesUID=1.2.840.113619.2.62.994044785528.20060823223142485051&amp;objectUID=1.2.840.113619.2.62.994044785528.20060823.200608232232322.3&amp;contentType=application/DICOM">DICOM WADO Reference</linkHtml>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</text>
+						</section>
+					</component>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>

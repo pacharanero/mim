@@ -1,0 +1,17 @@
+tocTab[tocTab.length] = new Array("5.3.2:1", "", "Create Self-Claimed LR", "EARoot/EA5/EA3/EA2/EA3099.htm", "7.png", "8923", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("5.3.2:2", "", "Create Self-Referral LR", "EARoot/EA5/EA3/EA2/EA3100.htm", "7.png", "8922", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("5.3.2:3", "", "LR Check", "EARoot/EA5/EA3/EA2/EA3101.htm", "7.png", "8921", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("5.3.2:4", "", "LR Check", "EARoot/EA5/EA3/EA2/EA3102.htm", "21.png", "8925", "8921", "", "Activity");
+tocTab[tocTab.length] = new Array("5.3.2:5", "", "Create Self-Referral LR", "EARoot/EA5/EA3/EA2/EA3103.htm", "21.png", "8924", "8922", "", "Activity");
+tocTab[tocTab.length] = new Array("5.3.2:6", "", "Create Self-Claimed LR", "EARoot/EA5/EA3/EA2/EA3104.htm", "21.png", "8926", "8923", "", "Activity");
+tocTab[tocTab.length] = new Array("5.3.2:7", "", "", "EARoot/EA5/EA3/EA2/EA3105.htm", "107.png", "10542", "8924", "", "ObjectNode");
+tocTab[tocTab.length] = new Array("5.3.2:8", "", "", "EARoot/EA5/EA3/EA2/EA3106.htm", "107.png", "10545", "8924", "", "ObjectNode");
+tocTab[tocTab.length] = new Array("5.3.2:9", "", "", "EARoot/EA5/EA3/EA2/EA3107.htm", "107.png", "10444", "8925", "", "ObjectNode");
+tocTab[tocTab.length] = new Array("5.3.2:10", "", "", "EARoot/EA5/EA3/EA2/EA3108.htm", "107.png", "10445", "8925", "", "ObjectNode");
+tocTab[tocTab.length] = new Array("5.3.2:11", "", "ObjectNode1", "EARoot/EA5/EA3/EA2/EA3109.htm", "107.png", "10653", "8925", "", "ObjectNode");
+tocTab[tocTab.length] = new Array("5.3.2:12", "", "ObjectNode2", "EARoot/EA5/EA3/EA2/EA3110.htm", "107.png", "10885", "8925", "", "ObjectNode");
+tocTab[tocTab.length] = new Array("5.3.2:13", "", "ObjectNode2", "EARoot/EA5/EA3/EA2/EA3111.htm", "107.png", "10886", "8925", "", "ObjectNode");
+tocTab[tocTab.length] = new Array("5.3.2:14", "", "ObjectNode3", "EARoot/EA5/EA3/EA2/EA3112.htm", "107.png", "10657", "8926", "", "ObjectNode");
+tocTab[tocTab.length] = new Array("5.3.2:15", "", "ObjectNode3", "EARoot/EA5/EA3/EA2/EA3113.htm", "107.png", "10656", "8926", "", "ObjectNode");
+tocTab[tocTab.length] = new Array("5.3.2:16", "", "", "EARoot/EA5/EA3/EA2/EA3114.htm", "107.png", "10543", "8926", "", "ObjectNode");
+tocTab[tocTab.length] = new Array("5.3.2:17", "", "", "EARoot/EA5/EA3/EA2/EA3115.htm", "107.png", "10541", "8926", "", "ObjectNode");

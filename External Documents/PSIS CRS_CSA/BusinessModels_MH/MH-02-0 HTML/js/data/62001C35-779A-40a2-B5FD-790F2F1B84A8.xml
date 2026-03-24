@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("1", "1", "Navigation", "", "34.png", "", "", "{A10306CD-FCDD-47af-9A02-4394CDFAEFCF}", "Package");
+tocTab[tocTab.length] = new Array("2", "1", "Domain Analysis & Scoping", "", "29.png", "", "", "{2E28BFC1-9474-43a1-B919-926F479BA09E}", "Package");
+tocTab[tocTab.length] = new Array("3", "1", "Area of Interest", "", "31.png", "", "", "{B10E7F06-2E83-40cb-AD31-157680D7FF4E}", "Package");
+tocTab[tocTab.length] = new Array("4", "1", "Communication", "", "32.png", "", "", "{3B2A366D-5676-4fff-A532-4135C79F6141}", "Package");
+tocTab[tocTab.length] = new Array("5", "1", "Corporate Package v1.7.1", "EARoot/EA5.htm", "32.png", "", "", "{0BA835D6-1037-4d14-95CC-48392351D371}", "Package");
+tocTab[tocTab.length] = new Array("6", "1", "Legacy Business Process Model", "EARoot/EA6.htm", "34.png", "", "", "{C16530D8-DFC9-44ca-AAF8-053E36930F4F}", "Package");
+tocTab[tocTab.length] = new Array("7", "1", "Legacy Static Models", "EARoot/EA7.htm", "34.png", "", "", "{4CDABD08-1CED-4acf-A651-C922C44FF354}", "Package");

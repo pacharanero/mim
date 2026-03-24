@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0:1", "", "Navigation Page - Start Here", "EARoot/EA1.htm", "176.png", "37", "0", "", "Package diagram");
+tocTab[tocTab.length] = new Array("0:2", "", "Information examples", "EARoot/EA13.htm", "103.png", "3271", "0", "", "DiagramFrame");
+tocTab[tocTab.length] = new Array("0:3", "", "Refusal - Patient Requestor", "EARoot/EA25.htm", "99.png", "4894", "0", "", "UMLDiagram");
+tocTab[tocTab.length] = new Array("1", "1", "Display Groups", "EARoot/EA11.htm", "4.png", "", "", "{DFA2F839-5CD3-4cfe-9B91-5CF7E899AF0B}", "Package");

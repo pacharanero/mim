@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("5.3.3:1", "", "Recieve Document Point to Point ", "EARoot/EA5/EA3/EA3/EA3116.htm", "7.png", "10689", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("5.3.3:2", "", "Send Document", "EARoot/EA5/EA3/EA3/EA3117.htm", "7.png", "10698", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("5.3.3:3", "", "Recieve Document Point to Point ", "EARoot/EA5/EA3/EA3/EA3118.htm", "21.png", "10690", "10689", "", "Activity");
+tocTab[tocTab.length] = new Array("5.3.3:4", "", "Send Document", "EARoot/EA5/EA3/EA3/EA3119.htm", "21.png", "10699", "10698", "", "Activity");

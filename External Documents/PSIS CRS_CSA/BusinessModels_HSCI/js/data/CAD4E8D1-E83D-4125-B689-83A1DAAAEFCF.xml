@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("3.1.6.8:1", "", "Additional Information Text Section", "EARoot/EA3/EA1/EA6/EA8/EA373.htm", "188.png", "274", "0", "", "Custom diagram");
+tocTab[tocTab.length] = new Array("3.1.6.8:2", "", "«Functional» HSCI044REQ: Additional Information Text Section", "EARoot/EA3/EA1/EA6/EA8/EA375.htm", "19.png", "10326", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("3.1.6.8:3", "", "«Functional» HSCI046REQ: Additional Information in Overview Assessment Document", "EARoot/EA3/EA1/EA6/EA8/EA376.htm", "19.png", "10328", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("3.1.6.8:4", "", "«Functional» HSCI045REQ: Additional Information in Contact Assessment Document", "EARoot/EA3/EA1/EA6/EA8/EA377.htm", "19.png", "10327", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("3.1.6.8:5", "", "«Functional» HSCI047REQ: Additional Information in Specialist Assessment Overview Document", "EARoot/EA3/EA1/EA6/EA8/EA378.htm", "19.png", "10329", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("3.1.6.8:6", "", "«Functional» HSCI048REQ: Additional Information in Integrated Care and Support Plan Document", "EARoot/EA3/EA1/EA6/EA8/EA379.htm", "19.png", "10330", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("3.1.6.8:7", "", "«Functional» HSCI049REQ: Additional Information in Biographic Information Document", "EARoot/EA3/EA1/EA6/EA8/EA380.htm", "19.png", "10331", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("3.1.6.8:8", "", "«Functional» HSCI054REQ: physicalWellbeing Template in Integrated Care and Support Plan", "EARoot/EA3/EA1/EA6/EA8/EA381.htm", "19.png", "10336", "0", "", "Requirement");

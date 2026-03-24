@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>MH&SM-SS-Spell</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">MH&SM-SS-Spell  (MH0069Class) : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">20/09/2007 12:02:24</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">20/09/2007 13:35:40</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Ross Dixon</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{2F92C3CD-78EC-4c6c-8CF8-7751AA24EA1C}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA120.htm">IAM</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Mental&nbsp;<WBR>Health&nbsp;<WBR>and&nbsp;<WBR>Substance&nbsp;<WBR>Misuse&nbsp;<WBR>Specialist&nbsp;<WBR>Service&nbsp;<WBR>Spell&nbsp;<WBR>of&nbsp;<WBR>Care</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public </i><br /><strong>&nbsp;&nbsp;MH&SMHistory</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 15.2<br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Text&nbsp;<WBR>item&nbsp;<WBR>to&nbsp;<WBR>which&nbsp;<WBR>HSCPs&nbsp;<WBR>can&nbsp;<WBR>add&nbsp;<WBR>information&nbsp;<WBR>about&nbsp;<WBR>the&nbsp;<WBR>MH&SM&nbsp;<WBR>History&nbsp;<WBR>around&nbsp;<WBR>the&nbsp;<WBR>care&nbsp;<WBR>of&nbsp;<WBR>this&nbsp;<WBR>individual&lt;br&nbsp;<WBR>/&gt;&lt;br&nbsp;<WBR>/&gt;Will&nbsp;<WBR>need&nbsp;<WBR>to&nbsp;<WBR>be&nbsp;<WBR>retrievable&nbsp;<WBR>and&nbsp;<WBR>able&nbsp;<WBR>to&nbsp;<WBR>be&nbsp;<WBR>added&nbsp;<WBR>to&nbsp;<WBR>over&nbsp;<WBR>time&nbsp;<WBR>without&nbsp;<WBR>loosing&nbsp;<WBR>the&nbsp;<WBR>previous&nbsp;<WBR>contents
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Constraint Needs to be able to be added to over time without removing any of the historical content </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Needs&nbsp;<WBR>to&nbsp;<WBR>be&nbsp;<WBR>able&nbsp;<WBR>to&nbsp;<WBR>be&nbsp;<WBR>added&nbsp;<WBR>to&nbsp;<WBR>over&nbsp;<WBR>time&nbsp;<WBR>without&nbsp;<WBR>removing&nbsp;<WBR>any&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>historical&nbsp;<WBR>content
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example April 1979 - Tony first contact with the local Mental health services following a period of depression following the death of his father </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::April&nbsp;<WBR>1979&nbsp;<WBR>-&nbsp;<WBR>Tony&nbsp;<WBR>first&nbsp;<WBR>contact&nbsp;<WBR>with&nbsp;<WBR>the&nbsp;<WBR>local&nbsp;<WBR>Mental&nbsp;<WBR>health&nbsp;<WBR>services&nbsp;<WBR>following&nbsp;<WBR>a&nbsp;<WBR>period&nbsp;<WBR>of&nbsp;<WBR>depression&nbsp;<WBR>following&nbsp;<WBR>the&nbsp;<WBR>death&nbsp;<WBR>of&nbsp;<WBR>his&nbsp;<WBR>father<br /><br />October&nbsp;<WBR>1987&nbsp;<WBR>-&nbsp;<WBR>Following&nbsp;<WBR>a&nbsp;<WBR>period&nbsp;<WBR>of&nbsp;<WBR>depression&nbsp;<WBR>due&nbsp;<WBR>to&nbsp;<WBR>a&nbsp;<WBR>long&nbsp;<WBR>period&nbsp;<WBR>of&nbsp;<WBR>unemployment&nbsp;<WBR>Tony&nbsp;<WBR>given&nbsp;<WBR>a&nbsp;<WBR>course&nbsp;<WBR>of&nbsp;<WBR>Valium&nbsp;<WBR>over&nbsp;<WBR>three&nbsp;<WBR>months&nbsp;<WBR>-&nbsp;<WBR>discharged&nbsp;<WBR>from&nbsp;<WBR>care&nbsp;<WBR>in&nbsp;<WBR>January&nbsp;<WBR>1988<br /><br />June&nbsp;<WBR>1997&nbsp;<WBR>-&nbsp;<WBR>Seen&nbsp;<WBR>by&nbsp;<WBR>Substance&nbsp;<WBR>misuse&nbsp;<WBR>service&nbsp;<WBR>in&nbsp;<WBR>London&nbsp;<WBR>following&nbsp;<WBR>an&nbsp;<WBR>arrest&nbsp;<WBR>for&nbsp;<WBR>drunkenness,&nbsp;<WBR>Tony&nbsp;<WBR>approached&nbsp;<WBR>the&nbsp;<WBR>service&nbsp;<WBR>as&nbsp;<WBR>a&nbsp;<WBR>self-referral
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Representation Marked Up Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Marked&nbsp;<WBR>Up&nbsp;<WBR>Text
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public </i><br /><strong>&nbsp;&nbsp;SDSIdentifier</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			SDS&nbsp;<WBR>organisation&nbsp;<WBR>identifier
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA156.htm">MH&SM-SS-Episode</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA155.htm">MH&SM-SS-Entry</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA157.htm">MH&SM-SS-Exit</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA170.htm">patient</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

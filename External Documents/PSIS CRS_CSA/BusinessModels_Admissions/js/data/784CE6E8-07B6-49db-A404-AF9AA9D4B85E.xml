@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("5.3.2:1", "", "Create Self-Claimed LR", "EARoot/EA5/EA3/EA2/EA1021.htm", "7.png", "4592", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("5.3.2:2", "", "Create Self-Referral LR", "EARoot/EA5/EA3/EA2/EA1022.htm", "7.png", "4591", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("5.3.2:3", "", "LR Check", "EARoot/EA5/EA3/EA2/EA1023.htm", "7.png", "4590", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("5.3.2:4", "", "LR Check", "EARoot/EA5/EA3/EA2/EA1024.htm", "21.png", "4594", "4590", "", "Activity");
+tocTab[tocTab.length] = new Array("5.3.2:5", "", "Create Self-Referral LR", "EARoot/EA5/EA3/EA2/EA1025.htm", "21.png", "4593", "4591", "", "Activity");
+tocTab[tocTab.length] = new Array("5.3.2:6", "", "Create Self-Claimed LR", "EARoot/EA5/EA3/EA2/EA1026.htm", "21.png", "4595", "4592", "", "Activity");

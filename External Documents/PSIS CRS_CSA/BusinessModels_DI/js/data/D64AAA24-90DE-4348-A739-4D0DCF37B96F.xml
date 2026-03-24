@@ -1,0 +1,15 @@
+tocTab[tocTab.length] = new Array("3.2:1", "", "Information Analysis Model - DI Report", "EARoot/EA3/EA2/EA88.htm", "175.png", "46", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("3.2:2", "", "DIReportHeader", "EARoot/EA3/EA2/EA92.htm", "5.png", "1000", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:3", "", "patient", "EARoot/EA3/EA2/EA93.htm", "5.png", "1001", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:4", "", "primaryRecipient", "EARoot/EA3/EA2/EA94.htm", "5.png", "3808", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:5", "", "copyRecipient", "EARoot/EA3/EA2/EA95.htm", "5.png", "1030", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:6", "", "request", "EARoot/EA3/EA2/EA96.htm", "5.png", "1483", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:7", "", "fulfillerRequest", "EARoot/EA3/EA2/EA97.htm", "5.png", "1032", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:8", "", "DISummaryReport", "EARoot/EA3/EA2/EA98.htm", "5.png", "5134", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:9", "", "DIProcedureReportReference", "EARoot/EA3/EA2/EA99.htm", "5.png", "5140", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:10", "", "DIProcedureReport", "EARoot/EA3/EA2/EA100.htm", "5.png", "5139", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:11", "", "DIProcedure", "EARoot/EA3/EA2/EA101.htm", "5.png", "1490", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:12", "", "DIReport", "EARoot/EA3/EA2/EA102.htm", "5.png", "1489", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:13", "", "keyImage", "EARoot/EA3/EA2/EA103.htm", "5.png", "1486", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:14", "", "numericalResultDetail", "EARoot/EA3/EA2/EA104.htm", "5.png", "1487", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:15", "", "clinicalDiagnosisInformation", "EARoot/EA3/EA2/EA105.htm", "5.png", "1485", "0", "", "Class");

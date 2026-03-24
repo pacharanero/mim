@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifactPackage>
+	<dynamicModel>
+		<!-- Health space-->
+		<interaction id="POCD_IN140001UK05">
+			<Models>
+				<sendingRole modelId="POCD_AR140001UK01"/>
+				<receivingRole modelId="POCD_AR140002UK01"/>
+				<triggerEvent modelId="POCD_TE140001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN140002UK05">
+			<Models>
+				<sendingRole modelId="POCD_AR140001UK01"/>
+				<receivingRole modelId="POCD_AR140002UK01"/>
+				<triggerEvent modelId="POCD_TE140002UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<!--Discharge Interaction -->
+		<interaction id="POCD_IN150001UK06">
+			<Models>
+				<sendingRole modelId="POCD_AR150001UK02"/>
+				<receivingRole modelId="POCD_AR150002UK02"/>
+				<triggerEvent modelId="POCD_TE150001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN150002UK06">
+			<Models>
+				<sendingRole modelId="POCD_AR150001UK02"/>
+				<receivingRole modelId="POCD_AR150003UK02"/>
+				<triggerEvent modelId="POCD_TE150001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN150003UK06">
+			<Models>
+				<sendingRole modelId="POCD_AR150001UK02"/>
+				<receivingRole modelId="POCD_AR150004UK02"/>
+				<triggerEvent modelId="POCD_TE150001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN150004UK06">
+			<Models>
+				<sendingRole modelId="POCD_AR150001UK02"/>
+				<receivingRole modelId="POCD_AR150002UK02"/>
+				<receivingRole modelId="POCD_AR150003UK02"/>
+				<receivingRole modelId="POCD_AR150004UK02"/>
+				<triggerEvent modelId="POCD_TE150002UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<!-- Diagnostic Imaging Reporting-->
+		<interaction id="POCD_IN050001UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR050001UK01"/>
+				<receivingRole modelId="POCD_AR050002UK01"/>
+				<triggerEvent modelId="POCD_TE050001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN050002UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR050001UK01"/>
+				<receivingRole modelId="POCD_AR050003UK01"/>
+				<triggerEvent modelId="POCD_TE050001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN050003UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR050001UK01"/>
+				<receivingRole modelId="POCD_AR050004UK01"/>
+				<triggerEvent modelId="POCD_TE050001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN050004UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR050001UK01"/>
+				<receivingRole modelId="POCD_AR050002UK01"/>
+				<receivingRole modelId="POCD_AR050003UK01"/>
+				<receivingRole modelId="POCD_AR050004UK01"/>
+				<triggerEvent modelId="POCD_TE050002UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<!-- ED Interaction-->
+		<interaction id="POCD_IN160001UK06">
+			<Models>
+				<sendingRole modelId="POCD_AR160001UK02"/>
+				<receivingRole modelId="POCD_AR160002UK02"/>
+				<triggerEvent modelId="POCD_TE160001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN160002UK06">
+			<Models>
+				<sendingRole modelId="POCD_AR160001UK02"/>
+				<receivingRole modelId="POCD_AR160003UK02"/>
+				<triggerEvent modelId="POCD_TE160001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN160003UK06">
+			<Models>
+				<sendingRole modelId="POCD_AR160001UK02"/>
+				<receivingRole modelId="POCD_AR160004UK02"/>
+				<triggerEvent modelId="POCD_TE160001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN160004UK06">
+			<Models>
+				<sendingRole modelId="POCD_AR160001UK02"/>
+				<receivingRole modelId="POCD_AR160002UK02"/>
+				<receivingRole modelId="POCD_AR160003UK02"/>
+				<receivingRole modelId="POCD_AR160004UK02"/>
+				<triggerEvent modelId="POCD_TE160002UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<!--Outpatient Interaction -->
+		<interaction id="POCD_IN170001UK06">
+			<Models>
+				<sendingRole modelId="POCD_AR170001UK02"/>
+				<receivingRole modelId="POCD_AR170002UK02"/>
+				<triggerEvent modelId="POCD_TE170001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN170002UK06">
+			<Models>
+				<sendingRole modelId="POCD_AR170001UK02"/>
+				<receivingRole modelId="POCD_AR170003UK02"/>
+				<triggerEvent modelId="POCD_TE170001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN170003UK06">
+			<Models>
+				<sendingRole modelId="POCD_AR170001UK02"/>
+				<receivingRole modelId="POCD_AR170004UK02"/>
+				<triggerEvent modelId="POCD_TE170001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN170004UK06">
+			<Models>
+				<sendingRole modelId="POCD_AR170001UK02"/>
+				<receivingRole modelId="POCD_AR170002UK02"/>
+				<receivingRole modelId="POCD_AR170003UK02"/>
+				<receivingRole modelId="POCD_AR170004UK02"/>
+				<triggerEvent modelId="POCD_TE170002UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<!-- Sealed envelopes-->
+		<interaction id="POCD_IN180001UK05">
+			<Models>
+				<sendingRole modelId="POCD_AR180001UK01"/>
+				<receivingRole modelId="POCD_AR180002UK01"/>
+				<triggerEvent modelId="POCD_TE180001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN180002UK05">
+			<Models>
+				<sendingRole modelId="POCD_AR180001UK01"/>
+				<receivingRole modelId="POCD_AR180002UK01"/>
+				<triggerEvent modelId="POCD_TE180002UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN180003UK02">
+			<Models>
+				<sendingRole modelId="POCD_AR180003UK01"/>
+				<receivingRole modelId="POCD_AR180004UK01"/>
+				<triggerEvent modelId="POCD_TE180003UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN180004UK02">
+			<Models>
+				<sendingRole modelId="POCD_AR180003UK01"/>
+				<receivingRole modelId="POCD_AR180004UK01"/>
+				<triggerEvent modelId="POCD_TE180004UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN180005UK02">
+			<Models>
+				<sendingRole modelId="POCD_AR180005UK01"/>
+				<receivingRole modelId="POCD_AR180006UK01"/>
+				<triggerEvent modelId="POCD_TE180005UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN180006UK02">
+			<Models>
+				<sendingRole modelId="POCD_AR180005UK01"/>
+				<receivingRole modelId="POCD_AR180006UK01"/>
+				<triggerEvent modelId="POCD_TE180006UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN020001UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR020001UK01"/>
+				<receivingRole modelId="POCD_AR020002UK01"/>
+				<triggerEvent modelId="POCD_TE020001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN020002UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR020001UK01"/>
+				<receivingRole modelId="POCD_AR020003UK01"/>
+				<triggerEvent modelId="POCD_TE020001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN020003UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR020001UK01"/>
+				<receivingRole modelId="POCD_AR020004UK01"/>
+				<triggerEvent modelId="POCD_TE020001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN020004UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR020001UK01"/>
+				<receivingRole modelId="POCD_AR020002UK01"/>
+				<sendingRole modelId="POCD_AR020003UK01"/>
+				<receivingRole modelId="POCD_AR020004UK01"/>
+				<triggerEvent modelId="POCD_TE020002UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+	</dynamicModel>
+	<dynamicModel>
+		<interaction id="POCD_IN010001UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR010001UK01"/>
+				<receivingRole modelId="POCD_AR010002UK01"/>
+				<triggerEvent modelId="POCD_TE100001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN010012UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR010001UK01"/>
+				<receivingRole modelId="POCD_AR010003UK01"/>
+				<triggerEvent modelId="POCD_TE100001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN010002UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR010001UK01"/>
+				<receivingRole modelId="POCD_AR010004UK01"/>
+				<triggerEvent modelId="POCD_TE100001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN010003UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR010001UK01"/>
+				<receivingRole modelId="POCD_AR010002UK01"/>
+				<triggerEvent modelId="POCD_TE100001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN010013UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR010001UK01"/>
+				<receivingRole modelId="POCD_AR010003UK01"/>
+				<triggerEvent modelId="POCD_TE100001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN010004UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR010001UK01"/>
+				<receivingRole modelId="POCD_AR010004UK01"/>
+				<triggerEvent modelId="POCD_TE100001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN010005UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR010001UK01"/>
+				<receivingRole modelId="POCD_AR010002UK01"/>
+				<triggerEvent modelId="POCD_TE100001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN010014UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR010001UK01"/>
+				<receivingRole modelId="POCD_AR010003UK01"/>
+				<triggerEvent modelId="POCD_TE100001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN010006UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR010001UK01"/>
+				<receivingRole modelId="POCD_AR010004UK01"/>
+				<triggerEvent modelId="POCD_TE100001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN010007UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR010001UK01"/>
+				<receivingRole modelId="POCD_AR010002UK01"/>
+				<triggerEvent modelId="POCD_TE100001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN010015UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR010001UK01"/>
+				<receivingRole modelId="POCD_AR010003UK01"/>
+				<triggerEvent modelId="POCD_TE100001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN010008UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR010001UK01"/>
+				<receivingRole modelId="POCD_AR010004UK01"/>
+				<triggerEvent modelId="POCD_TE100001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN010009UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR010001UK01"/>
+				<receivingRole modelId="POCD_AR010002UK01"/>
+				<triggerEvent modelId="POCD_TE100001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN010016UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR010001UK01"/>
+				<receivingRole modelId="POCD_AR010003UK01"/>
+				<triggerEvent modelId="POCD_TE100001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN010010UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR010001UK01"/>
+				<receivingRole modelId="POCD_AR010004UK01"/>
+				<triggerEvent modelId="POCD_TE100001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN010011UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR010001UK01"/>
+				<receivingRole modelId="POCD_AR010002UK01"/>
+				<receivingRole modelId="POCD_AR010003UK01"/>
+				<receivingRole modelId="POCD_AR010004UK01"/>
+				<triggerEvent modelId="POCD_TE100002UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+	</dynamicModel>
+	<!-- MHS interactions-->
+	<dynamicModel>
+		<interaction id="POCD_IN040001UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR040001UK01"/>
+				<receivingRole modelId="POCD_AR040002UK01"/>
+				<triggerEvent modelId="POCD_TE040001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN040002UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR040001UK01"/>
+				<receivingRole modelId="POCD_AR040003UK01"/>
+				<triggerEvent modelId="POCD_TE040001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN040003UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR040001UK01"/>
+				<receivingRole modelId="POCD_AR040004UK01"/>
+				<triggerEvent modelId="POCD_TE040001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN040004UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR040001UK01"/>
+				<receivingRole modelId="POCD_AR040002UK01"/>
+				<receivingRole modelId="POCD_AR040003UK01"/>
+				<receivingRole modelId="POCD_AR040004UK01"/>
+				<triggerEvent modelId="POCD_TE040002UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+	</dynamicModel>
+	<dynamicModel>
+		<interaction id="POCD_IN030001UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR030001UK01"/>
+				<receivingRole modelId="POCD_AR030002UK01"/>
+				<triggerEvent modelId="POCD_TE030001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN030002UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR030001UK01"/>
+				<receivingRole modelId="POCD_AR030003UK01"/>
+				<triggerEvent modelId="POCD_TE030001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN030003UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR030001UK01"/>
+				<receivingRole modelId="POCD_AR030004UK01"/>
+				<triggerEvent modelId="POCD_TE030001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN030004UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR030001UK01"/>
+				<receivingRole modelId="POCD_AR030002UK01"/>
+				<receivingRole modelId="POCD_AR030003UK01"/>
+				<receivingRole modelId="POCD_AR030004UK01"/>
+				<triggerEvent modelId="POCD_TE030002UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060001UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060002UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060002UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060002UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060003UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060002UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060004UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060002UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060005UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060002UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060006UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060002UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060007UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060002UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060008UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060002UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060009UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060003UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060010UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060003UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060011UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060003UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060012UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060003UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060013UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060003UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060014UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060003UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060015UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060003UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060016UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060003UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060017UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060004UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060018UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060004UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060019UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060004UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060020UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060004UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060021UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060004UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060022UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060004UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060023UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060004UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN060024UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060004UK01"/>
+				<triggerEvent modelId="POCD_TE060001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN010025UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR060001UK01"/>
+				<receivingRole modelId="POCD_AR060002UK01"/>
+				<receivingRole modelId="POCD_AR060003UK01"/>
+				<receivingRole modelId="POCD_AR060004UK01"/>
+				<triggerEvent modelId="POCD_TE060002UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<!-- NHSD interactions -->
+		<interaction id="POCD_IN070001UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR070001UK01"/>
+				<receivingRole modelId="POCD_AR070002UK01"/>
+				<triggerEvent modelId="POCD_TE070001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN070002UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR070001UK01"/>
+				<receivingRole modelId="POCD_AR070003UK01"/>
+				<triggerEvent modelId="POCD_TE070001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN070003UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR070001UK01"/>
+				<receivingRole modelId="POCD_AR070004UK01"/>
+				<triggerEvent modelId="POCD_TE070001UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+		<interaction id="POCD_IN070004UK01">
+			<Models>
+				<sendingRole modelId="POCD_AR070001UK01"/>
+				<receivingRole modelId="POCD_AR070002UK01"/>
+				<receivingRole modelId="POCD_AR070003UK01"/>
+				<receivingRole modelId="POCD_AR070004UK01"/>
+				<triggerEvent modelId="POCD_TE070002UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POCD_MT000001UK04"/>
+			</Models>
+		</interaction>
+	</dynamicModel>
+</artifactPackage>

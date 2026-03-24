@@ -1,0 +1,12 @@
+tocTab[tocTab.length] = new Array("4.2.2.2:1", "", "ReferralFirstContactTriageEntry", "EARoot/EA4/EA2/EA2/EA2/EA1025.htm", "177.png", "363", "0", "", "Object diagram");
+tocTab[tocTab.length] = new Array("4.2.2.2:2", "", "nonSelfReferral: nonSelfReferral", "EARoot/EA4/EA2/EA2/EA2/EA1027.htm", "25.png", "5647", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.2:3", "", "nonSelfReferral: reasonForReferralFirstContact", "EARoot/EA4/EA2/EA2/EA2/EA1028.htm", "25.png", "5646", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.2:4", "", "Referral, First Contact, Triage and Entry: referralFirstContactTriageEntry", "EARoot/EA4/EA2/EA2/EA2/EA1029.htm", "25.png", "5645", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.2:5", "", "specialistServiceAssessment: specialistServiceAssessmentOutcome", "EARoot/EA4/EA2/EA2/EA2/EA1030.htm", "25.png", "5650", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.2:6", "", "specialistServiceAssessment: specialistServiceAssessment", "EARoot/EA4/EA2/EA2/EA2/EA1031.htm", "25.png", "5649", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.2:7", "", "specialistServiceAssessment: presentingProblems", "EARoot/EA4/EA2/EA2/EA2/EA1032.htm", "25.png", "5648", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.2:8", "", "specialistServices: specialistServicesEntry", "EARoot/EA4/EA2/EA2/EA2/EA1033.htm", "25.png", "5652", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.2:9", "", "specialistServices: entryDecisionSummary", "EARoot/EA4/EA2/EA2/EA2/EA1034.htm", "25.png", "5651", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.2:10", "", "triageDecision: cda_Finding", "EARoot/EA4/EA2/EA2/EA2/EA1035.htm", "25.png", "5653", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.2:11", "", "urgent: triageDecisionTemplateList", "EARoot/EA4/EA2/EA2/EA2/EA1036.htm", "25.png", "5655", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.2:12", "", "urgent: triageDecision", "EARoot/EA4/EA2/EA2/EA2/EA1037.htm", "25.png", "5654", "0", "", "Object");

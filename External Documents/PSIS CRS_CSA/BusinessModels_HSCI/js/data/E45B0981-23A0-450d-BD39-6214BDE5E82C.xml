@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("4.1", "1", "Communication Infomation Model Package", "", "4.png", "", "", "{7904D236-3051-4b84-8D4C-02B8E4DDD11F}", "Package");
+tocTab[tocTab.length] = new Array("4.2", "1", "Information Examples", "", "4.png", "", "", "{59E005AF-A0BD-4a19-BC0F-BFF595124913}", "Package");
+tocTab[tocTab.length] = new Array("4.3", "1", "Interaction Units", "", "4.png", "", "", "{529FEE2C-E48F-41ec-8553-D6C948C8EF0E}", "Package");
+tocTab[tocTab.length] = new Array("4.4", "1", "Scenario Interactions", "EARoot/EA4/EA841.htm", "4.png", "", "", "{9EB391FB-16C9-4146-8F09-F385E2AFB923}", "Package");

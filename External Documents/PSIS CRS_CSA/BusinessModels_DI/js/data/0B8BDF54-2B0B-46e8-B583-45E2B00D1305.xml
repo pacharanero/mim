@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("3.1", "1", "Detailed Use Case Models", "EARoot/EA3/EA59.htm", "4.png", "", "", "{746B740B-06E7-47fc-9490-DC9A9B40E580}", "Package");
+tocTab[tocTab.length] = new Array("3.2", "1", "Information Analysis Model - DI Report", "", "4.png", "", "", "{D64AAA24-90DE-4348-A739-4D0DCF37B96F}", "Package");

@@ -1,0 +1,16 @@
+tocTab[tocTab.length] = new Array("2.2:1", "", "BIM", "EARoot/EA2/EA2/EA168.htm", "175.png", "47", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("2.2:2", "", "admission", "EARoot/EA2/EA2/EA171.htm", "5.png", "1000", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.2:3", "", "admissionSource", "EARoot/EA2/EA2/EA172.htm", "5.png", "1343", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.2:4", "", "discharge", "EARoot/EA2/EA2/EA173.htm", "5.png", "1005", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.2:5", "", "electiveAdmission", "EARoot/EA2/EA2/EA174.htm", "5.png", "1002", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.2:6", "", "emergencyAdmission", "EARoot/EA2/EA2/EA175.htm", "5.png", "1001", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.2:7", "", "hospitalProviderSpell", "EARoot/EA2/EA2/EA176.htm", "5.png", "1339", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.2:8", "", "maternityAdmission", "EARoot/EA2/EA2/EA177.htm", "5.png", "1340", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.2:9", "", "organisation", "EARoot/EA2/EA2/EA178.htm", "5.png", "1006", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.2:10", "", "otherAdmission", "EARoot/EA2/EA2/EA179.htm", "5.png", "1341", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.2:11", "", "PASSystem", "EARoot/EA2/EA2/EA180.htm", "5.png", "1337", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.2:12", "", "patient", "EARoot/EA2/EA2/EA181.htm", "5.png", "1003", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.2:13", "", "recipientSystem", "EARoot/EA2/EA2/EA182.htm", "5.png", "1336", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.2:14", "", "SPINE", "EARoot/EA2/EA2/EA183.htm", "5.png", "1338", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.2:15", "", "transfer", "EARoot/EA2/EA2/EA184.htm", "5.png", "1342", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.2:16", "", "user", "EARoot/EA2/EA2/EA185.htm", "5.png", "1009", "0", "", "Class");

@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("5.1.1.2:1", "", "cda_AssessmentType", "EARoot/EA5/EA1/EA1/EA2/EA2278.htm", "5.png", "9040", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.2:2", "", "cda_InjectingStatus", "EARoot/EA5/EA1/EA1/EA2/EA2279.htm", "5.png", "10864", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.2:3", "", "cda_Scale", "EARoot/EA5/EA1/EA1/EA2/EA2280.htm", "5.png", "9042", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.2:4", "", "cda_SubstanceAdministration", "EARoot/EA5/EA1/EA1/EA2/EA2281.htm", "5.png", "10863", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.2:5", "", "cda_AssessmentComponent", "EARoot/EA5/EA1/EA1/EA2/EA2282.htm", "5.png", "10842", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.2:6", "", "cda_carePlanAgreement", "EARoot/EA5/EA1/EA1/EA2/EA2283.htm", "5.png", "10096", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.2:7", "", "cda_CarePlanComponent", "EARoot/EA5/EA1/EA1/EA2/EA2284.htm", "5.png", "9242", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.2:8", "", "cda_CarePlanComponentInformationSet", "EARoot/EA5/EA1/EA1/EA2/EA2285.htm", "5.png", "10089", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.2:9", "", "cda_CarePlanComponentTextHeadingType", "EARoot/EA5/EA1/EA1/EA2/EA2286.htm", "5.png", "9252", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.2:10", "", "cda_CarePlanTextHeadingType", "EARoot/EA5/EA1/EA1/EA2/EA2287.htm", "5.png", "10125", "0", "", "Class");

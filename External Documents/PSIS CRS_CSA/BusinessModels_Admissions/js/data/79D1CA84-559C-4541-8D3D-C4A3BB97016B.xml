@@ -1,0 +1,16 @@
+tocTab[tocTab.length] = new Array("5.1.1.1:1", "", "Sample CD 1", "EARoot/EA5/EA1/EA1/EA1/EA281.htm", "175.png", "138", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("5.1.1.1:2", "", "sample_DomainDocument", "EARoot/EA5/EA1/EA1/EA1/EA289.htm", "5.png", "3880", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.1:3", "", "sample_DomainEncounter", "EARoot/EA5/EA1/EA1/EA1/EA290.htm", "5.png", "3879", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.1:4", "", "sample_GeneralText", "EARoot/EA5/EA1/EA1/EA1/EA291.htm", "5.png", "3871", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.1:5", "", "sample_PersonalInfoCREList", "EARoot/EA5/EA1/EA1/EA1/EA292.htm", "5.png", "3868", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.1:6", "", "sample_PersonalInfoTemplateList", "EARoot/EA5/EA1/EA1/EA1/EA293.htm", "5.png", "3872", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.1:7", "", "sample_PersonalInfoText", "EARoot/EA5/EA1/EA1/EA1/EA294.htm", "5.png", "3885", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.1:8", "", "sample_TriageCREList", "EARoot/EA5/EA1/EA1/EA1/EA295.htm", "5.png", "3878", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.1:9", "", "sample_TriageFindingsText", "EARoot/EA5/EA1/EA1/EA1/EA296.htm", "5.png", "3870", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.1:10", "", "sample_TriageHeading", "EARoot/EA5/EA1/EA1/EA1/EA297.htm", "5.png", "3884", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.1:11", "", "sample_TriageMeds", "EARoot/EA5/EA1/EA1/EA1/EA298.htm", "5.png", "3877", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.1:12", "", "sample_TriageMedsCREList", "EARoot/EA5/EA1/EA1/EA1/EA299.htm", "5.png", "3867", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.1:13", "", "sample_TriageMedsTemplateList", "EARoot/EA5/EA1/EA1/EA1/EA300.htm", "5.png", "3882", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.1:14", "", "sample_TriageTemplateList", "EARoot/EA5/EA1/EA1/EA1/EA301.htm", "5.png", "3866", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.1:15", "", "sample_TriageTemplateList2", "EARoot/EA5/EA1/EA1/EA1/EA302.htm", "5.png", "3881", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.1:16", "", "sample_TriageText", "EARoot/EA5/EA1/EA1/EA1/EA303.htm", "5.png", "3869", "0", "", "Class");

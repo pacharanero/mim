@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("4.2.5.8:1", "", "Substance Misuse", "EARoot/EA4/EA2/EA5/EA8/EA1518.htm", "177.png", "383", "0", "", "Object diagram");
+tocTab[tocTab.length] = new Array("4.2.5.8:2", "", "«NEW TEMPLATE» CPA: WIP_7.1_SubstanceMisuse", "EARoot/EA4/EA2/EA5/EA8/EA1520.htm", "25.png", "6417", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.8:3", "", "CPA: injectingStatus", "EARoot/EA4/EA2/EA5/EA8/EA1521.htm", "25.png", "6416", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.8:4", "", "CPA: problemSubstancesTemplateList", "EARoot/EA4/EA2/EA5/EA8/EA1522.htm", "25.png", "6415", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.8:5", "", "CPA: problemSubstancesInformation", "EARoot/EA4/EA2/EA5/EA8/EA1523.htm", "25.png", "6414", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.8:6", "", "CPA: substanceMisuseInformation", "EARoot/EA4/EA2/EA5/EA8/EA1524.htm", "25.png", "6413", "0", "", "Object");

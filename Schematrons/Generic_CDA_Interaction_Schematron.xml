@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.ascc.net/xml/schematron">
+	<title>NPfIT Schematron check for Interaction and messageType </title>
+	<ns prefix="hl7v3" uri="urn:hl7-org:v3"/>
+	<ns prefix="npfitlc" uri="NPFIT:HL7:Localisation"/>
+	<p>21.03.07 - Generic CDA Interaction Schematron for validating messageType to valid domain message model based on interaction element.</p>
+	<p>21.03.07 - Generic CDA Interaction Schematron for validating messageType to valid domain message model based on interaction element.</p>
+	<p>06.06.07- Updated the artifact Ids refelecting the change to interactions. Fixed error on the schematron xpath. Removed report sections in the rules</p>
+	<p>26.07.07- Updated the artifact Ids refelecting the change to interactions.</p>
+	<p>26.07.07- Updated the artifact Ids refelecting the change to interactions.</p>
+	<p>22.10.07- Changed namespace for messageType</p>
+	<p>18.03.08- Updated the interactions and message type for new domains</p>
+	<pattern name="Interaction and messageType validation">
+		<!-- Health space-->
+		<rule context="hl7v3:*[name(.)='POCD_IN140001UK05']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT140001UK05'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT140001UK05' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN140002UK05']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT130001UK05'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT130001UK05' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<!--Discharge Interaction -->
+		<rule context="hl7v3:*[name(.)='POCD_IN150001UK06']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT150001UK06'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT150001UK06' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN150002UK06']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT150001UK06'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT150001UK06' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN150003UK06']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT150001UK06'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT150001UK06' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN150004UK06']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT130001UK05'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT130001UK05' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<!-- ED Interaction-->
+		<rule context="hl7v3:*[name(.)='POCD_IN160001UK06']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT160001UK06'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT160001UK06' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN160002UK06']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT160001UK06'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT160001UK06' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN160003UK06']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT160001UK06'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT160001UK06' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN160004UK06']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT130001UK05'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT130001UK05' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<!--Outpatient Interaction -->
+		<rule context="hl7v3:*[name(.)='POCD_IN170001UK06']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT170001UK06'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT170001UK06' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN170002UK06']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT170001UK06'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT170001UK06' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN170003UK06']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT170001UK06'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT170001UK06' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN170004UK06']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT130001UK05'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT130001UK05' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<!-- Sealed envelopes-->
+		<rule context="hl7v3:*[name(.)='POCD_IN180001UK05']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT180001UK05'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT180001UK05' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN180002UK04']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT130001UK05'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT130001UK05' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN180003UK02']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT180002UK02'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT180002UK02' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN180004UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT130001UK05'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT130001UK05' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN180005UK02']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT180003UK02'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT180003UK02' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN180006UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT130001UK05'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT130001UK05' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<!-- Admissions -->
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN040001UK01') or starts-with(name(.),'POCD_IN040002UK01') or starts-with(name(.),'POCD_IN040003UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT040001UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT040001UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN040004UK01')]">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT130001UK05'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT130001UK05' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<!-- Ambulance -->
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN030001UK01') or starts-with(name(.),'POCD_IN030002UK01') or starts-with(name(.),'POCD_IN030003UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT030001UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT030001UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN030004UK01')]">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT130001UK05'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT130001UK05' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<!-- Diagnostic Imaging -->
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN050001UK01') or starts-with(name(.),'POCD_IN050002UK01') or starts-with(name(.),'POCD_IN050003UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT050001UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT050001UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN050004UK01')]">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT130001UK05'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT130001UK05' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<!-- HSC -->
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN010001UK01') or starts-with(name(.),'POCD_IN010012UK01') or starts-with(name(.),'POCD_IN010002UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT010001UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT010001UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN010003UK01') or starts-with(name(.),'POCD_IN010013UK01') or starts-with(name(.),'POCD_IN010004UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT010002UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT010002UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN010005UK01') or starts-with(name(.),'POCD_IN010014UK01') or starts-with(name(.),'POCD_IN010006UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT010003UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT010003UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN010007UK01') or starts-with(name(.),'POCD_IN010015UK01') or starts-with(name(.),'POCD_IN010008UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT010004UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT010004UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN010009UK01') or starts-with(name(.),'POCD_IN010016UK01') or starts-with(name(.),'POCD_IN010010UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT010005UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT010005UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN010011UK01')]">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT130001UK05'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT130001UK05' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<!-- Mental Health -->
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN060001UK01') or starts-with(name(.),'POCD_IN060002UK01') or starts-with(name(.),'POCD_IN060003UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT060001UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT060001UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN060004UK01') or starts-with(name(.),'POCD_IN060005UK01') or starts-with(name(.),'POCD_IN060006UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT060002UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT060002UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN060007UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT060003UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT060003UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN060008UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT060004UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT060004UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN060009UK01') or starts-with(name(.),'POCD_IN060010UK01') or starts-with(name(.),'POCD_IN060011UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT060001UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT060001UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN060012UK01') or starts-with(name(.),'POCD_IN060013UK01') or starts-with(name(.),'POCD_IN060014UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT060002UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT060002UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN060015UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT060003UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT060003UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN060016UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT060004UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT060004UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN060017UK01') or starts-with(name(.),'POCD_IN060018UK01') or starts-with(name(.),'POCD_IN060019UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT060001UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT060001UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN060020UK01') or starts-with(name(.),'POCD_IN060021UK01') or starts-with(name(.),'POCD_IN060022UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT060002UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT060002UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN060023UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT060003UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT060003UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[name(.)='POCD_IN060024UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT060004UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT060004UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN010025UK01')]">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT130001UK05'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT130001UK05' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<!-- NHS Direct -->
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN070001UK01') or starts-with(name(.),'POCD_IN070002UK01') or starts-with(name(.),'POCD_IN070003UK01']">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT070001UK01'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT070001UK01' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:*[starts-with(name(.),'POCD_IN070004UK01')]">
+			<assert test="descendant::npfitlc:messageType/@extension = 'POCD_MT130001UK05'">Error:descendant messageType extension is not matching domain message type, the value should be 'POCD_MT130001UK05' but is '<value-of select="descendant::npfitlc:messageType/@extension"/>'.</assert>
+		</rule>
+		<rule context="npfitlc:messageType">
+			<assert test="@root = '2.16.840.1.113883.2.1.3.2.4.18.17'">Error:descendant messageType root is not matching domain message type, the value should be '2.16.840.1.113883.2.1.3.2.4.18.17' but is '<value-of select="@root"/>'.</assert>
+		</rule>
+	</pattern>
+</schema>

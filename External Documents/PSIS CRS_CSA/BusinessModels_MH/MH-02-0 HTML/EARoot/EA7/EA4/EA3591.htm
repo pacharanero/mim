@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Patient Communications</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Patient Communications  (2.9) : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">19/12/2005 16:39:58</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">10/01/2008 10:06:32</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Bob Cox</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Approved</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{02AD0B15-6DD1-401a-82D7-59E485A29A19}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA2/EA3099.htm">IAM : 1. Patient Personal Details</a>, <a href="../EA3/EA1/EA3167.htm">CIM: MHA Assessment outside SS</a>, <a href="../EA3/EA2/EA3204.htm">CIM: MHA Assessment Update Non-SS</a>, <a href="../EA3/EA3/EA3225.htm">CIM: MH&SM-SS Entry</a>, <a href="../EA3/EA4/EA3272.htm">CIM: MH&SM-SS Update</a>, <a href="../EA3/EA5/EA3282.htm">CIM: MH&SM-SS Care Review Summary / CPA</a>, <a href="../EA3/EA6/EA3389.htm">CIM: MH&SM-SS Care Review Summary / MOC</a>, <a href="../EA3/EA7/EA3443.htm">CIM: MH&SM-SS Care Review / Unspecified</a>, <a href="../EA3/EA8/EA3520.htm">CIM: MH&SM-SS Exit</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Information&nbsp;<WBR>in&nbsp;<WBR>this&nbsp;<WBR>section&nbsp;<WBR>has&nbsp;<WBR>potentially&nbsp;<WBR>important&nbsp;<WBR>clinical&nbsp;<WBR>implications.&nbsp;<WBR>Often&nbsp;<WBR>patients&nbsp;<WBR>with&nbsp;<WBR>MH&nbsp;<WBR>problems&nbsp;<WBR>can&nbsp;<WBR>find&nbsp;<WBR>It&nbsp;<WBR>difficult&nbsp;<WBR>to&nbsp;<WBR>communicate&nbsp;<WBR>for&nbsp;<WBR>a&nbsp;<WBR>variety&nbsp;<WBR>of&nbsp;<WBR>reasons&nbsp;<WBR><br /><br />NB&nbsp;<WBR>the&nbsp;<WBR>main&nbsp;<WBR>language&nbsp;<WBR>used&nbsp;<WBR>by&nbsp;<WBR>the&nbsp;<WBR>patient&nbsp;<WBR>is&nbsp;<WBR>already&nbsp;<WBR>collected&nbsp;<WBR>within&nbsp;<WBR>PDS&nbsp;<WBR>-&nbsp;<WBR>this&nbsp;<WBR>item&nbsp;<WBR>adds&nbsp;<WBR>further&nbsp;<WBR>detail</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private </i><br /><strong>&nbsp;&nbsp;Other languages/forms of communication used</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 2.9.1<br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Describes&nbsp;<WBR>any&nbsp;<WBR>other&nbsp;<WBR>spoken&nbsp;<WBR>languages&nbsp;<WBR>or&nbsp;<WBR>formal&nbsp;<WBR>communication&nbsp;<WBR>languages&nbsp;<WBR>used&nbsp;<WBR>by&nbsp;<WBR>the&nbsp;<WBR>patient
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Representation Representation </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Coded&nbsp;<WBR>Value:&nbsp;<WBR>HL7&nbsp;<WBR>vocab&nbsp;<WBR>HumanLanguage<br />
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Representation Coded Value:  </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Coded&nbsp;<WBR>Value:&nbsp;<WBR>HL7&nbsp;<WBR>vocab&nbsp;<WBR>HumanLanguage<br />
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example English </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::English
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private </i><br /><strong>&nbsp;&nbsp;Communication & comprehension Supporting Information</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 2.9.2<br><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Identifies&nbsp;<WBR>any&nbsp;<WBR>perceived&nbsp;<WBR>support(s)&nbsp;<WBR>needed&nbsp;<WBR>relating&nbsp;<WBR>to&nbsp;<WBR>ability&nbsp;<WBR>to&nbsp;<WBR>communicate&nbsp;<WBR>e.g.&nbsp;<WBR>an&nbsp;<WBR>interpreter&nbsp;<WBR>for&nbsp;<WBR>British&nbsp;<WBR>Sign&nbsp;<WBR>Language&nbsp;<WBR>is&nbsp;<WBR>needed&nbsp;<WBR>&lt;br&nbsp;<WBR>/&gt;&lt;br&nbsp;<WBR>/&gt;(N.B.&nbsp;<WBR>this&nbsp;<WBR>is&nbsp;<WBR>not&nbsp;<WBR>coded&nbsp;<WBR>as&nbsp;<WBR>these&nbsp;<WBR>are&nbsp;<WBR>a&nbsp;<WBR>wide&nbsp;<WBR>range&nbsp;<WBR>of&nbsp;<WBR>observation&nbsp;<WBR>that&nbsp;<WBR>may&nbsp;<WBR>need&nbsp;<WBR>capturing)
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Representation Marked Up Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Marked&nbsp;<WBR>Up&nbsp;<WBR>Text
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example Tony has minor hearing difficulties and requires his reading glasses to see any printed matter.  </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Tony&nbsp;<WBR>has&nbsp;<WBR>minor&nbsp;<WBR>hearing&nbsp;<WBR>difficulties&nbsp;<WBR>and&nbsp;<WBR>requires&nbsp;<WBR>his&nbsp;<WBR>reading&nbsp;<WBR>glasses&nbsp;<WBR>to&nbsp;<WBR>see&nbsp;<WBR>any&nbsp;<WBR>printed&nbsp;<WBR>matter.&nbsp;<WBR><br /><br />A&nbsp;<WBR>Gaelic&nbsp;<WBR>interpreter&nbsp;<WBR>is&nbsp;<WBR>not&nbsp;<WBR>required
+		</td>
+	</td>
+</table> </td>
+			</tr>
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA3583.htm">Patient Personal Details</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">All&nbsp;<WBR>Messages</div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="15%" class="TableHeading">Type</td>
+					<td width="15%" class="TableHeading">Connection</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3583.htm">Patient Personal Details</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Weak</td>
+					<td width="40%" class="TableRow" valign="top">All Messages</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

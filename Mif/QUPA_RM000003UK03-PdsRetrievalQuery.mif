@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<staticModel isAbstract="false" isSerializable="true"
+    name="QUPA_RM000003UK03" packageKind="root"
+    representationKind="flat" title="QUPA_RM010000GB01"
+    xmlns="urn:hl7-org:v3/mif"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3/mif ../MifSchemas/mifStaticModelFlat.xsd">
+    <packageLocation artifact="RM-deprecated" domain="PA" id="000003"
+        name="QUPA_RM000003UK03" realm="UK" root="DEFN" section="HM"
+        subSection="QU" version="03"/>
+    <header>
+        <renderingInformation
+            application="NHS R-MIM Designer 2.99.KJ.00"
+            renderingTime="2007-02-05T14:56:43" schemaVersion="1"/>
+        <legalese copyrightOwner="NHS Connecting for Health"/>
+    </header>
+    <graphicRepresentation presentation="HL7">
+        <graphElement name="Main">
+            <position x="0.0" y="0.0"/>
+            <size height="4.381" width="7.199"/>
+        </graphElement>
+    </graphicRepresentation>
+    <derivationSupplier staticModelDerivationId="1">
+        <targetStaticModel artifact="RIM" realm="UV" root="DEFN" version="1"/>
+    </derivationSupplier>
+    <ownedEntryPoint className="Query" id="QUPA_RM000003UK03"
+        isAbstract="false" name="PdsRetrievalQuery">
+        <annotations>
+            <description>
+                <text>
+                    <p>A request for patient details from PDS.</p>
+                </text>
+            </description>
+            <otherAnnotation type="html">
+                <text/>
+            </otherAnnotation>
+        </annotations>
+        <graphicRepresentation>
+            <graphElement containerDiagramName="Main"
+                isHeightAutoSize="false" isWidthAutoSize="false"
+                nodeOrientation="Down" shapeId="QUPA_RM000003UK03">
+                <position x="2.348" y="0.028"/>
+                <size height="0.453" width="2.007"/>
+                <anchorage connectToShapeId="Sheet.1">
+                    <position x="3.352" y="0.481"/>
+                    <graphEdge>
+                        <anchor>
+                            <position x="3.352" y="1.752"/>
+                        </anchor>
+                    </graphEdge>
+                </anchorage>
+            </graphElement>
+        </graphicRepresentation>
+    </ownedEntryPoint>
+    <ownedClass>
+        <class isAbstract="false" name="Query">
+            <derivationSupplier className="QueryByParameter" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="false" isWidthAutoSize="false"
+                    shapeId="Sheet.1" shapeTemplate="OtherClass">
+                    <position x="2.76" y="1.751"/>
+                    <size height="1.23" width="1.435"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>A heading for providing information about the query, in this case, a request to find a Service User record on the PDS and retrieve data from it.</text>
+                </otherAnnotation>
+            </annotations>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Person.id">
+            <derivationSupplier className="ParameterItem" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.5" shapeTemplate="OtherClass">
+                    <position x="5.24" y="0.531"/>
+                    <size height="0.75" width="1.96"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>A heading for providing information about the person identifier parameter.</p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="value" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <div>In this context, the value element provides an identifier of the person that is to be searched for. This identifier will be one of:                                 <ul>
+                                    <li>NHS number;</li>
+                                    <li>Temporary NHS number issued by an NHAIS registration authority;</li>
+                                    <li>Old format NHS number.</li>
+                                </ul>
+                                <p>The Identifier External datatype flavour is used to carry this information as follows:-</p>
+                                <p>A NHS number is carried in the following way:</p>
+                                <ul>
+                                    <li>The root attribute will contain an OID with the value "2.16.840.1.113883.2.1.4.1";</li>
+                                    <li>The extension attribute will contain the NHS number itself.</li>
+                                </ul>
+                                <p>A Temporary NHS number issued by an NHAIS registration authority or an old format NHS number is carried in the following way:</p>
+                                <ul>
+                                    <li>The root attribute will contain an OID with the value "2.16.840.1.113883.2.1.3.2.4.3";</li>
+                                    <li>The extension attribute will contain the Temporary NHS number issued by an NHAIS registration authority or the old NHS number itself.</li>
+                                </ul>
+                            </div>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="value"
+                    className="ParameterItem" staticModelDerivationId="1"/>
+                <type name="II" typeSpecialisation="II.NPfIT.oid.mandatory"/>
+            </attribute>
+            <attribute conformance="R" defaultValue="Person.id"
+                fixedValue="Person.id" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="semanticsText" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <div>A literal text string identifying the parameter item.</div>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="semanticsText"
+                    className="ParameterItem" staticModelDerivationId="1"/>
+                <type name="ST"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="HistoricDataIndicator">
+            <derivationSupplier className="ParameterItem" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.9" shapeTemplate="OtherClass">
+                    <position x="4.376" y="3.62"/>
+                    <size height="0.75" width="2.522"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <div>A heading for providing information about the historicDataIndicator parameter. The historicDataIndicator parameter shall occur one time to indicate whether or not historic data relating to the retrievalItem parameters is required to be returned in the response to the query. <br/>
+                        </div>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="value" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>To provide the value of the parameter item (identified in the associated semanticsText element) to be searched.</p>
+                            <p>In this context, the value element provides a code to indicate whether or not historic data relating to the retrievalItem parameters is required to be returned in the response to the query.</p>
+                            <p>When set to "1", the history is returned for the following items:</p>
+                            <ul>
+                                <li>Name</li>
+                                <li>Address</li>
+                                <li>Telecom</li>
+                                <li>Relationship</li>
+                                <li>CareProvider</li>
+                                <li>SupersededIds (Effective To dates only)</li>
+                                <li>Alternative Identifier</li>
+                                <li>Back Office Location</li>
+                                <li>Paper Record Tracking</li>
+                                <li>NHAIS Posting</li>
+                                <li>Reason For Removal<br type="_moz"/>
+                                </li>
+                            </ul>
+                            <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                            <ul>
+                                <li>The <i>code</i> attribute will contain a value from the list of codes in the <u>HistoricDataIndicator</u> vocabulary;</li>
+                                <li>The <i>codeSystem</i> attribute will contain the OID referenced in the <u>HistoricDataIndicator</u> vocabulary.</li>
+                            </ul>
+                            <p>
+                                <b>NB: Where a PDS Retrieval Query message is part of a batch of PDS Retrieval Query messages, only value "0" (No history required) shall be used.</b>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="value"
+                    className="ParameterItem" staticModelDerivationId="1"/>
+                <type name="CV"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="HistoricDataIndicator"/>
+            </attribute>
+            <attribute conformance="R"
+                defaultValue="HistoricDataIndicator"
+                fixedValue="HistoricDataIndicator" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="semanticsText" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A literal text string identifying the parameter item.</text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="semanticsText"
+                    className="ParameterItem" staticModelDerivationId="1"/>
+                <type name="ST"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="RetrievalItem">
+            <derivationSupplier className="ParameterItem" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.13" shapeTemplate="OtherClass">
+                    <position x="0.009" y="2.331"/>
+                    <size height="0.75" width="1.381"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <b>A heading for providing information about the retrievalItem parameter.</b>
+                        </p>
+                        <p>The retrievalItem parameter shall occur zero, one or many times, each occurrence present identifying a data item / group of data items to be retrieved.</p>
+                        <p>Where no retrievalItem parameters are provided, just the Serial Change Number shall be retrieved.</p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="semanticsText" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>A literal text string identifying the item to be retrieved.</p>
+                            <p>The following literal text strings shall be used to identify the data items/groups of data that are to be retrieved:</p>
+                            <ol/>
+                            <ul>
+                                <li>"supercededId" (all previous or superceded nationally recognised identifiers);</li>
+                                <li>"person.nameUsual" (current usual name);</li>
+                                <li>"person.nameOther" (previous/alias/preferred names);</li>
+                                <li>"person.otherDemographics" (birth date/death date/status of death notification/sex/delivery time/birth order);</li>
+                                <li>"consent" (Consent to NHS Care Record sharing/date last changed);</li>
+                                <li>"person.confidentiality" (Sensitivity information status/previous NHS contact/Multiple Registrations);</li>
+                                <li>"callCentreData" (call centre call-back consent/shared secret);</li>
+                                <li>"person.addressTelecom" (usual addresses/temporary addresses/correspondence addresses/telecommunication contact details);</li>
+                                <li>"person.misc" (preferred language/interpreter required/preferred contact method/preferred contact times/preferred communication format/healthspace);</li>
+                                <li>"pharmacy" (all pharmacy details);</li>
+                                <li>"guardian" (all legal guardian details);</li>
+                                <li>"proxy" (all proxy details);</li>
+                                <li>"personalRelationship" (all family/close contacts details);</li>
+                                <li>"primaryCare" (primary care registration information);</li>
+                                <li>"person.fullDemographics" (supercededId, person.nameUsual, person.nameOther, person.otherDemographics, consent, person.confidentiality, person.reasonForRemoval, person.PlaceOfBirth);</li>
+                                <li>"person.allData" (person.fullDemographics, callCentreData, person.addressTelecom, person.misc, pharmacy, guardian, proxy, personalRelationship, primaryCare, bloodDonorPreferences, organDonorPreferences, alternativeIdentifiers);</li>
+                                <li>"nhaisPosting" (NHAIS Posting data)</li>
+                                <li>"person.reasonForRemoval" (Reason for Removal and Registering Authority);</li>
+                                <li>"person.placeOfBirth" (Place of Birth);</li>
+                                <li>"paperRecordTracking" (Details the location of the patients Paper Records);</li>
+                                <li>"primaryCareRegistration" (All patient care (Primary Care) details, Registration Encounter, Treatment Entitlement, Care Provider Payment, Blood Donor Preferences, Organ Donor Preferences, Paper Medical Record);</li>
+                                <li>"bloodDonorPreferences" (Blood donation preferences);</li>
+                                <li>"alternativeIdentifiers" (Alternative Identifiers);</li>
+                                <li>"organDonorPreferences" (Organ Donation Preferences);</li>
+                                <li>"person.primaryCareAllData" (person.fullDemographics, callCentreData, person.addressTelecom, person.misc, pharmacy, guardian, proxy, personalRelationship, primaryCareRegistration, alternativeIdentifiers, nhaisPosting, paperRecordTracking).</li>
+
+                                <li>"dataQuality" (All Data Quality details)<br type="_moz"/>
+                                </li>
+                            </ul>
+                            <ol/>
+                            <p>The following items can only be retrieved by NHAIS or GP Practices compliant with Spine release 2008-B:</p>
+                            <ul>
+                                <li>primaryCareRegistration</li>
+                                <li>person.primaryCareAllData</li>
+                                <li>paperRecordTracking</li>
+                            </ul>
+                            <p>The following items can only be retrieved by NHAIS</p>
+                            <ul>
+                                <li>nhaisPosting </li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="semanticsText"
+                    className="ParameterItem" staticModelDerivationId="1"/>
+                <type name="ST"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.5"
+                containerDiagramName="Main" shapeId="Sheet.17">
+                <position x="5.241" y="0.906"/>
+                <graphEdge>
+                    <waypoint x="4.718" y="0.906"/>
+                    <waypoint x="4.718" y="2.059"/>
+                    <anchor connectToShapeId="Sheet.1">
+                        <position x="4.195" y="2.059"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="person.id" participantClassName="Person.id">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A heading for providing information about the person.id parameter.</text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="source-Parameter-queryByParameter-QueryByParameter-parameter"
+                    className="ParameterItem" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Query">
+                <derivationSupplier associationEndName="target"
+                    className="QueryByParameter" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.9"
+                containerDiagramName="Main" shapeId="Sheet.27">
+                <position x="4.377" y="3.621"/>
+                <graphEdge>
+                    <waypoint x="4.377" y="3.301"/>
+                    <waypoint x="4.195" y="3.301"/>
+                    <anchor connectToShapeId="Sheet.1">
+                        <position x="4.195" y="2.981"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="historicDataIndicator" participantClassName="HistoricDataIndicator">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <div>A heading for providing information about the historicDataIndicator parameter. The historicDataIndicator parameter shall occur one time to indicate whether or not historic data relating to the retrievalItem parameters is required to be returned in the response to the query.</div>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="source-Parameter-queryByParameter-QueryByParameter-parameter"
+                    className="ParameterItem" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Query">
+                <derivationSupplier associationEndName="target"
+                    className="QueryByParameter" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.13"
+                containerDiagramName="Main" shapeId="Sheet.37">
+                <position x="1.39" y="2.519"/>
+                <graphEdge>
+                    <waypoint x="2.075" y="2.519"/>
+                    <waypoint x="2.075" y="2.674"/>
+                    <anchor connectToShapeId="Sheet.1">
+                        <position x="2.761" y="2.674"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="false"
+                maximumMultiplicity="*" minimumMultiplicity="0"
+                name="retrievalItem" participantClassName="RetrievalItem">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A heading for providing information about retrieval items.</text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="source-Parameter-queryByParameter-QueryByParameter-parameter"
+                    className="ParameterItem" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Query">
+                <derivationSupplier associationEndName="target"
+                    className="QueryByParameter" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+</staticModel>

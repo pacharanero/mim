@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<staticModel isAbstract="false" isSerializable="true"
+    name="COCT_RM000209UK01" packageKind="root"
+    representationKind="flat" xmlns="urn:hl7-org:v3/mif"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3/mif ../MifSchemas/mifStaticModelFlat.xsd">
+    <packageLocation artifact="RM-deprecated" domain="CT" id="000209"
+        name="COCT_RM000209UK01" realm="UK" root="DEFN" section="HM"
+        subSection="CO" version="01"/>
+    <header>
+        <renderingInformation
+            application="NHS R-MIM Designer 2.99.KJ.03"
+            renderingTime="2007-10-31T14:36:12" schemaVersion="1"/>
+        <legalese copyrightOwner="NHS Connecting for Health"/>
+    </header>
+    <graphicRepresentation presentation="HL7">
+        <graphElement name="Main">
+            <position x="0.0" y="0.0"/>
+            <size height="2.05168" width="10.56665"/>
+        </graphElement>
+    </graphicRepresentation>
+    <derivationSupplier staticModelDerivationId="1">
+        <targetStaticModel artifact="RIM" realm="UV" root="DEFN" version="1"/>
+    </derivationSupplier>
+    <ownedEntryPoint className="PartAdminGenderCode"
+        id="COCT_RM000209UK01" isAbstract="false" name="R_PartPersonGender">
+        <annotations>
+            <description>
+                <text>
+                    <p>CMET to allow notification</p>
+                    <p>times with gender information.</p>
+                </text>
+            </description>
+            <otherAnnotation type="html">
+                <text/>
+            </otherAnnotation>
+        </annotations>
+        <graphicRepresentation>
+            <graphElement containerDiagramName="Main"
+                isHeightAutoSize="false" isWidthAutoSize="false"
+                nodeOrientation="Down" shapeId="COCT_RM000209UK01">
+                <position x="4.77323" y="0.02778"/>
+                <size height="0.58611" width="1.59326"/>
+                <anchorage connectToShapeId="Sheet.1">
+                    <position x="5.56986" y="0.61389"/>
+                    <graphEdge>
+                        <anchor>
+                            <position x="5.56986" y="1.33569"/>
+                        </anchor>
+                    </graphEdge>
+                </anchorage>
+            </graphElement>
+        </graphicRepresentation>
+    </ownedEntryPoint>
+    <ownedClass>
+        <class isAbstract="false" name="PartAdminGenderCode">
+            <derivationSupplier className="Role" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.1" shapeTemplate="Role">
+                    <position x="4.66" y="1.33569"/>
+                    <size height="0.5" width="1.81972"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <b>
+                                <font face="times new roman,times" size="3">Parent class containing and linking to information about an entity which is a part of another entity. In this case, it is                            the adminGenderCode part of a person entity.</font>
+                            </b>
+                        </p>
+                        <div>
+                            <font face="times new roman,times" size="3">
+                                <font face="times new roman,times" size="3">
+                                    <font face="times new roman,times" size="3">
+                                    <font
+                                    face="times new roman,times" size="3">
+                                    <font
+                                    face="times new roman,times" size="3">
+                                    <font
+                                    face="times new roman,times" size="3">
+                                    <b>
+                                    <i> If used in an update-to-PDS message (e.g. General Update Request): </i>
+                                    </b>
+                                    </font>
+                                    </font>
+                                    </font>
+                                    </font>
+                                </font>
+                            </font>
+                        </div>
+                        <font face="times new roman,times" size="3">
+                            <font face="times new roman,times" size="3">
+                                <font face="times new roman,times" size="3">
+                                    <font face="times new roman,times" size="3">
+                                    <font
+                                    face="times new roman,times" size="3">
+                                    <font
+                                    face="times new roman,times" size="3"/>
+                                    </font>
+                                    </font>
+                                </font>
+                            </font>
+                        </font>
+                        <font face="times new roman,times" size="3">
+                            <font face="times new roman,times" size="3">
+                                <font face="times new roman,times" size="3">
+                                    <font face="times new roman,times" size="3">
+                                    <font
+                                    face="times new roman,times" size="3">
+                                    <font
+                                    face="times new roman,times" size="3"/>
+                                    </font>
+                                    </font>
+                                </font>
+                            </font>
+                        </font>
+                        <div>
+                            <font face="times new roman,times" size="3">
+                                <font face="times new roman,times" size="3">
+                                    <font face="times new roman,times" size="3">
+                                    <font
+                                    face="times new roman,times" size="3">
+                                    <font
+                                    face="times new roman,times" size="3">
+                                    <font
+                                    face="times new roman,times" size="3">
+                                    <b>
+                                    <font
+                                    face="times new roman,times" size="3">
+                                    <font
+                                    face="Times New Roman" size="3">
+                                    <font
+                                    face="Times New Roman" size="3">In order to control the update semantics, in addition to the attributes below, the following will also be present:</font>
+                                    </font>
+                                    <font
+                                    face="Times New Roman" size="3">
+                                    <ul>
+                                    <li>
+
+                                    <font
+                                    face="Times New Roman" size="3">An <i>updateMode</i> attribute to indicate whether the item should be "added" or "altered" (mandatory). This item cannot be removed via messaging.</font>
+                                    </li>
+                                    </ul>
+                                    <div>
+                                    <i>If used in a notification message:</i>
+                                    </div>
+                                    <div>
+                                    <b>In addition to the attributes below, in order to specify the type of update that has occurred, the following will also be present: </b>
+                                    <ul>
+                                    <li>
+                                    <b> An <i>updateMode</i> attribute to indicate whether the item has been "added", "altered", or is "unchanged"</b>
+                                    <b> (mandatory)</b>
+                                    </li>
+                                    </ul>
+                                    </div>
+                                    </font>
+                                    </font>
+                                    </b>
+                                    </font>
+                                    </font>
+                                    </font>
+                                    </font>
+                                </font>
+                            </font>
+                        </div>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="PART"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Indicates that this a Part role.</p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Role" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PART"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Person">
+            <derivationSupplier className="Person" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.11" shapeTemplate="Entity">
+                    <position x="7.86746" y="0.74945"/>
+                    <size height="0.75" width="2.68919"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>Parent class linking to and  containing information about a patient which is specific to the person.</b>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="PSN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Indicates that this a person entity.</p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Person" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PSN"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="INSTANCE"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="determinerCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Indicates that this Entity represents a distinct single instance.</p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="determinerCode"
+                    className="Person" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="INSTANCE"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="administrativeGenderCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <div contenteditable="false" style="height: 100%; width: 100%">
+                                <div>
+                                    <p>The administrative gender of the person.</p>
+                                    <p>The Coded Only datatype flavour is used to carry this information as follows:</p>
+                                    <ul>
+                                    <li>The <i>code </i>attribute will contain a value from the list of codes in the <u>Sex</u> vocabulary.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    attributeName="administrativeGenderCode"
+                    className="Person" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="Sex"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="NotificationTime">
+            <derivationSupplier className="Observation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="false"
+                    shapeId="Sheet.15" shapeTemplate="Act">
+                    <position x="0.01" y="1.26057"/>
+                    <size height="0.78112" width="3.01227"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>A notification time - the time at which the information was notified to the NHS.</b>
+                        <br/>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="OBS"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Indicates that this is an observation. </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="OBS"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="EVN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="moodCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Indicates that this is an event.</p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="EVN"/>
+            </attribute>
+            <attribute conformance="R" defaultValue="45" fixedValue="45"
+                isMandatory="true" maximumMultiplicity="1"
+                minimumMultiplicity="1" name="code" sortKey="4">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <div contenteditable="false" style="height: 100%; width: 100%">
+                                <p>Indicates the type of observation.                                  </p>
+                                <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                                <ul>
+                                    <li>The <em>code</em> attribute will contain the fixed value shown.                       </li>
+                                    <li>The <em>codeSystem</em> attribute will contain the OID for the vocabulary.                      </li>
+                                </ul>
+                            </div>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CV"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="DemographicObservationType"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="value" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>The date on which a change to the service user's gender was notified to the NHS.</p>
+                            <p>This is a full date without time. </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="value"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="TS"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Subject">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Right" shapeId="Sheet.19"
+                    shapeTemplate="Participation" textWrappingWidth="66.0">
+                    <position x="3.02227" y="1.53636"/>
+                    <size height="0.30278" width="1.63773"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p/>
+                        <p>
+                            <b>A heading for the subject relationship, linking to notification time.</b>
+                        </p>
+                        <p>
+                            <b>This link is currently mandatory in all messages where the CMET is used.</b>
+                        </p>
+                        <p/>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="SBJ"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <div class="D39E54A0-6821-11DB-8293-F2D7A3FC57D0">Indicates that this a Subject participation.</div>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SBJ"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.11"
+                containerDiagramName="Main" shapeId="Sheet.1">
+                <position x="6.47972" y="1.83569"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.11">
+                        <position x="7.86746" y="1.12445"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="partPerson" participantClassName="Person">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A link to the part-person entity containing this information.<br/>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="player"
+                    className="PartAdminGenderCode" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="PartAdminGenderCode">
+                <derivationSupplier associationEndName="playedRole"
+                    className="Person" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.15"
+                containerDiagramName="Main" shapeId="Sheet.19">
+                <position x="3.02227" y="1.68775"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.15">
+                        <position x="3.02227" y="1.68775"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="notificationTime" participantClassName="NotificationTime">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A link to details of the notification time.<br/>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="act"
+                    className="Subject" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Subject">
+                <derivationSupplier associationEndName="participation"
+                    className="NotificationTime" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.1"
+                containerDiagramName="Main" shapeId="Sheet.19">
+                <position x="4.66" y="1.68775"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.1">
+                        <position x="4.66" y="1.68775"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="subjectOf" participantClassName="Subject">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="PartAdminGenderCode" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="PartAdminGenderCode">
+                <derivationSupplier associationEndName="role"
+                    className="Subject" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+</staticModel>

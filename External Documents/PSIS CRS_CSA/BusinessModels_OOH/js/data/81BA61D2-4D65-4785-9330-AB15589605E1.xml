@@ -1,0 +1,16 @@
+tocTab[tocTab.length] = new Array("2.2:1", "", "Requirements", "EARoot/EA2/EA2/EA52.htm", "188.png", "93", "0", "", "Custom diagram");
+tocTab[tocTab.length] = new Array("2.2:2", "", "«Functional» Give user option to send or not send documents to GP", "EARoot/EA2/EA2/EA54.htm", "19.png", "1230", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.2:3", "", "«Functional» Allow user to create and send documents to PSIS", "EARoot/EA2/EA2/EA55.htm", "19.png", "1224", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.2:4", "", "«Functional» Allow user to create LR", "EARoot/EA2/EA2/EA56.htm", "19.png", "1219", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.2:5", "", "«Functional» Allow user to identifty patient using PDS", "EARoot/EA2/EA2/EA57.htm", "19.png", "1216", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.2:6", "", "«Functional» Allow user to query PSIS", "EARoot/EA2/EA2/EA58.htm", "19.png", "1222", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.2:7", "", "«Functional» Allow user to read patient information on PDS", "EARoot/EA2/EA2/EA59.htm", "19.png", "1217", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.2:8", "", "«Functional» Allow user to replace or nullify documents on PSIS", "EARoot/EA2/EA2/EA60.htm", "19.png", "1225", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.2:9", "", "«Functional» Allow user to send sealed documents to PSIS", "EARoot/EA2/EA2/EA61.htm", "19.png", "1226", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.2:10", "", "«Functional» Allow user to update patient information on PDS", "EARoot/EA2/EA2/EA62.htm", "19.png", "1218", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.2:11", "", "«Functional» Allow user to use existing LR", "EARoot/EA2/EA2/EA63.htm", "19.png", "1220", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.2:12", "", "«Functional» Allow user to view documents in PSIS", "EARoot/EA2/EA2/EA64.htm", "19.png", "1223", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.2:13", "", "«Functional» Authenticate user using RBAC", "EARoot/EA2/EA2/EA65.htm", "19.png", "1221", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.2:14", "", "«Functional» Give user option to send or not send documents to PSIS", "EARoot/EA2/EA2/EA66.htm", "19.png", "1227", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.2:15", "", "«Functional» Smartcard Authentication", "EARoot/EA2/EA2/EA71.htm", "19.png", "1215", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.2:16", "", "«Functional» System must use SDS to identify recipient systems", "EARoot/EA2/EA2/EA72.htm", "19.png", "1228", "0", "", "Requirement");

@@ -1,0 +1,17 @@
+tocTab[tocTab.length] = new Array("4.1.1.2:1", "", "MH&SM-SS Update", "EARoot/EA4/EA1/EA1/EA2/EA274.htm", "175.png", "239", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("4.1.1.2:2", "", "MH&SM-SSUpdateDocument", "EARoot/EA4/EA1/EA1/EA2/EA276.htm", "5.png", "4485", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1.2:3", "", "MH&SM-SSUpdateEncounter", "EARoot/EA4/EA1/EA1/EA2/EA277.htm", "5.png", "4486", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1.2.1", "1", "Patient Personal Details", "EARoot/EA4/EA1/EA1/EA2/EA278.htm", "4.png", "", "", "{F2CF1430-1C59-4e54-AF09-DA7E65A8E09E}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.2.2", "1", "Referal First Contact Triage and  Entry", "EARoot/EA4/EA1/EA1/EA2/EA281.htm", "4.png", "", "", "{2F9906E9-E4BF-40bd-B7B2-792837BCDDFC}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.2.3", "1", "Current Contact status & Location Details", "EARoot/EA4/EA1/EA1/EA2/EA283.htm", "4.png", "", "", "{F7DD5CDF-AEBF-490d-AD51-328BD5A60269}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.2.4", "1", "Dependants", "EARoot/EA4/EA1/EA1/EA2/EA285.htm", "4.png", "", "", "{9C5243B9-33D1-4d2c-A853-91CE23A9A742}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.2.5", "1", "Care Teams or organisations involved in care delivery", "EARoot/EA4/EA1/EA1/EA2/EA287.htm", "4.png", "", "", "{DC6FB341-ABD1-4563-8474-C869DF4190FA}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.2.6", "1", "Person with a connection to the care of this patient", "EARoot/EA4/EA1/EA1/EA2/EA288.htm", "4.png", "", "", "{647E9CE9-A7D2-44b7-9A6F-1B0278DD1AB6}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.2.7", "1", "Care Process and Review", "EARoot/EA4/EA1/EA1/EA2/EA291.htm", "4.png", "", "", "{E9FBEDF7-0065-49e0-A8FB-2A456CE629D2}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.2.8", "1", "Diagnosis", "EARoot/EA4/EA1/EA1/EA2/EA292.htm", "4.png", "", "", "{FDE1FE9D-A587-43a2-AE70-2B3D9C27B91A}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.2.9", "1", "Substance Misuse ", "EARoot/EA4/EA1/EA1/EA2/EA295.htm", "4.png", "", "", "{CCD97A8F-E2EE-4d7b-9A8A-718E7B160CA3}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.2.10", "1", "Legal Activities ", "EARoot/EA4/EA1/EA1/EA2/EA297.htm", "4.png", "", "", "{C496D2A1-F40B-45d8-BDF7-5F5255E89600}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.2.11", "1", "MH&SM-SSCarePlan", "EARoot/EA4/EA1/EA1/EA2/EA298.htm", "4.png", "", "", "{4E2064F2-103C-4b82-9A94-3DFBDF5D44ED}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.2.12", "1", "MH Risk Assessment", "EARoot/EA4/EA1/EA1/EA2/EA300.htm", "4.png", "", "", "{08C5979D-3BC2-400e-A110-F0C32E7DDC3D}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.2.13", "1", " Outcome / Measure / Assessment Information", "EARoot/EA4/EA1/EA1/EA2/EA301.htm", "4.png", "", "", "{5A8FB07D-6101-4016-897A-5986AD7B972E}", "Package");
+tocTab[tocTab.length] = new Array("4.1.1.2.14", "1", "Additional Information", "EARoot/EA4/EA1/EA1/EA2/EA303.htm", "4.png", "", "", "{65D8672E-AC0D-4c0c-816D-7AE049704174}", "Package");

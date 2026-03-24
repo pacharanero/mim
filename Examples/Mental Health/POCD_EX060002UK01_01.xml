@@ -1,0 +1,2605 @@
+<?xml version="1.0" encoding="UTF-8"?><!--This example message is provided for illustrative purposes only. It has had no clinical validation. Whilst every effort has been taken to ensure that the examples are consistent with the message specification contained within the MiM, where there are conflicts with the written message specification or schema, the specification or schema shall be considered to take precedence-->
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:npfitlc="NPFIT:HL7:Localisation" xsi:schemaLocation="urn:hl7-org:v3 ../../schemas/POCD_MT000001UK04.xsd" classCode="DOCCLIN" moodCode="EVN">
+	<typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+	<npfitlc:messageType root="2.16.840.1.113883.2.1.3.2.4.18.17" extension="POCD_MT060001UK01"/>
+	<id root="3B14F24D-275E-490F-BBAB-61D531BD9809"/>
+	<code code="313041000000105" codeSystem="2.16.840.1.113883.2.1.3.2.4.15"/>
+	<title>Mental Health and Substance Misuse Specialist Services Care Programme Approach Review Summary</title>
+	<effectiveTime value="200403031030"/>
+	<confidentialityCode code="V" codeSystem="2.16.840.1.113883.5.25" displayName="very restricted"/>
+	<setId root="5443D403-4C36-4B48-AFA4-B3DE9029D485"/>
+	<versionNumber value="1"/>
+	<recordTarget contextControlCode="OP" typeCode="RCT">
+		<npfitlc:contentId extension="COCD_TP145026UK02#PatientRole" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<patientRole classCode="PAT">
+			<templateId extension="COCD_TP145026UK02#PatientRole" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<id root="2.16.840.1.113883.2.1.4.1" extension="1234567890"/>
+			<patient classCode="PSN" determinerCode="INSTANCE">
+				<templateId extension="COCD_TP145026UK02#patientPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				<languageCommunication>
+					<templateId extension="COCD_TP145026UK02#languageCommunication" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+					<languageCode code="ga"/>
+				</languageCommunication>
+			</patient>
+		</patientRole>
+	</recordTarget>
+	<author typeCode="AUT" contextControlCode="OP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145001UK03#AssignedAuthorSDS"/>
+		<functionCode code="OA" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.178" displayName="Originating Author"/>
+		<time value="200608271807"/>
+		<assignedAuthor classCode="ASSIGNED">
+			<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145001UK03#AssignedAuthorSDS"/>
+			<id root="1.2.826.0.1285.0.2.0.65" extension="102016291980"/>
+			<id root="1.2.826.0.1285.0.2.0.67" extension="102016293987"/>
+			<code code="R8001" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" displayName="Community Mental Health Nurse"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145001UK03#assignedPerson"/>
+				<name>
+					<given>Louise</given>
+					<family>Volkers</family>
+				</name>
+			</assignedPerson>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP145001UK03#representedOrganization"/>
+				<id root="2.16.840.1.113883.2.1.3.2.4.19.2" extension="RFN"/>
+				<name>Hebburn Mental Health Trust</name>
+			</representedOrganization>
+		</assignedAuthor>
+	</author>
+	<custodian typeCode="CST">
+		<npfitlc:contentId extension="COCD_TP145018UK03#AssignedCustodian" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<assignedCustodian classCode="ASSIGNED">
+			<templateId extension="COCD_TP145018UK03#AssignedCustodian" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+				<templateId extension="COCD_TP145018UK03#representedCustodianOrganization" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				<id extension="RFN" root="2.16.840.1.113883.2.1.3.2.4.19.1"/>
+				<name>Hebburn Mental Health Trust</name>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<informationRecipient typeCode="PRCP">
+		<npfitlc:contentId extension="COCD_TP145017UK03#IntendedRecipient" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<intendedRecipient classCode="ASSIGNED">
+			<templateId extension="COCD_TP145017UK03#IntendedRecipient" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<receivedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<templateId extension="COCD_TP145017UK03#representedOrganization" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				<id extension="YEA" root="2.16.840.1.113883.2.1.3.2.4.19.1"/>
+				<name>NATIONAL CARE RECORDS SERVICE SPINE</name>
+			</receivedOrganization>
+		</intendedRecipient>
+	</informationRecipient>
+	<informationRecipient typeCode="PRCP">
+		<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP145021UK04#AssignedEntitySDS"/>
+		<intendedRecipient classCode="ASSIGNED">
+			<templateId extension="COCD_TP145021UK04#AssignedEntitySDS" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<npfitlc:recipientRoleCode code="R8014" codeSystemName="2.16.840.1.113883.2.1.3.2.4.17.196" displayName="Social Worker"/>
+			<id root="1.2.826.0.1285.0.2.0.67" extension="102016317988"/>
+			<id root="1.2.826.0.1285.0.2.0.65" extension="102016314983"/>
+			<informationRecipient classCode="PSN" determinerCode="INSTANCE">
+				<templateId extension="COCD_TP145021UK04#assignedPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				<name>
+					<given>Norma</given>
+					<family>Bennison</family>
+				</name>
+			</informationRecipient>
+		</intendedRecipient>
+	</informationRecipient>
+	<componentOf typeCode="COMP">
+		<npfitlc:contentId extension="COCD_TP146060UK01#EncompassingEncounter" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+		<encompassingEncounter classCode="ENC" moodCode="EVN">
+			<templateId extension="COCD_TP146060UK01#EncompassingEncounter" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+			<id root="713D0235-0894-453A-807F-4A1E88E5967E"/>
+			<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="TBA"/>
+			<effectiveTime>
+				<center value="20040303"/>
+			</effectiveTime>
+			<dischargeDispositionCode nullFlavor="NA"/>
+			<location typeCode="LOC">
+				<templateId extension="COCD_TP146060UK01#location" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+				<npfitlc:contentId extension="COCD_TP145024UK01#HealthCareFacility" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+				<healthCareFacility classCode="SDLOC">
+					<templateId extension="COCD_TP145024UK01#HealthCareFacility" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+					<id nullFlavor="NA"/>
+					<code code="51563005" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Free-standing mental health clinic"/>
+				</healthCareFacility>
+			</location>
+		</encompassingEncounter>
+	</componentOf>
+	<component contextConductionInd="true" typeCode="COMP">
+		<structuredBody classCode="DOCBODY" moodCode="EVN">
+			<component contextConductionInd="true" typeCode="COMP">
+				<section classCode="DOCSECT" moodCode="EVN">
+					<id root="2E796AEE-FD6C-4E56-813C-DCC9F2095A64"/><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146074UK02#Accommodation" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation moodCode="EVN" classCode="OBS">
+							<templateId extension="COCD_TP146074UK02#Accommodation" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="A4029801-B8F0-47A7-AC29-DAA5C6498B43"/>
+							<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Squatting">
+								<originalText>
+									<reference value="#a1"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<center value="200403031030"/>
+							</effectiveTime>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146004UK04#SocialOrPersonalCircumstance" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId extension="COCD_TP146004UK04#SocialOrPersonalCircumstance" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="500227AF-231A-4061-B944-4FD5F1ADB044"/>
+							<code code="315237009" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="White Irish">
+								<originalText>
+									<reference value="#a2"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<center value="200403031030"/>
+							</effectiveTime>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146004UK04#SocialOrPersonalCircumstance" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId extension="COCD_TP146004UK04#SocialOrPersonalCircumstance" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="7C075DE9-C0EF-4A12-A691-9AA57CABE20E"/>
+							<code code="276120001" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Roman Catholicism">
+								<originalText>
+									<reference value="#a3"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<center value="200403031030"/>
+							</effectiveTime>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146073UK02#Employment" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation moodCode="EVN" classCode="OBS">
+							<templateId extension="COCD_TP146073UK02#Employment" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="76362EE5-71EC-4F8F-B31A-3023924A4D49"/>
+							<code code="73438004" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Unemployed">
+								<originalText>
+									<reference value="#a4"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<center value="200403031030"/>
+							</effectiveTime>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146001UK04#LifeStyle" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId extension="COCD_TP146001UK04#LifeStyle" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="A5F0CEE8-BD59-41D9-8713-6224F279BA01"/>
+							<code code="365459005" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Education currently received">
+								<originalText>
+									<reference value="#a5"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<center value="200403031030"/>
+							</effectiveTime>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146098UK01#OtherEntityAssociatedWithPatient" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId extension="COCD_TP146098UK01#OtherEntityAssociatedWithPatient" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="74783B53-B2DD-4D21-B856-B0D56F16FA53"/>
+							<code code="OEAWP" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Other Entity Associated With Patient">
+								<originalText>
+									<reference value="#b1"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime value="20040303"/>
+							<participant contextControlCode="OP" typeCode="SBJ">
+								<templateId extension="COCD_TP146098UK01#subject" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<npfitlc:contentId extension="COCD_TP145007UK03#RelatedEntity" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+								<participantRole classCode="PRS">
+									<templateId extension="COCD_TP145007UK03#RelatedEntity" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<code code="12" codeSystem="2.16.840.1.113883.2.1.3.2.4.16.45" displayName="Mother"/>
+									<playingEntity classCode="PSN" determinerCode="INSTANCE">
+										<templateId extension="COCD_TP145007UK03#relationshipHolder" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<name>
+											<family>Mahon</family>
+											<given>Margaret</given>
+										</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146098UK01#OtherEntityAssociatedWithPatient" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId extension="COCD_TP146098UK01#OtherEntityAssociatedWithPatient" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="84783B53-B2DD-4E21-B856-B0D56F16FA53"/>
+							<code code="OEAWP" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Other Entity Associated With Patient">
+								<originalText>
+									<reference value="#b2"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime value="20040303"/>
+							<participant contextControlCode="OP" typeCode="SBJ">
+								<templateId extension="COCD_TP146098UK01#subject" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<npfitlc:contentId extension="COCD_TP145007UK03#RelatedEntity" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+								<participantRole classCode="PRS">
+									<templateId extension="COCD_TP145007UK03#RelatedEntity" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<code code="15" codeSystem="2.16.840.1.113883.2.1.3.2.4.16.45" displayName="Brother"/>
+									<playingEntity classCode="PSN" determinerCode="INSTANCE">
+										<templateId extension="COCD_TP145007UK03#relationshipHolder" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<name>
+											<family>Andrew</family>
+											<given>Margaret</given>
+										</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146098UK01#OtherEntityAssociatedWithPatient" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId extension="COCD_TP146098UK01#OtherEntityAssociatedWithPatient" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="74783B53-B2DD-4E21-B856-B0D56F16FA63"/>
+							<code code="OEAWP" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Other Entity Associated With Patient">
+								<originalText>
+									<reference value="#b3"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime value="20040303"/>
+							<participant contextControlCode="OP" typeCode="SBJ">
+								<templateId extension="COCD_TP146098UK01#subject" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<npfitlc:contentId extension="COCD_TP145005UK03#ParticipantRole" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+								<participantRole classCode="ASSIGNED">
+									<templateId extension="COCD_TP145005UK03#ParticipantRole" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id nullFlavor="NA"/>
+									<code code="NR1979" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.186" displayName="Professional completing the Service Assessment"/>
+									<addr nullFlavor="NA"/>
+									<playingEntity classCode="PSN" determinerCode="INSTANCE">
+										<templateId extension="COCD_TP145005UK03#assignedPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<name>
+											<family>Dreda</family>
+											<given>Ogriffey</given>
+										</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146098UK01#OtherEntityAssociatedWithPatient" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId extension="COCD_TP146098UK01#OtherEntityAssociatedWithPatient" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="74783B53-B2DD-4E21-B856-B0D56F16FA53"/>
+							<code code="OEAWP" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Other Entity Associated With Patient">
+								<originalText>
+									<reference value="#b4"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime value="20040303"/>
+							<participant contextControlCode="OP" typeCode="SBJ">
+								<templateId extension="COCD_TP146098UK01#subject" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<npfitlc:contentId extension="COCD_TP145005UK03#ParticipantRole" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+								<participantRole classCode="ASSIGNED">
+									<templateId extension="COCD_TP145005UK03#ParticipantRole" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id nullFlavor="NA"/>
+									<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.186" displayName="Other"/>
+									<addr nullFlavor="NA"/>
+									<playingEntity classCode="PSN" determinerCode="INSTANCE">
+										<templateId extension="COCD_TP145005UK03#assignedPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<name>
+											<family>Andrew</family>
+											<given>Smith</given>
+										</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146098UK01#OtherEntityAssociatedWithPatient" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId extension="COCD_TP146098UK01#OtherEntityAssociatedWithPatient" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="9B33D007-7F06-43A3-8E53-8098E5CA9325"/>
+							<code code="OEAWP" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Other Entity Associated With Patient">
+								<originalText>
+									<reference value="#b5"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime value="20040303"/>
+							<participant contextControlCode="OP" typeCode="SBJ">
+								<templateId extension="COCD_TP146098UK01#subject" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<npfitlc:contentId extension="COCD_TP145004UK03#AssignedEntitySDS" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+								<participantRole classCode="ASSIGNED">
+									<templateId extension="COCD_TP145004UK03#AssignedEntitySDS" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="1.2.826.0.1285.0.2.0.65" extension="102016314983"/>
+									<id root="1.2.826.0.1285.0.2.0.67" extension="102018588980"/>
+									<code code="R8014" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.196" displayName="Social Worker"/>
+									<playingEntity classCode="PSN" determinerCode="INSTANCE">
+										<templateId extension="COCD_TP145004UK03#assignedPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<name>
+											<given>Norma</given>
+											<family>Bennison</family>
+										</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146098UK01#OtherEntityAssociatedWithPatient" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId extension="COCD_TP146098UK01#OtherEntityAssociatedWithPatient" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="74783B53-B2DD-4E21-A856-B0D56F16FA53"/>
+							<code code="OEAWP" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Other Entity Associated With Patient">
+								<originalText>
+									<reference value="#b6"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime value="20040303"/>
+							<participant contextControlCode="OP" typeCode="SBJ">
+								<templateId extension="COCD_TP146098UK01#subject" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<npfitlc:contentId extension="COCD_TP145005UK03#ParticipantRole" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+								<participantRole classCode="ASSIGNED">
+									<templateId extension="COCD_TP145005UK03#ParticipantRole" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id nullFlavor="NA"/>
+									<code code="NR1992" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.186" displayName="Doctor making MHA Recommendation 1"/>
+									<addr nullFlavor="NA"/>
+									<playingEntity classCode="PSN" determinerCode="INSTANCE">
+										<templateId extension="COCD_TP145005UK03#assignedPerson" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<name>
+											<family>Stuart</family>
+											<given>Crompton</given>
+										</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146096UK02#CareProcessAdministration" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId extension="COCD_TP146096UK02#CareProcessAdministration" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="6B44F403-D12A-4E54-9910-64A0A6A01C97"/>
+							<code code="CPAD" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Care Process Administration">
+								<originalText>
+									<reference value="#t1"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<center value="20040303"/>
+							</effectiveTime>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146096UK02#entryRelationship" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146096UK02#dateCommencedOrFirstReview" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="A6BFB059-EDA0-4EE5-B0F9-92E500F46784"/>
+									<code code="CPDCFR" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Care Process Date Commenced or First Review">
+										<originalText>
+											<reference value="#t2"/>
+										</originalText>
+									</code>
+									<effectiveTime value="20040101"/>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146096UK02#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146096UK02#dateConcludedOrMostRecentReview" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="49B4EC6A-D43E-45C2-AF02-154C2BB36D3D"/>
+									<code code="CPDCMRR" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Care Process Date Concluded or Most Recent Review">
+										<originalText>
+											<reference value="#t5"/>
+										</originalText>
+									</code>
+									<effectiveTime value="20060612"/>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146096UK02#entryRelationship2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146096UK02#careLevelApproach" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="00797CE2-0A48-4EE2-BA61-F5B4B8398157"/>
+									<code code="E" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.238" displayName="Enhanced">
+										<originalText>
+											<reference value="#t3"/>
+										</originalText>
+									</code>
+									<effectiveTime value="20040303"/>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146096UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146096UK02#careProcessType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="E033920D-2E16-4EF8-A84B-71F7241F561F"/>
+									<code code="C" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.237" displayName="CPA">
+										<originalText>
+											<reference value="#t4"/>
+										</originalText>
+									</code>
+									<effectiveTime value="20040303"/>
+								</observation>
+							</entryRelationship>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146011UK04#Diagnosis" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId extension="COCD_TP146011UK04#Diagnosis" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="1C5ADD4F-0B24-4B37-BA08-EBDF85C16E7A"/>
+							<code code="231496004" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Hypomania">
+								<originalText>
+									<reference value="#i1"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<center value="20040212"/>
+							</effectiveTime>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146091UK02#SubstanceMisuse" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId extension="COCD_TP146091UK02#SubstanceMisuse" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="7F6FC0D5-D4F3-4D46-A594-C24429AFDFF1"/>
+							<code code="361055000" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Substance Misuser">
+								<originalText>
+									<reference value="#e1"/>
+								</originalText>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<center value="20040303"/>
+							</effectiveTime>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146091UK02#entryRelationship" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<sequenceNumber value="1"/>
+								<seperatableInd value="false"/>
+								<substanceAdministration classCode="SBADM" moodCode="EVN">
+									<templateId extension="COCD_TP146091UK02#substanceAdministration" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="A2394C76-B9D5-407B-88BE-3CC614743273"/>
+									<code code="225426007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration of theraputic substance"/>
+									<effectiveTime xsi:type="IVL_TS">
+										<center value="20040303"/>
+									</effectiveTime>
+									<consumable typeCode="CSM">
+										<templateId extension="COCD_TP146091UK02#consumable" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<manufacturedProduct classCode="MANU">
+											<templateId extension="COCD_TP146091UK02#manufacturedProduct" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+												<templateId extension="COCD_TP146091UK02#manufacturedMaterial" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+												<code code="53041004" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Alcohol"/>
+											</manufacturedMaterial>
+										</manufacturedProduct>
+									</consumable>
+								</substanceAdministration>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146091UK02#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146091UK02#injectingStatus" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="84BAC064-3B2F-4B62-BA21-17D59F36FB8C"/>
+									<code code="NI" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.233" displayName="Never Injected">
+										<originalText>
+											<reference value="#e2"/>
+										</originalText>
+									</code>
+									<effectiveTime>
+										<center value="20040303"/>
+									</effectiveTime>
+								</observation>
+							</entryRelationship>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146075UK02#CarePlan" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<act classCode="PCPR" moodCode="INT">
+							<templateId extension="COCD_TP146075UK02#CarePlan" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="560BD2E8-766C-428B-BFCB-C3494A2132CD"/>
+							<code code="xxx" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Care Plan"/>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<center value="20040303"/>
+							</effectiveTime>
+							<participant contextControlCode="OP" typeCode="RESP">
+								<templateId extension="COCD_TP146075UK02#responsibleParty" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<npfitlc:contentId extension="COCD_TP145012UK03#ParticipantRole" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+								<time value="20040303"/>
+								<participantRole classCode="ROL">
+									<templateId extension="COCD_TP145012UK03#ParticipantRole" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<scopingEntity classCode="ORG" determinerCode="INSTANCE">
+										<templateId extension="COCD_TP145012UK03#scopingOrganizationSDS" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<id extension="RFN" root="2.16.840.1.113883.2.1.3.2.4.19.1"/>
+										<desc>Hebburn Mental Health Trust</desc>
+									</scopingEntity>
+								</participantRole>
+							</participant>
+							<entryRelationship typeCode="COMP">
+								<templateId extension="COCD_TP146075UK02#entryRelationship7" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<npfitlc:contentId extension="COCD_TP146076UK02#CarePlanComponent" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+								<act classCode="PCPR" moodCode="EVN">
+									<templateId extension="COCD_TP146076UK02#CarePlanComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="28572E86-0BCD-45E4-8256-CE028697044D"/>
+									<code code="CPC" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.221" displayName="Care Plan Component"/>
+									<entryRelationship contextConductionInd="true" inversionInd="true" typeCode="SUBJ">
+										<templateId extension="COCD_TP146076UK02#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<seperatableInd value="false"/>
+										<observation classCode="OBS" moodCode="INT">
+											<templateId extension="COCD_TP146076UK02#nextComponentReview" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="NCR" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Next Component Review">
+												<originalText>
+													<reference value="#c18"/>
+												</originalText>
+											</code>
+											<effectiveTime value="20040901"/>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="I" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Individual Issue (Description of Issue for Individual)">
+												<originalText>
+													<reference value="#c1"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="G" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Individuals Goal / Aims">
+												<originalText>
+													<reference value="#c2"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="G" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Individuals Goal / Aims">
+												<originalText>
+													<reference value="#c3"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="A" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Action / Intervention">
+												<originalText>
+													<reference value="#c4"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="A" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Action / Intervention">
+												<originalText>
+													<reference value="#c5"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="A" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Action / Intervention">
+												<originalText>
+													<reference value="#c6"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="A" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Action / Intervention">
+												<originalText>
+													<reference value="#c7"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="A" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Action / Intervention">
+												<originalText>
+													<reference value="#c8"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="A" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Action / Intervention">
+												<originalText>
+													<reference value="#c9"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="A" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Action / Intervention">
+												<originalText>
+													<reference value="#c10"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="A" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Action / Intervention">
+												<originalText>
+													<reference value="#c11"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="A" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Action / Intervention">
+												<originalText>
+													<reference value="#c12"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="S" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Schedule">
+												<originalText>
+													<reference value="#c13"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="S" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Schedule">
+												<originalText>
+													<reference value="#c14"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="S" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Schedule">
+												<originalText>
+													<reference value="#c15"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="S" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Schedule">
+												<originalText>
+													<reference value="#c16"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="S" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Schedule">
+												<originalText>
+													<reference value="#c17"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="R" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Responsibility">
+												<originalText>
+													<reference value="#c19"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+								</act>
+							</entryRelationship>
+							<entryRelationship typeCode="COMP">
+								<templateId extension="COCD_TP146075UK02#entryRelationship7" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<npfitlc:contentId extension="COCD_TP146076UK02#CarePlanComponent" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+								<act classCode="PCPR" moodCode="EVN">
+									<templateId extension="COCD_TP146076UK02#CarePlanComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="7A7A5B5E-B588-4DB1-A006-D7EF28573EC2"/>
+									<code code="CPC" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.221" displayName="Care Plan Component"/>
+									<entryRelationship contextConductionInd="true" inversionInd="true" typeCode="SUBJ">
+										<templateId extension="COCD_TP146076UK02#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<seperatableInd value="false"/>
+										<observation classCode="OBS" moodCode="INT">
+											<templateId extension="COCD_TP146076UK02#nextComponentReview" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="NCR" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Next Component Review">
+												<originalText>
+													<reference value="#d4"/>
+												</originalText>
+											</code>
+											<effectiveTime value="20040901"/>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="I" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Individual Issue (Description of Issue for Individual)">
+												<originalText>
+													<reference value="#d1"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="G" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Individuals Goal / Aims">
+												<originalText>
+													<reference value="#d2"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146076UK02#entryRelationship3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146076UK02#componentTextHeadingType" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="CTHT" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Component Text Heading Type"/>
+											<value xsi:type="CV.NPfIT.CDA.Url" code="A" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.224" displayName="Action / Intervention">
+												<originalText>
+													<reference value="#d3"/>
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>
+								</act>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146075UK02#entryRelationship8" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146075UK02#copyProvidedFlag" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<code code="CPF" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.220" displayName="Copy Provided Flag"/>
+									<value xsi:type="BL" value="true"/>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146100UK01#Assessment" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId extension="COCD_TP146100UK01#Assessment" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="2DAC4438-B46F-4A90-BB2A-5790E311EFD1"/>
+							<code code="225338004" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Risk assessment"/>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<center value="20060910"/>
+							</effectiveTime>
+							<participant contextControlCode="OP" typeCode="DEV">
+								<templateId extension="COCD_TP146100UK01#participant" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<npfitlc:contentId extension="COCD_TP145010UK03#ParticipantRole" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+								<participantRole classCode="ROL">
+									<templateId extension="COCD_TP145010UK03#ParticipantRole" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="TBA"/>
+									<playingDevice classCode="DEV" determinerCode="INSTANCE">
+										<templateId extension="COCD_TP145010UK03#playingDevice" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<manufacturerModelName>Core Face</manufacturerModelName>
+									</playingDevice>
+								</participantRole>
+							</participant>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF153D6-C962-4889-B413-D335366F9462"/>
+									<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Suicide">
+										<originalText>
+											<reference value="#f1"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">Low</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF153D6-C962-4889-B413-D335366F9462"/>
+									<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Self harm">
+										<originalText>
+											<reference value="#f2"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">Low</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF153D6-C962-4889-B413-D335366F9462"/>
+									<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Accident">
+										<originalText>
+											<reference value="#f3"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">Medium</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF153D6-C962-4889-B413-D335366F9462"/>
+									<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Self neglect">
+										<originalText>
+											<reference value="#f4"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">High</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF153D6-C962-4889-B413-D335366F9462"/>
+									<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Vulnerability">
+										<originalText>
+											<reference value="#f5"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">Medium</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF153D6-C962-4889-B413-D335366F9462"/>
+									<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Violence to adults">
+										<originalText>
+											<reference value="#f6"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">Medium</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF153D6-C962-4889-B413-D335366F9462"/>
+									<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Aggression to adults">
+										<originalText>
+											<reference value="#f7"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">High</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF153D6-C962-4889-B413-D335366F9462"/>
+									<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Abuse of adults">
+										<originalText>
+											<reference value="#f8"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">Medium</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF153D6-C962-4889-B413-D335366F9462"/>
+									<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Neglect of adults">
+										<originalText>
+											<reference value="#f9"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">Medium</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="false" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship5" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<npfitlc:contentId extension="COCD_TP147003UK03#AlcoholIntakeRef" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP147003UK03#AlcoholIntakeRef" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="773C42BA-5ED6-40F1-878D-58CFE3986EAC"/>
+									<code nullFlavor="NA"/>
+								</observation>
+							</entryRelationship>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146100UK01#Assessment" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId extension="COCD_TP146100UK01#Assessment" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="2DAC4438-C46F-4A90-BB2A-5790E311EFD1"/>
+							<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="HCR-20 Assessment"/>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<center value="20060910"/>
+							</effectiveTime>
+							<participant contextControlCode="OP" typeCode="DEV">
+								<templateId extension="COCD_TP146100UK01#participant" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<npfitlc:contentId extension="COCD_TP145010UK03#ParticipantRole" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+								<participantRole classCode="ROL">
+									<templateId extension="COCD_TP145010UK03#ParticipantRole" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="TBA"/>
+									<playingDevice classCode="DEV" determinerCode="INSTANCE">
+										<templateId extension="COCD_TP145010UK03#playingDevice" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<manufacturerModelName>Core Face</manufacturerModelName>
+									</playingDevice>
+								</participantRole>
+							</participant>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF153D6-C962-4889-B413-D335366F9462"/>
+									<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="H1 - Previous Violence">
+										<originalText>
+											<reference value="#g1"/>
+										</originalText>
+									</code>
+									<value xsi:type="CV" code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="1"/>
+									<entryRelationship contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146100UK01#entryRelationship6" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<seperatableInd value="false"/>
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId extension="COCD_TP146100UK01#scale" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="HCR-20 Scale"/>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entryRelationship>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146003UK04#AlcoholIntake" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId extension="COCD_TP146003UK04#AlcoholIntake" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="773C42BA-5ED6-40F1-878D-58CFE3986EAC"/>
+							<code code="160573003" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Alcohol intake"/>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<center value="20040303"/>
+							</effectiveTime>
+							<value xsi:type="PQ" unit="1" value="20"/>
+						</observation>
+					</entry><!--Here are the coded entries-->
+					<entry contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146100UK01#Assessment" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId extension="COCD_TP146100UK01#Assessment" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="2DAC4438-C46F-4A90-BB2A-5790E311EFD2"/>
+							<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="HoNOS Assessment"/>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<center value="20060910"/>
+							</effectiveTime>
+							<participant contextControlCode="OP" typeCode="DEV">
+								<templateId extension="COCD_TP146100UK01#participant" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<npfitlc:contentId extension="COCD_TP145010UK03#ParticipantRole" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+								<participantRole classCode="ROL">
+									<templateId extension="COCD_TP145010UK03#ParticipantRole" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<code code="TBA" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="TBA"/>
+									<playingDevice classCode="DEV" determinerCode="INSTANCE">
+										<templateId extension="COCD_TP145010UK03#playingDevice" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<manufacturerModelName>Core Face</manufacturerModelName>
+									</playingDevice>
+								</participantRole>
+							</participant>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF153D6-C962-4889-B413-D335366F9462"/>
+									<code code="281115007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Health of the Nation Outcome Scale item 1 - aggressive/distruptive behaviour">
+										<originalText>
+											<reference value="#h1"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">3 - moderately severe problem</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF153D6-C962-4889-B413-D335366F9462"/>
+									<code code="281116008" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Health of the Nation Outcome Scale item 2 - non-accidental self injury">
+										<originalText>
+											<reference value="#h2"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">1 - minor problem requiring no action</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF153D6-C962-4889-B313-D335366F9462"/>
+									<code code="281117004" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Health of the Nation Outcome Scale item 3 - alcohol/drug problem">
+										<originalText>
+											<reference value="#h3"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">4 - severe to very severe problem</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF153D6-C962-4889-B213-D335366F9462"/>
+									<code code="281118009" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Health of the Nation Outcome Scale item 4 - cognitive problems">
+										<originalText>
+											<reference value="#h4"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">3 - moderately severe problem</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF153D6-C962-4889-B113-D335366F9462"/>
+									<code code="281119001" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Health of the Nation Outcome Scale item 5 - physical illness/disability.">
+										<originalText>
+											<reference value="#h5"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">1 - minor problem requiring no action</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF163D6-C962-4889-B143-D335366F9462"/>
+									<code code="281120007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Health of the Nation Outcome Scale item 6 - hallucinations/delusions.">
+										<originalText>
+											<reference value="#h6"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">2 - mild problem but definitely present</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DBF163D6-C962-4889-B143-D335366F9462"/>
+									<code code="281121006" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Health of the Nation Outcome Scale item 7 - depressed mood.">
+										<originalText>
+											<reference value="#h7"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">2 - mild problem but definitely present</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAE163D6-C962-4889-B143-D335366F9462"/>
+									<code code="281122004" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Health of the Nation Outcome Scale item 8 - other mental/behavioural problems.">
+										<originalText>
+											<reference value="#h8"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">1 - minor problem requiring no action</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF183D6-C962-4889-B143-D335366F9462"/>
+									<code code="281125002" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Health of the Nation Outcome Scale item 11 - living conditions.">
+										<originalText>
+											<reference value="#h9"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">3 - moderately severe problem</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#assessmentComponent" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DAF183D6-C962-4889-B143-D345366F9462"/>
+									<code code="281126001" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Health of the Nation Outcome Scale item 12 - occupation/activities.">
+										<originalText>
+											<reference value="#h10"/>
+										</originalText>
+									</code>
+									<value xsi:type="ST">2 - mild problem but definitely present</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146100UK01#entryRelationship2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<seperatableInd value="false"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="COCD_TP146100UK01#scale" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<code code="273513009" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Health of the Nation Outcome Scale (generic version)"/>
+								</observation>
+							</entryRelationship>
+						</observation>
+					</entry>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="B08A9FFB-21C2-4B1E-97E1-DBE24B93EA0F"/>
+							<title>Personal Details</title>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="72C9176E-5843-4C63-B921-9AE120CB1538"/>
+									<title>Aliases or Other Names</title>
+									<text>Tony often uses a nickname 'Maca'.</text>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="8749D27E-401C-480F-A26D-8F0110C97B35"/>
+									<title>Communication and Comprehension</title>
+									<text>Tony needs his hearing aid to hear clearly - a visit from an Audiologist has provided Tony with a new rechargeable hearing aid - although he does still need support to ensure he keeps it recharged and cleaned. Native Language Irish.</text>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="E4369FE7-A023-4DEA-9C9C-BF0EE90AAAA0"/>
+									<title>Marital or Partnership Status</title>
+									<text>Formally Separated.</text>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="75F5B2D3-7D99-4006-A2B6-615242CCDFB2"/>
+									<title>Housing</title>
+									<text>
+										<content ID="a1">Squatting.</content>Living in a Communal Setting: This is a squat that Tony shares with 5 other people. The Squat has recently been served with an eviction order and Tony will not be able to return to this address
+									</text>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="88732AB4-36B8-473D-BD0F-E306AB7618FE"/>
+											<title>Property Access Information</title>
+											<text>The Squat is not accessible and its residents use barricades to prevent anyone getting in to evict them.</text>
+										</section>
+									</component>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="C3EB1407-2A09-48A3-9BC7-FD3FFA5C39B7"/>
+									<title>Ethnicity, Religion, Philosophy &amp; Culture</title>
+									<text>Tony has expressed a wish to attend the Church of the Virgin Mary, Uptown some Sunday mornings. Ethnicity:
+										<content ID="a2">White Irish.</content>
+										<br/>Religion Philosophy:
+										<content ID="a3">Roman Catholic Church.</content>
+									</text>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="7C11812D-5580-4038-9B27-E0DBF94099D7"/>
+									<title>Education, Training, Employment and Financial Status</title>
+									<text>Tony has recently been attending a local IT beginner’s course having expressed an interest in learning about computers.</text>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="398DA8E1-F31D-4C20-BBFD-E9BC0D5F5178"/>
+											<title>Current Education</title>
+											<text>
+												<content ID="a5">Undertaking Part-time Education.</content>
+											</text>
+										</section>
+									</component>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="105810E6-B0EF-4EBF-BCF5-A15C4855B4EE"/>
+											<title>Employment and Training Status</title>
+											<text>
+												<content ID="a4">Unemployed.</content>
+											</text>
+										</section>
+									</component>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="3E7DBF90-5F07-476B-B078-C7CF6881B71E"/>
+											<title>Financial Status</title>
+											<text>Before admission to Hospital Tony was in receipt of Jobseekers Allowance, he has since been in receipt of Incapacity Benefit 02/04/2004 – ongoing.</text>
+										</section>
+									</component>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="70373C50-4C19-4278-BE8C-E3DD011A20CB"/>
+							<title>Referral, First Contact, Triage and Entry</title>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="A751C801-DB45-4980-A4F1-1402CB8A424C"/>
+									<title>Referral / First Contact</title>
+									<text>Referral Date: 01/01/2004</text>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="D3820278-1684-4792-9B56-05F9276AA6E3"/>
+											<title>Reason for Referral / First Contact</title>
+											<text>Tony was expressing some grandiose ideas about who he is that lead staff at the hostel to become concerned for him. He can be aggressive and personally invasive, however he had not been observed being physically violent.</text>
+										</section>
+									</component>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="F1C14663-B622-4A5F-B5D7-8F8D65437FAB"/>
+									<title>Triage Decision</title>
+									<text>Date Recorded: 01/01/2004. URGENT. The referral indicates that it is important that Tony is seen urgently.</text>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DF811B98-F7E1-4115-89BD-EB62617A3097"/>
+									<title>Specialist Service Assessment</title>
+									<text>Date of Entry: 01/01/2004</text>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="EF5EFD81-A9F6-476A-A373-D167AAA0AE42"/>
+											<title>Presenting Problems</title>
+											<text>Tony was expressing grandiose ideas and was aggressive and invasive.</text>
+										</section>
+									</component>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="982AFBED-A990-4F64-ACEA-F5C95096092C"/>
+											<title>Outcome of Specialist Service Assessment</title>
+											<text>Tony's symptoms indicate hypomania.</text>
+										</section>
+									</component>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="982AFBED-A980-4F64-ACEA-F5C95096092C"/>
+									<title>Entry to MH&amp;SM Specialist Services</title>
+									<text>Entry Date: 01/01/2004</text>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="982AFBED-A980-4F64-ACEA-F5C95096192C"/>
+											<title>Specialist Services Entry Decision Summary</title>
+											<text>The decision was taken to admit Tony for assessment and treatment</text>
+										</section>
+									</component>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="06826119-48FF-498F-A0AF-3D981BD39A64"/>
+							<title>Current Contact Status &amp; Location Details</title>
+							<text>
+								<table>
+									<tbody>
+										<tr>
+											<td>Status:</td>
+											<td>Inpatient (Detained subject to MHA)</td>
+										</tr>
+										<tr>
+											<td>Contact Details:</td>
+											<td>Uptown Mental Health Trust.</td>
+										</tr>
+										<tr>
+											<td>Phone:</td>
+											<td>0111 0111111</td>
+										</tr>
+									</tbody>
+								</table>
+							</text>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="C9EDB388-C702-4632-908A-16714A10E501"/>
+									<title>Further Details or Concerns Relating to Current Contact Status</title>
+									<text>This is Tony's new address for the period of his detention.</text>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="62840822-6CCF-4FFE-9036-7CE50E069A8E"/>
+							<title>Care Teams or Organisations Involved in Care Delivery</title>
+							<text/>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="618D5DA9-05BD-4952-96F3-D5BD72CABC3C"/>
+									<title>Main Care Team</title>
+									<text>Date when the first entry for this team was recorded = 04/05/2004.</text>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="C396F1F6-28D5-4914-8409-831529ADF6AA"/>
+											<title>Involvement in Patient Care or Support</title>
+											<text>Adult Mental Health Inpatient Unit</text>
+										</section>
+									</component>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="51742C40-9A70-4280-B10C-584FA2BCADA4"/>
+											<title>Identifiers Used In Other Organisations</title>
+											<text>National Insurance No = AA 01 01 01A</text>
+										</section>
+									</component>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="A95019C2-A1CD-4D88-BB18-FF489B58B4E2"/>
+									<title>Additional Care Team</title>
+									<text>Date when the first entry for this team was recorded = 03/03/2004</text>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="CAEB3FF1-B8D2-4C08-87A2-FA1AD51173D6"/>
+											<title>Involvement in Patient Care or Support</title>
+											<text>Uptown Mental Health Trust Occupational Therapy Team - assisting Tony in some of his domestic and socialising activities.</text>
+										</section>
+									</component>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="6B558F0C-850F-441F-919A-2DC288DCFBD7"/>
+							<title>Persons with a Connection to the Care of Patient</title>
+							<text>
+								<table>
+									<tbody>
+										<tr>
+											<td>Name:</td>
+											<td>
+												<content ID="b1" styleCode="Bold">Mrs Margaret Mahon</content>
+											</td>
+										</tr>
+										<tr>
+											<td>Address:</td>
+											<td>14 Arcacia Avenue
+												<br/>Leeds
+												<br/>LS1 1AA
+											</td>
+										</tr>
+										<tr>
+											<td>Tel:</td>
+											<td>0113 000 000</td>
+										</tr>
+										<tr>
+											<td>Relative:</td>
+											<td>Tony's Mother - Margaret undertook the role of Nearest Relative when he was sectioned.
+												<br/>Carer ID: 98765432
+											</td>
+										</tr>
+										<tr>
+											<td>Role:</td>
+											<td>MHA Nearest Relative - Tony's Mother.
+												<br/>Last assessment conducted on 09/02/2004.
+											</td>
+										</tr>
+										<tr>
+											<td>Date added:</td>
+											<td>03/03/2004</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<table>
+									<tbody>
+										<tr>
+											<td>Name:</td>
+											<td>
+												<content ID="b2" styleCode="Bold">Mr Andrew Mahon</content>
+											</td>
+										</tr>
+										<tr>
+											<td>Address:</td>
+											<td>27 Arcacia Avenue
+												<br/>Leeds
+												<br/>LS1 1AA
+											</td>
+										</tr>
+										<tr>
+											<td>Tel:</td>
+											<td>0113 000 000</td>
+										</tr>
+										<tr>
+											<td>Relative:</td>
+											<td>Andrew is Tony's Older Brother and provides all the support for his financial and legal affairs and will advocate on his behalf for all activities where advocacy may be required.
+												<br/>Carer ID: 23456789
+											</td>
+										</tr>
+										<tr>
+											<td>Role:</td>
+											<td>Person Holding a Power of Attornay.</td>
+										</tr>
+										<tr>
+											<td>Date added:</td>
+											<td>05/02/2004</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<table>
+									<tbody>
+										<tr>
+											<td>Name:</td>
+											<td>
+												<content ID="b3" styleCode="Bold">Dreda Ogriffey</content>
+											</td>
+										</tr>
+										<tr>
+											<td>Role:</td>
+											<td>Professional completing the Service Assessment.</td>
+										</tr>
+										<tr>
+											<td>Date added:</td>
+											<td>10/02/2004</td>
+										</tr>
+										<tr>
+											<td>Date ended:</td>
+											<td>10/02/2004</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<table>
+									<tbody>
+										<tr>
+											<td>Name:</td>
+											<td>
+												<content ID="b4" styleCode="Bold">Mr Andrew Smith.</content>
+											</td>
+										</tr>
+										<tr>
+											<td>Address:</td>
+											<td>Shelter Hostel
+												<br/>Jones Street
+												<br/>Leeds
+												<br/>LS1 1AA
+											</td>
+										</tr>
+										<tr>
+											<td>Tel:</td>
+											<td>0113 000 000,</td>
+										</tr>
+										<tr>
+											<td>Role:</td>
+											<td>Andrew Smith is the Hostel Manager for Shelter. He has a good relationship with Tony and is able to get through to him sometimes when he is otherwise difficult to engage with.</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<table>
+									<tbody>
+										<tr>
+											<td>Name:</td>
+											<td>
+												<content ID="b5" styleCode="Bold">Norma Bennison</content>
+											</td>
+										</tr>
+										<tr>
+											<td>Role:</td>
+											<td>Care Coordinator/Lead Professional/Primary Key Worker at Uptown Social Services</td>
+										</tr>
+										<tr>
+											<td>Date added:</td>
+											<td>03/03/2004</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/>
+								<table>
+									<tbody>
+										<tr>
+											<td>Name:</td>
+											<td>
+												<content ID="b6" styleCode="Bold">Stuart Crompton</content>
+											</td>
+										</tr>
+										<tr>
+											<td>Role:</td>
+											<td>Doctor Making MHA Recommendation.</td>
+										</tr>
+										<tr>
+											<td>Date added:</td>
+											<td>03/03/2004</td>
+										</tr>
+										<tr>
+											<td>Effective to:</td>
+											<td>03/03/2004</td>
+										</tr>
+									</tbody>
+								</table>
+							</text>
+						</section>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="E81F60EB-1025-4CDC-9845-BAE097D885E2"/>
+							<title>Care Process and Review</title>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="3772E635-592F-4354-BBEE-B1294A26B394"/>
+									<title>Care Process Administration</title>
+									<text>
+										<content ID="t1"/>
+										<table>
+											<tbody>
+												<tr>
+													<td>Date of Review:</td>
+													<td>
+														<content ID="t2">01/01/2004</content>
+													</td>
+												</tr>
+												<tr>
+													<td>Care Level Approach:</td>
+													<td>
+														<content ID="t3">Enhanced</content>
+													</td>
+												</tr>
+												<tr>
+													<td>Care Process Type:</td>
+													<td>
+														<content ID="t4">CPA</content>
+													</td>
+												</tr>
+												<tr>
+													<td>Last Review or date Concluded:</td>
+													<td>
+														<content ID="t5">10/09/2006</content>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="3772E535-592F-4354-BBEE-B1294A26B394"/>
+									<title>Care Review Administration</title>
+									<text>
+										<table>
+											<tbody>
+												<tr>
+													<td>Review Status:</td>
+													<td>Third Review</td>
+												</tr>
+												<tr>
+													<td>Date of Review:</td>
+													<td>12/06/2004</td>
+												</tr>
+												<tr>
+													<td>Date of Next Review:</td>
+													<td>01/09/2004</td>
+												</tr>
+												<tr>
+													<td>Last Review or date Concluded:</td>
+													<td>12/06/2006</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="E1FA7D6E-2549-4D2D-9E07-B60D5D94C9B3"/>
+											<title>Agreement of HSCPs / Carers to Review and Conclusions</title>
+											<text>All the participants agreed to the conclusions of the review and its outcomes</text>
+										</section>
+									</component>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="9586E992-0A51-4E37-B337-4278924A3BEE"/>
+											<title>Summary of Review Outcomes</title>
+											<text>The following aspects of care are detailed in the care components section of this review:
+												<list listType="ordered">
+													<item>Medication management</item>
+													<item>Accommodation difficulties</item>
+													<item>Lack of structure to day / meaningful occupation</item>
+													<item>Financial difficulties</item>
+													<item>Treatment and monitoring of bipolar disorder</item>
+													<item>Management of drug and alcohol misuse</item>
+												</list>
+											</text>
+										</section>
+									</component>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="2E3DCEA2-C683-424E-878A-1ED70B045B38"/>
+											<title>Patient / Service User Involvement in Review</title>
+											<text>Date Summary Provided: 13/06/2004</text>
+											<component contextConductionInd="true" typeCode="COMP">
+												<templateId extension="COCD_TP146061UK01#component3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+												<section classCode="DOCSECT" moodCode="EVN">
+													<templateId extension="COCD_TP146061UK01#section4" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+													<id root="90F819E6-5019-498D-94A4-CBC2141D8E75"/>
+													<title>Patients Involvement In The Review</title>
+													<text>Tony declined to attend the review, however I was able to see him the same day in the evening.</text>
+												</section>
+											</component>
+											<component contextConductionInd="true" typeCode="COMP">
+												<templateId extension="COCD_TP146061UK01#component3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+												<section classCode="DOCSECT" moodCode="EVN">
+													<templateId extension="COCD_TP146061UK01#section4" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+													<id root="3C884A04-4376-4A57-A241-5153DE02FE49"/>
+													<title>Patient / Service User Agreement to Review</title>
+													<text>Tony accepted the new care plan and said he was particularly looking forward to the social worker helping him to find somewhere better to live for when he is discharged.</text>
+												</section>
+											</component>
+											<component contextConductionInd="true" typeCode="COMP">
+												<templateId extension="COCD_TP146061UK01#component3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+												<section classCode="DOCSECT" moodCode="EVN">
+													<templateId extension="COCD_TP146061UK01#section4" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+													<id root="9FB880D6-4187-4979-9BE4-8E854EE2FCD4"/>
+													<title>Location of Signed Paper Copy of Agreement</title>
+													<text>Ward Office in patient paper record.</text>
+												</section>
+											</component>
+											<component contextConductionInd="true" typeCode="COMP">
+												<templateId extension="COCD_TP146061UK01#component3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+												<section classCode="DOCSECT" moodCode="EVN">
+													<templateId extension="COCD_TP146061UK01#section4" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+													<id root="E38E1AC7-6573-46BC-9928-8F2E13812AB9"/>
+													<title>Means used to provide a Summary Copy of the review for the Patient / Service User</title>
+													<text>Paper copy.</text>
+												</section>
+											</component>
+										</section>
+									</component>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="504BE75F-7060-4318-92AE-CCEC1F1F3436"/>
+							<title>Diagnosis</title>
+							<text>
+								<content ID="i1">Hypomania diagnosed</content>on 12/2/2004.
+								<br/>ICD-10: F30
+							</text>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="A33E9C0F-D1C0-4DED-9A1B-D9EF0E62256A"/>
+									<title>Registered Disability / Other Condition(s)</title>
+									<text>Tony has a hearing problem for which he has seen an Audiologist and has been fitted with appropriate new hearing aids.</text>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="1017B0EE-F4DA-4828-9E31-AC579277D6A6"/>
+											<title>Care Treatment Support Required</title>
+											<text>Suggest Tony attend a hearing clinic to determine the exact cause of his hearing problem as well as further care required.</text>
+										</section>
+									</component>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="E5B77433-7135-40EB-AD9E-D24733775C14"/>
+							<title>Substance Misuse Information</title>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="C037BD91-8CCF-45AB-80F7-8A60BBAEE1FA"/>
+									<title>Problem Substances Information</title>
+									<text>
+										<content ID="e1">Primary Substance: Alcohol.</content>
+										<br/>Age of first use = 12.
+										<br/>Taken Orally
+									</text>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="B2088816-CC36-4834-93E2-6CE9699AEC38"/>
+									<title>Injecting Status</title>
+									<text>
+										<content ID="e2">Never Injected</content>
+									</text>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="E5C78433-7135-40EB-AD9E-D24733775C14"/>
+							<title>Legal Activities</title>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="C037BD91-8CCF-45AB-80F7-8A60BBAEE1FA"/>
+									<title>Mental Health Act Assessment</title>
+									<text>
+										<table>
+											<tbody>
+												<tr>
+													<td>Date Assessment Completed:</td>
+													<td>01/01/2004</td>
+												</tr>
+												<tr>
+													<td>Care Setting:</td>
+													<td>Patient's Home</td>
+												</tr>
+												<tr>
+													<td>Papers logged with:</td>
+													<td>MHA Department HEBBURN MENTAL HEALTH TRUST CAMPBELL PARK ROAD TYNE &amp; WEAR NE31 2SP on 01/01/2004 at 11:30.</td>
+												</tr>
+												<tr>
+													<td>End of the period where papers authorised for enacting a section may be served:</td>
+													<td>14/01/2004</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="26457AD4-FC80-4BC4-944E-D2B5F60F89FC"/>
+											<title>Reason for MHA Assessment</title>
+											<text>Following some bizarre comments and expressions by Tony the drop-in centre manager called the local Social Services Department who instigated this MHA Assessment.</text>
+										</section>
+									</component>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="9242F685-38A4-47F2-989B-50D8251033B6"/>
+											<title>Outcome of Assessment</title>
+											<text>It was agreed that Tony requires further assessment and so an application for a Section was made.</text>
+										</section>
+									</component>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="B3088816-CC36-4834-93E2-6CE9699AEC38"/>
+									<title>Legal Status and MHA Details</title>
+									<text>Summary: Detained in hospital under Section 3 of the Mental Health Act 1983 (England and Wales) as of 01/01/2004 : 10:30.</text>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="64B4B2C5-BA12-4C13-9E30-5D383902F47B"/>
+											<title>Patient Subject to MHA</title>
+											<text>
+												<table>
+													<tbody>
+														<tr>
+															<td>Section Commenced:</td>
+															<td>26/01/2004 at 12:01</td>
+														</tr>
+														<tr>
+															<td>Section Expires:</td>
+															<td>25/10/04 at 12:00</td>
+														</tr>
+													</tbody>
+												</table>
+											</text>
+										</section>
+									</component>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="035F25A0-338E-468C-9D37-08348C34B3AE"/>
+											<title>MHA Section Conditions</title>
+											<text>Tony is to be detained at Uptown Inpatient Mental Health Unit.</text>
+										</section>
+									</component>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="CDDF9684-202B-4C61-851D-53A3D8ABA9C9"/>
+											<title>Tribunal Decision</title>
+											<text>
+												<table>
+													<tbody>
+														<tr>
+															<td>Tribunal held:</td>
+															<td>03/05/2004</td>
+														</tr>
+														<tr>
+															<td>Recommendation:</td>
+															<td>Continue detention subject to Section 3</td>
+														</tr>
+														<tr>
+															<td>Next Tribunal/Review Date:</td>
+															<td>03/05/2004</td>
+														</tr>
+													</tbody>
+												</table>
+											</text>
+										</section>
+									</component>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="B08A9FFB-21C2-4B1E-97E1-DBE24B93FA0E"/>
+							<title>MH &amp; SM Care Plan</title>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="674C9909-A28F-42DA-A14A-CE947511E126"/>
+									<title>Care Plan Summary</title>
+									<text>
+										<list listType="ordered">
+											<item>Medication management</item>
+											<item>Accommodation difficulties</item>
+											<item>Lack of structure to day / meaningful occupation</item>
+											<item>Financial difficulties</item>
+											<item>Treatment and monitoring of bipolar disorder</item>
+											<item>Management of drug and alcohol misuse</item>
+										</list>
+									</text>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="B48AC27D-9151-4939-8CDF-6AA01C05FBD5"/>
+									<title>Care Plan Component: Medication Management</title>
+									<text>
+										<content ID="c1">Tony needs to take medication regularly to treat his mental illness.</content>
+										<br/>
+										<br/>Aims and Objectives:
+										<list listType="ordered">
+											<item>
+												<content ID="c2">Tony to take medication regularly and safely.</content>
+											</item>
+											<item>
+												<content ID="c3">Tony to be prescribed appropriate amounts of medication that successfully treat his illness and keep side effects to a minimum.</content>
+											</item>
+										</list>Interventions &amp; Actions:
+										<list listType="ordered">
+											<item>
+												<content ID="c4">Education regarding need to take medication regularly. /Information about medication used and how to take and store it safely.</content>
+											</item>
+											<item>
+												<content ID="c5">Regular monitoring of efficacy and side effects.</content>
+											</item>
+											<item>
+												<content ID="c6">Regular blood tests for Clozapine prescriptions - blood results sent to Clozapine monitoring service.</content>
+											</item>
+											<item>
+												<content ID="c7">Blood tests for lithium levels.</content>
+											</item>
+											<item>
+												<content ID="c8">Prescriptions for clozapine to be issued by CMHT medical staff following clearance from clozapine monitoring service.</content>
+											</item>
+											<item>
+												<content ID="c9">All other prescriptions to be issued by GP.</content>
+											</item>
+											<item>
+												<content ID="c10">Liaison with community pharmacist to ensure their understanding of clozapine prescription process and regular supply of medication.</content>
+											</item>
+											<item>
+												<content ID="c11">Regular monitoring of weight, blood pressure and blood sugar levels.</content>
+											</item>
+											<item>
+												<content ID="c12">Education regarding need to maintain a healthy lifestyle, including exercise regime. GP to be advised of responsibility.</content>
+											</item>
+										</list>Frequency of Contact:
+										<list listType="ordered">
+											<item>
+												<content ID="c13">Weekly visits from CMHN.</content>
+											</item>
+											<item>
+												<content ID="c14">6 weekly outpatient appointments with Consultant Psychiatrist.</content>
+											</item>
+											<item>
+												<content ID="c15">Attendance at Clozapine clinic for blood tests - variable frequency depending on results.</content>
+											</item>
+											<item>
+												<content ID="c16">Fortnightly attendances at GP surgery to see practice nurse.</content>
+											</item>
+											<item>
+												<content ID="c17">Weekly prescriptions from GP to be collected by Tony from local pharmacy.</content>
+											</item>
+										</list>
+										<table>
+											<tbody>
+												<tr>
+													<td>Care Plan component Start Date:</td>
+													<td>03/03/2004</td>
+												</tr>
+												<tr>
+													<td>Date for this Care Plan component Review:</td>
+													<td>
+														<content ID="c18">01/09/2004</content>
+													</td>
+												</tr>
+												<tr>
+													<td>Care Plan Component Review Status:</td>
+													<td>Review Not Reached</td>
+												</tr>
+												<tr>
+													<td>
+														<content ID="c19">GP will have responsibility for this component.</content>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="B48AC27D-9151-4939-8CDF-6AA01C05FBD5"/>
+									<title>Care Plan Component: Accommodation</title>
+									<text>
+										<content ID="d1">Tony was living in a Squat before he was admitted; there is a need to support him to find more appropriate accommodation.</content>
+										<br/>
+										<br/>Aims and Objectives:
+										<list>
+											<item>
+												<content ID="d2">To find suitable accommodation - possibly with one of the local housing associations.</content>
+											</item>
+										</list>Interventions &amp; Actions:
+										<list>
+											<item>
+												<content ID="d3">Ask Social Worker - Joan Harper to support Tony in this.</content>
+											</item>
+										</list>
+										<table>
+											<tbody>
+												<tr>
+													<td>Care Plan component Start Date:</td>
+													<td>03/03/2004</td>
+												</tr>
+												<tr>
+													<td>Date for this Care Plan component Review:</td>
+													<td>
+														<content ID="d4">01/09/2004</content>
+													</td>
+												</tr>
+												<tr>
+													<td>Care Plan Component Review Status:</td>
+													<td>Review Not Reached</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="671E6641-61CC-494D-9F41-EA1C53A91772"/>
+									<title>Diary of Planned Activities</title>
+									<text>
+										<table>
+											<tbody>
+												<tr>
+													<td>Monday a.m.</td>
+													<td>Mind Sheltered Workshop</td>
+												</tr>
+												<tr>
+													<td>Saturday</td>
+													<td>Tony stays the day with Andrew his older brother</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="01BB6024-5564-481D-ABC4-1FE33ABEA2F8"/>
+									<title>Contingency Plan</title>
+									<text>If Tony deteriorates the Uptown CMHT should be contacted to see if further care is needed. This will have to be treated as a new care spell and an MHA Assessment will need doing - if not done already.</text>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="F0BC1717-0EC1-4371-B851-F1F658C51A70"/>
+									<title>Relapse Indicators</title>
+									<text>Increased use of Alcohol. Hypomania symptoms. Irritability.</text>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="EC14E06F-18AA-492B-B0CF-AFC05097BDA6"/>
+									<title>Crisis Plan</title>
+									<text>In the event that Tony absconds, contact the Police.</text>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="393ABCED-8B49-40E1-B4F4-015478246F78"/>
+							<title>Mental Health Risk Assessment</title>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="1F2FF67B-5C89-4DC9-BBB1-05342551217A"/>
+									<title>Risk Assessment</title>
+									<text>
+										<table>
+											<tbody>
+												<tr>
+													<td>Date of Risk Assessment:</td>
+													<td>01/01/2004</td>
+												</tr>
+												<tr>
+													<td>Risk Assessment Tool:</td>
+													<td>Core Face</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="BF5D3FD6-1FC3-44F4-80A2-F3966B74E575"/>
+											<title>Risk Assessment Categories and Scale Scores</title>
+											<text>
+												<table>
+													<thead>
+														<tr>
+															<td>Category</td>
+															<td>Scale</td>
+															<td>Notes</td>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+																<content ID="f1">Suicide</content>
+															</td>
+															<td>Low</td>
+															<td>Tony has not shown any indications that he is suicidal or that his mood is severely depressed.</td>
+														</tr>
+														<tr>
+															<td>
+																<content ID="f2">Self Harm</content>
+															</td>
+															<td>Low</td>
+															<td>He has not shown any indications of intentional self-harm.</td>
+														</tr>
+														<tr>
+															<td>
+																<content ID="f3">Accident</content>
+															</td>
+															<td>Medium</td>
+															<td>Tony can be clumsy and his ability to move quickly has been affected by the consumption of alcohol over time.</td>
+														</tr>
+														<tr>
+															<td>
+																<content ID="f4">Self Neglect</content>
+															</td>
+															<td>High</td>
+															<td>During particularly heavy drinking bouts, Tony may go for days without attention to personal hygiene, appearance or proper dietary intake.</td>
+														</tr>
+														<tr>
+															<td>
+																<content ID="f5">Vulnerability</content>
+															</td>
+															<td>Medium</td>
+															<td>Tony is at his most vulnerable when under the influence of alcohol, however his aggressive behaviour does tend to ward-off anyone attempting to approach him.</td>
+														</tr>
+														<tr>
+															<td>
+																<content ID="f6">Violence to Adults</content>
+															</td>
+															<td>Medium</td>
+															<td>Tony becomes verbally abusive when he doesn't get his way. Although he has not actually been physically violent he can be extremely intimidating.</td>
+														</tr>
+														<tr>
+															<td>Violence to Children</td>
+															<td>Not Assessed</td>
+															<td/>
+														</tr>
+														<tr>
+															<td>
+																<content ID="f7">Aggression to Adults</content>
+															</td>
+															<td>High</td>
+															<td>When under the influence of alcohol, Tony can be extremely aggressive - this aggression has caused him to be arrested several times for breaches of the peace and using threatening behaviour.</td>
+														</tr>
+														<tr>
+															<td>Aggression to Children</td>
+															<td>Not Assessed</td>
+															<td/>
+														</tr>
+														<tr>
+															<td>
+																<content ID="f8">Abuse of Adults</content>
+															</td>
+															<td>Medium</td>
+															<td>The level of abuse is stricly limited to the effects of alcohol upon him - he does seem to manipulate or hurt others intentionally.</td>
+														</tr>
+														<tr>
+															<td>Abuse of Children</td>
+															<td>Not Assessed</td>
+															<td/>
+														</tr>
+														<tr>
+															<td>
+																<content ID="f9">Neglect of Adults</content>
+															</td>
+															<td>Medium</td>
+															<td>There are no persons dependent upon Tony at this time, however it would be unlikely that he could take on any such responsibilities.</td>
+														</tr>
+														<tr>
+															<td>Neglect of Children</td>
+															<td>Not Assessed</td>
+															<td/>
+														</tr>
+														<tr>
+															<td>Other MH&amp;SM related risks</td>
+															<td>None Identified</td>
+															<td/>
+														</tr>
+													</tbody>
+												</table>
+											</text>
+										</section>
+									</component>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="95745C47-EB86-4C21-B53F-7E82E6702546"/>
+											<title>HCR20 Violence Risk Assessment</title>
+											<text>HCR20 Assessment Date: 01/01/2004</text>
+											<component contextConductionInd="true" typeCode="COMP">
+												<templateId extension="COCD_TP146061UK01#component3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+												<section classCode="DOCSECT" moodCode="EVN">
+													<templateId extension="COCD_TP146061UK01#section4" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+													<id root="F04BA405-D6B0-47D8-B664-A1E8805FB9F8"/>
+													<title>HCR20 Outcome Score</title>
+													<text>
+														<table>
+															<tbody>
+																<tr>
+																	<td>Category:</td>
+																	<td>
+																		<content ID="g1">H1 Previous Violence</content>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Scale:</td>
+																	<td>1</td>
+																</tr>
+															</tbody>
+														</table>Indications have recently come to our attention that in his younger life Tony was convicted of Breach of the Peace connected to criminal activities - however there has not been any recent evidence of violent behaviours.
+													</text>
+												</section>
+											</component>
+										</section>
+									</component>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="F768FB8A-2B68-4F3A-89A3-23058747A67F"/>
+									<title>Factors Increasing or Decreasing Risk</title>
+									<text>
+										<table>
+											<tbody>
+												<tr>
+													<td>Risk Factor:</td>
+													<td>When he has had a considerable amount of alcohol he can be verbally aggressive.</td>
+												</tr>
+												<tr>
+													<td>Impact:</td>
+													<td>Increases Risk</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+								</section>
+							</component>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="64149768-8CD2-4334-9BD4-6A0CABE472D7"/>
+									<title>Risk Activities History</title>
+									<text>
+										<table>
+											<tbody>
+												<tr>
+													<td>Date:</td>
+													<td>01/05/2002</td>
+												</tr>
+												<tr>
+													<td>Category:</td>
+													<td>Aggression to Adults</td>
+												</tr>
+												<tr>
+													<td>Level:</td>
+													<td>High</td>
+												</tr>
+											</tbody>
+										</table>Tony has a long history of aggressive behaviour which whilst it has not seemed to extend into physical violence. He was arrested for a breach of the peace in May 2002 and was bound over to keep the peace at that time.
+									</text>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="C35CB9E0-C4FB-4180-ACD6-85F907F460DA"/>
+							<title>Outcome / Measure / Assessment Information</title>
+							<text>
+								<table>
+									<tbody>
+										<tr>
+											<td>Tool:</td>
+											<td>HoNOS</td>
+										</tr>
+										<tr>
+											<td>Assessment Date:</td>
+											<td>10/09/2006</td>
+										</tr>
+									</tbody>
+								</table>
+							</text>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="C35CB9E0-C4FB-4180-ACD6-85F907F460DA"/>
+									<title>HoNOS Tool Outcome Scores</title>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="507C054A-435C-4532-A4C1-42DF7A354517"/>
+											<title>HoNOS Score</title>
+											<text>
+												<table>
+													<tbody>
+														<tr>
+															<td>
+																<content ID="h1">HoNOS item 1 - aggressive/disruptive behaviour</content>
+															</td>
+															<td>3 = moderately severe problem</td>
+														</tr>
+														<tr>
+															<td>
+																<content ID="h2">HoNOS item 2 - non-accidental self injury</content>
+															</td>
+															<td>1 = minor problem requiring no action</td>
+														</tr>
+														<tr>
+															<td>
+																<content ID="h3">HoNOS item 3 - alcohol/drug problem</content>
+															</td>
+															<td>4 = severe to very severe problem</td>
+														</tr>
+														<tr>
+															<td>
+																<content ID="h4">HoNOS item 4 - cognitive problems</content>
+															</td>
+															<td>3 = moderately severe problem</td>
+														</tr>
+														<tr>
+															<td>
+																<content ID="h5">HoNOS item 5 - physical illness/disability</content>
+															</td>
+															<td>1 = minor problem requiring no action</td>
+														</tr>
+														<tr>
+															<td>
+																<content ID="h6">HoNOS item 6 - hallucinations/delusions</content>
+															</td>
+															<td>2 = mild problem but definitely present</td>
+														</tr>
+														<tr>
+															<td>
+																<content ID="h7">HoNOS item 7 - depressed mood</content>
+															</td>
+															<td>2 = mild problem but definitely present</td>
+														</tr>
+														<tr>
+															<td>
+																<content ID="h8">HoNOS item 8 - other mental/behavioural problems</content>
+															</td>
+															<td>1 = minor problem requiring no action</td>
+														</tr>
+														<tr>
+															<td>HoNOS item 9 - relationship problems</td>
+															<td>Not Assessed</td>
+														</tr>
+														<tr>
+															<td>HoNOS item 10 - activities of daily living</td>
+															<td>Not Assessed</td>
+														</tr>
+														<tr>
+															<td>
+																<content ID="h9">HoNOS item 11 - living conditions</content>
+															</td>
+															<td>3 = moderately severe problem</td>
+														</tr>
+														<tr>
+															<td>
+																<content ID="h10">HoNOS item 12 - occupation/activities</content>
+															</td>
+															<td>2 = mild problem but definitely present</td>
+														</tr>
+													</tbody>
+												</table>
+											</text>
+										</section>
+									</component>
+								</section>
+							</component>
+						</section>
+					</component>
+					<component contextConductionInd="true" typeCode="COMP">
+						<npfitlc:contentId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId extension="COCD_TP146061UK01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+							<id root="D59AABA1-5F7E-4ACA-8A65-7BCB8F7043E6"/>
+							<title>Additional Information</title>
+							<text>No formal mental health history previously This care episode commenced on 01/01/04, with Tony admitted with indications of Hypomania.</text>
+							<component contextConductionInd="true" typeCode="COMP">
+								<templateId extension="COCD_TP146061UK01#component1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+								<section classCode="DOCSECT" moodCode="EVN">
+									<templateId extension="COCD_TP146061UK01#section2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+									<id root="DB6AC407-39D3-49E1-8B1D-9BDBB683570B"/>
+									<title>Aspect of Care that a Preference relates to.</title>
+									<text>
+										<table>
+											<tbody>
+												<tr>
+													<td>Aspect of Care:</td>
+													<td>Sharing Information with relatives</td>
+												</tr>
+												<tr>
+													<td>Date Recorded:</td>
+													<td>10/02/2004</td>
+												</tr>
+											</tbody>
+										</table>
+									</text>
+									<component contextConductionInd="true" typeCode="COMP">
+										<templateId extension="COCD_TP146061UK01#component2" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+										<section classCode="DOCSECT" moodCode="EVN">
+											<templateId extension="COCD_TP146061UK01#section3" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+											<id root="7B3A16A2-102B-4A9D-AA14-48339B7E27B0"/>
+											<title>Stated Preference Information</title>
+											<text>Tony does not want his younger brother Frederick to know anything about his condition.</text>
+										</section>
+									</component>
+								</section>
+							</component>
+						</section>
+					</component>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>

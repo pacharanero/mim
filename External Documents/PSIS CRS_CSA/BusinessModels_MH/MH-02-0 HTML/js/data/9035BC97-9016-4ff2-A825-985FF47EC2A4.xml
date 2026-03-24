@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("4.2.5.13:1", "", "Additional Information", "EARoot/EA4/EA2/EA5/EA13/EA1668.htm", "177.png", "388", "0", "", "Object diagram");
+tocTab[tocTab.length] = new Array("4.2.5.13:2", "", ": cda_PersonalPreference", "EARoot/EA4/EA2/EA5/EA13/EA1670.htm", "25.png", "6580", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.13:3", "", ": preferenceTemplateList", "EARoot/EA4/EA2/EA5/EA13/EA1671.htm", "25.png", "6579", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.13:4", "", ": statedPreferenceInformation", "EARoot/EA4/EA2/EA5/EA13/EA1672.htm", "25.png", "6110", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.13:5", "", ": patientPreferences", "EARoot/EA4/EA2/EA5/EA13/EA1673.htm", "25.png", "6109", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.13:6", "", ": additional information", "EARoot/EA4/EA2/EA5/EA13/EA1674.htm", "25.png", "6104", "0", "", "Object");

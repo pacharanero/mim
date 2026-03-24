@@ -1,0 +1,14 @@
+tocTab[tocTab.length] = new Array("3.1.6:1", "", "Document Content", "EARoot/EA3/EA1/EA6/EA326.htm", "188.png", "259", "0", "", "Custom diagram");
+tocTab[tocTab.length] = new Array("3.1.6.1", "1", "6.1 NHS Number", "EARoot/EA3/EA1/EA6/EA328.htm", "4.png", "", "", "{451EB64D-4413-445b-8436-077B4E2B341C}", "Package");
+tocTab[tocTab.length] = new Array("3.1.6.2", "1", "6.2 Coding within Documents", "EARoot/EA3/EA1/EA6/EA329.htm", "4.png", "", "", "{522B6498-D753-4250-B140-BD331C8457A1}", "Package");
+tocTab[tocTab.length] = new Array("3.1.6.3", "1", "6.3 Mapping Document Content to CAF Information Set", "EARoot/EA3/EA1/EA6/EA330.htm", "4.png", "", "", "{FCD664CF-9611-41d4-9929-C30BD95DD5D0}", "Package");
+tocTab[tocTab.length] = new Array("3.1.6.4", "1", "6.4 Use of Care Record Element (CRE) Types", "EARoot/EA3/EA1/EA6/EA331.htm", "4.png", "", "", "{73F73E05-5EED-4692-9B81-9451BA92A181}", "Package");
+tocTab[tocTab.length] = new Array("3.1.6.5", "1", "6.5 Sensitive Data/ Information with Restricted Access", "EARoot/EA3/EA1/EA6/EA332.htm", "4.png", "", "", "{40A87D83-E73B-4137-ADA3-0D433839994E}", "Package");
+tocTab[tocTab.length] = new Array("3.1.6.6", "1", "6.6 Assessments", "EARoot/EA3/EA1/EA6/EA333.htm", "4.png", "", "", "{18AAE78F-D187-487e-996E-DABC870D0658}", "Package");
+tocTab[tocTab.length] = new Array("3.1.6.7", "1", "6.7 Administrative Details", "EARoot/EA3/EA1/EA6/EA334.htm", "4.png", "", "", "{CEFEB409-1DF7-4c3f-B8D0-A7AE56334453}", "Package");
+tocTab[tocTab.length] = new Array("3.1.6.8", "1", "6.8 Additional Information Text Section", "EARoot/EA3/EA1/EA6/EA335.htm", "4.png", "", "", "{CAD4E8D1-E83D-4125-B689-83A1DAAAEFCF}", "Package");
+tocTab[tocTab.length] = new Array("3.1.6.9", "1", "6.9 Contact Assessment", "EARoot/EA3/EA1/EA6/EA336.htm", "4.png", "", "", "{D260BA48-23AE-40f2-BA50-E2B43AD00905}", "Package");
+tocTab[tocTab.length] = new Array("3.1.6.10", "1", "6.10 Overview Assessment", "EARoot/EA3/EA1/EA6/EA337.htm", "4.png", "", "", "{7DAAEF29-C81F-478d-82FF-87CFC5D3FF9C}", "Package");
+tocTab[tocTab.length] = new Array("3.1.6.11", "1", "6.11 Specialist Assessment Outcome", "EARoot/EA3/EA1/EA6/EA338.htm", "4.png", "", "", "{A306FA54-23BD-44fa-8EF0-BFDBC55958ED}", "Package");
+tocTab[tocTab.length] = new Array("3.1.6.12", "1", "6.12 Integrated Care and Support Plan", "EARoot/EA3/EA1/EA6/EA339.htm", "4.png", "", "", "{0EB1955A-4D55-4619-AFBB-5E958C24CFE7}", "Package");
+tocTab[tocTab.length] = new Array("3.1.6.13", "1", "6.13 Biographic Information", "EARoot/EA3/EA1/EA6/EA340.htm", "4.png", "", "", "{4B05A937-DAC3-4c43-89BA-DCC390E8184C}", "Package");

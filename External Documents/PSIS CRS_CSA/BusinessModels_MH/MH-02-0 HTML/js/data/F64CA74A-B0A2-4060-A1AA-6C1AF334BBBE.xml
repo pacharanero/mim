@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("4.2.2.12:1", "", " Outcome / Measure / Assessment Information", "EARoot/EA4/EA2/EA2/EA12/EA1136.htm", "177.png", "373", "0", "", "Object diagram");
+tocTab[tocTab.length] = new Array("4.2.2.12:2", "", ": cda_DeviceNonSDSWithOrgSDS", "EARoot/EA4/EA2/EA2/EA12/EA1138.htm", "25.png", "6535", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.12:3", "", "«NEW TEMPLATE» : assessmentEvent", "EARoot/EA4/EA2/EA2/EA12/EA1139.htm", "25.png", "6533", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.12:4", "", "«NEW TEMPLATE» careSetting: Assessment", "EARoot/EA4/EA2/EA2/EA12/EA1140.htm", "25.png", "6536", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.12:5", "", ": hoNOSToolOutcomeScores", "EARoot/EA4/EA2/EA2/EA12/EA1141.htm", "25.png", "5752", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.12:6", "", "Alcohol: hoNOSScoreTemplateList", "EARoot/EA4/EA2/EA2/EA12/EA1142.htm", "25.png", "5755", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.12:7", "", "Exit: outcomeAssessmentTemplateList", "EARoot/EA4/EA2/EA2/EA12/EA1143.htm", "25.png", "5758", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.12:8", "", "Exit: hoNOSScore", "EARoot/EA4/EA2/EA2/EA12/EA1144.htm", "25.png", "5756", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.12:9", "", "HonosExit: outcomeMeasureAssessmentInformation", "EARoot/EA4/EA2/EA2/EA12/EA1145.htm", "25.png", "5759", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.12:10", "", "«NEW TEMPLATE» HoNOSItem3: Assessment", "EARoot/EA4/EA2/EA2/EA12/EA1146.htm", "25.png", "6537", "0", "", "Object");

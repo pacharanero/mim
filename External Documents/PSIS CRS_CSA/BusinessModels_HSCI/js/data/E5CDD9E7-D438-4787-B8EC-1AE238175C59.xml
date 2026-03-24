@@ -1,0 +1,14 @@
+tocTab[tocTab.length] = new Array("3.2.4:1", "", "Simplified Process", "EARoot/EA3/EA2/EA4/EA708.htm", "181.png", "287", "0", "", "Activity diagram");
+tocTab[tocTab.length] = new Array("3.2.4:2", "", "ActivityInitial", "EARoot/EA3/EA2/EA4/EA710.htm", "68.png", "10760", "0", "", "StateNode");
+tocTab[tocTab.length] = new Array("3.2.4:3", "", "ActivityInitial", "EARoot/EA3/EA2/EA4/EA711.htm", "68.png", "10759", "0", "", "StateNode");
+tocTab[tocTab.length] = new Array("3.2.4:4", "", "Complete new document (Assessment / Care Plan)", "EARoot/EA3/EA2/EA4/EA712.htm", "21.png", "10752", "0", "", "Activity");
+tocTab[tocTab.length] = new Array("3.2.4:5", "", "Consent - Check", "EARoot/EA3/EA2/EA4/EA713.htm", "21.png", "10754", "0", "", "Activity");
+tocTab[tocTab.length] = new Array("3.2.4:6", "", "Consent - Check", "EARoot/EA3/EA2/EA4/EA714.htm", "21.png", "10750", "0", "", "Activity");
+tocTab[tocTab.length] = new Array("3.2.4:7", "", "Document Created", "EARoot/EA3/EA2/EA4/EA715.htm", "68.png", "10757", "0", "", "StateNode");
+tocTab[tocTab.length] = new Array("3.2.4:8", "", "Document Sent", "EARoot/EA3/EA2/EA4/EA716.htm", "68.png", "10758", "0", "", "StateNode");
+tocTab[tocTab.length] = new Array("3.2.4:9", "", "Legitimate Relationship - Check", "EARoot/EA3/EA2/EA4/EA717.htm", "21.png", "10749", "0", "", "Activity");
+tocTab[tocTab.length] = new Array("3.2.4:10", "", "Select Person", "EARoot/EA3/EA2/EA4/EA718.htm", "21.png", "10748", "0", "", "Activity");
+tocTab[tocTab.length] = new Array("3.2.4:11", "", "Select Recipients", "EARoot/EA3/EA2/EA4/EA719.htm", "21.png", "10755", "0", "", "Activity");
+tocTab[tocTab.length] = new Array("3.2.4:12", "", "Send Document", "EARoot/EA3/EA2/EA4/EA720.htm", "21.png", "10756", "0", "", "Activity");
+tocTab[tocTab.length] = new Array("3.2.4:13", "", "View (CAF) Document", "EARoot/EA3/EA2/EA4/EA721.htm", "21.png", "10753", "0", "", "Activity");
+tocTab[tocTab.length] = new Array("3.2.4:14", "", "View Existing Documents", "EARoot/EA3/EA2/EA4/EA722.htm", "21.png", "10751", "0", "", "Activity");

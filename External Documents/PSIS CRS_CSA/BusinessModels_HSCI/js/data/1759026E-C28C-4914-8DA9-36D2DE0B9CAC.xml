@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("5.2.2:1", "", "Generic Datatypes", "EARoot/EA5/EA2/EA2/EA2638.htm", "175.png", "220", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("5.2.2:2", "", "dt_Datatype", "EARoot/EA5/EA2/EA2/EA2640.htm", "5.png", "8491", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.2.2:3", "", "dt_Null", "EARoot/EA5/EA2/EA2/EA2641.htm", "5.png", "8494", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.2.2.1", "1", "Primitive", "EARoot/EA5/EA2/EA2/EA2644.htm", "4.png", "", "", "{FE6314F9-8858-49ec-A17E-7ADB26D23A50}", "Package");
+tocTab[tocTab.length] = new Array("5.2.2.2", "1", "Compound", "EARoot/EA5/EA2/EA2/EA2645.htm", "4.png", "", "", "{6784D03C-323F-4edc-B69E-61BB1B84C7AC}", "Package");

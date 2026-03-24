@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("3.1.6.13:1", "", "Biographic Information", "EARoot/EA3/EA1/EA6/EA13/EA414.htm", "188.png", "272", "0", "", "Custom diagram");
+tocTab[tocTab.length] = new Array("3.1.6.13:2", "", "«Compliance» HSCI024REQ: Biographic Information", "EARoot/EA3/EA1/EA6/EA13/EA417.htm", "19.png", "10300", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("3.1.6.13:3", "", "«Functional» HSCI076REQ: Use of at least one Text Section", "EARoot/EA3/EA1/EA6/EA13/EA418.htm", "19.png", "10875", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("3.1.6.13:4", "", "«Functional» HSCI075REQ: Biographic Information Mapping", "EARoot/EA3/EA1/EA6/EA13/EA419.htm", "19.png", "10770", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("3.1.6.13:5", "", "«Functional» HSCI079REQ: Triggers for Creating Biographic Information Document", "EARoot/EA3/EA1/EA6/EA13/EA420.htm", "19.png", "10909", "0", "", "Requirement");

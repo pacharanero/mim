@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("4.2.5.4:1", "", "Care Teams or organisations involved in care delivery", "EARoot/EA4/EA2/EA5/EA4/EA1435.htm", "177.png", "379", "0", "", "Object diagram");
+tocTab[tocTab.length] = new Array("4.2.5.4:2", "", "additional: participant", "EARoot/EA4/EA2/EA5/EA4/EA1437.htm", "25.png", "7320", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.4:3", "", "additional: involvedCareTeam", "EARoot/EA4/EA2/EA5/EA4/EA1438.htm", "25.png", "6330", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.4:4", "", "Main: involvedCareTeam", "EARoot/EA4/EA2/EA5/EA4/EA1439.htm", "25.png", "6305", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.4:5", "", "main: participant", "EARoot/EA4/EA2/EA5/EA4/EA1440.htm", "25.png", "7321", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.4:6", "", "additional: involvementWithPatientCareOrSupport", "EARoot/EA4/EA2/EA5/EA4/EA1441.htm", "25.png", "5839", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.4:7", "", "allTeams: involvedCareTeams", "EARoot/EA4/EA2/EA5/EA4/EA1442.htm", "25.png", "5843", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.4:8", "", "main: otherOrganisationServiceUserIdentifier", "EARoot/EA4/EA2/EA5/EA4/EA1443.htm", "25.png", "5848", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.5.4:9", "", "main: involvementWithPatientCareOrSupport", "EARoot/EA4/EA2/EA5/EA4/EA1444.htm", "25.png", "5846", "0", "", "Object");

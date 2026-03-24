@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("4.2.2.8:1", "", "Substance Misuse", "EARoot/EA4/EA2/EA2/EA8/EA1095.htm", "177.png", "369", "0", "", "Object diagram");
+tocTab[tocTab.length] = new Array("4.2.2.8:2", "", ": cda_ManufacturedProduct", "EARoot/EA4/EA2/EA2/EA8/EA1097.htm", "25.png", "6412", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.8:3", "", "«NEW TEMPLATE» : WIP_7.1_SubstanceMisuse", "EARoot/EA4/EA2/EA2/EA8/EA1098.htm", "25.png", "5704", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.8:4", "", "Exit: substanceMisuseInformation", "EARoot/EA4/EA2/EA2/EA8/EA1099.htm", "25.png", "5705", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.8:5", "", "MisuseInformation: problemSubstancesTemplateList", "EARoot/EA4/EA2/EA2/EA8/EA1100.htm", "25.png", "5707", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.8:6", "", "MisuseInformation: problemSubstancesInformation", "EARoot/EA4/EA2/EA2/EA8/EA1101.htm", "25.png", "5706", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.8:7", "", "Status: injectingStatus", "EARoot/EA4/EA2/EA2/EA8/EA1102.htm", "25.png", "5708", "0", "", "Object");

@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("5.2.1", "1", "New Templates", "EARoot/EA5/EA2/EA1747.htm", "4.png", "", "", "{F4DF47BE-166C-4dbc-8D8F-A6D238D9D61A}", "Package");
+tocTab[tocTab.length] = new Array("5.2.2", "1", "Reference Diagrams", "EARoot/EA5/EA2/EA1748.htm", "4.png", "", "", "{9096D2FE-8BA6-40f9-AD98-EF368826974F}", "Package");
+tocTab[tocTab.length] = new Array("5.2.3", "1", "Templates", "EARoot/EA5/EA2/EA1749.htm", "4.png", "", "", "{4C9A4882-A406-4b07-A735-5EFC973E1BB7}", "Package");
+tocTab[tocTab.length] = new Array("5.2.4", "1", "Objects", "EARoot/EA5/EA2/EA1750.htm", "4.png", "", "", "{5B9536E2-2C79-48a9-A8AB-28C321A8F758}", "Package");

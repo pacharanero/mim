@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifactPackage>
+	<dynamicModel>
+		<interaction id="POLB_IN020001UK01"> <!-- Order Fulfillment Request w/ RR -->
+			<Models>
+				<sendingRole modelId="POLB_AR010000UK01"/>
+				<receivingRole modelId="POLB_AR020000UK01"/>
+				<triggerEvent modelId="POLB_TE001100UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POLB_MT001000UK01"/>
+			</Models>
+		</interaction>
+		<interaction id="POLB_IN020002UK01"> <!-- Order Confirm Response-->
+			<Models>
+				<sendingRole modelId="POLB_AR020000UK01"/>
+				<receivingRole modelId="POLB_AR010000UK01"/>
+				<triggerEvent modelId="POLB_TE001002UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POLB_MT001002UK01"/>
+			</Models>
+		</interaction>
+		<interaction id="POLB_IN020003UK01"> <!-- Order Reject Response -->
+			<Models>
+				<sendingRole modelId="POLB_AR020000UK01"/>
+				<receivingRole modelId="POLB_AR010000UK01"/>
+				<triggerEvent modelId="POLB_TE001003UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POLB_MT001002UK01"/>
+			</Models>
+		</interaction>
+		<interaction id="POLB_IN020005UK01">	<!-- Result In Progress w/RR -->
+			<Models>
+				<sendingRole modelId="POLB_AR020000UK01"/>
+				<receivingRole modelId="POLB_AR034000UK01"/>
+				<triggerEvent modelId="POLB_TE004100UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POLB_MT004000UK01"/>```
+			</Models>
+		</interaction>
+		<interaction id="POLB_IN020006UK01"> <!-- Result Complete w/RR -->
+			<Models>
+				<sendingRole modelId="POLB_AR020000UK01"/>
+				<receivingRole modelId="POLB_AR034000UK01"/>
+				<triggerEvent modelId="POLB_TE004200UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POLB_MT004000UK01"/>
+			</Models>
+		</interaction>
+		<!--interaction id="POLB_IN020007UK01">	Result Replace w/ RR 
+			<Models>
+				<sendingRole modelId="POLB_AR020000UK01"/>
+				<receivingRole modelId="POLB_AR034000UK01"/>
+				<triggerEvent modelId="POLB_TE00
+00UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POLB_MT004000UK01"/>
+			</Models>
+		</interaction-->
+		<interaction id="POLB_IN020010UK01">	<!-- Result Event State Change w/ RR -->
+			<Models>
+				<sendingRole modelId="POLB_AR020000UK01"/>
+				<receivingRole modelId="POLB_AR034000UK01"/>
+				<triggerEvent modelId="POLB_TE04007UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="POLB_MT004000UK01"/>
+			</Models>
+		</interaction>
+	</dynamicModel>
+</artifactPackage>

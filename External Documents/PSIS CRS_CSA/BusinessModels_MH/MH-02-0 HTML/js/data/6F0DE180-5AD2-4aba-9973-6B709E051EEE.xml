@@ -1,0 +1,16 @@
+tocTab[tocTab.length] = new Array("7.2:1", "", "IAM : 1. Patient Personal Details", "EARoot/EA7/EA2/EA3099.htm", "175.png", "89", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("7.2:2", "", "IAM : 2. Referral details", "EARoot/EA7/EA2/EA3101.htm", "175.png", "90", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("7.2:3", "", "IAM : 3. Assessment for Entry to MH&SMSS", "EARoot/EA7/EA2/EA3103.htm", "175.png", "91", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("7.2:4", "", "IAM : 4. Current contact status", "EARoot/EA7/EA2/EA3105.htm", "175.png", "92", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("7.2:5", "", "IAM : 5. Details of dependants with a connection to the patient", "EARoot/EA7/EA2/EA3107.htm", "175.png", "93", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("7.2:6", "", "IAM : 6. Details of Involved Carers, Professionals / Organisations", "EARoot/EA7/EA2/EA3109.htm", "175.png", "94", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("7.2:7", "", "IAM : 7. Care Review (CPA / MOC / Unspecified reviews) Administrative items", "EARoot/EA7/EA2/EA3111.htm", "175.png", "95", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("7.2:8", "", "IAM : 8. Diagnosis/es", "EARoot/EA7/EA2/EA3113.htm", "175.png", "96", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("7.2:9", "", "IAM : 9. Mental Health Act 1983 Activities", "EARoot/EA7/EA2/EA3115.htm", "175.png", "97", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("7.2:10", "", "IAM : 10. Other Legal / Court Orders ", "EARoot/EA7/EA2/EA3117.htm", "175.png", "98", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("7.2:11", "", "IAM : 11. Child Protection information (this refers only to this patient who is a child at this time)", "EARoot/EA7/EA2/EA3119.htm", "175.png", "99", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("7.2:12", "", "IAM : 12. Care Plan - structured approach", "EARoot/EA7/EA2/EA3121.htm", "175.png", "100", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("7.2:13", "", "IAM : 13. Risk Assessment", "EARoot/EA7/EA2/EA3123.htm", "175.png", "101", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("7.2:14", "", "IAM : 14. Outcome / Assessment Scores", "EARoot/EA7/EA2/EA3125.htm", "175.png", "102", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("7.2:15", "", "IAM : 15. Exit Information", "EARoot/EA7/EA2/EA3127.htm", "175.png", "103", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("7.2:16", "", "IAM : 16. Additional Information", "EARoot/EA7/EA2/EA3129.htm", "175.png", "104", "0", "", "Logical diagram");

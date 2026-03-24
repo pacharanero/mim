@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("3.3.1", "1", "CAF Structure - Class model Representation", "EARoot/EA3/EA3/EA723.htm", "4.png", "", "", "{69385070-4BF8-424a-B1E0-79DF71543E5A}", "Package");
+tocTab[tocTab.length] = new Array("3.3.2", "1", "IAM - Biograpphica Data CAF", "EARoot/EA3/EA3/EA724.htm", "4.png", "", "", "{5B2A4CAB-FB8E-45e1-96FA-D8CAE0711B86}", "Package");
+tocTab[tocTab.length] = new Array("3.3.3", "1", "IAM - CAF", "EARoot/EA3/EA3/EA725.htm", "4.png", "", "", "{F46B2147-373C-4d90-8908-DE6AF6FF8BF2}", "Package");

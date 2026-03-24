@@ -1,0 +1,11 @@
+tocTab[tocTab.length] = new Array("6.2.1.1:1", "", "Primitive", "EARoot/EA6/EA2/EA1/EA1/EA915.htm", "175.png", "146", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("6.2.1.1:2", "", "dt_Boolean", "EARoot/EA6/EA2/EA1/EA1/EA917.htm", "5.png", "4141", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.2.1.1:3", "", "dt_Identifier", "EARoot/EA6/EA2/EA1/EA1/EA918.htm", "5.png", "4142", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.2.1.1:4", "", "dt_Integer", "EARoot/EA6/EA2/EA1/EA1/EA919.htm", "5.png", "4145", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.2.1.1:5", "", "dt_Primitive", "EARoot/EA6/EA2/EA1/EA1/EA920.htm", "5.png", "4147", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.2.1.1:6", "", "dt_Real", "EARoot/EA6/EA2/EA1/EA1/EA921.htm", "5.png", "4146", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.2.1.1:7", "", "dt_Reference", "EARoot/EA6/EA2/EA1/EA1/EA922.htm", "5.png", "4143", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.2.1.1:8", "", "dt_String", "EARoot/EA6/EA2/EA1/EA1/EA923.htm", "5.png", "4149", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.2.1.1:9", "", "dt_Timestamp", "EARoot/EA6/EA2/EA1/EA1/EA924.htm", "5.png", "4144", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.2.1.1:10", "", "dt_URI", "EARoot/EA6/EA2/EA1/EA1/EA925.htm", "5.png", "4150", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.2.1.1:11", "", "dt_URL", "EARoot/EA6/EA2/EA1/EA1/EA926.htm", "5.png", "4148", "0", "", "Class");

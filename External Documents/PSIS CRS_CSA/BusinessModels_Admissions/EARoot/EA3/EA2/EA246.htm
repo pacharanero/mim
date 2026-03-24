@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Information Analysis Model::inPatientAdmission</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">inPatientAdmission  (ADM0012Class) : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">05/31/07 13:43:03</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">10/02/07 10:34:18</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Sarah Kennedy</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{94C802B2-A2B0-4903-9CF3-1B661F576F49}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA243.htm">IAM</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">This message will be sent by the PAS system which processes in-patient admissions, and will convey information about the admission to PSIS and to the patient’s GP surgery.<br /><br />There will be a new Admissions template which would be a constrained copy of the Administrative Procedure template.</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Identifier</i><br /><strong>&nbsp;&nbsp;documentID</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 (Detailed Data Content) Mapping:&lt;br /&gt;Part of Communication Identification Group (level 1)&lt;br /&gt;&lt;br /&gt;W5 Name:&lt;br /&gt;In-Patient Admission Communication ID (level 1.1)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;A globally unique number to identify the individual In-Patient Admission.&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;UUID&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;None - document header
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Coded</i><br /><strong>&nbsp;&nbsp;documentType</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			*New* attribute&lt;br /&gt;&lt;br /&gt;Snomed Coded attribute for Admission document&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;cda_ClinicalDocument - code&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Identifier</i><br /><strong>&nbsp;&nbsp;NHSNumber</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 (Detailed Data Content) Mapping:&lt;br /&gt;Part of Other Identification Group (level 2)&lt;br /&gt;&lt;br /&gt;W5 Name:&lt;br /&gt;Patient NHS Number (level 2.1)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;The unique identifier for the individual patient who has been admitted&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;NHS Number&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;cda_ClinicalDocument - patient
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Coded</i><br /><strong>&nbsp;&nbsp;locationOfAdmission</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 (Detailed Data Content) Mapping:&lt;br /&gt;Part of Other Identification Group (level 2)&lt;br /&gt;&lt;br /&gt;W5 Name:&lt;br /&gt;Location National Identifier (level 2.2)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;The unique SDS identifier for the particular location where the patient has been admitted&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;SDS Identifier&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;cda_EncompassingEncounter - location&lt;br /&gt;&lt;br /&gt;CDA Mapping Notes:&lt;br /&gt;It is assumed that this is the location where they were admitted to - SDS location but could also be additionally a non-SDS location such as a ward.&lt;br /&gt;&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Text</i><br /><strong>&nbsp;&nbsp;locationPriorToAdmission</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 (Detailed Data Content) Mapping:&lt;br /&gt;Part of Other Identification Group (level 2)&lt;br /&gt;&lt;br /&gt;W5 Name:&lt;br /&gt;Source/Location of Patient or Accident Information (level 2.3)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;Location of the patient prior to admission&lt;br /&gt;&lt;br /&gt;W5 Example:&lt;br /&gt;Where the accident happened or came from - nursing home etc.&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;Data Dictionary Code&lt;br /&gt;&lt;br /&gt;W5 Notes:&lt;br /&gt;Data Dictionary Code - possibly SOURCE OF ADMISSION&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;*New* cda_Admission template - sourceOfAdmission (new type of Patient Movement template)&lt;br /&gt;&lt;br /&gt;CDA Mapping Notes:&lt;br /&gt;This isn&#39;t currently coded information and a data dictionary term exists.&lt;br /&gt;Could be added to the Admission template, would be a &quot;sub&quot; template&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Coded</i><br /><strong>&nbsp;&nbsp;responsibleClinician</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 (Detailed Data Content) Mapping:&lt;br /&gt;Part of Other Identification Group (level 2)&lt;br /&gt;&lt;br /&gt;W5 Name:&lt;br /&gt;Responsible Clinician (level 2.4)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;The unique SDS identifier for the clinician who held primary responsibility for the patient at the time of admission within the role that they were taking at that time&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;SDS  User ID + SDS Role Profile Code&lt;br /&gt;&lt;br /&gt;W5 Notes:&lt;br /&gt;Is this always a person, could it be an organisation?&lt;br /&gt;Should also include specialty and treatment function.&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;cda_EncompassingEncounter - responsibleParty&lt;br /&gt;&lt;br /&gt;CDA Template Mapping Notes:&lt;br /&gt;Does this include specialty and treatment function?
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Timestamp</i><br /><strong>&nbsp;&nbsp;admissionDateTime</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 (Detailed Data Content) Mapping:&lt;br /&gt;Level 4&lt;br /&gt;&lt;br /&gt;W5 Name:&lt;br /&gt;Date and time of the admission&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;The date and time that the patient was admitted. Precision of time to hh:mm&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;Time Stamp&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;cda_EncompassingEncounter - center value&lt;br /&gt;*New* cda_Admissions - timestamp&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Timestamp</i><br /><strong>&nbsp;&nbsp;estimatedDischargeDate</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			*New attribute, not present in W5*&lt;br /&gt;&lt;br /&gt;Definition:&lt;br /&gt;Estimated discharge date at time of admission, it is not updated on PSIS over the course of the patient&#39;s stay in hospital.&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;*New* cda_Admissions - estimatedDischargeDate&lt;br /&gt;&lt;br /&gt;CDA Template Mapping Notes:&lt;br /&gt;This will most likely be a timestamp, it probably isn&#39;t appropriate for this to be a text value.&lt;br /&gt;&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Text</i><br /><strong>&nbsp;&nbsp;methodOfAdmission</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			*New attribute, not present in W5*&lt;br /&gt;&lt;br /&gt;Description:&lt;br /&gt;Maps to Data Dictionary Term, Method of Admission e.g. Elective Admission, Emergency Admission, Maternity Admission etc&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;*New* cda_Admissions - methodOfAdmission&lt;br /&gt;&lt;br /&gt;CDA Template Mapping Notes:&lt;br /&gt;Could be added to the Admission template, would be a &quot;sub&quot; template&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA247.htm">admissionReason</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA248.htm">copyRecipient</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA249.htm">primaryRecipient</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA250.htm">otherClinicians</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA251.htm">readmission</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="15%" class="TableHeading">Type</td>
+					<td width="15%" class="TableHeading">Connection</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA4/EA1/EA261.htm">«<<NEW TEMPLATE>>» cda_Admission</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Instantiation</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA4/EA1/EA256.htm">admissionsClinicalDocument</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Instantiation</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA4/EA1/EA258.htm">admissionsEncompassingEncounter</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Instantiation</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA4/EA1/EA264.htm">reasonTextSection</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Instantiation</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>preferences</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">preferences  (MH0073Class) : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">20/09/2007 13:54:43</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">20/09/2007 13:56:07</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Ross Dixon</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{218188B9-9337-4413-B4CF-424EC5EA2D09}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA120.htm">IAM</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Enables&nbsp;<WBR>the&nbsp;<WBR>presentation&nbsp;<WBR>of&nbsp;<WBR>any&nbsp;<WBR>Patient&nbsp;<WBR>statements&nbsp;<WBR>of&nbsp;<WBR>preferences&nbsp;<WBR>regarding&nbsp;<WBR>aspects&nbsp;<WBR>of&nbsp;<WBR>their&nbsp;<WBR>care<br /><br />One&nbsp;<WBR>area&nbsp;<WBR>that&nbsp;<WBR>might&nbsp;<WBR>be&nbsp;<WBR>held&nbsp;<WBR>here&nbsp;<WBR>is&nbsp;<WBR>Patient&nbsp;<WBR>preferences&nbsp;<WBR>about&nbsp;<WBR>information&nbsp;<WBR>sharing&nbsp;<WBR>that&nbsp;<WBR>may&nbsp;<WBR>be&nbsp;<WBR>captured&nbsp;<WBR>locally&nbsp;<WBR>but&nbsp;<WBR>which&nbsp;<WBR>do&nbsp;<WBR>not&nbsp;<WBR>have&nbsp;<WBR>a&nbsp;<WBR>means&nbsp;<WBR>why&nbsp;<WBR>which&nbsp;<WBR>they&nbsp;<WBR>are&nbsp;<WBR>represented&nbsp;<WBR>elsewhere,&nbsp;<WBR>yet&nbsp;<WBR>can&nbsp;<WBR>often&nbsp;<WBR>hold&nbsp;<WBR>clinically&nbsp;<WBR>significant&nbsp;<WBR>information</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public </i><br /><strong>&nbsp;&nbsp;careAspectIssue</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 15.1.1<br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Defines&nbsp;<WBR>the&nbsp;<WBR>aspect&nbsp;<WBR>of&nbsp;<WBR>care&nbsp;<WBR>that&nbsp;<WBR>a&nbsp;<WBR>preference&nbsp;<WBR>is&nbsp;<WBR>being&nbsp;<WBR>expressed&nbsp;<WBR>about
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Example Which relatives to tell about his condition </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Which&nbsp;<WBR>relatives&nbsp;<WBR>to&nbsp;<WBR>tell&nbsp;<WBR>about&nbsp;<WBR>his&nbsp;<WBR>condition
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Representation Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Text
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public </i><br /><strong>&nbsp;&nbsp;statedPreferenceInformation</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 15.1.2<br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Defines&nbsp;<WBR>the&nbsp;<WBR>preference&nbsp;<WBR>for&nbsp;<WBR>this&nbsp;<WBR>issue
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Example Tony does not want his younger brother Andrew MacMahon to be told anything about his care or mental health at this time </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Tony&nbsp;<WBR>does&nbsp;<WBR>not&nbsp;<WBR>want&nbsp;<WBR>his&nbsp;<WBR>younger&nbsp;<WBR>brother&nbsp;<WBR>Andrew&nbsp;<WBR>MacMahon&nbsp;<WBR>to&nbsp;<WBR>be&nbsp;<WBR>told&nbsp;<WBR>anything&nbsp;<WBR>about&nbsp;<WBR>his&nbsp;<WBR>care&nbsp;<WBR>or&nbsp;<WBR>mental&nbsp;<WBR>health&nbsp;<WBR>at&nbsp;<WBR>this&nbsp;<WBR>time
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Representation Marked Up Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Marked&nbsp;<WBR>Up&nbsp;<WBR>Text
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public </i><br /><strong>&nbsp;&nbsp;datePreferenceRecorded</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 15.1.3<br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Date&nbsp;<WBR>when&nbsp;<WBR>recorded
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Representation Date </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			&nbsp;
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example 01/01/2004 </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::01/01/2004
+		</td>
+	</td>
+</table> </td>
+			</tr>
+		</table>
+</div>		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA170.htm">patient</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA154.htm">MH&SM-SS-CarePlan</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("4.2.2.6:1", "", "CareProcessAndReview", "EARoot/EA4/EA2/EA2/EA6/EA1082.htm", "177.png", "367", "0", "", "Object diagram");
+tocTab[tocTab.length] = new Array("4.2.2.6:2", "", "«NEW TEMPLATE» CPA: newCPAdministration", "EARoot/EA4/EA2/EA2/EA6/EA1084.htm", "25.png", "5693", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.6:3", "", "CPA: careProcessAdministration", "EARoot/EA4/EA2/EA2/EA6/EA1085.htm", "25.png", "5690", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.6:4", "", "CPA: careProcessAdminTemplateList", "EARoot/EA4/EA2/EA2/EA6/EA1086.htm", "25.png", "5689", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.2.6:5", "", "CPA: careAndProcessReview", "EARoot/EA4/EA2/EA2/EA6/EA1087.htm", "25.png", "5688", "0", "", "Object");

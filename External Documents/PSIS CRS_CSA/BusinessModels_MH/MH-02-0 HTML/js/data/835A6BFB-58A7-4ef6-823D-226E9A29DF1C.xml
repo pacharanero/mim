@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("4.2.3.1:1", "", "Current Contact status & Location Details", "EARoot/EA4/EA2/EA3/EA1/EA1177.htm", "177.png", "390", "0", "", "Object diagram");
+tocTab[tocTab.length] = new Array("4.2.3.1:2", "", ": currentLocationInformationOfPatient", "EARoot/EA4/EA2/EA3/EA1/EA1179.htm", "25.png", "6136", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.3.1:3", "", "«NEW TEMPLATE» currentContactStatus: newContactStatus", "EARoot/EA4/EA2/EA3/EA1/EA1180.htm", "25.png", "6139", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.3.1:4", "", "currentContactStatus: currentContactStatusAndLocationDetails", "EARoot/EA4/EA2/EA3/EA1/EA1181.htm", "25.png", "6138", "0", "", "Object");
+tocTab[tocTab.length] = new Array("4.2.3.1:5", "", "currentContactStatus", "EARoot/EA4/EA2/EA3/EA1/EA1182.htm", "25.png", "6137", "0", "", "Object");

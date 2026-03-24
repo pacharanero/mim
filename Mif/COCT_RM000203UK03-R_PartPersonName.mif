@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<staticModel isAbstract="false" isSerializable="true"
+    name="COCT_RM000203UK03" packageKind="root"
+    representationKind="flat" xmlns="urn:hl7-org:v3/mif"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3/mif ../MifSchemas/mifStaticModelFlat.xsd">
+    <packageLocation artifact="RM-deprecated" domain="CT" id="000203"
+        name="COCT_RM000203UK03" realm="UK" root="DEFN" section="HM"
+        subSection="CO" version="03"/>
+    <header>
+        <renderingInformation
+            application="NHS R-MIM Designer 2.99.KJ.04"
+            renderingTime="2007-09-19T17:20:46" schemaVersion="1"/>
+        <legalese copyrightOwner="NHS Connecting for Health"/>
+    </header>
+    <graphicRepresentation presentation="HL7">
+        <graphElement name="Main">
+            <position x="0.0" y="0.0"/>
+            <size height="5.25722" width="7.29239"/>
+        </graphElement>
+    </graphicRepresentation>
+    <derivationSupplier staticModelDerivationId="1">
+        <targetStaticModel artifact="RIM" realm="UV" root="DEFN" version="1"/>
+    </derivationSupplier>
+    <ownedEntryPoint className="PartOfWhole" id="COCT_RM000203UK03"
+        isAbstract="false" name="R_PartPersonName">
+        <annotations>
+            <description>
+                <text>
+                    <p>Represents a name of a person, when</p>
+                    <p>additional administrative information</p>
+                    <p>about the name needs to be supplied.</p>
+                </text>
+            </description>
+            <otherAnnotation type="html">
+                <text/>
+            </otherAnnotation>
+        </annotations>
+        <graphicRepresentation>
+            <graphElement containerDiagramName="Main"
+                isHeightAutoSize="false" isWidthAutoSize="false"
+                nodeOrientation="Down" shapeId="COCT_RM000203UK03">
+                <position x="4.53578" y="0.02778"/>
+                <size height="0.71944" width="1.99495"/>
+                <anchorage connectToShapeId="Sheet.17">
+                    <position x="5.53325" y="0.74722"/>
+                    <graphEdge>
+                        <anchor>
+                            <position x="5.53325" y="1.41222"/>
+                        </anchor>
+                    </graphEdge>
+                </anchorage>
+            </graphElement>
+        </graphicRepresentation>
+    </ownedEntryPoint>
+    <ownedClass>
+        <class isAbstract="false" name="Subject">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Right" shapeId="Sheet.1"
+                    shapeTemplate="Participation" textWrappingWidth="66.0">
+                    <position x="3.375" y="1.72583"/>
+                    <size height="0.30278" width="1.521"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <div>
+                            <strong>
+                                <font face="times new roman,times" size="3">A link to an Observation that this role is the subject of. <strong>
+                                    <font
+                                    face="times new roman,times" size="3"/>
+                                    </strong>
+                                    <strong>
+                                    <font
+                                    face="times new roman,times" size="3">
+                                    <strong>
+                                    <font
+                                    face="times new roman,times" size="3">
+                                    <strong>
+                                    <p>
+                                    <strong>
+                                    <font
+                                    face="Times New Roman" size="3">This link is mandatory if this CMET is used within the Create Initial Record Request Rejected (Duplicate Found). Otherwise, this link is only present if this CMET is used in response to a query where historic data was returned.</font>
+                                    </strong>
+                                    </p>
+                                    </strong>
+                                    </font>
+                                    </strong>
+                                    </font>
+                                    </strong>
+                                </font>
+                            </strong>
+                        </div>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="SBJ"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is a Subject participation.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SBJ"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Subject2">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Right" shapeId="Sheet.7"
+                    shapeTemplate="Participation" textWrappingWidth="66.0">
+                    <position x="3.408" y="3.34683"/>
+                    <size height="0.30278" width="1.488"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <div>
+                            <b>
+                                <font face="times new roman,times" size="3">A link to an Observation that this role is the subject of. <b>
+                                    <font
+                                    face="times new roman,times" size="3"/>
+                                    </b>
+                                    <b>
+                                    <font
+                                    face="times new roman,times" size="3">
+                                    <b>
+                                    <font
+                                    face="times new roman,times" size="3">
+                                    <b>
+                                    <p>
+                                    <b>
+                                    <font
+                                    face="Times New Roman" size="3">This link is not present if this CMET is used within the Create Initial Record Request Rejected (Duplicate Found). Otherwise, this link is only present if this CMET is used in response to a query where historic data was returned.</font>
+                                    </b>
+                                    </p>
+                                    </b>
+                                    </font>
+                                    </b>
+                                    </font>
+                                    </b>
+                                </font>
+                            </b>
+                        </div>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="SBJ"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is a Subject participation.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SBJ"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="SystemEffectiveDate">
+            <derivationSupplier className="Observation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.13" shapeTemplate="Act">
+                    <position x="0.227" y="1.36566"/>
+                    <size height="0.78112" width="3.149"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <strong>
+                                <font face="times new roman,times" size="3">Parent class containing details of an observation about a piece of data, specifically the times for which the data is / was effective on the system.</font>
+                            </strong>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="OBS"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is an Observation act.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="OBS"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="EVN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="moodCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is an Event.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="EVN"/>
+            </attribute>
+            <attribute conformance="R" defaultValue="02" fixedValue="02"
+                isMandatory="true" maximumMultiplicity="1"
+                minimumMultiplicity="1" name="code" sortKey="4">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times"
+                                    size="3">Indicates the type of observation. In this case, the observation is that of a system effective date. <font
+                                    face="times new roman,times" size="3">
+                                    <font
+                                    face="times new roman,times" size="3">
+                                    <p>
+                                    <font
+                                    face="Times New Roman" size="3">The Coded with Code System datatype flavour is used to carry this information as follows:</font>
+                                    </p>
+                                    <ul>
+                                    <li>
+                                    <font
+                                    face="Times New Roman" size="3">The <em>code</em> attribute will contain the value "02" (System effective date) from the list of codes in the <u>AdministrativeObservationType</u> vocabulary</font>
+                                    </li>
+                                    <li>
+                                    <font
+                                    face="Times New Roman" size="3">The <em>codeSystem</em> attribute will contain the OID "2.16.840.1.113883.2.1.3.2.4.17.170"</font>
+                                    </li>
+                                    </ul>
+                                    </font>
+                                    </font>
+                                </font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CV"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="AdministrativeObservationType"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="value" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">The system effective dates represented as a range, supplied in the <i>low</i> and <i>high</i> sub-elements. The system effective from date will always be present. The system effective to date is only present for historic data.   <p>For current and future dated data, only the Low attribute will be set.</p>
+                                </font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="value"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="IVL">
+                    <supplierBindingArgumentDatatype name="TS"/>
+                </type>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="PartOfWhole">
+            <derivationSupplier className="Role" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="false" isWidthAutoSize="true"
+                    shapeId="Sheet.17" shapeTemplate="Role">
+                    <position x="4.896" y="1.41222"/>
+                    <size height="2.535" width="1.25"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <strong>
+                                <font face="times new roman,times" size="3">Parent class containing and linking to information about an entity which is a part of another entity. In this case, it is the name part of a person entity.</font>
+                            </strong>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="PART"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is a Part role.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Role" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PART"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Person">
+            <derivationSupplier className="Person" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.27" shapeTemplate="Entity">
+                    <position x="4.769" y="4.49722"/>
+                    <size height="0.75" width="1.699"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <strong>
+                                <font face="times new roman,times" size="3">Parent class containing information which is specific to a person.</font>
+                            </strong>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="PSN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is a Person entity.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Person" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PSN"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="INSTANCE"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="determinerCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is an Instance of a person.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="determinerCode"
+                    className="Person" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="INSTANCE"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="name" sortKey="6">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">
+                                    <font face="times new roman,times" size="3">The particular flavour of the person name datatype used here is Person name structured with use (number 6 in the datatypes description). This means that the name will contain the following components: </font>
+                                    <ul>
+                                    <li>
+                                    <font
+                                    face="times new roman,times" size="3">A <i>family</i> element to carry the surname or family name of the person (optional) </font>
+                                    </li>
+                                    <li>
+                                    <font
+                                    face="times new roman,times" size="3">Up to 2 <i>given</i> elements to carry the given names of the person. If the person has more than 2 given names, these will be concatenated in the second given name attribute with a space between each name. The order of the elements is also significant, so the first occurrence of the <i>given</i> element will carry the first given name, and the second occurrence will carry the second, third, etc. given names (optional) </font>
+                                    </li>
+                                    <li>
+                                    <font
+                                    face="times new roman,times" size="3">A <i>prefix</i> element to carry a prefix for the name, such as Mr, Mrs, etc. (optional) </font>
+                                    </li>
+                                    <li>
+                                    <font
+                                    face="times new roman,times" size="3">A <i>suffix</i> element to carry a suffix for the name, such as Jnr, Snr, etc. (optional) </font>
+                                    </li>
+                                    <li>
+                                    <font
+                                    face="times new roman,times" size="3">A<i> use</i> attribute to denote the type of name. This is restricted to "L" (Usual) within a Create Initial Record Rejected (Duplicate Found) and RetrievePatientResponse (when applied to a related person) messages. There are also restrictions to "L" (Usual), "A" (Alias) and "PREFERRED" (Preferred) within an Advanced Trace Response message. (mandatory) </font>
+                                    </li>
+                                    <li>
+                                    <font
+                                    face="times new roman,times" size="3">A <i>validTime</i> element to contain the dates for which the name is / was current as a range, supplied in the <i>low</i> and <i>high</i> sub-elements. Both the <i>low</i> and <i>high</i> sub-elements are optional, allowing open-ended ranges to be specified. (optional)</font>
+                                    </li>
+                                    </ul>
+
+                                    <p>NB If this is used within a Retrieval Response, then <font
+                                    face="Times New Roman" size="3">the following will also be present:</font>
+                                    </p>
+                                    <ul>
+                                    <li>
+                                    <font face="Times New Roman" size="3">An <i>id</i> attribute to carry the PDS allocated object identifier for the data item (mandatory)</font>
+                                    </li>
+                                    </ul>
+                                    <p>This will be used to control the update semantics when performing updates.</p>
+                                </font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="name"
+                    className="Person" staticModelDerivationId="1"/>
+                <type name="PN"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="SourceIdentified">
+            <derivationSupplier className="Observation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.31" shapeTemplate="Act">
+                    <position x="0.135" y="2.77522"/>
+                    <size height="0.78112" width="3.149"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <strong>
+                                <font face="times new roman,times" size="3">Parent class containing details of a source system, when it takes the form of an identifier.</font>
+                            </strong>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="OBS"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is an Observation act.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="OBS"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="EVN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="moodCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is an Event.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="EVN"/>
+            </attribute>
+            <attribute conformance="R" defaultValue="01" fixedValue="01"
+                isMandatory="true" maximumMultiplicity="1"
+                minimumMultiplicity="1" name="code" sortKey="4">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">
+                                    <font face="times new roman,times"
+                                    size="3">Indicates the type of observation. In this case, the observation is that of a source system. <font
+                                    face="times new roman,times" size="3">
+                                    <font
+                                    face="times new roman,times" size="3">
+                                    <p>
+                                    <font
+                                    face="Times New Roman" size="3">The Coded with Code System datatype flavour is used to carry this information as follows:</font>
+                                    </p>
+                                    <ul>
+                                    <li>
+                                    <font
+                                    face="Times New Roman" size="3">The <em>code</em> attribute will contain the value "01" (Source) from the list of codes in the <u>AdministrativeObservationType</u> vocabulary</font>
+                                    </li>
+                                    <li>
+                                    <font
+                                    face="Times New Roman" size="3">The <em>codeSystem</em> attribute will contain the OID "2.16.840.1.113883.2.1.3.2.4.17.170"</font>
+                                    </li>
+                                    </ul>
+                                    </font>
+                                    </font>
+                                    </font>
+                                </font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CV"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="AdministrativeObservationType"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="value" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <div>
+                                <font face="times new roman,times" size="3">
+                                    <font face="times new roman,times" size="3">The source system. This will be one of:</font>
+                                </font>
+                                <font face="times new roman,times" size="3">
+                                    <ul>
+                                    <li>
+                                    <font face="Times New Roman" size="3">SDS Accredited System Identifier (ASID)</font>
+                                    </li>
+                                    <li>
+                                    <font face="Times New Roman" size="3">NHS Directory Services Organisation Code</font>
+                                    </li>
+                                    </ul>
+                                    <font face="Times New Roman" size="3">
+                                    <font face="Times New Roman" size="3">The Identifier External datatype flavour is used to carry this information as follows:</font>
+                                    </font>
+                                    <font face="Times New Roman" size="3">
+                                    <p class="63C7BF90-553E-11DB-A2A2-929938389B48">
+                                    <font face="Times New Roman" size="3">If it is a SDS Accredited System Identifier (ASID):</font>
+                                    </p>
+                                    <ul>
+                                    <div class="63C7BF90-553E-11DB-A2A2-929938389B48">
+                                    <li>
+                                    <div class="63C7BF90-553E-11DB-A2A2-929938389B48">
+                                    <font
+                                    face="Times New Roman" size="3">The <em>root</em> attribute will contain an OID with the value "1.2.826.0.1285.0.2.0.107"</font>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div class="63C7BF90-553E-11DB-A2A2-929938389B48">
+                                    <font
+                                    face="Times New Roman" size="3">The <em>extension</em> attribute will contain the SDS Accredited System Identifier</font>
+                                    </div>
+                                    </li>
+                                    </div>
+                                    </ul>
+                                    <p class="63C7BF90-553E-11DB-A2A2-929938389B48">If it is a NHS Directory Services Organisation Code:</p>
+                                    <ul>
+                                    <div class="63C7BF90-553E-11DB-A2A2-929938389B48">
+                                    <li>
+                                    <div class="63C7BF90-553E-11DB-A2A2-929938389B48">
+                                    <font
+                                    face="Times New Roman" size="3">The <em>root</em> attribute will contain an OID with the value "1.2.826.0.1285.0.1.10"</font> (SDS Organisation ID)</div>
+                                    </li>
+                                    <li>
+                                    <div class="63C7BF90-553E-11DB-A2A2-929938389B48">
+                                    <font
+                                    face="Times New Roman" size="3">The <em>extension</em> attribute will contain the NHS Directory Services Organisation Code</font>
+                                    </div>
+                                    </li>
+                                    </div>
+                                    </ul>
+                                    </font>
+                                </font>
+                            </div>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="value"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="II" typeSpecialisation="II.NPfIT.oid.mandatory"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="SourceCoded">
+            <derivationSupplier className="Observation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.35" shapeTemplate="Act">
+                    <position x="0.135" y="3.68133"/>
+                    <size height="0.78112" width="3.149"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <strong>
+                                <font face="times new roman,times" size="3">Parent class containing details of a source system, when it takes the form of a National System code.</font>
+                            </strong>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="OBS"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is an Observation act.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="OBS"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="EVN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="moodCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is an Event.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="EVN"/>
+            </attribute>
+            <attribute conformance="R" defaultValue="01" fixedValue="01"
+                isMandatory="true" maximumMultiplicity="1"
+                minimumMultiplicity="1" name="code" sortKey="4">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">
+                                    <font face="times new roman,times"
+                                    size="3">Indicates the type of observation. In this case, the observation is that of a source system. <font
+                                    face="times new roman,times" size="3">
+                                    <font
+                                    face="times new roman,times" size="3">
+                                    <p>
+                                    <font
+                                    face="Times New Roman" size="3">The Coded with Code System datatype flavour is used to carry this information as follows:</font>
+                                    </p>
+                                    <ul>
+                                    <li>
+                                    <font
+                                    face="Times New Roman" size="3">The <em>code</em> attribute will contain the value "01" (Source) from the list of codes in the <u>AdministrativeObservationType</u> vocabulary</font>
+                                    </li>
+                                    <li>
+                                    <font
+                                    face="Times New Roman" size="3">The <em>codeSystem</em> attribute will contain the OID "2.16.840.1.113883.2.1.3.2.4.17.170"</font>
+                                    </li>
+                                    </ul>
+                                    </font>
+                                    </font>
+                                    </font>
+                                </font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CV"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="AdministrativeObservationType"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="value" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">
+                                    <font face="times new roman,times" size="3">A code identifying the National System.</font>
+                                    <font face="Times New Roman" size="3">
+                                    <p>
+                                    <font face="Times New Roman" size="3">The Coded with Code System datatype flavour is used to carry this information as follows: <ul>
+                                    <li>The <em>code</em> attribute will contain a value from the list of codes in the <u>NationalSystemCode</u> vocabulary </li>
+                                    <li>The <em>codeSystem</em> attribute will contain the OID "2.16.840.1.113883.2.1.3.2.4.17.174" </li>
+                                    </ul>
+                                    </font>
+                                    </p>
+                                    </font>
+                                </font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="value"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CV"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="NationalSystemCode"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="true" name="Source">
+            <derivationSupplier className="Act" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    nodeOrientation="Portrait" shapeId="Sheet.39" shapeTemplate="Choice">
+                    <position x="0.01" y="2.52522"/>
+                    <size height="2.063" width="3.399"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <strong>
+                                <font face="times new roman,times" size="3">Parent class containing details of an observation about a piece of data, specifically the system that was the source of the data.</font>
+                            </strong>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <specializationChild childClassName="SourceIdentified">
+                <graphicRepresentation>
+                    <graphElement containerDiagramName="Main" shapeId="Sheet.31">
+                        <position x="0.135" y="2.77522"/>
+                        <size height="0.78112" width="3.149"/>
+                    </graphElement>
+                </graphicRepresentation>
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">This class should be used if the source system takes the form of an identifier.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+            </specializationChild>
+            <specializationChild childClassName="SourceCoded">
+                <graphicRepresentation>
+                    <graphElement containerDiagramName="Main" shapeId="Sheet.35">
+                        <position x="0.135" y="3.68133"/>
+                        <size height="0.78112" width="3.149"/>
+                    </graphElement>
+                </graphicRepresentation>
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">This class should be used if the source system takes the form of a National System code.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+            </specializationChild>
+        </class>
+    </ownedClass>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.27"
+                containerDiagramName="Main" shapeId="Sheet.17">
+                <position x="6.146" y="3.94722"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.27">
+                        <position x="5.618" y="4.49722"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="partPerson" participantClassName="Person">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">A link to details of the person part.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="player"
+                    className="PartOfWhole" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="PartOfWhole">
+                <derivationSupplier associationEndName="playedRole"
+                    className="Person" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.17"
+                containerDiagramName="Main" shapeId="Sheet.7">
+                <position x="4.896" y="3.49822"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.17">
+                        <position x="4.896" y="3.49822"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="0"
+                name="subjectOf1" participantClassName="Subject2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="PartOfWhole" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="PartOfWhole">
+                <derivationSupplier associationEndName="role"
+                    className="Subject2" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.17"
+                containerDiagramName="Main" shapeId="Sheet.1">
+                <position x="4.896" y="1.87722"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.17">
+                        <position x="4.896" y="1.87722"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="0"
+                name="subjectOf2" participantClassName="Subject">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="PartOfWhole" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="PartOfWhole">
+                <derivationSupplier associationEndName="role"
+                    className="Subject" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.13"
+                containerDiagramName="Main" shapeId="Sheet.1">
+                <position x="3.375" y="1.87722"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.13">
+                        <position x="3.375" y="1.87722"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="systemEffectiveDate" participantClassName="SystemEffectiveDate">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">A link to details of when this information is / was effective on the system.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="act"
+                    className="Subject" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Subject">
+                <derivationSupplier associationEndName="participation"
+                    className="SystemEffectiveDate" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.39"
+                containerDiagramName="Main" shapeId="Sheet.7">
+                <position x="3.408" y="3.49822"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.39">
+                        <position x="3.408" y="3.49822"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="source" participantClassName="Source">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">A link to details of the system that was the source of this information.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="act"
+                    className="Subject2" staticModelDerivationId="1"/>
+                <participantClassSpecialization
+                    className="SourceIdentified" traversalName="sourceSourceIdentified"/>
+                <participantClassSpecialization className="SourceCoded" traversalName="sourceSourceCoded"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Subject2">
+                <derivationSupplier associationEndName="participation"
+                    className="Source" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+</staticModel>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.ascc.net/xml/schematron">
+	<title>NPfIT Schematron for CDA documents</title>
+	<ns prefix="hl7v3" uri="urn:hl7-org:v3"/>
+	<ns prefix="npfitlc" uri="NPFIT:HL7:Localisation"/>
+	<ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema-instance"/>
+	<pattern name="Content Id and templateId check">
+		<rule context="hl7v3:*[child::hl7v3:templateId and preceding-sibling::npfitlc:contentId]">
+			<assert test="preceding-sibling::npfitlc:contentId/@extension = child::hl7v3:templateId/@extension">Error:Preceding contentId extension is not matching templateId, the value should be '<value-of select="child::hl7v3:templateId/@extension"/>' but is '<value-of select="preceding-sibling::npfitlc:contentId/@extension"/>'.</assert>
+		</rule>
+	</pattern>
+	<pattern name="Template Ref model validation">
+		<rule context="hl7v3:*[hl7v3:templateId[contains(@extension,'Ref') and substring(@extension,string-length(@extension)-2,3)='Ref' and contains(@extension,'COCD_TP147')]]">
+			<assert test="count(hl7v3:code/@*) = 1 and hl7v3:code/@nullFlavor='NA'">Error:Template Reference class '<value-of select="name(.)"/>' should contain a code element with nullFlavour attribute only.</assert>
+			<assert test="hl7v3:id/@root = //hl7v3:*[hl7v3:templateId[contains(@extension,'146')]]/hl7v3:id/@root or hl7v3:id/@root = //hl7v3:*[hl7v3:templateId[contains(@extension,'146')]]/hl7v3:id/@extension">Error: reference template '<value-of select="hl7v3:templateId/@extension"/>' id '<value-of select="hl7v3:id/@root"/>' is orphaned</assert>
+		</rule>
+	</pattern>
+	<pattern name="Ref Model Validation">
+		<rule context="hl7v3:templateId[contains(@extension,'COCD_TP147')]">
+			<assert test="//hl7v3:templateId[contains(@extension,substring-before(substring-after(current()/@extension,'#'),'Ref')) and contains(@extension,'146')]">Error: reference template '<value-of select="@extension"/>' used is never referenced in the message. The reference template can be an disallowed one, please check the respective domain for the allowable list.</assert>
+		</rule>
+	</pattern>
+	<pattern name="MessageType root validation">
+		<rule context="hl7v3:ClinicalDocument[npfitlc:messageType]">
+			<assert test="npfitlc:messageType/@root = '2.16.840.1.113883.2.1.3.2.4.18.17'">Error:ClinicalDocument messageType/@root value should be '2.16.840.1.113883.2.1.3.2.4.18.17' but is '<value-of select="npfitlc:messageType/@root"/>'.</assert>
+		</rule>
+	</pattern>
+	<pattern name="ContentId root validation">
+		<rule context="hl7v3:contentId">
+			<assert test="@root = '2.16.840.1.113883.2.1.3.2.4.18.16'">Error:contentId/@root value should be '2.16.840.1.113883.2.1.3.2.4.18.16' but is '<value-of select="@root"/>'.</assert>
+		</rule>
+	</pattern>
+	<pattern name="Content ID and originalText/reference Validation">
+		<rule context="hl7v3:content[@ID]">
+			<assert test="concat('#',@ID) = //hl7v3:reference/@value">Error:content '<value-of select="@ID"/>' is orphaned.</assert>
+		</rule>
+	</pattern>
+	<pattern name="originalText/reference Validation">
+		<rule context="hl7v3:reference[@value]">
+			<assert test="substring-after(current()/@value,'#') = //hl7v3:content/@ID">Error:originalText/reference '<value-of select="@value"/>' is orphaned.</assert>
+			<report test="count(//hl7v3:reference/@value[. = current()/@value]) &gt; 1">Information: originalText/reference '<value-of select="substring-after(current()/@value,'#')"/>' is referenced multiple times.</report>
+		</rule>
+	</pattern>
+	<pattern name="CRETypeList id validation">
+		<rule context="hl7v3:*[child::hl7v3:templateId[contains(@extension,'CRETypeList') and contains(@extension,'COCD_TP146')]]/hl7v3:value">
+			<assert test="@root = //hl7v3:id/@root">Error:CREType list CRETypeList value/@root '<value-of select="@root"/>' is orphaned.</assert>
+			<assert test="count(//hl7v3:value/@root[. = current()/@root]) = 1">Error:CREType list value/@root '<value-of select="@root"/>' is duplicated.</assert>
+		</rule>
+	</pattern>
+	<pattern name="DIProcedureEvent id validation">
+		<rule context="hl7v3:*[child::hl7v3:templateId[contains(@extension,'DIProcedureEvent') and contains(@extension,'COCD_TP146')]]/hl7v3:id">
+			<assert test="@root = //hl7v3:*[child::hl7v3:templateId[not(contains(@extension,'DIProcedureEvent')) and contains(@extension,'COCD_TP146')]]/hl7v3:id/@root">Error:DIProcedureEvent list id/@root '<value-of select="@root"/>' is orphaned.</assert>
+			<assert test="count(//hl7v3:*[child::hl7v3:templateId[contains(@extension,'DIProcedureEvent') and contains(@extension,'COCD_TP146')]]/hl7v3:id/@root[.= current()/@root]) = 1">Error:DIProcedureEvent list id/@root '<value-of select="@root"/>' is duplicated.</assert>
+		</rule>
+	</pattern>
+	<pattern name="MedicationTemplate rules">
+		<rule context="hl7v3:*[child::hl7v3:templateId[contains(@extension,'COCD_TP146029UK') or contains(@extension,'COCD_TP146030UK') or contains(@extension,'COCD_TP146031UK') or contains(@extension,'COCD_TP146032UK') or contains(@extension,'COCD_TP146033UK') or contains(@extension,'COCD_TP146034UK')] and preceding-sibling::npfitlc:contentId]">
+			<assert test="//hl7v3:*[child::hl7v3:templateId[contains(@extension,'COCD_TP146062UK')] and preceding-sibling::npfitlc:contentId]/hl7v3:code/@code='185361000000102'">Error: Medication template '<value-of select="hl7v3:templateId/@extension"/>' is used and CRETypeList code value is wrong should be '185361000000102' but is '<value-of select="//hl7v3:*[child::hl7v3:templateId[contains(@extension,'COCD_TP146062UK')]]/hl7v3:code/@code"/>'.</assert>
+			<assert test="hl7v3:id/@root=//hl7v3:*[child::hl7v3:templateId[contains(@extension,'COCD_TP146062UK')] and preceding-sibling::npfitlc:contentId]/hl7v3:value/@root">Error: Medication template '<value-of select="hl7v3:templateId/@extension"/>' id '<value-of select="hl7v3:id/@root"/>' is not in CRETypeList</assert>
+		</rule>
+	</pattern>
+	<pattern name="Allergy Template rules">
+		<rule context="hl7v3:*[child::hl7v3:templateId[contains(@extension,'COCD_TP146025UK')] and preceding-sibling::npfitlc:contentId]">
+			<assert test="//hl7v3:*[child::hl7v3:templateId[contains(@extension,'COCD_TP146062UK')] and preceding-sibling::npfitlc:contentId]/hl7v3:code/@code='163221000000102'">Error: Allergy template '<value-of select="hl7v3:templateId/@extension"/>' is used and CRETypeList code value is wrong should be '163221000000102' but is '<value-of select="//hl7v3:*[child::hl7v3:templateId[contains(@extension,'COCD_TP146062UK')]]/hl7v3:code/@code"/>'.</assert>
+			<assert test="hl7v3:id/@root=//hl7v3:*[child::hl7v3:templateId[contains(@extension,'COCD_TP146062UK')] and preceding-sibling::npfitlc:contentId]/hl7v3:value/@root">Error: Medication template '<value-of select="hl7v3:templateId/@extension"/>' id '<value-of select="hl7v3:id/@root"/>' is not in CRETypeList</assert>
+		</rule>
+	</pattern>
+	<pattern name="CRETypeList code check">
+		<rule context="hl7v3:*[child::hl7v3:templateId[contains(@extension,'COCD_TP146062UK')] and preceding-sibling::npfitlc:contentId]">
+			<assert test="hl7v3:code/@code='163221000000102' or hl7v3:code/@code='185361000000102'">Error: CRETypeList template '<value-of select="hl7v3:templateId/@extension"/>' code/@code value is wrong should be '163221000000102' or '185361000000102' but is '<value-of select="hl7v3:code/@code"/>'.</assert>
+		</rule>
+	</pattern>
+	<pattern name="Clinical Template UUID Check">
+		<rule context="hl7v3:*[child::hl7v3:templateId[contains(@extension,'COCD_TP146') and not(contains(@extension,'DIProcedureEvent'))] and preceding-sibling::npfitlc:contentId and child::hl7v3:id[@root and not(@extension)]]/hl7v3:id">
+			<assert test="count(//hl7v3:*[child::hl7v3:templateId[contains(@extension,'COCD_TP146') and not(contains(@extension,'DIProcedureEvent'))] and preceding-sibling::npfitlc:contentId and child::hl7v3:id[@root and not(@extension)]]/hl7v3:id/@root[.=current()/@root])=1">Error: ClinicalTemplate id is duplicated '<value-of select="@root"/>'</assert>
+		</rule>
+	</pattern>
+	<pattern name="xsi type validation">
+		<rule context="hl7v3:value[(contains(name(..),'LifeStyle') or contains(name(..),'SocialOrPersonalCircumstance')) and contains(name(..),'COCD_TP146')]">
+			<assert test="@xsi:type = 'IVL_TS' or @xsi:type = 'ST' or @xsi:type = 'REAL' or @xsi:type = 'INT' or @xsi:type = 'PQ'">Error: value @xsi:type is wrong should be IVL_TS or ST or REAL or PQ or INT but is '<value-of select="@xsi:type"/>'.</assert>
+		</rule>
+		<rule context="hl7v3:value[contains(name(..),'scale') and contains(name(..),'COCD_TP146065')]">
+			<assert test="@xsi:type = 'ST' or @xsi:type = 'REAL' or @xsi:type = 'PQ'">Error: value @xsi:type is wrong should be ST or REAL or PQ but is '<value-of select="@xsi:type"/>'.</assert>
+		</rule>
+	</pattern>
+</schema>

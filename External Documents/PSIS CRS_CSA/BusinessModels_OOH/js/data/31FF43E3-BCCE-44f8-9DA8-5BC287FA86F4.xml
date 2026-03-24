@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("2.1:1", "", "Others", "EARoot/EA2/EA1/EA55.htm", "188.png", "105", "0", "", "Custom diagram");
+tocTab[tocTab.length] = new Array("2.1:2", "", "«Functional» Give user option to send or not send documents to GP", "EARoot/EA2/EA1/EA57.htm", "19.png", "1230", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("2.1:3", "", "«Functional» System must use SDS to identify recipient systems", "EARoot/EA2/EA1/EA58.htm", "19.png", "1228", "0", "", "Requirement");

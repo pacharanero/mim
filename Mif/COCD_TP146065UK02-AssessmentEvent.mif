@@ -1,0 +1,2112 @@
+<?xml version="1.0" encoding="WINDOWS-1252"?>
+<staticModel isAbstract="false" isSerializable="true" name="COCD_TP146065UK02" packageKind="root" representationKind="flat" title="assessmentevent" xsi:schemaLocation="urn:hl7-org:v3/mif ../MifSchemas/mifStaticModelFlat.xsd" xmlns="urn:hl7-org:v3/mif" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<packageLocation artifact="TP" domain="CD" name="COCD_TP146065UK02" realm="UK" root="DEFN" section="HM" subSection="CO" version="02" id="146065"/>
+	<header>
+		<renderingInformation application="NHS R-MIM Designer 2.99.KJ.04" renderingTime="2008-01-30T15:48:44" schemaVersion="1"/>
+		<legalese copyrightOwner="NHS Connecting for Health"/>
+	</header>
+	<graphicRepresentation presentation="HL7">
+		<graphElement name="Main">
+			<position x="0.0" y="0.0"/>
+			<size height="11.04918" width="18.57332"/>
+		</graphElement>
+	</graphicRepresentation>
+	<derivationSupplier staticModelDerivationId="1">
+		<targetStaticModel artifact="RIM" realm="UV" root="DEFN" version="1"/>
+	</derivationSupplier>
+	<ownedEntryPoint className="AssessmentEvent" id="COCD_TP146065UK02" isAbstract="false" name="AssessmentEvent">
+		<annotations>
+			<description>
+				<text>
+					<p>Represents encounter between</p>
+					<p>the patient and health care professionals</p>
+				</text>
+			</description>
+			<otherAnnotation type="html">
+				<text/>
+			</otherAnnotation>
+		</annotations>
+		<graphicRepresentation>
+			<graphElement containerDiagramName="Main" isHeightAutoSize="false" isWidthAutoSize="false" nodeOrientation="Down" shapeId="COCD_TP146065UK02">
+				<position x="6.58876" y="0.24405"/>
+				<size height="0.58611" width="2.11247"/>
+				<anchorage connectToShapeId="Sheet.19">
+					<position x="7.645" y="0.83016"/>
+					<graphEdge>
+						<anchor>
+							<position x="7.645" y="1.37418"/>
+						</anchor>
+					</graphEdge>
+				</anchorage>
+			</graphElement>
+		</graphicRepresentation>
+	</ownedEntryPoint>
+	<ownedClass>
+		<class isAbstract="false" name="Author1">
+			<derivationSupplier className="Participation" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" nodeOrientation="Left" shapeId="Sheet.1" shapeTemplate="Participation" textWrappingWidth="66.0">
+					<position x="2.866" y="1.42661"/>
+					<size height="0.96944" width="3.333"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<constraint name="contentId">
+					<text>
+						<p>NPFIT-000001#Role</p>
+					</text>
+					<graphicRepresentation>
+						<graphElement shapeId="Sheet.134" containerDiagramName="Main" isWidthAutoSize="true" isHeightAutoSize="true">
+							<position x="4.8318" y="2.5114"/>
+							<size width="1.13639" height="0.32778"/>
+							<anchorage connectToShapeId="Sheet.1">
+								<position x="5.4" y="2.67529"/>
+								<graphEdge>
+									<anchor>
+										<position x="4.595" y="2.39605"/>
+									</anchor>
+								</graphEdge>
+							</anchorage>
+						</graphElement>
+					</graphicRepresentation>
+				</constraint>
+				<constraint>
+					<text>
+						<p>Author with time are needed</p>
+						<p>if author or author time is</p>
+						<p>different to any inherited</p>
+						<p>author</p>
+					</text>
+					<graphicRepresentation>
+						<graphElement shapeId="Sheet.138" containerDiagramName="Main" isWidthAutoSize="true" isHeightAutoSize="true">
+							<position x="4.50109" y="0.32729"/>
+							<size width="1.63081" height="0.67778"/>
+							<anchorage connectToShapeId="Sheet.1">
+								<position x="5.3165" y="0.66618"/>
+								<graphEdge>
+									<anchor>
+										<position x="4.595" y="1.42661"/>
+									</anchor>
+								</graphEdge>
+							</anchorage>
+						</graphElement>
+					</graphicRepresentation>
+				</constraint>
+				<otherAnnotation type="html">
+					<text>
+						<div>
+							<p>
+								<b>Refers to</b> t<b>he person who recorded the Assessment event.</b>
+							</p>
+							<p>Only required if different to inherited author or no author is inherited.</p>
+						</div>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="contentId" sortKey="0">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>This attribute, when valued in an instance, provides a unique forward pointing identifier for a template which constrains the classes and attributes which follow. </p>
+								<p>The attribute is intended simply as a structural navigational aid and should not be relied upon as an indicator of semantic meaning.</p>
+								<p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+								<ul>
+									<li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.16"</li>
+									<li>The extension attribute shall contain the template artifact Id.</li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="contentId" className="Participation" staticModelDerivationId="1"/>
+				<type name="II"/>
+			</attribute>
+			<attribute conformance="R" defaultValue="COCD_TP146065UK02#author" fixedValue="COCD_TP146065UK02#author" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="templateId" sortKey="0">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>The fixed value of this attribute provides a unique identifier for the  template and the classname within that template.</p>
+								<p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+								<ul>
+									<li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.2"</li>
+									<li>The extension attribute shall contain the fixed value.</li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="templateId" className="Participation" staticModelDerivationId="1"/>
+				<type name="II"/>
+			</attribute>
+			<attribute conformance="R" fixedValue="AUT" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="typeCode" sortKey="1" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>Indicates that this is an author.</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="typeCode" className="Participation" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="AUT"/>
+			</attribute>
+			<attribute conformance="R" defaultValue="OA" fixedValue="OA" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="functionCode" sortKey="2">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>A code from the vocabulary shown indicating the function of the Assessment author<br/>
+								</p>
+								<p>The  Coded Plain flavour of Coded Value (CV) datatype shall be used to carry this information  as follows:</p>
+								<ul>
+									<li>The <i>code</i> attribute shall contain the value  </li>
+									<li>The <i>codeSystem</i> attribute shall contain the OID for the vocabulary  concerned</li>
+									<li>The  <i>displayName </i>attribute shall contain the text associated with the code</li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="functionCode" className="Participation" staticModelDerivationId="1"/>
+				<type name="CV"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="AuthorFunctionType"/>
+			</attribute>
+			<attribute conformance="R" defaultValue="OP" fixedValue="OP" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="contextControlCode" sortKey="3" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>Specifies how this author contributes to the context of the Assessment act and whether it may be propagated to descendent acts whose  association allows such propagation. </p>
+								<p>"O" (Overriding)- the association replaces any context of the same or  more specific type that has been conducted from the parent act.  </p>"P" (Propagating)- the association is conducted to all child  acts where the ActRelationship.contextConductionInd is set to "true".  </div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="contextControlCode" className="Participation" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="ContextControl"/>
+			</attribute>
+			<attribute conformance="R" isMandatory="false" maximumMultiplicity="1" minimumMultiplicity="1" name="time" sortKey="7">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>The time at which the author authored the details about the Assessment event.<br/>
+							</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="time" className="Participation" staticModelDerivationId="1"/>
+				<type name="TS"/>
+			</attribute>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="false" name="Performer">
+			<derivationSupplier className="Participation" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" nodeOrientation="Left" shapeId="Sheet.7" shapeTemplate="Participation" textWrappingWidth="66.0">
+					<position x="2.467" y="3.01796"/>
+					<size height="0.83611" width="3.732"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<constraint name="contentId">
+					<text>
+						<p>NPFIT-000002#Role</p>
+					</text>
+					<graphicRepresentation>
+						<graphElement shapeId="Sheet.142" containerDiagramName="Main" isWidthAutoSize="true" isHeightAutoSize="true">
+							<position x="4.76361" y="3.93918"/>
+							<size width="1.13639" height="0.32778"/>
+							<anchorage connectToShapeId="Sheet.7">
+								<position x="5.3318" y="4.10307"/>
+								<graphEdge>
+									<anchor>
+										<position x="4.396" y="3.85402"/>
+									</anchor>
+								</graphEdge>
+							</anchorage>
+						</graphElement>
+					</graphicRepresentation>
+				</constraint>
+				<otherAnnotation type="html">
+					<text>
+						<div>
+							<p>
+								<b>Refers to a performer of the Assessment event.</b>
+							</p>
+							<p>
+								<b>Where performer participation is used, then all performers must be stated,  even if they authored the act.</b>
+							</p>
+							<p>
+								<b>Where the author did not perform the act then the performer(s) should be  explicitly stated.</b>
+							</p>
+						</div>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="contentId" sortKey="0">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>This attribute, when valued in an instance, provides a unique forward pointing identifier for a template which constrains the classes and attributes which follow. </p>
+								<p>The attribute is intended simply as a structural navigational aid and should not be relied upon as an indicator of semantic meaning.</p>
+								<p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+								<ul>
+									<li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.16"</li>
+									<li>The extension attribute shall contain the template artifact Id.</li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="contentId" className="Participation" staticModelDerivationId="1"/>
+				<type name="II"/>
+			</attribute>
+			<attribute conformance="R" defaultValue="COCD_TP146065UK02#performer" fixedValue="COCD_TP146065UK02#performer" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="templateId" sortKey="0">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>The fixed value of this attribute provides a unique identifier for the  template and the classname within that template.</p>
+								<p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+								<ul>
+									<li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.2"</li>
+									<li>The extension attribute shall contain the fixed value.</li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="templateId" className="Participation" staticModelDerivationId="1"/>
+				<type name="II"/>
+			</attribute>
+			<attribute conformance="R" fixedValue="PRF" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="typeCode" sortKey="1" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>Indicates that this is a performer.</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="typeCode" className="Participation" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="PRF"/>
+			</attribute>
+			<attribute conformance="R" isMandatory="false" maximumMultiplicity="1" minimumMultiplicity="1" name="time" sortKey="7">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>The time that the perfomer performer during the Assessment event. <br/>
+								</p>
+								<p>The date range shall be carried as follows: </p>
+								<p>If a single point in time is to be carried the Date or Time Point data type  shall be used: </p>
+								<ul>
+									<li>The <i>center </i>attribute shall contain the date.</li>
+								</ul>This datatype is used if date of the Assessment event is not fully known /  available<br/>
+								<p/>
+								<p>If both a start date and an end date are present the Date or Time Interval  Complete data type shall be used: </p>
+								<ul>
+									<li>The <i>low</i> attribute shall contain the start date.  </li>
+									<li>The <i>high</i> attribute shall contain the end date. </li>
+								</ul>
+								<p>If only a start date is present the Date or Time Interval After data type  shall be used: </p>
+								<ul>
+									<li>The <i>low</i> attribute shall contain the start date.</li>
+								</ul>                                 This datatype would only be used if the Assessment event is still ongoing.<br/>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="time" className="Participation" staticModelDerivationId="1"/>
+				<type name="IVL">
+					<supplierBindingArgumentDatatype name="TS"/>
+				</type>
+			</attribute>
+			<attribute isMandatory="false" maximumMultiplicity="1" minimumMultiplicity="0" name="modeCode" sortKey="8">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>The mode in which the performer performed in the Assessment  Event.</p>
+								<p>The Coded Only datatype flavour is used to carry this information as  follows:</p>
+								<ul>
+									<li>The <i>code</i> attribute will contain a value from the list of codes in  the ParticipationMode vocabulary</li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="modeCode" className="Participation" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="ParticipationMode"/>
+			</attribute>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="false" name="Location2">
+			<derivationSupplier className="Participation" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" nodeOrientation="Right" shapeId="Sheet.13" shapeTemplate="Participation" textWrappingWidth="66.0">
+					<position x="9.304" y="1.49003"/>
+					<size height="0.56944" width="3.234"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<otherAnnotation type="html">
+					<text>
+						<p>
+							<b>Refers to a type of location ( care setting ) that the Assessment  event took place in. </b>
+							<br/>
+						</p>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<attribute conformance="R" defaultValue="COCD_TP146065UK02#location1" fixedValue="COCD_TP146065UK02#location1" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="templateId" sortKey="0">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>The fixed value of this attribute provides a unique identifier for the  template and the classname within that template.</p>
+								<p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+								<ul>
+									<li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.2"</li>
+									<li>The extension attribute shall contain the fixed value.</li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="templateId" className="Participation" staticModelDerivationId="1"/>
+				<type name="II"/>
+			</attribute>
+			<attribute conformance="R" fixedValue="LOC" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="typeCode" sortKey="1" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>Indicates that this is a location.</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="typeCode" className="Participation" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="LOC"/>
+			</attribute>
+			<attribute conformance="R" defaultValue="OP" fixedValue="OP" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="contextControlCode" sortKey="3" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>Specifies how this location type contributes to the context of the Assessment event act and whether it may be propagated to descendent acts whose  association allows such propagation. </p>
+								<p>"O" (Overriding)- the association replaces any context of the same or  more specific type that has been conducted from the parent act.  </p>"P" (Propagating)- the association is conducted to all child  acts where the ActRelationship.contextConductionInd is set to "true."  </div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="contextControlCode" className="Participation" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="ContextControl"/>
+			</attribute>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="false" name="AssessmentEvent">
+			<derivationSupplier className="PatientEncounter" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" isHeightAutoSize="false" isWidthAutoSize="false" shapeId="Sheet.19" shapeTemplate="Act">
+					<position x="6.199" y="1.37418"/>
+					<size height="7.825" width="3.105"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<constraint name="statusCode">
+					<text>
+						<p>nullified</p>
+						<p>active</p>
+						<p>completed</p>
+					</text>
+					<graphicRepresentation>
+						<graphElement shapeId="Sheet.146" containerDiagramName="Main" isWidthAutoSize="true" isHeightAutoSize="true">
+							<position x="9.0" y="0.03918"/>
+							<size width="1.24132" height="0.56111"/>
+							<anchorage connectToShapeId="Sheet.19">
+								<position x="9.62066" y="0.31973"/>
+								<graphEdge>
+									<anchor>
+										<position x="8.3725" y="1.37418"/>
+									</anchor>
+								</graphEdge>
+							</anchorage>
+						</graphElement>
+					</graphicRepresentation>
+				</constraint>
+				<constraint name="code">
+					<text>
+						<p>typeSpec:CD.NPfIT.CDA.Url</p>
+					</text>
+					<graphicRepresentation>
+						<graphElement shapeId="Sheet.150" containerDiagramName="Main" isWidthAutoSize="true" isHeightAutoSize="true">
+							<position x="9.64294" y="0.67529"/>
+							<size width="1.51413" height="0.32778"/>
+							<anchorage connectToShapeId="Sheet.19">
+								<position x="10.4" y="0.83918"/>
+								<graphEdge>
+									<anchor>
+										<position x="8.9935" y="1.37418"/>
+									</anchor>
+								</graphEdge>
+							</anchorage>
+						</graphElement>
+					</graphicRepresentation>
+				</constraint>
+				<otherAnnotation type="html">
+					<text>
+						<b xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Template for recording the details of an encounter (Care Event) during which an assessment took place.</b>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<attribute conformance="R" defaultValue="COCD_TP146065UK02#AssessmentEvent" fixedValue="COCD_TP146065UK02#AssessmentEvent" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="templateId" sortKey="0">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div contenteditable="false" style="height: 100%; width: 100%">
+								<div>
+									<p>The fixed value of this attribute provides a unique identifier for the  template and the classname within that template.</p>
+									<p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+									<ul>
+										<li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.2"</li>
+										<li>The extension attribute shall contain the fixed value.</li>
+									</ul>
+								</div>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="templateId" className="PatientEncounter" staticModelDerivationId="1"/>
+				<type name="II"/>
+			</attribute>
+			<attribute conformance="R" fixedValue="ENC" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="classCode" sortKey="1" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>                                                                                Indicates this is an encounter </text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="classCode" className="PatientEncounter" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="ENC"/>
+			</attribute>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="moodCode" sortKey="2" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div contenteditable="false" style="height: 100%; width: 100%">
+								<div>
+									<p>The mood code of the Assessment Event. </p>
+									<p>The value of mood code should be set according to the information and context  of the coded entry information being carried                         in the assessment class.                       </p>
+									<p>The CodedOnly datatype flavour is used to carry this information as  follows:</p>
+									<ul>
+										<li>The <i>code</i> attribute will contain a value from the list of codes in  the x_DocumentEncounterMood vocabulary.                          </li>
+									</ul>
+								</div>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="moodCode" className="PatientEncounter" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="x_DocumentEncounterMood"/>
+			</attribute>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="id" sortKey="3">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div contenteditable="false" style="height: 100%; width: 100%">
+								<div>
+									<p>This is a unique identifier for this instance of a Assessment Event.  </p>
+									<p>The Identifier Global data type flavour is used to carry the  identifiers follows: </p>
+									<ul>
+										<li>The <em>root</em> attribute shall contain a DCE UUID.                         </li>
+									</ul>
+								</div>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="id" className="PatientEncounter" staticModelDerivationId="1"/>
+				<type name="II" typeSpecialisation="II.NPfIT.uuid.mandatory"/>
+			</attribute>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="code" sortKey="4">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>A SnomedCT code from the CDAEncounterSnCT vocabulary identifying the encounter type. </p>
+								<p>The Concept Descriptor (CD) with CDA URL datatype/flavour shall be used to  carry this information as follows: </p>
+								<ul>
+									<li>The <i>code</i> attribute shall contain a code from the relevant  	vocabulary                          </li>
+									<li>The <i>codeSystem</i> attribute shall contain the OID for SnomedCT  	                         </li>
+									<li>The <i>displayName</i> attribute shall carry a description associated  	with the code in SnomedCT                          </li>
+									<li>The <i>originalText</i> element can be used to carry a <i>reference</i>  	element. This can link the coded item to the relevant text in the CDA  	section                          </li>
+									<li>
+										<i>qualifier </i>(s) may be used if required                         </li>
+								</ul>
+							</div>
+							<div> Note the implementation guidance for the domain where this template is used  should be consulted regarding correct usage                      of the <i>originalText</i>  element.                   </div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="code" className="PatientEncounter" staticModelDerivationId="1"/>
+				<type name="CD"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="CDAEncounterSnCT"/>
+			</attribute>
+			<attribute conformance="R" defaultValue="completed" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="statusCode" sortKey="9">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div contenteditable="false" style="height: 100%; width: 100%">
+								<div>
+									<p>The status of the Assessment Event. </p>
+									<p>The Coded Only data type flavour is used to carry this information as  follows: </p>
+									<ul>
+										<li>The <em>code</em> attribute will contain a one of the following codes  from the Act Status vocabulary:  <br/>
+											<ul>
+												<li>nullified  </li>
+												<li>active  </li>
+												<li>completed. </li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="statusCode" className="PatientEncounter" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="ActStatus"/>
+			</attribute>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="effectiveTime" sortKey="10">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div contenteditable="false" style="height: 100%; width: 100%">
+								<div>
+									<p>The time that the Assessment event took place. <br/>
+									</p>
+									<p>The date range shall be carried as follows: </p>
+									<p>If a single point in time is to be carried the Date or Time Point data type  shall be used: </p>
+									<ul>
+										<li>The <i>center </i>attribute shall contain the date.                         </li>
+									</ul>This datatype is used if date of the Assessment event is not fully known /  available<br/>
+									<p/>
+									<p>If both a start date and an end date are present the Date or Time Interval  Complete data type shall be used: </p>
+									<ul>
+										<li>The <i>low</i> attribute shall contain the start date.                           </li>
+										<li>The <i>high</i> attribute shall contain the end date.                          </li>
+									</ul>
+									<p>If only a start date is present the Date or Time Interval After data type  shall be used: </p>
+									<ul>
+										<li>The <i>low</i> attribute shall contain the start date.                         </li>
+									</ul>                                 This datatype would only be used if the Assessment event is still ongoing.                                          </div>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="effectiveTime" className="PatientEncounter" staticModelDerivationId="1"/>
+				<type name="IVL">
+					<supplierBindingArgumentDatatype name="TS"/>
+				</type>
+			</attribute>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="false" name="SecondaryPerformer">
+			<derivationSupplier className="Participation" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" nodeOrientation="Left" shapeId="Sheet.23" shapeTemplate="Participation" textWrappingWidth="66.0">
+					<position x="2.467" y="4.24774"/>
+					<size height="0.83611" width="3.732"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<constraint name="contentId">
+					<text>
+						<p>NPFIT-000002#Role</p>
+					</text>
+					<graphicRepresentation>
+						<graphElement shapeId="Sheet.154" containerDiagramName="Main" isWidthAutoSize="true" isHeightAutoSize="true">
+							<position x="4.8018" y="5.2014"/>
+							<size width="1.13639" height="0.32778"/>
+							<anchorage connectToShapeId="Sheet.23">
+								<position x="5.37" y="5.36529"/>
+								<graphEdge>
+									<anchor>
+										<position x="4.396" y="5.0838"/>
+									</anchor>
+								</graphEdge>
+							</anchorage>
+						</graphElement>
+					</graphicRepresentation>
+				</constraint>
+				<otherAnnotation type="html">
+					<text>
+						<p>
+							<strong>Refers to the secondary performers of the Assessment event.</strong>
+							<br/>
+						</p>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="contentId" sortKey="0">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>This attribute, when valued in an instance, provides a unique forward pointing identifier for a template which constrains the classes and attributes which follow. </p>
+								<p>The attribute is intended simply as a structural navigational aid and should not be relied upon as an indicator of semantic meaning.</p>
+								<p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+								<ul>
+									<li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.16"</li>
+									<li>The extension attribute shall contain the template artifact Id.</li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="contentId" className="Participation" staticModelDerivationId="1"/>
+				<type name="II"/>
+			</attribute>
+			<attribute conformance="R" defaultValue="COCD_TP146065UK02#secondaryPerformer" fixedValue="COCD_TP146065UK02#secondaryPerformer" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="templateId" sortKey="0">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>The fixed value of this attribute provides a unique identifier for the  template and the classname within that template.</p>
+								<p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+								<ul>
+									<li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.2"</li>
+									<li>The extension attribute shall contain the fixed value.</li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="templateId" className="Participation" staticModelDerivationId="1"/>
+				<type name="II"/>
+			</attribute>
+			<attribute conformance="R" fixedValue="SPRF" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="typeCode" sortKey="1" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>Indicates a secondary performer.<br/>
+							</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="typeCode" className="Participation" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="SPRF"/>
+			</attribute>
+			<attribute conformance="R" isMandatory="false" maximumMultiplicity="1" minimumMultiplicity="1" name="time" sortKey="7">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>The time the secondary performer performed in the Assessment event. <br/>
+								</p>
+								<p>The date range shall be carried as follows: </p>
+								<p>If a single point in time is to be carried the Date or Time Point data type  shall be used: </p>
+								<ul>
+									<li>The <em>center </em>attribute shall contain the date.</li>
+								</ul>This datatype is used if eaxact date is not fully known /  available<br/>
+								<p>If both a start date and an end date are present the Date or Time Interval  Complete data type shall be used: </p>
+								<ul>
+									<li>The <em>low</em> attribute shall contain the start date.  </li>
+									<li>The <em>high</em> attribute shall contain the end date. </li>
+								</ul>
+								<p>If only a start date is present the Date or Time Interval After data type  shall be used: </p>
+								<ul>
+									<li>The <em>low</em> attribute shall contain the start date.</li>
+								</ul>
+								<br/>
+								<p>If only an end date is present the Date or Time Interval Before data type  shall be used:</p>
+								<ul>
+									<li>The <em>high</em> attribute shall contain the end date. </li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="time" className="Participation" staticModelDerivationId="1"/>
+				<type name="IVL">
+					<supplierBindingArgumentDatatype name="TS"/>
+				</type>
+			</attribute>
+			<attribute isMandatory="false" maximumMultiplicity="1" minimumMultiplicity="0" name="modeCode" sortKey="8">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>The mode in which the secondary performer performed the Assessment  Event.</p>
+								<p>The Coded Only datatype flavour is used to carry this information as  follows:</p>
+								<ul>
+									<li>The <em>code</em> attribute will contain a value from the list of codes in  the ParticipationMode vocabulary</li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="modeCode" className="Participation" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="ParticipationMode"/>
+			</attribute>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="false" name="CareSetting">
+			<derivationSupplier className="Role" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" isHeightAutoSize="true" isWidthAutoSize="false" shapeId="Sheet.29" shapeTemplate="Role">
+					<position x="12.538" y="1.33918"/>
+					<size height="0.64778" width="3.2"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<designComments>
+					<text>
+						<p>The TYPE of location (setting)</p>
+						<p>where the assessment took place / will take place</p>
+					</text>
+					<graphicRepresentation>
+						<graphElement shapeId="Sheet.124" containerDiagramName="Main" isWidthAutoSize="true" isHeightAutoSize="true">
+							<position x="12.55556" y="0.58918"/>
+							<size width="2.48888" height="0.5"/>
+							<anchorage connectToShapeId="Sheet.29">
+								<position x="13.8" y="0.83918"/>
+								<graphEdge>
+									<anchor>
+										<position x="13.81863" y="1.33918"/>
+									</anchor>
+								</graphEdge>
+							</anchorage>
+						</graphElement>
+					</graphicRepresentation>
+				</designComments>
+				<otherAnnotation type="html">
+					<text>
+						<p>
+							<strong>Refers to the care setting ( The type of location ).</strong>
+							<br/>
+						</p>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<attribute conformance="R" defaultValue="COCD_TP146065UK02#careSetting" fixedValue="COCD_TP146065UK02#careSetting" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="templateId" sortKey="0">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>The fixed value of this attribute provides a unique identifier for the  template and the classname within that template.</p>
+								<p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+								<ul>
+									<li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.2"</li>
+									<li>The extension attribute shall contain the fixed value.</li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="templateId" className="Role" staticModelDerivationId="1"/>
+				<type name="II"/>
+			</attribute>
+			<attribute conformance="R" fixedValue="SDLOC" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="classCode" sortKey="1" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>Indicates this is a service delivery location.<br/>
+							</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="classCode" className="Role" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="SDLOC"/>
+			</attribute>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="code" sortKey="3">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>A SnomedCT code specifying the care setting.. </p>
+								<p>The Coded Plain flavour of the CodedValue (CV) datatype shall be used to  carry this information as follows:</p>
+								<ul>
+									<li>The <i>code</i> attribute shall contain a value from the list of codes in  the vocabulary  </li>
+									<li>The <i>codeSystem</i> attribute shall containthe OID for SnomedCT  </li>
+									<li>The <i>displayName</i> attribute will carry a description for the code  from the coding system </li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="code" className="Role" staticModelDerivationId="1"/>
+				<type name="CV"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="CDACareSettingTypeSnCT"/>
+			</attribute>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="true" name="AuthorChoice">
+			<derivationSupplier className="Role" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" isHeightAutoSize="true" isWidthAutoSize="true" nodeOrientation="Portrait" shapeId="Sheet.39" shapeTemplate="Choice">
+					<position x="0.409" y="1.52918"/>
+					<size height="1.0" width="2.457"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<otherAnnotation type="html">
+					<text>
+						<div>
+							<p/>
+							<p>
+								<strong>An abstract placeholder for the templates of an author.<br/>
+								</strong>
+							</p>
+							<p/>
+						</div>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<specializationChild childClassName="Template4">
+				<graphicRepresentation>
+					<graphElement containerDiagramName="Main" shapeId="Sheet.59">
+						<position x="0.534" y="1.77918"/>
+						<size height="0.5" width="2.213"/>
+					</graphElement>
+				</graphicRepresentation>
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>A link to the author templates.<br/>
+							</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+			</specializationChild>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="false" name="Informant">
+			<derivationSupplier className="Participation" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" nodeOrientation="Left" shapeId="Sheet.41" shapeTemplate="Participation" textWrappingWidth="66.0">
+					<position x="2.467" y="5.6771"/>
+					<size height="0.70278" width="3.732"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<constraint name="contentId">
+					<text>
+						<p>NPFIT-000002#Role</p>
+					</text>
+					<graphicRepresentation>
+						<graphElement shapeId="Sheet.158" containerDiagramName="Main" isWidthAutoSize="true" isHeightAutoSize="true">
+							<position x="4.838" y="6.5014"/>
+							<size width="1.13639" height="0.32778"/>
+							<anchorage connectToShapeId="Sheet.41">
+								<position x="5.4062" y="6.66529"/>
+								<graphEdge>
+									<anchor>
+										<position x="4.40298" y="6.37949"/>
+									</anchor>
+								</graphEdge>
+							</anchorage>
+						</graphElement>
+					</graphicRepresentation>
+				</constraint>
+				<otherAnnotation type="html">
+					<text>
+						<p>
+							<b>Refers to who informed the author about  the Assessment Event</b>
+							<b>.</b>
+						</p>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="contentId" sortKey="0">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>This attribute, when valued in an instance, provides a unique forward pointing identifier for a template which constrains the classes and attributes which follow. </p>
+								<p>The attribute is intended simply as a structural navigational aid and should not be relied upon as an indicator of semantic meaning.</p>
+								<p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+								<ul>
+									<li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.16"</li>
+									<li>The extension attribute shall contain the template artifact Id.</li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="contentId" className="Participation" staticModelDerivationId="1"/>
+				<type name="II"/>
+			</attribute>
+			<attribute conformance="R" defaultValue="COCD_TP146065UK02#informant" fixedValue="COCD_TP146065UK02#informant" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="templateId" sortKey="0">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>The fixed value of this attribute provides a unique identifier for the  template and the classname within that template.</p>
+								<p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+								<ul>
+									<li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.2"</li>
+									<li>The extension attribute shall contain the fixed value.</li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="templateId" className="Participation" staticModelDerivationId="1"/>
+				<type name="II"/>
+			</attribute>
+			<attribute conformance="R" fixedValue="INF" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="typeCode" sortKey="1" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>Indicates this is an informant.<br/>
+							</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="typeCode" className="Participation" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="INF"/>
+			</attribute>
+			<attribute conformance="R" defaultValue="OP" fixedValue="OP" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="contextControlCode" sortKey="3" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>Specifies how the informant contributes to the context of the AssessmentEvent and whether they may be propagated to descendent acts whose  association allows such propagation. </p>
+								<p>"O" (Overriding)- the association replaces any context of the same or more  specific type that has been conducted from the parent act. </p>"P"  (Propagating)- the association is conducted to all child acts where the  ActRelationship.contextConductionInd is set to "true." </div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="contextControlCode" className="Participation" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="ContextControl"/>
+			</attribute>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="true" name="Template1">
+			<derivationSupplier className="Role" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" isHeightAutoSize="false" isWidthAutoSize="false" shapeId="Sheet.47" shapeTemplate="Role">
+					<position x="0.135" y="3.03918"/>
+					<size height="3.25" width="2.254"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<otherAnnotation type="html">
+					<text>
+						<p>
+							<strong>An abstract place holder for templates for performers, secondary performers, responsible parties and referrers.</strong>
+							<br/>
+						</p>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="classCode" sortKey="0" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>Indicates that the template is a role template.</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="classCode" className="Role" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="RoleClass"/>
+			</attribute>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="true" name="RoleChoice">
+			<derivationSupplier className="Role" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" isHeightAutoSize="false" isWidthAutoSize="true" nodeOrientation="Portrait" shapeId="Sheet.57" shapeTemplate="Choice">
+					<position x="0.01" y="2.78918"/>
+					<size height="3.65" width="2.457"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<otherAnnotation type="html">
+					<text>
+						<p>
+							<strong>An abstract placeholder for the templates of a primary informantion recipient or tracker.<br/>
+							</strong>
+						</p>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<specializationChild childClassName="Template1">
+				<graphicRepresentation>
+					<graphElement containerDiagramName="Main" shapeId="Sheet.47">
+						<position x="0.135" y="3.03918"/>
+						<size height="3.25" width="2.254"/>
+					</graphElement>
+				</graphicRepresentation>
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>                                 A link to the choice of templates for performers, secondary performers, responsible parties and referrers.                             </p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+			</specializationChild>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="true" name="Template4">
+			<derivationSupplier className="Role" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" isHeightAutoSize="true" isWidthAutoSize="false" shapeId="Sheet.59" shapeTemplate="Role">
+					<position x="0.534" y="1.77918"/>
+					<size height="0.5" width="2.213"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<otherAnnotation type="html">
+					<text>
+						<p>
+							<strong>An abstract placeholder for the templates of an author of a Assessment event.</strong>
+						</p>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="classCode" sortKey="0" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>Indicates that the template is a role template.</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="classCode" className="Role" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="RoleClass"/>
+			</attribute>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="false" name="Component">
+			<derivationSupplier className="ActRelationship" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" nodeOrientation="Right" shapeId="Sheet.69" shapeTemplate="ActRelationship" textWrappingWidth="66.0">
+					<position x="9.304" y="2.23881"/>
+					<size height="0.83611" width="3.75349"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<constraint name="contentId">
+					<text>
+						<p>NPFIT-000025#Act</p>
+					</text>
+					<graphicRepresentation>
+						<graphElement shapeId="Sheet.162" containerDiagramName="Main" isWidthAutoSize="true" isHeightAutoSize="true">
+							<position x="10.59715" y="3.54918"/>
+							<size width="1.13639" height="0.32778"/>
+							<anchorage connectToShapeId="Sheet.69">
+								<position x="11.16534" y="3.71307"/>
+								<graphEdge>
+									<anchor>
+										<position x="11.11824" y="3.07493"/>
+									</anchor>
+								</graphEdge>
+							</anchorage>
+						</graphElement>
+					</graphicRepresentation>
+				</constraint>
+				<otherAnnotation type="html">
+					<text>
+						<p>
+							<b>Refers to a component of the assessment event.</b>
+							<br/>
+						</p>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="contentId" sortKey="0">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>This attribute, when valued in an instance, provides a unique forward pointing identifier for a template which constrains the classes and attributes which follow. </p>
+								<p>The attribute is intended simply as a structural navigational aid and should not be relied upon as an indicator of semantic meaning.</p>
+								<p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+								<ul>
+									<li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.16"</li>
+									<li>The extension attribute shall contain the template artifact Id.</li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="contentId" className="ActRelationship" staticModelDerivationId="1"/>
+				<type name="II"/>
+			</attribute>
+			<attribute conformance="R" defaultValue="COCD_TP146065UK02#entryRelationship1" fixedValue="COCD_TP146065UK02#entryRelationship1" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="templateId" sortKey="0">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>The fixed value of this attribute provides a unique identifier for the  template and the classname within that template.</p>
+								<p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+								<ul>
+									<li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.2"</li>
+									<li>The extension attribute shall contain the fixed value.</li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="templateId" className="ActRelationship" staticModelDerivationId="1"/>
+				<type name="II"/>
+			</attribute>
+			<attribute conformance="R" fixedValue="COMP" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="typeCode" sortKey="1" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>Indicates this is a component.<br/>
+							</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="typeCode" className="ActRelationship" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="COMP"/>
+			</attribute>
+			<attribute conformance="R" defaultValue="true" fixedValue="true" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="contextConductionInd" sortKey="4" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>If true, associations in the parent act are conducted across the Act  Relationship to the child act.</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="contextConductionInd" className="ActRelationship" staticModelDerivationId="1"/>
+				<type name="BL"/>
+			</attribute>
+			<attribute conformance="R" defaultValue="false" fixedValue="false" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="seperatableInd" sortKey="14">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>This attribute indicates whether or not the source Act is intended to be  interpreted independently of the target Act.</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="seperatableInd" className="ActRelationship" staticModelDerivationId="1"/>
+				<type name="BL"/>
+			</attribute>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="true" name="OtherPersonPresent">
+			<derivationSupplier className="Role" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" isHeightAutoSize="true" isWidthAutoSize="true" nodeOrientation="Portrait" shapeId="Sheet.75" shapeTemplate="Choice">
+					<position x="0.64405" y="6.73918"/>
+					<size height="1.0" width="1.71189"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<otherAnnotation type="html">
+					<text>
+						<span id="XSLTPageNoTree123:XSLTOut">
+							<b>An abstract placeholder for the templates of other people who were present during the encounter, such as a relative.<br/>
+							</b>
+						</span>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<specializationChild childClassName="Template5">
+				<graphicRepresentation>
+					<graphElement containerDiagramName="Main" shapeId="Sheet.77">
+						<position x="0.76905" y="6.98918"/>
+						<size height="0.5" width="1.41114"/>
+					</graphElement>
+				</graphicRepresentation>
+				<annotations>
+					<otherAnnotation type="html">
+						<text>A choice of templates for other people present<br/>
+						</text>
+					</otherAnnotation>
+				</annotations>
+			</specializationChild>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="true" name="Template5">
+			<derivationSupplier className="Role" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" isHeightAutoSize="true" isWidthAutoSize="true" shapeId="Sheet.77" shapeTemplate="Role">
+					<position x="0.76905" y="6.98918"/>
+					<size height="0.5" width="1.41114"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<otherAnnotation type="html">
+					<text>
+						<p>
+							<strong>An abstract placeholder for the templates of a performer.<br/>
+							</strong>
+						</p>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="classCode" sortKey="0" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>Indicates that the template is a role template.</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="classCode" className="Role" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="RoleClass"/>
+			</attribute>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="false" name="Witness">
+			<derivationSupplier className="Participation" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" nodeOrientation="Left" shapeId="Sheet.87" shapeTemplate="Participation" textWrappingWidth="66.0">
+					<position x="2.35594" y="6.89043"/>
+					<size height="0.83611" width="3.84306"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<constraint name="contentId">
+					<text>
+						<p>NPFIT-000002#Role</p>
+					</text>
+					<graphicRepresentation>
+						<graphElement shapeId="Sheet.166" containerDiagramName="Main" isWidthAutoSize="true" isHeightAutoSize="true">
+							<position x="4.8" y="7.9114"/>
+							<size width="1.13639" height="0.32778"/>
+							<anchorage connectToShapeId="Sheet.87">
+								<position x="5.3682" y="8.07529"/>
+								<graphEdge>
+									<anchor>
+										<position x="4.33997" y="7.70791"/>
+									</anchor>
+								</graphEdge>
+							</anchorage>
+						</graphElement>
+					</graphicRepresentation>
+				</constraint>
+				<otherAnnotation type="html">
+					<text>
+						<b>Refers to who a person was present during the Assessment Event but did not take part.</b>
+						<br/>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="contentId" sortKey="0">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div contenteditable="false" style="height: 100%; width: 100%">
+								<div>
+									<p>This attribute, when valued in an instance, provides a unique forward pointing identifier for a template which constrains                         the classes and attributes which follow.                       </p>
+									<p>The attribute is intended simply as a structural navigational aid and should not be relied upon as an indicator of semantic                         meaning.                      </p>
+									<p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+									<ul>
+										<li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.16"</li>
+										<li>The extension attribute shall contain the template artifact Id.</li>
+									</ul>
+								</div>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="contentId" className="Participation" staticModelDerivationId="1"/>
+				<type name="II"/>
+			</attribute>
+			<attribute conformance="R" defaultValue="COCD_TP146065UK02#witness" fixedValue="COCD_TP146065UK02#witness" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="templateId" sortKey="0">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div contenteditable="false" style="height: 100%; width: 100%">
+								<div>
+									<p>The fixed value of this attribute provides a unique identifier for the  template and the classname within that template.</p>
+									<p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+									<ul>
+										<li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.2"</li>
+										<li>The extension attribute shall contain the fixed value.</li>
+									</ul>
+								</div>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="templateId" className="Participation" staticModelDerivationId="1"/>
+				<type name="II"/>
+			</attribute>
+			<attribute conformance="R" fixedValue="WIT" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="typeCode" sortKey="1" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>Indicates this is a witness<br/>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="typeCode" className="Participation" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="WIT"/>
+			</attribute>
+			<attribute conformance="R" defaultValue="OP" fixedValue="OP" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="contextControlCode" sortKey="3" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>Specifies how the witness contributes to the context of the care event act and whether they may be propagated to descendent                         acts whose association allows such propagation.                       </p>
+							<p>"O" (Overriding)- the association replaces any context of the same or more specific type that has been conducted from the                         parent act.                       </p>"P" (Propagating)- the association is conducted to all child acts where the ActRelationship.contextConductionInd is set to                      "true." </text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="contextControlCode" className="Participation" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="ContextControl"/>
+			</attribute>
+			<attribute isMandatory="false" maximumMultiplicity="1" minimumMultiplicity="0" name="time" sortKey="7">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div contenteditable="false" style="height: 100%; width: 100%">
+								<div>
+									<p>The time the person was present (witnessed) the assessment. <br/>
+									</p>
+									<p>The date range shall be carried as follows: </p>
+									<p>If a single point in time is to be carried the Date or Time Point data type  shall be used: </p>
+									<ul>
+										<li>The <em>center </em>attribute shall contain the date.                         </li>
+									</ul>This datatype is used if date of the referral is not fully known /  available<br/>
+									<p>If both a start date and an end date are present the Date or Time Interval  Complete data type shall be used: </p>
+									<ul>
+										<li>The <em>low</em> attribute shall contain the start date.                           </li>
+										<li>The <em>high</em> attribute shall contain the end date.                          </li>
+									</ul>
+									<p>If only a start date is present the Date or Time Interval After data type  shall be used: </p>
+									<ul>
+										<li>The <em>low</em> attribute shall contain the start date.                         </li>
+									</ul>
+								</div>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="time" className="Participation" staticModelDerivationId="1"/>
+				<type name="IVL">
+					<supplierBindingArgumentDatatype name="TS"/>
+				</type>
+			</attribute>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="false" name="Location">
+			<derivationSupplier className="Participation" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" nodeOrientation="Left" shapeId="Sheet.93" shapeTemplate="Participation" textWrappingWidth="66.0">
+					<position x="2.74" y="8.32829"/>
+					<size height="0.70278" width="3.459"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<constraint name="contentId">
+					<text>
+						<p>NPFIT-000004#Role</p>
+					</text>
+					<graphicRepresentation>
+						<graphElement shapeId="Sheet.170" containerDiagramName="Main" isWidthAutoSize="true" isHeightAutoSize="true">
+							<position x="4.7028" y="9.21129"/>
+							<size width="1.13639" height="0.32778"/>
+							<anchorage connectToShapeId="Sheet.93">
+								<position x="5.271" y="9.37518"/>
+								<graphEdge>
+									<anchor>
+										<position x="4.53436" y="9.03068"/>
+									</anchor>
+								</graphEdge>
+							</anchorage>
+						</graphElement>
+					</graphicRepresentation>
+				</constraint>
+				<otherAnnotation type="html">
+					<text>
+						<p>
+							<b>Refers to the  actual location where the Assessment took place.</b>
+						</p>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="contentId" sortKey="0">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>This attribute, when valued in an instance, provides a unique forward pointing identifier for a template which constrains the classes and attributes which follow. </p>
+								<p>The attribute is intended simply as a structural navigational aid and should not be relied upon as an indicator of semantic meaning.</p>
+								<p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+								<ul>
+									<li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.16"</li>
+									<li>The extension attribute shall contain the template artifact Id.</li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="contentId" className="Participation" staticModelDerivationId="1"/>
+				<type name="II"/>
+			</attribute>
+			<attribute conformance="R" defaultValue="COCD_TP146065UK02#location" fixedValue="COCD_TP146065UK02#location" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="templateId" sortKey="0">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>The fixed value of this attribute provides a unique identifier for the  template and the classname within that template.</p>
+								<p>The IdentifierExternal datatype flavour is used to carry this information as follows:</p>
+								<ul>
+									<li>The root attribute shall contain the OID "2.16.840.1.113883.2.1.3.2.4.18.2"</li>
+									<li>The extension attribute shall contain the fixed value.</li>
+								</ul>
+							</div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="templateId" className="Participation" staticModelDerivationId="1"/>
+				<type name="II"/>
+			</attribute>
+			<attribute conformance="R" fixedValue="LOC" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="typeCode" sortKey="1" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>Indicates that this is a location.</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="typeCode" className="Participation" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="LOC"/>
+			</attribute>
+			<attribute conformance="R" defaultValue="OP" fixedValue="OP" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="contextControlCode" sortKey="3" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<div>
+								<p>Specifies how this location contributes to the context of the assessment act and whether it may be propagated to descendent acts whose  association allows such propagation. </p>
+								<p>"O" (Overriding)- the association replaces any context of the same or  more specific type that has been conducted from the parent act.  </p>"P" (Propagating)- the association is conducted to all child  acts where the ActRelationship.contextConductionInd is set to "true".  </div>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="contextControlCode" className="Participation" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="ContextControl"/>
+			</attribute>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="true" name="LocationChoice">
+			<derivationSupplier className="Role" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" isHeightAutoSize="false" isWidthAutoSize="true" nodeOrientation="Portrait" shapeId="Sheet.99" shapeTemplate="Choice">
+					<position x="0.22" y="8.07418"/>
+					<size height="0.965" width="2.52"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<designComments>
+					<text>
+						<p>The ACTUAL location where the</p>
+						<p>assessment took place / will take place</p>
+					</text>
+					<graphicRepresentation>
+						<graphElement shapeId="Sheet.129" containerDiagramName="Main" isWidthAutoSize="true" isHeightAutoSize="true">
+							<position x="0.42948" y="9.23918"/>
+							<size width="1.97005" height="0.5"/>
+							<anchorage connectToShapeId="Sheet.99">
+								<position x="1.4145" y="9.48918"/>
+								<graphEdge>
+									<anchor>
+										<position x="1.48" y="9.03818"/>
+									</anchor>
+								</graphEdge>
+							</anchorage>
+						</graphElement>
+					</graphicRepresentation>
+				</designComments>
+				<otherAnnotation type="html">
+					<text>
+						<p>
+							<b>A choice of location relevant to the assessment.</b>
+							<br/>
+						</p>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<specializationChild childClassName="Template3">
+				<graphicRepresentation>
+					<graphElement containerDiagramName="Main" shapeId="Sheet.101">
+						<position x="0.345" y="8.32418"/>
+						<size height="0.5" width="2.213"/>
+					</graphElement>
+				</graphicRepresentation>
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>A choice of location templates.<br/>
+							</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+			</specializationChild>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="true" name="Template3">
+			<derivationSupplier className="Role" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" isHeightAutoSize="true" isWidthAutoSize="false" shapeId="Sheet.101" shapeTemplate="Role">
+					<position x="0.345" y="8.32418"/>
+					<size height="0.5" width="2.213"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<otherAnnotation type="html">
+					<text>
+						<p>
+							<strong>An abstract placeholder for the templates of a location.<br/>
+							</strong>
+						</p>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="classCode" sortKey="0" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>Indicates that the template is a role template.</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="classCode" className="Role" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="RoleClass"/>
+			</attribute>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="true" name="AssessmentChoice">
+			<derivationSupplier className="Act" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" isHeightAutoSize="true" isWidthAutoSize="true" nodeOrientation="Portrait" shapeId="Sheet.111" shapeTemplate="Choice">
+					<position x="13.05748" y="2.14918"/>
+					<size height="1.125" width="1.64252"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<otherAnnotation type="html">
+					<text>
+						<b>The choice of assessment templates</b>
+						<br/>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<specializationChild childClassName="Template2">
+				<graphicRepresentation>
+					<graphElement containerDiagramName="Main" shapeId="Sheet.113">
+						<position x="13.18248" y="2.39918"/>
+						<size height="0.75" width="1.36763"/>
+					</graphElement>
+				</graphicRepresentation>
+				<annotations>
+					<otherAnnotation type="html">
+						<text/>
+					</otherAnnotation>
+				</annotations>
+			</specializationChild>
+		</class>
+	</ownedClass>
+	<ownedClass>
+		<class isAbstract="true" name="Template2">
+			<derivationSupplier className="Act" staticModelDerivationId="1"/>
+			<graphicRepresentation presentation="HL7">
+				<graphElement containerDiagramName="Main" isHeightAutoSize="true" isWidthAutoSize="true" shapeId="Sheet.113" shapeTemplate="Act">
+					<position x="13.18248" y="2.39918"/>
+					<size height="0.75" width="1.36763"/>
+				</graphElement>
+			</graphicRepresentation>
+			<annotations>
+				<otherAnnotation type="html">
+					<text>
+						<p>
+							<strong>An abstract placeholder for the templates of an informants.</strong>
+						</p>
+					</text>
+				</otherAnnotation>
+			</annotations>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="classCode" sortKey="0" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>Indicates that the template is a role template.<br/>
+							</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="classCode" className="Act" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="ActClass"/>
+			</attribute>
+			<attribute conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="moodCode" sortKey="0" isStructural="true">
+				<annotations>
+					<otherAnnotation type="html">
+						<text/>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier attributeName="moodCode" className="Act" staticModelDerivationId="1"/>
+				<type name="CS"/>
+				<supplierDomainSpecification codingStrength="CNE" domainName="ActMood"/>
+			</attribute>
+		</class>
+	</ownedClass>
+	<ownedAssociation>
+		<graphicRepresentation>
+			<graphElement connectToShapeId="Sheet.19" containerDiagramName="Main" shapeId="Sheet.1">
+				<position x="6.199" y="1.91133"/>
+				<graphEdge>
+					<anchor connectToShapeId="Sheet.19">
+						<position x="6.199" y="1.91133"/>
+					</anchor>
+				</graphEdge>
+			</graphElement>
+		</graphicRepresentation>
+		<connections>
+			<traversableConnection isMandatory="false" maximumMultiplicity="1" minimumMultiplicity="0" name="author" participantClassName="Author1">
+				<annotations>
+					<otherAnnotation type="html">
+						<text/>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier associationEndName="outboundParticipation" className="AssessmentEvent" staticModelDerivationId="1"/>
+			</traversableConnection>
+			<nonTraversableConnection participantClassName="AssessmentEvent">
+				<derivationSupplier associationEndName="act" className="Author1" staticModelDerivationId="1"/>
+			</nonTraversableConnection>
+		</connections>
+	</ownedAssociation>
+	<ownedAssociation>
+		<graphicRepresentation>
+			<graphElement connectToShapeId="Sheet.39" containerDiagramName="Main" shapeId="Sheet.1">
+				<position x="2.866" y="1.91133"/>
+				<graphEdge>
+					<anchor connectToShapeId="Sheet.39">
+						<position x="2.866" y="1.91133"/>
+					</anchor>
+				</graphEdge>
+			</graphElement>
+		</graphicRepresentation>
+		<connections>
+			<traversableConnection isMandatory="false" maximumMultiplicity="1" minimumMultiplicity="1" name="participant" participantClassName="AuthorChoice">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>A link to the choice of authors.<br/>
+							</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier associationEndName="role" className="Author1" staticModelDerivationId="1"/>
+				<participantClassSpecialization className="Template4" traversalName="participantTemplate4"/>
+			</traversableConnection>
+			<nonTraversableConnection participantClassName="Author1">
+				<derivationSupplier associationEndName="participation" className="AuthorChoice" staticModelDerivationId="1"/>
+			</nonTraversableConnection>
+		</connections>
+	</ownedAssociation>
+	<ownedAssociation>
+		<graphicRepresentation>
+			<graphElement connectToShapeId="Sheet.19" containerDiagramName="Main" shapeId="Sheet.7">
+				<position x="6.199" y="3.43602"/>
+				<graphEdge>
+					<anchor connectToShapeId="Sheet.19">
+						<position x="6.199" y="3.43602"/>
+					</anchor>
+				</graphEdge>
+			</graphElement>
+		</graphicRepresentation>
+		<connections>
+			<traversableConnection isMandatory="false" maximumMultiplicity="*" minimumMultiplicity="0" name="performer" participantClassName="Performer">
+				<annotations>
+					<otherAnnotation type="html">
+						<text/>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier associationEndName="outboundParticipation" className="AssessmentEvent" staticModelDerivationId="1"/>
+			</traversableConnection>
+			<nonTraversableConnection participantClassName="AssessmentEvent">
+				<derivationSupplier associationEndName="act" className="Performer" staticModelDerivationId="1"/>
+			</nonTraversableConnection>
+		</connections>
+	</ownedAssociation>
+	<ownedAssociation>
+		<graphicRepresentation>
+			<graphElement connectToShapeId="Sheet.57" containerDiagramName="Main" shapeId="Sheet.7">
+				<position x="2.467" y="3.43602"/>
+				<graphEdge>
+					<anchor connectToShapeId="Sheet.57">
+						<position x="2.467" y="3.43602"/>
+					</anchor>
+				</graphEdge>
+			</graphElement>
+		</graphicRepresentation>
+		<connections>
+			<traversableConnection isMandatory="false" maximumMultiplicity="1" minimumMultiplicity="1" name="participant" participantClassName="RoleChoice">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>A link to the choice of performers.<br/>
+							</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier associationEndName="role" className="Performer" staticModelDerivationId="1"/>
+				<participantClassSpecialization className="Template1" traversalName="participantTemplate1"/>
+			</traversableConnection>
+			<nonTraversableConnection participantClassName="Performer">
+				<derivationSupplier associationEndName="participation" className="RoleChoice" staticModelDerivationId="1"/>
+			</nonTraversableConnection>
+		</connections>
+	</ownedAssociation>
+	<ownedAssociation>
+		<graphicRepresentation>
+			<graphElement connectToShapeId="Sheet.19" containerDiagramName="Main" shapeId="Sheet.13">
+				<position x="9.304" y="1.77476"/>
+				<graphEdge>
+					<anchor connectToShapeId="Sheet.19">
+						<position x="9.304" y="1.77476"/>
+					</anchor>
+				</graphEdge>
+			</graphElement>
+		</graphicRepresentation>
+		<connections>
+			<traversableConnection conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="location1" participantClassName="Location2">
+				<annotations>
+					<otherAnnotation type="html">
+						<text/>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier associationEndName="outboundParticipation" className="AssessmentEvent" staticModelDerivationId="1"/>
+			</traversableConnection>
+			<nonTraversableConnection participantClassName="AssessmentEvent">
+				<derivationSupplier associationEndName="act" className="Location2" staticModelDerivationId="1"/>
+			</nonTraversableConnection>
+		</connections>
+	</ownedAssociation>
+	<ownedAssociation>
+		<graphicRepresentation>
+			<graphElement connectToShapeId="Sheet.29" containerDiagramName="Main" shapeId="Sheet.13">
+				<position x="12.538" y="1.77476"/>
+				<graphEdge>
+					<anchor connectToShapeId="Sheet.29">
+						<position x="12.538" y="1.77476"/>
+					</anchor>
+				</graphEdge>
+			</graphElement>
+		</graphicRepresentation>
+		<connections>
+			<traversableConnection conformance="R" isMandatory="true" maximumMultiplicity="1" minimumMultiplicity="1" name="careSetting" participantClassName="CareSetting">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>A link to the care setting of the Assessment event.<br/>
+							</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier associationEndName="role" className="Location2" staticModelDerivationId="1"/>
+			</traversableConnection>
+			<nonTraversableConnection participantClassName="Location2">
+				<derivationSupplier associationEndName="participation" className="CareSetting" staticModelDerivationId="1"/>
+			</nonTraversableConnection>
+		</connections>
+	</ownedAssociation>
+	<ownedAssociation>
+		<graphicRepresentation>
+			<graphElement connectToShapeId="Sheet.19" containerDiagramName="Main" shapeId="Sheet.87">
+				<position x="6.199" y="7.30849"/>
+				<graphEdge>
+					<anchor connectToShapeId="Sheet.19">
+						<position x="6.199" y="7.30849"/>
+					</anchor>
+				</graphEdge>
+			</graphElement>
+		</graphicRepresentation>
+		<connections>
+			<traversableConnection isMandatory="false" maximumMultiplicity="*" minimumMultiplicity="0" name="witness" participantClassName="Witness">
+				<annotations>
+					<otherAnnotation type="html">
+						<text/>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier associationEndName="outboundParticipation" className="AssessmentEvent" staticModelDerivationId="1"/>
+			</traversableConnection>
+			<nonTraversableConnection participantClassName="AssessmentEvent">
+				<derivationSupplier associationEndName="act" className="Witness" staticModelDerivationId="1"/>
+			</nonTraversableConnection>
+		</connections>
+	</ownedAssociation>
+	<ownedAssociation>
+		<graphicRepresentation>
+			<graphElement connectToShapeId="Sheet.19" containerDiagramName="Main" shapeId="Sheet.41">
+				<position x="6.199" y="6.02849"/>
+				<graphEdge>
+					<anchor connectToShapeId="Sheet.19">
+						<position x="6.199" y="6.02849"/>
+					</anchor>
+				</graphEdge>
+			</graphElement>
+		</graphicRepresentation>
+		<connections>
+			<traversableConnection isMandatory="false" maximumMultiplicity="1" minimumMultiplicity="0" name="informant" participantClassName="Informant">
+				<annotations>
+					<otherAnnotation type="html">
+						<text/>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier associationEndName="outboundParticipation" className="AssessmentEvent" staticModelDerivationId="1"/>
+			</traversableConnection>
+			<nonTraversableConnection participantClassName="AssessmentEvent">
+				<derivationSupplier associationEndName="act" className="Informant" staticModelDerivationId="1"/>
+			</nonTraversableConnection>
+		</connections>
+	</ownedAssociation>
+	<ownedAssociation>
+		<graphicRepresentation>
+			<graphElement connectToShapeId="Sheet.19" containerDiagramName="Main" shapeId="Sheet.23">
+				<position x="6.199" y="4.6658"/>
+				<graphEdge>
+					<anchor connectToShapeId="Sheet.19">
+						<position x="6.199" y="4.6658"/>
+					</anchor>
+				</graphEdge>
+			</graphElement>
+		</graphicRepresentation>
+		<connections>
+			<traversableConnection isMandatory="false" maximumMultiplicity="*" minimumMultiplicity="0" name="secondaryPerformer" participantClassName="SecondaryPerformer">
+				<annotations>
+					<otherAnnotation type="html">
+						<text/>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier associationEndName="outboundParticipation" className="AssessmentEvent" staticModelDerivationId="1"/>
+			</traversableConnection>
+			<nonTraversableConnection participantClassName="AssessmentEvent">
+				<derivationSupplier associationEndName="act" className="SecondaryPerformer" staticModelDerivationId="1"/>
+			</nonTraversableConnection>
+		</connections>
+	</ownedAssociation>
+	<ownedAssociation>
+		<graphicRepresentation>
+			<graphElement connectToShapeId="Sheet.19" containerDiagramName="Main" shapeId="Sheet.69">
+				<position x="9.304" y="2.65687"/>
+				<graphEdge>
+					<anchor connectToShapeId="Sheet.19">
+						<position x="9.304" y="2.65687"/>
+					</anchor>
+				</graphEdge>
+			</graphElement>
+		</graphicRepresentation>
+		<connections>
+			<traversableConnection isMandatory="false" maximumMultiplicity="*" minimumMultiplicity="0" name="entryRelationship1" participantClassName="Component">
+				<annotations>
+					<otherAnnotation type="html">
+						<text/>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier associationEndName="outboundRelationship" className="AssessmentEvent" staticModelDerivationId="1"/>
+			</traversableConnection>
+			<nonTraversableConnection participantClassName="AssessmentEvent">
+				<derivationSupplier associationEndName="source" className="Component" staticModelDerivationId="1"/>
+			</nonTraversableConnection>
+		</connections>
+	</ownedAssociation>
+	<ownedAssociation>
+		<graphicRepresentation>
+			<graphElement connectToShapeId="Sheet.19" containerDiagramName="Main" shapeId="Sheet.93">
+				<position x="6.199" y="8.67968"/>
+				<graphEdge>
+					<anchor connectToShapeId="Sheet.19">
+						<position x="6.199" y="8.67968"/>
+					</anchor>
+				</graphEdge>
+			</graphElement>
+		</graphicRepresentation>
+		<connections>
+			<traversableConnection isMandatory="false" maximumMultiplicity="1" minimumMultiplicity="0" name="location" participantClassName="Location">
+				<annotations>
+					<otherAnnotation type="html">
+						<text/>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier associationEndName="outboundParticipation" className="AssessmentEvent" staticModelDerivationId="1"/>
+			</traversableConnection>
+			<nonTraversableConnection participantClassName="AssessmentEvent">
+				<derivationSupplier associationEndName="act" className="Location" staticModelDerivationId="1"/>
+			</nonTraversableConnection>
+		</connections>
+	</ownedAssociation>
+	<ownedAssociation>
+		<graphicRepresentation>
+			<graphElement connectToShapeId="Sheet.57" containerDiagramName="Main" shapeId="Sheet.23">
+				<position x="2.467" y="4.6658"/>
+				<graphEdge>
+					<anchor connectToShapeId="Sheet.57">
+						<position x="2.467" y="4.6658"/>
+					</anchor>
+				</graphEdge>
+			</graphElement>
+		</graphicRepresentation>
+		<connections>
+			<traversableConnection isMandatory="false" maximumMultiplicity="1" minimumMultiplicity="1" name="participant" participantClassName="RoleChoice">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>A link to the templates of a secondary performer <br/>
+							</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier associationEndName="role" className="SecondaryPerformer" staticModelDerivationId="1"/>
+				<participantClassSpecialization className="Template1" traversalName="participantTemplate1"/>
+			</traversableConnection>
+			<nonTraversableConnection participantClassName="SecondaryPerformer">
+				<derivationSupplier associationEndName="participation" className="RoleChoice" staticModelDerivationId="1"/>
+			</nonTraversableConnection>
+		</connections>
+	</ownedAssociation>
+	<ownedAssociation>
+		<graphicRepresentation>
+			<graphElement connectToShapeId="Sheet.57" containerDiagramName="Main" shapeId="Sheet.41">
+				<position x="2.467" y="6.02849"/>
+				<graphEdge>
+					<anchor connectToShapeId="Sheet.57">
+						<position x="2.467" y="6.02849"/>
+					</anchor>
+				</graphEdge>
+			</graphElement>
+		</graphicRepresentation>
+		<connections>
+			<traversableConnection isMandatory="false" maximumMultiplicity="1" minimumMultiplicity="1" name="participant" participantClassName="RoleChoice">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>A link to the choice of informant templates.</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier associationEndName="role" className="Informant" staticModelDerivationId="1"/>
+				<participantClassSpecialization className="Template1" traversalName="participantTemplate1"/>
+			</traversableConnection>
+			<nonTraversableConnection participantClassName="Informant">
+				<derivationSupplier associationEndName="participation" className="RoleChoice" staticModelDerivationId="1"/>
+			</nonTraversableConnection>
+		</connections>
+	</ownedAssociation>
+	<ownedAssociation>
+		<graphicRepresentation>
+			<graphElement connectToShapeId="Sheet.111" containerDiagramName="Main" shapeId="Sheet.69">
+				<position x="13.05749" y="2.65687"/>
+				<graphEdge>
+					<anchor connectToShapeId="Sheet.111">
+						<position x="13.05749" y="2.65687"/>
+					</anchor>
+				</graphEdge>
+			</graphElement>
+		</graphicRepresentation>
+		<connections>
+			<traversableConnection isMandatory="false" maximumMultiplicity="1" minimumMultiplicity="1" name="assessmentChoice" participantClassName="AssessmentChoice">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>A link to the choice of assessment templates<br/>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier associationEndName="target" className="Component" staticModelDerivationId="1"/>
+				<participantClassSpecialization className="Template2" traversalName="assessmentChoiceTemplate2"/>
+			</traversableConnection>
+			<nonTraversableConnection participantClassName="Component">
+				<derivationSupplier associationEndName="inboundRelationship" className="AssessmentChoice" staticModelDerivationId="1"/>
+			</nonTraversableConnection>
+		</connections>
+	</ownedAssociation>
+	<ownedAssociation>
+		<graphicRepresentation>
+			<graphElement connectToShapeId="Sheet.75" containerDiagramName="Main" shapeId="Sheet.87">
+				<position x="2.35594" y="7.30849"/>
+				<graphEdge>
+					<anchor connectToShapeId="Sheet.75">
+						<position x="2.35594" y="7.30849"/>
+					</anchor>
+				</graphEdge>
+			</graphElement>
+		</graphicRepresentation>
+		<connections>
+			<traversableConnection isMandatory="false" maximumMultiplicity="1" minimumMultiplicity="1" name="participant" participantClassName="OtherPersonPresent">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>A link to the other person present<br/>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier associationEndName="role" className="Witness" staticModelDerivationId="1"/>
+				<participantClassSpecialization className="Template5" traversalName="participantTemplate5"/>
+			</traversableConnection>
+			<nonTraversableConnection participantClassName="Witness">
+				<derivationSupplier associationEndName="participation" className="OtherPersonPresent" staticModelDerivationId="1"/>
+			</nonTraversableConnection>
+		</connections>
+	</ownedAssociation>
+	<ownedAssociation>
+		<graphicRepresentation>
+			<graphElement connectToShapeId="Sheet.99" containerDiagramName="Main" shapeId="Sheet.93">
+				<position x="2.74" y="8.67968"/>
+				<graphEdge>
+					<anchor connectToShapeId="Sheet.99">
+						<position x="2.74" y="8.67968"/>
+					</anchor>
+				</graphEdge>
+			</graphElement>
+		</graphicRepresentation>
+		<connections>
+			<traversableConnection isMandatory="false" maximumMultiplicity="1" minimumMultiplicity="1" name="participant" participantClassName="LocationChoice">
+				<annotations>
+					<otherAnnotation type="html">
+						<text>
+							<p>A link to the choice of location.<br/>
+							</p>
+						</text>
+					</otherAnnotation>
+				</annotations>
+				<derivationSupplier associationEndName="role" className="Location" staticModelDerivationId="1"/>
+				<participantClassSpecialization className="Template3" traversalName="participantTemplate3"/>
+			</traversableConnection>
+			<nonTraversableConnection participantClassName="Location">
+				<derivationSupplier associationEndName="participation" className="LocationChoice" staticModelDerivationId="1"/>
+			</nonTraversableConnection>
+		</connections>
+	</ownedAssociation>
+</staticModel>

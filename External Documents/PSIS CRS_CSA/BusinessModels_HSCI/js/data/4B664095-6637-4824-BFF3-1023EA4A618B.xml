@@ -1,0 +1,16 @@
+tocTab[tocTab.length] = new Array("5.1.2.2:1", "", "Sample CD 2", "EARoot/EA5/EA1/EA2/EA2/EA2347.htm", "175.png", "218", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("5.1.2.2:2", "", "adminInformation", "EARoot/EA5/EA1/EA2/EA2/EA2349.htm", "5.png", "8211", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.2:3", "", "appointments", "EARoot/EA5/EA1/EA2/EA2/EA2350.htm", "5.png", "8207", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.2:4", "", "clinicalInformation", "EARoot/EA5/EA1/EA2/EA2/EA2351.htm", "5.png", "8215", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.2:5", "", "consultation", "EARoot/EA5/EA1/EA2/EA2/EA2352.htm", "5.png", "8217", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.2:6", "", "diagnoses", "EARoot/EA5/EA1/EA2/EA2/EA2354.htm", "5.png", "8212", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.2:7", "", "domainClinicalDocument", "EARoot/EA5/EA1/EA2/EA2/EA2355.htm", "5.png", "8208", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.2:8", "", "domainEncompassingEncounter", "EARoot/EA5/EA1/EA2/EA2/EA2356.htm", "5.png", "8206", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.2:9", "", "examination", "EARoot/EA5/EA1/EA2/EA2/EA2357.htm", "5.png", "8205", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.2:10", "", "generalDetails", "EARoot/EA5/EA1/EA2/EA2/EA2358.htm", "5.png", "8214", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.2:11", "", "medication", "EARoot/EA5/EA1/EA2/EA2/EA2359.htm", "5.png", "8209", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.2:12", "", "medicationCRE", "EARoot/EA5/EA1/EA2/EA2/EA2360.htm", "5.png", "8218", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.2:13", "", "medicationTemplates", "EARoot/EA5/EA1/EA2/EA2/EA2361.htm", "5.png", "8216", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.2:14", "", "treatments", "EARoot/EA5/EA1/EA2/EA2/EA2363.htm", "5.png", "8219", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.2:15", "", "triage", "EARoot/EA5/EA1/EA2/EA2/EA2364.htm", "5.png", "8213", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.2:16", "", "triageTemplates", "EARoot/EA5/EA1/EA2/EA2/EA2365.htm", "5.png", "8210", "0", "", "Class");

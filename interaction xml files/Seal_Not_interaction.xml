@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifactPackage>
+	<dynamicModel formalName="" title="PSIS" Caption="">
+		<!-- SealEvent -->
+		<interaction id="PRPA_IN000501UK03">
+			<Models>
+				<sendingRole modelId="PRPA_AR000501UK01"/>
+				<receivingRole modelId="PRPA_AR000502UK01"/>
+				<triggerEvent modelId="PRPA_TE000501UK01"/>
+				<transmissionWrapper modelId="MCCI_MT010101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+				<payload modelId="PRPA_MT000501UK03"/>
+			</Models>
+		</interaction>
+	</dynamicModel>
+</artifactPackage>

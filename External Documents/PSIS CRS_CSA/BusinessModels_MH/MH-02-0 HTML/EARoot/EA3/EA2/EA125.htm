@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>carePlanComponent</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">carePlanComponent  (MH0080Class) : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">20/09/2007 15:26:00</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">20/09/2007 15:26:33</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Ross Dixon</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{4BC20979-DC57-4c7e-AC4F-A9419069946C}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA120.htm">IAM</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">This&nbsp;<WBR>provides&nbsp;<WBR>a&nbsp;<WBR>structured&nbsp;<WBR>way&nbsp;<WBR>to&nbsp;<WBR>capture&nbsp;<WBR>specific&nbsp;<WBR>aspects&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>care&nbsp;<WBR>plan&nbsp;<WBR>related&nbsp;<WBR>to&nbsp;<WBR>a&nbsp;<WBR>single&nbsp;<WBR>problem/issue&nbsp;<WBR>or&nbsp;<WBR>identified&nbsp;<WBR>group&nbsp;<WBR>of&nbsp;<WBR>problems/issues&nbsp;<WBR>-&nbsp;<WBR>It&nbsp;<WBR>is&nbsp;<WBR>understood&nbsp;<WBR>that&nbsp;<WBR>different&nbsp;<WBR>HCPs&nbsp;<WBR>will&nbsp;<WBR>populate&nbsp;<WBR>these&nbsp;<WBR>items&nbsp;<WBR>in&nbsp;<WBR>differing&nbsp;<WBR>ways</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public </i><br /><strong>&nbsp;&nbsp;problemIssue</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 12.3.1<br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The&nbsp;<WBR>specific&nbsp;<WBR>problem&nbsp;<WBR>or&nbsp;<WBR>issue&nbsp;<WBR>(or&nbsp;<WBR>group&nbsp;<WBR>of&nbsp;<WBR>issues)&nbsp;<WBR>that&nbsp;<WBR>is&nbsp;<WBR>/are&nbsp;<WBR>dealt&nbsp;<WBR>with&nbsp;<WBR>in&nbsp;<WBR>this&nbsp;<WBR>Care&nbsp;<WBR>Plan&nbsp;<WBR>component&nbsp;<WBR>&nbsp;<WBR>
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Representation Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Text
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example Accommodation </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Accommodation
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public </i><br /><strong>&nbsp;&nbsp;problemIssueDescriptor</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 12.3.2 <br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Description&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>need/issue/problem&nbsp;<WBR>as&nbsp;<WBR>determined&nbsp;<WBR>from&nbsp;<WBR>either&nbsp;<WBR>a&nbsp;<WBR>formal&nbsp;<WBR>or&nbsp;<WBR>informal&nbsp;<WBR>assessment&nbsp;<WBR>
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Example Tony will need support to find more permanent accommodation for when he is discharged as he was squatting when he came to us </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Tony&nbsp;<WBR>will&nbsp;<WBR>need&nbsp;<WBR>support&nbsp;<WBR>to&nbsp;<WBR>find&nbsp;<WBR>more&nbsp;<WBR>permanent&nbsp;<WBR>accommodation&nbsp;<WBR>for&nbsp;<WBR>when&nbsp;<WBR>he&nbsp;<WBR>is&nbsp;<WBR>discharged&nbsp;<WBR>as&nbsp;<WBR>he&nbsp;<WBR>was&nbsp;<WBR>squatting&nbsp;<WBR>when&nbsp;<WBR>he&nbsp;<WBR>came&nbsp;<WBR>to&nbsp;<WBR>us
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Representation Marked Up Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Marked&nbsp;<WBR>Up&nbsp;<WBR>Text
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public </i><br /><strong>&nbsp;&nbsp;unmetNeed</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 12.3.3  <br><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Description&nbsp;<WBR>any&nbsp;<WBR>related&nbsp;<WBR>need&nbsp;<WBR>that&nbsp;<WBR>is&nbsp;<WBR>currently&nbsp;<WBR>unmet,&nbsp;<WBR>determined&nbsp;<WBR>from&nbsp;<WBR>either&nbsp;<WBR>a&nbsp;<WBR>formal&nbsp;<WBR>or&nbsp;<WBR>informal&nbsp;<WBR>assessment&nbsp;<WBR>
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Representation Marked Up Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Marked&nbsp;<WBR>Up&nbsp;<WBR>Text
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example Social Worker designated to help Tony is on leave for 3 weeks and no one is currently covering their case load </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Social&nbsp;<WBR>Worker&nbsp;<WBR>designated&nbsp;<WBR>to&nbsp;<WBR>help&nbsp;<WBR>Tony&nbsp;<WBR>is&nbsp;<WBR>on&nbsp;<WBR>leave&nbsp;<WBR>for&nbsp;<WBR>3&nbsp;<WBR>weeks&nbsp;<WBR>and&nbsp;<WBR>no&nbsp;<WBR>one&nbsp;<WBR>is&nbsp;<WBR>currently&nbsp;<WBR>covering&nbsp;<WBR>their&nbsp;<WBR>case&nbsp;<WBR>load
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Constraint Cardinality  </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Cardinality&nbsp;<WBR>changes&nbsp;<WBR>to&nbsp;<WBR>from&nbsp;<WBR>[NOT&nbsp;<WBR>INCLUDED&nbsp;<WBR>]for&nbsp;<WBR>&nbsp;<WBR>MHA&nbsp;<WBR>Assessment&nbsp;<WBR>and&nbsp;<WBR>&nbsp;<WBR>MHA&nbsp;<WBR>Assessment&nbsp;<WBR>Update&nbsp;<WBR>to&nbsp;<WBR>[0..1]&nbsp;<WBR>for&nbsp;<WBR>all&nbsp;<WBR>other&nbsp;<WBR>messages
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public </i><br /><strong>&nbsp;&nbsp;aimsObjectives</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 12.3.4<br><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Describes&nbsp;<WBR>the&nbsp;<WBR>aims&nbsp;<WBR>and&nbsp;<WBR>/&nbsp;<WBR>or&nbsp;<WBR>objectives&nbsp;<WBR>of&nbsp;<WBR>this&nbsp;<WBR>care&nbsp;<WBR>plan&nbsp;<WBR>component
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Example Tony needs support to find suitable accommodation </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Tony&nbsp;<WBR>needs&nbsp;<WBR>support&nbsp;<WBR>to&nbsp;<WBR>find&nbsp;<WBR>suitable&nbsp;<WBR>accommodation
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Constraint Cardinality </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Cardinality&nbsp;<WBR>changes&nbsp;<WBR>to&nbsp;<WBR>from&nbsp;<WBR>[NOT&nbsp;<WBR>INCLUDED&nbsp;<WBR>]for&nbsp;<WBR>&nbsp;<WBR>MHA&nbsp;<WBR>Assessment&nbsp;<WBR>and&nbsp;<WBR>&nbsp;<WBR>MHA&nbsp;<WBR>Assessment&nbsp;<WBR>Update&nbsp;<WBR>to&nbsp;<WBR>[0..1]&nbsp;<WBR>for&nbsp;<WBR>all&nbsp;<WBR>other&nbsp;<WBR>messages
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Representation Marked Up Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Marked&nbsp;<WBR>Up&nbsp;<WBR>Text
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public </i><br /><strong>&nbsp;&nbsp;interventionsActions</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 12.3.5 <br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Describes&nbsp;<WBR>the&nbsp;<WBR>interventions&nbsp;<WBR>/&nbsp;<WBR>actions&nbsp;<WBR>to&nbsp;<WBR>be&nbsp;<WBR>taken&nbsp;<WBR>and&nbsp;<WBR>who&nbsp;<WBR>/&nbsp;<WBR>which&nbsp;<WBR>organisation&nbsp;<WBR>is&nbsp;<WBR>responsible&nbsp;<WBR>for&nbsp;<WBR>these
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Representation Marked Up Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Marked&nbsp;<WBR>Up&nbsp;<WBR>Text
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example 1.  Register as homeless - Social worker will assist him to do this </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::1.&nbsp;<WBR>&nbsp;<WBR>Register&nbsp;<WBR>as&nbsp;<WBR>homeless&nbsp;<WBR>-&nbsp;<WBR>Social&nbsp;<WBR>worker&nbsp;<WBR>will&nbsp;<WBR>assist&nbsp;<WBR>him&nbsp;<WBR>to&nbsp;<WBR>do&nbsp;<WBR>this<br />2.&nbsp;<WBR>&nbsp;<WBR>Social&nbsp;<WBR>Worker&nbsp;<WBR>will&nbsp;<WBR>also&nbsp;<WBR>support&nbsp;<WBR>him&nbsp;<WBR>to&nbsp;<WBR>contact&nbsp;<WBR>the&nbsp;<WBR>local&nbsp;<WBR>Housing&nbsp;<WBR>department&nbsp;<WBR>to&nbsp;<WBR>begin&nbsp;<WBR>to&nbsp;<WBR>look&nbsp;<WBR>at&nbsp;<WBR>options.&nbsp;<WBR>
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public </i><br /><strong>&nbsp;&nbsp;GPResponsibility?</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 12.3.6<br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This&nbsp;<WBR>will&nbsp;<WBR>enable&nbsp;<WBR>identification&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>GP&nbsp;<WBR>as&nbsp;<WBR>having&nbsp;<WBR>a&nbsp;<WBR>responsibility&nbsp;<WBR>for&nbsp;<WBR>the&nbsp;<WBR>actions&nbsp;<WBR>contained&nbsp;<WBR>in&nbsp;<WBR>this&nbsp;<WBR>component&nbsp;<WBR>and&nbsp;<WBR>to&nbsp;<WBR>ensure&nbsp;<WBR>that&nbsp;<WBR>this&nbsp;<WBR>is&nbsp;<WBR>notified&nbsp;<WBR>to&nbsp;<WBR>them&nbsp;<WBR>via&nbsp;<WBR>TMS
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Constraint Default for this would be 'No' unless altered by an entry </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Default&nbsp;<WBR>for&nbsp;<WBR>this&nbsp;<WBR>would&nbsp;<WBR>be&nbsp;<WBR>&#39;No&#39;&nbsp;<WBR>unless&nbsp;<WBR>altered&nbsp;<WBR>by&nbsp;<WBR>an&nbsp;<WBR>entry.&nbsp;<WBR>A&nbsp;<WBR>&#39;Yes&#39;&nbsp;<WBR>in&nbsp;<WBR>this&nbsp;<WBR>field&nbsp;<WBR>requires&nbsp;<WBR>a&nbsp;<WBR>notification&nbsp;<WBR>of&nbsp;<WBR>this&nbsp;<WBR>communication&nbsp;<WBR>to&nbsp;<WBR>the&nbsp;<WBR>patient&#39;s&nbsp;<WBR>GP
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Representation Boolean  </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Boolean&nbsp;<WBR><br />Y/N
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example Yes </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Yes
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Default Value No </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::No
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public </i><br /><strong>&nbsp;&nbsp;contactFrequency</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 12.3.7<br><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Provided&nbsp;<WBR>as&nbsp;<WBR>a&nbsp;<WBR>separate&nbsp;<WBR>item&nbsp;<WBR>to&nbsp;<WBR>that&nbsp;<WBR>of&nbsp;<WBR>review&nbsp;<WBR>dates&nbsp;<WBR>because&nbsp;<WBR>some&nbsp;<WBR>areas&nbsp;<WBR>record&nbsp;<WBR>this&nbsp;<WBR>in&nbsp;<WBR>different&nbsp;<WBR>ways&nbsp;<WBR>
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Representation Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Text
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example To be seen every three months </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::To&nbsp;<WBR>be&nbsp;<WBR>seen&nbsp;<WBR>every&nbsp;<WBR>three&nbsp;<WBR>months
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public </i><br /><strong>&nbsp;&nbsp;componentStartDate</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 12.3.8 <br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Commencement&nbsp;<WBR>of&nbsp;<WBR>this&nbsp;<WBR>period&nbsp;<WBR>of&nbsp;<WBR>Care&nbsp;<WBR>Plan&nbsp;<WBR>component&nbsp;<WBR>
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Representation Date </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Date
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example 01/01/2004 </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::01/01/2004
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public </i><br /><strong>&nbsp;&nbsp;componentPlannedReviewDate</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 12.3.9 <br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Date&nbsp;<WBR>for&nbsp;<WBR>this&nbsp;<WBR>Care&nbsp;<WBR>Plan&nbsp;<WBR>component&nbsp;<WBR>Review&nbsp;<WBR>&lt;br&nbsp;<WBR>/&gt;&lt;br&nbsp;<WBR>/&gt;Normally&nbsp;<WBR>a&nbsp;<WBR>maximum&nbsp;<WBR>of&nbsp;<WBR>6&nbsp;<WBR>months&nbsp;<WBR>for&nbsp;<WBR>Enhanced&nbsp;<WBR>CPA&nbsp;<WBR>or&nbsp;<WBR>1&nbsp;<WBR>year&nbsp;<WBR>for&nbsp;<WBR>Standard&nbsp;<WBR>CPA
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Representation Date </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Date
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Example 01/01/2005 </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::01/01/2005
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Constraint The date entered here should default to not greater than 1 year from the date in 12.3.7.1 Care Plan Component Start Date unless over-ridden by the Professional </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::The&nbsp;<WBR>date&nbsp;<WBR>entered&nbsp;<WBR>here&nbsp;<WBR>should&nbsp;<WBR>default&nbsp;<WBR>to&nbsp;<WBR>not&nbsp;<WBR>greater&nbsp;<WBR>than&nbsp;<WBR>1&nbsp;<WBR>year&nbsp;<WBR>from&nbsp;<WBR>the&nbsp;<WBR>date&nbsp;<WBR>in&nbsp;<WBR>12.3.7.1&nbsp;<WBR>Care&nbsp;<WBR>Plan&nbsp;<WBR>Component&nbsp;<WBR>Start&nbsp;<WBR>Date&nbsp;<WBR>unless&nbsp;<WBR>over-ridden&nbsp;<WBR>by&nbsp;<WBR>the&nbsp;<WBR>Professional
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public </i><br /><strong>&nbsp;&nbsp;componentReviewStatus</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 12.3.10<br><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Shows&nbsp;<WBR>the&nbsp;<WBR>status&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>review&nbsp;<WBR>for&nbsp;<WBR>this&nbsp;<WBR>Care&nbsp;<WBR>Plan&nbsp;<WBR>component
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Example Review not reached </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Review&nbsp;<WBR>not&nbsp;<WBR>reached
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Representation Coded Values: </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Coded&nbsp;<WBR>Values:<br />Component&nbsp;<WBR>Reviewed,<br />Review&nbsp;<WBR>not&nbsp;<WBR>reached,<br />Overdue&nbsp;<WBR>Review
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Constraint If the date for this item as shown in 12.3.9 (Care Plan Component Planned Review Date) has been reached and this item does not show 'Yes' then the value returned should default to 'Overdue Review' </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::If&nbsp;<WBR>the&nbsp;<WBR>date&nbsp;<WBR>for&nbsp;<WBR>this&nbsp;<WBR>item&nbsp;<WBR>as&nbsp;<WBR>shown&nbsp;<WBR>in&nbsp;<WBR>12.3.9&nbsp;<WBR>(Care&nbsp;<WBR>Plan&nbsp;<WBR>Component&nbsp;<WBR>Planned&nbsp;<WBR>Review&nbsp;<WBR>Date)&nbsp;<WBR>has&nbsp;<WBR>been&nbsp;<WBR>reached&nbsp;<WBR>and&nbsp;<WBR>this&nbsp;<WBR>item&nbsp;<WBR>does&nbsp;<WBR>not&nbsp;<WBR>show&nbsp;<WBR>&#39;Yes&#39;&nbsp;<WBR>then&nbsp;<WBR>the&nbsp;<WBR>value&nbsp;<WBR>returned&nbsp;<WBR>should&nbsp;<WBR>default&nbsp;<WBR>to&nbsp;<WBR>&#39;Overdue&nbsp;<WBR>Review&#39;
+		</td>
+	</td>
+</table> </td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public </i><br /><strong>&nbsp;&nbsp;componentSummarySinceLastReview(Progress)</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Alias:</i> 12.3.11<br><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Summarises&nbsp;<WBR>progress&nbsp;<WBR>for&nbsp;<WBR>the&nbsp;<WBR>activities&nbsp;<WBR>described&nbsp;<WBR>in&nbsp;<WBR>this&nbsp;<WBR>care&nbsp;<WBR>plan&nbsp;<WBR>component&nbsp;<WBR>since&nbsp;<WBR>the&nbsp;<WBR>last&nbsp;<WBR>review&nbsp;<WBR>
+		</td>
+	</tr>
+</table></div>
+<i>Constraints:</i><br><span style= "margin-left: .5cm;">Example This is first summary so no review information </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::This&nbsp;<WBR>is&nbsp;<WBR>first&nbsp;<WBR>summary&nbsp;<WBR>so&nbsp;<WBR>no&nbsp;<WBR>review&nbsp;<WBR>information
+		</td>
+	</td>
+</table> <span style= "margin-left: .5cm;">Representation Marked Up Text </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::Marked&nbsp;<WBR>Up&nbsp;<WBR>Text
+		</td>
+	</td>
+</table> </td>
+			</tr>
+		</table>
+</div>		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA154.htm">MH&SM-SS-CarePlan</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

@@ -1,0 +1,1467 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Laboratory Implementation Manual</title>
+<link rel="stylesheet" href="../../../Core/Stylesheets/IMCommon_v2.css" type="text/css">
+<style>
+
+td
+{
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	margin-left:0cm;
+	margin-right:0cm;
+	margin-top:0cm;
+}
+.TableHeading {
+	font-weight:bold
+}
+.GlossaryTerm {
+	font-weight:bold
+}
+
+table.MsoTableGrid
+	{border:1.0pt solid windowtext;
+	font-size:10.0pt;
+	font-family:"Times New Roman"}
+
+</style>
+</head>
+
+<body lang="EN-GB" link="blue" vlink="purple">
+
+<div id="header">
+	<p>Pathology Implementation Manual - Version 1.3 [Draft]</p>
+</div>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="Un-numberedHeading1">Contents</p>
+<div class="index1">
+	<div class="index1" div id="fp_TOC" class="fp_TOC">
+		<a href="#_Toc_Section_1">1&nbsp;&nbsp;&nbsp; Overview</a><br>
+		<a href="#_Toc_Section_2">2&nbsp;&nbsp;&nbsp; Storyboards</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_2.1">2.1&nbsp;&nbsp;&nbsp; Simple 
+			Specimen Request</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_2.2">2.2&nbsp;&nbsp;&nbsp; Glucose 
+			Tolerance Test </a><br><a href="#_Toc_Section_3">3&nbsp;&nbsp;&nbsp; Application Roles</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_3.1">3.1&nbsp;&nbsp;&nbsp; Order 
+			Placer - POLB_AR010000UK01</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_3.2">3.2&nbsp;&nbsp;&nbsp; Order 
+			Fulfiller - POLB_AR020000UK01</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_3.3">3.3&nbsp;&nbsp;&nbsp; Result 
+			Receiver - POLB_AR034000UK01</a><br><a href="#_Toc_Section_4">4&nbsp;&nbsp;&nbsp; Trigger Events</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_4.1">4.1&nbsp;&nbsp;&nbsp; Order 
+			Activate - POLB_TE001100UK01</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_4.2">4.2&nbsp;&nbsp;&nbsp; Order 
+			Reject - POLB_TE001003UK01 </a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_4.3">4.3&nbsp;&nbsp;&nbsp; Order 
+			Confirm - POLB_TE001002UK01</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_4.4">4.4&nbsp;&nbsp;&nbsp; Results 
+			In Progress - POLB_TE004100UK01</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_4.5">4.5&nbsp;&nbsp;&nbsp; Result 
+			Complete - POLB_TE004200UK01</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_4.6">4.6&nbsp;&nbsp;&nbsp; Result 
+			State Change - POLB_TE004007UK01</a><br><a href="#_Toc_Section_5">5&nbsp;&nbsp;&nbsp; Interaction Diagrams</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_5.1">5.1&nbsp;&nbsp;&nbsp; Laboratory 
+			Request Interactions</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_5.2">5.2&nbsp;&nbsp;&nbsp; Laboratory 
+			Result Interactions</a><br><a href="#_Toc_Section_6">6&nbsp;&nbsp;&nbsp; Interactions</a>&nbsp;&nbsp;&nbsp; 
+		<br>&nbsp;&nbsp;&nbsp;&nbsp; <a href="#_Toc_Section_6.1">6.1&nbsp;&nbsp;&nbsp; Order 
+			Fulfillment Request w/ RR - POLB_IN020001UK01</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_6.2">6.2&nbsp;&nbsp;&nbsp; Order 
+			Confirm Response - POLB_IN020002UK01</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_6.3">6.3&nbsp;&nbsp;&nbsp; Order 
+			Reject Response - POLB_IN020003UK01</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_6.4">6.4&nbsp;&nbsp;&nbsp; Result 
+			In Progress w/RR - POLB_IN020005UK01</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_6.5">6.5&nbsp;&nbsp;&nbsp; Result 
+			Complete w/RR - POLB_IN020006UK01</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_6.6">6.6&nbsp;&nbsp;&nbsp; Result 
+			Event State Change w/ RR - POLB_IN020010UK01</a><br>
+		<a href="#_Toc_Section_7">7&nbsp;&nbsp;&nbsp; Message Definitions</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_7.1">7.1&nbsp;&nbsp;&nbsp; Placer 
+			Order - POLB_MT001000UK01</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#_Toc_Section_7.1.1">7.1.1&nbsp;&nbsp;&nbsp; Example 1</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#_Toc_Section_7.1.2">7.1.2&nbsp;&nbsp;&nbsp; Example 2</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#_Toc_Section_7.1.3">7.1.3&nbsp;&nbsp;&nbsp; Example 3 </a>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#_Toc_Section_7.1.4">7.1.4&nbsp;&nbsp;&nbsp; Example 4</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#_Toc_Section_7.1.5">7.1.5&nbsp;&nbsp;&nbsp; Example 5 </a>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp; <a href="#_Toc_Section_7.2">7.2&nbsp;&nbsp;&nbsp; Result 
+			Event - POLB_MT004000UK01</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#_Toc_Section_7.2.1">7.2.1&nbsp;&nbsp;&nbsp; Example 1</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#_Toc_Section_7.2.2">7.2.2&nbsp;&nbsp;&nbsp; Example 2</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#_Toc_Section_7.2.3">7.2.3&nbsp;&nbsp;&nbsp; Example 3</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#_Toc_Section_7.2.4">7.2.4&nbsp;&nbsp;&nbsp; Example 4</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#_Toc_Section_7.2.5">7.2.5&nbsp;&nbsp;&nbsp; Example 5</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#_Toc_Section_7.2.6">7.2.6&nbsp;&nbsp;&nbsp; Example 6</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_7.3">7.3&nbsp;&nbsp;&nbsp; 
+			Placer Order Reference - POLB_MT001002UK01</a><br>
+		<a href="#_Toc_Section_8">8&nbsp;&nbsp;&nbsp; Glossary of Terms </a><br>
+		<a href="#_Toc_Section_9">9&nbsp;&nbsp;&nbsp; Dates/Times in Lab messages.</a><br>
+		<a href="#_Toc_Section_10">10&nbsp;&nbsp;&nbsp; Report Status</a><br>
+		<a href="#_Toc_Section_11">11&nbsp;&nbsp;&nbsp; Storyboards</a><br>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#_Toc_Section_11.1">11.1&nbsp;&nbsp;&nbsp; Scenario 
+			1</a><br>&nbsp;&nbsp;&nbsp;&nbsp; <a href="#_Toc_Section_11.2">11.2&nbsp;&nbsp;&nbsp; Scenario 
+			2</a><br>&nbsp;&nbsp;&nbsp;&nbsp; <a href="#_Toc_Section_11.3">11.3&nbsp;&nbsp;&nbsp; Scenario 
+			3</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#_Toc_Section_11.3.1">11.3.1&nbsp;&nbsp;&nbsp; Invalid conditions</a><br>
+		<a href="#_Toc_Section_12">12&nbsp;&nbsp;&nbsp; Change History</a></div>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p></p></div><hr size="2" width="100%" align="center">
+<h1><a name="_Toc_Section_1"></a>1&nbsp;&nbsp;&nbsp; Overview</h1>
+<p><font face="Arial">The current scope of the Pathology Domain covers the requesting of Laboratory 
+	Investigation (s) and the provision of Laboratory reports in response to requests. 
+	There is no provision for cancellation of requests, status updates or reflex 
+	ordering in the current release.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">Laboratory service covers the following diagnostic disciplines and their 
+	sub-departments: -</font></p>
+<p>&nbsp;</p>
+<ul>
+	<li>
+	<p><font face="Arial">Cellular Pathology</font></p></li>
+	<li>
+	<p><font face="Arial">Clinical Chemistry</font></p></li>
+	<li>
+	<p><font face="Arial">Haematology</font></p></li>
+	<li>
+	<p><font face="Arial">Histopathology</font></p></li>
+	<li>
+	<p><font face="Arial">Immunology</font></p></li>
+	<li>
+	<p><font face="Arial">Microbiology</font></p></li>
+	<li>
+	<p><font face="Arial">Virology</font></p></li>
+</ul>
+<p>&nbsp;</p>
+<p><font face="Arial">For this release, Blood Transfusion, Laboratory to Laboratory communication 
+	and Health Protection Agency reporting are excluded.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">The terms Order and Request are synonymous. The HL7 standard traditionally 
+	uses the term &#39;Order&#39; whereas the UK uses the term &#39;Request&#39;. In the context 
+	of this document they are interchangeable. </font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">Each Placer Order (Laboratory Request) will be for one or more Laboratory 
+	investigations to a single laboratory department. As the definition of a &#39;Department&#39; 
+	is configuration specific, it is anticipated that there will be a registry of 
+	which department carries out which investigations on a National scale.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">The scope of the current release covers manual and electronic Laboratory 
+	Requests, and electronic Laboratory Reports in response to Laboratory Requests 
+	from Primary Care and Secondary Care Out-Patients.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">All Laboratory Requests are sent directly from the request Placer to the 
+	intended Laboratory Fulfiller. </font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">All Laboratory Reports are sent to the identified Primary Information Recipient, 
+	generally the GP/Consultant responsible for the patient at the time of the request. 
+	They may also be copied to other HCPs for information. </font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">Provision is made for reporting on requests where some or all investigations 
+	are not &#39;Completed&#39; and a later report is issued when all investigations have 
+	been completed.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">There may be more than one report issued in fulfilment of a single request, 
+	each report being complete in its own right.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">Where incomplete reports are issued, the final report will carry all the 
+	reported information, not just the new/additional and will update the original 
+	in its entirety. </font></p><hr size="2" width="100%" align="center">
+<p>&nbsp;</p>
+<h1><a name="_Toc_Section_2"></a>2&nbsp;&nbsp;&nbsp; Storyboards</h1>
+<h2><a name="_Toc_Section_2.1"></a>2.1&nbsp;&nbsp;&nbsp; Simple Specimen Request</h2>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">This scenario details a clinical consultation followed 
+	by samples taken in the treatment room immediately after the consultation.
+	</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Request</b> </p>
+<p class="MsoNormal">Wilfred Smith, a 62 year old hypertensive who feels tired 
+	all the time, arrives at his local practice to see his GP. During the consultation 
+	Dr Sugden, the GP, makes a preliminary diagnosis of moderate iron deficient 
+	anaemia arising from a possible duodenal ulcer and so decides to request a Full 
+	Blood Count (FBC) and Urea and Electrolytes (U&amp;Es). He selects the items from 
+	the pathology catalogue and, as the practice has contractual arrangements with 
+	two laboratories which can carry out the investigations Dr Sugden also indicates 
+	that he wants the request to go to Arrowe Park Hospital. The system automatically 
+	ascertains that there are two request messages required (one for FBC and one 
+	for U&amp;Es) and assigns a local system request number for each request and Placer’s 
+	Request IDs (PRID) for the individual request items. He then accepts the complete 
+	communication data set and the requests are added to the Treatment room work 
+	list.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">Mr Smith returns to the waiting room until called. Nurse 
+	Pat Screens calls him into the treatment room and reviews the pathology request. 
+	She collects the appropriate blood samples&nbsp; and confirms on her clinical 
+	system that all the samples have been taken, from which the system sets the 
+	actual date and time of collection. This triggers the Order Fulfilment Request 
+	interaction&nbsp; <a href="#_Toc_Section_6.1">(POLB_IN020001UK01)</a> and the 
+	sending of the electronic requests to the laboratory</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">The laboratory system receives the electronic requests 
+	and deems them to meet the requirements of the laboratory system for confirming 
+	the request.&nbsp; An application acknowledgement for each message is generated 
+	and sent to the placer system (<a href="#_Toc_Section_6.2">POLB_IN020002UK01</a> 
+	or <a href="#_Toc_Section_6.3">POLB_IN020003UK01</a> for a rejection)</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Specimen Broken Report</b></p>
+<p class="MsoNormal">The specimens arrive at the laboratory for processing and 
+	are booked into the system with appropriate Laboratory specimen numbers</p>
+<p class="MsoNormal">During processing, the SST sample breaks in the centrifuge 
+	and can’t be analysed. The Biomedical Scientist,&nbsp; Mr Steve Hogarth, adds 
+	a comment of ‘Sample broken in centrifuge’ to the system. He enters a status 
+	of aborted for the U&amp;E and authorises the report. This triggers the Result Complete 
+	interaction <a href="#_Toc_Section_6.5">(POLB_IN020006UK01)</a>&nbsp; and the 
+	transmission of the results to the practice. The practice system receives the 
+	report, checks it and finds that it meets the requirements for acceptance, and 
+	responds with a confirmation 
+	<a href="../../Infrastructure/Document%20Files/Infrastructure%20IM.htm#MCCI_IN010000UK13">(MCCI_IN010000UK13).</a>&nbsp;
+	</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Completed Report</b></p>
+<p class="MsoNormal">The FBC is performed and the results are reviewed by a 
+	senior BMS, Mr Derek Fish but the haemoglobin and red cell indices are significantly 
+	below the normal range. and so Mr Fish requests a film examination as an extra 
+	investigation and then authorises the FBC results which are held within the 
+	laboratory system awaiting completion of the film examination. The blood film 
+	is made, stained and examined and confirms the analyser results of a moderate 
+	anaemia, so Mr Fish passes the film onto the consultant haematologist, Dr Dave 
+	Gilmour for a clinical review and he adds the comment: ‘The film shows evidence 
+	of moderate iron deficiency anaemia, suggest a course of iron and a repeat FBC 
+	in two months time, and if there is no improvement it may be necessary to check 
+	for chronic blood loss’ and then authorises the film examination. This triggers 
+	the result completed interaction&nbsp; <a href="#_Toc_Section_6.5">(POLB_IN020006UK01)</a> 
+	and the transmission of the results to the placer system. The practice system 
+	receives the checks it and finds that it meets the requirements for acceptance, 
+	and responds with a confirm 
+<a href="../../Infrastructure/Document%20Files/Infrastructure%20IM.htm#MCCI_IN010000UK13">(MCCI_IN010000UK13).</a>
+</p>
+<p class="MsoNormal">On reviewing the FBC report, Dr Gilmore phones the laboratory 
+	and requests that a Ferritin level be performed on the same blood sample.&nbsp; 
+	The laboratory agrees to do this.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Completed Report (Additional Result)</b></p>
+<p class="MsoNormal">The following day the Ferritin level is completed and the 
+	result confirms the iron deficiency. Dr Gilmour reviews the result and adds 
+	a comment to the Ferritin level &amp; reauthorises it as Completed. This releases 
+	the results and triggers the Result Complete interaction&nbsp;
+<a href="#_Toc_Section_6.6">(POLB_IN020006UK01)</a> The report is built containing 
+	all the previously reported results for the request (re-reporting the FBC and 
+	film examination) and transmitted to the requesting practice. The practice system 
+	receives the report, checks it and finds that it meets the requirements for 
+	acceptance, and responds with a confirm 
+<a href="../../Infrastructure/Document%20Files/Infrastructure%20IM.htm#MCCI_IN010000UK13">(MCCI_IN010000UK13).</a></p>
+<p>&nbsp;</p>
+<h2><a name="_Toc_Section_2.2"></a>2.2&nbsp;&nbsp;&nbsp; Glucose Tolerance Test
+	</h2>
+<p><font face="Arial"><b>Introduction</b></font></p>
+<p><font face="Arial">This scenario details a clinical consultation followed by dynamic function 
+	test taken by the placer</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>Request</b></font></p>
+<p><font face="Arial">Mr Waters arrives at Valley Surgery for a consultation with Dr Stone. During 
+	the consultation he notes that Mr Waters may be suffering from late onset diabetes 
+	and he decides to request a Glucose Tolerance Test. He selects the item from 
+	the pathology catalogue, confirms his selection and adds the supporting clinical 
+	information “<i>?Late onset Diabetes</i>”.&nbsp; </font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">Dr Stone then completes the consultation by asking Mr Waters to fast from 
+	6pm tonight and return to the practice at 10am the following morning when the 
+	practice nurse, Nurse Douglas, will carry out the Glucose tolerance test.
+	</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">Mr Waters returns to the practice the following morning and waits until called. 
+	Nurse Douglas calls Mr Waters into the treatment room and reviews the pathology 
+	request. Mr Waters assures her that he has fasted and Nurse Douglas confirms 
+	that the first sample is to be taken immediately, that she will be taking samples 
+	at 0, 30, 60 and 120 minutes and she instructs the system to print out the labels. 
+	She performs the GTT according to the protocol and enters the appropriate data 
+	into the system. Completion&nbsp; triggers an Order Fulfilment Request interaction
+	<a href="#_Toc_Section_6.1">(POLB_IN020001UK01)</a> and the sending of the electronic 
+	request to the laboratory.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>Request Confirm</b></font></p>
+<p><font face="Arial">Electronic request arrives in laboratory system and is deemed to meet the 
+	requirement of the Order Confirm trigger.&nbsp; An application acknowledgement 
+	for the message is generated and sent to the requesting practice system
+	<a href="#_Toc_Section_6.2">(POLB_IN020002UK01)</a>.&nbsp; </font></p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>Specimen arrives at laboratory reception</b></font></p>
+<p><font face="Arial">The specimens arrive at the laboratory and each specimen ID contained within 
+	the barcode is scanned into the LIMS and matched with the electronic request. 
+	At this point, the medical laboratory assistant, Miss Hogarth, checks the sample 
+	details with the electronic request and confirms their conformance. </font>
+</p>
+<p>&nbsp;</p>
+<p><font face="Arial">The requests are given laboratory numbers and sent for processing. The samples 
+	are analysed and the glucose results are reviewed by a senior BMS, Mr Mason, 
+	who authorises the results. This releases all the results and triggers the building 
+	and transmission of the report 
+<a href="../../Infrastructure/document%20files/Infrastructure%20IM.htm#MCCI_IN010000UK13">(MCCI_IN010000UK13)</a>.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>Results Report Received at GP Practice </b></font></p>
+<p><font face="Arial">The electronic report arrives at the practice, an application acknowledgement 
+	is generated and sent back to the laboratory <a href="../../Infrastructure/Document%20Files/Infrastructure%20IM.htm#MCCI_IN010000UK13">(MCCI_IN010000UK13)</a>.
+	<span style="font-size: 10.0pt;">
+<br clear="all" style="page-break-before: always">&nbsp;</span></font></p>
+<p>&nbsp;</p><hr size="2" width="100%" align="center" />
+<h1><a name="_Toc_Section_3"></a>3&nbsp;&nbsp;&nbsp; Application Roles</h1>
+<p><font face="Arial">The applications involved in the Laboratory processes play specific roles.&nbsp; 
+	These, along with the interactions associated with each role, are identified 
+	below.</font></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><a name="POLB_AR010000UK01"></a><a name="_Toc_Section_3.1"></a>3.1&nbsp;&nbsp;&nbsp; Order Placer - POLB_AR010000UK01</h2>
+<p><font face="Arial">The Order Placer is the application role that originates and manages the 
+	state of an order (an Act in RQO mood). This application role is responsible 
+	for communicating changes to state of the order. The order placer is expected 
+	to manage the state of the order in response to changes to related promises 
+	and result events. </font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">Order Placer Interactions.</font></p>
+<p><font face="Arial"><a title="View Interaction" href="#_Toc_Section_5.1">
+<img border="0" src="../../../Core/Components_files/image001.gif"></a></font></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><a name="POLB_AR020000UK01"></a><a name="_Toc_Section_3.2"></a>3.2&nbsp;&nbsp;&nbsp; Order Fulfiller - POLB_AR020000UK01</h2>
+<p><font face="Arial">The Order Fulfiller is a laboratory system that receives orders and sends 
+	observation results. The order fulfiller manages the state of promises and events. 
+	This application role is responsible for communicating changes to the state 
+	of both promises and events. This application is expected to receive orders 
+	and respond with promises and events. The order fulfiller is expected to manage 
+	the state of promises and events in response to changes in the state of orders.
+	<br>&nbsp;</font></p>
+<p><font face="Arial">Order Fulfiller Interactions. </font></p>
+<p><font face="Arial"><a title="View Interaction" href="#_Toc_Section_5.2">
+<img border="0" src="../../../Core/Components_files/image001.gif"></a></font></p>
+<p>&nbsp;</p>
+<h2><a name="POLB_AR034000UK01"></a><a name="_Toc_Section_3.3"></a>3.3&nbsp;&nbsp;&nbsp; Result Receiver - POLB_AR034000UK01</h2>
+<p><font face="Arial">The Result Receiver is any system that receives Laboratory Result (event) 
+	messages. The Result Receiver may be the original placer of the order or may 
+	be a tracker application that is capable of receiving a message from another 
+	system about any state change of a laboratory observation. Note: this does not 
+	imply such a tracker stores the observation event. This does not preclude the 
+	event tracker from also storing the event.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">Result Receiver Interactions.</font></p>
+<p><font face="Arial"><a title="View Interaction" href="#_Toc_Section_5.2">
+<img border="0" src="../../../Core/Components_files/image001.gif"></a></font></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p><hr size="2" width="100%" align="center">
+<h1><a name="_Toc_Section_4"></a>4&nbsp;&nbsp;&nbsp; Trigger Events</h1>
+<h2><a name="_Toc_Section_4.1"></a>4.1&nbsp;&nbsp;&nbsp; Order Activate - POLB_TE001100UK01</h2>
+<p><font face="Arial">This event marks the point at which a order becomes active. The earliest 
+	this event can occur is at the point at which the order could be communicated 
+	to a filler. This does not mean that the order is actually communicated at that 
+	point. An active order does not assume that a filler for the order has been 
+	identified. This may be prior to or after the collection of the sample on which 
+	the investigations are to be carried out.</font></p>
+<p>&nbsp;</p>
+<table border="1">
+	<tr>
+		<td width="151" class="TableHeading"><font face="Arial">Structured Name</font></td>
+		<td width="525"><font face="Arial"><em style="font-style: normal">Placer Order Activate</em></font></td>
+	</tr>
+	<tr>
+		<td width="151" class="TableHeading"><font face="Arial">Type</font></td>
+		<td width="525"><font face="Arial">State-transition Based</font></td>
+	</tr>
+</table>
+<h2><a name="_Toc_Section_4.2"></a>4.2&nbsp;&nbsp;&nbsp; Order Reject - POLB_TE001003UK01
+	</h2>
+<p><font face="Arial">Rejection of a placer order. This trigger indicates the request has been 
+	received, has been deemed invalid and has been rejected.<br>&nbsp;</font></p>
+<table border="1">
+	<tr>
+		<td width="151" class="TableHeading"><font face="Arial">Structured Name</font></td>
+		<td width="525"><font face="Arial">Placer Order Rejection</font></td>
+	</tr>
+	<tr>
+		<td width="151" class="TableHeading"><font face="Arial">Type</font></td>
+		<td width="525"><font face="Arial">Interaction Based</font></td>
+	</tr>
+</table>
+<h2><a name="_Toc_Section_4.3"></a>4.3&nbsp;&nbsp;&nbsp; Order Confirm - POLB_TE001002UK01</h2>
+<p><font face="Arial">Acceptance of a placer order. This trigger indicates the order meets the 
+	requirements of the receiving application and is appropriate for processing 
+	but does not imply a promise to fulfil.<br>&nbsp;</font></p>
+<table border="1">
+	<tr>
+		<td width="151" class="TableHeading"><font face="Arial">Structured Name</font></td>
+		<td width="525"><font face="Arial">Placer Order Accept</font></td>
+	</tr>
+	<tr>
+		<td width="151" class="TableHeading"><font face="Arial">Type</font></td>
+		<td width="525"><font face="Arial">Interaction Based</font></td>
+	</tr>
+</table>&nbsp;<h2><a name="_Toc_Section_4.4"></a>4.4&nbsp;&nbsp;&nbsp; Results In Progress 
+	- POLB_TE004100UK01</h2>
+<p><font face="Arial">Indicates that the issuing of a laboratory observation has occurred, and 
+	that preliminary results are available.</font></p>
+<blockquote>
+	<ol type="a">
+		<li>
+		<p><font face="Arial">post entry of results and based on internal &#39;system&#39; rules</font></p>
+		<p>&nbsp;</p></li>
+		<li>
+		<p><font face="Arial">post manual verification of results.</font></p>
+		</li>
+	</ol>
+</blockquote>
+<p><font face="Arial">The report shall be still &#39;active&#39;. Reports that are sent with a status of 
+	&#39;active&#39; are incomplete, and indicate that a further &#39;completed&#39; report is intended 
+	to be sent to replace it at a later date.<span style="color: black"> </span>
+</font></p>
+<p>&nbsp;</p>
+<table border="1">
+	<tr>
+		<td width="151" class="TableHeading"><font face="Arial">Structured Name</font></td>
+		<td width="525"><font face="Arial">Laboratory Report Release</font></td>
+	</tr>
+	<tr>
+		<td width="151" class="TableHeading"><font face="Arial">Type</font></td>
+		<td width="525"><font face="Arial">State-transition Based</font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="_Toc_Section_4.5"></a>4.5&nbsp;&nbsp;&nbsp; Result Complete - POLB_TE004200UK01</h2>
+<p><font face="Arial">The Trigger Event for the sending of a Laboratory Report is the &#39;authorisation 
+	for release&#39;.&nbsp; This may be:</font></p>
+<blockquote>
+	<ol type="a">
+		<li>
+		<p><font face="Arial">post entry of results and based on internal &#39;system&#39; rules</font></p>
+		<p>&nbsp;</p></li>
+		<li>
+		<p><font face="Arial">post manual verification of results.</font></p>
+		</li>
+	</ol>
+</blockquote>
+<p><font face="Arial">The report shall be &#39;Completed&#39;. Receipt of a &#39;Completed&#39; report does not 
+	exclude receipt of a replacement &#39;Completed&#39; report at a later date. 
+</font></p>
+<p>&nbsp;</p>
+<table border="1">
+	<tr>
+		<td width="151" class="TableHeading"><font face="Arial">Structured Name</font></td>
+		<td width="525"><font face="Arial">Laboratory Report Release</font></td>
+	</tr>
+	<tr>
+		<td width="151" class="TableHeading"><font face="Arial">Type</font></td>
+		<td width="525"><font face="Arial">State-transition Based</font></td>
+	</tr>
+</table>
+<h2>&nbsp;</h2>
+<h2><a name="_Toc_Section_4.6"></a>4.6&nbsp;&nbsp;&nbsp; Result State Change 
+	- POLB_TE004007UK01</h2>
+<p><font face="Arial">This is the trigger event for reporting to a Tracker system. Any change to 
+	the Fulfiller order is communicated without the detail of the actual type of 
+	change (in-progress, Completed etc)</font></p>
+<p>&nbsp;</p>
+<table border="1">
+	<tr>
+		<td width="151" class="TableHeading"><font face="Arial">Structured Name</font></td>
+		<td width="525"><font face="Arial">Interactions With Receiver Responsibilities Event State 
+			Change</font></td>
+	</tr>
+	<tr>
+		<td width="151" class="TableHeading"><font face="Arial">Type</font></td>
+		<td width="525"><font face="Arial">State-transition Based</font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p><hr size="2" width="100%" align="center">
+<p>&nbsp;</p>
+<h1><a name="_Toc_Section_5"></a>5&nbsp;&nbsp;&nbsp; Interaction Diagrams</h1>
+<h2><a name="_Toc_Section_5.1"></a>5.1&nbsp;&nbsp;&nbsp; Laboratory Request 
+	Interactions</h2>
+<div id="4cd43f8e-f126-4b52-9b33-10c65c536d84"><font face="Arial">
+	<img src="laboratory_request.png" border="0" usemap="#4cd43f8e-f126-4b52-9b33-10c65c536d84" />
+	<map name="4cd43f8e-f126-4b52-9b33-10c65c536d84">
+	<area href="#POLB_AR010000UK01" type="rect" coords="50, 60, 231, 110" />
+	<area href="#POLB_AR020000UK01" type="rect" coords="490, 60, 671, 110" />
+	<area href="#POLB_IN020001UK01" type="rect" coords="243, 128, 478, 172" />
+	<area href="../../Infrastructure/document%20files/Infrastructure%20IM.htm#MCCI_IN010000UK13" type="rect" coords="188, 188, 532, 232" />
+	<area href="#POLB_IN020002UK01" type="rect" coords="268, 248, 452, 292" />
+	<area href="../../Infrastructure/document%20files/Infrastructure%20IM.htm#MCCI_IN010000UK13" type="rect" coords="188, 308, 532, 352" />
+	<area href="#POLB_IN020003UK01" type="rect" coords="273, 368, 447, 412" />
+	<area href="../../Infrastructure/document%20files/Infrastructure%20IM.htm#MCCI_IN010000UK13" type="rect" coords="188, 428, 532, 472" />
+	</map></font></div>
+<h2><a name="_Toc_Section_5.2"></a>5.2&nbsp;&nbsp;&nbsp; Laboratory Result Interactions</h2>
+<div id="9d636c73-4b2a-446f-bf5b-44ca7fc423a5"><font face="Arial">
+	<img src="laboratory_report.png" border="0" usemap="#9d636c73-4b2a-446f-bf5b-44ca7fc423a5" />
+	<map name="9d636c73-4b2a-446f-bf5b-44ca7fc423a5">
+	<area href="#POLB_AR010000UK01" type="rect" coords="50, 60, 231, 110" />
+	<area href="#POLB_AR034000UK01" type="rect" coords="490, 60, 671, 110" />
+	<area href="#POLB_IN020005UK01" type="rect" coords="269, 128, 451, 172" />
+	<area href="../../Infrastructure/document%20files/Infrastructure%20IM.htm#MCCI_IN010000UK13" type="rect" coords="188, 188, 532, 232" />
+	<area href="#POLB_IN020006UK01" type="rect" coords="276, 248, 445, 292" />
+	<area href="../../Infrastructure/document%20files/Infrastructure%20IM.htm#MCCI_IN010000UK13" type="rect" coords="188, 308, 532, 352" />
+	</map></font></div>
+<p>&nbsp;</p><hr size="2" width="100%" align="center">
+<p>&nbsp;</p>
+<h1><a name="_Toc_Section_6"></a>6&nbsp;&nbsp;&nbsp; Interactions</h1>
+<h2><a name="POLB_IN020001UK01"></a><a name="_Toc_Section_6.1"></a>6.1&nbsp;&nbsp;&nbsp; Order Fulfillment Request 
+	w/ RR - POLB_IN020001UK01</h2>
+<p><font face="Arial">This interaction is a Order Fulfillment Request with Receiver Responsibilities 
+	(i.e., the sending system utilizes messages that require application-level responses). 
+	This interaction is used when a fulfillment request is communicated. If the 
+	receiving role is a filler, the expectation is to confirm or reject the request. 
+	This is a &quot;low level&quot; receipt of a valid message confirmation. A &quot;business level&quot; 
+	confirmation will generally follow later.</font></p>
+<p>&nbsp;</p>
+<table border="1">
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Sending Role</font></td>
+		<td width="274"><font face="Arial">Order Placer</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_3.1">POLB_AR010000UK01</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Receiving Role</font></td>
+		<td width="274"><font face="Arial">Order Fulfiller</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_3.2">POLB_AR020000UK01</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Trigger Event</font></td>
+		<td width="274"><font face="Arial">Order Activate</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_4.1">POLB_TE001100UK01</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Transmission Wrapper</font></td>
+		<td width="274"><font face="Arial">Send Message Payload</font></td>
+		<td width="224"><font face="Arial">
+		<a href="../../Infrastructure/Document%20Files/Infrastructure%20IM.htm#_Toc_Section_5.1">MCCI_MT010101UK12</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Control Act Wrapper</font></td>
+		<td width="274"><font face="Arial">Control Act</font></td>
+		<td width="224"><font face="Arial">
+		<a href="../../Infrastructure/Document%20Files/Infrastructure%20IM.htm#_Toc_Section_5.3">MCAI_MT040101UK03</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Message Type</font></td>
+		<td width="274"><font face="Arial">Placer Order</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_7.1">POLB_MT001000UK01</a></font></td>
+	</tr>
+</table>
+<p><font face="Arial">&nbsp; </font></p>
+<p><font face="Arial">
+<a title="View Interaction Schema" href="../../../Schemas/POLB_IN020001UK01.xsd">
+<img border="0" src="../../../Core/Components_files/image002.gif"></a></font></p>
+<p>&nbsp;</p>
+<p class="Un-numberedHeading1">Receiver Responsibilities</p>
+<table border="1" width="694">
+	<tr>
+		<td class="TableHeading"><font face="Arial">Reason</font></td>
+		<td><font face="Arial">Interaction</span></font></td>
+	</tr>
+	<tr>
+		<td class="TableHeading"><font face="Arial">
+		<span style="font-weight: 400">Receiver is confirming receipt of an Order Fulfillment Request</span></font></td>
+		<td><font face="Arial">
+		<a href="../../Infrastructure/document%20files/Infrastructure%20IM.htm#MCCI_IN010000UK13">MCCI_IN010000UK13</a></font></td>
+	</tr>
+	<tr>
+		<td class="TableHeading"><font face="Arial">
+		<span style="font-weight: 400">Receiver is rejecting receipt of an Order Fulfillment Request</span></font></td>
+		<td><font face="Arial">
+		<a href="../../Infrastructure/document%20files/Infrastructure%20IM.htm#MCCI_IN010000UK13">MCCI_IN010000UK13</a></font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="POLB_IN020002UK01"></a><a name="_Toc_Section_6.2"></a>6.2&nbsp;&nbsp;&nbsp; Order Confirm Response 
+	- POLB_IN020002UK01</h2>
+<p><font face="Arial">This interaction is a Order Confirm Response. This is used by a filler to 
+	confirm receipt of an order. It does not imply that the filler will fulfill 
+	the order but that the order is acceptable to the receiving system and there 
+	is no reason why it cannot be fulfilled. This interaction implies more that 
+	just that the message has been received and is well formed. Typically the 
+	specimen will have arrived, but this does not necessarily mean that the 
+	order will ultimately be carried out. If for example the specimen proved 
+	inadequate for testing, a report would be issued with this text conveyed.</font></p>
+<p>&nbsp;</p>
+<table border="1">
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Sending Role</font></td>
+		<td width="274"><font face="Arial">Order Fulfiller</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_3.2">POLB_AR020000UK01</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Receiving Role</font></td>
+		<td width="274"><font face="Arial">Order Placer</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_3.1">POLB_AR010000UK01</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Trigger Event</font></td>
+		<td width="274"><font face="Arial">Order Confirm</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_4.3">POLB_TE001002UK01</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Transmission Wrapper</font></td>
+		<td width="274"><font face="Arial">Send Message Payload</font></td>
+		<td width="224"><font face="Arial">
+		<a href="../../Infrastructure/Document%20Files/Infrastructure%20IM.htm#_Toc_Section_5.1">MCCI_MT010101UK12</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Control Act Wrapper</font></td>
+		<td width="274"><font face="Arial">Control Act</font></td>
+		<td width="224"><font face="Arial">
+		<a href="../../Infrastructure/Document%20Files/Infrastructure%20IM.htm#_Toc_Section_5.3">MCAI_MT040101UK03</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Message Type</font></td>
+		<td width="274"><font face="Arial">Placer Order</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_7.3">POLB_MT001002UK01</a></font></td>
+	</tr>
+</table>
+<p><font face="Arial">&nbsp; </font></p><font face="Arial">
+<a title="View Interaction Schema" href="../../../Schemas/POLB_IN020002UK01.xsd">
+<img border="0" src="../../../Core/Components_files/image002.gif"></a></font><p>&nbsp;</p>
+<p class="Un-numberedHeading1">Receiver Responsibilities</p>
+<table border="1" width="694" id="table1">
+	<tr>
+		<td class="TableHeading"><font face="Arial">Reason</font></td>
+		<td><font face="Arial">Interaction</span></font></td>
+	</tr>
+	<tr>
+		<td class="TableHeading"><font face="Arial">
+		<span style="font-weight: 400">Receiver is confirming receipt of an Order Confirm Response</span></font></td>
+		<td><font face="Arial">
+		<a href="../../Infrastructure/document%20files/Infrastructure%20IM.htm#MCCI_IN010000UK13">MCCI_IN010000UK13</a></font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><a name="POLB_IN020003UK01"></a><a name="_Toc_Section_6.3"></a>6.3&nbsp;&nbsp;&nbsp; Order Reject Response 
+	- POLB_IN020003UK01</h2>
+<p><font face="Arial">This interaction is a Order Reject Response. This response is used by the 
+	filler to reject an order related interaction. Where an Order Reject message 
+	is received by a system, the issue needs to be investigated by a manual process 
+	to identify the reason for the rejection and resolve it.</font></p>
+<p>&nbsp;</p>
+<table border="1">
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Sending Role</font></td>
+		<td width="274"><font face="Arial">Order Fulfiller</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_3.2">POLB_AR020000UK01</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Receiving Role</font></td>
+		<td width="274"><font face="Arial">Order Placer</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_3.1">POLB_AR010000UK01</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Trigger Event</font></td>
+		<td width="274"><font face="Arial">Order Reject</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_4.2">POLB_TE001003UK01</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Transmission Wrapper</font></td>
+		<td width="274"><font face="Arial">Send Message Payload</font></td>
+		<td width="224"><font face="Arial">
+		<a href="../../Infrastructure/Document%20Files/Infrastructure%20IM.htm#_Toc_Section_5.1">MCCI_MT010101UK12</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Control Act Wrapper</font></td>
+		<td width="274"><font face="Arial">Control Act</font></td>
+		<td width="224"><font face="Arial">
+		<a href="../../Infrastructure/Document%20Files/Infrastructure%20IM.htm#_Toc_Section_5.3">MCAI_MT040101UK03</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Message Type</font></td>
+		<td width="274"><font face="Arial">Placer Order</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_7.3">POLB_MT001002UK01</a></font></td>
+	</tr>
+</table>
+<p><font face="Arial">&nbsp; </font></p><font face="Arial">
+<a title="View Interaction Schema" href="../../../Schemas/POLB_IN020002UK01.xsd">
+<img border="0" src="../../../Core/Components_files/image002.gif"></a> </font>
+<p>&nbsp;</p>
+<p class="Un-numberedHeading1">Receiver Responsibilities</p>
+<table border="1" width="694" id="table2">
+	<tr>
+		<td class="TableHeading"><font face="Arial">Reason</font></td>
+		<td><font face="Arial">Interaction</span></font></td>
+	</tr>
+	<tr>
+		<td class="TableHeading"><font face="Arial">
+		<span style="font-weight: 400">Receiver is confirming receipt of an Order Confirm Response</span></font></td>
+		<td><font face="Arial">
+		<a href="../../Infrastructure/document%20files/Infrastructure%20IM.htm#MCCI_IN010000UK13">MCCI_IN010000UK13</a></font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="POLB_IN020005UK01"></a><a name="_Toc_Section_6.4"></a>6.4&nbsp;&nbsp;&nbsp; Result In Progress 
+	w/RR - POLB_IN020005UK01</h2>
+<p><font face="Arial">This interaction is a Result in Progress with Receiver Responsibilities (i.e., 
+	the sending system utilizes messages that require application-level responses). 
+	This interaction indicates that the Laboratory observation has occurred and 
+	preliminary results are being communicated with this notification. The expected 
+	responses to this interaction are confirm or reject. </font></p>
+<p>&nbsp;</p>
+<table border="1">
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Sending Role</font></td>
+		<td width="274"><font face="Arial">Order Fulfiller</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_3.2">POLB_AR020000UK01</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Receiving Role</font></td>
+		<td width="274"><font face="Arial">Result Receiver</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_3.3">POLB_AR034000UK01</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Trigger Event</font></td>
+		<td width="274"><font face="Arial">Result In-progress</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_4.4">POLB_TE004100UK01</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Transmission Wrapper</font></td>
+		<td width="274"><font face="Arial">Send Message Payload</font></td>
+		<td width="224"><font face="Arial">
+		<a href="../../Infrastructure/Document%20Files/Infrastructure%20IM.htm#_Toc_Section_5.1">MCCI_MT010101UK12</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Control Act Wrapper</font></td>
+		<td width="274"><font face="Arial">Control Act</font></td>
+		<td width="224"><font face="Arial">
+		<a href="../../Infrastructure/Document%20Files/Infrastructure%20IM.htm#_Toc_Section_5.3">MCAI_MT040101UK03</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Message Type</font></td>
+		<td width="274"><font face="Arial">Result Event</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_7.2">POLB_MT004000UK01</a></font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p><font face="Arial">
+<a title="View Interaction Schema" href="../../../Schemas/POLB_IN020005UK01.xsd">
+<img border="0" src="../../../Core/Components_files/image002.gif"></a></font></p>
+<p>&nbsp;</p>
+<p class="Un-numberedHeading1">Receiver Responsibilities</p>
+<table border="1" width="695">
+	<tr>
+		<td class="TableHeading"><font face="Arial">Reason</font></td>
+		<td class="TableHeading"><font face="Arial">Interaction</font></td>
+	</tr>
+	<tr>
+		<td class="TableHeading"><font face="Arial">
+		<span style="font-weight: 400">Used when receiver 
+			confirms receipt of Results in Progress</span></font></td>
+		<td><font face="Arial">
+		<a href="../../Infrastructure/document%20files/Infrastructure%20IM.htm#MCCI_IN010000UK13">MCCI_IN010000UK13</a></font></td>
+	</tr>
+	<tr>
+		<td class="TableHeading"><font face="Arial">
+		<span style="font-weight: 400">Used when receiver 
+			rejects receipt of Results in Progress</span></font></td>
+		<td><font face="Arial">
+		<a href="../../Infrastructure/document%20files/Infrastructure%20IM.htm#MCCI_IN010000UK13">MCCI_IN010000UK13</a></font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="POLB_IN020006UK01"></a><a name="_Toc_Section_6.5"></a>6.5&nbsp;&nbsp;&nbsp; Result Complete w/RR 
+	- POLB_IN020006UK01</h2>
+<div class="section">
+	<div class="body">
+		<div class="subSection">
+			<div class="body">
+				<div class="subSubSection">
+					<div class="body"><font face="Arial">This interaction is a Result Complete with Receiver 
+							Responsibilities (i.e., the sending system utilizes 
+							messages that require application-level responses). 
+							This interaction signals completion of the result as 
+							well as the Filler&#39;s Promise for the result. The expected 
+							responses to this interaction are confirm or reject.
+						</font></div></div></div></div></div></div>
+<p>&nbsp;</p>
+<table border="1">
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Sending Role</font></td>
+		<td width="274"><font face="Arial">Order Fulfiller</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_3.2">POLB_AR020000UK01</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Receiving Role</font></td>
+		<td width="274"><font face="Arial">Result Receiver</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_3.3">POLB_AR034000UK01</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Trigger Event</font></td>
+		<td width="274"><font face="Arial">Result Complete</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_4.5">POLB_TE004200UK01</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Transmission Wrapper</font></td>
+		<td width="274"><font face="Arial">Send Message Payload</font></td>
+		<td width="224"><font face="Arial">
+		<a href="../../Infrastructure/Document%20Files/Infrastructure%20IM.htm#_Toc_Section_5.1">MCCI_MT010101UK12</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Control Act Wrapper</font></td>
+		<td width="274"><font face="Arial">Control Act</font></td>
+		<td width="224"><font face="Arial">
+		<a href="../../Infrastructure/Document%20Files/Infrastructure%20IM.htm#_Toc_Section_5.3">MCAI_MT040101UK03</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Message Type</font></td>
+		<td width="274"><font face="Arial">Result Event</font></td>
+		<td width="224"><font face="Arial"><a href="#_Toc_Section_7.2">POLB_MT004000UK01</a></font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p><font face="Arial">
+<a title="View Interaction Schema" href="../../../Schemas/POLB_IN020006UK01.xsd">
+<img border="0" src="../../../Core/Components_files/image002.gif"></a></font></p>
+<p>&nbsp;</p>
+<p class="Un-numberedHeading1">Receiver Responsibilities</p>
+<table border="1" width="694">
+	<tr>
+		<td class="TableHeading"><font face="Arial">Reason</font></td>
+		<td class="TableHeading"><font face="Arial">Interaction</font></td>
+	</tr>
+	<tr>
+		<td class="TableHeading"><font face="Arial">
+		<span style="font-weight: 400">Used when receiver 
+			confirms receipt of a Result Complete</span></font></td>
+		<td><font face="Arial">
+		<a href="../../Infrastructure/document%20files/Infrastructure%20IM.htm#MCCI_IN010000UK13">MCCI_IN010000UK13</a></font></td>
+	</tr>
+	<tr>
+		<td class="TableHeading"><font face="Arial">
+		<span style="font-weight: 400">Used when receiver 
+			rejects&nbsp; receipt of a Result Complete</span></font></td>
+		<td><font face="Arial">
+		<a href="../../Infrastructure/document%20files/Infrastructure%20IM.htm#MCCI_IN010000UK13">MCCI_IN010000UK13</a></font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><a name="POLB_IN020010UK01"></a><a name="_Toc_Section_6.6"></a>6.6&nbsp;&nbsp;&nbsp; Result Event State 
+	Change w/ RR - POLB_IN020010UK01</h2>
+<p><font face="Arial">This interaction is used for reporting &#39;Copy to&#39; reports between the Order 
+	Fulfiller and any Result Receiver other than the primary recipient. The tracker 
+	is not informed of the trigger event is in any more detail (c.f. Result in Progress, 
+	Result Complete). Although unhelpfully named, this interaction is named to 
+	conform to international nomenclature. There is no specific &quot;copy&quot; 
+	interaction, so a generic state change is used (in this case, the system 
+	state change of results becoming available).</font></p>
+<p>&nbsp;</p>
+<table border="1" width="697">
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Sending Role</font></td>
+		<td><font face="Arial">Order Fulfiller</font></td>
+		<td><font face="Arial"><a href="#_Toc_Section_3.2">POLB_AR020000UK01</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Receiving Role</font></td>
+		<td><font face="Arial">Result Receiver</font></td>
+		<td><font face="Arial"><a href="#_Toc_Section_3.3">POLB_AR034000UK01</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Trigger Event</font></td>
+		<td><font face="Arial">Result Event State Change</font></td>
+		<td><font face="Arial"><a href="#_Toc_Section_4.6">POLB_TE004007UK01</a>
+		</font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Transmission Wrapper</font></td>
+		<td><font face="Arial">Send Message Payload</font></td>
+		<td><font face="Arial">
+		<a href="../../Infrastructure/Document%20Files/Infrastructure%20IM.htm#_Toc_Section_5.1">MCCI_MT010101UK12</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Control Act Wrapper</font></td>
+		<td><font face="Arial">Control Act</font></td>
+		<td><font face="Arial">
+		<a href="../../Infrastructure/Document%20Files/Infrastructure%20IM.htm#_Toc_Section_5.3">MCAI_MT040101UK03</a></font></td>
+	</tr>
+	<tr>
+		<td width="175" class="TableHeading"><font face="Arial">Message Type</font></td>
+		<td><font face="Arial">Result Event</font></td>
+		<td><font face="Arial"><a href="#_Toc_Section_7.2">POLB_MT004000UK01</a></font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p><font face="Arial">
+<a title="View Interaction Schema" href="../../../Schemas/POLB_IN020010UK01.xsd">
+<img border="0" src="../../../Core/Components_files/image002.gif"></a></font></p>
+<p>&nbsp;</p>
+<p class="Un-numberedHeading1">Receiver Responsibilities</p>
+<table border="1" width="698">
+	<tr>
+		<td class="TableHeading"><font face="Arial">Reason</font></td>
+		<td class="TableHeading"><font face="Arial">Interaction</font></td>
+	</tr>
+	<tr>
+		<td><font face="Arial">Used when receiver confirms receipt of a Result Event State Change
+			</font></td>
+		<td><font face="Arial">
+		<a href="../../Infrastructure/document%20files/Infrastructure%20IM.htm#MCCI_IN010000UK13">MCCI_IN010000UK13</a></font></td>
+	</tr>
+	<tr>
+		<td><font face="Arial">Used when receiver rejects&nbsp; receipt of a Result Event State 
+			Change</font></td>
+		<td><font face="Arial">
+		<a href="../../Infrastructure/document%20files/Infrastructure%20IM.htm#MCCI_IN010000UK13">MCCI_IN010000UK13</a></font></td>
+	</tr>
+</table>
+<p>&nbsp;</p><hr size="2" width="100%" align="center">
+<h1><a name="_Toc_Section_7"></a>7&nbsp;&nbsp;&nbsp; Message Definitions</h1>
+<h2><a name="_Toc_Section_7.1"></a>7.1&nbsp;&nbsp;&nbsp; Placer Order - POLB_MT001000UK01</h2>
+<p><font face="Arial">A message containing the requesting of one or more Laboratory Investigations 
+	to be fulfilled by a single laboratory fulfiller department. The same message 
+	structure is used for all Request Events. </font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">
+<a title="View R-MIM" href="../Tabular%20View/POLB_RM001000UK01.htm">
+<img border="0" src="../../../Core/Components_files/image003.gif"></a>&nbsp;&nbsp;&nbsp;
+	<a title="View Tabular View" href="../Tabular%20View/POLB_HD001000UK01-NoEdit.htm">
+<img border="0" src="../../../Core/Components_files/image004.gif"></a>&nbsp;&nbsp;
+	<a title="View Schema" href="../../../Schemas/POLB_MT001000UK01.xsd">
+<img border="0" src="../../../Core/Components_files/image005.gif"></a>&nbsp;&nbsp;
+	<a title="View MIF" style="color: blue" href="../../../Mif/POLB_RM001000UK01-LabRequest.mif">
+<img border="0" src="../../../Core/Components_files/icon_mif.gif" width="16" height="16"></a></font></p>
+	
+<h3><a name="_Toc_Section_7.1.1"></a>7.1.1&nbsp;&nbsp;&nbsp; Example 1</h3>
+<p><font face="Arial">A &#39;Laboratory Request&#39; message containing a request for a Urea &amp; Electrolytes 
+	(U&amp;E) to be performed on a single sample.&nbsp; The Requested U&amp;E is carried 
+	as an Observation under the Request act. The Request act serves to link all 
+	request information and the specimen with the collection time to one or more 
+	requested items. In this example, there is only one requested item for the specimen. 
+	Each request is for a single fulfiller department.&nbsp; Although the actual 
+	request made by the requester consisted of two requested items, they were on 
+	different specimens (because of the container type) and were for different fulfiller 
+	departments. This resulted in two request messages being generated, one for 
+	the Chemistry Department, this example and one for the Haematology Department, 
+	see below.&nbsp; (See W5 Scenario 8.1).&nbsp; </font></p>
+<p><font face="Arial">
+<a title="View Example" href="../../../Examples/Laboratory/POLB_EX001000UK01_01.xml">
+<img border="0" src="../../../Core/Components_files/image006.gif"></a></font></p>
+<p>&nbsp;</p>
+<h3><a name="_Toc_Section_7.1.2"></a>7.1.2&nbsp;&nbsp;&nbsp; Example 2</h3>
+<p><font face="Arial">A &#39;Laboratory Request&#39; message containing a request for a Full Blood Count 
+	(FBC) to be performed on a single sample. This was generated as part of the 
+	same request on the placer system as Example 1. but communicated in a different 
+	message as there is a different provider department (See W5 Scenario 8.1).
+	</font></p>
+<p><font face="Arial">&nbsp; </font></p>
+<p><font face="Arial">
+<a title="View Example" href="../../../Examples/Laboratory/POLB_EX001000UK01_02.xml">
+<img border="0" src="../../../Core/Components_files/image006.gif"></a></font></p>
+<p>&nbsp;</p>
+<h3><a name="_Toc_Section_7.1.3"></a>7.1.3&nbsp;&nbsp;&nbsp; Example 3 </h3>
+<p><font face="Arial">A &#39;Laboratory Request&#39; message containing a request for Culture and Sensitivity 
+	on a Stool sample. See W5 Scenario 8.3</font></p>
+<p><font face="Arial">&nbsp; </font></p>
+<p><font face="Arial">
+<a title="View Example" href="../../../Examples/Laboratory/POLB_EX001000UK01_05.xml">
+<img border="0" src="../../../Core/Components_files/image006.gif"></a></font></p>
+<p>&nbsp;</p>
+<h3><a name="_Toc_Section_7.1.4"></a>7.1.4&nbsp;&nbsp;&nbsp; Example 4</h3>
+<p><font face="Arial">A &#39;Laboratory Request&#39; message containing a request for a Glucose Tolerance 
+	Test (GTT).&nbsp; The Request is for the whole GTT with individual requested 
+	items of &#39;Glucose Measurement&#39; each associated with the appropriate specimen 
+	on which the analysis is to be performed. (See W5 Scenario 8.4).</font></p>
+<p><font face="Arial">&nbsp; </font></p>
+<p><font face="Arial">
+<a title="View Example" href="../../../Examples/Laboratory/POLB_EX001000UK01_04.xml">
+<img border="0" src="../../../Core/Components_files/image006.gif"></a></font></p>
+<p>&nbsp;</p>
+<h3><a name="_Toc_Section_7.1.5"></a>7.1.5&nbsp;&nbsp;&nbsp; Example 5 </h3>
+<p><font face="Arial">A &#39;Laboratory Request&#39; message containing a request for Histological examination 
+	of a specimen. (See W5 Scenario 8.5)</font></p>
+<p><font face="Arial">&nbsp; </font></p>
+<p><font face="Arial">
+<a title="View Example" href="../../../Examples/Laboratory/POLB_EX001000UK01_07.xml">
+<img border="0" src="../../../Core/Components_files/image006.gif"></a></font></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><a name="_Toc_Section_7.2"></a>7.2&nbsp;&nbsp;&nbsp; Result Event - POLB_MT004000UK01</h2>
+<p><font face="Arial">A message containing the active (in progress) or completed Laboratory findings 
+	and interpretation of one or more diagnostic investigations carried out in response 
+	to a Placer Order. This message is used for all Result Events and for any result 
+	status changes. </font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">Note:- The act.Code carried in the Focal Act of the report shall only carry 
+	codes that represent Reports and not those that represent specific investigations 
+	(Batteries/Observations). The use is, for example: - &#39;Laboratory Report&#39;, where 
+	there is a single specimen referenced in the report. Where there are multiple 
+	specimens referenced in the report for such things as Dynamic Function Tests, 
+	Multi-sample screening (MRSA screen on multiple swabs), appropriate codes from 
+	Snomed CT may be used.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">
+<a title="View R-MIM" href="../Tabular%20View/POLB_RM004000UK01.htm">
+<img border="0" src="../../../Core/Components_files/image003.gif"></a>&nbsp;&nbsp;
+	<a title="View Tabular View" href="../Tabular%20View/POLB_HD004000UK01-NoEdit.htm">
+<img border="0" src="../../../Core/Components_files/image004.gif"></a>&nbsp;&nbsp;
+	<a title="View Schema" href="../../../Schemas/POLB_MT004000UK01.xsd">
+<img border="0" src="../../../Core/Components_files/image005.gif"></a>&nbsp;&nbsp;
+	<a title="View MIF" style="color: blue" href="../../../Mif/POLB_RM004000UK01-LabReport.mif">
+<img border="0" src="../../../Core/Components_files/icon_mif.gif" width="16" height="16"></a></font></p>
+<h3><a name="_Toc_Section_7.2.1"></a>7.2.1&nbsp;&nbsp;&nbsp; Example 1</h3>
+<p><font face="Arial">A &#39;Laboratory Report&#39; message containing results for aborted U&amp;E&nbsp; because 
+	of broken specimen. A Laboratory comment is carried at the Report level along 
+	with the aborted investigation. (See W5 Scenario 8.1)</font></p>
+<p><font face="Arial">&nbsp; </font></p>
+<p><font face="Arial">
+<a title="View Example" href="../../../Examples/Laboratory/POLB_EX004000UK01_01.xml">
+<img border="0" src="../../../Core/Components_files/image006.gif"></a></font></p>
+<p>&nbsp;</p>
+<h3><a name="_Toc_Section_7.2.2"></a>7.2.2&nbsp;&nbsp;&nbsp; Example 2</h3>
+<p><font face="Arial">A &#39;Laboratory Report&#39; message containing results for FBC investigation on 
+	a single sample with a second follow-up report. The second report also contains 
+	all the previous results that have not been changed. (See W5 Scenario 8.1).</font></p>
+<p><font face="Arial">&nbsp; </font></p>
+<p><font face="Arial">First Final Report :-&nbsp;&nbsp;
+	<a title="View Example" href="../../../Examples/Laboratory/POLB_EX004000UK01_02.xml">
+<img border="0" src="../../../Core/Components_files/image006.gif"></a></font></p>
+<p><font face="Arial">Second Final Report with additional test result :-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a title="View Example" href="../../../Examples/Laboratory/POLB_EX004000UK01_03.xml">
+<img border="0" src="../../../Core/Components_files/image006.gif"></a></font></p>
+<p>&nbsp;</p>
+<h3><a name="_Toc_Section_7.2.3"></a>7.2.3&nbsp;&nbsp;&nbsp; Example 3</h3>
+<p><font face="Arial">An interim &#39;In Progress&#39; laboratory report message for a Stool Culture &amp; 
+	Microscopy. A final &#39;Completed&#39; report follows with the final results. Previously 
+	reported information that is still valid is also carried in the message for 
+	completeness. (See W5 Scenario 8.3)</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">Interim Report :-&nbsp;&nbsp;&nbsp;
+	<a title="View Example" href="../../../Examples/Laboratory/POLB_EX004000UK01_05.xml">
+<img border="0" src="../../../Core/Components_files/image006.gif"></a></font></p>
+<p><font face="Arial">Final Report :-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a title="View Example" href="../../../Examples/Laboratory/POLB_EX004000UK01_06.xml">
+<img border="0" src="../../../Core/Components_files/image006.gif"></a></font></p>
+<p>&nbsp;</p>
+<h3><a name="_Toc_Section_7.2.4"></a>7.2.4&nbsp;&nbsp;&nbsp; Example 4</h3>
+<p><font face="Arial">A ‘Laboratory Report’ message for a Dynamic Function Test. The Report carried 
+	a concept ID for the Glucose Tolerance Test and shall not have any result. Individual 
+	results for the Glucose analysis is carried in individual observations, each 
+	associated with its specimen. (See W5 Scenario 8.2).</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">
+<a title="View Example" href="../../../Examples/Laboratory/POLB_EX004000UK01_04.xml">
+<img border="0" src="../../../Core/Components_files/image006.gif"></a></font></p>
+<p>&nbsp;</p>
+<h3><a name="_Toc_Section_7.2.5"></a>7.2.5&nbsp;&nbsp;&nbsp; Example 5</h3>
+<p><font face="Arial">A ‘Laboratory Report’ message for a Histopathology Report. (See W5 Scenario 
+	8.4).</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">
+<a title="View Example" href="../../../Examples/Laboratory/POLB_EX004000UK01_07.xml">
+<img border="0" src="../../../Core/Components_files/image006.gif"></a></font></p>
+<p>&nbsp;</p>
+<h3><a name="_Toc_Section_7.2.6"></a>7.2.6&nbsp;&nbsp;&nbsp; Example 6</h3>
+<p><font face="Arial">A result message for a Urine Culture and Sensitivity showing how isolates 
+	with their sensitivity tests are carried. The Focal Act of the report carries 
+	a compound investigation code which may not have a result. The Microscopy is 
+	carried out on the specimen entity. The two isolates are carried as individual 
+	entities, each with their own set of observations carrying their antibiotic 
+	susceptibility results. Other observations on the isolates, such as a growth 
+	amount or identification tests, would be carried as an observation on the individual 
+	isolate.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">
+<a title="View Example" href="../../../Examples/Laboratory/POLB_EX004000UK01_08.xml">
+<img border="0" src="../../../Core/Components_files/image006.gif"></a></font></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><a name="_Toc_Section_7.3"></a>7.3&nbsp;&nbsp;&nbsp; 
+	Placer Order Reference - POLB_MT001002UK01</h2>
+<p><font face="Arial">A message containing a minimal payload, with identifiers that refers back 
+	to a previous order, being confirmed or rejected.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">
+<a title="View R-MIM" href="../Tabular%20View/POLB_RM001002UK01.htm">
+<img border="0" src="../../../Core/Components_files/image003.gif"></a>&nbsp;&nbsp;
+	<a title="View Tabular View" href="../Tabular%20View/POLB_HD001002UK01-NoEdit.htm">
+<img border="0" src="../../../Core/Components_files/image004.gif"></a>&nbsp;&nbsp;
+	<a title="View Schema" href="../../../Schemas/POLB_MT001002UK01.xsd">
+<img border="0" src="../../../Core/Components_files/image005.gif"></a>&nbsp;&nbsp;
+	<a title="View MIF" style="color: blue" href="../../../Mif/POLB_RM001002UK01-PlacerOrderReference.mif">
+<img border="0" src="../../../Core/Components_files/icon_mif.gif" width="16" height="16"></a></font></p>
+<p>&nbsp;</p><hr size="2" width="100%" align="center">
+<p>&nbsp;</p>
+<h1><a name="_Toc_Section_8"></a>8&nbsp;&nbsp;&nbsp; Glossary of Terms </h1>
+<table class="MIMGlossaryTable" border="1" cellspacing="0" cellpadding="2">
+	<tr>
+		<td class="GlossaryTerm"><font face="Arial">Isolate</font></td>
+		<td><font face="Arial">An organism identified as part of the laboratory procedures. 
+			Generally, only isolates that are considered to be significant are included 
+			as isolate entities.</font></td>
+	</tr>
+	<tr>
+		<td class="GlossaryTerm"><font face="Arial">Laboratory</font></td>
+		<td><font face="Arial">A receiver and fulfiller of Placer Orders. A Laboratory 
+			takes responsibility to provide a service on acceptance of a Placer 
+			Order.</font></td>
+	</tr>
+	<tr>
+		<td class="GlossaryTerm"><font face="Arial">Placer Order</font></td>
+		<td><font face="Arial">A request to a Laboratory department for work to be 
+			carried out.</font></td>
+	</tr>
+	<tr>
+		<td class="GlossaryTerm"><font face="Arial">Placer Order Group</font></td>
+		<td><font face="Arial">A group of related orders. This allows the placer to 
+			regroup multiple reports related to one placer group of orders 
+		</font></td>
+	</tr>
+	<tr>
+		<td class="GlossaryTerm"><font face="Arial">Result Event</font></td>
+		<td><font face="Arial">A communication of one or more observations (investigations). 
+			These may be in-progress or complete.</font></td>
+	</tr>
+	<tr>
+		<td class="GlossaryTerm"><font face="Arial">Specimen</font></td>
+		<td><font face="Arial">The material that is the subject of the investigations 
+			carried out. May be any body material or any isolate derived from a 
+			parent specimen</font></td>
+	</tr>
+</table>
+<p>&nbsp;</p><hr size="2" width="100%" align="center">
+<p>&nbsp;</p>
+<h1><a name="_Toc_Section_9"></a>9&nbsp;&nbsp;&nbsp; Dates/Times in Lab messages.</h1>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Effective Time</b></p>
+<p class="MsoNormal">The most important time is the clinically significant time 
+	of the investigations. This is taken as the collection time of the specimen 
+	and is carried in the Specimen Collection Process (Effective Time).</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">The effective time of each investigation (OBS) reflects 
+	this collection time.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Specimen Received</b></p>
+<p class="MsoNormal">The time the specimen is received in the lab is carried 
+	in the effective time of the Process Step associated with the specimen. The 
+	available SnCT codes for this act shall be:-</p>
+<p class="MsoNormal">Specimen Received.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">Future process steps will be &quot;Specimen Dispatched, Specimen 
+	stored&quot;.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Reports</b></p>
+<p class="MsoNormal">The effective time of a report on a single specimen is 
+	the time that the specimen was collected.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">In Single specimen reports this does not present an issue. 
+	In multi-specimen reports, the effective time of the report is generally when 
+	the first specimen being investigated was collected. For a Glucose Tolerance 
+	Test (GTT) this would be the start time of the GTT (collection time of first 
+	sample)</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">For a Microbiological screening set of swabs, the effective 
+	time would be the collection time of the first swab (time in minutes is not 
+	relevant here).</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">For Virology on an Acute specimen, the effective time is 
+	the time of the collection of the acute specimen.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">For Virology on an Convalescent specimen, the effective 
+	time is the time of the collection of the Convalescent specimen.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">For a virology Paired Sera, the effective time of the report 
+	would be the collection time of the second specimen.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Batteries</b></p>
+<p class="MsoNormal">All components of a ‘Battery’ are carried out on a single 
+	specimen. (Exception is made where a result is calculated using information 
+	from another source but is held against a ‘master’ specimen). The effective 
+	time of a Battery is the collection time of the specimen on which the battery 
+	of tests was carried out</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Authorized Date/Time</b></p>
+<p class="MsoNormal">The Author time (Participation) is the time when the report 
+	was authorized/verified and is carried in the Author participation.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Report Trigger Time.</b></p>
+<p class="MsoNormal">This is the time the system is triggered to send the report 
+	by a state change. It is carried in the Control act as the trigger event time.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Message Transmission Time</b></p>
+<p class="MsoNormal">This is the actual message transmission time and is carried 
+	in the Transmission wrapper.</p>
+<p>&nbsp;</p>
+<h1><a name="_Toc_Section_10"></a>10&nbsp;&nbsp;&nbsp; Report Status</h1>
+<p><font face="Arial">When a Laboratory Report message is sent from an Order Fulfiller to the Result 
+	Receiver (or Tracker), there are a number of Acts within the message which have 
+	a status that is conveyed between the two systems.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">In response to a Placer Observation Request, work is booked into the laboratory 
+	system to fulfill the request. A single observation request may result in one 
+	or more laboratory investigations (Individual tests or Batteries of tests) being 
+	performed in order to fulfill it. As each Laboratory investigation is carried 
+	out, it will move from being <i>active</i> to <i>completed</i>. Investigations 
+	may also be <i>aborted</i> before completion and a report issued indicating 
+	this.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">Investigations are generally reported upon when <i>completed</i> but there 
+	may be instances where an ‘interim’ or &#39;in progress&#39; result is &#39;released&#39; for 
+	reporting before completion of some or all the investigations being performed. 
+	The initial report may be followed by further ‘Interim’ reports before a final 
+	&#39;completed&#39; report is issued. When all investigations performed in response 
+	to a placer request satisfying have been <i>reported as completed (or aborted) 
+	in a Completed report</i>, and the Placer Request itself has all Observation 
+	Requests fulfilled, it shall be set to completed by the placer.</font></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>&nbsp;Valid Status of Request Acts</b></font></p>
+<table class="Section12TODO" width="611">
+	<tr>
+		<td width="223"><font face="Arial"><b>Act</b></font></td>
+		<td width="214"><font face="Arial"><b>Placer System Status Options</b></font></td>
+		<td width="160"><font face="Arial">&nbsp;<b>Message Status Options</b></font></td>
+	</tr>
+	<tr>
+		<td width="223"><font face="Arial">Placer Group</font></td>
+		<td width="214"><font face="Arial">active, completed, aborted, nullified</font></td>
+		<td width="160"><font face="Arial">active, nullified</font></td>
+	</tr>
+	<tr>
+		<td width="223"><font face="Arial">Observation Request </font></td>
+		<td width="214"><font face="Arial">active, completed, aborted, nullified</font></td>
+		<td width="160"><font face="Arial">active, nullified</font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p><font face="Arial">These statuses may only be set by the Placer system. All request messages 
+	and their observation requests shall have a status of Active unless the request 
+	is being Nullified.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>&nbsp;Valid Status of Report Acts</b></font></p>
+<table class="Section12TODO" width="777">
+	<tr>
+		<td width="223"><font face="Arial"><b>Act</b></font></td>
+		<td width="278"><font face="Arial"><b>Fulfiller System Status Options</b></font></td>
+		<td width="267"><font face="Arial">&nbsp;<b>Message Status Options</b></font></td>
+	</tr>
+	<tr>
+		<td width="223"><font face="Arial">Observation Report</font></td>
+		<td width="278"><font face="Arial">active, completed, nullified, obsolete</font></td>
+		<td width="267"><font face="Arial">active, completed, nullified</font></td>
+	</tr>
+	<tr>
+		<td width="223"><font face="Arial">Specimen Observation Cluster</font></td>
+		<td width="278"><font face="Arial">active, completed, aborted, nullified, obsolete</font></td>
+		<td width="267"><font face="Arial">active, completed, nullified</font></td>
+	</tr>
+	<tr>
+		<td width="223"><font face="Arial">Battery Event</font></td>
+		<td width="278"><font face="Arial">active, completed, aborted, nullified, obsolete</font></td>
+		<td width="267"><font face="Arial">active, completed, aborted, nullified, obsolete</font></td>
+	</tr>
+	<tr>
+		<td width="223"><font face="Arial">Observation Event</font></td>
+		<td width="278"><font face="Arial">active, completed, aborted, nullified, obsolete</font></td>
+		<td width="267"><font face="Arial">active, completed, aborted, nullified, obsolete</font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p><font face="Arial">These statuses may only be set by the Fulfiller system. All &#39;Completed&#39; Report 
+	messages shall have their status set to &#39;Completed&#39;. Their components shall 
+	have a status of &#39;Completed&#39; or &#39;Aborted&#39;. The components of a Nullified report 
+	shall all be set to Nullified. The status of a &#39;Replaced&#39; report or component 
+	shall be set to &#39;Obsolete&#39;.</font></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1><a name="_Toc_Section_11"></a>11&nbsp;&nbsp;&nbsp; Storyboards</h1>
+<p><font face="Arial">Guidance on the status of various acts in the &#39;Laboratory Report&#39; message 
+	is provided below for Scenarios 1, 2 and 3.</font></p>
+<p><font face="Arial">Note that the receipt of a &#39;Completed&#39; report does not exclude receipt of 
+	a further completed report with additional information added by the sender to 
+	supersede the previous.</font></p>
+<h2><a name="_Toc_Section_11.1"></a>11.1&nbsp;&nbsp;&nbsp; Scenario 1</h2>
+<p>&nbsp;</p>
+<p><font face="Arial">A single request for multiple Laboratory investigations is booked onto the 
+	LIMS.</font></p>
+<p><font face="Arial">The investigations are carried out and completed. A single report for multiple-investigations 
+	is reported</font></p>
+<p><font face="Arial">A single message is generated where the following are set:</font></p>
+<p>&nbsp;</p>
+<table class="Section12TODO" width="562">
+	<tr>
+		<td width="223"><font face="Arial"><b>Act</b></font></td>
+		<td width="138"><font face="Arial"><b>Status Options</b></font></td>
+		<td width="292"><font face="Arial"><b>Implication</b></font></td>
+	</tr>
+	<tr>
+		<td width="223"><font face="Arial">Observation Report</font></td>
+		<td width="138"><font face="Arial">completed</font></td>
+		<td width="292" rowspan="3" valign="top"><font face="Arial">If all placer request items 
+			are fulfilled (which they are), the placer shall set the status of the 
+			request to Completed</font></td>
+	</tr>
+	<tr>
+		<td width="223"><font face="Arial">Observation Event</font></td>
+		<td width="138"><font face="Arial">completed</font></td>
+	</tr>
+	<tr>
+		<td width="223"><font face="Arial">Observation Event</font></td>
+		<td width="138"><font face="Arial">completed</font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><a name="_Toc_Section_11.2"></a>11.2&nbsp;&nbsp;&nbsp; Scenario 2</h2>
+<p>&nbsp;</p>
+<p><font face="Arial">A single request for two Laboratory investigations is booked onto the LIMS.</font></p>
+<p><font face="Arial">The first investigation is carried out and completed. An in-progress report 
+	is issued. The intention is that this is an interim report which shall be superseded 
+	by a further report containing the results of both investigations.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">A first message is generated where the following are set:</font></p>
+<p>&nbsp;</p>
+<table class="Section12TODO" width="511">
+	<tr>
+		<td width="223"><font face="Arial"><b>Act</b></font></td>
+		<td width="135"><font face="Arial"><b>Status Options</b></font></td>
+		<td width="205"><font face="Arial"><b>Implication</b></font></td>
+	</tr>
+	<tr>
+		<td width="223"><font face="Arial">Observation Report</font></td>
+		<td width="135"><font face="Arial">active</font></td>
+		<td width="205" rowspan="2" valign="top"><font face="Arial">As the Report is still active 
+			(Interim), the Placer shall expect an updated further report in completion 
+			of their request which will supersede this one</font></td>
+	</tr>
+	<tr>
+		<td width="223"><font face="Arial">Observation Event 1</font></td>
+		<td width="135"><font face="Arial">completed</font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p><font face="Arial">The second Laboratory Procedure is carried out and completed. A report is 
+	transcribed and verified.</font></p>
+<p><font face="Arial">A second message is generated where the following are set:</font></p>
+<p>&nbsp;</p>
+<table class="Section12TODO" width="527">
+	<tr>
+		<td width="223"><font face="Arial"><b>Act</b></font></td>
+		<td width="132"><font face="Arial"><b>Status Options</b></font></td>
+		<td width="266"><font face="Arial"><b>Implication</b></font></td>
+	</tr>
+	<tr>
+		<td width="223"><font face="Arial">Observation Report</font></td>
+		<td width="132"><font face="Arial">completed</font></td>
+		<td width="266" rowspan="3"><font face="Arial">The report is Completed. If all placer request 
+			items are now fulfilled (which they are), the placer shall set the status 
+			of the request to Completed</font></td>
+	</tr>
+	<tr>
+		<td width="223"><font face="Arial">Observation Event 1</font></td>
+		<td width="132"><font face="Arial">completed</font></td>
+	</tr>
+	<tr>
+		<td width="223"><font face="Arial">Observation Event 2</font></td>
+		<td width="132"><font face="Arial">completed</font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2><a name="_Toc_Section_11.3"></a>11.3&nbsp;&nbsp;&nbsp; Scenario 3</h2>
+<p>&nbsp;</p>
+<p><font face="Arial">A single request for two Laboratory investigations in one department is booked 
+	onto the LIMS as two requests</font></p>
+<p><font face="Arial">These will be treated as two separate laboratory requests and each will generate 
+	a separate report fulfilling part of the Placer request.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">A Report message is generated on this completed investigation where the following 
+	are set:</font></p>
+<p>&nbsp;</p>
+<table class="Section12TODO" width="528">
+	<tr>
+		<td width="149"><font face="Arial"><b>Act</b></font></td>
+		<td width="98"><font face="Arial"><b>Status Options</b></font></td>
+		<td width="267"><font face="Arial"><b>Implication</b></font></td>
+	</tr>
+	<tr>
+		<td width="149"><font face="Arial">Observation Report1</font></td>
+		<td width="98"><font face="Arial">completed</font></td>
+		<td width="267" rowspan="2"><font face="Arial">The report is Completed. If all placer request 
+			items are now fulfilled (which they are NOT), the placer shall set the 
+			status of the request to Completed</font></td>
+	</tr>
+	<tr>
+		<td width="149"><font face="Arial">Observation Event 1</font></td>
+		<td width="98"><font face="Arial">completed</font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p><font face="Arial">The second Laboratory Investigation is carried out and completed. 
+</font></p>
+<p><font face="Arial">A new report is created and a new Report message generated on this completed 
+	investigation where the following are set:</font></p>
+<p>&nbsp;</p>
+<table class="Section12TODO" width="526">
+	<tr>
+		<td width="149"><font face="Arial"><b>Act</b></font></td>
+		<td width="98"><font face="Arial"><b>Status Options</b></font></td>
+		<td width="265"><font face="Arial"><b>Implication</b></font></td>
+	</tr>
+	<tr>
+		<td width="149"><font face="Arial">Observation Report2</font></td>
+		<td width="98"><font face="Arial">completed</font></td>
+		<td width="265" rowspan="2"><font face="Arial">The report is Completed. If all placer request 
+			items are now fulfilled (which they NOW are), the placer shall set the 
+			status of the request to Completed</font></td>
+	</tr>
+	<tr>
+		<td width="149"><font face="Arial">Observation Event 2</font></td>
+		<td width="98"><font face="Arial">completed</font></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p><font face="Arial">Both individual reports are valid, Completed and together they satisfy the 
+	Placer Request.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">In this case, the first report received in partial fulfillment of the Placer 
+	Request shall NOT be superseded by the second. Each will have a different ID. 
+	There are two valid reports in fulfilment of the Placer Request. Neither report 
+	requires the other for interpretation but the Placer request requires that both 
+	are read in order to fulfill it.</font></p>
+<p>&nbsp;</p>
+<h3><a name="_Toc_Section_11.3.1"></a>11.3.1&nbsp;&nbsp;&nbsp; Invalid conditions</h3>
+<p><font face="Arial">Completed Reports may not contain incomplete (Active) Observation events.
+	</font></p>
+<h1><a name="_Toc_Section_12"></a>12&nbsp;&nbsp;&nbsp; Change History</h1>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>Version 1.3 - MIM 7.</b></font><b><font face="Arial">2</font></b></p>
+<ol>
+	<li><font face="Arial">All models revised to align with changes in 
+	international Lab models since 2006</font></li>
+	<li><font face="Arial">Changes made to support requirements of 2008 
+	Pathology pilot</font></li>
+	<li><font face="Arial">Internal changes to make domain MIF model based</font></li>
+</ol>
+<p><font face="Arial"><b>Version 1.2 - MIM 6.1.01</b></font></p>
+<ol>
+	<li><font face="Arial">Move XML example files to a subdirectory with the Examples folder.</font></li>
+</ol>
+<p><font face="Arial"><b>Version 1.1 - MIM 5.1</b></font></p>
+<ol>
+	<li><font face="Arial">Added &#39;For Future Use&#39; statement to the two &#39;Nullify&#39; Triggers and Interactions.
+		</font></li>
+	<li><font face="Arial">Re-worded some of the interaction definitions to clarify their use following 
+		feedback. No changes have been made to the actual interactions or their 
+		purpose.</font></li>
+	<li><font face="Arial">Changed the example (7.2.2) to message one completed report followed 
+		up by a further completed report in response to a &#39;Phoned&#39; additional request 
+		item. This changes the referenced interactions in the storyboard but not 
+		the interactions themselves. The content of the examples has been modified 
+		to reflect the change in status of the first report and removed the &#39;Ferritin 
+		result to follow&#39; text. There has not been any substantive change to the 
+		example structure.</font></li>
+	<li><font face="Arial">The issues identified at the top of the document are being progressed 
+		as indicated.&nbsp;&nbsp; </font></li>
+</ol>
+
+</body>
+
+</html>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<staticModel isAbstract="false" isSerializable="true"
+    name="COCT_RM000208UK01" packageKind="root"
+    representationKind="flat" xmlns="urn:hl7-org:v3/mif"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3/mif ../MifSchemas/mifStaticModelFlat.xsd">
+    <packageLocation artifact="RM-deprecated" domain="CT" id="000208"
+        name="COCT_RM000208UK01" realm="UK" root="DEFN" section="HM"
+        subSection="CO" version="01"/>
+    <header>
+        <renderingInformation
+            application="NHS R-MIM Designer 2.99.KJ.03"
+            renderingTime="2007-10-31T14:41:17" schemaVersion="1"/>
+        <legalese copyrightOwner="NHS Connecting for Health"/>
+    </header>
+    <graphicRepresentation presentation="HL7">
+        <graphElement name="Main">
+            <position x="0.0" y="0.0"/>
+            <size height="2.30888" width="9.11898"/>
+        </graphElement>
+    </graphicRepresentation>
+    <derivationSupplier staticModelDerivationId="1">
+        <targetStaticModel artifact="RIM" realm="UV" root="DEFN" version="1"/>
+    </derivationSupplier>
+    <ownedEntryPoint className="BirthPlace" id="COCT_RM000208UK01"
+        isAbstract="false" name="R_PartPersonBirthPlace">
+        <annotations>
+            <description>
+                <text>
+                    <p>CMET to allow notification</p>
+                    <p>times with birthplace information.</p>
+                </text>
+            </description>
+            <otherAnnotation type="html">
+                <text/>
+            </otherAnnotation>
+        </annotations>
+        <graphicRepresentation>
+            <graphElement containerDiagramName="Main"
+                isHeightAutoSize="false" isWidthAutoSize="false"
+                nodeOrientation="Down" shapeId="COCT_RM000208UK01">
+                <position x="4.67754" y="0.02778"/>
+                <size height="0.58611" width="1.72906"/>
+                <anchorage connectToShapeId="Sheet.1">
+                    <position x="5.54207" y="0.61389"/>
+                    <graphEdge>
+                        <anchor>
+                            <position x="5.54207" y="1.58569"/>
+                        </anchor>
+                    </graphEdge>
+                </anchorage>
+            </graphElement>
+        </graphicRepresentation>
+    </ownedEntryPoint>
+    <ownedClass>
+        <class isAbstract="false" name="BirthPlace">
+            <derivationSupplier className="Role" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.1" shapeTemplate="Role">
+                    <position x="4.67" y="1.58569"/>
+                    <size height="0.51445" width="1.30914"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <designComments>
+                    <text>
+                        <p>Address contrained in the tabular view</p>
+                        <p>to Country, CountryOrDistrict and Town.</p>
+                    </text>
+                    <graphicRepresentation>
+                        <graphElement containerDiagramName="Main"
+                            isHeightAutoSize="true"
+                            isWidthAutoSize="true" shapeId="Sheet.28">
+                            <position x="7.07746" y="0.56389"/>
+                            <size height="0.5" width="2.03152"/>
+                            <anchorage connectToShapeId="Sheet.1">
+                                <position x="8.09322" y="0.81389"/>
+                                <graphEdge>
+                                    <anchor>
+                                    <position x="5.97914" y="1.78359"/>
+                                    </anchor>
+                                </graphEdge>
+                            </anchorage>
+                        </graphElement>
+                    </graphicRepresentation>
+                </designComments>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <b>Details of a person's place of birth.</b>
+                        </p>
+                        <div>
+                            <b>
+                                <i> If used in an update-to-PDS message (e.g. General Update Request): </i>
+                            </b>
+                        </div>
+                        <div>
+                            <div>
+                                <b>
+                                    <font face="times new roman,times" size="3">
+                                    <font face="Times New Roman" size="3">
+                                    <font face="Times New Roman" size="3">In order to control the update semantics, in addition to the attributes below, the following will also be present:</font>
+                                    </font>
+                                    <font face="Times New Roman" size="3">
+                                    <ul>
+                                    <li>
+                                    <font
+                                    face="Times New Roman" size="3">An <i>updateMode</i> attribute to indicate whether the item should be "added", "altered", or "removed" (mandatory)</font>
+                                    </li>
+                                    </ul>
+                                    <p>
+                                    <font
+                                    face="Times New Roman" size="3">This attribute should be used in the following way:</font>
+                                    </p>
+                                    <ul>
+                                    <li>
+                                    <font
+                                    face="Times New Roman" size="3">If the <i>updateMode</i> is set to "removed", none of the optional elements below shall be present.</font>
+                                    </li>
+                                    </ul>
+                                    </font>
+                                    </font>
+                                </b>
+                            </div>
+                        </div>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="BIRTHPL"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <div>Indicates that this is a BirthPlace role.</div>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Role" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="BIRTHPL"/>
+            </attribute>
+            <attribute isMandatory="false" maximumMultiplicity="1"
+                minimumMultiplicity="0" name="addr" sortKey="5">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <div>Details of the patient's place of birth in as much detail as is available, i.e., may just be the country the patient was born in, but could also be the county and/or the town. The permissible elements are listed below, at least one of which must be populated (if this attribute is present, which it will not be if the <i>updateMode</i> is set to "removed")<br/>
+                                <div>
+                                    <p>The 'Address fully structured, with coded country' datatype flavour will be used to express this attribute, and will contain the following components:<br/>
+                                    </p>
+                                    <ul>
+                                    <li>A country element (optional)  <ul>
+                                    <li>The country element contains a code element <ul>
+                                    <li>The codeSystem attribute will contain a valid OID for the CountryOrUkInternalCode vocabulary</li>
+                                    <li>The code attribute will contain the relevant code</li>
+                                    </ul>
+                                    <ul>
+                                    <li>This is restricted to England, Wales and the Isle of Man in the  Outbound Birth Notification or Create Initial Record Request message.</li>
+                                    </ul>
+                                    </li>
+                                    </ul>
+                                    </li>
+                                    <li>A <i>county </i>element to carry a county or metropolitan district (optional)</li>
+                                    <li>A <i>city </i>element to carry a town or city (optional).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="addr"
+                    className="Role" staticModelDerivationId="1"/>
+                <type name="AD" typeSpecialisation="AD.NPfIT.CodedCountry"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="NotificationTime">
+            <derivationSupplier className="Observation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="false"
+                    shapeId="Sheet.11" shapeTemplate="Act">
+                    <position x="0.01" y="1.51777"/>
+                    <size height="0.78112" width="3.01227"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>A notification time - the time at which the information was notified to the NHS.</b>
+                        <br/>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="OBS"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Indicates that this is an observation. </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="OBS"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="EVN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="moodCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Indicates that this is an event.</p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="EVN"/>
+            </attribute>
+            <attribute conformance="R" defaultValue="45" fixedValue="45"
+                isMandatory="true" maximumMultiplicity="1"
+                minimumMultiplicity="1" name="code" sortKey="4">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <div contenteditable="false" style="height: 100%; width: 100%">
+                                <p>Indicates the type of observation. </p>
+                                <p>The Coded with Code System datatype flavour is used to carry this information as follows:</p>
+                                <ul>
+                                    <li>The <em>code</em> attribute will contain the fixed value shown. </li>
+                                    <li>The <em>codeSystem</em> attribute will contain the OID for the vocabulary. </li>
+                                </ul>
+                            </div>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CV"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="DemographicObservationType"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="value" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>The date on which a change to the service user's place of birth was notified to the NHS.</p>
+                            <p>This is a full date without time. </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="value"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="TS"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Subject">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Right" shapeId="Sheet.15"
+                    shapeTemplate="Participation" textWrappingWidth="66.0">
+                    <position x="3.02227" y="1.7743"/>
+                    <size height="0.30278" width="1.64773"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <b>A heading for the subject relationship, linking to notification time.</b>
+                        </p>
+                        <p>
+                            <b>This link is optional within update messages, and mandatory in all other messages.</b>
+                        </p>
+                        <p>
+                            <b>Within update messages, this link shall be present if the <i>updateMode</i> of <i>BirthPlace</i> is set to "added" or "altered", and shall not be present if the <i>updateMode</i> of <i>BirthPlace</i> is set to "removed".</b>
+                            <br/>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="SBJ"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <div class="D39E54A0-6821-11DB-8293-F2D7A3FC57D0">Indicates that this a Subject participation.</div>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SBJ"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.11"
+                containerDiagramName="Main" shapeId="Sheet.15">
+                <position x="3.02227" y="1.92569"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.11">
+                        <position x="3.02227" y="1.92569"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="notificationTime" participantClassName="NotificationTime">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A link to details of the notification time.<br/>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="act"
+                    className="Subject" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Subject">
+                <derivationSupplier associationEndName="participation"
+                    className="NotificationTime" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.1"
+                containerDiagramName="Main" shapeId="Sheet.15">
+                <position x="4.67" y="1.92569"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.1">
+                        <position x="4.67" y="1.92569"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="0"
+                name="subjectOf" participantClassName="Subject">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="BirthPlace" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="BirthPlace">
+                <derivationSupplier associationEndName="role"
+                    className="Subject" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+</staticModel>

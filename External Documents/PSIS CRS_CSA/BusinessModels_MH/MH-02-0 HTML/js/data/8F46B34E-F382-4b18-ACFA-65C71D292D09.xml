@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("7.3.4:1", "", "Information Example: MH&SM-SS Update", "EARoot/EA7/EA3/EA4/EA3270.htm", "177.png", "113", "0", "", "Object diagram");
+tocTab[tocTab.length] = new Array("7.3.4:2", "", "CIM: MH&SM-SS Update", "EARoot/EA7/EA3/EA4/EA3272.htm", "175.png", "112", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("7.3.4:3", "", ": MH&SM-SS  Care Plan", "EARoot/EA7/EA3/EA4/EA3274.htm", "25.png", "1146", "0", "", "Object");
+tocTab[tocTab.length] = new Array("7.3.4:4", "", ": Current Contact status & Location Details", "EARoot/EA7/EA3/EA4/EA3275.htm", "25.png", "1145", "0", "", "Object");
+tocTab[tocTab.length] = new Array("7.3.4:5", "", ": Care Plan component ", "EARoot/EA7/EA3/EA4/EA3276.htm", "25.png", "1144", "0", "", "Object");
+tocTab[tocTab.length] = new Array("7.3.4:6", "", ": Care Plan component ", "EARoot/EA7/EA3/EA4/EA3277.htm", "25.png", "1143", "0", "", "Object");
+tocTab[tocTab.length] = new Array("7.3.4:7", "", ": Patient NHS Number", "EARoot/EA7/EA3/EA4/EA3278.htm", "25.png", "1147", "0", "", "Object");
+tocTab[tocTab.length] = new Array("7.3.4:8", "", "MH&SM-SS Update", "EARoot/EA7/EA3/EA4/EA3279.htm", "5.png", "1142", "0", "", "Class");

@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("3.2:1", "", "IAM", "EARoot/EA3/EA2/EA243.htm", "175.png", "46", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("3.2:2", "", "inPatientAdmission", "EARoot/EA3/EA2/EA246.htm", "5.png", "1138", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:3", "", "admissionReason", "EARoot/EA3/EA2/EA247.htm", "5.png", "1139", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:4", "", "copyRecipient", "EARoot/EA3/EA2/EA248.htm", "5.png", "1279", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:5", "", "primaryRecipient", "EARoot/EA3/EA2/EA249.htm", "5.png", "1280", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:6", "", "otherClinicians", "EARoot/EA3/EA2/EA250.htm", "5.png", "1281", "0", "", "Class");
+tocTab[tocTab.length] = new Array("3.2:7", "", "readmission", "EARoot/EA3/EA2/EA251.htm", "5.png", "2856", "0", "", "Class");

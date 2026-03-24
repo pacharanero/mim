@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("6.2.1.2.2:1", "", "Business", "EARoot/EA6/EA2/EA1/EA2/EA2/EA939.htm", "175.png", "148", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("6.2.1.2.2:2", "", "dt_Address", "EARoot/EA6/EA2/EA1/EA2/EA2/EA941.htm", "5.png", "4164", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.2.1.2.2:3", "", "dt_Name", "EARoot/EA6/EA2/EA1/EA2/EA2/EA942.htm", "5.png", "4163", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.2.1.2.2:4", "", "dt_StructuredAddress", "EARoot/EA6/EA2/EA1/EA2/EA2/EA943.htm", "5.png", "4168", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.2.1.2.2:5", "", "dt_StructuredOrganizationName", "EARoot/EA6/EA2/EA1/EA2/EA2/EA944.htm", "5.png", "4165", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.2.1.2.2:6", "", "dt_StructuredPersonName", "EARoot/EA6/EA2/EA1/EA2/EA2/EA945.htm", "5.png", "4167", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.2.1.2.2:7", "", "dt_Telecom", "EARoot/EA6/EA2/EA1/EA2/EA2/EA946.htm", "5.png", "4161", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.2.1.2.2:8", "", "dt_TrivialName", "EARoot/EA6/EA2/EA1/EA2/EA2/EA947.htm", "5.png", "4169", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.2.1.2.2:9", "", "dt_UnstructuredAddress", "EARoot/EA6/EA2/EA1/EA2/EA2/EA948.htm", "5.png", "4166", "0", "", "Class");
+tocTab[tocTab.length] = new Array("6.2.1.2.2:10", "", "dt_UnstructuredName", "EARoot/EA6/EA2/EA1/EA2/EA2/EA949.htm", "5.png", "4162", "0", "", "Class");

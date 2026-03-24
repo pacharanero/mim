@@ -1,0 +1,15 @@
+tocTab[tocTab.length] = new Array("1.2:1", "", "Interactions", "EARoot/EA1/EA2/EA665.htm", "185.png", "21", "0", "", "Sequence diagram");
+tocTab[tocTab.length] = new Array("1.2:2", "", "Nurse Advisor Interactions", "EARoot/EA1/EA2/EA667.htm", "175.png", "149", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("1.2:3", "", "Actor1", "EARoot/EA1/EA2/EA669.htm", "6.png", "1720", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("1.2:4", "", "GP System", "EARoot/EA1/EA2/EA670.htm", "57.png", "1712", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("1.2:5", "", "Health Advisor", "EARoot/EA1/EA2/EA671.htm", "57.png", "1709", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("1.2:6", "", "NHS D Call", "EARoot/EA1/EA2/EA672.htm", "57.png", "1713", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("1.2:7", "", "NHS Direct Caller", "EARoot/EA1/EA2/EA673.htm", "57.png", "1708", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("1.2:8", "", "NHS Direct System (CAS)", "EARoot/EA1/EA2/EA674.htm", "57.png", "1710", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("1.2:9", "", "Nurse Advisor", "EARoot/EA1/EA2/EA675.htm", "6.png", "1718", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("1.2:10", "", "Nurse Advisor", "EARoot/EA1/EA2/EA676.htm", "6.png", "1715", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("1.2:11", "", "Nurse Advisor", "EARoot/EA1/EA2/EA677.htm", "6.png", "1714", "0", "", "Actor");
+tocTab[tocTab.length] = new Array("1.2:12", "", "«entity» Object1", "EARoot/EA1/EA2/EA678.htm", "57.png", "1716", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("1.2:13", "", "Object2", "EARoot/EA1/EA2/EA679.htm", "57.png", "1717", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("1.2:14", "", "Object3", "EARoot/EA1/EA2/EA680.htm", "57.png", "1719", "0", "", "Sequence");
+tocTab[tocTab.length] = new Array("1.2:15", "", "PSIS ", "EARoot/EA1/EA2/EA681.htm", "57.png", "1711", "0", "", "Sequence");

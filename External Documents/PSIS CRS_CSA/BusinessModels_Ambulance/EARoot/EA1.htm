@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Navigation</title>
+<link href="../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Navigation  : public   package</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">16/06/2006 08:13:33</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">25/05/2007 11:41:53</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Christina Lovelock</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{6D138C80-A858-4543-AA00-71CD1DC9A767}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+	</table>
+	
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Scenario');" id="ScenarioTitle">Scenarios</li>
+		</ul>
+		<div class="ItemBody" id="ScenarioTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="24%" class="TableHeading">Scenario</td>
+					<td width="8%" class="TableHeading">Type</td>
+					<td width="68%" class="TableHeading">Detail</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">Scenario 1 – The Ambulance Service is called to a patient ill at home</td>
+					<td width="8%" class="TableRow">Basic Path</td>
+					<td width="68%" class="TableRow"><div class="ObjectDetailsNotes">Jane&nbsp;<WBR>Robinson&nbsp;<WBR>(NHS&nbsp;<WBR>No.&nbsp;<WBR>9900002857)&nbsp;<WBR>has&nbsp;<WBR>been&nbsp;<WBR>entertaining&nbsp;<WBR>guests&nbsp;<WBR>at&nbsp;<WBR>her&nbsp;<WBR>home.&nbsp;<WBR>Shortly&nbsp;<WBR>after&nbsp;<WBR>finishing&nbsp;<WBR>her&nbsp;<WBR>main&nbsp;<WBR>course&nbsp;<WBR>she&nbsp;<WBR>becomes&nbsp;<WBR>violently&nbsp;<WBR>nauseous&nbsp;<WBR>and&nbsp;<WBR>collapses&nbsp;<WBR>vomiting&nbsp;<WBR>onto&nbsp;<WBR>her&nbsp;<WBR>dining&nbsp;<WBR>room&nbsp;<WBR>floor.&nbsp;<WBR>None&nbsp;<WBR>of&nbsp;<WBR>her&nbsp;<WBR>guests&nbsp;<WBR>are&nbsp;<WBR>ill.&nbsp;<WBR>One&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>guests,&nbsp;<WBR>Mary&nbsp;<WBR>Smith&nbsp;<WBR>–&nbsp;<WBR>who&nbsp;<WBR>is&nbsp;<WBR>Jane’s&nbsp;<WBR>neighbour,&nbsp;<WBR>dials&nbsp;<WBR>999&nbsp;<WBR>(logged&nbsp;<WBR>time&nbsp;<WBR>is&nbsp;<WBR>203515&nbsp;<WBR>hrs)&nbsp;<WBR>and&nbsp;<WBR>asks&nbsp;<WBR>for&nbsp;<WBR>an&nbsp;<WBR>ambulance&nbsp;<WBR>whilst&nbsp;<WBR>the&nbsp;<WBR>other&nbsp;<WBR>guests&nbsp;<WBR>help&nbsp;<WBR>Jane&nbsp;<WBR>as&nbsp;<WBR>much&nbsp;<WBR>as&nbsp;<WBR>they&nbsp;<WBR>can.<br /><br />Mary&nbsp;<WBR>is&nbsp;<WBR>transferred&nbsp;<WBR>by&nbsp;<WBR>the&nbsp;<WBR>operator&nbsp;<WBR>to&nbsp;<WBR>the&nbsp;<WBR>South&nbsp;<WBR>Yorkshire&nbsp;<WBR>Ambulance&nbsp;<WBR>Service&nbsp;<WBR>(SYAS)&nbsp;<WBR>Control&nbsp;<WBR>Centre&nbsp;<WBR>where&nbsp;<WBR>her&nbsp;<WBR>call&nbsp;<WBR>is&nbsp;<WBR>answered&nbsp;<WBR>immediately.&nbsp;<WBR>The&nbsp;<WBR>control&nbsp;<WBR>centre&nbsp;<WBR>operative&nbsp;<WBR>begins&nbsp;<WBR>a&nbsp;<WBR>‘call’&nbsp;<WBR>on&nbsp;<WBR>her&nbsp;<WBR>system&nbsp;<WBR>(logged&nbsp;<WBR>at&nbsp;<WBR>203602&nbsp;<WBR>hrs).&nbsp;<WBR>She&nbsp;<WBR>asks&nbsp;<WBR>Mary&nbsp;<WBR>a&nbsp;<WBR>series&nbsp;<WBR>of&nbsp;<WBR>questions&nbsp;<WBR>designed&nbsp;<WBR>to&nbsp;<WBR>identify&nbsp;<WBR>where&nbsp;<WBR>the&nbsp;<WBR>caller&nbsp;<WBR>is,&nbsp;<WBR>where&nbsp;<WBR>the&nbsp;<WBR>person&nbsp;<WBR>they&nbsp;<WBR>are&nbsp;<WBR>calling&nbsp;<WBR>about&nbsp;<WBR>is,&nbsp;<WBR>what&nbsp;<WBR>is&nbsp;<WBR>wrong&nbsp;<WBR>with&nbsp;<WBR>them&nbsp;<WBR>and&nbsp;<WBR>what&nbsp;<WBR>priority&nbsp;<WBR>the&nbsp;<WBR>call&nbsp;<WBR>should&nbsp;<WBR>be&nbsp;<WBR>handled&nbsp;<WBR>in.&nbsp;<WBR><br /><br />All&nbsp;<WBR>the&nbsp;<WBR>answers&nbsp;<WBR>to&nbsp;<WBR>this&nbsp;<WBR>information&nbsp;<WBR>is&nbsp;<WBR>typed&nbsp;<WBR>into&nbsp;<WBR>SYAS&nbsp;<WBR>IT&nbsp;<WBR>system.&nbsp;<WBR>The&nbsp;<WBR>first&nbsp;<WBR>thing&nbsp;<WBR>the&nbsp;<WBR>IT&nbsp;<WBR>system&nbsp;<WBR>uses&nbsp;<WBR>is&nbsp;<WBR>the&nbsp;<WBR>priority&nbsp;<WBR>to&nbsp;<WBR>identify&nbsp;<WBR>the&nbsp;<WBR>quickest&nbsp;<WBR>‘Call&nbsp;<WBR>Responder’&nbsp;<WBR>type&nbsp;<WBR>and&nbsp;<WBR>to&nbsp;<WBR>send&nbsp;<WBR>them&nbsp;<WBR>the&nbsp;<WBR>details&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>call.&nbsp;<WBR>The&nbsp;<WBR>call&nbsp;<WBR>responder&nbsp;<WBR>is&nbsp;<WBR>usually&nbsp;<WBR>on&nbsp;<WBR>the&nbsp;<WBR>way&nbsp;<WBR>to&nbsp;<WBR>the&nbsp;<WBR>location&nbsp;<WBR>(‘despatched’)&nbsp;<WBR>within&nbsp;<WBR>10&nbsp;<WBR>seconds.&nbsp;<WBR>In&nbsp;<WBR>this&nbsp;<WBR>case&nbsp;<WBR>the&nbsp;<WBR>system&nbsp;<WBR>has&nbsp;<WBR>chosen&nbsp;<WBR>(at&nbsp;<WBR>203613&nbsp;<WBR>hrs)&nbsp;<WBR>an&nbsp;<WBR>emergency&nbsp;<WBR>ambulance&nbsp;<WBR>‘SYAS&nbsp;<WBR>105’&nbsp;<WBR>as&nbsp;<WBR>they&nbsp;<WBR>are&nbsp;<WBR>less&nbsp;<WBR>than&nbsp;<WBR>1&nbsp;<WBR>mile&nbsp;<WBR>away&nbsp;<WBR>from&nbsp;<WBR>the&nbsp;<WBR>caller’s&nbsp;<WBR>location.&nbsp;<WBR><br /><br />Whilst&nbsp;<WBR>the&nbsp;<WBR>Call&nbsp;<WBR>Responder&nbsp;<WBR>is&nbsp;<WBR>en-route&nbsp;<WBR>the&nbsp;<WBR>control&nbsp;<WBR>operative&nbsp;<WBR>continues&nbsp;<WBR>to&nbsp;<WBR>ask&nbsp;<WBR>questions&nbsp;<WBR>and&nbsp;<WBR>offer&nbsp;<WBR>guidance&nbsp;<WBR>and&nbsp;<WBR>re-assurance&nbsp;<WBR>to&nbsp;<WBR>the&nbsp;<WBR>caller.&nbsp;<WBR>This&nbsp;<WBR>process&nbsp;<WBR>is&nbsp;<WBR>regulated&nbsp;<WBR>by&nbsp;<WBR>JRCALC&nbsp;<WBR>protocols&nbsp;<WBR>which&nbsp;<WBR>present&nbsp;<WBR>themselves&nbsp;<WBR>to&nbsp;<WBR>the&nbsp;<WBR>control&nbsp;<WBR>operative&nbsp;<WBR>depending&nbsp;<WBR>on&nbsp;<WBR>the&nbsp;<WBR>information&nbsp;<WBR>entered&nbsp;<WBR>from&nbsp;<WBR>their&nbsp;<WBR>questions.&nbsp;<WBR>This&nbsp;<WBR>information&nbsp;<WBR>updates,&nbsp;<WBR>in&nbsp;<WBR>real-time,&nbsp;<WBR>the&nbsp;<WBR>ambulance&nbsp;<WBR>crew’s&nbsp;<WBR>Mobile&nbsp;<WBR>data&nbsp;<WBR>Terminal&nbsp;<WBR>(MDT).&nbsp;<WBR><br /><br />The&nbsp;<WBR>Ambulance&nbsp;<WBR>arrives&nbsp;<WBR>at&nbsp;<WBR>Jane’s&nbsp;<WBR>house.&nbsp;<WBR>They&nbsp;<WBR>press&nbsp;<WBR>the&nbsp;<WBR>‘on-scene’&nbsp;<WBR>button&nbsp;<WBR>on&nbsp;<WBR>their&nbsp;<WBR>MDT.&nbsp;<WBR>This&nbsp;<WBR>logs&nbsp;<WBR>them&nbsp;<WBR>as&nbsp;<WBR>arriving&nbsp;<WBR>at&nbsp;<WBR>203843&nbsp;<WBR>hrs.&nbsp;<WBR>The&nbsp;<WBR>control&nbsp;<WBR>operative&nbsp;<WBR>continues&nbsp;<WBR>to&nbsp;<WBR>give&nbsp;<WBR>advice&nbsp;<WBR>to&nbsp;<WBR>the&nbsp;<WBR>caller&nbsp;<WBR>until&nbsp;<WBR>the&nbsp;<WBR>caller&nbsp;<WBR>tells&nbsp;<WBR>them&nbsp;<WBR>that&nbsp;<WBR>the&nbsp;<WBR>ambulance&nbsp;<WBR>crew&nbsp;<WBR>have&nbsp;<WBR>arrived&nbsp;<WBR>in&nbsp;<WBR>the&nbsp;<WBR>house.<br /><br />On&nbsp;<WBR>arrival&nbsp;<WBR>the&nbsp;<WBR>crew&nbsp;<WBR>quickly&nbsp;<WBR>assess&nbsp;<WBR>the&nbsp;<WBR>scene.&nbsp;<WBR>Jane&nbsp;<WBR>has&nbsp;<WBR>been&nbsp;<WBR>placed&nbsp;<WBR>into&nbsp;<WBR>the&nbsp;<WBR>coma&nbsp;<WBR>position,&nbsp;<WBR>is&nbsp;<WBR>still&nbsp;<WBR>conscious&nbsp;<WBR>but&nbsp;<WBR>not&nbsp;<WBR>responsive.&nbsp;<WBR>She&nbsp;<WBR>is&nbsp;<WBR>still&nbsp;<WBR>retching,&nbsp;<WBR>although&nbsp;<WBR>it&nbsp;<WBR>is&nbsp;<WBR>apparent&nbsp;<WBR>from&nbsp;<WBR>the&nbsp;<WBR>vomit&nbsp;<WBR>around&nbsp;<WBR>her,&nbsp;<WBR>that&nbsp;<WBR>her&nbsp;<WBR>stomach&nbsp;<WBR>is&nbsp;<WBR>empty.&nbsp;<WBR>The&nbsp;<WBR>vomit&nbsp;<WBR>is&nbsp;<WBR>stained&nbsp;<WBR>quite&nbsp;<WBR>heavily&nbsp;<WBR>with&nbsp;<WBR>blood.<br />The&nbsp;<WBR>crew&nbsp;<WBR>start&nbsp;<WBR>to&nbsp;<WBR>check&nbsp;<WBR>Jane’s&nbsp;<WBR>vital&nbsp;<WBR>signs&nbsp;<WBR>(Pulse,&nbsp;<WBR>Blood&nbsp;<WBR>Pressure,&nbsp;<WBR>Pupil&nbsp;<WBR>Size,&nbsp;<WBR>Pallour,&nbsp;<WBR>etc)&nbsp;<WBR>whilst&nbsp;<WBR>asking&nbsp;<WBR>the&nbsp;<WBR>assembled&nbsp;<WBR>guests&nbsp;<WBR>if&nbsp;<WBR>they&nbsp;<WBR>know&nbsp;<WBR>anything&nbsp;<WBR>about&nbsp;<WBR>what&nbsp;<WBR>caused&nbsp;<WBR>this&nbsp;<WBR>event,&nbsp;<WBR>what&nbsp;<WBR>preceeded&nbsp;<WBR>it&nbsp;<WBR>and&nbsp;<WBR>what&nbsp;<WBR>had&nbsp;<WBR>Jane&nbsp;<WBR>eaten?&nbsp;<WBR>They&nbsp;<WBR>ask&nbsp;<WBR>the&nbsp;<WBR>guests&nbsp;<WBR>if&nbsp;<WBR>they&nbsp;<WBR>know&nbsp;<WBR>anything&nbsp;<WBR>about&nbsp;<WBR>Jane’s&nbsp;<WBR>medical&nbsp;<WBR>history,&nbsp;<WBR>if&nbsp;<WBR>she&nbsp;<WBR>has&nbsp;<WBR>any&nbsp;<WBR>relatives&nbsp;<WBR>nearby,&nbsp;<WBR>etc.&nbsp;<WBR>All&nbsp;<WBR>the&nbsp;<WBR>information&nbsp;<WBR>gathered&nbsp;<WBR>is&nbsp;<WBR>entered&nbsp;<WBR>onto&nbsp;<WBR>the&nbsp;<WBR>MDT&nbsp;<WBR>in&nbsp;<WBR>the&nbsp;<WBR>appropriate&nbsp;<WBR>sections&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>screen.<br /><br />Jane’s&nbsp;<WBR>BP&nbsp;<WBR>is&nbsp;<WBR>low&nbsp;<WBR>and&nbsp;<WBR>her&nbsp;<WBR>pulse&nbsp;<WBR>is&nbsp;<WBR>weak.&nbsp;<WBR>Her&nbsp;<WBR>complexion&nbsp;<WBR>is&nbsp;<WBR>very&nbsp;<WBR>pale.&nbsp;<WBR>When&nbsp;<WBR>the&nbsp;<WBR>crew&nbsp;<WBR>press&nbsp;<WBR>lightly&nbsp;<WBR>on&nbsp;<WBR>Jane’s&nbsp;<WBR>abdomen&nbsp;<WBR>they&nbsp;<WBR>find&nbsp;<WBR>it&nbsp;<WBR>to&nbsp;<WBR>be&nbsp;<WBR>very&nbsp;<WBR>rigid,&nbsp;<WBR>causing&nbsp;<WBR>Jane&nbsp;<WBR>to&nbsp;<WBR>cry&nbsp;<WBR>out&nbsp;<WBR>and&nbsp;<WBR>begin&nbsp;<WBR>retching&nbsp;<WBR>again.&nbsp;<WBR>Jane&nbsp;<WBR>didn’t&nbsp;<WBR>eat&nbsp;<WBR>anything&nbsp;<WBR>immediately&nbsp;<WBR>noticeable&nbsp;<WBR>as&nbsp;<WBR>causing&nbsp;<WBR>an&nbsp;<WBR>anaphylactic&nbsp;<WBR>shock&nbsp;<WBR>(seafood,&nbsp;<WBR>nuts,&nbsp;<WBR>etc).&nbsp;<WBR>She&nbsp;<WBR>hasn’t&nbsp;<WBR>got&nbsp;<WBR>any&nbsp;<WBR>noticeable&nbsp;<WBR>rashes,&nbsp;<WBR>have&nbsp;<WBR>any&nbsp;<WBR>difficulty&nbsp;<WBR>in&nbsp;<WBR>breathing&nbsp;<WBR>or&nbsp;<WBR>become&nbsp;<WBR>noticeably&nbsp;<WBR>swollen.&nbsp;<WBR>The&nbsp;<WBR>crew&nbsp;<WBR>believe&nbsp;<WBR>that&nbsp;<WBR>she&nbsp;<WBR>may&nbsp;<WBR>have&nbsp;<WBR>either:&nbsp;<WBR>appendicitis,&nbsp;<WBR>a&nbsp;<WBR>gall&nbsp;<WBR>bladder&nbsp;<WBR>problem&nbsp;<WBR>or&nbsp;<WBR>a&nbsp;<WBR>perforating/perforated&nbsp;<WBR>ulcer.&nbsp;<WBR><br /><br />The&nbsp;<WBR>crew&nbsp;<WBR>insert&nbsp;<WBR>an&nbsp;<WBR>IV&nbsp;<WBR>cannula&nbsp;<WBR>and&nbsp;<WBR>attach&nbsp;<WBR>a&nbsp;<WBR>500ml&nbsp;<WBR>bag&nbsp;<WBR>of&nbsp;<WBR>Hartman’s&nbsp;<WBR>Solution&nbsp;<WBR>to&nbsp;<WBR>try&nbsp;<WBR>to&nbsp;<WBR>rehydrate&nbsp;<WBR>Jane.&nbsp;<WBR>They&nbsp;<WBR>can’t&nbsp;<WBR>do&nbsp;<WBR>anything&nbsp;<WBR>more&nbsp;<WBR>for&nbsp;<WBR>her&nbsp;<WBR>here&nbsp;<WBR>so&nbsp;<WBR>they&nbsp;<WBR>must&nbsp;<WBR>transfer&nbsp;<WBR>her&nbsp;<WBR>to&nbsp;<WBR>an&nbsp;<WBR>Emergency&nbsp;<WBR>Department&nbsp;<WBR>for&nbsp;<WBR>further&nbsp;<WBR>investigation&nbsp;<WBR>and&nbsp;<WBR>treatment.&nbsp;<WBR>They&nbsp;<WBR>lift&nbsp;<WBR>Jane&nbsp;<WBR>onto&nbsp;<WBR>a&nbsp;<WBR>guerney&nbsp;<WBR>which&nbsp;<WBR>they&nbsp;<WBR>then&nbsp;<WBR>place&nbsp;<WBR>into&nbsp;<WBR>the&nbsp;<WBR>ambulance.<br /><br />Mary&nbsp;<WBR>has&nbsp;<WBR>told&nbsp;<WBR>the&nbsp;<WBR>crew&nbsp;<WBR>that&nbsp;<WBR>she&nbsp;<WBR>will&nbsp;<WBR>clean-up,&nbsp;<WBR>close&nbsp;<WBR>Jane’s&nbsp;<WBR>house&nbsp;<WBR>and&nbsp;<WBR>come&nbsp;<WBR>immediately&nbsp;<WBR>to&nbsp;<WBR>the&nbsp;<WBR>hospital.&nbsp;<WBR>Once&nbsp;<WBR>in&nbsp;<WBR>the&nbsp;<WBR>ambulance&nbsp;<WBR>the&nbsp;<WBR>crew&nbsp;<WBR>enter&nbsp;<WBR>the&nbsp;<WBR>destination&nbsp;<WBR>details&nbsp;<WBR>into&nbsp;<WBR>the&nbsp;<WBR>MDT&nbsp;<WBR>–&nbsp;<WBR>&nbsp;<WBR>this&nbsp;<WBR>informs&nbsp;<WBR>the&nbsp;<WBR>Emergency&nbsp;<WBR>Department&nbsp;<WBR>that&nbsp;<WBR>they&nbsp;<WBR>are&nbsp;<WBR>on&nbsp;<WBR>the&nbsp;<WBR>way&nbsp;<WBR>in.<br /><br />The&nbsp;<WBR>nearest&nbsp;<WBR>hospital&nbsp;<WBR>is&nbsp;<WBR>Rotherham&nbsp;<WBR>General,&nbsp;<WBR>which&nbsp;<WBR>is&nbsp;<WBR>approximately&nbsp;<WBR>5&nbsp;<WBR>miles&nbsp;<WBR>away.&nbsp;<WBR>The&nbsp;<WBR>ambulance&nbsp;<WBR>arrives&nbsp;<WBR>there&nbsp;<WBR>3&nbsp;<WBR>minutes&nbsp;<WBR>later.&nbsp;<WBR>They&nbsp;<WBR>transfer&nbsp;<WBR>Jane&nbsp;<WBR>into&nbsp;<WBR>the&nbsp;<WBR>Emergency&nbsp;<WBR>Department&nbsp;<WBR>where&nbsp;<WBR>they&nbsp;<WBR>move&nbsp;<WBR>her&nbsp;<WBR>from&nbsp;<WBR>the&nbsp;<WBR>guerney&nbsp;<WBR>onto&nbsp;<WBR>a&nbsp;<WBR>trolley&nbsp;<WBR>in&nbsp;<WBR>a&nbsp;<WBR>cubicle.<br /><br />The&nbsp;<WBR>crew&nbsp;<WBR>book&nbsp;<WBR>her&nbsp;<WBR>into&nbsp;<WBR>the&nbsp;<WBR>ED&nbsp;<WBR>and&nbsp;<WBR>hand&nbsp;<WBR>over&nbsp;<WBR>to&nbsp;<WBR>the&nbsp;<WBR>nursing&nbsp;<WBR>staff&nbsp;<WBR>by&nbsp;<WBR>telling&nbsp;<WBR>them&nbsp;<WBR>what&nbsp;<WBR>they&nbsp;<WBR>had&nbsp;<WBR>been&nbsp;<WBR>called&nbsp;<WBR>for,&nbsp;<WBR>what&nbsp;<WBR>they&nbsp;<WBR>had&nbsp;<WBR>found,&nbsp;<WBR>what&nbsp;<WBR>they&nbsp;<WBR>had&nbsp;<WBR>observed&nbsp;<WBR>and&nbsp;<WBR>treated.<br /><br />The&nbsp;<WBR>crew&nbsp;<WBR>then&nbsp;<WBR>finalise&nbsp;<WBR>the&nbsp;<WBR>‘call’&nbsp;<WBR>by&nbsp;<WBR>pushing&nbsp;<WBR>the&nbsp;<WBR>‘crew&nbsp;<WBR>available’&nbsp;<WBR>button&nbsp;<WBR>on&nbsp;<WBR>the&nbsp;<WBR>MDT,&nbsp;<WBR>logging&nbsp;<WBR>the&nbsp;<WBR>end&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>call&nbsp;<WBR>at&nbsp;<WBR>211054&nbsp;<WBR>hrs.&nbsp;<WBR><br /><br /></div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

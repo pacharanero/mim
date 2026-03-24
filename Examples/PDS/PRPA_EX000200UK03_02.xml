@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This example message is provided for illustrative purposes only. It has had no clinical validation nor is it guaranteed to be fully compliant with the written message specification. Where there are conflicts with the written message specification or schema, the specification or schema shall be considered to take precedence. -->
+<PdsTraceMatch xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" classCode="OBS" moodCode="EVN" xsi:schemaLocation="urn:hl7-org:v3 ../../Schemas/PRPA_MT000200UK03.xsd">
+	<subject typeCode="SBJ">
+		<patientRole classCode="PAT">
+			<!-- Information Sensitivity described as "sensitive" -->
+			<confidentialityCode code="S" codeSystem="2.16.840.1.113883.2.1.3.2.4.16.1"/>
+			<!-- NHS number -->
+			<id extension="1234567" root="2.16.840.1.113883.2.1.4.1"/>
+			<patientPerson classCode="PSN" determinerCode="INSTANCE">
+				<name use="L">
+					<prefix>Ms</prefix>
+					<given>Three</given>
+					<given>Zoe</given>
+					<family>Editestpatient</family>
+				</name>
+			</patientPerson>
+			<subjectOf typeCode="SBJ">
+				<COCT_MT000312UK01.DataQualityType moodCode="EVN" classCode="OBS">
+					<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.247" code="B"/>
+					<effectiveTime value="20070808"/>
+					<pertinentInformation typeCode="PERT">
+						<pertinentDataQualityInvestigationReason moodCode="EVN" classCode="OBS">
+							<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.248" code="3"/>
+						</pertinentDataQualityInvestigationReason>
+					</pertinentInformation>
+					<subject typeCode="SBJ">
+						<suspectPatient classCode="PAT">
+							<id extension="1234566" root="2.16.840.1.113883.2.1.4.1"/>
+							<id extension="1234568" root="2.16.840.1.113883.2.1.4.1"/>
+							<id extension="1234569" root="2.16.840.1.113883.2.1.4.1"/>
+							<id extension="1234565" root="2.16.840.1.113883.2.1.4.1"/>
+						</suspectPatient>
+					</subject>
+				</COCT_MT000312UK01.DataQualityType>
+			</subjectOf>
+		</patientRole>
+	</subject>
+</PdsTraceMatch>

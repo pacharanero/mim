@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("2.4.2:1", "", "Template Model", "EARoot/EA2/EA4/EA2/EA230.htm", "175.png", "92", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("2.4.2:2", "", "domain", "EARoot/EA2/EA4/EA2/EA232.htm", "5.png", "1135", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.4.2:3", "", "subDomain", "EARoot/EA2/EA4/EA2/EA235.htm", "5.png", "1136", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.4.2:4", "", "subDomian", "EARoot/EA2/EA4/EA2/EA236.htm", "5.png", "1291", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.4.2:5", "", "whitePaperOutcome", "EARoot/EA2/EA4/EA2/EA237.htm", "5.png", "1134", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.4.2.1", "1", "Example 1", "EARoot/EA2/EA4/EA2/EA233.htm", "4.png", "", "", "{AF4D663A-91B6-42c9-817D-4B07954AC19A}", "Package");
+tocTab[tocTab.length] = new Array("2.4.2.2", "1", "Example 2", "EARoot/EA2/EA4/EA2/EA234.htm", "4.png", "", "", "{3BFAEAFC-D42C-4416-AB8F-973310C4B6D0}", "Package");

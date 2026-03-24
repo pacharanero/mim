@@ -1,0 +1,17 @@
+tocTab[tocTab.length] = new Array("2.1:1", "", "Class Diagram for NHS Direct Provision of Care Message", "EARoot/EA2/EA1/EA683.htm", "175.png", "22", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("2.1:2", "", "Call Disposition Group", "EARoot/EA2/EA1/EA685.htm", "5.png", "1735", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.1:3", "", "Caller Identification", "EARoot/EA2/EA1/EA686.htm", "5.png", "1749", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.1:4", "", "Care Event Information Group", "EARoot/EA2/EA1/EA687.htm", "5.png", "1748", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.1:5", "", "Data Enterer Section", "EARoot/EA2/EA1/EA688.htm", "5.png", "1732", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.1:6", "", "Information Recipient(s) Group", "EARoot/EA2/EA1/EA689.htm", "5.png", "1726", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.1:7", "", "Message Author Group", "EARoot/EA2/EA1/EA690.htm", "5.png", "1725", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.1:8", "", "NHS Direct Participants Group", "EARoot/EA2/EA1/EA691.htm", "5.png", "1730", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.1:9", "", "NHS Direct Provision of Care Communication", "EARoot/EA2/EA1/EA692.htm", "5.png", "1723", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.1:10", "", "NHSD POC Message Identification Group", "EARoot/EA2/EA1/EA693.htm", "5.png", "1722", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.1:11", "", "NHSD POC Message Identification Group", "EARoot/EA2/EA1/EA694.htm", "5.png", "1724", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.1:12", "", "Other Recipient Information Section", "EARoot/EA2/EA1/EA695.htm", "5.png", "1728", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.1:13", "", "Patient Identification Group", "EARoot/EA2/EA1/EA696.htm", "5.png", "1729", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.1:14", "", "Presenting Complaint Group", "EARoot/EA2/EA1/EA697.htm", "5.png", "1733", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.1:15", "", "Presenting Compliant Section", "EARoot/EA2/EA1/EA698.htm", "5.png", "1751", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.1:16", "", "Primary Recipient Information Section", "EARoot/EA2/EA1/EA699.htm", "5.png", "1727", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.1:17", "", "Responsible Clinician Section", "EARoot/EA2/EA1/EA700.htm", "5.png", "1731", "0", "", "Class");

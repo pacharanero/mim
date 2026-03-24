@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Information Analysis Model - DI Report::fulfillerRequest</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">fulfillerRequest  (DI0007Class) : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">05/02/07 20:25:14</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">07/24/07 14:23:04</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Sarah Kennedy</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{67BFD655-C391-44f4-9342-7CFF36BEC86C}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA88.htm">Information Analysis Model - DI Report</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Fulfiller Request Section (level 4.2)<br /><br />The section of details required to describe the Fulfiller Request which is fulfilling the Placer Request identified in 5.1<br /><br />Potentially, a single report communication could fulfil one or more Fulfiller Requests but still fulfil one Placer Request</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Identifier</i><br /><strong>&nbsp;&nbsp;FulfillerRequestID</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			*Combination of two W5 attributes*:&lt;br /&gt;&lt;br /&gt;1.&lt;br /&gt;W5 Name:&lt;br /&gt;The Fulfiller Request ID (level 4.2.1.2)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;The identifier for the Fulfiller Request.&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;Fulfiller Request ID&lt;br /&gt;May be Alphanumeric&lt;br /&gt;&lt;br /&gt;2.&lt;br /&gt;W5 Name:&lt;br /&gt;The Fulfiller System ID (level 4.2.1.1)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;The OID identifying the Fulfiller System at that level which, when combined with the generated Fulfiller Request ID, makes it unique.&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;SDS OID &lt;br /&gt;(format TBA)&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;fillerOrderNumberIssuerNumber and fillerOrderNumber on cda_Order&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Coded</i><br /><strong>&nbsp;&nbsp;requestStatus</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 Name:&lt;br /&gt;Request Status (level 4.2.2)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;This is the status of the request internal to the Fulfiller system &lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;HL7 Code&lt;br /&gt;(Active, Completed)&lt;br /&gt;Default - Completed&lt;br /&gt;&lt;br /&gt;W5 Notes:&lt;br /&gt;Any local codes must be mapped to the HL7 code&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;?&lt;br /&gt;&lt;br /&gt;CDA Template Mapping Notes:&lt;br /&gt;Order does not have request status. This could be available but might be buried deeply, alternatively:&lt;br /&gt;- order code could be extended e.g. completed order/order incomplete&lt;br /&gt;- invent vocabulary which could be a list of types of order&lt;br /&gt;&lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public dt_Timestamp</i><br /><strong>&nbsp;&nbsp;requestStatusValidityTime</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			W5 Name:&lt;br /&gt;Request Status Validity Time (level 4.2.3)&lt;br /&gt;&lt;br /&gt;W5 Definition:&lt;br /&gt;The Date & Time that this Request status is valid&lt;br /&gt;&lt;br /&gt;W5 Representation:&lt;br /&gt;HL7 Code&lt;br /&gt;yyyymmddhhmmss&lt;br /&gt;&lt;br /&gt;W5 Notes:&lt;br /&gt;Present in the Non-PSIS W5 but not the PSIS W5&lt;br /&gt;&lt;br /&gt;Suggested CDA Template Mapping:&lt;br /&gt;?&lt;br /&gt;&lt;br /&gt;CDA Template Mapping Notes:&lt;br /&gt;No time on Order, no elegent way of doing this.&lt;br /&gt;This attribute is only present in the non-PSIS documentation.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>
+		</table>
+</div>		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA96.htm">request</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

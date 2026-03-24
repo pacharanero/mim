@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("4.1.5:1", "", "CD - Contact Assessment", "EARoot/EA4/EA1/EA5/EA1006.htm", "175.png", "187", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("4.1.5:2", "", "contactAssessmentAdditionalInformationTemplateList", "EARoot/EA4/EA1/EA5/EA1008.htm", "5.png", "7230", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.5:3", "", "additionalInformation", "EARoot/EA4/EA1/EA5/EA1011.htm", "5.png", "6342", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.5:4", "", "contactAssessmentDocument", "EARoot/EA4/EA1/EA5/EA1012.htm", "5.png", "6352", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.5:5", "", "contactAssessmentEncounter", "EARoot/EA4/EA1/EA5/EA1013.htm", "5.png", "6344", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.5:6", "", "reason", "EARoot/EA4/EA1/EA5/EA1014.htm", "5.png", "6346", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.5:7", "", "reasonForContact", "EARoot/EA4/EA1/EA5/EA1015.htm", "5.png", "6348", "0", "", "Class");

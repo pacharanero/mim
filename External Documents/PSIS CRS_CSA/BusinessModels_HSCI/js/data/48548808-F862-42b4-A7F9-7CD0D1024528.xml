@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("2.5:1", "", "Overview Use Case Model", "EARoot/EA2/EA5/EA248.htm", "180.png", "1", "0", "", "Use Case diagram");
+tocTab[tocTab.length] = new Array("2.5:2", "", "Manage Assessments", "EARoot/EA2/EA5/EA253.htm", "7.png", "1306", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("2.5:3", "", "Manage Care Planning", "EARoot/EA2/EA5/EA254.htm", "7.png", "1307", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("2.5:4", "", "Manage Care Record", "EARoot/EA2/EA5/EA255.htm", "7.png", "1310", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("2.5:5", "", "Manage Common Assessment Framwork", "EARoot/EA2/EA5/EA256.htm", "7.png", "1920", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("2.5:6", "", "Manage Person Details", "EARoot/EA2/EA5/EA257.htm", "7.png", "1309", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("2.5:7", "", "Manage Risk Information", "EARoot/EA2/EA5/EA258.htm", "7.png", "1921", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("2.5:8", "", "Manage Services and Care Delivery", "EARoot/EA2/EA5/EA259.htm", "7.png", "1308", "0", "", "UseCase");
+tocTab[tocTab.length] = new Array("2.5:9", "", "Monitor", "EARoot/EA2/EA5/EA260.htm", "7.png", "1863", "0", "", "UseCase");

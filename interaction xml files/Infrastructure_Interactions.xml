@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifactPackage>
+	<dynamicModel>
+		<interaction id="MCCI_IN010000UK13">
+			<Models>
+				<sendingRole modelId="MCCI_IN010000UK13"/>
+				<receivingRole modelId="MCCI_AR020000UK01"/>
+				<triggerEvent modelId="MCCI_TE010000UK01"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="MCAI_MT040101UK03"/>
+			</Models>
+		</interaction>
+		<interaction id="QUQI_IN010000UK14">
+			<Models>
+				<sendingRole modelId="QUQI_AR010000UK01"/>
+				<receivingRole modelId="QUQI_AR020000UK01"/>
+				<triggerEvent modelId="QUQI_TE010000UK01"/>
+				<transmissionWrapper modelId="MCCI_MT020101UK12"/>
+				<controlActWrapper modelId="QUQI_MT030101UK03"/>
+			</Models>
+		</interaction>
+		<interaction id="MCCI_IN200001UK03">
+			<Models>
+				<sendingRole modelId="MCCI_AR200001UK01"/>
+				<receivingRole modelId="MCCI_AR200002UK01"/>
+				<triggerEvent modelId="MCCI_TE200001UK01"/>
+				<batchWrapper modelId="MCCI_IN200001UK03"/>
+			</Models>
+		</interaction>
+		<interaction id="MCCI_IN200002UK04">
+			<Models>
+				<sendingRole modelId="MCCI_AR200003UK01"/>
+				<receivingRole modelId="MCCI_AR200004UK01"/>
+				<triggerEvent modelId="MCCI_AR200004UK01"/>
+				<batchWrapper modelId="MCCI_IN200002UK04"/>
+			</Models>
+		</interaction>
+	</dynamicModel>
+</artifactPackage>

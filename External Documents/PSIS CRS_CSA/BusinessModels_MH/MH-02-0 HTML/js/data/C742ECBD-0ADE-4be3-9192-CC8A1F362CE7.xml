@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("4.1.15:1", "", "AdditionalInformation", "EARoot/EA4/EA1/EA15/EA868.htm", "175.png", "165", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("4.1.15:2", "", "additional information", "EARoot/EA4/EA1/EA15/EA871.htm", "5.png", "4170", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.15:3", "", "episodesInformation", "EARoot/EA4/EA1/EA15/EA872.htm", "5.png", "4172", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.15:4", "", "patientPreferences", "EARoot/EA4/EA1/EA15/EA873.htm", "5.png", "4174", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.15:5", "", "preferenceTemplateList", "EARoot/EA4/EA1/EA15/EA874.htm", "5.png", "4175", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.15:6", "", "previousSpell", "EARoot/EA4/EA1/EA15/EA875.htm", "5.png", "4176", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.15:7", "", "previousSpellTemplateList", "EARoot/EA4/EA1/EA15/EA876.htm", "5.png", "4177", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.15:8", "", "statedPreferenceInformation", "EARoot/EA4/EA1/EA15/EA877.htm", "5.png", "4178", "0", "", "Class");

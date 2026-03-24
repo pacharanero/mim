@@ -1,0 +1,17 @@
+tocTab[tocTab.length] = new Array("4.1.13:1", "", "Risk Assessment", "EARoot/EA4/EA1/EA13/EA836.htm", "175.png", "166", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("4.1.13:2", "", "factorsIncreasingDecreasingRisk", "EARoot/EA4/EA1/EA13/EA838.htm", "5.png", "4188", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.13:3", "", "HCR20 Violence Risk Assessment Outcome Scores", "EARoot/EA4/EA1/EA13/EA839.htm", "5.png", "4181", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.13:4", "", "HCR20ScaleAndScoreTemplateList", "EARoot/EA4/EA1/EA13/EA840.htm", "5.png", "4184", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.13:5", "", "HCR20ViolenceRiskAssessment", "EARoot/EA4/EA1/EA13/EA841.htm", "5.png", "4185", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.13:6", "", "MHriskAssessment", "EARoot/EA4/EA1/EA13/EA842.htm", "5.png", "4186", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.13:7", "", "patientVulnerabilities", "EARoot/EA4/EA1/EA13/EA843.htm", "5.png", "4193", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.13:8", "", "riskActivitiesHistory", "EARoot/EA4/EA1/EA13/EA844.htm", "5.png", "4194", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.13:9", "", "riskActivityTemplateList", "EARoot/EA4/EA1/EA13/EA845.htm", "5.png", "4195", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.13:10", "", "riskAssessment", "EARoot/EA4/EA1/EA13/EA846.htm", "5.png", "4196", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.13:11", "", "riskAssessmentCategoriesAndScaleScores", "EARoot/EA4/EA1/EA13/EA847.htm", "5.png", "4197", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.13:12", "", "riskAssessmentCategoryAndScaleTemplateList", "EARoot/EA4/EA1/EA13/EA848.htm", "5.png", "4198", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.13:13", "", "riskAssessmentDetailsTemplateList", "EARoot/EA4/EA1/EA13/EA849.htm", "5.png", "4199", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.13:14", "", "riskFactorTemplateList", "EARoot/EA4/EA1/EA13/EA850.htm", "5.png", "4200", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.13:15", "", "vulnerabilityDetails", "EARoot/EA4/EA1/EA13/EA852.htm", "5.png", "4202", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.13:16", "", "vulnerableFromPatient", "EARoot/EA4/EA1/EA13/EA853.htm", "5.png", "4203", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.13:17", "", "vulnerableTemplateList", "EARoot/EA4/EA1/EA13/EA854.htm", "5.png", "4204", "0", "", "Class");

@@ -1,0 +1,14 @@
+tocTab[tocTab.length] = new Array("4.1.1:1", "", "CD - Biographic Information", "EARoot/EA4/EA1/EA1/EA851.htm", "175.png", "199", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("4.1.1:2", "", "accommodationDetails", "EARoot/EA4/EA1/EA1/EA853.htm", "5.png", "8028", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1:3", "", "communicationDetails", "EARoot/EA4/EA1/EA1/EA854.htm", "5.png", "8035", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1:4", "", "dependencyDetails", "EARoot/EA4/EA1/EA1/EA855.htm", "5.png", "8036", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1:5", "", "employmentDetails", "EARoot/EA4/EA1/EA1/EA856.htm", "5.png", "8027", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1:6", "", "accommodationDetailsSection", "EARoot/EA4/EA1/EA1/EA857.htm", "5.png", "7251", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1:7", "", "accommodationDetailsTemplateList", "EARoot/EA4/EA1/EA1/EA858.htm", "5.png", "8034", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1:8", "", "additionalBiographicalInformation", "EARoot/EA4/EA1/EA1/EA859.htm", "5.png", "8026", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1:9", "", "biographicDetailsDocument", "EARoot/EA4/EA1/EA1/EA860.htm", "5.png", "7247", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1:10", "", "communicationDetailsSection", "EARoot/EA4/EA1/EA1/EA861.htm", "5.png", "7252", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1:11", "", "dependencyDetailsSection", "EARoot/EA4/EA1/EA1/EA862.htm", "5.png", "7253", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1:12", "", "employmentDetailsSection", "EARoot/EA4/EA1/EA1/EA863.htm", "5.png", "7250", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1:13", "", "employmentDetailsTemplateList", "EARoot/EA4/EA1/EA1/EA864.htm", "5.png", "8037", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.1.1:14", "", "encompassingEncounter", "EARoot/EA4/EA1/EA1/EA865.htm", "5.png", "7248", "0", "", "Class");

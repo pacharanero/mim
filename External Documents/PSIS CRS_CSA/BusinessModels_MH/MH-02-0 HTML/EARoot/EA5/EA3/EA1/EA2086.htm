@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>dt_Null</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">dt_Null  : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">19/09/2006 08:06:32</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">09/10/2006 13:46:23</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">John Arnett</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{F1940ED9-3B88-449c-8C59-F7362E554125}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA2083.htm">Generic Datatypes</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">A&nbsp;<WBR>class&nbsp;<WBR>representing&nbsp;<WBR>a&nbsp;<WBR>null&nbsp;<WBR>value&nbsp;<WBR>(i.e.&nbsp;<WBR>the&nbsp;<WBR>absence&nbsp;<WBR>of&nbsp;<WBR>a&nbsp;<WBR>value),&nbsp;<WBR>which&nbsp;<WBR>can&nbsp;<WBR>substitute&nbsp;<WBR>for&nbsp;<WBR>any&nbsp;<WBR>Datatype&nbsp;<WBR>value.&nbsp;<WBR>&nbsp;<WBR><br /><br />HL7&nbsp;<WBR>v3&nbsp;<WBR>equivalent:&nbsp;<WBR>ANY::nullFlavor&nbsp;<WBR>attribute.<br /><br /><br />Flavours&nbsp;<WBR>of&nbsp;<WBR>null&nbsp;<WBR>include:<br /><br />1&nbsp;<WBR>no&nbsp;<WBR>information&nbsp;<WBR>-&nbsp;<WBR>No&nbsp;<WBR>information&nbsp;<WBR>whatsoever&nbsp;<WBR>can&nbsp;<WBR>be&nbsp;<WBR>inferred&nbsp;<WBR>from&nbsp;<WBR>this&nbsp;<WBR>exceptional&nbsp;<WBR>value.&nbsp;<WBR>This&nbsp;<WBR>is&nbsp;<WBR>the&nbsp;<WBR>most&nbsp;<WBR>general&nbsp;<WBR>exceptional&nbsp;<WBR>value.&nbsp;<WBR>It&nbsp;<WBR>is&nbsp;<WBR>also&nbsp;<WBR>the&nbsp;<WBR>default&nbsp;<WBR>exceptional&nbsp;<WBR>value.&nbsp;<WBR><br />&nbsp;<WBR><br />2&nbsp;<WBR>other&nbsp;<WBR>-&nbsp;<WBR>The&nbsp;<WBR>actual&nbsp;<WBR>value&nbsp;<WBR>is&nbsp;<WBR>not&nbsp;<WBR>an&nbsp;<WBR>element&nbsp;<WBR>in&nbsp;<WBR>the&nbsp;<WBR>value&nbsp;<WBR>domain&nbsp;<WBR>of&nbsp;<WBR>a&nbsp;<WBR>variable.&nbsp;<WBR>(e.g.,&nbsp;<WBR>concept&nbsp;<WBR>not&nbsp;<WBR>provided&nbsp;<WBR>by&nbsp;<WBR>required&nbsp;<WBR>code&nbsp;<WBR>system).<br />&nbsp;<WBR><br />3&nbsp;<WBR>negative&nbsp;<WBR>infinity&nbsp;<WBR>-&nbsp;<WBR>Negative&nbsp;<WBR>infinity&nbsp;<WBR>of&nbsp;<WBR>numbers.<br />&nbsp;<WBR><br />4&nbsp;<WBR>positive&nbsp;<WBR>infinity&nbsp;<WBR>Positive&nbsp;<WBR>infinity&nbsp;<WBR>of&nbsp;<WBR>numbers.<br />&nbsp;<WBR><br />5&nbsp;<WBR>unknown&nbsp;<WBR>-&nbsp;<WBR>A&nbsp;<WBR>proper&nbsp;<WBR>value&nbsp;<WBR>is&nbsp;<WBR>applicable,&nbsp;<WBR>but&nbsp;<WBR>not&nbsp;<WBR>known.<br />&nbsp;<WBR><br />6&nbsp;<WBR>asked&nbsp;<WBR>but&nbsp;<WBR>unknown&nbsp;<WBR>-&nbsp;<WBR>Information&nbsp;<WBR>was&nbsp;<WBR>sought&nbsp;<WBR>but&nbsp;<WBR>not&nbsp;<WBR>found&nbsp;<WBR>(e.g.,&nbsp;<WBR>patient&nbsp;<WBR>was&nbsp;<WBR>asked&nbsp;<WBR>but&nbsp;<WBR>didn&#39;t&nbsp;<WBR>know)<br />&nbsp;<WBR><br />7&nbsp;<WBR>temporarily&nbsp;<WBR>unavailable&nbsp;<WBR>-&nbsp;<WBR>Information&nbsp;<WBR>is&nbsp;<WBR>not&nbsp;<WBR>available&nbsp;<WBR>at&nbsp;<WBR>this&nbsp;<WBR>time&nbsp;<WBR>but&nbsp;<WBR>it&nbsp;<WBR>is&nbsp;<WBR>expected&nbsp;<WBR>that&nbsp;<WBR>it&nbsp;<WBR>will&nbsp;<WBR>be&nbsp;<WBR>available&nbsp;<WBR>later.<br />&nbsp;<WBR><br />8&nbsp;<WBR>sufficient&nbsp;<WBR>quantity&nbsp;<WBR>-&nbsp;<WBR>The&nbsp;<WBR>specific&nbsp;<WBR>quantity&nbsp;<WBR>is&nbsp;<WBR>not&nbsp;<WBR>known,&nbsp;<WBR>but&nbsp;<WBR>is&nbsp;<WBR>known&nbsp;<WBR>to&nbsp;<WBR>be&nbsp;<WBR>non-zero&nbsp;<WBR>and&nbsp;<WBR>is&nbsp;<WBR>not&nbsp;<WBR>specified&nbsp;<WBR>because&nbsp;<WBR>it&nbsp;<WBR>makes&nbsp;<WBR>up&nbsp;<WBR>the&nbsp;<WBR>bulk&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>material.&nbsp;<WBR>e.g.&#39;Add&nbsp;<WBR>10mg&nbsp;<WBR>of&nbsp;<WBR>ingredient&nbsp;<WBR>X,&nbsp;<WBR>50mg&nbsp;<WBR>of&nbsp;<WBR>ingredient&nbsp;<WBR>Y,&nbsp;<WBR>and&nbsp;<WBR>sufficient&nbsp;<WBR>quantity&nbsp;<WBR>of&nbsp;<WBR>water&nbsp;<WBR>to&nbsp;<WBR>100mL.&#39;&nbsp;<WBR>The&nbsp;<WBR>null&nbsp;<WBR>flavor&nbsp;<WBR>would&nbsp;<WBR>be&nbsp;<WBR>used&nbsp;<WBR>to&nbsp;<WBR>express&nbsp;<WBR>the&nbsp;<WBR>quantity&nbsp;<WBR>of&nbsp;<WBR>water.&nbsp;<WBR><br />&nbsp;<WBR><br />9&nbsp;<WBR>not&nbsp;<WBR>asked&nbsp;<WBR>-&nbsp;<WBR>This&nbsp;<WBR>information&nbsp;<WBR>has&nbsp;<WBR>not&nbsp;<WBR>been&nbsp;<WBR>sought&nbsp;<WBR>(e.g.,&nbsp;<WBR>patient&nbsp;<WBR>was&nbsp;<WBR>not&nbsp;<WBR>asked)<br />&nbsp;<WBR><br />10&nbsp;<WBR>trace&nbsp;<WBR>-&nbsp;<WBR>The&nbsp;<WBR>content&nbsp;<WBR>is&nbsp;<WBR>greater&nbsp;<WBR>than&nbsp;<WBR>zero,&nbsp;<WBR>but&nbsp;<WBR>too&nbsp;<WBR>small&nbsp;<WBR>to&nbsp;<WBR>be&nbsp;<WBR>quantified.<br />&nbsp;<WBR><br />11&nbsp;<WBR>masked&nbsp;<WBR>-&nbsp;<WBR>There&nbsp;<WBR>is&nbsp;<WBR>information&nbsp;<WBR>on&nbsp;<WBR>this&nbsp;<WBR>item&nbsp;<WBR>available&nbsp;<WBR>but&nbsp;<WBR>it&nbsp;<WBR>has&nbsp;<WBR>not&nbsp;<WBR>been&nbsp;<WBR>provided&nbsp;<WBR>by&nbsp;<WBR>the&nbsp;<WBR>sender&nbsp;<WBR>due&nbsp;<WBR>to&nbsp;<WBR>security,&nbsp;<WBR>privacy&nbsp;<WBR>or&nbsp;<WBR>other&nbsp;<WBR>reasons.&nbsp;<WBR>There&nbsp;<WBR>may&nbsp;<WBR>be&nbsp;<WBR>an&nbsp;<WBR>alternate&nbsp;<WBR>mechanism&nbsp;<WBR>for&nbsp;<WBR>gaining&nbsp;<WBR>access&nbsp;<WBR>to&nbsp;<WBR>this&nbsp;<WBR>information.&nbsp;<WBR>Note:&nbsp;<WBR>using&nbsp;<WBR>this&nbsp;<WBR>null&nbsp;<WBR>flavor&nbsp;<WBR>does&nbsp;<WBR>provide&nbsp;<WBR>information&nbsp;<WBR>that&nbsp;<WBR>may&nbsp;<WBR>be&nbsp;<WBR>a&nbsp;<WBR>breach&nbsp;<WBR>of&nbsp;<WBR>confidentiality,&nbsp;<WBR>even&nbsp;<WBR>though&nbsp;<WBR>no&nbsp;<WBR>detail&nbsp;<WBR>data&nbsp;<WBR>is&nbsp;<WBR>provided.&nbsp;<WBR>Its&nbsp;<WBR>primary&nbsp;<WBR>purpose&nbsp;<WBR>is&nbsp;<WBR>for&nbsp;<WBR>those&nbsp;<WBR>circumstances&nbsp;<WBR>where&nbsp;<WBR>it&nbsp;<WBR>is&nbsp;<WBR>necessary&nbsp;<WBR>to&nbsp;<WBR>inform&nbsp;<WBR>the&nbsp;<WBR>receiver&nbsp;<WBR>that&nbsp;<WBR>the&nbsp;<WBR>information&nbsp;<WBR>does&nbsp;<WBR>exist&nbsp;<WBR>without&nbsp;<WBR>providing&nbsp;<WBR>any&nbsp;<WBR>detail.&nbsp;<WBR><br />&nbsp;<WBR><br />12&nbsp;<WBR>not&nbsp;<WBR>applicable&nbsp;<WBR>-&nbsp;<WBR>Known&nbsp;<WBR>to&nbsp;<WBR>have&nbsp;<WBR>no&nbsp;<WBR>proper&nbsp;<WBR>value&nbsp;<WBR>(e.g.,&nbsp;<WBR>last&nbsp;<WBR>menstrual&nbsp;<WBR>period&nbsp;<WBR>for&nbsp;<WBR>a&nbsp;<WBR>male).</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CodedNullFlavor</i><br /><strong>&nbsp;&nbsp;flavour</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The&nbsp;<WBR>coded&nbsp;<WBR>&quot;flavor&quot;&nbsp;<WBR>of&nbsp;<WBR>null,&nbsp;<WBR>e.g.&nbsp;<WBR>&quot;N/K&quot;.&nbsp;<WBR>
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>
+		</table>
+</div>	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

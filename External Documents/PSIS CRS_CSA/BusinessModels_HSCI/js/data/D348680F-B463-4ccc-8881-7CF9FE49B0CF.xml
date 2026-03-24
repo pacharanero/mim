@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("3.1.9:1", "", "PSIS Query", "EARoot/EA3/EA1/EA9/EA434.htm", "188.png", "258", "0", "", "Custom diagram");
+tocTab[tocTab.length] = new Array("3.1.9:2", "", "«Functional» HSCI006REQ: Performing PSIS Queries", "EARoot/EA3/EA1/EA9/EA436.htm", "19.png", "10277", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("3.1.9:3", "", "«Functional» HSCI012REQ: Filter on Document Type", "EARoot/EA3/EA1/EA9/EA437.htm", "19.png", "10283", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("3.1.9:4", "", "«Functional» HSCI013REQ: Consent", "EARoot/EA3/EA1/EA9/EA438.htm", "19.png", "10284", "0", "", "Requirement");

@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("3.1.7:1", "", "Receiving HSCI Document", "EARoot/EA3/EA1/EA7/EA421.htm", "188.png", "257", "0", "", "Custom diagram");
+tocTab[tocTab.length] = new Array("3.1.7:2", "", "«Functional» HSCI064REQ: Point to Point Receiver Requirements", "EARoot/EA3/EA1/EA7/EA423.htm", "19.png", "10709", "0", "", "Requirement");
+tocTab[tocTab.length] = new Array("3.1.7:3", "", "«Functional» HSCI065REQ: Re-use of received information", "EARoot/EA3/EA1/EA7/EA424.htm", "19.png", "10710", "0", "", "Requirement");

@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("2.1", "1", "CAF Consultation Process", "EARoot/EA2/EA66.htm", "4.png", "", "", "{6896ACCC-B49F-4831-AE58-3DAEC9C140E6}", "Package");
+tocTab[tocTab.length] = new Array("2.2", "1", "Overview Business Process Model", "", "4.png", "", "", "{9F0AED69-13ED-471e-B53A-541470933764}", "Package");
+tocTab[tocTab.length] = new Array("2.3", "1", "Business Process Model", "", "4.png", "", "", "{29925E9E-38D4-40b4-9314-F8F5C6A9FE19}", "Package");
+tocTab[tocTab.length] = new Array("2.4", "1", "Business Information Model", "", "4.png", "", "", "{C1A6305F-8E75-48dc-BB3E-ADE895C39115}", "Package");
+tocTab[tocTab.length] = new Array("2.5", "1", "Overview Use Case Model", "", "4.png", "", "", "{48548808-F862-42b4-A7F9-7CD0D1024528}", "Package");
+tocTab[tocTab.length] = new Array("2.6", "1", "Use Case Palette", "", "4.png", "", "", "{385BA859-2D4A-4662-9D4B-D60349AFA23D}", "Package");

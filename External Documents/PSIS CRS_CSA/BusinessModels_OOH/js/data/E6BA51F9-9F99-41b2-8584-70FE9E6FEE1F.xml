@@ -1,0 +1,17 @@
+tocTab[tocTab.length] = new Array("4.2:1", "", "IAM", "EARoot/EA4/EA2/EA389.htm", "175.png", "46", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("4.2:2", "", "callHandler", "EARoot/EA4/EA2/EA391.htm", "5.png", "1165", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.2:3", "", "case", "EARoot/EA4/EA2/EA392.htm", "5.png", "1155", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.2:4", "", "clinic", "EARoot/EA4/EA2/EA393.htm", "5.png", "1168", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.2:5", "", "clinician", "EARoot/EA4/EA2/EA394.htm", "5.png", "1166", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.2:6", "", "consultation", "EARoot/EA4/EA2/EA395.htm", "5.png", "1161", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.2:7", "", "electronicAssessment", "EARoot/EA4/EA2/EA396.htm", "5.png", "1158", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.2:8", "", "faceToFaceConsultation", "EARoot/EA4/EA2/EA397.htm", "5.png", "1162", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.2:9", "", "finalOutcome", "EARoot/EA4/EA2/EA398.htm", "5.png", "1164", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.2:10", "", "organisation", "EARoot/EA4/EA2/EA399.htm", "5.png", "1167", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.2:11", "", "patient", "EARoot/EA4/EA2/EA400.htm", "5.png", "1153", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.2:12", "", "patientGP", "EARoot/EA4/EA2/EA401.htm", "5.png", "1154", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.2:13", "", "referralFromExternalService", "EARoot/EA4/EA2/EA402.htm", "5.png", "1170", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.2:14", "", "seniorClinician", "EARoot/EA4/EA2/EA403.htm", "5.png", "1537", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.2:15", "", "telephoneConsultation", "EARoot/EA4/EA2/EA404.htm", "5.png", "1163", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.2:16", "", "triage", "EARoot/EA4/EA2/EA405.htm", "5.png", "1160", "0", "", "Class");
+tocTab[tocTab.length] = new Array("4.2:17", "", "user", "EARoot/EA4/EA2/EA406.htm", "5.png", "1169", "0", "", "Class");

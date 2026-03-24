@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("5.1.2.1:1", "", "cda_ClinicalDocument", "EARoot/EA5/EA1/EA2/EA1/EA365.htm", "5.png", "3945", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.1:2", "", "cda_CRETypeList", "EARoot/EA5/EA1/EA2/EA1/EA366.htm", "5.png", "3948", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.1:3", "", "cda_EncompassingEncounter", "EARoot/EA5/EA1/EA2/EA1/EA367.htm", "5.png", "3946", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.1:4", "", "cda_TemplateList", "EARoot/EA5/EA1/EA2/EA1/EA368.htm", "5.png", "3947", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.2.1:5", "", "cda_TextSection", "EARoot/EA5/EA1/EA2/EA1/EA369.htm", "5.png", "3944", "0", "", "Class");

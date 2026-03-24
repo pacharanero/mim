@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("5.1.1.4:1", "", "cda_ServiceDeliveryLocation", "EARoot/EA5/EA1/EA1/EA4/EA2311.htm", "5.png", "10074", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.4:2", "", "«RoleChoice» cda_RoleChoice_30", "EARoot/EA5/EA1/EA1/EA4/EA2312.htm", "5.png", "8385", "0", "", "Class");
+tocTab[tocTab.length] = new Array("5.1.1.4:3", "", "«RoleChoice» cda_RoleChoice_31", "EARoot/EA5/EA1/EA1/EA4/EA2313.htm", "5.png", "8389", "0", "", "Class");

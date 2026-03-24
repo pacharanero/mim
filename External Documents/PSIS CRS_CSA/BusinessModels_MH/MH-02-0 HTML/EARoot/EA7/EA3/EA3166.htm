@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>MH&SM-SS Exit</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">MH&SM-SS Exit  : public   package</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">06/07/2006 20:54:22</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">10/01/2008 10:06:32</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Bob Cox</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Approved</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{2344E47F-7E86-4f83-9BCF-7374BDA1C860}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">The&nbsp;<WBR>trigger&nbsp;<WBR>for&nbsp;<WBR>creation&nbsp;<WBR>of&nbsp;<WBR>an&nbsp;<WBR>MH&SM-SS&nbsp;<WBR>Exit&nbsp;<WBR>communication&nbsp;<WBR>is&nbsp;<WBR>the&nbsp;<WBR>end&nbsp;<WBR>of&nbsp;<WBR>a&nbsp;<WBR>spell&nbsp;<WBR>of&nbsp;<WBR>care&nbsp;<WBR>by&nbsp;<WBR>an&nbsp;<WBR>MH&SM-SS.&nbsp;<WBR>Entry&nbsp;<WBR>at&nbsp;<WBR>its&nbsp;<WBR>earliest&nbsp;<WBR>point&nbsp;<WBR>may&nbsp;<WBR>only&nbsp;<WBR>determine&nbsp;<WBR>that&nbsp;<WBR>an&nbsp;<WBR>assessment&nbsp;<WBR>by&nbsp;<WBR>specialist&nbsp;<WBR>services&nbsp;<WBR>is&nbsp;<WBR>required&nbsp;<WBR>following&nbsp;<WBR>a&nbsp;<WBR>triage&nbsp;<WBR>decision.&nbsp;<WBR>At&nbsp;<WBR>this&nbsp;<WBR>point,&nbsp;<WBR>following&nbsp;<WBR>assessment&nbsp;<WBR>but&nbsp;<WBR>without&nbsp;<WBR>any&nbsp;<WBR>treatment&nbsp;<WBR>a&nbsp;<WBR>patient&nbsp;<WBR>may&nbsp;<WBR>be&nbsp;<WBR>exited&nbsp;<WBR>from&nbsp;<WBR>the&nbsp;<WBR>service&nbsp;<WBR>with&nbsp;<WBR>no&nbsp;<WBR>further&nbsp;<WBR>MH&SM&nbsp;<WBR>Specialist&nbsp;<WBR>Service&nbsp;<WBR>care.&nbsp;<WBR>The&nbsp;<WBR>other&nbsp;<WBR>use&nbsp;<WBR>of&nbsp;<WBR>this&nbsp;<WBR>communication&nbsp;<WBR>is&nbsp;<WBR>where&nbsp;<WBR>a&nbsp;<WBR>spell&nbsp;<WBR>of&nbsp;<WBR>care&nbsp;<WBR>within&nbsp;<WBR>MH&SM&nbsp;<WBR>Specialist&nbsp;<WBR>Services&nbsp;<WBR>takes&nbsp;<WBR>place&nbsp;<WBR>and&nbsp;<WBR>for&nbsp;<WBR>which&nbsp;<WBR>care&nbsp;<WBR>is&nbsp;<WBR>continued&nbsp;<WBR>beyond&nbsp;<WBR>the&nbsp;<WBR>Service&nbsp;<WBR>Assessment;&nbsp;<WBR>this&nbsp;<WBR>is&nbsp;<WBR>described&nbsp;<WBR>below.<br /><br />Following&nbsp;<WBR>a&nbsp;<WBR>review&nbsp;<WBR>of&nbsp;<WBR>care,&nbsp;<WBR>the&nbsp;<WBR>Care&nbsp;<WBR>Coordinator&nbsp;<WBR>/&nbsp;<WBR>Lead&nbsp;<WBR>Professional&nbsp;<WBR>will&nbsp;<WBR>have&nbsp;<WBR>recorded&nbsp;<WBR>in&nbsp;<WBR>the&nbsp;<WBR>patient’s&nbsp;<WBR>record&nbsp;<WBR>the&nbsp;<WBR>decision&nbsp;<WBR>to&nbsp;<WBR>end&nbsp;<WBR>care&nbsp;<WBR>by&nbsp;<WBR>the&nbsp;<WBR>MH&SM-SS&nbsp;<WBR>using&nbsp;<WBR>an&nbsp;<WBR>MH&SM&nbsp;<WBR>Care&nbsp;<WBR>Review&nbsp;<WBR>Summary&nbsp;<WBR>communication.&nbsp;<WBR>The&nbsp;<WBR>decision&nbsp;<WBR>to&nbsp;<WBR>end&nbsp;<WBR>care&nbsp;<WBR>and&nbsp;<WBR>the&nbsp;<WBR>actual&nbsp;<WBR>exit&nbsp;<WBR>may&nbsp;<WBR>or&nbsp;<WBR>may&nbsp;<WBR>not&nbsp;<WBR>take&nbsp;<WBR>place&nbsp;<WBR>at&nbsp;<WBR>the&nbsp;<WBR>same&nbsp;<WBR>time&nbsp;<WBR>and&nbsp;<WBR>therefore&nbsp;<WBR>this&nbsp;<WBR>communication&nbsp;<WBR>is&nbsp;<WBR>only&nbsp;<WBR>generated&nbsp;<WBR>at&nbsp;<WBR>the&nbsp;<WBR>actual&nbsp;<WBR>point&nbsp;<WBR>of&nbsp;<WBR>discharge&nbsp;<WBR>/&nbsp;<WBR>exit&nbsp;<WBR>from&nbsp;<WBR>Specialist&nbsp;<WBR>Services.&nbsp;<WBR>The&nbsp;<WBR>transmission&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>MH&SM-SS&nbsp;<WBR>Exit&nbsp;<WBR>communication&nbsp;<WBR>formally&nbsp;<WBR>terminates&nbsp;<WBR>the&nbsp;<WBR>spell&nbsp;<WBR>of&nbsp;<WBR>care&nbsp;<WBR>by&nbsp;<WBR>MH&SM-Specialist&nbsp;<WBR>Services.&nbsp;<WBR>It&nbsp;<WBR>should&nbsp;<WBR>be&nbsp;<WBR>noted&nbsp;<WBR>that&nbsp;<WBR>this&nbsp;<WBR>communication&nbsp;<WBR>should&nbsp;<WBR>only&nbsp;<WBR>be&nbsp;<WBR>generated&nbsp;<WBR>when&nbsp;<WBR>all&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>conditions&nbsp;<WBR>regarding&nbsp;<WBR>exit&nbsp;<WBR>have&nbsp;<WBR>been&nbsp;<WBR>achieved&nbsp;<WBR>(e.g.&nbsp;<WBR>that&nbsp;<WBR>there&nbsp;<WBR>are&nbsp;<WBR>no&nbsp;<WBR>active&nbsp;<WBR>sections&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>MHA&nbsp;<WBR>still&nbsp;<WBR>applicable&nbsp;<WBR>-&nbsp;<WBR>except&nbsp;<WBR>MHA&nbsp;<WBR>Section&nbsp;<WBR>117,&nbsp;<WBR>and&nbsp;<WBR>that&nbsp;<WBR>no&nbsp;<WBR>other&nbsp;<WBR>activities&nbsp;<WBR>which&nbsp;<WBR>may&nbsp;<WBR>restrict&nbsp;<WBR>exit,&nbsp;<WBR>e.g.&nbsp;<WBR>Non-MHA&nbsp;<WBR>court&nbsp;<WBR>or&nbsp;<WBR>other&nbsp;<WBR>legal/statutory&nbsp;<WBR>restrictions,&nbsp;<WBR>apply).&nbsp;<WBR>This&nbsp;<WBR>communication&nbsp;<WBR>takes&nbsp;<WBR>place&nbsp;<WBR>independently&nbsp;<WBR>of&nbsp;<WBR>any&nbsp;<WBR>non-MH&SM-SS&nbsp;<WBR>generic&nbsp;<WBR>discharge&nbsp;<WBR>communications&nbsp;<WBR>that&nbsp;<WBR>may&nbsp;<WBR>be&nbsp;<WBR>generated&nbsp;<WBR>at&nbsp;<WBR>this&nbsp;<WBR>time;&nbsp;<WBR>however&nbsp;<WBR>it&nbsp;<WBR>should&nbsp;<WBR>always&nbsp;<WBR>accompany&nbsp;<WBR>any&nbsp;<WBR>generic&nbsp;<WBR>discharge&nbsp;<WBR>communications&nbsp;<WBR>sent&nbsp;<WBR>to&nbsp;<WBR>the&nbsp;<WBR>patient’s&nbsp;<WBR>GP.<br /><br />NB&nbsp;<WBR>Any&nbsp;<WBR>further&nbsp;<WBR>MH&SM-SS&nbsp;<WBR>activity&nbsp;<WBR>after&nbsp;<WBR>this&nbsp;<WBR>communication&nbsp;<WBR>has&nbsp;<WBR>been&nbsp;<WBR>generated&nbsp;<WBR>will&nbsp;<WBR>require&nbsp;<WBR>a&nbsp;<WBR>new&nbsp;<WBR>MH&SM-SS&nbsp;<WBR>Entry&nbsp;<WBR>communication&nbsp;<WBR>denoting&nbsp;<WBR>the&nbsp;<WBR>commencement&nbsp;<WBR>of&nbsp;<WBR>a&nbsp;<WBR>new&nbsp;<WBR>spell&nbsp;<WBR>of&nbsp;<WBR>care.&nbsp;<WBR><br /><br />Notification&nbsp;<WBR>following&nbsp;<WBR>MH&SM&nbsp;<WBR>Exit:<br /><br />Following&nbsp;<WBR>successful&nbsp;<WBR>publication&nbsp;<WBR>of&nbsp;<WBR>this&nbsp;<WBR>communication&nbsp;<WBR>to&nbsp;<WBR>PSIS,&nbsp;<WBR>a&nbsp;<WBR>notification&nbsp;<WBR>would&nbsp;<WBR>be&nbsp;<WBR>generated.&nbsp;<WBR>(See&nbsp;<WBR>Document:&nbsp;<WBR>MH&nbsp;<WBR>Notification&nbsp;<WBR>Business&nbsp;<WBR>Use&nbsp;<WBR>Case&nbsp;<WBR>NPFIT-SHR-MODL-PMLMH-0014)<br /><br /></div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Scenario');" id="ScenarioTitle">Scenarios</li>
+		</ul>
+		<div class="ItemBody" id="ScenarioTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="24%" class="TableHeading">Scenario</td>
+					<td width="8%" class="TableHeading">Type</td>
+					<td width="68%" class="TableHeading">Detail</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">Tony McMahon: MH&SM-SS Exit</td>
+					<td width="8%" class="TableRow">Basic Path</td>
+					<td width="68%" class="TableRow"><div class="ObjectDetailsNotes">Tony&nbsp;<WBR>McMahon&nbsp;<WBR>(Aged&nbsp;<WBR>54)&nbsp;<WBR>was&nbsp;<WBR>discharged&nbsp;<WBR>from&nbsp;<WBR>Uptown&nbsp;<WBR>Mental&nbsp;<WBR>Health&nbsp;<WBR>Inpatient&nbsp;<WBR>Unit&nbsp;<WBR>two&nbsp;<WBR>months&nbsp;<WBR>ago&nbsp;<WBR>after&nbsp;<WBR>making&nbsp;<WBR>excellent&nbsp;<WBR>progress.&nbsp;<WBR>Tony&nbsp;<WBR>was&nbsp;<WBR>also&nbsp;<WBR>discharged&nbsp;<WBR>from&nbsp;<WBR>Section&nbsp;<WBR>3&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>Mental&nbsp;<WBR>Health&nbsp;<WBR>Act&nbsp;<WBR>1983&nbsp;<WBR>at&nbsp;<WBR>that&nbsp;<WBR>time&nbsp;<WBR>following&nbsp;<WBR>an&nbsp;<WBR>MHA&nbsp;<WBR>Tribunal&nbsp;<WBR>which&nbsp;<WBR>gave&nbsp;<WBR>him&nbsp;<WBR>a&nbsp;<WBR>discharge&nbsp;<WBR>from&nbsp;<WBR>the&nbsp;<WBR>Section&nbsp;<WBR>conditional&nbsp;<WBR>on&nbsp;<WBR>his&nbsp;<WBR>maintaining&nbsp;<WBR>his&nbsp;<WBR>adherence&nbsp;<WBR>to&nbsp;<WBR>his&nbsp;<WBR>medication&nbsp;<WBR>care&nbsp;<WBR>plan.&nbsp;<WBR>This&nbsp;<WBR>has&nbsp;<WBR>continued&nbsp;<WBR>to&nbsp;<WBR>be&nbsp;<WBR>the&nbsp;<WBR>case&nbsp;<WBR>and&nbsp;<WBR>the&nbsp;<WBR>Uptown&nbsp;<WBR>Community&nbsp;<WBR>Mental&nbsp;<WBR>Health&nbsp;<WBR>Team&nbsp;<WBR>is&nbsp;<WBR>now&nbsp;<WBR>ready&nbsp;<WBR>to&nbsp;<WBR>end&nbsp;<WBR>the&nbsp;<WBR>care&nbsp;<WBR>spell&nbsp;<WBR>within&nbsp;<WBR>MH&SM&nbsp;<WBR>Specialist&nbsp;<WBR>Services.&nbsp;<WBR>At&nbsp;<WBR>his&nbsp;<WBR>final&nbsp;<WBR>CPA&nbsp;<WBR>Review&nbsp;<WBR>held&nbsp;<WBR>a&nbsp;<WBR>week&nbsp;<WBR>ago&nbsp;<WBR>the&nbsp;<WBR>decision&nbsp;<WBR>was&nbsp;<WBR>taken&nbsp;<WBR>to&nbsp;<WBR>exit&nbsp;<WBR>him&nbsp;<WBR>from&nbsp;<WBR>MH&SM&nbsp;<WBR>Specialist&nbsp;<WBR>Services&nbsp;<WBR>into&nbsp;<WBR>the&nbsp;<WBR>care&nbsp;<WBR>of&nbsp;<WBR>his&nbsp;<WBR>G.P.&nbsp;<WBR>with&nbsp;<WBR>the&nbsp;<WBR>provision&nbsp;<WBR>that&nbsp;<WBR>if&nbsp;<WBR>he&nbsp;<WBR>shows&nbsp;<WBR>any&nbsp;<WBR>sign&nbsp;<WBR>of&nbsp;<WBR>relapse&nbsp;<WBR>the&nbsp;<WBR>Uptown&nbsp;<WBR>Community&nbsp;<WBR>Mental&nbsp;<WBR>Health&nbsp;<WBR>Trust&nbsp;<WBR>will&nbsp;<WBR>be&nbsp;<WBR>available&nbsp;<WBR>to&nbsp;<WBR>support&nbsp;<WBR>him.&nbsp;<WBR>On&nbsp;<WBR>the&nbsp;<WBR>day&nbsp;<WBR>of&nbsp;<WBR>Tony’s&nbsp;<WBR>exit&nbsp;<WBR>from&nbsp;<WBR>care&nbsp;<WBR>by&nbsp;<WBR>the&nbsp;<WBR>MH&SM&nbsp;<WBR>Specialist&nbsp;<WBR>Service&nbsp;<WBR>Andrew&nbsp;<WBR>Jones&nbsp;<WBR>his&nbsp;<WBR>current&nbsp;<WBR>Care&nbsp;<WBR>Coordinator&nbsp;<WBR>completes&nbsp;<WBR>an&nbsp;<WBR>Exit&nbsp;<WBR>summary&nbsp;<WBR>on&nbsp;<WBR>the&nbsp;<WBR>local&nbsp;<WBR>system.&nbsp;<WBR>This&nbsp;<WBR>includes&nbsp;<WBR>information&nbsp;<WBR>about&nbsp;<WBR>the&nbsp;<WBR>care&nbsp;<WBR>he&nbsp;<WBR>has&nbsp;<WBR>received.&nbsp;<WBR>It&nbsp;<WBR>also&nbsp;<WBR>gives&nbsp;<WBR>details&nbsp;<WBR>of&nbsp;<WBR>all&nbsp;<WBR>the&nbsp;<WBR>support&nbsp;<WBR>activities&nbsp;<WBR>that&nbsp;<WBR>will&nbsp;<WBR>be&nbsp;<WBR>continuing&nbsp;<WBR>as&nbsp;<WBR>well&nbsp;<WBR>as&nbsp;<WBR>recommendations&nbsp;<WBR>for&nbsp;<WBR>monitoring,&nbsp;<WBR>aftercare&nbsp;<WBR>and&nbsp;<WBR>support.&nbsp;<WBR>When&nbsp;<WBR>he&nbsp;<WBR>has&nbsp;<WBR>finished&nbsp;<WBR>recording&nbsp;<WBR>the&nbsp;<WBR>Exit&nbsp;<WBR>information&nbsp;<WBR>Andrew&nbsp;<WBR>approves&nbsp;<WBR>the&nbsp;<WBR>communication&nbsp;<WBR>and&nbsp;<WBR>the&nbsp;<WBR>system&nbsp;<WBR>generates&nbsp;<WBR>an&nbsp;<WBR>MH&SM&nbsp;<WBR>Exit&nbsp;<WBR>communication&nbsp;<WBR>for&nbsp;<WBR>publication&nbsp;<WBR>to&nbsp;<WBR>PSIS.&nbsp;<WBR></div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

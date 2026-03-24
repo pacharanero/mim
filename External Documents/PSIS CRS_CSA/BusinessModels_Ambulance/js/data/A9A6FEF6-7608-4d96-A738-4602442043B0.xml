@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("2.3:1", "", "Getting to the BIM", "EARoot/EA2/EA3/EA108.htm", "175.png", "88", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("2.3:2", "", "Administrative Information", "EARoot/EA2/EA3/EA110.htm", "5.png", "2410", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.3:3", "", "Advice and Recommendations", "EARoot/EA2/EA3/EA111.htm", "5.png", "2412", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.3:4", "", "Ambulance Encounter Report", "EARoot/EA2/EA3/EA112.htm", "5.png", "2408", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.3:5", "", "Care Event Information", "EARoot/EA2/EA3/EA113.htm", "5.png", "2411", "0", "", "Class");
+tocTab[tocTab.length] = new Array("2.3:6", "", "Presenting Information", "EARoot/EA2/EA3/EA114.htm", "5.png", "2409", "0", "", "Class");

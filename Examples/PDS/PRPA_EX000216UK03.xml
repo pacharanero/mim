@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This example message is provided for illustrative purposes only. It has had no clinical validation nor is it guaranteed to be fully compliant with the written message specification. Where there are conflicts with the written message specification or schema, the specification or schema shall be considered to take precedence. -->
+<RegistrationEvent xmlns="urn:hl7-org:v3" xmlns:gsd="http://aurora.regenstrief.org/GenericXMLSchema" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:xlink="http://www.w3.org/TR/WD-xlink" xmlns:ex="urn:hl7-org/v3-example" xmlns:mif="urn:hl7-org:v3/mif" xmlns:xhtml="xhtml:NPfIT:PresentationText" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3
+../../Schemas/PRPA_MT000216UK03.xsd" classCode="REG" moodCode="EVN">
+	<code code="1" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.213"/>
+	<pertinentInformation typeCode="PERT">
+		<pertinentSerialChangeNumber classCode="OBS" moodCode="EVN">
+			<code code="2" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.35"/>
+			<value value="-0"/>
+		</pertinentSerialChangeNumber>
+	</pertinentInformation>
+	<subject typeCode="SBJ">
+		<patientRole classCode="PAT">
+			<addr use="H" updateMode="unchanged">
+				<streetAddressLine>11 Tortoise Lane</streetAddressLine>
+				<streetAddressLine>Leeds</streetAddressLine>
+				<streetAddressLine>Yorkshire</streetAddressLine>
+				<postalCode>LS1 2KE</postalCode>
+				<addressKey>1287364</addressKey>
+			</addr>
+			<confidentialityCode code="Y" codeSystem="2.16.840.1.113883.2.1.3.2.4.16.1" updateMode="unchanged"/>
+			<id root="2.16.840.1.113883.2.1.4.1" extension="9999999484"/>
+			<telecom use="HP" value="tel:01392251289" updateMode="altered">
+			</telecom>
+			<patientPerson classCode="PSN" determinerCode="INSTANCE">
+				<name use="L">
+					<prefix>Mrs</prefix>
+					<given>Sophie</given>
+					<family>Shakespeare</family>
+				</name>
+				<playedOtherProviderPatient classCode="PAT">
+					<subjectOf typeCode="SBJ">
+						<patientCareProvision classCode="PCPR" moodCode="EVN" updateMode="altered">
+							<code code="1" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.37"/>
+							<effectiveTime>
+								<low value="20040625"/>
+								<high value="20070625"/>
+							</effectiveTime>
+							<performer typeCode="PRF">
+								<assignedOrganization classCode="ASSIGNED">
+									<id root="2.16.840.1.113883.2.1.4.3" extension="Z99993"/>
+								</assignedOrganization>
+							</performer>
+						</patientCareProvision>
+					</subjectOf>
+				</playedOtherProviderPatient>
+				<COCT_MT000210UK01.PartBirthTime classCode="PART" updateMode="unchanged">
+					<partPerson classCode="PSN" determinerCode="INSTANCE">
+						<birthTime value="20070719"/>
+					</partPerson>
+					<subjectOf typeCode="SBJ">
+						<notificationTime classCode="OBS" moodCode="EVN">
+							<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.35" code="45"/>
+							<value value="200707191701"/>
+						</notificationTime>
+					</subjectOf>
+				</COCT_MT000210UK01.PartBirthTime>
+				<COCT_MT000209UK01.PartAdminGenderCode classCode="PART" updateMode="unchanged">
+					<partPerson classCode="PSN" determinerCode="INSTANCE">
+						<administrativeGenderCode code="1"/>
+					</partPerson>
+					<subjectOf typeCode="SBJ">
+						<notificationTime classCode="OBS" moodCode="EVN">
+							<code code="45" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.35"/>
+							<value value="200707191701"/>
+						</notificationTime>
+					</subjectOf>
+				</COCT_MT000209UK01.PartAdminGenderCode>
+			</patientPerson>
+			<recordTargetOf typeCode="RCT">
+				<clinicalDocumentEvent classCode="DOCCLIN" moodCode="EVN">
+					<code code="16521000000101" codeSystem="2.16.840.1.113883.2.1.3.2.4.15"/>
+					<subjectOf typeCode="SUBJ">
+						<transferStatus classCode="OBS" moodCode="EVN" updateMode="unchanged">
+							<code code="19" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.35"/>
+							<priorityCode code="U" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.190"/>
+							<value code="RS" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.167"/>
+							<subjectOf1 typeCode="SUBJ">
+								<systemEffectiveDate classCode="OBS" moodCode="EVN">
+									<code code="02" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.170"/>
+									<value>
+										<low value="20040625"/>
+										<high value="20070625"/>
+									</value>
+								</systemEffectiveDate>
+							</subjectOf1>
+						</transferStatus>
+					</subjectOf>
+				</clinicalDocumentEvent>
+			</recordTargetOf>
+			<replacementOf typeCode="REPL">
+				<oldVersion classCode="PAT">
+					<id root="2.16.840.1.113883.2.1.4.1" extension="9999999484"/>
+				</oldVersion>
+			</replacementOf>
+			<subjectOf typeCode="SBJ">
+				<suspectedMultipleRegistrations classCode="OBS" moodCode="EVN" updateMode="unchanged">
+					<code code="20" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.35"/>
+					<effectiveTime>
+						<low value="20040625"/>
+						<high value="20070625"/>
+					</effectiveTime>
+				</suspectedMultipleRegistrations>
+			</subjectOf>
+			<subjectOf1 typeCode="SBJ">
+				<consent classCode="OBS" moodCode="EVN" updateMode="unchanged">
+					<code code="4" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.164"/>
+					<effectiveTime value="20070625"/>
+					<value code="1" codeSystem="2.16.840.1.113883.2.1.3.2.4.16.2"/>
+				</consent>
+			</subjectOf1>
+			<subjectOf10 typeCode="SBJ">
+				<COCT_MT000205UK01.SourceIdentified moodCode="EVN" classCode="OBS">
+					<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.170" code="01"/>
+					<value root="1.2.826.0.1285.0.2.0.107" extension="A123"/>
+				</COCT_MT000205UK01.SourceIdentified>
+			</subjectOf10>
+			<subjectOf2 typeCode="SBJ">
+				<pCRemovalRegistrationEvent classCode="REG" moodCode="EVN" updateMode="unchanged">
+					<availabilityTime value="20070625"/>
+					<code code="04" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.165"/>
+					<effectiveTime>
+						<low value="20040625"/>
+						<high value="20070625"/>
+					</effectiveTime>
+					<reasonCode code="DEA" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.168"/>
+					<responsibleParty typeCode="RESP">
+						<registeringAuthority classCode="ASSIGNED">
+							<code code="d" codeSystem="2.16.840.1.113883.2.1.3.2.4.16.20"/>
+							<id root="1.2.826.0.1285.0.1.10" extension="Z999997"/>
+							<assignedRegisteringOrganisation classCode="ORG" determinerCode="INSTANCE">
+								<scopedAssignedPerson classCode="ASSIGNED">
+									<id root="1.2.826.0.1285.0.2.0.65" extension="12789345"/>
+								</scopedAssignedPerson>
+							</assignedRegisteringOrganisation>
+						</registeringAuthority>
+					</responsibleParty>
+				</pCRemovalRegistrationEvent>
+			</subjectOf2>
+			<subjectOf3 typeCode="SBJ">
+				<nHAISRegistrationEvent classCode="REG" moodCode="EVN" updateMode="unchanged">
+					<code code="01" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.165"/>
+					<effectiveTime>
+						<low value="20040625"/>
+						<high value="20070625"/>
+					</effectiveTime>
+					<custodian typeCode="CST">
+						<assignedDevice classCode="ASSIGNED">
+							<id root="2.16.840.1.113883.2.1.3.2.4.6" extension="L19035678"/>
+						</assignedDevice>
+					</custodian>
+				</nHAISRegistrationEvent>
+			</subjectOf3>
+			<subjectOf4 typeCode="SBJ">
+				<COCT_MT000311UK01.DataQualityType moodCode="EVN" classCode="OBS" updateMode="unchanged">
+					<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.247" code="B"/>
+					<effectiveTime value="20070808"/>
+					<pertinentInformation typeCode="PERT">
+						<pertinentDataQualityInvestigationReason moodCode="EVN" classCode="OBS">
+							<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.248" code="3"/>
+						</pertinentDataQualityInvestigationReason>
+					</pertinentInformation>
+					<subject typeCode="SBJ">
+						<suspectPatient classCode="PAT">
+							<id extension="1234566" root="2.16.840.1.113883.2.1.4.1"/>
+							<id extension="1234568" root="2.16.840.1.113883.2.1.4.1"/>
+							<id extension="1234569" root="2.16.840.1.113883.2.1.4.1"/>
+							<id extension="1234565" root="2.16.840.1.113883.2.1.4.1"/>
+						</suspectPatient>
+					</subject>
+				</COCT_MT000311UK01.DataQualityType>
+			</subjectOf4>
+			<subjectOf5 typeCode="SBJ">
+				<alternativeIdentifier classCode="OBS" moodCode="EVN" updateMode="unchanged">
+					<code code="27" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.35"/>
+					<effectiveTime>
+						<low value="20040625"/>
+						<high value="20070625"/>
+					</effectiveTime>
+					<value root="2.16.840.1.113883.2.1.3.2.4.16.52" extension="B5678390"/>
+				</alternativeIdentifier>
+			</subjectOf5>
+			<subjectOf6 typeCode="SBJ">
+				<bloodDonorPrefs classCode="OBS" moodCode="EVN" updateMode="unchanged">
+					<code code="25" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.35"/>
+					<effectiveTime value="20070625"/>
+					<component typeCode="COMP">
+						<bloodDonorConsent classCode="OBS" moodCode="EVN" updateMode="unchanged">
+							<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.35" code="36"/>
+							<effectiveTime>
+								<low value="20040625"/>
+								<high value="20070625"/>
+							</effectiveTime>
+							<value code="1" codeSystem="2.16.840.1.113883.2.1.3.2.4.16.2"/>
+						</bloodDonorConsent>
+					</component>
+				</bloodDonorPrefs>
+			</subjectOf6>
+			<subjectOf7 typeCode="SBJ">
+				<deathNotification classCode="OBS" moodCode="EVN" updateMode="unchanged">
+					<code code="3" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.35"/>
+					<value code="2" codeSystem="2.16.840.1.113883.2.1.3.2.4.16.5"/>
+				</deathNotification>
+			</subjectOf7>
+			<subjectOf8 typeCode="SBJ">
+				<organDonorPrefs classCode="OBS" moodCode="EVN" updateMode="unchanged">
+					<code code="26" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.35"/>
+					<effectiveTime value="20070625"/>
+					<component typeCode="COMP">
+						<organDonorConsent classCode="OBS" moodCode="EVN" updateMode="altered">
+							<code code="37" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.35"/>
+							<effectiveTime>
+								<low value="20040625"/>
+								<high value="20070625"/>
+							</effectiveTime>
+							<value code="2" codeSystem="2.16.840.1.113883.2.1.3.2.4.16.2"/>
+						</organDonorConsent>
+					</component>
+				</organDonorPrefs>
+			</subjectOf8>
+			<subjectOf9 typeCode="SBJ">
+				<treatmentEntitlement classCode="OBS" moodCode="EVN" updateMode="unchanged">
+					<code code="21" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.35"/>
+					<effectiveTime>
+						<low value="20040625"/>
+						<high value="20070625"/>
+					</effectiveTime>
+					<value code="1" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.210"/>
+					<component typeCode="COMP">
+						<treatmentCategoryType classCode="OBS" moodCode="EVN">
+							<code code="24" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.35"/>
+							<value code="1" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.208"/>
+						</treatmentCategoryType>
+					</component>
+					<component1 typeCode="COMP">
+						<residentialStatus classCode="OBS" moodCode="EVN">
+							<code code="23" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.35"/>
+							<value code="H" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.216"/>
+						</residentialStatus>
+					</component1>
+				</treatmentEntitlement>
+			</subjectOf9>
+		</patientRole>
+	</subject>
+</RegistrationEvent>

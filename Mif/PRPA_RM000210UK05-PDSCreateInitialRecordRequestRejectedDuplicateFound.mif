@@ -1,0 +1,1659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<staticModel isAbstract="false" isSerializable="true"
+    name="PRPA_RM000210UK05" packageKind="root"
+    representationKind="flat" xmlns="urn:hl7-org:v3/mif"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3/mif ../MifSchemas/mifStaticModelFlat.xsd">
+    <packageLocation artifact="RM-deprecated" domain="PA" id="000210"
+        name="PRPA_RM000210UK05" realm="UK" root="DEFN" section="HM"
+        subSection="PR" version="05"/>
+    <header>
+        <renderingInformation
+            application="NHS R-MIM Designer 2.99.KJ.04"
+            renderingTime="2008-02-05T16:51:19" schemaVersion="1"/>
+        <legalese copyrightOwner="NHS Connecting for Health"/>
+    </header>
+    <graphicRepresentation presentation="HL7">
+        <graphElement name="Main">
+            <position x="0.0" y="0.0"/>
+            <size height="8.25478" width="13.45459"/>
+        </graphElement>
+    </graphicRepresentation>
+    <derivationSupplier staticModelDerivationId="1">
+        <targetStaticModel artifact="RIM" realm="UV" root="DEFN" version="1"/>
+    </derivationSupplier>
+    <importedCommonModelElementPackage id="1" name="CMETInfo" realm="UV" root="DEFN"/>
+    <ownedEntryPoint className="PdsRegistrationResponse"
+        id="PRPA_RM000210UK05" isAbstract="false" name="PDS Create Initial Record Request Rejected (Duplicate Found)">
+        <annotations>
+            <description>
+                <text>
+                    <p>A negative response to the Create Initial Record Request message, where one</p>
+                    <p>or more duplicate records were found on the PDS. The message contains details</p>
+                    <p>of the duplicate record(s) found.</p>
+                </text>
+            </description>
+            <otherAnnotation type="html"/>
+        </annotations>
+        <graphicRepresentation>
+            <graphElement containerDiagramName="Main"
+                isHeightAutoSize="false" isWidthAutoSize="false"
+                nodeOrientation="Down" shapeId="PRPA_RM000210UK05">
+                <position x="3.2426" y="0.02778"/>
+                <size height="0.71944" width="4.1813"/>
+                <anchorage connectToShapeId="Sheet.1">
+                    <position x="5.33325" y="0.74722"/>
+                    <graphEdge>
+                        <anchor>
+                            <position x="5.33325" y="1.49222"/>
+                        </anchor>
+                    </graphEdge>
+                </anchorage>
+            </graphElement>
+        </graphicRepresentation>
+    </ownedEntryPoint>
+    <ownedClass>
+        <class isAbstract="false" name="PdsRegistrationResponse">
+            <derivationSupplier className="Act" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="false" isWidthAutoSize="true"
+                    shapeId="Sheet.1" shapeTemplate="Act">
+                    <position x="4.466" y="1.49222"/>
+                    <size height="1.075" width="1.813"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <strong>
+                                <font face="times new roman,times" size="3">Parent class linking to details of one or more duplicate patient records found on the PDS, which match the patient record contained in the original request to register a new record on the PDS.</font>
+                            </strong>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="REG"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is a Registration act.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Act" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="REG"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="EVN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="moodCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is an Event.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Act" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="EVN"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="PatientRole">
+            <derivationSupplier className="Patient" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="false" isWidthAutoSize="true"
+                    shapeId="Sheet.5" shapeTemplate="Role">
+                    <position x="3.897" y="3.04922"/>
+                    <size height="3.68" width="3.03"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <strong>
+                                <font face="times new roman,times" size="3">Parent class linking to and containing information about a patient.</font>
+                            </strong>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="PAT"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is a Patient role.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Patient" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PAT"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="id" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">
+                                    <font face="times new roman,times" size="3">The current NHS number of the patient.</font>
+                                    <p class="63C7BF90-553E-11DB-A2A2-929938389B48">
+                                    <font face="Times New Roman" size="3">The Identifier External datatype flavour is used to carry this information as follows:</font>
+                                    </p>
+                                    <ul>
+                                    <li>
+                                    <div class="63C7BF90-553E-11DB-A2A2-929938389B48">
+                                    <font
+                                    face="Times New Roman" size="3">The <em>root</em> attribute will contain an OID with the value "2.16.840.1.113883.2.1.4.1"</font>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div class="63C7BF90-553E-11DB-A2A2-929938389B48">
+                                    <font
+                                    face="Times New Roman" size="3">The <em>extension</em> attribute will contain the NHS Number</font>
+                                    </div>
+                                    </li>
+                                    </ul>
+                                </font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="id"
+                    className="Patient" staticModelDerivationId="1"/>
+                <type name="II" typeSpecialisation="II.NPfIT.oid.mandatory"/>
+            </attribute>
+            <attribute isMandatory="false" maximumMultiplicity="1"
+                minimumMultiplicity="0" name="confidentialityCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">
+                                    <font face="times new roman,times" size="3">Indicates whether or not the patient's details are marked as sensitive.</font>
+                                    <p>
+                                    <font face="Times New Roman" size="3">The Coded with Code System datatype flavour is used to carry this information as follows:</font>
+                                    </p>
+                                    <ul>
+                                    <li>
+                                    <font face="Times New Roman" size="3">The <em>code</em> attribute will contain a value from the list of codes in the <u>InformationSensitivity</u> vocabulary</font>
+                                    </li>
+                                    <li>
+                                    <font face="Times New Roman" size="3">The <em>codeSystem</em> attribute will contain the OID "2.16.840.1.113883.2.1.3.2.4.16.1"</font>
+                                    </li>
+                                    </ul>
+                                </font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="confidentialityCode"
+                    className="Patient" staticModelDerivationId="1"/>
+                <type name="CV"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="InformationSensitivity"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Subject">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Down" shapeId="Sheet.15"
+                    shapeTemplate="Participation" textWrappingWidth="66.0">
+                    <position x="4.89596" y="2.56722"/>
+                    <size height="0.482" width="0.99409"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <strong>
+                                <font face="times new roman,times" size="3">A link to the Subject of this Registration Event.</font>
+                            </strong>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="SBJ"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <div>
+                                <p>Indicates that this is a subject participation<br/>
+                                </p>
+                                <ul>
+                                    <li>Fixed value: "SBJ" (Subject)</li>
+                                </ul>
+                            </div>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SBJ"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="BirthWeight">
+            <derivationSupplier className="Observation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.21" shapeTemplate="Act">
+                    <position x="0.234" y="3.05266"/>
+                    <size height="0.78112" width="2.507"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <strong>
+                                <font face="times new roman,times" size="3">Details of a patient's birth weight.</font>
+                            </strong>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="OBS"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is an Observation act.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="OBS"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="EVN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="moodCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is an Event.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="EVN"/>
+            </attribute>
+            <attribute conformance="R" defaultValue="364589006"
+                fixedValue="364589006" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="code" sortKey="4">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">
+                                    <font face="times new roman,times" size="3">The type of observation. In this case, it is the patient's birth weight.</font>
+                                    <p>
+                                    <font face="Times New Roman" size="3">The Coded with Code System datatype flavour is used to carry this information as follows:</font>
+                                    </p>
+                                    <ul>
+                                    <li>
+                                    <font face="Times New Roman" size="3">The <em>code</em> attribute will contain the value "364589006" (Birth weight) from the list of codes in the <u>SnomedCT</u> vocabulary</font>
+                                    </li>
+                                    <li>
+                                    <font face="Times New Roman" size="3">The <em>codeSystem</em> attribute will contain the OID "2.16.840.1.113883.2.1.3.2.4.15"</font>
+                                    </li>
+                                    </ul>
+                                </font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="CD"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SnomedCT"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="value" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <div>
+                                <p>
+                                    <font face="times new roman,times" size="3">The weight of the patient as measured at birth.</font>
+                                </p>
+                                <p>
+                                    <font face="Times New Roman" size="3">The length of this field is fixed at 4 digits, so the value must be in the range 0000-9999. The values 0001-9998 are interpreted as an integer number of grams. Values 0000 and 9999 carry special meaning as follows:</font>
+                                </p>
+                                <ul>
+                                    <li>
+                                    <font face="Times New Roman" size="3">0000 indicates 'Unweighed'</font>
+                                    </li>
+                                    <li>
+                                    <font face="Times New Roman" size="3">9999 indicates 'Unweighed'</font>
+                                    </li>
+                                </ul>
+                                <p>
+                                    <font face="Times New Roman" size="3">This is in accordance with the NHS Data Dictionary.</font>
+                                </p>
+                            </div>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="value"
+                    className="Observation" staticModelDerivationId="1"/>
+                <type name="INT"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Subject_1">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Right" shapeId="Sheet.25"
+                    shapeTemplate="Participation" textWrappingWidth="66.0">
+                    <position x="2.74" y="3.27883"/>
+                    <size height="0.30278" width="1.158"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <strong>
+                                <font face="times new roman,times" size="3">A link to an Observation that this role is the subject of.</font>
+                            </strong>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="SBJ"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Indicates that this is a subject participation<br/>
+                            </p>
+                            <ul>
+                                <li>Fixed value: "SBJ" (Subject)</li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SBJ"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Person">
+            <derivationSupplier className="Person" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.31" shapeTemplate="Entity">
+                    <position x="8.21" y="2.26422"/>
+                    <size height="0.75" width="2.69"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <strong>
+                                <font face="times new roman,times" size="3">Parent class linking to and containing information about a patient which is specific to the person.</font>
+                            </strong>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="PSN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is a Person entity.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Person" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PSN"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="INSTANCE"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="determinerCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is an Instance of a person.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="determinerCode"
+                    className="Person" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="INSTANCE"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="multipleBirthOrderNumber" sortKey="6">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <div>
+                                <font face="times new roman,times" size="3">
+                                    <font face="times new roman,times" size="3">Describes the sequence in the case of multiple births (e.g. twins, triplets etc.). For births that are not a part of a multiple birth, this will be set to 1.</font>
+                                </font>
+                                <font face="Times New Roman" size="3">
+                                    <div>
+                                    <p>
+                                    <font face="Times New Roman" size="3">The value must be in the range 1-9. The values 1-7 are interpreted literally; values 8 and 9 carry special meaning as follows:</font>
+                                    </p>
+                                    <ul>
+                                    <li>
+                                    <div>
+                                    <font
+                                    face="Times New Roman" size="3">8 indicates 'Not applicable'</font>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div>
+                                    <font
+                                    face="Times New Roman" size="3">9 indicates 'Not known'</font>
+                                    </div>
+                                    </li>
+                                    </ul>
+                                    <p>
+                                    <font face="Times New Roman" size="3">This is in accordance with the NHS Data Dictionary.</font>
+                                    </p>
+                                    </div>
+                                </font>
+                            </div>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    attributeName="multipleBirthOrderNumber"
+                    className="Person" staticModelDerivationId="1"/>
+                <type name="INT"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="ObstetricCareProvision">
+            <derivationSupplier className="Act" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.35" shapeTemplate="Act">
+                    <position x="0.01" y="5.62922"/>
+                    <size height="0.75" width="2.043"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>Parent class linking to and containing information about an obstetric care event that the patient is the baby of.</b>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="PCPR"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is a Patient Care Provision act.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Act" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PCPR"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="EVN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="moodCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is an Event.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="moodCode"
+                    className="Act" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="EVN"/>
+            </attribute>
+            <attribute conformance="R" defaultValue="OBS"
+                fixedValue="OBS" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="code" sortKey="4">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is an obstetric care event.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="code" className="Act" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="ActCode"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Baby">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Right" shapeId="Sheet.39"
+                    shapeTemplate="Participation" textWrappingWidth="66.0">
+                    <position x="2.053" y="5.84683"/>
+                    <size height="0.30278" width="1.845"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <strong>
+                                <font face="times new roman,times" size="3">A link to a care provision event representing the birth of the patient.</font>
+                            </strong>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="BBY"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>                                   Indicates that this is a baby participation</p>
+                            <ul>
+                                <li>Fixed value: "BBY" (baby)                              </li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="BBY"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="RecordTarget">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Down" shapeId="Sheet.45"
+                    shapeTemplate="Participation" textWrappingWidth="66.0">
+                    <position x="0.50567" y="6.37922"/>
+                    <size height="0.69328" width="1.01866"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <b>A link to the record target of this act. </b>
+                        </p>
+                        <p>
+                            <b>The record target of an obstetric care provision act is the mother. </b>
+                        </p>
+                        <p>
+                            <b>Note: Atleast one of mother's date of birth and mother's NHS number will be returned.              </b>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="RCT"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is a Record Target participation.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="RCT"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="PrimaryInformationRecipient">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Up" shapeId="Sheet.51"
+                    shapeTemplate="Participation" textWrappingWidth="66.0">
+                    <position x="0.0791" y="4.82995"/>
+                    <size height="0.79927" width="1.9818"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <font face="times new roman,times" size="3">
+                                <strong>A link to the primary recipient of the information relating to this act.</strong>
+                            </font>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="PRCP"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is a Primary Information Recipient.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PRCP"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="PartnerChildHealth">
+            <derivationSupplier className="Role" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.57" shapeTemplate="Role">
+                    <position x="0.22" y="4.3155"/>
+                    <size height="0.51445" width="1.48"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <p>
+                            <strong>
+                                <font face="times new roman,times" size="3">Details of the partner child health department.</font>
+                            </strong>
+                        </p>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="ASSIGNED"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">Indicates that this is an Assigned role.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Role" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="ASSIGNED"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="id" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <div>
+                                <p>
+                                    <font face="times new roman,times" size="3">The unique identifier for the child health department.</font>
+                                </p>
+                                <p>
+                                    <font face="Times New Roman" size="3">The Identifier External datatype flavour is used to carry this information as follows:</font>
+                                </p>
+                                <ul>
+                                    <li>
+                                    <font face="Times New Roman" size="3">The <em>root</em> attribute will contain an OID with the value "1.2.826.0.1285.0.1.10"</font>
+                                    </li>
+                                    <li>
+                                    <font face="Times New Roman" size="3">The <em>extension</em> attribute will contain the SDS Organisation ID</font>
+                                    </li>
+                                </ul>
+                            </div>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="id" className="Role" staticModelDerivationId="1"/>
+                <type name="II" typeSpecialisation="II.NPfIT.oid.mandatory"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Mother">
+            <derivationSupplier className="Patient" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.67" shapeTemplate="Role">
+                    <position x="0.385" y="7.0725"/>
+                    <size height="0.51445" width="1.25"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>The role of the Mother.</b>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="PAT"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>A code indicating that the role is that of a Patient</p>
+                            <ul>
+                                <li>Fixed value: "PAT"</li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Patient" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PAT"/>
+            </attribute>
+            <attribute isMandatory="false" maximumMultiplicity="1"
+                minimumMultiplicity="0" name="id" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>The current nationally recognised identifier for the Mother.<br/>
+                            </p>
+                            <p>This identifier can be any of the following:      </p>
+                            <ul>
+                                <li>The new style of NHS number;</li>
+                                <li>A temporary NHS number issued by an NHAIS registration authority;</li>
+                                <li>An old style NHS number<br type="_moz"/>
+                                </li>
+                            </ul>
+                            <p>The Identifier External dataType flavour is used to carry this information as follows:-  </p>
+                            <p>A NHS number is carried in the following way:      </p>
+                            <ul>
+                                <li>The root attribute will contain an OID with the value "2.16.840.1.113883.2.1.4.1";     </li>
+                                <li>The extension attribute will contain the NHS number itself.</li>
+                            </ul>
+                            <p>If it is an Old Format or Temporary NHS Number:<br/>
+                            </p>
+                            <ul>
+                                <li>The root attribute will contain an OID with the value  2.16.840.1.113883.2.1.3.2.4.3  </li>
+                                <li>The extension attribute will contain the Old Format or Temporary NHS Number</li>
+                            </ul>Note, at least one of the Mother's NHS Number or the Mother's Date of Birth will be returned.</text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="id"
+                    className="Patient" staticModelDerivationId="1"/>
+                <type name="II" typeSpecialisation="II.NPfIT.oid.mandatory"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="MotherPerson">
+            <derivationSupplier className="Person" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.77" shapeTemplate="Entity">
+                    <position x="2.4505" y="7.45478"/>
+                    <size height="0.78112" width="1.699"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>The Entity playing the role of Mother.</b>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="PSN"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="classCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>A code indicating that the entity is a Person</p>
+                            <ul>
+                                <li>Fixed value: "PSN"</li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="classCode"
+                    className="Person" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="PSN"/>
+            </attribute>
+            <attribute conformance="R" fixedValue="INSTANCE"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="determinerCode" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>Indicates that this is an actual instance of the entity, and not a general description of a class of entity</p>
+                            <ul>
+                                <li>Fixed value: "INSTANCE"</li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="determinerCode"
+                    className="Person" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="INSTANCE"/>
+            </attribute>
+            <attribute conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="name" sortKey="6">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>The name of the mother.                                          <p>The PN datatype will be of the flavour <i>Person Name structured, </i>and will and contain:</p>
+                            <ul>
+                                <li>Exactly one &lt;family&gt;  element, to carry the family name of the mother </li>
+                                <li>
+                                    <family>One or two &lt;given&gt; elements, to carry the mandatory forename, and optional other forename of the mother</family>
+                                </li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="name"
+                    className="Person" staticModelDerivationId="1"/>
+                <type name="PN"/>
+            </attribute>
+            <attribute isMandatory="false" maximumMultiplicity="1"
+                minimumMultiplicity="0" name="birthTime" sortKey="2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>This contains the Mother's date of birth as a single point in time - date only, without time. </p>
+                            <ul>
+                                <li>Note, atleast one of the Mother's NHS Number or the Mother's Date of Birth will be returned. </li>
+                            </ul>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="birthTime"
+                    className="Person" staticModelDerivationId="1"/>
+                <type name="TS"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <commonModelElementRef name="COCT_MT000203UK03">
+            <derivationSupplier className="Role" staticModelDerivationId="1"/>
+            <supplierStructuralDomain
+                domainName="Role(Scoped or Performed)" mnemonic="PART"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.81" shapeTemplate="CMET">
+                    <position x="7.91981" y="0.13922"/>
+                    <size height="0.62778" width="1.78019"/>
+                </graphElement>
+            </graphicRepresentation>
+            <generalizationParent name="R_PartPersonNameUniversal"/>
+        </commonModelElementRef>
+    </ownedClass>
+    <ownedClass>
+        <commonModelElementRef name="COCT_MT000201UK03">
+            <derivationSupplier className="Role" staticModelDerivationId="1"/>
+            <supplierStructuralDomain
+                domainName="Role(Scoped or Performed)" mnemonic="PART"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.87" shapeTemplate="CMET">
+                    <position x="9.2" y="1.03922"/>
+                    <size height="0.62778" width="1.82654"/>
+                </graphElement>
+            </graphicRepresentation>
+            <generalizationParent name="R_PartAddressUniversal"/>
+        </commonModelElementRef>
+    </ownedClass>
+    <ownedClass>
+        <commonModelElementRef name="COCT_MT000210UK01">
+            <derivationSupplier className="Role" staticModelDerivationId="1"/>
+            <supplierStructuralDomain
+                domainName="Role(Scoped or Performed)" mnemonic="PART"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.93" shapeTemplate="CMET">
+                    <position x="10.77645" y="3.627"/>
+                    <size height="0.62778" width="2.0471"/>
+                </graphElement>
+            </graphicRepresentation>
+            <generalizationParent name="R_PartPersonBirthTimeUniversal"/>
+        </commonModelElementRef>
+    </ownedClass>
+    <ownedClass>
+        <commonModelElementRef name="COCT_MT000209UK01">
+            <derivationSupplier className="Role" staticModelDerivationId="1"/>
+            <supplierStructuralDomain
+                domainName="Role(Scoped or Performed)" mnemonic="PART"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.99" shapeTemplate="CMET">
+                    <position x="8.24123" y="3.85478"/>
+                    <size height="0.62778" width="1.91754"/>
+                </graphElement>
+            </graphicRepresentation>
+            <generalizationParent name="R_PartPersonGenderUniversal"/>
+        </commonModelElementRef>
+    </ownedClass>
+    <ownedClass>
+        <class isAbstract="false" name="Subject2">
+            <derivationSupplier className="Participation" staticModelDerivationId="1"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    nodeOrientation="Left" shapeId="Sheet.112"
+                    shapeTemplate="Participation" textWrappingWidth="66.0">
+                    <position x="6.927" y="6.05078"/>
+                    <size height="0.30278" width="1.46319"/>
+                </graphElement>
+            </graphicRepresentation>
+            <annotations>
+                <otherAnnotation type="html">
+                    <text>
+                        <b>Refers to data quality information associated with this patient</b>
+                    </text>
+                </otherAnnotation>
+            </annotations>
+            <attribute conformance="R" fixedValue="SBJ"
+                isMandatory="true" isStructural="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="typeCode" sortKey="1">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>Indicates this is a subject participation </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier attributeName="typeCode"
+                    className="Participation" staticModelDerivationId="1"/>
+                <type name="CS"/>
+                <supplierDomainSpecification codingStrength="CNE" domainName="SBJ"/>
+            </attribute>
+        </class>
+    </ownedClass>
+    <ownedClass>
+        <commonModelElementRef name="COCT_MT000312UK01">
+            <derivationSupplier className="Act" staticModelDerivationId="1"/>
+            <supplierStructuralDomain domainName="Act" mnemonic="OBS"/>
+            <graphicRepresentation presentation="HL7">
+                <graphElement containerDiagramName="Main"
+                    isHeightAutoSize="true" isWidthAutoSize="true"
+                    shapeId="Sheet.118" shapeTemplate="CMET">
+                    <position x="8.39019" y="5.85478"/>
+                    <size height="0.62778" width="1.21963"/>
+                </graphElement>
+            </graphicRepresentation>
+            <generalizationParent name="A_DataQualityUniversal"/>
+        </commonModelElementRef>
+    </ownedClass>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.1"
+                containerDiagramName="Main" shapeId="Sheet.15">
+                <position x="5.393" y="2.56722"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.1">
+                        <position x="5.393" y="2.56722"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="*" minimumMultiplicity="1"
+                name="subject" participantClassName="Subject">
+                <annotations>
+                    <otherAnnotation type="html"/>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="PdsRegistrationResponse" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="PdsRegistrationResponse">
+                <derivationSupplier associationEndName="act"
+                    className="Subject" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.31"
+                containerDiagramName="Main" shapeId="Sheet.5">
+                <position x="6.927" y="6.72922"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.31">
+                        <position x="8.211" y="2.45099"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="patientPerson" participantClassName="Person">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">A link to details of the person playing the role of patient.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="player"
+                    className="PatientRole" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="PatientRole">
+                <derivationSupplier associationEndName="playedRole"
+                    className="Person" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.5"
+                containerDiagramName="Main" shapeId="Sheet.25">
+                <position x="3.898" y="3.43022"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.5">
+                        <position x="3.898" y="3.43022"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="subjectOf" participantClassName="Subject_1">
+                <annotations>
+                    <otherAnnotation type="html"/>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="PatientRole" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="PatientRole">
+                <derivationSupplier associationEndName="role"
+                    className="Subject_1" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.5"
+                containerDiagramName="Main" shapeId="Sheet.39">
+                <position x="3.898" y="5.99822"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.5">
+                        <position x="3.898" y="5.99822"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="babyOf" participantClassName="Baby">
+                <annotations>
+                    <otherAnnotation type="html"/>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="PatientRole" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="PatientRole">
+                <derivationSupplier associationEndName="role"
+                    className="Baby" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.5"
+                containerDiagramName="Main" shapeId="Sheet.15">
+                <position x="5.393" y="3.04922"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.5">
+                        <position x="5.393" y="3.04922"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="patientRole" participantClassName="PatientRole">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">A link to details of a patient record.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="role"
+                    className="Subject" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Subject">
+                <derivationSupplier associationEndName="participation"
+                    className="PatientRole" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.21"
+                containerDiagramName="Main" shapeId="Sheet.25">
+                <position x="2.74" y="3.43022"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.21">
+                        <position x="2.74" y="3.43022"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="birthWeight" participantClassName="BirthWeight">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">A link to details of the patient's birth weight.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="act"
+                    className="Subject_1" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Subject_1">
+                <derivationSupplier associationEndName="participation"
+                    className="BirthWeight" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.31"
+                containerDiagramName="Main" shapeId="Sheet.81">
+                <position x="7.91981" y="0.13922"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.31">
+                        <position x="8.883" y="2.26422"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection isMandatory="false"
+                maximumMultiplicity="*" minimumMultiplicity="0"
+                name="scopedRole" participantClassName="COCT_MT000203UK03">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">A link to information about the person's name.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="scopedRole"
+                    className="Person" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Person">
+                <derivationSupplier associationEndName="scoper"
+                    className="COCT_MT000203UK03" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.31"
+                containerDiagramName="Main" shapeId="Sheet.99">
+                <position x="8.24123" y="3.85478"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.31">
+                        <position x="9.555" y="3.01422"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="0"
+                name="scopedRole3" participantClassName="COCT_MT000209UK01">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>                                   A link to details of a person's gender, which includes notified date.                               </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="scopedRole3"
+                    className="Person" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Person">
+                <derivationSupplier associationEndName="scoper"
+                    className="COCT_MT000209UK01" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.35"
+                containerDiagramName="Main" shapeId="Sheet.39">
+                <position x="2.053" y="5.99822"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.35">
+                        <position x="2.053" y="5.99822"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="obstetricCareProvision" participantClassName="ObstetricCareProvision">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">A link to details of an obstetric care provision event.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="act"
+                    className="Baby" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Baby">
+                <derivationSupplier associationEndName="participation"
+                    className="ObstetricCareProvision" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.35"
+                containerDiagramName="Main" shapeId="Sheet.51">
+                <position x="1.07" y="5.62922"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.35">
+                        <position x="1.07" y="5.62922"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="primaryInformationRecipient" participantClassName="PrimaryInformationRecipient">
+                <annotations>
+                    <otherAnnotation type="html"/>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="ObstetricCareProvision" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="ObstetricCareProvision">
+                <derivationSupplier associationEndName="act"
+                    className="PrimaryInformationRecipient" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.35"
+                containerDiagramName="Main" shapeId="Sheet.45">
+                <position x="1.015" y="6.37922"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.35">
+                        <position x="1.015" y="6.37922"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="recordTarget" participantClassName="RecordTarget">
+                <annotations>
+                    <otherAnnotation type="html"/>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="ObstetricCareProvision" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="ObstetricCareProvision">
+                <derivationSupplier associationEndName="act"
+                    className="RecordTarget" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.67"
+                containerDiagramName="Main" shapeId="Sheet.45">
+                <position x="1.015" y="7.0725"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.67">
+                        <position x="1.015" y="7.0725"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="mother" participantClassName="Mother">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">A link to details of a patient.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="role"
+                    className="RecordTarget" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="RecordTarget">
+                <derivationSupplier associationEndName="participation"
+                    className="Mother" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.77"
+                containerDiagramName="Main" shapeId="Sheet.67">
+                <position x="1.635" y="7.58695"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.77">
+                        <position x="2.4505" y="8.04061"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="patientMotherPerson" participantClassName="MotherPerson">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">A link to details of the person playing the role of patient.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="player"
+                    className="Mother" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Mother">
+                <derivationSupplier associationEndName="playedRole"
+                    className="MotherPerson" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.57"
+                containerDiagramName="Main" shapeId="Sheet.51">
+                <position x="1.07" y="4.82995"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.57">
+                        <position x="1.07" y="4.82995"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="partnerChildHealth" participantClassName="PartnerChildHealth">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <p>
+                                <font face="times new roman,times" size="3">A link to details of the partner child health organisation which is the primary recipient of the information relating to the birth.</font>
+                            </p>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="role"
+                    className="PrimaryInformationRecipient" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="PrimaryInformationRecipient">
+                <derivationSupplier associationEndName="participation"
+                    className="PartnerChildHealth" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.31"
+                containerDiagramName="Main" shapeId="Sheet.93">
+                <position x="10.77645" y="3.627"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.31">
+                        <position x="10.2275" y="3.01422"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="0"
+                name="scopedRole2" participantClassName="COCT_MT000210UK01">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A link to details of a date of birth, which includes notified date.</text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="scopedRole2"
+                    className="Person" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Person">
+                <derivationSupplier associationEndName="scoper"
+                    className="COCT_MT000210UK01" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.31"
+                containerDiagramName="Main" shapeId="Sheet.87">
+                <position x="9.2" y="1.03922"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.31">
+                        <position x="9.555" y="2.26422"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection conformance="R" isMandatory="true"
+                maximumMultiplicity="*" minimumMultiplicity="1"
+                name="scopedRole1" participantClassName="COCT_MT000201UK03">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>
+                            <span id="XSLTPageNoTree123:XSLTOut">A link to a CMET representing an address when  additional additional information about the address needs to be supplied.</span>
+                        </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="scopedRole1"
+                    className="Person" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Person">
+                <derivationSupplier associationEndName="scoper"
+                    className="COCT_MT000201UK03" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.5"
+                containerDiagramName="Main" shapeId="Sheet.112">
+                <position x="6.927" y="6.20217"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.5">
+                        <position x="6.927" y="6.20217"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="0"
+                name="subjectOf1" participantClassName="Subject2">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text/>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier
+                    associationEndName="outboundParticipation"
+                    className="PatientRole" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="PatientRole">
+                <derivationSupplier associationEndName="role"
+                    className="Subject2" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+    <ownedAssociation>
+        <graphicRepresentation>
+            <graphElement connectToShapeId="Sheet.118"
+                containerDiagramName="Main" shapeId="Sheet.112">
+                <position x="8.39019" y="6.20217"/>
+                <graphEdge>
+                    <anchor connectToShapeId="Sheet.118">
+                        <position x="8.39019" y="6.20217"/>
+                    </anchor>
+                </graphEdge>
+            </graphElement>
+        </graphicRepresentation>
+        <connections>
+            <traversableConnection isMandatory="false"
+                maximumMultiplicity="1" minimumMultiplicity="1"
+                name="dataQuality" participantClassName="COCT_MT000312UK01">
+                <annotations>
+                    <otherAnnotation type="html">
+                        <text>A link to the data quality CMET </text>
+                    </otherAnnotation>
+                </annotations>
+                <derivationSupplier associationEndName="act"
+                    className="Subject2" staticModelDerivationId="1"/>
+            </traversableConnection>
+            <nonTraversableConnection participantClassName="Subject2">
+                <derivationSupplier associationEndName="participation"
+                    className="COCT_MT000312UK01" staticModelDerivationId="1"/>
+            </nonTraversableConnection>
+        </connections>
+    </ownedAssociation>
+</staticModel>
