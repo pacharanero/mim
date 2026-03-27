@@ -17,7 +17,49 @@ are required to implement it from these archaic specs.
 
 ---
 
-## 2. Where the specification lives
+## 2. NHS England open-source GP2GP adaptors
+
+Because raw HL7v3 parsing is extremely difficult, NHS England has published
+production-quality open-source adaptors that handle the heavy lifting.  Both
+are **Java Spring Boot** applications released as Docker images, dual-licensed
+MIT/OGL (Crown Copyright).  They are actively maintained and in production use
+by New Market Entrant (NME) GP system suppliers.
+
+### GP2GP Sending Adaptor (sending-practice side)
+
+> GitHub: <https://github.com/NHSDigital/integration-adaptor-gp2gp-sending>
+> DockerHub: [nhsdev/nia-gp2gp-adaptor](https://hub.docker.com/r/nhsdev/nia-gp2gp-adaptor)
+
+Translates **FHIR → HL7v3 EhrExtract**.  The old practice deploys this; it
+reads the patient record from a GP Connect FHIR API and produces the HL7v3
+`RCMR_IN030000UK08` EHR Extract message for transmission via Spine.
+
+### GP2GP Requesting Adaptor (receiving-practice side)
+
+> GitHub: <https://github.com/NHSDigital/integration-adaptor-gp2gp-requesting>
+> DockerHub: [nhsdev/nia-ps-adaptor](https://hub.docker.com/r/nhsdev/nia-ps-adaptor) (translator) + [nhsdev/nia-ps-facade](https://hub.docker.com/r/nhsdev/nia-ps-facade) (facade)
+
+Translates **HL7v3 EhrExtract → FHIR bundle**.  The new practice deploys this;
+it issues the GP2GP request, receives the incoming HL7v3 extract, and converts
+it to a FHIR STU3 bundle that the receiving system can consume.  The key
+component is the `gp2gp-translator` submodule.
+
+### Mapping documentation
+
+A separate repo documents how GP2GP concepts map to FHIR and vice versa:
+<https://github.com/NHSDigital/patient-switching-adaptors-mapping-documentation>
+
+### Offline / stand-alone use
+
+Both adaptors normally require full Spine connectivity (HSCN, CIS2, MHS
+adaptor).  However, the requesting adaptor ships a **stand-alone Gradle task**
+that runs the `gp2gp-translator` against a local EhrExtract XML file and
+outputs a FHIR bundle — no Spine connection needed.  This is useful for
+development and testing against synthetic or anonymised extract files.
+
+---
+
+## 3. Where the specification lives
 
 The canonical specification is the **NHS National Programme for IT (NPfIT)
 Message Implementation Manual (MIM)**.  The MIM is a multi-volume HTML
@@ -55,7 +97,7 @@ Schemas/RCMR_IN030000UK08.xsd                      ← EHR Extract interaction s
 
 ---
 
-## 3. High-level message flow
+## 4. High-level message flow
 
 The entire interaction is just **two HL7 v3 messages** (plus infrastructure
 acknowledgements):
@@ -104,7 +146,7 @@ A patient registers at a new GP practice.  The new system:
 
 ---
 
-## 4. Message definitions
+## 5. Message definitions
 
 ### 4.1 EHR Request — `RCMR_MT010101UK03`
 
@@ -168,7 +210,7 @@ e.g. "Surgery Consultation Note", "Discharge Report", "Repeat Issue Note",
 
 ---
 
-## 5. Clinical statement types
+## 6. Clinical statement types
 
 All clinical content inside an `EhrComposition` is represented using these
 statement classes:
@@ -219,7 +261,7 @@ Problem-orientation links between statements across the record.
 
 ---
 
-## 6. Coding schemes
+## 7. Coding schemes
 
 The spec supports multiple clinical coding systems simultaneously:
 
@@ -235,7 +277,7 @@ At most one coded translation per attribute is permitted.  Original text
 
 ---
 
-## 7. Identifiers
+## 8. Identifiers
 
 Two types:
 
@@ -247,7 +289,7 @@ Two types:
 
 ---
 
-## 8. Attachments
+## 9. Attachments
 
 Any `EhrStatement` can reference an `ExternalDocument`:
 
@@ -260,7 +302,7 @@ as XML, not base64), scanned images.
 
 ---
 
-## 9. Version history of the GP2GP domain spec
+## 10. Version history of the GP2GP domain spec
 
 | Version | Date | Key changes |
 |---|---|---|
@@ -276,7 +318,7 @@ as XML, not base64), scanned images.
 
 ---
 
-## 10. Infrastructure dependencies
+## 11. Infrastructure dependencies
 
 GP2GP does not stand alone — it depends heavily on:
 
@@ -291,7 +333,7 @@ GP2GP does not stand alone — it depends heavily on:
 
 ---
 
-## 11. Implementer pain points and notable quirks
+## 12. Implementer pain points and notable quirks
 
 1. **Spec opacity.** The MIM is published as a tree of HTML files with embedded
    bitmaps and cross-links.  The tabular view (`.htm` files in `Tabular View/`)
@@ -328,7 +370,7 @@ GP2GP does not stand alone — it depends heavily on:
 
 ---
 
-## 12. Local artefacts in this repository (MIM 7.2.02)
+## 13. Local artefacts in this repository (MIM 7.2.02)
 
 | Path | Contents |
 |---|---|
@@ -349,7 +391,7 @@ GP2GP does not stand alone — it depends heavily on:
 
 ---
 
-## 13. Web-archived earlier MIM versions
+## 14. Web-archived earlier MIM versions
 
 Useful for historical context (all via National Archives):
 
