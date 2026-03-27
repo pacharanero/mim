@@ -25,3 +25,12 @@ No open licence (Open Government Licence, Creative Commons, etc.) has been appli
 This mim repo contains the entire downloaded LATEST MIM - MIM 7.2.02 (Publish) which is not in the national archives.
 
 Incredibly this system (GP2GP) is still in use albeit seemingly no longer developed. New GP system suppliers would have to implement GP2GP using these archaic specs.
+
+### GitHub Pages
+
+This repo is served as a static site via GitHub Pages. Two files were added to make this work that are not part of the original MIM:
+
+- **`index.html`** — the original entry point is `Index.htm`, which GitHub Pages' Linux servers do not serve automatically (filenames are case-sensitive and the default document must be lowercase `index.html`). This file is an exact copy of `Index.htm`'s frameset.
+- **`.nojekyll`** — an empty file that tells GitHub Pages to skip Jekyll processing. Without it, Jekyll silently drops `.htm` files and can corrupt internal links.
+
+**Note on character encoding:** all MIM HTML files are encoded as `windows-1252` (legacy Windows Latin-1). Modern browsers detect this correctly via the `<meta charset>` declarations in each file, but if you see garbled characters (e.g. © symbols, em-dashes, curly quotes) your browser may not be honouring the declared charset. This is a quirk of the original MIM files and is not something this repository can easily fix without re-encoding ~thousands of HTML files.
