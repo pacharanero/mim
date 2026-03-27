@@ -4,19 +4,21 @@ This repository is a 'mirror' of the NPfIT Messaging Implementation Manual, whic
 
 I have used LLM assistance to create human-readable derivative documentation from the original MIM, which is in a very difficult format to read and understand. The original MIM is in HTML format, but it is not well-structured or easy to navigate. The derivative documentation is intended to be more user-friendly and accessible, while still preserving the technical details and specifications of the original MIM.
 
-## GP2GP
-
-GP2GP is still in use across the English NHS, and is a system for transferring patient records between GP practices when a patient moves. The MIM contains the specifications for GP2GP, and the derivative documentation includes a section on GP2GP that explains how it works and how it is implemented. For more information on GP2GP, see [gp2gp.md](gp2gp.md)
-
-### License
+## License
 
 The MIM carries **NHS (Crown) Copyright** — `Readme.txt` states: _"Copyright UK National Health Service. NHS copyright applied to materials other than those general elements of HL7 included in these packages."_ The underlying HL7 v3 material is © 2002–2004 Health Level Seven, Incorporated. Some external documents within the MIM are additionally marked "Restricted".
 
 No open licence (Open Government Licence, Creative Commons, etc.) has been applied to this material. This repository is published on the presumption that making a 20-year-old, publicly-available technical specification accessible in a usable format does not constitute meaningful harm, and that the public interest in NHS interoperability standards being readable outweighs any theoretical copyright concern. If you are the rights holder and disagree, please open an issue.
 
-### References
+## Components
 
-#### MIM URLs on the National Archives
+### GP2GP
+
+GP2GP is still in use across the English NHS, and is a system for transferring patient records between GP practices when a patient moves. The MIM contains the specifications for GP2GP, and the derivative documentation includes a section on GP2GP that explains how it works and how it is implemented. For more information on GP2GP, see [gp2gp.md](gp2gp.md)
+
+## References
+
+### MIM URLs on the National Archives
 
 <https://webarchive.nationalarchives.gov.uk/ukgwa/20250306140946/https:/data.developer.nhs.uk/dms/mim/6.3.01/Index.htm>
 <https://webarchive.nationalarchives.gov.uk/ukgwa/20250306135910/https:/data.developer.nhs.uk/dms/mim/3.1.09/Index.htm>
